@@ -1,15 +1,42 @@
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 
-const guides: { href: string; name: string; description: string }[] = []
+const guides: { href: string; name: string; description: string }[] = [
+  {
+    href: '/react-apis',
+    name: '前端',
+    description: 'React 实战'
+  },
+  {
+    href: '/python-environment',
+    name: 'Python',
+    description: '关于 Python 的一切'
+  },
+  {
+    href: '/linux',
+    name: '服务器',
+    description: 'Linux 常用命令与工具'
+  },
+  {
+    href: '/mongo',
+    name: '数据库',
+    description: 'MongoDB 常用语句'
+  },
+  {
+    href: '/AIGC',
+    name: 'AIGC',
+    description: 'AIGC 就是未来'
+  }
+]
 
 export function Guides() {
   return (
     <div className="my-16 xl:max-w-none">
       <Heading level={2} id="guides">
-        指南
+        概览
       </Heading>
-      <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 sm:grid-cols-2 xl:grid-cols-4 dark:border-white/5">
+      {/* NOTE: xl:grid-cols-5 一行 5 列  */}
+      <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 sm:grid-cols-2 xl:grid-cols-5 dark:border-white/5">
         {guides.map(guide => (
           <div key={guide.href}>
             <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">
@@ -20,7 +47,7 @@ export function Guides() {
             </p>
             <p className="mt-4">
               <Button href={guide.href} variant="text" arrow="right">
-                Read more
+                阅读更多
               </Button>
             </p>
           </div>

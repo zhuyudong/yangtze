@@ -1,0 +1,40 @@
+# Git 操作案例
+
+## 如何从 github fork 源仓库同步更新
+
+1. 添加原仓库作为一个新的远程仓库
+
+```bash
+git remote add upstream https://github.com/tiangolo/full-stack-fastapi-postgresql.git
+```
+
+2. 查看跟踪的远程仓库啊
+
+```bash
+git remote -v
+```
+
+3. 获取原仓库的最新更新
+
+```bash
+git fetch upstream
+```
+
+4. 切换到要同步更新的分支，通常是主分支 “master”
+
+```bash
+git checkout master
+```
+
+5. 将原仓库的更新合并到你的分支中
+
+```bash
+git merge upstream/master
+```
+
+6. 如果有冲突，解决冲突并提交更改
+7. 将合并后的更新推送到你的仓库
+
+```bash
+git push origin master
+```

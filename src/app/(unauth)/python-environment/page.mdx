@@ -1,0 +1,162 @@
+# Python 环境管理
+
+## 使用 Anaconda
+
+1. 创建本项目 Python 依赖环境
+
+```bash
+conda create --name portal_backend_cloud python=3.11
+```
+
+2. 激活本依赖环境
+
+```bash
+conda activate portal_backend_cloud
+```
+
+安装依赖
+
+```bash
+conda install numpy=1.18.1
+# 安装不在 conda 默认通道的包
+conda install -c conda-forge some-package
+```
+
+使用已存在的包含依赖项的环境文件
+
+```bash
+conda env create -f environment.yml
+```
+
+更新环境
+
+```bash
+conda env update -f environment.yml
+```
+
+列出环境的包
+
+```bash
+conda list
+```
+
+删除本项目 Python 依赖环境
+
+```bash
+conda env list
+conda remove --name portal_backend_cloud --all
+```
+
+#### Anaconda 使用
+
+1. 创建本项目 Python 依赖环境
+
+```bash
+conda create --name portal_backend_cloud python=3.11
+```
+
+2. 激活本依赖环境
+
+```bash
+conda activate portal_backend_cloud
+```
+
+安装依赖
+
+```bash
+conda install numpy=1.18.1
+# 安装不在 conda 默认通道的包
+conda install -c conda-forge some-package
+```
+
+使用已存在的包含依赖项的环境文件
+
+```bash
+conda env create -f environment.yml
+```
+
+更新环境
+
+```bash
+conda env update -f environment.yml
+```
+
+列出环境的包
+
+```bash
+conda list
+```
+
+删除本项目 Python 依赖环境
+
+```bash
+conda env list
+conda remove --name portal_backend_cloud --all
+```
+
+- [如何安装 Python](./install-python.md)
+
+#### 切换 Python 版本
+
+修改 pyproject.toml 中的 Python 版本为 3.9
+
+```bash
+poetry env use /usr/local/bin/python3.9
+# or
+poetry env use 3.9
+# or
+poetry env use $(which python3.9)
+```
+
+输出
+
+```bash
+Creating virtualenv portal-backend-cloud-UgZ9keo--py3.11 in /home/qj00304/.cache/pypoetry/virtualenvs
+Using virtualenv: /home/qj00304/.cache/pypoetry/virtualenvs/portal-backend-cloud-UgZ9keo--py3.11
+```
+
+然后重新执行 `poetry install`
+
+#### Poetry
+
+查看 poetry 环境信息
+
+```bash
+poetry env info
+poetry env list
+poetry env remove portal-backend-cloud-UgZ9keo--py3.11
+poetry env remove --all
+```
+
+#### 如何升级依赖的版本
+
+```bash
+pip install pip-upgrader
+# 默认 requirements.txt
+pip-upgrade requirements/base.txt --skip-virtualenv-check
+```
+
+#### Poetry 如何从 requirements.txt 中安装依赖
+
+```bash
+cat requirements/base.txt | xargs poetry add
+```
+
+#### Redis
+
+```bash
+docker exec -it redis-local /bin/bash
+> redis-cli
+# AtlasTaskMonitor
+# AirflowScheduler
+# BuildImageScheduler
+# CodeCoverageScheduler
+# RoadTestingTranslationScheduler
+# PncNewTaskScheduler
+# PncRunningTaskScheduler
+# TriggerRefreshScheduler
+# AtlasReleaseMonitor
+# AtlasTaskMonitor
+> HGET SCHEDULER_SWITCH AtlasTaskMonitor
+> HSET SCHEDULER_SWITCH AtlasTaskMonitor '1'
+```

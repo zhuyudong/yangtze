@@ -1,0 +1,180 @@
+# Next.js 学习笔记
+
+## 内置组件
+
+### `<Image>`
+
+概念或资源
+
+- [LCP(Largest Contentful Paint)](https://web.dev/articles/lcp?hl=zh-cn) - 最大内容绘制，衡量网页主要内容的加载时间
+- [Web Almanac](https://almanac.httparchive.org/en/2022/media)
+- FCP 首次内容渲染
+
+### `Font`
+
+### `<Link>`
+
+### `<Script>`
+
+## Metadata
+
+### Examples
+
+```html
+<!-- 默认字段 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="author" content="Chris Mills" />
+<meta name="description" content="the description content" />
+<meta property="og:image" content="..." />
+<meta property="og:description" content="..." />
+<meta property="og:title" content="..." />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+```
+
+其中 **"og"** 开头的符合 [Open Graph 协议](https://ogp.me/)，网站的自定义图标、robots.txt、sitemap.xml 等也是元数据
+
+### 如果生成元数据
+
+无论是静态元数据还是动态元数据都只在服务端组件中支持，元数据一共有[这些字段](https://github.com/vercel/next.js/blob/canary/packages/next/src/lib/metadata/default-metadata.tsx)
+
+#### 静态元数据
+
+```js
+// layout.js | page.js
+export const metadata = {
+  title: '...',
+  description: '...'
+}
+
+export default function Page() {}
+```
+
+#### 动态元数据
+
+`searchParams` 只有在 page.js 中才有
+
+```js
+// app/products/[id]/page.js
+export async function generateMetadata({ params, searchParams }, parent) {
+  // 读取路由参数
+  const id = params.id
+
+  // 获取数据
+  const product = await fetch(`https://.../${id}`).then(res => res.json())
+
+  // 获取和拓展父路由段 metadata
+  const previousImages = (await parent).openGraph?.images || []
+
+  return {
+    title: product.title,
+    openGraph: {
+      images: ['/some-specific-page-image.jpg', ...previousImages]
+    }
+  }
+}
+
+export default function Page({ params, searchParams }) {}
+```
+
+## next.config.js
+
+也可以是 next.config.mjs
+
+#### 对象形态
+
+```js
+export default (phase, { defaultConfig }) => {
+  /**
+   * @type {import('next').NextConfig}
+   */
+  const nextConfig = {
+    /* config options here */
+  }
+  return nextConfig
+}
+```
+
+#### 函数形态
+
+其中 phase 有[如下取值](https://github.com/vercel/next.js/blob/5e6b008b561caf2710ab7be63320a3d549474a5b/packages/next/shared/lib/constants.ts#L19-L23)，可以通过 `const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')` 导入，更多配置[参见这里](https://github.com/vercel/next.js/blob/canary/packages/next/src/server/config-shared.ts)
+
+```js
+export default (phase, { defaultConfig }) => {
+  /**
+   * @type {import('next').NextConfig}
+   */
+  const nextConfig = {
+    /* config options here */
+  }
+  return nextConfig
+}
+```
+
+#### 异步函数形态
+
+```js
+module.exports = async (phase, { defaultConfig }) => {
+  /**
+   * @type {import('next').NextConfig}
+   */
+  const nextConfig = {
+    /* config options here */
+  }
+  return nextConfig
+}
+```
+
+## APIs
+
+```js
+import {
+  permanentRedirect,
+  notFound,
+  useParams,
+  useRouter,
+  useSearchParams
+} from 'next/navigation'
+```
+
+- `fetch(url, options)`
+
+- `permanentRedirect`
+  - path 字符串类型，表示重定向的 URL，可以是相对路径，也可以是绝对路径
+  - type 值为 replace （默认）或者 push（Server Actions 中默认），表示重定向的类型
+
+```js
+export default async function Profile({ params }) {
+  const team = await fetchTeam(params.id)
+  if (!team) {
+    permanentRedirect('/login')
+  }
+
+  // ...
+}
+```
+
+- `notFound()` 抛出 NEXT_NOT_FOUND 错误
+
+```js
+export default async function Profile({ params }) {
+  const user = await fetchUser(params.id)
+
+  if (!user) {
+    notFound()
+  }
+
+  // ...
+}
+```
+
+- `usePathname()` 客户端组件
+- `useRouter()`
+- `useSearchParams()` 返回只读 [URLSearchParams](https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams)
+  - `getAll()`
+  - `keys()`
+  - `values()`
+  - `entries()`
+  - `forEach()`
+  - `toString()`

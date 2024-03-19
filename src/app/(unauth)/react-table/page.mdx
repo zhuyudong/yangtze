@@ -1,0 +1,287 @@
+---
+title: tanstack/react-table tutorial
+---
+
+## `tanstack/react-table` API
+
+```tsx
+import type {
+  Column,
+  ColumnDef,
+  ColumnFiltersState,
+  FilterFn,
+  SortingFn,
+  ExpandedState,
+  OnChangeFn,
+  Row,
+  RowPinningState,
+  SortingState,
+  Table,
+  PaginationState,
+  GroupingState
+} from '@tanstack/react-table'
+import {
+  flexRender,
+  getCoreRowModel,
+  getFacetedMinMaxValues,
+  getFacetedRowModel,
+  getFacetedUniqueValues,
+  getFilteredRowModel,
+  getGroupedRowModel,
+  getPaginationRowModel,
+  getSortedRowModel,
+  useReactTable
+} from '@tanstack/react-table'
+```
+
+## `useReactTable()` 使用详解
+
+```tsx
+import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+
+const queryClient = new QueryClient()
+
+const [rowSelection, setRowSelection] = useState({})
+const [sorting, setSorting] = useState<SortingState>([])
+const [expanded, setExpanded] = useState<ExpandedState>({})
+const [rowPinning, setRowPinning] = useState<RowPinningState>({
+  top: [],
+  bottom: []
+})
+// demo states
+const [keepPinnedRows, setKeepPinnedRows] = useState(true)
+const [{ pageIndex, pageSize }, setPagination] = useState<PaginationState>({
+  pageIndex: 0,
+  pageSize: 10
+})
+const [autoResetPageIndex, skipAutoResetPageIndex] = useSkipper()
+
+const fetchDataOptions = {
+  pageIndex,
+  pageSize
+}
+const dataQuery = useQuery(
+  ['data', fetchDataOptions],
+  () => fetchData(fetchDataOptions),
+  { keepPreviousData: true }
+)
+
+const table = useReactTable({
+  data,
+  // data: dataQuery.data?.rows ?? defaultData,
+  columns,
+  initialState: { pagination: { pageSize: 20, pageIndex: 0 } },
+  pageCount: dataQuery.data?.pageCount ?? -1,
+  filterFns: {
+    fuzzy: fuzzyFilter
+  },
+  state: {
+    expanded,
+    rowPinning,
+    columnVisibility,
+    columnOrder,
+    sorting,
+    rowSelection,
+    grouping,
+    columnFilters,
+    globalFilter,
+    columnPinning
+  },
+  onColumnVisibilityChange: setColumnVisibility,
+  onColumnOrderChange: setColumnOrder,
+  getCoreRowModel: getCoreRowModel(),
+  getSortedRowModel: getSortedRowModel(),
+  getFilteredRowModel: getFilteredRowModel(),
+  manualPagination: true,
+  // getPaginationRowModel: getPaginationRowModel(), // If only doing manual pagination, you don't need this
+  getPaginationRowModel: getPaginationRowModel(),
+  getExpandedRowModel: getExpandedRowModel(),
+  getSubRows: row => row.subRows,
+  getRowId: row => row.userId, // required because row indexes will change
+  onSortingChange: setSorting,
+  onExpandedChange: setExpanded,
+  onRowPinningChange: setRowPinning,
+  onPaginationChange: setPagination,
+  defaultColumn,
+  getGroupedRowModel: getGroupedRowModel(),
+  getFacetedRowModel: getFacetedRowModel(),
+  getFacetedUniqueValues: getFacetedUniqueValues(),
+  getFacetedMinMaxValues: getFacetedMinMaxValues(),
+  onColumnFiltersChange: setColumnFilters,
+  onGlobalFilterChange: setGlobalFilter,
+  globalFilterFn: fuzzyFilter,
+  autoResetPageIndex,
+  enableColumnResizing: true,
+  columnResizeMode: 'onChange',
+  onGroupingChange: setGrouping,
+  onColumnPinningChange: setColumnPinning,
+  onRowSelectionChange: setRowSelection,
+  // Provide our updateData function to our table meta
+  meta: getTableMeta(setData, skipAutoResetPageIndex),
+  keepPinnedRows,
+  debugTable: true,
+  debugHeaders: true,
+  debugColumns: true
+})
+```
+
+`table.getRowModel()`
+
+```json
+{
+  "rows": [
+    {
+      "id": "0",
+      "index": 0,
+      "original": {
+        "firstName": "Freida"
+        //...
+      },
+      "depth": 0,
+      "_valuesCache": {
+        "firstName": "Freida"
+        //...
+      },
+      "_uniqueValuesCache": {},
+      "subRows": [],
+      "columnFilters": {},
+      "columnFiltersMeta": {},
+      "_groupingValuesCache": {}
+    }
+    //...
+  ],
+  "flatRows": [
+    {
+      "id": "0",
+      "index": 0,
+      "original": {
+        "firstName": "Freida"
+        //...
+      },
+      "depth": 0,
+      "_valuesCache": {
+        "firstName": "Freida"
+        //...
+      },
+      "_uniqueValuesCache": {},
+      "subRows": [],
+      "columnFilters": {},
+      "columnFiltersMeta": {},
+      "_groupingValuesCache": {}
+    }
+    //...
+  ],
+  "rowsById": {
+    "0": {
+      "id": "0",
+      "index": 0,
+      "original": {
+        "firstName": "Freida"
+        //...
+      },
+      "depth": 0,
+      "_valuesCache": {
+        "firstName": "Freida"
+        //...
+      },
+      "_uniqueValuesCache": {},
+      "subRows": [],
+      "columnFilters": {},
+      "columnFiltersMeta": {},
+      "_groupingValuesCache": {}
+    }
+    //...
+  }
+}
+```
+
+`table.getHeaderGroups()`
+
+`table.getCenterHeaderGroups()`
+
+`table.getFooterGroups()`
+
+`table.getAllLeafColumns()`
+
+`table.setColumnOrder()` 设置 columns 顺序
+
+```tsx
+import { faker } from '@faker-js/faker'
+
+const randomizeColumns = () => {
+  table.setColumnOrder(
+    faker.helpers.shuffle(table.getAllLeafColumns().map(d => d.id))
+  )
+}
+```
+
+`table.getIsAllColumnsVisible()`
+
+`table.getToggleAllColumnsVisibilityHandler()`
+
+`table.getState().columnOrder`
+
+`table.getState().columnPinning`
+
+`table.getState().columnSizingInfo`
+
+`table.getState().columnSizingInfo.isResizingColumn`
+
+`table.getState().columnVisibility`
+
+`table.getState().pagination.pageIndex`
+
+`table.getTotalSize()`
+
+`table.getCenterTotalSize()`
+
+`table.options`
+
+- `table.options.data` 列表数据
+- `table.options.meta`
+- `table.options.columnResizeDirection`
+- `TableMeta<Person>.updateData: (rowIndex: number, columnId: string, value: unknown) => void`
+
+`table.setPageIndex(0)`
+
+`table.getCanPreviousPage()`
+
+`table.previousPage()`
+
+`table.nextPage()`
+
+`table.getPageCount()`
+
+`table.getCanNextPage()`
+
+`table.getIsAllRowsSelected()`
+
+`table.getIsSomeRowsSelected()`
+
+`table.getToggleAllRowsSelectedHandler()`
+
+`table.getToggleAllRowsExpandedHandler()`
+
+`table.getIsAllRowsExpanded()`
+
+`table.getIsAllPageRowsSelected()`
+
+`table.getIsSomePageRowsSelected()`
+
+`table.getToggleAllPageRowsSelectedHandler()`
+
+`table.getTopRows()`
+
+`table.getCenterRows()`
+
+`table.getBottomRows()`
+
+`table.setOptions()`
+
+`table.getVisibleLeafColumns()`
+
+`table.setPageSize`
+
+`table.getPreFilteredRowModel()`
+
+`table.getSelectedRowModel()`

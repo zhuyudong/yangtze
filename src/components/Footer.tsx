@@ -137,7 +137,7 @@ function SmallPrint() {
 
 export function Footer() {
   return (
-    <footer className="mx-auto w-full max-w-2xl space-y-10 pb-16 lg:max-w-5xl">
+    <footer className="lg:max-w-8xl max-w-8xl mx-auto w-full space-y-10 pb-16">
       <PageNavigation />
       <SmallPrint />
     </footer>

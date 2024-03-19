@@ -1,0 +1,545 @@
+export const metadata = {
+  title: 'Commonly used git commands',
+  description: ''
+}
+
+## init
+
+```bash
+git init
+```
+
+---
+
+## config - 配置
+
+### 全局配置
+
+```bash
+# 设置默认主分支名
+git config --global initi.defaultbranch main
+# 修改当前分支名为 main
+git branch -m main
+
+# 全局配置 #
+git config --global user.name "zhuyudong"
+git config --global user.email "zhuyudong@aliyun.com"
+# 修改用户名和邮箱后修改刚才的提交，使用最新的用户信息
+git commit --amend --reset-author
+
+# 提高缓冲区大小
+git config --global ssh.postBuffer 100000000
+git config --global http.postBuffer 100000000
+
+# 切换 http 版本
+git config --global http.version HTTP/1.1
+git config --global http.version HTTP/2
+
+# 不区分文件名大小写
+git config core.ignorecase false
+# 默认 pull 代码时以 rebase 策略合并代码
+git config pull.rebase true
+
+# fatal: unable to access 'xxx': gnutls_handshake() failed: Error in the pull function.
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+# 列出所有配置
+git config --list
+# 列出本仓库配置
+git config --local --list
+# 列出全局配置
+git config --global --list
+# 列出系统配置
+git config --system --list
+```
+
+### 核心配置
+
+```bash
+# 设置对大小写敏感
+git config --global core.ignorecase false
+# 使用 vim 作为编辑器
+git config --global core.editor "vim"
+
+# 远程分支和本地分支合并策略
+# [recommend]
+git config --global pull.rebase true # rebase
+git config pull.rebase false # merge
+git config pull.ff only # fast-forward only
+```
+
+### 列出配置
+
+```bash
+# 列出所有配置
+git config --list
+# 列出本仓库配置
+git config --local --list
+# 列出全局配置
+git config --global --list
+# 列出系统配置
+git config --system --list
+```
+
+### 魔法配置
+
+```bash
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+git lg
+```
+
+---
+
+## remote - 远程仓库
+
+```bash
+git remote -v
+# 添加远程地址并命名 (remote name)，如 origin
+git remote add <remote name> <git url>
+# 重命名远程仓库名
+git remote rename <old name> <new name>
+# 修改远程仓库地址
+git remote set-url <remote name> <new git url>
+# 修改仓库地址
+git remote set-url origin git@gitlab.pegasus.tech:pbdata/skyline.git
+```
+
+---
+
+## fetch - 拉取
+
+```bash
+# 将远程分支拉取到本地分支
+git fetch origin <remote-branch-name>:<local-branch-name>
+
+# 取回所有远程分支
+git fetch
+# 取特定分支
+git fetch origin :<local-branch-name>
+# alias
+git fetch origin master:<local-branch-name>
+```
+
+---
+
+## pull - 拉取并合并
+
+```bash
+# 默认 pull 代码时以 rebase 策略合并代码
+git config pull.rebase true
+git clone https://github.com/zhuyudong/dify.git --depth 1
+```
+
+---
+
+## branch - 分支
+
+### 查看分支
+
+```bash
+# 查看本地分支
+git branch
+# 查看远程分支
+git branch -r
+# 查看所有本地和远程分支
+git branch -a
+```
+
+### 切换分支
+
+```bash
+git checkout <branch-name>
+# 查看并新建分支
+git checkout -b <branch-name>
+# 拉取远程分支并创建本地分支
+git checkout -b <local-branch-name> origin/<remote-branch-name>
+
+# 强制切分支
+git checkout <branch-name> -f
+# alias
+git fetch origin <remote-branch-name>:<local-branch-name>
+```
+
+### 跟踪远程分支
+
+```bash
+# 如果远程存在这个分支则本地跟踪这个远程分支
+git branch --set-upstream-to=origin/main main
+# 如果远程不存在这个分支，则远程新建这个分支并推送上去
+git push --set-upstream origin main
+```
+
+### 同步分支列表
+
+```bash
+git fetch -p
+```
+
+### 删除分支
+
+```bash
+# 删除本地分支
+git branch -d <branch-name>
+# 强制删除本地分支
+# error: The branch 'feat/curate' is not fully merged.
+# If you are sure you want to delete it, run 'git branch -D feat/curate'.
+git banch -D <branch-name>
+# 删除远程分支
+git push origin --delete <branch-name>
+# alias
+git push origin -d <branch-name>
+# 删除远程分支
+git push origin :<branch-name>
+```
+
+### 重命名分支
+
+```bash
+# 重命名本地分支
+git branch -m <oldbranch-name> <newbranch-name>
+# 删除远程分支
+git push origin --delete <oldbranch-name>
+# 推送至远程新分支
+git push origin -u <newbranch-name>
+# 将本地仓库分支和远程仓库分支绑定
+git branch --set-upstream-to=origin/<new-branch-name> <new-branch-name>
+
+# 重命名本地分支 #
+git checkout <old branch name>
+# 修改为新分支名
+git branch -m <new branch name>
+# 推送到远程新分支
+git push origin -u <new branch name>
+# 删除远程旧分支
+git push origin --delete <branch name>
+# or
+git push origin -d <branch name>
+
+# 将当前分支重命名为 main
+git branch -M main
+```
+
+### 分支合并信息
+
+```bash
+# 查看哪些分支已经合并到当前分支
+git branch --merged
+# 查看哪些分支还没有合并到当前分支
+git branch --no-merged
+```
+
+### 分支信息
+
+```bash
+# 查看各个分支最后一个提交对象的信息
+git branch -v
+```
+
+---
+
+## add - 暂存
+
+提交到暂存区
+
+```bash
+# 将当前目录内的所有改动添加到暂存区
+git add .
+# 将当前仓库所有的文件改动都添加到暂存区
+git add -A
+# 或者指定文件
+git add src/index.tsx
+```
+
+修改最近一次 commit message
+
+```bash
+git commit --amend
+```
+
+---
+
+## commit - 提交
+
+提交到本地仓库
+
+```bash
+# 在 GitHub/GitLab 新建一个仓库后 #
+git clone <giturl>
+# NOTE: --depth 1 提高下载速度
+git clone https://github.com/markmead/hyperui.git --depth 1
+cd <foldname>
+git switch -c master
+touch README.md
+git add README.md
+git commit -m "chore: Initial commit"
+
+# 将已有的文件夹关联到已新建仓库 #
+cd <foldname>
+git init --initial-branch=master
+git remote add origin <giturl>
+git add .
+git commit -m "chore: Initial commit"
+
+# 推送现有 git 仓库 #
+cd <foldname>
+git remote rename origin old-origin
+git remote add origin <giturl>
+```
+
+---
+
+## push - 推送到远程
+
+推送到远程仓库
+
+```bash
+# 推送到远程仓库
+git push
+# 如果是第一次推送则如下，其中 <remote name> <branch name> 来自于这里
+# 比如 origin main
+git push -u <remote name> <branch name>
+# or
+git push --set-upstream <remote name> <branch name>
+
+# 推送所有分支
+git push --all github
+
+# 比如将当前 main 分支推送到仓库 master 分支上
+git push origin HEAD:master
+
+```
+
+---
+
+## rm - 删除文件
+
+```bash
+# 将文件从 Git 仓库删除，配合 .gitignore
+git rm <filename>
+# 同上，文件夹
+git rm -r <folder>
+# 例如
+git rm -r .history
+git push
+```
+
+---
+
+## diff - 比较
+
+```bash
+# 比较工作区与缓存区
+git diff
+# 比较缓存区与本地仓库最近一次 commit 内容
+git diff --cached
+# 比较工作区与最近一次 commit 内容
+git diff HEAD
+```
+
+---
+
+## status/log/show - 状态与日志
+
+```bash
+# 查看状态
+git status
+# 查看历史操作记录
+git reflog
+# 查看日志
+git log
+# 查看最近一次 commit 详情
+git show
+# 查看指定 commit 修改详情
+git show <commit id>
+# 查看指定 commit 文件修改详情
+git show <commit id> <fileName>
+
+git lg
+```
+
+---
+
+## stash - 暂存本地修改
+
+- [ ] TODO: 待补充
+
+```bash
+# 暂存本地修改，即还未 git add 的内容
+git stash
+git stash pop
+```
+
+---
+
+## merge - 合并
+
+```bash
+# 当前分支与指定分支合并
+git merge <branch-name>
+# 当合并时发生冲突时可以终止合并
+git merge --abort
+```
+
+---
+
+## rebase - 合并
+
+**注意：rebase 前确保都已经 add 和 commit，如果有修改可以先 `git stash`，合并结束后再 `git stash pop`**
+
+- `git rebase <branch_name>`
+- `git cherry-pick <commit hash>` 将其它分支上已 commit 的在当前分支上再提交一次，产生新的 commit
+
+```bash
+# 从HEAD版本开始往过去数3个版本
+git rebase -i HEAD~3
+
+# or
+# 指名要合并的版本之前的版本号
+git rebase -i 3a4226b
+
+# or
+git rebase
+# 将 pick 改为 squash 或 s 后保存退出，如果有冲突，则解决冲突后
+# 如果 commit msg 写错了，如 squash 写成料 sqaush，则执行
+git rebase --edit-todo # 继续编辑
+# 冲突都解决完后继续 rebase
+git add .
+git rebase --continue
+# 如果想放弃这次压缩则
+git rebase --abort
+# 如果没有冲突则保存退出
+```
+
+```bash
+pick 1bdae02 fix: 🐛 route definition
+pick a064cf6 fix: 🐛 upgrade msw version
+pick bd2d092 chore: 🔧 update project config
+pick 70fb95e chore: 🔧 rename
+pick 31249bd feat: ✨ update storybook
+pick 94742d0 fix: 🐛 upgrade dependencies version & rename & config
+pick fe49167 chore: 🔧 format
+pick e7786ea feat: ✨ loading component
+pick 192c380 feat: ✨ rename
+pick 22bb055 fix: 🐛 mock
+
+# 变基 691973d..22bb055 到 e7786ea（10 个提交）
+#
+# 命令:
+# p, pick <提交> = 使用提交
+# r, reword <提交> = 使用提交，但修改提交说明
+# e, edit <提交> = 使用提交，进入 shell 以便进行提交修补
+# s, squash <提交> = 使用提交，但融合到前一个提交
+# f, fixup <提交> = 类似于 "squash"，但丢弃提交说明日志
+# x, exec <命令> = 使用 shell 运行命令（此行剩余部分）
+# b, break = 在此处停止（使用 'git rebase --continue' 继续变基）
+# d, drop <提交> = 删除提交
+# l, label <label> = 为当前 HEAD 打上标记
+# t, reset <label> = 重置 HEAD 到该标记
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# .       创建一个合并提交，并使用原始的合并提交说明（如果没有指定
+# .       原始提交，使用注释部分的 oneline 作为提交说明）。使用
+# .       -c <提交> 可以编辑提交说明。
+#
+# 可以对这些行重新排序，将从上至下执行。
+#
+# 如果您在这里删除一行，对应的提交将会丢失。
+#
+# 然而，如果您删除全部内容，变基操作将会终止。
+#
+# 注意空提交已被注释掉
+```
+
+比如将 192c380 合并到 e37786ea 则将 192c380 前的 pick 改为 s或squash 即可
+合并结束后再
+
+```bash
+git pull && git push
+```
+
+- [ ] 如何解决冲突（conflict resolve）
+- [ ] merge 与 rebase 的区别
+
+---
+
+## reset - 恢复/回退
+
+版本回退
+
+- `git reset --(soft|mixed|hard) < HEAD ~(num) > |`
+
+| 指令    | 作用范围                                 |
+| :------ | :--------------------------------------- |
+| --hard  | 回退全部，包括 HEAD、index、working tree |
+| --mixed | 回退部分，包括 HEAD、index               |
+| --soft  | 回退部分，包括 HEAD、index               |
+
+```bash
+# 撤销暂存区（不覆盖工作区）
+git reset HEAD
+
+# 回到上一个版本号，不删除工作区代码，撤销 commit，不撤销 add
+git reset --soft HEAD^
+# 回到上一个版本号，不删除工作区代码，撤销 commit 和 add
+git reset --mixed HEAD^
+# 回到上一个版本号，删除工作区代码，撤销 commit 和 add
+git reset --hard HEAD^
+
+# 保留改动代码，但是撤销最近一次 git add 和 git commit，^ 后面可以跟数字，表示最近几次
+git reset --mixed HEAD^
+# 等效于
+git reset HEAD^
+
+# 只撤销 git commit，保留 git add
+git reset --soft HEAD^
+
+# 撤销最近一次 git commit 和 git add
+git reset --hard HEAD^
+
+# 修改最近的 git commit message
+git commit --amend
+
+git log
+# 只显示 commit id
+git log --oneline
+# 回退到指定版本，保留之后的提交
+git revert -n {version}
+
+# 删除已提交的文件夹，然后重新执行一下 add 和 commit
+git rm -r --cached .history .eslintcache
+```
+
+---
+
+## checkout - 切换/放弃
+
+```bash
+git checkout --
+# alias
+git checkout .
+```
+
+---
+
+## GitHub
+
+create a new repository on the command line
+
+```bash
+echo "# hyper-annotated" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/zhuyudong/hyper-annotated.git
+git push -u origin main
+```
+
+push an existing repository from the command line
+
+```bash
+git remote add origin https://github.com/zhuyudong/hyper-annotated.git
+git branch -M main
+git push -u origin main
+```

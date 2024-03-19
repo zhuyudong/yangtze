@@ -25,7 +25,7 @@ function useInitialValue<T>(value: T, condition = true) {
   return condition ? initialValue : value
 }
 
-function TopLevelNavItem({
+export function TopLevelNavItem({
   href,
   children
 }: {
@@ -236,8 +236,28 @@ function NavigationGroup({
 
 export const navigation: Array<NavGroup> = [
   {
-    title: '指南',
-    links: [{ title: '介绍', href: '/' }]
+    title: '概览',
+    links: [
+      { title: '介绍', href: '/' },
+      { title: 'nvm', href: '/nvm' },
+      { title: 'pnpm', href: '/pnpm' },
+      { title: 'Git 配置', href: '/git-config' },
+      { title: 'Git 工具', href: '/git-tools' },
+      { title: 'Git 案例', href: '/git-examples' },
+      { title: 'package.json', href: '/package' },
+      { title: 'VSCode', href: '/vscode' },
+      { title: 'Remix', href: '/remix' },
+      { title: 'Next.js', href: '/nextjs' },
+      { title: 'TailwindCSS', href: '/tailwindcss' },
+      { title: 'React APIs', href: '/react-apis' },
+      { title: '@tanstack/react-table', href: '/tanstack__react-table' },
+      { title: '@tanstack/react-query', href: '/tanstack__react-query' },
+      { title: 'Python 环境管理', href: '/python-environment' },
+      { title: 'FastAPI', href: '/python-fastapi' },
+      { title: 'Python 代码检查与格式化', href: '/python-lint' },
+      { title: 'MongoDB 常用语句', href: '/mongo' },
+      { title: 'AIGC', href: '/AIGC' }
+    ]
   },
   {
     title: '资源',
@@ -249,9 +269,9 @@ export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul role="list">
-        <TopLevelNavItem href="/">API</TopLevelNavItem>
+        {/* <TopLevelNavItem href="/">API</TopLevelNavItem>
         <TopLevelNavItem href="#">Documentation</TopLevelNavItem>
-        <TopLevelNavItem href="#">Support</TopLevelNavItem>
+        <TopLevelNavItem href="#">Support</TopLevelNavItem> */}
         {navigation.map((group, groupIndex) => (
           <NavigationGroup
             key={group.title}
@@ -261,7 +281,7 @@ export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         ))}
         <li className="sticky bottom-0 z-10 mt-6 min-[416px]:hidden">
           <Button href="#" variant="filled" className="w-full">
-            Sign in
+            登录
           </Button>
         </li>
       </ul>
