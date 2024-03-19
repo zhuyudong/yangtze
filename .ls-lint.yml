@@ -1,0 +1,14 @@
+ls:
+  .js: snake_case
+  .ts: snake_case | kebab-case | camelCase
+  .tsx: snake_case | kebab-case | camelCase
+  .d.ts: PascalCase
+  .html: regex:[a-z0-9]+
+  .md: snake_case
+  .mdx: snake_case | kebab-case
+
+ignore:
+  - .git
+  - .husky
+  - .vscode
+  - node_modules

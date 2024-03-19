@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://yangtze.zeabur.app
+
+# Sitemaps
+Sitemap: https://yangtze.zeabur.app/sitemap.xml

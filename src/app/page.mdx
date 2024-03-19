@@ -1,0 +1,38 @@
+import { Guides } from '@/components/Guides'
+import { Resources } from '@/components/Resources'
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const metadata = {
+  title: 'Yangtze Documentation',
+  description: ''
+}
+
+export const sections = [
+  { title: '指南', id: 'guides' },
+  { title: '资源', id: 'resources' }
+]
+
+<HeroPattern />
+
+# Yangtze
+
+学习总结与实践总结 {{ className: 'lead' }}
+
+<div className="not-prose mb-16 mt-6 flex gap-3">
+  <Button arrow="right" href="/quickstart">
+    <>快速开始</>
+  </Button>
+  <Button href="/just-wandering-around" variant="outline">
+    <>随便逛逛</>
+  </Button>
+</div>
+
+## 技术栈 {{ anchor: false }}
+
+TODO {{ className: 'lead' }}
+
+{/* <div className="not-prose"><Button arrow="right" href="/sdks" variant="text"><>Get your API key</></Button></div> */}
+
+<Guides />
+
+<Resources />

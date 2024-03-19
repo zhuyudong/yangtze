@@ -1,0 +1,9 @@
+node_modules
+out
+!.storybook
+.history
+.swc
+.next
+coverage
+storybook-static
+test-results
