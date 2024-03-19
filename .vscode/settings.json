@@ -1,3 +1,77 @@
 {
-  "i18n-ally.localesPaths": ["src/app/locals"]
+  "search.exclude": {
+    "package-lock.json": true,
+    "pnpm-lock.yaml": true,
+    "yarn.lock": true,
+    "node_modules": true,
+    ".next": true,
+    ".history": true,
+    ".mypy_cache": true,
+    ".pytest_cache": true,
+    ".venv": true,
+    "coverage": true,
+    "dist": true,
+    "build": true,
+    "out": true
+  },
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "editor.rulers": [108],
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "always",
+    "source.fixAll": "always"
+  },
+  // "typescript.tsdk": "node_modules/typescript/lib", // Use the workspace version of TypeScript
+  // "typescript.enablePromptUseWorkspaceTsdk": true, // For security reasons it's require that users opt into using the workspace version of typescript
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    // useRouter should be imported from `next/navigation` instead of `next/router`
+    "next/router.d.ts",
+    "next/dist/client/router.d.ts"
+  ],
+  // "typescript.preferences.preferTypeOnlyAutoImports": true, // Prefer type-only imports
+  // "jest.autoRun": {
+  //   "watch": false // Start the jest with the watch flag
+  //   // "onStartup": ["all-tests"] // Run all tests upon project launch
+  // },
+  // "jest.showCoverageOnLoad": true, // Show code coverage when the project is launched
+  // "jest.autoRevealOutput": "on-exec-error", // Don't automatically open test explorer terminal on launch
+  // Multiple language settings for json and jsonc files
+  "[json][jsonc][yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.ignorePath": ".gitignore", // Don't run prettier for files listed in .gitignore
+
+  "[python]": {
+    // "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.tabSize": 4,
+    "editor.codeLens": true,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSaveMode": "file",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+      "source.fixAll": "always"
+    }
+  },
+  // "isort.args": ["--profile", "black"],
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.unittestEnabled": false,
+  "files.eol": "\n",
+  "files.exclude": {
+    ".venv/": false,
+    ".pytest_cache/": true,
+    ".mypy_cache/": true,
+    "**/.history": true,
+    "**/__pycache__": true
+  },
+  "i18n-ally.localesPaths": ["src/locals"]
+  // "i18n-ally.keystyle": "nested"
 }

@@ -19,7 +19,7 @@
     "dev:spotlight": "spotlight-sidecar",
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "lint": "next lint",
-    "prepare": "husky",
+    "prepare": "npx husky",
     "start": "next start"
   },
   "config": {

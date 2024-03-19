@@ -27,7 +27,7 @@
       "module": "uvicorn",
       "cwd": "${workspaceFolder}",
       "args": [
-        "portal.app.main:app",
+        "yangtze.app.main:app",
         "--reload",
         "--log-level=debug"
         // "--no-access-log"
@@ -148,7 +148,7 @@
   "todo-tree.filtering.ignoreGitSubmodules": true,
   "todohighlight.keywords": [],
   "todo-tree.tree.showCountsInTree": true,
-  "todohighlight.keywordsPattern": "TODO:|FIXME:|NOTE:|\\(([^)]+)\\)",
+  "todohighlight.keywordsPattern": "TODO:|FIXME:|NOTE:|DEPRECATED:\\(([^)]+)\\)",
   "todohighlight.defaultStyle": {},
   "todohighlight.isEnable": false,
   "todo-tree.highlights.customHighlight": {
@@ -200,6 +200,12 @@
       "foreground": "#E91E63",
       "type": "line",
       "fontWeight": "100"
+    },
+    "DEPRECATED": {
+      "icon": "unverified",
+      "foreground": "#e9c41e",
+      "type": "line",
+      "fontWeight": "300"
     },
     "XXX": {
       "icon": "unverified",
@@ -320,7 +326,7 @@
   },
   // "python.analysis.typeCheckingMode": "basic", // strict
   "python.autoComplete.extraPaths": [
-    "/home/qj00304/Code/pegasus/portal_backend_cloud"
+    "/home/qj00304/Code/pegasus/yangtze_backend"
   ],
   "python.analysis.autoSearchPaths": true,
   "python.analysis.autoImportCompletions": true,
@@ -593,13 +599,13 @@
   "versionlens.logging.level": "debug",
   "workbench.editor.empty.hint": "hidden",
   "redhat.telemetry.enabled": true,
-  "python.analysis.extraPaths": ["./portal"],
+  "python.analysis.extraPaths": ["./yangtze"],
   "mypy.dmypyExecutable": "",
   "markdown-preview-enhanced.codeBlockTheme": "one-dark.css",
   "markdown.preview.fontSize": 12,
   "cmake.showOptionsMovedNotification": false,
 
-  // "ruff.interpreter": ["/home/qj00304/anaconda3/envs/portal_backend_cloud/bin/python"],
+  // "ruff.interpreter": ["/home/qj00304/anaconda3/envs/yangtze_backend/bin/python"],
   "http.proxySupport": "off"
 }
 ```
