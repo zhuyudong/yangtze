@@ -20,7 +20,7 @@ export function Layout({
   const pathname = usePathname()
 
   return (
-    <SectionProvider sections={allSections[pathname] ?? []}>
+    <SectionProvider sections={allSections[pathname as string] ?? []}>
       <div className="h-full lg:ml-72 xl:ml-80">
         <motion.header
           layoutScroll

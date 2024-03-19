@@ -180,7 +180,10 @@ function NavigationGroup({
       <div className="relative mt-3 pl-2">
         <AnimatePresence initial={!isInsideMobileNavigation}>
           {isActiveGroup && (
-            <VisibleSectionHighlight group={group} pathname={pathname} />
+            <VisibleSectionHighlight
+              group={group}
+              pathname={pathname as string}
+            />
           )}
         </AnimatePresence>
         <motion.div
@@ -189,7 +192,7 @@ function NavigationGroup({
         />
         <AnimatePresence initial={false}>
           {isActiveGroup && (
-            <ActivePageMarker group={group} pathname={pathname} />
+            <ActivePageMarker group={group} pathname={pathname as string} />
           )}
         </AnimatePresence>
         <ul role="list" className="border-l border-transparent">
@@ -256,7 +259,8 @@ export const navigation: Array<NavGroup> = [
       { title: 'FastAPI', href: '/python-fastapi' },
       { title: 'Python 代码检查与格式化', href: '/python-lint' },
       { title: 'MongoDB 常用语句', href: '/mongo' },
-      { title: 'AIGC', href: '/AIGC' }
+      { title: 'AIGC', href: '/AIGC' },
+      { title: 'china 诗词', href: '/poetry' }
     ]
   },
   {

@@ -26,6 +26,11 @@ const guides: { href: string; name: string; description: string }[] = [
     href: '/AIGC',
     name: 'AIGC',
     description: 'AIGC 就是未来'
+  },
+  {
+    href: '/poetry',
+    name: '诗词',
+    description: '陶冶情操'
   }
 ]
 
