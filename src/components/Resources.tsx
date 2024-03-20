@@ -10,6 +10,7 @@ import Link from 'next/link'
 
 import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
+import { MapPinIcon } from '@/components/icons/MapPinIcon'
 import { UserIcon } from '@/components/icons/UserIcon'
 
 interface IResource {
@@ -33,6 +34,19 @@ const resources: Array<IResource> = [
       y: 16,
       squares: [
         [0, 1],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/wallpaper',
+    name: '壁纸 - 大千世界、精彩纷呈',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
         [1, 3]
       ]
     }

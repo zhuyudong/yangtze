@@ -16,6 +16,23 @@ const withMDX = nextMDX({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  // https://nextjs.org/docs/messages/next-image-unconfigured-host
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cn.bing.com',
+        port: '',
+        pathname: '/th**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'yet-another-react-lightbox.com',
+        port: '',
+        pathname: '/images/**'
+      }
+    ]
+  },
   // output: process.env.NEXT_OUTPUT_MODE,
   /**
    *

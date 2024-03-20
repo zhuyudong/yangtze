@@ -20,8 +20,8 @@
   "editor.formatOnSave": true,
   "editor.rulers": [108],
   "editor.codeActionsOnSave": {
-    "source.addMissingImports": "explicit",
-    "source.organizeImports": "always",
+    // "source.addMissingImports": "explicit",
+    // "source.organizeImports": "always",
     "source.fixAll": "always"
   },
   // "typescript.tsdk": "node_modules/typescript/lib", // Use the workspace version of TypeScript

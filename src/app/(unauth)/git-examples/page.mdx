@@ -4,37 +4,54 @@
 
 1. 添加原仓库作为一个新的远程仓库
 
-```bash
-git remote add upstream https://github.com/tiangolo/full-stack-fastapi-postgresql.git
-```
+   ```bash
+   git remote add upstream https://github.com/tiangolo/full-stack-fastapi-postgresql.git
+   ```
 
 2. 查看跟踪的远程仓库啊
 
-```bash
-git remote -v
-```
+   ```bash
+   git remote -v
+   ```
 
 3. 获取原仓库的最新更新
 
-```bash
-git fetch upstream
-```
+   ```bash
+   git fetch upstream
+   ```
 
 4. 切换到要同步更新的分支，通常是主分支 “master”
 
-```bash
-git checkout master
-```
+   ```bash
+   git checkout master
+   ```
 
 5. 将原仓库的更新合并到你的分支中
 
-```bash
-git merge upstream/master
-```
+   ```bash
+   git merge upstream/master
+   ```
 
 6. 如果有冲突，解决冲突并提交更改
 7. 将合并后的更新推送到你的仓库
 
-```bash
-git push origin master
-```
+   ```bash
+   git push origin master
+   ```
+
+## 如何将 2 次 commit 合并为一次
+
+1. . 运行以下命令来开始交互式 rebase：
+   ```bash
+   git rebase -i HEAD~2
+   ```
+   这里的 `HEAD~2` 表示要合并的最近两次提交。如果您要合并的提交数量不同，请相应地调整数字。
+2. 一个编辑器会打开，显示最近的两次提交。将第二次提交的命令从 `pick` 改为 `squash` 或 `s`，表示将其合并到第一次提交中。保存并关闭编辑器。
+3. Git 会将两次提交合并为一次。如果有冲突需要解决，您需要解决这些冲突并继续 rebase 过程。
+4. 最后，运行以下命令来完成 rebase：
+   ```bash
+   git rebase --continue
+   ```
+5. 如果一切顺利，您的两次提交将被合并为一次提交。
+
+**请注意，在执行 rebase 操作时，建议在进行任何更改之前备份您的代码，以防止意外情况发生。**
