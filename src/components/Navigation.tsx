@@ -10,7 +10,7 @@ import { Button } from '@/components/Button'
 import { useIsInsideMobileNavigation } from '@/components/MobileNavigation'
 import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
-// import { remToPx } from '@/lib/remToPx'
+// import { remToPx } from '@/libs/remToPx'
 
 interface NavGroup {
   title: string
@@ -288,7 +288,7 @@ export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
           />
         ))}
         <li className="sticky bottom-0 z-10 mt-6 min-[416px]:hidden">
-          <Button href="#" variant="filled" className="w-full">
+          <Button href="/sign-in" variant="filled" className="w-full">
             登录
           </Button>
         </li>

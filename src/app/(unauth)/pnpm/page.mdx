@@ -1,0 +1,17 @@
+# pnpm
+
+[website](https://pnpm.io/)
+
+## 使用 monorepo
+
+创建 pnpm-workspace.yaml
+
+```yaml
+packages:
+  # all packages in direct subdirs of packages/
+  - 'packages/*'
+  # all packages in subdirs of components/
+  - 'components/**'
+  # exclude packages that are inside test directories
+  - '!**/test/**'
+```

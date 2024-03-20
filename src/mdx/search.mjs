@@ -58,9 +58,11 @@ export default function Search(nextConfig = {}) {
 
             let files = glob.sync('**/*.mdx', { cwd: appDir })
             let data = files.map(file => {
-              let url = '/' + file.replace(/(^|\/)page\.mdx$/, '')
+              let url =
+                '/' +
+                // replace('(unauth)/', '') (unauth)/vscode/page.mdx -> vscode/page.mdx
+                file.replace('(unauth)/', '').replace(/(^|\/)page\.mdx$/, '')
               let mdx = fs.readFileSync(path.join(appDir, file), 'utf8')
-
               let sections = []
 
               if (cache.get(file)?.[0] === mdx) {
