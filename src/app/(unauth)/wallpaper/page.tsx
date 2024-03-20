@@ -65,6 +65,7 @@ export default function WallpaperLightbox() {
         {data.map((i, ix) => (
           // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
           <img
+            alt=""
             key={i.title}
             data-index={ix}
             src={i.image_url}

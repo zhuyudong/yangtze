@@ -1,4 +1,6 @@
-import { authMiddleware, redirectToSignIn } from '@clerk/nextjs'
+import { redirectToSignIn } from '@clerk/nextjs'
+// https://github.com/clerk/javascript/issues/2435
+import { authMiddleware } from '@clerk/nextjs/server'
 import type { NextRequest } from 'next/server'
 // import createMiddleware from 'next-intl/middleware'
 
