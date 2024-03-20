@@ -28,7 +28,7 @@ interface IResource {
 
 const resources: Array<IResource> = [
   {
-    href: '/linux-tools',
+    href: '/linux',
     name: 'Best Linux Tools',
     description: '',
     icon: UserIcon,
