@@ -1,1 +1,43 @@
-{}
+{
+  "RootLayout": {
+    "home_link": "主页",
+    "portfolio_link": "个人信息",
+    "sign_in_link": "登录",
+    "sign_up_link": "注册"
+  },
+  "BaseTemplate": {
+    "description": "使用 Nextjs 和 Tailwind CSS 开始编码",
+    "made_with": "制作自"
+  },
+  "Index": {
+    "meta_title": "长江",
+    "meta_description": "使用 Next.js 框架和 Tailwind CSS 构建的网站"
+  },
+  "Portfolio": {
+    "meta_title": "个人信息",
+    "meta_description": "欢饮来到我的个人资料页!",
+    "presentation": "欢饮来到我的个人资料页！",
+    "portfolio_name": "用户名 {name}",
+    "log_management_powered_by": "Log management powered by"
+  },
+  "SignIn": {
+    "meta_title": "登录",
+    "meta_description": "通过用户友好的登录流程无缝登录您的账户"
+  },
+  "SignUp": {
+    "meta_title": "注册",
+    "meta_description": "快速注册"
+  },
+  "Dashboard": {
+    "meta_title": "仪表盘",
+    "hello_message": "你好 {email}!"
+  },
+  "UserProfile": {
+    "meta_title": "用户信息"
+  },
+  "DashboardLayout": {
+    "dashboard_link": "仪表盘",
+    "user_profile_link": "管理个人信息",
+    "sign_out": "登出"
+  }
+}

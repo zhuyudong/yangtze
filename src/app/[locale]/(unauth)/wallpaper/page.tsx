@@ -16,7 +16,7 @@ import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
 import Zoom from 'yet-another-react-lightbox/plugins/zoom'
 
-import data from '@/app/(unauth)/python/bing_wallpaper.json'
+import data from '@/app/[locale]/(unauth)/python/bing_wallpaper.json'
 // import Inline from "yet-another-react-lightbox/plugins/inline"
 import NextJsImage from '@/components/NextJsImage'
 

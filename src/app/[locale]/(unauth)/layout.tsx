@@ -11,13 +11,17 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const pages = await glob('**/*.mdx', { cwd: 'src/app' })
+  const pages = await glob('**/*.mdx', { cwd: 'src/app/[locale]' })
   // NOTE: sections inject by mdx/rehype.mjs rehypePlugins
   const allSectionsEntries = (await Promise.all(
     pages.map(async filename => {
+      console.log('filename', filename, filename.replace('(unauth)/', ''))
       // replace('(unauth)/', '') (unauth)/vscode/page.mdx -> vscode/page.mdx
       return [
-        `/${filename.replace('(unauth)/', '').replace(/(^|\/)page\.mdx$/, '')}`,
+        `/${filename
+          // .replace('[locale]/', '')
+          .replace('(unauth)/', '')
+          .replace(/(^|\/)page\.mdx$/, '')}`,
         (await import(`./${filename.replace('(unauth)/', '')}`)).sections
       ]
     })

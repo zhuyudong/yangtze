@@ -61,7 +61,10 @@ export default function Search(nextConfig = {}) {
               let url =
                 '/' +
                 // replace('(unauth)/', '') (unauth)/vscode/page.mdx -> vscode/page.mdx
-                file.replace('(unauth)/', '').replace(/(^|\/)page\.mdx$/, '')
+                file
+                  .replace('[locale]/', '')
+                  .replace('(unauth)/', '')
+                  .replace(/(^|\/)page\.mdx$/, '')
               let mdx = fs.readFileSync(path.join(appDir, file), 'utf8')
               let sections = []
 

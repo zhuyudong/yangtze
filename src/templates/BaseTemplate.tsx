@@ -1,13 +1,14 @@
-// import { useTranslations } from 'next-intl'
+import { useTranslations } from 'next-intl'
+import type { ReactNode } from 'react'
 
 import { AppConfig } from '@/utils/AppConfig'
 
 const BaseTemplate = (props: {
-  leftNav: React.ReactNode
-  rightNav?: React.ReactNode
-  children: React.ReactNode
+  leftNav: ReactNode
+  rightNav?: ReactNode
+  children: ReactNode
 }) => {
-  // const t = useTranslations('BaseTemplate')
+  const t = useTranslations('BaseTemplate')
 
   return (
     <div className="w-full px-1 text-gray-700 antialiased">
@@ -17,10 +18,7 @@ const BaseTemplate = (props: {
             <h1 className="text-3xl font-bold text-gray-900">
               {AppConfig.name}
             </h1>
-            {/* <h2 className="text-xl">{t('description')}</h2> */}
-            <h2 className="text-xl">
-              Starter code for your Nextjs project with Tailwind CSS, and MDX.
-            </h2>
+            <h2 className="text-xl">{t('description')}</h2>
           </div>
 
           <div className="flex justify-between">
@@ -42,8 +40,7 @@ const BaseTemplate = (props: {
 
         <footer className="border-t border-gray-300 py-8 text-center text-sm">
           © Copyright {new Date().getFullYear()} {AppConfig.name}.
-          {/* {` ${t('made_with')} `} */}
-          Made with ❤️ by{' '}
+          {` ${t('made_with')} `}
           <a
             href="https://creativedesignsguru.com"
             className="text-blue-700 hover:border-b-2 hover:border-blue-700"
