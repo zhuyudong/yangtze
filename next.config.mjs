@@ -6,9 +6,9 @@ import { remarkPlugins } from './src/mdx/remark.mjs'
 import withSearch from './src/mdx/search.mjs'
 import './src/libs/Env.mjs'
 import withBundleAnalyzer from '@next/bundle-analyzer'
-// import withNextIntl from 'next-intl/plugin'
+import createNextIntlPlugin from 'next-intl/plugin'
 
-// const withNextIntlConfig = withNextIntl('./src/libs/i18n.ts')
+const withNextIntl = createNextIntlPlugin('./src/libs/i18n.ts')
 
 const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true'
@@ -73,4 +73,4 @@ const nextConfig = {
   }
 }
 
-export default bundleAnalyzer(withSearch(withMDX(nextConfig)))
+export default bundleAnalyzer(withNextIntl(withSearch(withMDX(nextConfig))))

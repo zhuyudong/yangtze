@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import { AnimatePresence, motion } from 'framer-motion' // useIsPresent
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import { useRef } from 'react'
 
 import { Button } from '@/components/Button'
@@ -30,7 +31,7 @@ export function TopLevelNavItem({
   children
 }: {
   href: string
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <li className="md:hidden">
@@ -52,7 +53,7 @@ function NavLink({
   isAnchorLink = false
 }: {
   href: string
-  children: React.ReactNode
+  children: ReactNode
   tag?: string
   active?: boolean
   isAnchorLink?: boolean
@@ -273,7 +274,7 @@ export const navigation: Array<NavGroup> = [
   }
 ]
 
-export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
+export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul role="list">

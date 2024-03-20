@@ -1,6 +1,7 @@
 import '@/styles/tailwind.css'
 
 import glob from 'fast-glob'
+import type { ReactNode } from 'react'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
@@ -9,7 +10,7 @@ import { type Section } from '@/components/SectionProvider'
 export default async function RootLayout({
   children
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   const pages = await glob('**/*.mdx', { cwd: 'src/app/[locale]' })
   // NOTE: sections inject by mdx/rehype.mjs rehypePlugins

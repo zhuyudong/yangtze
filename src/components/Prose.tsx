@@ -1,10 +1,11 @@
 import clsx from 'clsx'
+import type { ComponentPropsWithoutRef, ElementType } from 'react'
 
-export function Prose<T extends React.ElementType = 'div'>({
+export function Prose<T extends ElementType = 'div'>({
   as,
   className,
   ...props
-}: Omit<React.ComponentPropsWithoutRef<T>, 'as' | 'className'> & {
+}: Omit<ComponentPropsWithoutRef<T>, 'as' | 'className'> & {
   as?: T
   className?: string
 }) {

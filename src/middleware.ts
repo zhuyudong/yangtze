@@ -6,6 +6,7 @@ import createMiddleware from 'next-intl/middleware'
 
 import { AppConfig } from './utils/AppConfig'
 
+// NOTE: 如果不使用 clerk，单独导出此中间件即可
 const intlMiddleware = createMiddleware({
   locales: AppConfig.locales,
   localePrefix: AppConfig.localePrefix as any,
@@ -31,5 +32,11 @@ export default authMiddleware({
 })
 
 export const config = {
-  matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)']
+  matcher: [
+    '/((?!.+\\.[\\w]+$|_next).*)',
+    '/',
+    '/(api|trpc)(.*)',
+    // Match only internationalized pathnames
+    '/(zh-CN|en)/:path*'
+  ]
 }

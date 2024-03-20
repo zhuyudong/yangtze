@@ -1,4 +1,6 @@
-export function MapPinIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+import type { ComponentPropsWithoutRef } from 'react'
+
+export function MapPinIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 20 20" aria-hidden="true" {...props}>
       <path

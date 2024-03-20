@@ -7,6 +7,7 @@ import {
   useMotionValue
 } from 'framer-motion'
 import Link from 'next/link'
+import type { ComponentPropsWithoutRef, ComponentType } from 'react'
 
 import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
@@ -19,9 +20,9 @@ interface IResource {
   href: string
   name: string
   description: string
-  icon: React.ComponentType<{ className?: string }>
+  icon: ComponentType<{ className?: string }>
   pattern: Omit<
-    React.ComponentPropsWithoutRef<typeof GridPattern>,
+    ComponentPropsWithoutRef<typeof GridPattern>,
     'width' | 'height' | 'x'
   >
 }

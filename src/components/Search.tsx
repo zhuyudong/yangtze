@@ -9,6 +9,7 @@ import {
 import { Dialog, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import type { ComponentPropsWithoutRef, ElementRef } from 'react'
 import {
   forwardRef,
   Fragment,
@@ -96,7 +97,7 @@ function useAutocomplete({ close }: { close: () => void }) {
   return { autocomplete, autocompleteState }
 }
 
-function SearchIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function SearchIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" {...props}>
       <path
@@ -108,7 +109,7 @@ function SearchIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function NoResultsIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function NoResultsIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" {...props}>
       <path
@@ -120,7 +121,7 @@ function NoResultsIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function LoadingIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function LoadingIcon(props: ComponentPropsWithoutRef<'svg'>) {
   const id = useId()
 
   return (
@@ -268,7 +269,7 @@ function SearchResults({
 }
 
 const SearchInput = forwardRef<
-  React.ElementRef<'input'>,
+  ElementRef<'input'>,
   {
     autocomplete: Autocomplete
     autocompleteState: AutocompleteState<Result> | EmptyObject
@@ -323,9 +324,9 @@ function SearchDialog({
   setOpen: (open: boolean) => void
   className?: string
 }) {
-  const formRef = useRef<React.ElementRef<'form'>>(null)
-  const panelRef = useRef<React.ElementRef<'div'>>(null)
-  const inputRef = useRef<React.ElementRef<typeof SearchInput>>(null)
+  const formRef = useRef<ElementRef<'form'>>(null)
+  const panelRef = useRef<ElementRef<'div'>>(null)
+  const inputRef = useRef<ElementRef<typeof SearchInput>>(null)
   const { autocomplete, autocompleteState } = useAutocomplete({
     close() {
       setOpen(false)
@@ -427,7 +428,7 @@ function SearchDialog({
 }
 
 function useSearchProps() {
-  const buttonRef = useRef<React.ElementRef<'button'>>(null)
+  const buttonRef = useRef<ElementRef<'button'>>(null)
   const [open, setOpen] = useState(false)
 
   return {

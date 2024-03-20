@@ -1,6 +1,7 @@
 'use client'
 
 import { ThemeProvider, useTheme } from 'next-themes'
+import type { ReactNode } from 'react'
 import { useEffect } from 'react'
 
 function ThemeWatcher() {
@@ -27,7 +28,7 @@ function ThemeWatcher() {
   return null
 }
 
-export function Providers({ children }: { children: React.ReactNode }) {
+export function Providers({ children }: { children: ReactNode }) {
   return (
     <ThemeProvider attribute="class" disableTransitionOnChange>
       <ThemeWatcher />

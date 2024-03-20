@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import type { ReactNode } from 'react'
 
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -14,7 +15,7 @@ export function Layout({
   children,
   allSections
 }: {
-  children: React.ReactNode
+  children: ReactNode
   allSections: Record<string, Array<Section>>
 }) {
   const pathname = usePathname()

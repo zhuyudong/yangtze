@@ -1,5 +1,6 @@
 'use client'
 
+import type { ReactNode, RefObject } from 'react'
 import {
   createContext,
   useContext,
@@ -16,7 +17,7 @@ export interface Section {
   title: string
   offsetRem?: number
   tag?: string
-  headingRef?: React.RefObject<HTMLHeadingElement>
+  headingRef?: RefObject<HTMLHeadingElement>
 }
 
 interface SectionState {
@@ -29,7 +30,7 @@ interface SectionState {
     offsetRem
   }: {
     id: string
-    ref: React.RefObject<HTMLHeadingElement>
+    ref: RefObject<HTMLHeadingElement>
     offsetRem: number
   }) => void
 }
@@ -130,7 +131,7 @@ export function SectionProvider({
   children
 }: {
   sections: Array<Section>
-  children: React.ReactNode
+  children: ReactNode
 }) {
   const [sectionStore] = useState(() => createSectionStore(sections))
 

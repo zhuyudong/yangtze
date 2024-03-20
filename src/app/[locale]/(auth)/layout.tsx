@@ -1,8 +1,9 @@
 import { enUS, zhCN } from '@clerk/localizations'
 import { ClerkProvider } from '@clerk/nextjs'
+import type { ReactNode } from 'react'
 
 export default function AuthLayout(props: {
-  children: React.ReactNode
+  children: ReactNode
   params: { locale: string }
 }) {
   let clerkLocale = zhCN

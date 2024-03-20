@@ -2,6 +2,7 @@
 
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
+import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import {
   Children,
   createContext,
@@ -42,7 +43,7 @@ function getPanelTitle({
   return 'Code'
 }
 
-function ClipboardIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function ClipboardIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 20 20" aria-hidden="true" {...props}>
       <path
@@ -135,7 +136,7 @@ function CodePanel({
   label,
   code
 }: {
-  children: React.ReactNode
+  children: ReactNode
   tag?: string
   label?: string
   code?: string
@@ -171,7 +172,7 @@ function CodeGroupHeader({
   selectedIndex
 }: {
   title: string
-  children: React.ReactNode
+  children: ReactNode
   selectedIndex: number
 }) {
   const hasTabs = Children.count(children) > 1
@@ -210,7 +211,7 @@ function CodeGroupHeader({
 function CodeGroupPanels({
   children,
   ...props
-}: React.ComponentPropsWithoutRef<typeof CodePanel>) {
+}: ComponentPropsWithoutRef<typeof CodePanel>) {
   const hasTabs = Children.count(children) > 1
 
   if (hasTabs) {
@@ -309,7 +310,7 @@ export function CodeGroup({
   children,
   title,
   ...props
-}: React.ComponentPropsWithoutRef<typeof CodeGroupPanels> & { title: string }) {
+}: ComponentPropsWithoutRef<typeof CodeGroupPanels> & { title: string }) {
   const languages =
     Children.map(children, child =>
       getPanelTitle(isValidElement(child) ? child.props : {})
@@ -348,10 +349,7 @@ export function CodeGroup({
   )
 }
 
-export function Code({
-  children,
-  ...props
-}: React.ComponentPropsWithoutRef<'code'>) {
+export function Code({ children, ...props }: ComponentPropsWithoutRef<'code'>) {
   const isGrouped = useContext(CodeGroupContext)
 
   if (isGrouped) {
@@ -369,7 +367,7 @@ export function Code({
 export function Pre({
   children,
   ...props
-}: React.ComponentPropsWithoutRef<typeof CodeGroup>) {
+}: ComponentPropsWithoutRef<typeof CodeGroup>) {
   const isGrouped = useContext(CodeGroupContext)
 
   if (isGrouped) {

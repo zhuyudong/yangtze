@@ -3,6 +3,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { motion } from 'framer-motion'
 import { usePathname, useSearchParams } from 'next/navigation'
+import type { ComponentPropsWithoutRef } from 'react'
 import {
   createContext,
   Fragment,
@@ -16,7 +17,7 @@ import { create } from 'zustand'
 import { Header } from '@/components/Header'
 import { Navigation } from '@/components/Navigation'
 
-function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function MenuIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       viewBox="0 0 10 9"
@@ -30,7 +31,7 @@ function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function XIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       viewBox="0 0 10 9"

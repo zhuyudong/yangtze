@@ -1,7 +1,6 @@
-import '@/styles/tailwind.css'
-
 import { type Metadata } from 'next'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
+import type { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: {
@@ -36,9 +35,10 @@ export default async function RootLayout({
   children,
   params
 }: {
-  children: React.ReactNode
+  children: ReactNode
   params: { locale: string }
 }) {
+  console.log('RootLayout', params)
   // Validate that the incoming `locale` parameter is valid
   // if (!AppConfig.locales.includes(props.params.locale)) notFound();
 

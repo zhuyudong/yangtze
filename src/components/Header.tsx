@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Link from 'next/link'
+import type { CSSProperties, ReactNode } from 'react'
 import { forwardRef } from 'react'
 
 import { Button } from '@/components/Button'
@@ -18,7 +19,7 @@ export function TopLevelNavItem({
   children
 }: {
   href: string
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <li>
@@ -59,7 +60,7 @@ export const Header = forwardRef<
         {
           '--bg-opacity-light': bgOpacityLight,
           '--bg-opacity-dark': bgOpacityDark
-        } as React.CSSProperties
+        } as CSSProperties
       }
     >
       <div

@@ -1,4 +1,6 @@
-export function ChatBubbleIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+import type { ComponentPropsWithoutRef } from 'react'
+
+export function ChatBubbleIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 20 20" aria-hidden="true" {...props}>
       <path

@@ -1,7 +1,8 @@
 import { auth } from '@clerk/nextjs'
 import { redirect } from 'next/navigation'
+import type { ReactNode } from 'react'
 
-export default function CenteredLayout(props: { children: React.ReactNode }) {
+export default function CenteredLayout(props: { children: ReactNode }) {
   const { userId } = auth()
 
   if (userId) {

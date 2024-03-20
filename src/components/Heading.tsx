@@ -2,13 +2,14 @@
 
 import { useInView } from 'framer-motion'
 import Link from 'next/link'
+import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import { useEffect, useRef } from 'react'
 
 import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
 import { remToPx } from '@/libs/remToPx'
 
-function AnchorIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function AnchorIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       viewBox="0 0 20 20"
@@ -47,7 +48,7 @@ function Anchor({
 }: {
   id: string
   inView: boolean
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <Link
@@ -73,7 +74,7 @@ export function Heading<Level extends 2 | 3>({
   level,
   anchor = true,
   ...props
-}: React.ComponentPropsWithoutRef<`h${Level}`> & {
+}: ComponentPropsWithoutRef<`h${Level}`> & {
   id: string
   tag?: string
   label?: string
