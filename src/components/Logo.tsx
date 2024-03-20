@@ -5,12 +5,12 @@ import Yangtze from '@/assets/images/Yangtze.svg'
 
 // eslint-disable-next-line unused-imports/no-unused-vars
 export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
-  // -mt-42 tailwind.config.ts extend margin
+  // -mt-32 tailwind.config.ts extend margin
   return (
     <Image
       src={Yangtze}
       alt=""
-      className="-mt-42 h-32 w-64"
+      className="-mt-32 h-32 w-64"
       unoptimized
       // NOTE: https://nextjs.org/docs/pages/api-reference/components/image#priority
       priority

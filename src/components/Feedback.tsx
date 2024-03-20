@@ -1,9 +1,10 @@
 'use client'
 
 import { Transition } from '@headlessui/react'
+import type { ComponentPropsWithoutRef, ElementRef } from 'react'
 import { forwardRef, Fragment, useState } from 'react'
 
-function CheckIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function CheckIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 20 20" aria-hidden="true" {...props}>
       <circle cx="10" cy="10" r="10" strokeWidth="0" />
@@ -19,7 +20,7 @@ function CheckIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 function FeedbackButton(
-  props: Omit<React.ComponentPropsWithoutRef<'button'>, 'type' | 'className'>
+  props: Omit<ComponentPropsWithoutRef<'button'>, 'type' | 'className'>
 ) {
   return (
     <button
@@ -31,8 +32,8 @@ function FeedbackButton(
 }
 
 const FeedbackForm = forwardRef<
-  React.ElementRef<'form'>,
-  Pick<React.ComponentPropsWithoutRef<'form'>, 'onSubmit'>
+  ElementRef<'form'>,
+  Pick<ComponentPropsWithoutRef<'form'>, 'onSubmit'>
 >(function FeedbackForm({ onSubmit }, ref) {
   return (
     <form
@@ -52,7 +53,7 @@ const FeedbackForm = forwardRef<
   )
 })
 
-const FeedbackThanks = forwardRef<React.ElementRef<'div'>>(
+const FeedbackThanks = forwardRef<ElementRef<'div'>>(
   function FeedbackThanks(_props, ref) {
     return (
       <div

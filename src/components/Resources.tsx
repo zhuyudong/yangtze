@@ -13,6 +13,8 @@ import { Heading } from '@/components/Heading'
 import { MapPinIcon } from '@/components/icons/MapPinIcon'
 import { UserIcon } from '@/components/icons/UserIcon'
 
+import { BookIcon } from './icons/BookIcon'
+
 interface IResource {
   href: string
   name: string
@@ -35,6 +37,19 @@ const resources: Array<IResource> = [
       squares: [
         [0, 1],
         [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/poetry',
+    name: '诗词 - 陶冶情操',
+    description: '',
+    icon: BookIcon,
+    pattern: {
+      y: 32,
+      squares: [
+        [0, 2],
+        [1, 4]
       ]
     }
   },

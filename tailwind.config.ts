@@ -27,7 +27,7 @@ export default {
     typography: typographyStyles,
     extend: {
       margin: {
-        '-42': '-42px'
+        '-32': '-32px'
       },
       boxShadow: {
         glow: '0 0 4px rgb(0 0 0 / 0.1)'

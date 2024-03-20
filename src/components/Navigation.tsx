@@ -261,13 +261,15 @@ export const navigation: Array<NavGroup> = [
       { title: 'Python 代码检查与格式化', href: '/python-lint' },
       { title: 'Redis', href: '/redis' },
       { title: 'MongoDB 常用语句', href: '/mongo' },
-      { title: 'AIGC', href: '/AIGC' },
-      { title: '诗词', href: '/poetry' }
+      { title: 'AIGC', href: '/AIGC' }
     ]
   },
   {
     title: '资源',
-    links: []
+    links: [
+      { title: '诗词', href: '/poetry' },
+      { title: '壁纸', href: '/wallpaper' }
+    ]
   }
 ]
 
