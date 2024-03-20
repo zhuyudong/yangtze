@@ -1,0 +1,15 @@
+# Redis
+
+## 如何进入 redis docker 容器
+
+```bash
+$ docker exec -it redis-local /bin/bash
+root@aeb61477521e:/data# redis-cli
+127.0.0.1:6379> keys *
+3) "session:6234a6f1-7c72-4229-b785-27f29048f535"
+> HGET SCHEDULER_SWITCH TaskMonitor
+> HSET SCHEDULER_SWITCH TaskMonitor '1'
+127.0.0.1:6379> quit
+root@aeb61477521e:/data# exit
+exit
+```

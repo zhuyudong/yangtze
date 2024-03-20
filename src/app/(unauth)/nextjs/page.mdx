@@ -178,3 +178,36 @@ export default async function Profile({ params }) {
   - `entries()`
   - `forEach()`
   - `toString()`
+
+### 如何忽略部分类型文件的编译
+
+安装所需依赖
+
+```bash
+pnpm i @types/webpack ignore-loader -D
+```
+
+忽略 .py 文件
+
+> next.config.mjs
+
+```js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  //...
+  /**
+   *
+   * @param {import('webpack').Configuration} config
+   * @param {import('next/dist/server/config-shared').WebpackConfigContext} context
+   * @returns {import('webpack').Configuration}
+   */
+  webpack: (config, context) => {
+    // NOTE: ignore python files
+    config.module.rules.push({
+      test: /\.py$/,
+      loader: 'ignore-loader'
+    })
+    return config
+  }
+}
+```

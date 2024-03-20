@@ -255,12 +255,14 @@ export const navigation: Array<NavGroup> = [
       { title: 'React APIs', href: '/react-apis' },
       { title: '@tanstack/react-table', href: '/tanstack__react-table' },
       { title: '@tanstack/react-query', href: '/tanstack__react-query' },
+      { title: 'Python Snippets', href: '/python' },
       { title: 'Python 环境管理', href: '/python-environment' },
       { title: 'FastAPI', href: '/python-fastapi' },
       { title: 'Python 代码检查与格式化', href: '/python-lint' },
+      { title: 'Redis', href: '/redis' },
       { title: 'MongoDB 常用语句', href: '/mongo' },
       { title: 'AIGC', href: '/AIGC' },
-      { title: 'china 诗词', href: '/poetry' }
+      { title: '诗词', href: '/poetry' }
     ]
   },
   {

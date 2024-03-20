@@ -1,20 +1,20 @@
 # Python 环境管理
 
-## 使用 Anaconda
+## Anaconda 使用
 
-1. 创建本项目 Python 依赖环境
+1. 创建本项目名为 yangtze 的 Python 依赖环境
 
 ```bash
-conda create --name yangtze_backend python=3.11
+conda create --name yangtze python=3.11
 ```
 
 2. 激活本依赖环境
 
 ```bash
-conda activate yangtze_backend
+conda activate yangtze
 ```
 
-安装依赖
+3. 安装依赖
 
 ```bash
 conda install numpy=1.18.1
@@ -22,83 +22,48 @@ conda install numpy=1.18.1
 conda install -c conda-forge some-package
 ```
 
-使用已存在的包含依赖项的环境文件
+4. 使用已存在的包含依赖项的环境文件[可选]
 
 ```bash
 conda env create -f environment.yml
 ```
 
-更新环境
+5. 更新环境
 
 ```bash
 conda env update -f environment.yml
 ```
 
-列出环境的包
+6. 列出环境的包
 
 ```bash
 conda list
 ```
 
-删除本项目 Python 依赖环境
+7. 删除本项目 Python 依赖环境
 
 ```bash
 conda env list
-conda remove --name yangtze_backend --all
+conda remove --name yangtze --all
 ```
 
-#### Anaconda 使用
+## 使用 poetry
 
-1. 创建本项目 Python 依赖环境
+1. 初始化，生成 pyproject.toml
 
 ```bash
-conda create --name yangtze_backend python=3.11
+poetry init
 ```
 
-2. 激活本依赖环境
+2. 自动根据 pyproject.toml 安装所需依赖
 
 ```bash
-conda activate yangtze_backend
+poetry install
 ```
 
-安装依赖
+3. 切换 Python 版本（可选）
 
-```bash
-conda install numpy=1.18.1
-# 安装不在 conda 默认通道的包
-conda install -c conda-forge some-package
-```
-
-使用已存在的包含依赖项的环境文件
-
-```bash
-conda env create -f environment.yml
-```
-
-更新环境
-
-```bash
-conda env update -f environment.yml
-```
-
-列出环境的包
-
-```bash
-conda list
-```
-
-删除本项目 Python 依赖环境
-
-```bash
-conda env list
-conda remove --name yangtze_backend --all
-```
-
-- [如何安装 Python](./install-python.md)
-
-#### 切换 Python 版本
-
-修改 pyproject.toml 中的 Python 版本为 3.9
+例如修改 pyproject.toml 中的 Python 版本为 3.9
 
 ```bash
 poetry env use /usr/local/bin/python3.9
@@ -111,8 +76,8 @@ poetry env use $(which python3.9)
 输出
 
 ```bash
-Creating virtualenv yangtze_backend-UgZ9keo--py3.11 in /home/qj00304/.cache/pypoetry/virtualenvs
-Using virtualenv: /home/qj00304/.cache/pypoetry/virtualenvs/yangtze_backend-UgZ9keo--py3.11
+Creating virtualenv yangtze-UgZ9keo--py3.11 in /home/qj00304/.cache/pypoetry/virtualenvs
+Using virtualenv: /home/qj00304/.cache/pypoetry/virtualenvs/yangtze-UgZ9keo--py3.11
 ```
 
 然后重新执行 `poetry install`
@@ -124,7 +89,7 @@ Using virtualenv: /home/qj00304/.cache/pypoetry/virtualenvs/yangtze_backend-UgZ9
 ```bash
 poetry env info
 poetry env list
-poetry env remove yangtze_backend-UgZ9keo--py3.11
+poetry env remove yangtze-UgZ9keo--py3.11
 poetry env remove --all
 ```
 
@@ -140,23 +105,4 @@ pip-upgrade requirements/base.txt --skip-virtualenv-check
 
 ```bash
 cat requirements/base.txt | xargs poetry add
-```
-
-#### Redis
-
-```bash
-docker exec -it redis-local /bin/bash
-> redis-cli
-# AtlasTaskMonitor
-# AirflowScheduler
-# BuildImageScheduler
-# CodeCoverageScheduler
-# RoadTestingTranslationScheduler
-# PncNewTaskScheduler
-# PncRunningTaskScheduler
-# TriggerRefreshScheduler
-# AtlasReleaseMonitor
-# AtlasTaskMonitor
-> HGET SCHEDULER_SWITCH AtlasTaskMonitor
-> HSET SCHEDULER_SWITCH AtlasTaskMonitor '1'
 ```
