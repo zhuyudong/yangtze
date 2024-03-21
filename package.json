@@ -17,7 +17,7 @@
     "dev": "next dev",
     "dev:p": "run-p dev:*",
     "dev:spotlight": "spotlight-sidecar",
-    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
+    "format": "next lint --fix && prettier '**/*.{js,jsx,ts,tsx,json,yaml}' --write --ignore-path .gitignore",
     "lint": "next lint",
     "prepare": "npx husky",
     "start": "next start"
