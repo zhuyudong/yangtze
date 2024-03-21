@@ -1,5 +1,5 @@
 """
-cd src/app/(unauth)/python
+cd src/app/[locale]/(unauth)/python
 python crawl_bing_wallpaper.py
 """
 
