@@ -71,7 +71,7 @@
     ".mypy_cache/": true,
     "**/.history": true,
     "**/__pycache__": true
-  },
-  "i18n-ally.localesPaths": ["src/locals"]
+  }
+  // "i18n-ally.localesPaths": ["src/locals"]
   // "i18n-ally.keystyle": "nested"
 }

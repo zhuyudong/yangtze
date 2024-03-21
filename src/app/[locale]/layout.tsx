@@ -1,6 +1,9 @@
 import { type Metadata } from 'next'
+import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import type { ReactNode } from 'react'
+
+import { AppConfig } from '@/utils/AppConfig'
 
 export const metadata: Metadata = {
   title: {
@@ -31,16 +34,15 @@ export const metadata: Metadata = {
   ]
 }
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
   params
 }: {
   children: ReactNode
   params: { locale: string }
 }) {
-  console.log('RootLayout', params)
   // Validate that the incoming `locale` parameter is valid
-  // if (!AppConfig.locales.includes(props.params.locale)) notFound();
+  if (!AppConfig.locales.includes(params.locale)) notFound()
 
   // Using internationalization in Client Components
   const messages = useMessages()

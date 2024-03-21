@@ -35,8 +35,8 @@ export const config = {
   matcher: [
     '/((?!.+\\.[\\w]+$|_next).*)',
     '/',
-    '/(api|trpc)(.*)',
+    '/(api|trpc)(.*)'
     // Match only internationalized pathnames
-    '/(zh-CN|en)/:path*'
+    // '/(zh-CN|en)/:path*'
   ]
 }

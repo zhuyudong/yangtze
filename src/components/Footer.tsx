@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import type { ComponentPropsWithoutRef, ComponentType, ReactNode } from 'react'
 
 import { Button } from '@/components/Button'
-import { navigation } from '@/components/Navigation'
+import { navigation } from '@/libs/navigation'
 
 function PageLink({
   label,

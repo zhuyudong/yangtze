@@ -5,7 +5,7 @@ import Link from 'next/link'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import { useEffect, useRef } from 'react'
 
-import { useSectionStore } from '@/components/SectionProvider'
+// import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
 import { remToPx } from '@/libs/remToPx'
 
@@ -84,7 +84,7 @@ export function Heading<Level extends 2 | 3>({
   level = level ?? (2 as Level)
   const Component = `h${level}` as 'h2' | 'h3'
   const ref = useRef<HTMLHeadingElement>(null)
-  const registerHeading = useSectionStore(s => s.registerHeading)
+  // const registerHeading = useSectionStore(s => s.registerHeading)
 
   const inView = useInView(ref, {
     margin: `${remToPx(-3.5)}px 0px 0px 0px`,
@@ -93,7 +93,7 @@ export function Heading<Level extends 2 | 3>({
 
   useEffect(() => {
     if (level === 2) {
-      registerHeading({ id: props.id, ref, offsetRem: tag || label ? 8 : 6 })
+      // registerHeading({ id: props.id, ref, offsetRem: tag || label ? 8 : 6 })
     }
   })
 
