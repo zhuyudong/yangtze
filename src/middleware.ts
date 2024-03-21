@@ -16,14 +16,14 @@ const intlMiddleware = createMiddleware({
 export default authMiddleware({
   publicRoutes: (req: NextRequest) =>
     !req.nextUrl.pathname.includes('/dashboard'),
-
-  beforeAuth: req => {
+  // ignoredRoutes: ['/(.*\\..*)(.*)', '/(_next)(.*)'],
+  beforeAuth: (req: NextRequest) => {
     // Execute next-intl middleware before Clerk's auth middleware
     return intlMiddleware(req)
   },
 
   // eslint-disable-next-line consistent-return
-  afterAuth(auth, req) {
+  afterAuth(auth: { userId: any; isPublicRoute: any }, req: { url: any }) {
     // Handle users who aren't authenticated
     if (!auth.userId && !auth.isPublicRoute) {
       return redirectToSignIn({ returnBackUrl: req.url })

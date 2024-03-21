@@ -1,4 +1,5 @@
-import { auth } from '@clerk/nextjs'
+// https://github.com/orgs/clerk/discussions/2721
+import { auth } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
 import type { ReactNode } from 'react'
 
