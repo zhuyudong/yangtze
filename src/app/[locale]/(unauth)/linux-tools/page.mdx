@@ -1,0 +1,74 @@
+# Linux
+
+## Homebrew
+
+默认安装目录在 `/opt/homebrew`
+
+[Homebrew](https://brew.sh/) 如何加速？
+
+```bash
+brew update
+brew cleanup
+```
+
+### 使用 Homebrew 安装常用软件
+
+安装和更新 [pipx](https://pipx.pypa.io/stable/installation/)
+
+```bash
+brew install pipx
+brew upgrade pipx
+pipx --version
+```
+
+## apt
+
+```bash
+sudo apt update
+apt list --upgradable
+sudo apt upgrade
+
+
+```
+
+### pipx
+
+```bash
+sudo apt install pipx
+pipx ensurepath
+
+pipx install <package_name>
+pipx install cowsay
+pipx install package==version
+pipx install numpy==1.24.1
+
+pipx install pypisearch
+pypisearch <python_package_name>
+
+pipx upgrade-all
+pipx upgrade <package_name>
+pipx upgrade cowsay
+
+pipx uninstall <package_name>
+pipx uninstall numpy
+```
+
+## Linux 常用命令
+
+查看端口占用情况
+
+```bash
+sudo lsof -i -P -n | grep LISTEN
+```
+
+递归删除所有子目录中 node_modules 文件夹
+
+```bash
+find . -name "node_modules" -type d -prune -exec rm -rf {} \;
+```
+
+递归删除所有子目录中 tsconfig.tsbuildinfo 文件
+
+```bash
+find . -name "tsconfig.tsbuildinfo" -type f -prune -exec rm -rf {} \;
+```

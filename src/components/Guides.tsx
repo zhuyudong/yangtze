@@ -13,7 +13,7 @@ const guides: { href: string; name: string; description: string }[] = [
     description: '关于 Python 的一切'
   },
   {
-    href: '/linux',
+    href: '/awesome-linux',
     name: '服务器',
     description: 'Linux 常用命令与工具'
   },

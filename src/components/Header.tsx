@@ -4,7 +4,7 @@ import Link from 'next/link'
 import type { CSSProperties, ElementRef, ReactNode } from 'react'
 import { forwardRef } from 'react'
 
-import { Button } from '@/components/Button'
+// import { Button } from '@/components/Button'
 import { Logo } from '@/components/Logo'
 import {
   MobileNavigation,
@@ -33,8 +33,21 @@ export function TopLevelNavItem({
   )
 }
 
+// export async function generateMetadata(props: { params: { locale: string } }) {
+//   const t = await getTranslations({
+//     locale: props.params.locale,
+//     namespace: 'RootLayout'
+//   })
+
+//   return {
+//     title: t('sign_in_link')
+//   }
+// }
+
 export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
   function Header({ className }, ref) {
+    // const t = getTranslations('RootLayout')
+
     const { isOpen: mobileNavIsOpen } = useMobileNavigationStore()
     const isInsideMobileNavigation = useIsInsideMobileNavigation()
 
@@ -88,9 +101,10 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
             <MobileSearch />
             <ThemeToggle />
           </div>
-          <div className="hidden min-[416px]:contents">
-            <Button href="/sign-in">登录</Button>
-          </div>
+          {/* TODO */}
+          {/* <div className="hidden min-[416px]:contents">
+            <Button href="/sign-in">{t('sign_in_link')}</Button>
+          </div> */}
         </div>
       </motion.div>
     )

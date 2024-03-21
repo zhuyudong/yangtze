@@ -232,6 +232,8 @@ function NavigationGroup({
 }
 
 export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
+  // const t = getTranslations('RootLayout')
+
   return (
     <nav {...props}>
       <ul role="list">
@@ -247,6 +249,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
         ))}
         <li className="sticky bottom-0 z-10 mt-6 min-[416px]:hidden">
           <Button href="/sign-in" variant="filled" className="w-full">
+            {/* {t('sign_in_link')} */}
             登录
           </Button>
         </li>

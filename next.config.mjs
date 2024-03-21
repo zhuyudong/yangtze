@@ -25,6 +25,15 @@ const withMDX = nextMDX({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  eslint: {
+    dirs: ['.']
+  },
+  poweredByHeader: false,
+  reactStrictMode: true,
+  experimental: {
+    // Related to Pino error with RSC: https://github.com/orgs/vercel/discussions/3150
+    serverComponentsExternalPackages: ['pino']
+  },
   // https://nextjs.org/docs/messages/next-image-unconfigured-host
   images: {
     remotePatterns: [
@@ -53,10 +62,10 @@ const nextConfig = {
     // if (process.env.NEXT_OUTPUT_MODE !== 'export' || !config.module) {
     //   return config
     // }
-    const { isServer } = context
-    if (!isServer) {
-      config.resolve.fallback.fs = false
-    }
+    // const { isServer } = context
+    // if (!isServer) {
+    //   config.resolve.fallback.fs = false
+    // }
     // config.externals is needed to resolve the following errors:
     // Module not found: Can't resolve 'bufferutil'
     // Module not found: Can't resolve 'utf-8-validate'

@@ -9,7 +9,6 @@ export default function AuthLayout({
   children: ReactNode
   params: { locale: string }
 }) {
-  console.log('AuthLayout', params)
   let clerkLocale = zhCN
   let signInUrl = '/sign-in'
   let signUpUrl = '/sign-up'
