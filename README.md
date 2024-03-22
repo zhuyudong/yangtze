@@ -64,5 +64,6 @@ or `vim ~/.config/pip/pip.conf`
 - [pnpm](https://pnpm.io/)
 - [Better Stack](https://betterstack.com/)
 - [zeabur](https://zeabur.com/docs/zh-CN/guides/nodejs)
+- [zeabur serverless](https://zeabur.com/docs/zh-CN/deploy/serverless)
 - [yet-another-react-lightbox](https://yet-another-react-lightbox.com/)
 - [dockerhub](https://hub.docker.com/_/node/tags)
