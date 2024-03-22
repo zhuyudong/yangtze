@@ -18,7 +18,7 @@ export default function AuthLayout({
     clerkLocale = enUS
   }
 
-  if (params.locale !== 'en') {
+  if (params.locale !== 'zh-CN') {
     signInUrl = `/${params.locale}${signInUrl}`
     signUpUrl = `/${params.locale}${signUpUrl}`
     dashboardUrl = `/${params.locale}${dashboardUrl}`
