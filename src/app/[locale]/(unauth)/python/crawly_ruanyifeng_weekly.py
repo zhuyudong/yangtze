@@ -73,9 +73,9 @@ def crawler():
     files = {category: [] for category in categories_en}
     # keys = list(files.keys())
     for issue in issues:
-        file_path = os.getcwd() + f"/issues/{issue}.mdx"
+        file_path = os.path.dirname(os.getcwd()) + f"/weekly-issues/{issue}.mdx"
         if os.path.exists(file_path):
-            with open(os.getcwd() + f"/issues/{issue}.mdx", "r") as f:
+            with open(file_path, "r") as f:
                 # lines = f.readlines()
                 text = f.read()
                 files_by_category(text, files)
@@ -85,7 +85,7 @@ def crawler():
             )
             if res.ok:
                 text = res.text
-                with open(os.getcwd() + f"/issues/{issue}.mdx", "w") as f:
+                with open(file_path, "w") as f:
                     f.write(text)
                     console(f"issue-{issue} saved.")
                 files_by_category(text, files)
@@ -98,7 +98,12 @@ def crawler():
 def write_mdxs():
     files = crawler()
     for file_category, content in files.items():
-        with open(os.getcwd() + f"/issues_by_category/{file_category}.mdx", "w") as f:
+        directory = (
+            os.path.dirname(os.getcwd()) + f"/weekly-by-category/{file_category}"
+        )
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        with open(f"{directory}/page.mdx", "w") as f:
             _content = "\n".join(content)
             # remove <!----> comments
             _content = re.sub(r"<!--(.*?)-->", "", _content, flags=re.DOTALL)
@@ -112,7 +117,9 @@ def write_mdxs():
             _content = re.sub(r"<(\d+)", r"< \1", _content)
             # TODO: ></source> -> />
             f.write(_content)
-            console(f"{file_category} saved.")
+            console(
+                f"src/app/[locale]/(unauth)/weekly-by-category/{file_category}/page.mdx saved."
+            )
 
 
 def add_index():
