@@ -3,8 +3,8 @@ FROM node:20-slim AS deps
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-ENV NODE_ENV=production \
-  APP_PATH=/app
+# ENV NODE_ENV=production \
+#   APP_PATH=/app
 RUN corepack enable
 
 # FIXME
@@ -29,7 +29,7 @@ RUN npm run build
 FROM node:20-slim AS runner
 WORKDIR /app
 
-ENV NODE_ENV=production
+# ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
 
