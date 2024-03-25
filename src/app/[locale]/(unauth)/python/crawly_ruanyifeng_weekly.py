@@ -19,10 +19,11 @@ def get_issues():
     获取 issues
     """
     res = requests.get("https://github.com/ruanyf/weekly")
-    # ["262", ...]
+    # ["294", ...]
     issues = re.findall(
         r"href=\"/ruanyf/weekly/blob/master/docs/issue-(\d+).md\"", res.text
     )
+    console(issues)
     return issues
 
 
@@ -42,16 +43,20 @@ def crawler():
         res = requests.get(
             f"https://raw.githubusercontent.com/ruanyf/weekly/master/docs/issue-{issue}.md"
         )
-        text = res.text
-        with open(os.getcwd() + f"/issues/{issue}.md", "w") as f:
-            f.write(text)
-        categories = text.split("##")
-        for category in categories:
-            for key in keys:
-                if category.strip().startswith(key):
-                    files[key].append(
-                        re.sub(r"\d、", "", category.strip().replace(key, ""))
-                    )
+        if res.ok:
+            text = res.text
+            with open(os.getcwd() + f"/issues/{issue}.md", "w") as f:
+                f.write(text)
+                console(f"issue-{issue} saved.")
+            categories = text.split("##")
+            for category in categories:
+                for key in keys:
+                    if category.strip().startswith(key):
+                        files[key].append(
+                            re.sub(r"\d、", "", category.strip().replace(key, ""))
+                        )
+        else:
+            console(f"issue-{issue} not found.")
         # 本地读取 #
         # with open(os.getcwd() + f"/issues/{issue}.md", "r") as f:
         #     # lines = f.readlines()
@@ -111,5 +116,4 @@ def add_index():
 
 
 if __name__ == "__main__":
-    write_mds()
     add_index()
