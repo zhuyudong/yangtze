@@ -15,10 +15,12 @@ export function Prose<T extends ElementType = 'div'>({
     <Component
       className={clsx(
         className,
-        'prose dark:prose-invert',
+        'prose text-lg dark:prose-invert',
         // NOTE: prose max-width
         // `html :where(& > *)` is used to select all direct children without an increase in specificity like you'd get from just `& > *`
-        '[html_:where(&>*)]:mx-auto [html_:where(&>*)]:max-w-2xl [html_:where(&>*)]:lg:mx-[calc(50%-min(50%,theme(maxWidth.lg)))] [html_:where(&>*)]:lg:max-w-3xl'
+        // [html_:where(&>*)]:lg:mx-[calc(50%-min(50%,theme(maxWidth.lg)))] [html_:where(&>*)]:lg:max-w-3xl ->
+        // [html_:where(&>*)]:lg:mx-auto [html_:where(&>*)]:lg:max-w-screen-lg
+        '[html_:where(&>*)]:mx-auto [html_:where(&>*)]:max-w-2xl [html_:where(&>*)]:lg:mx-auto [html_:where(&>*)]:lg:max-w-screen-lg'
       )}
       {...props}
     />

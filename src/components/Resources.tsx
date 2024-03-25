@@ -66,6 +66,110 @@ const resources: Array<IResource> = [
         [1, 3]
       ]
     }
+  },
+  {
+    href: '/weekly-by-category/images',
+    name: '图片',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/articles',
+    name: '文章',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/excerpts',
+    name: '文摘',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/news',
+    name: '新闻',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/quotations',
+    name: '言论',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/resources',
+    name: '资源',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/technology-news',
+    name: '科技动态',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/tools',
+    name: '工具',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
   }
 ]
 
@@ -159,7 +263,8 @@ function Resource({ resource }: { resource: IResource }) {
 
 export function Resources() {
   return (
-    <div className="my-16 xl:max-w-none">
+    // remove xl:max-w-none
+    <div className="my-16">
       <Heading level={2} id="resources">
         资源
       </Heading>

@@ -7,3 +7,6 @@ out
 coverage
 storybook-static
 test-results
+
+src/app/[locale]/(unauth)/python/issues/106.mdx
+src/app/[locale]/(unauth)/python/issues_by_category/news.mdx
