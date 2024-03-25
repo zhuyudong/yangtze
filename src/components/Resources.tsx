@@ -66,6 +66,110 @@ const resources: Array<IResource> = [
         [1, 3]
       ]
     }
+  },
+  {
+    href: '/weekly-by-category/images',
+    name: '图片',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/articles',
+    name: '文章',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/excerpts',
+    name: '文摘',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/news',
+    name: '新闻',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/quotations',
+    name: '言论',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/resources',
+    name: '资源',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/technology-news',
+    name: '科技动态',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/weekly-by-category/tools',
+    name: '工具',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
   }
 ]
 
