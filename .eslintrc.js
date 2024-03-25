@@ -203,7 +203,9 @@ module.exports = {
         'react/jsx-no-undef': 'warn',
         'react/jsx-sort-props': 'error',
         'react/no-unescaped-entities': 'warn',
-        'react/self-closing-comp': 'off'
+        'react/self-closing-comp': 'off',
+        'jsx-a11y/alt-text': 'off',
+        '@next/next/no-img-element': 'off'
       }
     },
     {
