@@ -263,7 +263,8 @@ function Resource({ resource }: { resource: IResource }) {
 
 export function Resources() {
   return (
-    <div className="my-16 xl:max-w-none">
+    // xl:max-w-none
+    <div className="my-16">
       <Heading level={2} id="resources">
         资源
       </Heading>
