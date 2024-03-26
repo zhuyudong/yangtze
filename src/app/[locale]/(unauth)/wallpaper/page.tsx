@@ -16,9 +16,9 @@ import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
 import Zoom from 'yet-another-react-lightbox/plugins/zoom'
 
-import data from '@/app/[locale]/(unauth)/python/bing_wallpaper.json'
 // import Inline from "yet-another-react-lightbox/plugins/inline"
 import NextJsImage from '@/components/NextJsImage'
+import data from '@/resources/bing_wallpaper.json'
 
 // const slides = [
 //   {
@@ -68,7 +68,8 @@ export default function WallpaperLightbox() {
             alt=""
             key={i.title}
             data-index={ix}
-            src={i.image_url}
+            // src={i.image_url}
+            src={i.url}
             className="block w-full cursor-pointer"
             onClick={handleChangeIndex}
           />
@@ -81,7 +82,8 @@ export default function WallpaperLightbox() {
         close={() => setIndex(null)}
         // slides={slides}
         slides={data.map(i => ({
-          src: i.image_url,
+          // src: i.image_url,
+          src: i.url,
           title: `${i.headline}[${i.title}]`,
           description: `${i.main_text}。${i.description}`
         }))}

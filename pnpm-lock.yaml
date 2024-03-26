@@ -119,6 +119,9 @@ dependencies:
   konva:
     specifier: ^9.3.6
     version: 9.3.6
+  lightgallery:
+    specifier: ^2.7.2
+    version: 2.7.2
   mdast-util-to-string:
     specifier: ^4.0.0
     version: 4.0.0
@@ -11594,6 +11597,15 @@ packages:
       '@libsql/linux-x64-gnu': 0.3.10
       '@libsql/linux-x64-musl': 0.3.10
       '@libsql/win32-x64-msvc': 0.3.10
+    dev: false
+
+  /lightgallery@2.7.2:
+    resolution:
+      {
+        integrity: sha512-Ewdcg9UPDqV0HGZeD7wNE4uYejwH2u0fMo5VAr6GHzlPYlhItJvjhLTR0cL0V1HjhMsH39PAom9iv69ewitLWw==,
+        tarball: https://registry.npmjs.org/lightgallery/-/lightgallery-2.7.2.tgz
+      }
+    engines: { node: '>=6.0.0' }
     dev: false
 
   /lilconfig@2.1.0:
