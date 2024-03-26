@@ -1,9 +1,23 @@
+import clsx from 'clsx'
 import { type Metadata } from 'next'
+import { Inter as FontSans } from 'next/font/google'
+import localFont from 'next/font/local'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import type { ReactNode } from 'react'
 
+// import { getCurrentUser } from "@/lib/session"
 import { AppConfig } from '@/utils/AppConfig'
+// import { UserInfo } from '@/types/user'
+
+const fontHeading = localFont({
+  src: '../../assets/fonts/CalSans-SemiBold.woff2',
+  variable: '--font-heading'
+})
+export const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans'
+})
 
 export const metadata: Metadata = {
   title: {
@@ -47,9 +61,17 @@ export default function RootLayout({
   // Using internationalization in Client Components
   const messages = useMessages()
 
+  // const user = (await getCurrentUser()) as UserInfo;
+
   return (
     <html lang={params.locale} className="h-full" suppressHydrationWarning>
-      <body className="flex min-h-full justify-center bg-white antialiased dark:bg-zinc-900">
+      <body
+        className={clsx(
+          'bg-background flex min-h-full justify-center font-sans antialiased dark:bg-zinc-900',
+          fontSans.variable,
+          fontHeading.variable
+        )}
+      >
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           {children}
         </NextIntlClientProvider>

@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/libs/Env.mjs"
+    "src/libs/Env.mjs",
+    "node_modules/lemonsqueezy.ts/dist/index.d.ts"
   ],
   "exclude": ["node_modules"]
 }

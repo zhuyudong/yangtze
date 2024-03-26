@@ -1,8 +1,13 @@
 'use client'
 
-import { ThemeProvider, useTheme } from 'next-themes'
+import { SessionProvider } from 'next-auth/react'
+import { useTheme } from 'next-themes'
 import type { ReactNode } from 'react'
 import { useEffect } from 'react'
+import { Toaster } from 'react-hot-toast'
+
+import { TailwindIndicator } from '@/components/TailwindIndicator'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 function ThemeWatcher() {
   const { resolvedTheme, setTheme } = useTheme()
@@ -30,9 +35,11 @@ function ThemeWatcher() {
 
 export function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider attribute="class" disableTransitionOnChange>
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <ThemeWatcher />
-      {children}
+      <SessionProvider>{children}</SessionProvider>
+      <Toaster />
+      <TailwindIndicator />
     </ThemeProvider>
   )
 }
