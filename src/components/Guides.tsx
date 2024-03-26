@@ -31,7 +31,7 @@ const guides: { href: string; name: string; description: string }[] = [
 
 export function Guides() {
   return (
-    // xl:max-w-none
+    // remove xl:max-w-none
     <div className="my-16">
       <Heading level={2} id="guides">
         概览

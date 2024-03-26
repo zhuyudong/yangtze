@@ -39,6 +39,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'yangtze.zeabur.app',
+        port: '',
+        pathname: '/images/**'
+      },
+      {
+        protocol: 'https',
         hostname: 'cn.bing.com',
         port: '',
         pathname: '/th**'

@@ -1,5 +1,5 @@
 .yarl__slide_title {
-  font-size: 16px;
+  font-size: 15px;
 }
 .yarl__slide_description {
   font-size: 14px;
@@ -7,4 +7,36 @@
 
 .yarl__counter {
   left: auto;
+  font-size: 13px;
 }
+.yarl__slide_captions_container.yarl__slide_description_container {
+  padding-bottom: 0;
+}
+
+.yarl__thumbnails_thumbnail {
+  width: 84px;
+  height: 56px;
+}
+
+.lg-react-element {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .lg-react-element {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .lg-react-element {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .grid-item {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
