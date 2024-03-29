@@ -23,8 +23,8 @@ const guides: { href: string; name: string; description: string }[] = [
     description: 'MongoDB 常用语句'
   },
   {
-    href: '/AIGC',
-    name: 'AIGC',
+    href: '/aigc',
+    name: 'Artificial Intelligence Generated Content',
     description: 'AIGC 就是未来'
   }
 ]

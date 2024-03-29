@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres_db
+    restart: always
+    ports:
+      - '5432:5432'
+    expose:
+      - '5432'
+    env_file:
+      - ../.env
+    environment:
+      # POSTGRES_USER: ${POSTGRES_USER}
+      # POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      # POSTGRES_DB: ${POSTGRES_DB}
+      # NOTE: Uncomment the following line if you want to use trust authentication
+      POSTGRES_HOST_AUTH_METHOD: trust
+# docker-compose -f docker/docker-compose.pg.yaml up -d

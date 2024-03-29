@@ -31,7 +31,7 @@ export const navigation: Array<NavGroup> = [
       { title: 'Linux', href: '/awesome-linux' },
       { title: 'Redis', href: '/redis' },
       { title: 'MongoDB 常用语句', href: '/mongo' },
-      { title: 'AIGC', href: '/AIGC' }
+      { title: 'Artificial Intelligence Generated Content', href: '/aigc' }
     ]
   },
   {

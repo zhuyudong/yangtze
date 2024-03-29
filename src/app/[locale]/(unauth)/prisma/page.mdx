@@ -1,0 +1,125 @@
+# Prisma
+
+1. 安装依赖
+
+```bash
+pnpm i @prisma/client @next-auth/prisma-adapter
+pnpm i prisma -D
+```
+
+2. 初始化
+
+```bash
+npx prisma init
+```
+
+output
+
+```bash
+✔ Your Prisma schema was created at prisma/schema.prisma
+  You can now open it in your favorite editor.
+
+warn Prisma would have added DATABASE_URL but it already exists in .env
+warn You already have a .gitignore file. Don't forget to add `.env` in it to not commit any private information.
+
+Next steps:
+1. Set the DATABASE_URL in the .env file to point to your existing database. If your database has no tables yet, read https://pris.ly/d/getting-started
+2. Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
+3. Run prisma db pull to turn your database schema into a Prisma schema.
+4. Run prisma generate to generate the Prisma Client. You can then start querying your database.
+
+More information in our documentation:
+https://pris.ly/d/getting-started
+```
+
+3. 编辑 prisma/schema.prisma
+
+4. 生成 schema 对应的类型信息至 node_modules 中
+
+```bash
+npx prisma generate
+```
+
+5. 同步到数据库
+
+```bash
+npx prisma db push
+```
+
+6. 创建全局 prisma 对象
+
+> src/libs/prisma.ts
+
+```ts
+const globalForPrisma = global as unknown as { prisma: PrismaClient }
+
+export const prisma = globalForPrisma.prisma || new PrismaClient()
+
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
+```
+
+or
+
+```ts
+/* eslint-disable import/no-mutable-exports */
+import { PrismaClient } from '@prisma/client'
+
+let prisma: PrismaClient
+
+if (process.env.NODE_ENV === 'production') {
+  prisma = new PrismaClient()
+} else {
+  if (!global.prisma) {
+    global.prisma = new PrismaClient()
+  }
+  prisma = global.prisma
+}
+
+export default prisma
+```
+
+1. 数据初始化【可选】
+
+> prisma/seed.ts
+
+```ts
+import { prisma } from '@/libs/prisma'
+
+async function main() {
+  console.log(`Start seeding ...`)
+  // for (const u of userData) {
+  //   const user = await prisma.user.create({
+  //     data: u,
+  //   })
+  //   console.log(`Created user with id: ${user.id}`)
+  // }
+  console.log(`Seeding finished.`)
+}
+
+main()
+  .then(async () => {
+    await prisma.$disconnect()
+  })
+  .catch(async e => {
+    console.error(e)
+    await prisma.$disconnect()
+    process.exit(1)
+  })
+```
+
+8. 打开数据浏览与编辑可视化窗口【可选】
+
+```bash
+npx prisma studio
+```
+
+8. 将相关命令添加到 package.json
+
+```json
+{
+  "scripts": {
+    "db:init": "prisma generate && prisma db push",
+    "postinstall": "npm run db:init"
+  }
+}
+```
