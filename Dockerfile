@@ -1,6 +1,9 @@
 # Install dependencies only when needed
 FROM node:20-slim AS deps
 
+# prisma:warn Prisma failed to detect the libssl/openssl version to use, and may not work as expected. Defaulting to "openssl-1.1.x".
+RUN apt-get update -y && apt-get install -y openssl
+
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 # ENV NODE_ENV=production \
@@ -13,16 +16,16 @@ RUN corepack enable
 # RUN apk add --no-cache libc6-compat
 WORKDIR /app
 # WORKDIR ${APP_PATH}
-COPY package.json pnpm-lock.yaml ./
-
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+# .env
+COPY package.json pnpm-lock.yaml prisma ./
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile --registry https://registry.npmmirror.com
 
 # Rebuild the source code only when needed
 FROM deps AS builder
 WORKDIR /app
 COPY . .
 # COPY --from=deps /app/node_modules ./node_modules
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile --registry https://registry.npmmirror.com
 RUN npm run build
 
 # Production image, copy all the files and run next
@@ -57,5 +60,5 @@ CMD ["node_modules/.bin/next", "start"]
 # or
 # CMD ["pnpm", "start"]
 
-# 构建镜像 docker build -t yangtze-app:0.1.0 -f Dockerfile . 或 docker build -t yangtze-app:0.1.0 .
+# 构建镜像 docker build -t yangtze-app:0.1.0 -f Dockerfile . 或 docker build -t yangtze-app:0.1.0 . 或 docker build . -t yangtze-app:0.1.0
 # 运行镜像 docker run -p 3000:3000 yangtze-app:0.1.0

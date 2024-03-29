@@ -19,7 +19,7 @@
     "dev:spotlight": "spotlight-sidecar",
     "format": "prettier '**/*.{js,jsx,ts,tsx,json,yaml}' --write --ignore-path .gitignore",
     "lint": "next lint",
-    "prepare": "npx husky",
+    "prepare": "[ -d .git ] && npx husky || echo 'ignore husky'",
     "start": "next start",
     "db:init": "prisma generate && prisma db push",
     "postinstall": "npm run db:init"

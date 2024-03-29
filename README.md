@@ -1,5 +1,34 @@
 # yangtze
 
+## Build && Start
+
+`copy .env.example .env`
+
+### 使用 pnpm [本地]
+
+```bash
+pnpm build
+pnpm start
+```
+
+### 使用 docker [生产]
+
+构建镜像
+
+```bash
+docker build -t yangtze-app:0.1.0 -f Dockerfile .
+# or
+docker build -t yangtze-app:0.1.0 .
+# or
+docker build . -t yangtze-app:0.1.0
+```
+
+运行镜像
+
+```bash
+docker run -p 3000:3000 yangtze-app:0.1.0
+```
+
 ## Installation
 
 ```bash
