@@ -35,7 +35,7 @@
 
 其中 **"og"** 开头的符合 [Open Graph 协议](https://ogp.me/)，网站的自定义图标、robots.txt、sitemap.xml 等也是元数据
 
-### 如果生成元数据
+### 如何生成元数据
 
 无论是静态元数据还是动态元数据都只在服务端组件中支持，元数据一共有[这些字段](https://github.com/vercel/next.js/blob/canary/packages/next/src/lib/metadata/default-metadata.tsx)
 
@@ -211,3 +211,161 @@ const nextConfig = {
   }
 }
 ```
+
+## 客户端组件与服务端组件
+
+1. 服务端组件中使用的子组件可以使用 `'use client'` 吗？
+
+   可以，比如在 layout.tsx 中使用 next-auth 的 SessionProvider
+
+   ```tsx {{src/components/SessionProvider.tsx}}
+   'use client'
+   import { SessionProvider } from 'next-auth/react'
+
+   export default SessionProvider
+   ```
+
+## api
+
+**app/api/[...nextauth]/route.ts 等效于 app/api/[...nextauth].ts**
+
+### 如何写 api 中接口
+
+导出什么函数就接收什么类型 method 的请求
+
+> api/name/route.ts
+
+```ts {{GET /api/name}}
+import { NextResponse } from 'next/server'
+
+export async function GET() {
+  return NextResponse.json({ name: 'xxx' })
+}
+```
+
+使用 [next-auth](https://next-auth.js.org/) 获取当前用户信息
+
+> api/current/route.ts
+
+```ts
+import { getServerSession } from 'next-auth'
+import { NextResponse } from 'next/server'
+
+import { authOptions } from '../auth/[...nextauth]/route'
+
+export async function GET() {
+  const session = await getServerSession(authOptions)
+
+  return NextResponse.json({ name: session?.user?.name ?? 'Not Logged In' })
+}
+```
+
+`api/[...next-auth]/route.ts` 常见写法，注意需要确保使用的 Provider 对应的环境变量存在或者使用 [@t3-oss/env-nextjs](https://github.com/t3-oss/t3-env) 在启动时检查环境变量是否存在及其类型符合要求
+
+```ts
+import NextAuth from 'next-auth'
+import GitHubProvider from 'next-auth/providers/github'
+import GoogleProvider from 'next-auth/providers/google'
+
+export const authOptions = {
+  providers: [
+    GitHubProvider({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET
+    }),
+    GoogleProvider({
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      httpOptions: {
+        timeout: 50000
+      }
+    })
+  ]
+}
+
+export const handler = NextAuth(authOptions)
+
+export { handler as GET, handler as POST }
+```
+
+关于 `api/[...next-auth]/route.ts` 复杂一点的例子
+
+```ts
+import { PrismaAdapter } from '@next-auth/prisma-adapter'
+// import { compare } from 'bcrypt'
+import type { NextApiHandler } from 'next'
+import type { NextAuthOptions } from 'next-auth'
+import NextAuth from 'next-auth'
+// import Credentials from 'next-auth/providers/credentials'
+import EmailProvider from 'next-auth/providers/email'
+import GitHubProvider from 'next-auth/providers/github'
+import GoogleProvider from 'next-auth/providers/google'
+import type { Provider } from 'next-auth/providers/index'
+
+import { prisma } from '@/libs/prisma'
+import redis from '@/libs/redis'
+
+export async function storeAccessToken(accessToken: string, sub?: string) {
+  if (!accessToken || !sub) return
+  const expire = 30 // ONE_DAY * 30 // The number of seconds in 30 days
+  await redis.set(accessToken, sub, { ex: expire })
+}
+
+export const authOptions: NextAuthOptions = {
+  providers: [
+    process.env.GITHUB_ID &&
+      process.env.GITHUB_SECRET &&
+      GitHubProvider({
+        clientId: process.env.GITHUB_ID,
+        clientSecret: process.env.GITHUB_SECRET
+      }),
+    process.env.GOOGLE_CLIENT_ID &&
+      process.env.GOOGLE_CLIENT_SECRET &&
+      GoogleProvider({
+        clientId: process.env.GOOGLE_CLIENT_ID,
+        clientSecret: process.env.GOOGLE_CLIENT_SECRET
+      }),
+    process.env.SMTP_HOST &&
+      process.env.SMTP_PORT &&
+      process.env.SMTP_USER &&
+      process.env.SMTP_PASSWORD &&
+      EmailProvider({
+        server: {
+          host: process.env.SMTP_HOST,
+          port: Number(process.env.SMTP_PORT),
+          auth: {
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASSWORD
+          }
+        },
+        from: process.env.SMTP_FROM
+      })
+  ].filter(Boolean) as Provider[],
+  pages: {
+    signIn: '/auth/signin',
+    signOut: '/auth/signout'
+  },
+  debug: process.env.NODE_ENV === 'development',
+  adapter: PrismaAdapter(prisma),
+  session: { strategy: 'jwt' },
+  jwt: {
+    secret: process.env.JWT_SECRET
+  },
+  secret: process.env.NEXTAUTH_SECRET
+}
+
+const authHandler: NextApiHandler = (req, res) =>
+  NextAuth(req, res, authOptions)
+
+export default authHandler
+```
+
+### 常见问题
+
+1. 路由路径区分大小写吗？
+
+## next-auth
+
+### 如何在 pages router 中使用 next-auth
+
+### 如何在 app router 中使用 next-auth

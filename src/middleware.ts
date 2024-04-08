@@ -13,7 +13,7 @@ const intlMiddleware = createMiddleware({
   defaultLocale: AppConfig.defaultLocale
 })
 
-export default authMiddleware({
+const clerkAuthMiddleware = authMiddleware({
   publicRoutes: (req: NextRequest) =>
     !req.nextUrl.pathname.includes('/dashboard'),
   // ignoredRoutes: ['/(.*\\..*)(.*)', '/(_next)(.*)'],
@@ -40,3 +40,5 @@ export const config = {
     // '/(zh-CN|en)/:path*'
   ]
 }
+
+export default clerkAuthMiddleware

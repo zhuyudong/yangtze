@@ -5,52 +5,7 @@
 新增列并添加默认数据
 
 ```js
-db.perception_clip.updateMany(
-  {},
-  {
-    $set: {
-      tenant_id: 1
-    }
-  }
-)
-
-db.sim_daily_report.updateMany(
-  {},
-  {
-    $set: {
-      platform: 'atlas'
-    }
-  }
-)
-
-db.simulator_docker_image.updateMany(
-  {},
-  {
-    $set: {
-      platform: 'atlas'
-    }
-  }
-)
-
-db.sim_build_image_task.updateMany(
-  {},
-  {
-    $set: {
-      platform: 'atlas'
-    }
-  }
-)
-
-db.sim_code_coverage_task.updateMany(
-  {},
-  {
-    $set: {
-      platform: 'atlas'
-    }
-  }
-)
-
-db.road_testing_to_logsim_task.updateMany(
+db.collection_name.updateMany(
   {},
   {
     $set: {
@@ -63,13 +18,5 @@ db.road_testing_to_logsim_task.updateMany(
 #### 重命名列名
 
 ```js
-db.sim_task_execution.updateMany(
-  {},
-  { $rename: { scene_config_id: 'config_id' } }
-)
-
-db.sim_task_execution_case.updateMany(
-  {},
-  { $rename: { task_execution_id: 'execution_id' } }
-)
+db.collection_name.updateMany({}, { $rename: { scene_config_id: 'config_id' } })
 ```
