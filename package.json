@@ -22,7 +22,8 @@
     "prepare": "[ -d .git ] && npx husky || echo 'ignore husky'",
     "start": "next start",
     "prisma:studio": "npx prisma studio",
-    "prisma:setup": "prisma generate && prisma db push && prisma db seed",
+    "prisma:push": "npx prisma db push && prisma db seed",
+    "prisma:setup": "npx prisma generate",
     "postinstall": "npm run prisma:setup"
   },
   "config": {
@@ -198,7 +199,7 @@
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
-    "node": "20.12.1"
+    "node": "20.12.2"
   },
   "msw": {
     "workerDirectory": "public"
