@@ -65,12 +65,12 @@ const Auth = () => {
 
   return (
     <div className="relative size-full bg-[url('/images/hero.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
-      <div className="size-full bg-black lg:bg-opacity-50">
+      <div className="lg:bg-opacity/50 size-full bg-black">
         {/* <nav className="px-12 py-5">
           <img src="/images/logo.png" className="h-12" alt="Logo" />
         </nav> */}
         <div className="flex justify-center">
-          <div className="mt-2 w-full self-center rounded-md bg-black bg-opacity-70 p-16 lg:w-2/5 lg:max-w-lg">
+          <div className="bg-opacity/70 mt-2 w-full self-center rounded-md bg-black p-16 lg:w-2/5 lg:max-w-lg">
             <h2 className="mb-8 text-4xl font-semibold text-white">
               {variant === 'login' ? 'Sign in' : 'Register'}
             </h2>
@@ -108,11 +108,11 @@ const Auth = () => {
             <div className="mt-8 flex flex-row items-center justify-center gap-4">
               <div
                 onClick={() => signIn('google', { callbackUrl: '/movies' })}
-                className="flex size-10 cursor-pointer items-center justify-center rounded-full bg-white transition hover:opacity-80"
+                className="hover:opacity/80 flex size-10 cursor-pointer items-center justify-center rounded-full bg-white transition"
               >
                 <FcGoogle size={32} />
               </div>
-              {/* <div onClick={() => signIn('github', { callbackUrl: '/movies' })} className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition">
+              {/* <div onClick={() => signIn('github', { callbackUrl: '/movies' })} className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity/80 transition">
                 <FaGithub size={32} />
               </div> */}
             </div>

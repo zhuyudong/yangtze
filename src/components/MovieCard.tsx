@@ -64,7 +64,7 @@ export const MovieCard: FC<MovieCardProps> = ({ data }) => {
         transition
         delay-300
         duration-200
-        group-hover:-translate-y-[6vw]
+        group-hover:!-translate-y-[6vw]
         group-hover:translate-x-[2vw]
         group-hover:scale-110
         group-hover:opacity-100

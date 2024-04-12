@@ -35,7 +35,7 @@ export const InfoModal: FC<InfoModalProps> = ({ visible, onClose }) => {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden bg-black bg-opacity-80 transition duration-300">
+    <div className="bg-opacity/80 fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden bg-black transition duration-300">
       <div className="relative mx-auto w-auto max-w-3xl overflow-hidden rounded-md">
         <div
           className={`${isVisible ? 'scale-100' : 'scale-0'} relative flex-auto bg-zinc-900 drop-shadow-md duration-300`}
@@ -51,7 +51,7 @@ export const InfoModal: FC<InfoModalProps> = ({ visible, onClose }) => {
             />
             <div
               onClick={handleClose}
-              className="absolute right-3 top-3 flex size-10 cursor-pointer items-center justify-center rounded-full bg-black bg-opacity-70"
+              className="bg-opacity/70 absolute right-3 top-3 flex size-10 cursor-pointer items-center justify-center rounded-full bg-black"
             >
               <XMarkIcon className="w-6 text-white" />
             </div>

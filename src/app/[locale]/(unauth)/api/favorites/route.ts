@@ -1,10 +1,9 @@
-import type { NextApiRequest } from 'next'
 import { NextResponse } from 'next/server'
 
 import { prisma } from '@/libs/prisma'
 import { serverAuth } from '@/libs/serverAuth'
 
-async function handler(req: NextApiRequest) {
+async function handler(req: Request) {
   try {
     if (req.method !== 'GET') {
       return NextResponse.json(null, { status: 405 })

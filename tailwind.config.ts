@@ -46,5 +46,6 @@ export default {
       }
     }
   },
-  plugins: [typographyPlugin, headlessuiPlugin]
+  plugins: [typographyPlugin, headlessuiPlugin],
+  corePlugins: {}
 } satisfies Config
