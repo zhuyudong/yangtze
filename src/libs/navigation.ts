@@ -1,3 +1,5 @@
+import { MapPinIcon } from '@heroicons/react/24/outline'
+
 import { ArticleIcon } from '@/components/icons/ArticleIcon'
 import { ExcerptIcon } from '@/components/icons/ExcerptIcon'
 import { FireIcon } from '@/components/icons/FireIcon'
@@ -50,8 +52,7 @@ export const navigation: Array<NavGroup> = [
     title: '资源',
     links: [
       { title: '诗词', href: '/poetry', icon: FireIcon },
-      { title: '壁纸', href: '/wallpaper', icon: PhotoIcon },
-      { title: '图片', href: '/weekly-by-category/images', icon: PhotoIcon },
+      { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },
       { title: '电影', href: '/movies', icon: MovieIcon },
       {
         title: '文章',
@@ -68,17 +69,22 @@ export const navigation: Array<NavGroup> = [
         href: '/weekly-by-category/quotations',
         icon: QuotationIcon
       },
-      { title: '新闻', href: '/weekly-by-category/news', icon: NewIcon },
-      { title: '工具', href: '/weekly-by-category/tools', icon: ToolIcon },
       {
-        title: '资源',
-        href: '/weekly-by-category/resources',
-        icon: ResourceIcon
+        title: '社会图文',
+        href: '/weekly-by-category/images',
+        icon: PhotoIcon
       },
+      { title: '科技新闻', href: '/weekly-by-category/news', icon: NewIcon },
+      { title: '开发工具', href: '/weekly-by-category/tools', icon: ToolIcon },
       {
         title: '科技动态',
         href: '/weekly-by-category/technology-news',
         icon: TechnologyNewIcon
+      },
+      {
+        title: '开发与学习资源',
+        href: '/weekly-by-category/resources',
+        icon: ResourceIcon
       }
     ]
   }

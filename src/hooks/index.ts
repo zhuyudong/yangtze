@@ -1,4 +1,5 @@
 export * from './useBillboard'
+export * from './useContents'
 export * from './useCurrentUser'
 export * from './useFavorites'
 export * from './useInfoModalStore'

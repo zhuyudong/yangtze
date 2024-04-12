@@ -103,7 +103,7 @@ def write_mdxs():
         )
         if not os.path.exists(directory):
             os.makedirs(directory)
-        with open(f"{directory}/page.mdx", "w") as f:
+        with open(f"{directory}/_page.mdx", "w") as f:
             _content = "\n".join(content)
             # remove <!----> comments
             _content = re.sub(r"<!--(.*?)-->", "", _content, flags=re.DOTALL)
@@ -118,7 +118,7 @@ def write_mdxs():
             # TODO: ></source> -> />
             f.write(_content)
             console(
-                f"src/app/[locale]/(unauth)/weekly-by-category/{file_category}/page.mdx saved."
+                f"src/app/[locale]/(unauth)/weekly-by-category/{file_category}/_page.mdx saved."
             )
 
 

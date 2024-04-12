@@ -90,7 +90,7 @@ const resources: Array<IResource> = [
     }
   },
   {
-    href: '/weekly-by-category/images',
+    href: '/weekly-by-category/photos',
     name: '图片',
     description: '',
     icon: PhotoIcon,

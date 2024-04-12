@@ -96,3 +96,4 @@ or `vim ~/.config/pip/pip.conf`
 - [zeabur serverless](https://zeabur.com/docs/zh-CN/deploy/serverless)
 - [yet-another-react-lightbox](https://yet-another-react-lightbox.com/)
 - [dockerhub](https://hub.docker.com/_/node/tags)
+- [heroicons](https://heroicons.com/micro)

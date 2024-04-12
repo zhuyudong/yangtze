@@ -4,7 +4,7 @@ import Link from 'next/link'
 import type { CSSProperties, ElementRef, ReactNode } from 'react'
 import { forwardRef } from 'react'
 
-// import { Button } from '@/components/Button'
+import { Button } from '@/components/Button'
 import { Logo } from '@/components/Logo'
 import {
   MobileNavigation,
@@ -102,9 +102,10 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
             <ThemeToggle />
           </div>
           {/* TODO */}
-          {/* <div className="hidden min-[416px]:contents">
-            <Button href="/sign-in">{t('sign_in_link')}</Button>
-          </div> */}
+          <div className="hidden min-[416px]:contents">
+            {/* <Button href="/sign-in">{t('sign_in_link')}</Button> */}
+            <Button href="/auth">Sign in</Button>
+          </div>
         </div>
       </motion.div>
     )
