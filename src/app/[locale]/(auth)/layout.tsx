@@ -1,38 +1,25 @@
-import { enUS, zhCN } from '@clerk/localizations'
-import { ClerkProvider } from '@clerk/nextjs'
+import '@/styles/auth.css'
+
+import { getServerSession } from 'next-auth'
 import type { ReactNode } from 'react'
 
-export default function AuthLayout({
-  params,
+import SessionProvider from '@/components/SessionProvider'
+
+export default async function RootLayout({
+  // Layouts must accept a children prop.
+  // This will be populated with nested layouts or pages
   children
 }: {
   children: ReactNode
-  params: { locale: string }
 }) {
-  let clerkLocale = zhCN
-  let signInUrl = '/sign-in'
-  let signUpUrl = '/sign-up'
-  let dashboardUrl = '/dashboard'
-
-  if (params.locale === 'en') {
-    clerkLocale = enUS
-  }
-
-  if (params.locale !== 'zh-CN') {
-    signInUrl = `/${params.locale}${signInUrl}`
-    signUpUrl = `/${params.locale}${signUpUrl}`
-    dashboardUrl = `/${params.locale}${dashboardUrl}`
-  }
+  const session = await getServerSession()
 
   return (
-    <ClerkProvider
-      localization={clerkLocale}
-      signInUrl={signInUrl}
-      signUpUrl={signUpUrl}
-      afterSignInUrl={dashboardUrl}
-      afterSignUpUrl={dashboardUrl}
-    >
-      {children}
-    </ClerkProvider>
+    <html lang="en">
+      <body>
+        {/* NOTE: SessionProvider 可以放在 html 外面，此处 SessionProvider 不能直接从 next-auth/react 导入，需要放在单独的文件中 (如 components/SessionProvider.tsx) 再引入 */}
+        <SessionProvider session={session}>{children}</SessionProvider>
+      </body>
+    </html>
   )
 }

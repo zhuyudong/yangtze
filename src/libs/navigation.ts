@@ -1,8 +1,20 @@
+import { ArticleIcon } from '@/components/icons/ArticleIcon'
+import { ExcerptIcon } from '@/components/icons/ExcerptIcon'
+import { FireIcon } from '@/components/icons/FireIcon'
+import { MovieIcon } from '@/components/icons/MovieIcon'
+import { NewIcon } from '@/components/icons/NewIcon'
+import { PhotoIcon } from '@/components/icons/PhotoIcon'
+import { QuotationIcon } from '@/components/icons/QuotationIcon'
+import { ResourceIcon } from '@/components/icons/ResourceIcon'
+import { TechnologyNewIcon } from '@/components/icons/TechnologyNewIcon'
+import { ToolIcon } from '@/components/icons/ToolIcon'
+
 export interface NavGroup {
   title: string
   links: Array<{
     title: string
     href: string
+    icon?: React.ComponentType<{ className?: string }>
   }>
 }
 
@@ -37,8 +49,37 @@ export const navigation: Array<NavGroup> = [
   {
     title: '资源',
     links: [
-      { title: '诗词', href: '/poetry' },
-      { title: '壁纸', href: '/wallpaper' }
+      { title: '诗词', href: '/poetry', icon: FireIcon },
+      { title: '壁纸', href: '/wallpaper', icon: PhotoIcon },
+      { title: '图片', href: '/weekly-by-category/images', icon: PhotoIcon },
+      { title: '电影', href: '/movies', icon: MovieIcon },
+      {
+        title: '文章',
+        href: '/weekly-by-category/articles',
+        icon: ArticleIcon
+      },
+      {
+        title: '文摘',
+        href: '/weekly-by-category/excerpts',
+        icon: ExcerptIcon
+      },
+      {
+        title: '言论',
+        href: '/weekly-by-category/quotations',
+        icon: QuotationIcon
+      },
+      { title: '新闻', href: '/weekly-by-category/news', icon: NewIcon },
+      { title: '工具', href: '/weekly-by-category/tools', icon: ToolIcon },
+      {
+        title: '资源',
+        href: '/weekly-by-category/resources',
+        icon: ResourceIcon
+      },
+      {
+        title: '科技动态',
+        href: '/weekly-by-category/technology-news',
+        icon: TechnologyNewIcon
+      }
     ]
   }
 ]

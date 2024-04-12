@@ -1,11 +1,142 @@
 ## MongoDB 常用脚本
 
-#### 批量添加数据
+## 使用 docker 启动过本地 mongo
+
+```bash
+docker run -d \
+--name mongodb \
+--restart=always \
+--privileged=true \
+-p 27017:27017 \
+-v /etc/localtime:/etc/localtime:ro \
+-v "$(pwd)/mongodb/conf:/etc/mongo" \
+-v "$(pwd)/mongodb/data:/data/db" \
+-v "$(pwd)/mongodb/logs:/var/log/mongodb" \
+-e MONGO_INIT_ROOT_USERNAME=admin \
+-e MONGO_INIT_ROOT_PASSWORD=admin \
+mongo --auth
+```
+
+选项说明
+`--privileged=true` 开启容器数据卷的读写权限，使 container 内的 root 拥有真正的 root 权限
+`-v /etc/localtime:/etc/localtime:ro` 同步 docker 容器与主机时间（挂入 /etc/localtime）:ro 只读权限
+
+进入容器
+
+```bash
+docker exec -it mongodb /bin/bash
+# or
+docker exec -it mongodb /bin/sh
+
+# 登录 mobodb
+mongosh admin
+
+# or
+docker exec -it mongodb mongosh admin
+```
+
+添加用户
+
+```js
+// 创建一个名为 root，密码为 123456 的用户。
+db.createUser({
+  user: 'root',
+  pwd: '123456',
+  roles: [
+    { role: 'userAdminAnyDatabase', db: 'mongo-example' },
+    'readWriteAnyDatabase'
+  ]
+})
+```
+
+验证
+
+```js
+// 尝试使用上面创建的用户信息进行连接。
+db.auth('root', '123456');
+// 选择admin库
+use admin
+// 创建集合users
+db.createCollection('users');
+// 插入数据
+db.users.insert({"name":"小李","age": NumberInt(33)});
+// 查看数据
+db.users.find();
+```
+
+## 连接数据库
+
+```bash
+DATABASE_URL=mongodb://root:123456@localhost:27017/nextauth-example?authSource=admin
+```
+
+## 数据库级别命令
+
+```js
+db.stats();
+use nextauth-example
+show dbs
+db
+db.dropDatabase()
+```
+
+## 集合级别命令
+
+```js
+show collections
+```
+
+## 批量添加数据
 
 新增列并添加默认数据
 
 ```js
-db.collection_name.updateMany(
+db.perception_clip.updateMany(
+  {},
+  {
+    $set: {
+      tenant_id: 1
+    }
+  }
+)
+
+db.sim_daily_report.updateMany(
+  {},
+  {
+    $set: {
+      platform: 'atlas'
+    }
+  }
+)
+
+db.simulator_docker_image.updateMany(
+  {},
+  {
+    $set: {
+      platform: 'atlas'
+    }
+  }
+)
+
+db.sim_build_image_task.updateMany(
+  {},
+  {
+    $set: {
+      platform: 'atlas'
+    }
+  }
+)
+
+db.sim_code_coverage_task.updateMany(
+  {},
+  {
+    $set: {
+      platform: 'atlas'
+    }
+  }
+)
+
+db.road_testing_to_logsim_task.updateMany(
   {},
   {
     $set: {
@@ -18,5 +149,13 @@ db.collection_name.updateMany(
 #### 重命名列名
 
 ```js
-db.collection_name.updateMany({}, { $rename: { scene_config_id: 'config_id' } })
+db.sim_task_execution.updateMany(
+  {},
+  { $rename: { scene_config_id: 'config_id' } }
+)
+
+db.sim_task_execution_case.updateMany(
+  {},
+  { $rename: { task_execution_id: 'execution_id' } }
+)
 ```

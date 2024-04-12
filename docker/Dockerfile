@@ -1,5 +1,5 @@
 FROM node:lts-alpine3.19
-# FROM node20.11.1-alpine3.18-pnpm:8.15.5
+# FROM node20.12.1-alpine3.18-pnpm:8.15.6
 
 WORKDIR /app
 

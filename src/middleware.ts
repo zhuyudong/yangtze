@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 // import { redirectToSignIn } from '@clerk/nextjs'
 // https://github.com/clerk/javascript/issues/2435
 import { authMiddleware, redirectToSignIn } from '@clerk/nextjs/server'
@@ -31,6 +32,7 @@ const clerkAuthMiddleware = authMiddleware({
   }
 })
 
+// NOTE: 启用 clerk 时 export
 export const config = {
   matcher: [
     '/((?!.+\\.[\\w]+$|_next).*)',

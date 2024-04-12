@@ -14,7 +14,16 @@ import { Heading } from '@/components/Heading'
 import { MapPinIcon } from '@/components/icons/MapPinIcon'
 import { UserIcon } from '@/components/icons/UserIcon'
 
+import { ArticleIcon } from './icons/ArticleIcon'
 import { BookIcon } from './icons/BookIcon'
+import { ExcerptIcon } from './icons/ExcerptIcon'
+import { MovieIcon } from './icons/MovieIcon'
+import { NewIcon } from './icons/NewIcon'
+import { PhotoIcon } from './icons/PhotoIcon'
+import { QuotationIcon } from './icons/QuotationIcon'
+import { ResourceIcon as ResourcesIcon } from './icons/ResourceIcon'
+import { TechnologyNewIcon } from './icons/TechnologyNewIcon'
+import { ToolIcon } from './icons/ToolIcon'
 
 interface IResource {
   href: string
@@ -68,10 +77,23 @@ const resources: Array<IResource> = [
     }
   },
   {
+    href: '/movies',
+    name: '电影',
+    description: '',
+    icon: MovieIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
     href: '/weekly-by-category/images',
     name: '图片',
     description: '',
-    icon: MapPinIcon,
+    icon: PhotoIcon,
     pattern: {
       y: -6,
       squares: [
@@ -84,7 +106,7 @@ const resources: Array<IResource> = [
     href: '/weekly-by-category/articles',
     name: '文章',
     description: '',
-    icon: MapPinIcon,
+    icon: ArticleIcon,
     pattern: {
       y: -6,
       squares: [
@@ -97,7 +119,7 @@ const resources: Array<IResource> = [
     href: '/weekly-by-category/excerpts',
     name: '文摘',
     description: '',
-    icon: MapPinIcon,
+    icon: ExcerptIcon,
     pattern: {
       y: -6,
       squares: [
@@ -110,7 +132,7 @@ const resources: Array<IResource> = [
     href: '/weekly-by-category/news',
     name: '新闻',
     description: '',
-    icon: MapPinIcon,
+    icon: NewIcon,
     pattern: {
       y: -6,
       squares: [
@@ -123,7 +145,7 @@ const resources: Array<IResource> = [
     href: '/weekly-by-category/quotations',
     name: '言论',
     description: '',
-    icon: MapPinIcon,
+    icon: QuotationIcon,
     pattern: {
       y: -6,
       squares: [
@@ -136,7 +158,7 @@ const resources: Array<IResource> = [
     href: '/weekly-by-category/resources',
     name: '资源',
     description: '',
-    icon: MapPinIcon,
+    icon: ResourcesIcon,
     pattern: {
       y: -6,
       squares: [
@@ -149,7 +171,7 @@ const resources: Array<IResource> = [
     href: '/weekly-by-category/technology-news',
     name: '科技动态',
     description: '',
-    icon: MapPinIcon,
+    icon: TechnologyNewIcon,
     pattern: {
       y: -6,
       squares: [
@@ -162,7 +184,7 @@ const resources: Array<IResource> = [
     href: '/weekly-by-category/tools',
     name: '工具',
     description: '',
-    icon: MapPinIcon,
+    icon: ToolIcon,
     pattern: {
       y: -6,
       squares: [

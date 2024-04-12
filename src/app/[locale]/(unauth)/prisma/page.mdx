@@ -40,7 +40,13 @@ https://pris.ly/d/getting-started
 npx prisma generate
 ```
 
-5. 同步到数据库
+5. 初始化数据
+
+```bash
+npx prisma db seed
+```
+
+6. 同步表结构到数据库
 
 ```bash
 npx prisma db push
@@ -51,6 +57,9 @@ npx prisma db push
 > src/libs/prisma.ts
 
 ```ts
+/* eslint-disable import/no-mutable-exports */
+import { PrismaClient } from '@prisma/client'
+
 const globalForPrisma = global as unknown as { prisma: PrismaClient }
 
 export const prisma = globalForPrisma.prisma || new PrismaClient()
@@ -58,7 +67,7 @@ export const prisma = globalForPrisma.prisma || new PrismaClient()
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
 ```
 
-or
+或者
 
 ```ts
 /* eslint-disable import/no-mutable-exports */
@@ -69,13 +78,15 @@ let prisma: PrismaClient
 if (process.env.NODE_ENV === 'production') {
   prisma = new PrismaClient()
 } else {
+  // NOTE: global.prisma 类型在 src/types/global.d.ts 中定义
   if (!global.prisma) {
     global.prisma = new PrismaClient()
   }
   prisma = global.prisma
 }
 
-export default prisma
+// export default prisma
+export { prisma }
 ```
 
 1. 数据初始化【可选】

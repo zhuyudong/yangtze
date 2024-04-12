@@ -3,7 +3,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  // previewFeatures = ["mongoDb"]
 }
 
 datasource db {
@@ -23,6 +22,8 @@ model User {
   sessions       Session[]
   accounts       Account[]
   favoriteIds    String[]  @map("favorite_ids") @db.ObjectId
+
+  @@map("user")
 }
 
 model Account {
@@ -42,6 +43,7 @@ model Account {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
+  @@map("account")
 }
 
 model Session {
@@ -50,6 +52,8 @@ model Session {
   userId       String   @map("user_id") @db.ObjectId
   expires      DateTime
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("session")
 }
 
 model VerificationToken {
@@ -59,6 +63,25 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+  @@map("verification_token")
+}
+
+model Content {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  title      String
+  content    String
+  category   String
+  originHref String?  @map("origin_href")
+  coverUrl   String?  @map("cover_url")
+  tags       String[]
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+  favorited  Int      @default(0)
+  // favoritedBy String[] @map("favorited_by") @db.ObjectId
+  liked      Int      @default(0)
+  // likedBy     String[] @map("liked_by") @db.ObjectId
+
+  @@map("content")
 }
 
 model Movie {
@@ -69,4 +92,6 @@ model Movie {
   thumbnailUrl String @map("thumbnail_url")
   genre        String
   duration     String
+
+  @@map("movie")
 }

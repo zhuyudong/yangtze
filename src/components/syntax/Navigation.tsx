@@ -1,13 +1,25 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import type { MouseEventHandler } from 'react'
+import type { ComponentType, MouseEventHandler } from 'react'
 
 import { navigation } from '@/libs/navigation'
 import { AppConfig } from '@/utils/AppConfig'
 
 // /en|zh-CN/
 const localeRegex = new RegExp(`^/(${AppConfig.locales.join('|')})`)
+
+interface INavigation {
+  icon: ComponentType<{ className?: string }>
+}
+
+function NavigationIcon({ icon: Icon }: { icon: INavigation['icon'] }) {
+  return (
+    <div className="flex size-7 items-center justify-center">
+      <Icon className="size-5" />
+    </div>
+  )
+}
 
 export function Navigation({
   className,
@@ -45,7 +57,10 @@ export function Navigation({
                         : 'text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300'
                     )}
                   >
-                    {link.title}
+                    <div className="flex gap-1">
+                      {link?.icon ? <NavigationIcon icon={link.icon} /> : null}{' '}
+                      <span>{link.title}</span>
+                    </div>
                   </Link>
                 </li>
               ))}

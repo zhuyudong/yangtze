@@ -18,7 +18,7 @@ categories_en = [
     "excerpts",
     "news",
     "tools",
-    "images",
+    "photos",
     "articles",
     "resources",
     "quotations",
@@ -39,7 +39,7 @@ categories_locale = {
     "文章": "articles",
     "工具": "tools",
     "资讯": "news",
-    "图片": "images",
+    "图片": "photos",
     "资源": "resources",
     "言论": "quotations",
 }
