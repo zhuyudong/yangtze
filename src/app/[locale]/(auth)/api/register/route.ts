@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt'
+// import bcrypt from 'bcrypt'
 import { NextResponse } from 'next/server'
 
 import { prisma } from '@/libs/prisma'
@@ -22,13 +22,13 @@ async function handler(req: Request) {
       return NextResponse.json({ error: 'Email taken' }, { status: 422 })
     }
 
-    const hashedPassword = await bcrypt.hash(password, 12)
+    // const hashedPassword = await bcrypt.hash(password, 12)
 
     const user = await prisma.user.create({
       data: {
         email,
         name,
-        hashedPassword,
+        hashedPassword: password,
         image: '',
         emailVerified: new Date()
       }

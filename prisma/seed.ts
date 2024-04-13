@@ -1,4 +1,6 @@
-import { prisma } from '../src/libs/prisma'
+// import { prisma } from '@/libs/prisma'
+import { PrismaClient } from '@prisma/client'
+
 import articles from './articles.json'
 import excerpts from './excerpts.json'
 import movies from './movies.json'
@@ -8,6 +10,9 @@ import quotations from './quotations.json'
 import resources from './resources.json'
 import technology_news from './technology-news.json'
 import tools from './tools.json'
+
+const prisma = global.prisma || new PrismaClient()
+if (process.env.NODE_ENV !== 'production') global.prisma = prisma
 
 const contents = [
   ...news,

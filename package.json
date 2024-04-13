@@ -21,10 +21,11 @@
     "lint": "next lint",
     "prepare": "[ -d .git ] && npx husky || echo 'ignore husky'",
     "start": "next start",
-    "prisma:studio": "prisma studio",
-    "prisma:push": "prisma db push && prisma db seed",
-    "prisma:setup": "prisma generate && prisma db push && prisma db seed",
-    "postinstall": "npm run prisma:setup"
+    "prisma:setup": "npx prisma generate && npx prisma db push && npx prisma db seed",
+    "prisma:generate": "npx prisma generate",
+    "prisma:push": "npx prisma db push",
+    "prisma:seed": "npx prisma db seed",
+    "prisma:studio": "npx prisma studio"
   },
   "config": {
     "commitizen": {

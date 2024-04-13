@@ -71,7 +71,7 @@ export const navigation: Array<NavGroup> = [
       },
       {
         title: '社会图文',
-        href: '/weekly-by-category/images',
+        href: '/weekly-by-category/photos',
         icon: PhotoIcon
       },
       { title: '科技新闻', href: '/weekly-by-category/news', icon: NewIcon },
