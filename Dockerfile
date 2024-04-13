@@ -39,7 +39,7 @@ COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/scripts ./scripts
 COPY --from=builder /app/src ./src
-COPY --from=builder /app/.env ./.env
+# COPY --from=builder /app/.env ./.env
 COPY --from=builder /app/.next ./.next
 # COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/mdx-components.tsx ./mdx-components.tsx
