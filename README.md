@@ -56,15 +56,17 @@ pip install -r requirements/base.txt
    pip config set install.trusted-host pypi.tuna.tsinghua.edu.cn
    ```
 
-or `vim ~/.config/pip/pip.conf`
+   or `vim ~/.config/pip/pip.conf`
 
-    ````bash
-    [global]
-    index-url = https://mirrors.aliyun.com/pypi/simple/
+   ````bash
+   [global]
+   index-url = https://mirrors.aliyun.com/pypi/simple/
 
-    [install]
-    trusted-host = mirrors.aliyun.com
-    ```
+   [install]
+   trusted-host = mirrors.aliyun.com
+   ```
+
+   ````
 
 3. installation dependencies
 

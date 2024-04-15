@@ -1,3 +1,5 @@
+/* eslint-disable no-var */
+/* eslint-disable vars-on-top */
 // import { prisma } from '@/libs/prisma'
 import { PrismaClient } from '@prisma/client'
 
@@ -10,6 +12,16 @@ import quotations from './quotations.json'
 import resources from './resources.json'
 import technology_news from './technology-news.json'
 import tools from './tools.json'
+
+// NOTE: 这里使用 declare global {} 来声明全局变量
+declare global {
+  namespace globalThis {
+    // NOTE: 注意这里使用 var 而不是 let 或 const
+    // var prisma: import('@prisma/client').PrismaClient
+    // or
+    var prisma: PrismaClient
+  }
+}
 
 const prisma = global.prisma || new PrismaClient()
 if (process.env.NODE_ENV !== 'production') global.prisma = prisma

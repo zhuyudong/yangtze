@@ -124,7 +124,10 @@
     "unist-util-visit": "^5.0.0",
     "yet-another-react-lightbox": "^3.17.2",
     "zod": "^3.22.4",
-    "zustand": "^4.5.2"
+    "zustand": "^4.5.2",
+    "@trigger.dev/sdk": "^2.3.18",
+    "@trigger.dev/nextjs": "^2.3.18",
+    "@trigger.dev/react": "^2.3.18"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
@@ -207,5 +210,8 @@
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
+  },
+  "trigger.dev": {
+    "endpointId": "yangtze-cHtf"
   }
 }
