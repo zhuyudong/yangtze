@@ -1,8 +1,47 @@
-# pnpm
+---
+title: 前端依赖管理
+---
+
+## pnpm
+Fast, disk space efficient package manager
 
 [website](https://pnpm.io/)
 
-## 使用 monorepo
+### `pnpm view <package>` 查看包详情
+
+```bash
+$ pnpm view @babel/core                           
+
+@babel/core@7.24.4 | MIT | deps: 15 | versions: 181
+Babel compiler core.
+https://babel.dev/docs/en/next/babel-core
+
+keywords: 6to5, babel, classes, const, es6, harmony, let, modules, transpile, transpiler, var, babel-core, compiler
+
+dist
+.tarball: https://registry.npmjs.org/@babel/core/-/core-7.24.4.tgz
+.shasum: 1f758428e88e0d8c563874741bc4ffc4f71a4717
+.integrity: sha512-MBVlMXP+kkl5394RBLSxxk/iLTeVGuXTV3cIDXavPpMMqnSnt6apKgan/U8O3USWZCWZT/TbgfEpKa4uMgN4Dg==
+.unpackedSize: 781.6 kB
+
+dependencies:
+@ampproject/remapping: ^2.2.0              @babel/helper-compilation-targets: ^7.23.6 @babel/parser: ^7.24.4                     @babel/types: ^7.24.0                      gensync: ^1.0.0-beta.2                     
+@babel/code-frame: ^7.24.2                 @babel/helper-module-transforms: ^7.23.3   @babel/template: ^7.24.0                   convert-source-map: ^2.0.0                 json5: ^2.2.3                              
+@babel/generator: ^7.24.4                  @babel/helpers: ^7.24.4                    @babel/traverse: ^7.24.1                   debug: ^4.1.0                              semver: ^6.3.1                             
+
+maintainers:
+- hzoo <hi@henryzoo.com>
+- existentialism <bng412@gmail.com>
+- nicolo-ribaudo <nicolo.ribaudo@gmail.com>
+- jlhwung <jlhwung@gmail.com>
+
+dist-tags:
+bridge6: 6.0.0-bridge.1  esm: 7.21.4-esm.4        latest: 7.24.4           next: 8.0.0-alpha.8      
+
+published a week ago by nicolo-ribaudo <nicolo.ribaudo@gmail.com>
+```
+
+### 使用 monorepo
 
 创建 pnpm-workspace.yaml
 
