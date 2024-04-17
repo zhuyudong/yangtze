@@ -5,6 +5,7 @@ import { PrismaClient } from '@prisma/client'
 
 import articles from './articles.json'
 import excerpts from './excerpts.json'
+// NOTE: 影片已上传至 https://uploadthing.com/dashboard/qixt4k2w2s/files
 import movies from './movies.json'
 import news from './news.json'
 import photos from './photos.json'

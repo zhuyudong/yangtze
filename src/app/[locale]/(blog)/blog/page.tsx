@@ -1,9 +1,11 @@
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc } from 'date-fns'
+import { ChevronLeft } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { formatDate } from '@/lib/utils'
+import { buttonVariants } from '@/components/ui/button'
+import { cn, formatDate } from '@/lib/utils'
 
 export const metadata = {
   title: 'Blog'
@@ -17,7 +19,17 @@ export default async function BlogPage() {
     })
 
   return (
-    <div className="container max-w-7xl py-6 lg:py-10">
+    <div className="container relative max-w-7xl py-6 lg:py-10">
+      <Link
+        href="/blog"
+        className={cn(
+          buttonVariants({ variant: 'ghost' }),
+          'absolute left-[-200px] top-14 hidden xl:inline-flex'
+        )}
+      >
+        <ChevronLeft className="mr-2 size-4" />
+        Home
+      </Link>
       {posts?.length ? (
         <div className="grid gap-10 sm:grid-cols-2">
           {posts.map((post, index) => (
@@ -54,6 +66,12 @@ export default async function BlogPage() {
       ) : (
         <p>No posts published.</p>
       )}
+      <div className="flex justify-center py-6 lg:py-10">
+        <Link href="/" className={cn(buttonVariants({ variant: 'ghost' }))}>
+          <ChevronLeft className="mr-2 size-4" />
+          Home
+        </Link>
+      </div>
     </div>
   )
 }

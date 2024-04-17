@@ -1,7 +1,7 @@
 'use client'
 
 import { Loader2 } from 'lucide-react'
-import React from 'react'
+import { useState } from 'react'
 import { toast } from 'sonner'
 
 import { Button } from '@/components/ui/button'
@@ -14,7 +14,7 @@ const Newsletter = () => {
         toast.success('Subscribed to newsletter')
       }
     })
-  const [email, setEmail] = React.useState('')
+  const [email, setEmail] = useState('')
 
   return (
     <section className=" rounded-xl bg-gray-900">

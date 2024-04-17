@@ -17,7 +17,7 @@ import {
   type VisibilityState
 } from '@tanstack/react-table'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import * as React from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { z } from 'zod'
 
 import {
@@ -98,7 +98,7 @@ export function useDataTable<TData, TValue>({
   const [column, order] = sort?.split('.') ?? []
 
   // Create query string
-  const createQueryString = React.useCallback(
+  const createQueryString = useCallback(
     (params: Record<string, string | number | null>) => {
       const newSearchParams = new URLSearchParams(searchParams?.toString())
 
@@ -116,7 +116,7 @@ export function useDataTable<TData, TValue>({
   )
 
   // Initial column filters
-  const initialColumnFilters: ColumnFiltersState = React.useMemo(() => {
+  const initialColumnFilters: ColumnFiltersState = useMemo(() => {
     return Array.from(searchParams.entries()).reduce<ColumnFiltersState>(
       (filters, [key, value]) => {
         const filterableColumn = filterableColumns.find(
@@ -145,20 +145,18 @@ export function useDataTable<TData, TValue>({
   }, [filterableColumns, searchableColumns, searchParams])
 
   // Table states
-  const [rowSelection, setRowSelection] = React.useState({})
-  const [columnVisibility, setColumnVisibility] =
-    React.useState<VisibilityState>({})
+  const [rowSelection, setRowSelection] = useState({})
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
   const [columnFilters, setColumnFilters] =
-    React.useState<ColumnFiltersState>(initialColumnFilters)
+    useState<ColumnFiltersState>(initialColumnFilters)
 
   // Handle server-side pagination
-  const [{ pageIndex, pageSize }, setPagination] =
-    React.useState<PaginationState>({
-      pageIndex: page - 1,
-      pageSize: per_page
-    })
+  const [{ pageIndex, pageSize }, setPagination] = useState<PaginationState>({
+    pageIndex: page - 1,
+    pageSize: per_page
+  })
 
-  const pagination = React.useMemo(
+  const pagination = useMemo(
     () => ({
       pageIndex,
       pageSize
@@ -166,7 +164,7 @@ export function useDataTable<TData, TValue>({
     [pageIndex, pageSize]
   )
 
-  React.useEffect(() => {
+  useEffect(() => {
     router.push(
       `${pathname}?${createQueryString({
         page: pageIndex + 1,
@@ -181,14 +179,14 @@ export function useDataTable<TData, TValue>({
   }, [pageIndex, pageSize])
 
   // Handle server-side sorting
-  const [sorting, setSorting] = React.useState<SortingState>([
+  const [sorting, setSorting] = useState<SortingState>([
     {
       id: column ?? '',
       desc: order === 'desc'
     }
   ])
 
-  React.useEffect(() => {
+  useEffect(() => {
     router.push(
       `${pathname}?${createQueryString({
         page,
@@ -217,9 +215,9 @@ export function useDataTable<TData, TValue>({
     return filterableColumns.find(column => column.id === filter.id)
   })
 
-  const [mounted, setMounted] = React.useState(false)
+  const [mounted, setMounted] = useState(false)
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Opt out when advanced filter is enabled, because it contains additional params
     if (enableAdvancedFilter) return
 

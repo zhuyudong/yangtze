@@ -1,9 +1,19 @@
+import clsx from 'clsx'
 import { type Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import type { ReactNode } from 'react'
 
+import { AppShell } from '@/components/patterns/app-shell'
+import { TailwindIndicator } from '@/components/patterns/tailwind-indicator'
+import { Toaster } from '@/components/ui/sonner'
 import { AppConfig } from '@/utils/AppConfig'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans'
+})
 
 export const metadata: Metadata = {
   title: {
@@ -49,10 +59,12 @@ export default function RootLayout({
 
   return (
     <html lang={params.locale} className="h-full" suppressHydrationWarning>
-      <body className="flex min-h-full justify-center bg-white antialiased dark:bg-zinc-900">
+      <body className={clsx(`font-sans antialiased  ${inter.variable}`)}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
-          {children}
+          <AppShell>{children}</AppShell>
         </NextIntlClientProvider>
+        <Toaster />
+        <TailwindIndicator />
       </body>
     </html>
   )

@@ -1,9 +1,11 @@
+import type { ComponentType } from 'react'
+
 export type SearchParams = Record<string, string | string[] | undefined>
 
 export type Option = {
   label: string
   value: string
-  icon?: React.ComponentType<{ className?: string }>
+  icon?: ComponentType<{ className?: string }>
 }
 
 export interface DataTableSearchableColumn<TData> {

@@ -1,11 +1,11 @@
-import * as React from 'react'
+import { useState } from 'react'
 import { toast } from 'sonner'
 import type {
   ClientUploadedFileData,
   UploadFilesOptions
 } from 'uploadthing/types'
 
-import type { OurFileRouter } from '@/app/[locale]/(unauth)/api/uploadthing/core'
+import type { OurFileRouter } from '@/app/[locale]/api/uploadthing/core'
 import { getErrorMessage, uploadFiles } from '@/lib/uploadthing'
 
 type UploadedFile<T = unknown> = ClientUploadedFileData<T>
@@ -23,9 +23,9 @@ export function useUploadFile(
   { defaultUploadedFiles = [], ...props }: UseUploadFileProps = {}
 ) {
   const [uploadedFiles, setUploadedFiles] =
-    React.useState<UploadedFile[]>(defaultUploadedFiles)
-  const [progresses, setProgresses] = React.useState<Record<string, number>>({})
-  const [isUploading, setIsUploading] = React.useState(false)
+    useState<UploadedFile[]>(defaultUploadedFiles)
+  const [progresses, setProgresses] = useState<Record<string, number>>({})
+  const [isUploading, setIsUploading] = useState(false)
 
   async function uploadThings(files: File[]) {
     setIsUploading(true)

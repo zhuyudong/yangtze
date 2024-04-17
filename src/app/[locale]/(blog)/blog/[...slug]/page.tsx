@@ -10,7 +10,7 @@ import { env } from '@/env.mjs'
 import { absoluteUrl, cn, formatDate } from '@/lib/utils'
 
 import MdxContent from './mdx-content'
-import Newsletter from './newsletter'
+// import Newsletter from './newsletter'
 
 interface PostPageProps {
   params: {
@@ -56,12 +56,6 @@ export async function generateMetadata({
           alt: post.title
         }
       ]
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.description,
-      images: [ogUrl.toString()]
     }
   }
 }
@@ -82,7 +76,7 @@ export default async function PostPage({ params }: PostPageProps) {
   }
 
   return (
-    <article className="container relative max-w-3xl py-6 lg:py-10">
+    <article className="container relative max-w-7xl py-6 lg:py-10">
       <Link
         href="/blog"
         className={cn(
@@ -106,15 +100,15 @@ export default async function PostPage({ params }: PostPageProps) {
           {post.title}
         </h1>
         <Link
-          href="https://twitter.com/divdev_"
+          href="/blog"
           target="_blank"
           className="mt-4 flex items-center space-x-2 text-sm"
         >
           <Image
             src="/images/avatar.jpeg"
             alt="Dimitri Ivashchuk"
-            width={42}
-            height={42}
+            width={36}
+            height={36}
             className="rounded-full bg-white"
           />
           <div className="flex-1 text-left leading-tight">
@@ -135,7 +129,7 @@ export default async function PostPage({ params }: PostPageProps) {
       )}
       <MdxContent code={post.body.code} />
       <hr className="mt-12" />
-      <Newsletter />
+      {/* <Newsletter /> */}
 
       <div className="flex justify-center py-6 lg:py-10">
         <Link href="/blog" className={cn(buttonVariants({ variant: 'ghost' }))}>

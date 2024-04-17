@@ -1,4 +1,5 @@
 import { MapPinIcon } from '@heroicons/react/24/outline'
+import type { ComponentType } from 'react'
 
 import { ArticleIcon } from '@/components/icons/ArticleIcon'
 import { ExcerptIcon } from '@/components/icons/ExcerptIcon'
@@ -16,7 +17,7 @@ export interface NavGroup {
   links: Array<{
     title: string
     href: string
-    icon?: React.ComponentType<{ className?: string }>
+    icon?: ComponentType<{ className?: string }>
   }>
 }
 

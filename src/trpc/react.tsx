@@ -8,6 +8,7 @@ import {
 } from '@tanstack/react-query'
 import { loggerLink, unstable_httpBatchStreamLink } from '@trpc/client'
 import { createTRPCReact } from '@trpc/react-query'
+import type { ReactNode } from 'react'
 import { useState } from 'react'
 import { toast } from 'sonner'
 import SuperJSON from 'superjson'
@@ -40,7 +41,7 @@ const getQueryClient = () => {
 
 export const api = createTRPCReact<AppRouter>()
 
-export function TRPCReactProvider(props: { children: React.ReactNode }) {
+export function TRPCReactProvider(props: { children: ReactNode }) {
   const queryClient = getQueryClient()
 
   const [trpcClient] = useState(() =>

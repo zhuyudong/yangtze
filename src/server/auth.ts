@@ -7,13 +7,9 @@ import {
   type NextAuthOptions
 } from 'next-auth'
 import { type Adapter } from 'next-auth/adapters'
-// import DiscordProvider from 'next-auth/providers/discord'
 import GoogleProvider from 'next-auth/providers/google'
 
 import { env } from '@/env.mjs'
-// import { slackNewUserNotification } from '@/jobs'
-// import { loops } from '@/lib/loops'
-// import { isTriggerEnabled } from '@/lib/trigger'
 import { db } from '@/server/db'
 
 /**
@@ -65,33 +61,13 @@ export const authOptions: NextAuthOptions = {
   events: {
     // eslint-disable-next-line unused-imports/no-unused-vars
     async signIn({ user, isNewUser }) {
-      // Sentry.setUser({ id: user.id, name: user.name, email: user.email ?? '' })
+      // TODO: sentry
       if (isNewUser) {
-        // if (isTriggerEnabled) {
-        //   await slackNewUserNotification.invoke({
-        //     user: {
-        //       name: user.name ?? 'unknown',
-        //       email: user.email ?? undefined,
-        //       id: user.id
-        //     }
-        //   })
-        // }
-        // if (loops && user.email) {
-        //   await loops.sendEvent(
-        //     {
-        //       email: user.email
-        //     },
-        //     'cascade_sign_up',
-        //     {
-        //       ...(user.name && { name: user.name }),
-        //       email: user.email
-        //     }
-        //   )
-        // }
+        // TODO: notifier
       }
     },
     signOut() {
-      // Sentry.setUser(null)
+      // TODO: sentry
     }
   },
   adapter: PrismaAdapter(db) as Adapter,

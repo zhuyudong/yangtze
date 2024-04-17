@@ -2,7 +2,7 @@ import { generateReactHelpers } from '@uploadthing/react'
 import { isRedirectError } from 'next/dist/client/components/redirect'
 import { z } from 'zod'
 
-import type { OurFileRouter } from '@/app/[locale]/(unauth)/api/uploadthing/core'
+import type { OurFileRouter } from '@/app/[locale]/api/uploadthing/core'
 
 export const { useUploadThing, uploadFiles } =
   generateReactHelpers<OurFileRouter>()

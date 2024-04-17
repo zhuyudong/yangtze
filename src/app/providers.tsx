@@ -1,8 +1,14 @@
 'use client'
 
+import { useSearchParams } from 'next/navigation'
+// import { useSession } from '@clerk/nextjs'
+import { useSession } from 'next-auth/react'
 import { ThemeProvider, useTheme } from 'next-themes'
 import type { ReactNode } from 'react'
 import { useEffect } from 'react'
+
+import { TooltipProvider } from '@/components/ui/tooltip'
+import { TRPCReactProvider } from '@/trpc/react'
 
 function ThemeWatcher() {
   const { resolvedTheme, setTheme } = useTheme()
@@ -28,11 +34,38 @@ function ThemeWatcher() {
   return null
 }
 
+const Identification = ({ children }: { children: ReactNode }) => {
+  const { data: session } = useSession()
+  const user = session?.user
+
+  const params = useSearchParams()
+  const newLoginState = params.get('loginState')
+
+  if (newLoginState === 'signedIn' && session) {
+    // TODO: monitor
+  }
+  useEffect(() => {
+    // TODO: monitor
+  }, [user])
+
+  // eslint-disable-next-line react/jsx-no-useless-fragment
+  return <>{children}</>
+}
+
 export function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider attribute="class" disableTransitionOnChange>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
       <ThemeWatcher />
-      {children}
+      <TRPCReactProvider>
+        <TooltipProvider>
+          <Identification>{children}</Identification>
+        </TooltipProvider>
+      </TRPCReactProvider>
     </ThemeProvider>
   )
 }
