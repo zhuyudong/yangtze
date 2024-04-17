@@ -39,7 +39,7 @@ const readMdxFile = (filePath: string, category: string) => {
       // eslint-disable-next-line prefer-destructuring
       title = match[0]
       // eslint-disable-next-line prefer-destructuring
-      originHref = match[1]
+      originHref = match[1]!
       content += `${line.replace(match[0], '')}\n`
     } else {
       content += `${line}\n`

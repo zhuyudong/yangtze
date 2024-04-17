@@ -302,8 +302,8 @@ import GitHubProvider from 'next-auth/providers/github'
 import GoogleProvider from 'next-auth/providers/google'
 import type { Provider } from 'next-auth/providers/index'
 
-import { prisma } from '@/libs/prisma'
-import redis from '@/libs/redis'
+import { db } from '@/server/db'
+import redis from '@/lib/redis'
 
 export async function storeAccessToken(accessToken: string, sub?: string) {
   if (!accessToken || !sub) return

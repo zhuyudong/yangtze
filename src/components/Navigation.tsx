@@ -11,8 +11,8 @@ import { Button } from '@/components/Button'
 import { useIsInsideMobileNavigation } from '@/components/MobileNavigation'
 import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
-import { type NavGroup, navigation } from '@/libs/navigation'
-// import { remToPx } from '@/libs/remToPx'
+import { type NavGroup, navigation } from '@/lib/navigation'
+// import { remToPx } from '@/lib/remToPx'
 
 function useInitialValue<T>(value: T, condition = true) {
   const initialValue = useRef(value).current
@@ -108,7 +108,7 @@ function VisibleSectionHighlight({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 0.2 } }}
       exit={{ opacity: 0 }}
-      className="absolute inset-x-0 top-0 bg-zinc-800/2.5 will-change-transform dark:bg-white/2.5"
+      className="bg-zinc-800/2.5 dark:bg-white/2.5 absolute inset-x-0 top-0 will-change-transform"
       // FIXME: Warning: Prop `style` did not match. Server: "border-radius:8px;height:32px;top:0;opacity:0" Client: "border-radius:8px;height:24px;top:0;opacity:0"
       // style={{ borderRadius: 8, height, top }}
       style={{ borderRadius: 8, height: 24, top: 0 }}

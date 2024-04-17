@@ -28,7 +28,7 @@ import {
 } from 'react'
 import Highlighter from 'react-highlight-words'
 
-import { navigation } from '@/libs/navigation'
+import { navigation } from '@/lib/navigation'
 import { type Result } from '@/markdoc/search.mjs'
 
 type EmptyObject = Record<string, never>
@@ -269,7 +269,7 @@ const SearchInput = forwardRef<
       <input
         ref={inputRef}
         className={clsx(
-          'flex-auto appearance-none bg-transparent pl-12 text-slate-900 outline-none placeholder:text-slate-400 focus:w-full focus:flex-none sm:text-sm dark:text-white [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-decoration]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden',
+          'flex-auto appearance-none bg-transparent pl-12 text-slate-900 outline-none placeholder:text-slate-400 focus:w-full focus:flex-none dark:text-white sm:text-sm [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-decoration]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden',
           autocompleteState.status === 'stalled' ? 'pr-11' : 'pr-4'
         )}
         {...inputProps}
@@ -376,7 +376,7 @@ function SearchDialog({
         <div className="fixed inset-0 bg-slate-900/50 backdrop-blur" />
 
         <div className="fixed inset-0 overflow-y-auto p-4 sm:px-6 sm:py-20 md:py-32 lg:px-8 lg:py-[15vh]">
-          <Dialog.Panel className="mx-auto transform-gpu overflow-hidden rounded-xl bg-white shadow-xl sm:max-w-xl dark:bg-slate-800 dark:ring-1 dark:ring-slate-700">
+          <Dialog.Panel className="mx-auto transform-gpu overflow-hidden rounded-xl bg-white shadow-xl dark:bg-slate-800 dark:ring-1 dark:ring-slate-700 sm:max-w-xl">
             <div {...autocomplete.getRootProps({})}>
               <form
                 ref={formRef}
@@ -450,15 +450,15 @@ export function Search() {
     <>
       <button
         type="button"
-        className="group flex size-6 items-center justify-center sm:justify-start md:h-auto md:w-80 md:flex-none md:rounded-lg md:py-2.5 md:pl-4 md:pr-3.5 md:text-sm md:ring-1 md:ring-slate-200 md:hover:ring-slate-300 lg:w-96 dark:md:bg-slate-800/75 dark:md:ring-inset dark:md:ring-white/5 dark:md:hover:bg-slate-700/40 dark:md:hover:ring-slate-500"
+        className="group flex size-6 items-center justify-center sm:justify-start md:h-auto md:w-80 md:flex-none md:rounded-lg md:py-2.5 md:pl-4 md:pr-3.5 md:text-sm md:ring-1 md:ring-slate-200 md:hover:ring-slate-300 dark:md:bg-slate-800/75 dark:md:ring-inset dark:md:ring-white/5 dark:md:hover:bg-slate-700/40 dark:md:hover:ring-slate-500 lg:w-96"
         {...buttonProps}
       >
-        <SearchIcon className="size-5 flex-none fill-slate-400 group-hover:fill-slate-500 md:group-hover:fill-slate-400 dark:fill-slate-500" />
+        <SearchIcon className="size-5 flex-none fill-slate-400 group-hover:fill-slate-500 dark:fill-slate-500 md:group-hover:fill-slate-400" />
         <span className="sr-only md:not-sr-only md:ml-2 md:text-slate-500 md:dark:text-slate-400">
           Search docs
         </span>
         {modifierKey && (
-          <kbd className="ml-auto hidden font-medium text-slate-400 md:block dark:text-slate-500">
+          <kbd className="ml-auto hidden font-medium text-slate-400 dark:text-slate-500 md:block">
             <kbd className="font-sans">{modifierKey}</kbd>
             <kbd className="font-sans">K</kbd>
           </kbd>

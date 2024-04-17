@@ -76,10 +76,10 @@ function CopyButton({ code }: { code: string }) {
     <button
       type="button"
       className={clsx(
-        'group/button absolute right-4 top-3.5 overflow-hidden rounded-full py-1 pl-2 pr-3 text-2xs font-medium opacity-0 backdrop-blur transition focus:opacity-100 group-hover:opacity-100',
+        'group/button text-2xs absolute right-4 top-3.5 overflow-hidden rounded-full py-1 pl-2 pr-3 font-medium opacity-0 backdrop-blur transition focus:opacity-100 group-hover:opacity-100',
         copied
           ? 'bg-emerald-400/10 ring-1 ring-inset ring-emerald-400/20'
-          : 'bg-white/5 hover:bg-white/7.5 dark:bg-white/2.5 dark:hover:bg-white/5'
+          : 'hover:bg-white/7.5 dark:bg-white/2.5 bg-white/5 dark:hover:bg-white/5'
       )}
       onClick={() => {
         window.navigator.clipboard.writeText(code).then(() => {
@@ -116,7 +116,7 @@ function CodePanelHeader({ tag, label }: { tag?: string; label?: string }) {
   }
 
   return (
-    <div className="flex h-9 items-center gap-2 border-y border-b-white/7.5 border-t-transparent bg-white/2.5 bg-zinc-900 px-4 dark:border-b-white/5 dark:bg-white/1">
+    <div className="border-b-white/7.5 bg-white/2.5 dark:bg-white/1 flex h-9 items-center gap-2 border-y border-t-transparent bg-zinc-900 px-4 dark:border-b-white/5">
       {tag && (
         <div className="dark flex">
           <Tag variant="small">{tag}</Tag>
@@ -156,7 +156,7 @@ function CodePanel({
   }
 
   return (
-    <div className="group dark:bg-white/2.5">
+    <div className="dark:bg-white/2.5 group">
       <CodePanelHeader tag={tag} label={label} />
       <div className="relative">
         <pre className="overflow-x-auto p-4 text-xs text-white">{children}</pre>
@@ -193,7 +193,7 @@ function CodeGroupHeader({
           {Children.map(children, (child, childIndex) => (
             <Tab
               className={clsx(
-                'border-b py-3 transition ui-not-focus-visible:outline-none',
+                'ui-not-focus-visible:outline-none border-b py-3 transition',
                 childIndex === selectedIndex
                   ? 'border-emerald-500 text-emerald-400'
                   : 'border-transparent text-zinc-400 hover:text-zinc-300'

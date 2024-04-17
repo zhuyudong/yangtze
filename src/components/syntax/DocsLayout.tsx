@@ -5,7 +5,7 @@ import { DocsHeader } from '@/components/syntax/DocsHeader'
 import { PrevNextLinks } from '@/components/syntax/PrevNextLinks'
 import { Prose } from '@/components/syntax/Prose'
 import { TableOfContents } from '@/components/syntax/TableOfContents'
-import { collectSections } from '@/libs/sections'
+import { collectSections } from '@/lib/sections'
 
 export function DocsLayout({
   children,

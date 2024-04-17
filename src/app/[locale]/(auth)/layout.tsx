@@ -1,4 +1,4 @@
-import '@/styles/auth.css'
+import '@/styles/tailwind.css'
 
 import { getServerSession } from 'next-auth'
 import type { ReactNode } from 'react'

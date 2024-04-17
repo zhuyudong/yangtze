@@ -147,6 +147,8 @@ module.exports = {
         'jsx-a11y/no-redundant-roles': 'off', // Allow redundant roles
         'jsx-a11y/label-has-associated-control': 'off', // Allow label without associated control
         'jsx-a11y/media-has-caption': 'off', // Allow media without caption
+        'jsx-a11y/heading-has-content': 'off',
+        'jsx-a11y/alt-text': 'off',
         '@next/next/no-img-element': 'off', // Allow img without alt
         'tailwindcss/no-custom-classname': 'off', // Allow custom classnames
         'tailwindcss/no-contradicting-classname': 'off'

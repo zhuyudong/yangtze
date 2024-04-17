@@ -1,10 +1,11 @@
 import { without } from 'lodash'
+import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 import { getSession } from 'next-auth/react'
 
-import { prisma } from '@/libs/prisma'
+import { db } from '@/server/db'
 
-async function handler(req: Request) {
+async function handler(req: NextRequest) {
   try {
     if (req.method !== 'POST') {
       return NextResponse.json(null, { status: 405 })
@@ -19,7 +20,7 @@ async function handler(req: Request) {
 
     const { movieId } = await req.json()
 
-    const existingMovie = await prisma.movie.findUnique({
+    const existingMovie = await db.movie.findUnique({
       where: {
         id: movieId
       }

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 
-import { prisma } from '@/libs/prisma'
-import { serverAuth } from '@/libs/serverAuth'
+import { serverAuth } from '@/lib/server-auth'
+import { db } from '@/server/db'
 
 async function handler(
   req: Request,
@@ -24,7 +24,7 @@ async function handler(
       throw new Error('Missing Id')
     }
 
-    const movies = await prisma.movie.findUnique({
+    const movies = await db.movie.findUnique({
       where: {
         id: movieId
       }

@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import { useCallback, useEffect, useState } from 'react'
 
-import { type Section, type Subsection } from '@/libs/sections'
+import { type Section, type Subsection } from '@/lib/sections'
 
 export function TableOfContents({
   tableOfContents

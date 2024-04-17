@@ -1,9 +1,10 @@
+import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
-import { prisma } from '@/libs/prisma'
-import { serverAuth } from '@/libs/serverAuth'
+import { serverAuth } from '@/lib/server-auth'
+import { db } from '@/server/db'
 
-async function handler(req: Request) {
+async function handler(req: NextRequest) {
   try {
     if (req.method !== 'GET') {
       return NextResponse.json(null, { status: 405 })
@@ -11,7 +12,7 @@ async function handler(req: Request) {
 
     const { currentUser } = await serverAuth()
 
-    const favoritedMovies = await prisma.movie.findMany({
+    const favoritedMovies = await db.movie.findMany({
       where: {
         id: {
           in: currentUser?.favoriteIds

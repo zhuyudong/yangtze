@@ -27,7 +27,7 @@ export default function Excerpts() {
     <Wrapper>
       <h1>文摘</h1>
       {contents.map((i, ix) => {
-        const title = i.title.split('](')[0].slice(1)
+        const title = i?.title?.split('](')?.[0]?.slice(1)
         return (
           <div key={i.id}>
             <h2>

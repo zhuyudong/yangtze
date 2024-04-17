@@ -1,8 +1,9 @@
+import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
-import { serverAuth } from '@/libs/serverAuth'
+import { serverAuth } from '@/lib/server-auth'
 
-async function handler(req: Request) {
+async function handler(req: NextRequest) {
   try {
     if (req.method !== 'GET') {
       return NextResponse.json(null, { status: 405 })

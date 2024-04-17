@@ -1,6 +1,6 @@
 /* eslint-disable no-var */
 /* eslint-disable vars-on-top */
-// import { prisma } from '@/libs/prisma'
+// import { db } from '@/server/db'
 import { PrismaClient } from '@prisma/client'
 
 import articles from './articles.json'
@@ -23,8 +23,8 @@ declare global {
   }
 }
 
-const prisma = global.prisma || new PrismaClient()
-if (process.env.NODE_ENV !== 'production') global.prisma = prisma
+const db = global.prisma || new PrismaClient()
+if (process.env.NODE_ENV !== 'production') global.db = prisma
 
 const contents = [
   ...news,
@@ -44,7 +44,7 @@ const contents = [
  */
 async function main() {
   console.log(`Start seeding ...`)
-  const exists = await prisma.movie.findMany({
+  const exists = await db.movie.findMany({
     // where: {
     //   title: u.title
     // }
@@ -53,18 +53,18 @@ async function main() {
     console.log(`Seeding skipped. Movies already exist.`)
   } else {
     for (const u of movies) {
-      const movie = await prisma.movie.create({
+      const movie = await db.movie.create({
         data: u
       })
       console.log(`Created movie with id: ${movie.id}`)
     }
   }
-  const cs = await prisma.content.findMany()
+  const cs = await db.content.findMany()
   if (cs.length) {
     console.log(`Seeding skipped. Contents already exist.`)
   } else {
     for (let i = 0; i < contents.length; i++) {
-      await prisma.content.create({
+      await db.content.create({
         data: contents[i]
       })
       console.log(`Created content ${i + 1}`)
@@ -75,10 +75,10 @@ async function main() {
 
 main()
   .then(async () => {
-    await prisma.$disconnect()
+    await db.$disconnect()
   })
   .catch(async e => {
     console.error(e)
-    await prisma.$disconnect()
+    await db.$disconnect()
     process.exit(1)
   })

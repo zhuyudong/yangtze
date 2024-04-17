@@ -5,8 +5,7 @@ import type { FC } from 'react'
 import { useCallback } from 'react'
 
 import { PlayButton } from '@/components/PlayButton'
-import { useBillboard } from '@/hooks/useBillboard'
-import { useInfoModalStore } from '@/hooks/useInfoModalStore'
+import { useBillboard, useInfoModalStore } from '@/hooks'
 
 export const Billboard: FC = () => {
   const { openModal } = useInfoModalStore()

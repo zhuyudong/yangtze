@@ -3,7 +3,7 @@
 import { useLocale } from 'next-intl'
 import type { ChangeEventHandler } from 'react'
 
-import { usePathname, useRouter } from '@/libs/i18nNavigation'
+import { usePathname, useRouter } from '@/lib/i18n-navigation'
 import { AppConfig } from '@/utils/AppConfig'
 
 export function LocaleSwitcher() {

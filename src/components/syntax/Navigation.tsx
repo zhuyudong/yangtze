@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { ComponentType, MouseEventHandler } from 'react'
 
-import { navigation } from '@/libs/navigation'
+import { navigation } from '@/lib/navigation'
 import { AppConfig } from '@/utils/AppConfig'
 
 // /en|zh-CN/
@@ -42,7 +42,7 @@ export function Navigation({
             <ul
               role="list"
               // space-y-2 lg:space-y-4
-              className="mt-2 space-y-1 border-l-2 border-slate-100 lg:mt-4 lg:space-y-2 lg:border-slate-200 dark:border-slate-800"
+              className="mt-2 space-y-1 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-2 lg:border-slate-200"
             >
               {section.links.map(link => (
                 <li key={link.href} className="relative">

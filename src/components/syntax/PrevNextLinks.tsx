@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { ComponentPropsWithoutRef } from 'react'
 
-import { navigation } from '@/libs/navigation'
+import { navigation } from '@/lib/navigation'
 
 function ArrowIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (

@@ -1,9 +1,10 @@
+import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
-import { prisma } from '@/libs/prisma'
-// import { serverAuth } from '@/libs/serverAuth'
+import { db } from '@/server/db'
+// import { serverAuth } from '@/lib/serverAuth'
 
-async function handler(req: Request) {
+async function handler(req: NextRequest) {
   try {
     if (req.method !== 'GET') {
       return NextResponse.json(null, { status: 405 })
@@ -11,7 +12,7 @@ async function handler(req: Request) {
 
     // await serverAuth()
 
-    const movies = await prisma.movie.findMany()
+    const movies = await db.movie.findMany()
     return NextResponse.json(movies)
   } catch (error) {
     console.log({ error })

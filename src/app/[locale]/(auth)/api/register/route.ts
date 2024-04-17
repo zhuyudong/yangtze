@@ -1,9 +1,10 @@
 // import bcrypt from 'bcrypt'
+import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
-import { prisma } from '@/libs/prisma'
+import { db } from '@/server/db'
 
-async function handler(req: Request) {
+async function handler(req: NextRequest) {
   try {
     if (req.method !== 'POST') {
       return NextResponse.json(null, { status: 405 })
@@ -11,7 +12,7 @@ async function handler(req: Request) {
 
     const { email, name, password } = await req.json()
 
-    const existingUser = await prisma.user.findUnique({
+    const existingUser = await db.user.findUnique({
       where: {
         email
       }

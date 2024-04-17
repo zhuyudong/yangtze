@@ -1,7 +1,7 @@
 import { ArrowLeftIcon } from '@heroicons/react/24/outline'
 import { useParams, useRouter } from 'next/navigation'
 
-import { useMovie } from '@/hooks/useMovie'
+import { useMovie } from '@/hooks'
 
 const Watch = () => {
   const router = useRouter()

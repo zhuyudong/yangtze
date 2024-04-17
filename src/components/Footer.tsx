@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import type { ComponentPropsWithoutRef, ComponentType, ReactNode } from 'react'
 
 import { Button } from '@/components/Button'
-import { navigation } from '@/libs/navigation'
+import { navigation } from '@/lib/navigation'
 
 function PageLink({
   label,
@@ -117,7 +117,7 @@ function SocialLink({
 
 function SmallPrint() {
   return (
-    <div className="flex flex-col items-center justify-between gap-5 border-t border-zinc-900/5 pt-8 sm:flex-row dark:border-white/5">
+    <div className="flex flex-col items-center justify-between gap-5 border-t border-zinc-900/5 pt-8 dark:border-white/5 sm:flex-row">
       <p className="text-xs text-zinc-600 dark:text-zinc-400">
         &copy; Copyright {new Date().getFullYear()}. All rights reserved.
       </p>

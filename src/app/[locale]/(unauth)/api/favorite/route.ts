@@ -1,16 +1,17 @@
 import { without } from 'lodash'
+import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
-import { prisma } from '@/libs/prisma'
-import { serverAuth } from '@/libs/serverAuth'
+import { serverAuth } from '@/lib/server-auth'
+import { db } from '@/server/db'
 
-async function handler(req: Request) {
+async function handler(req: NextRequest) {
   try {
     if (req.method === 'POST') {
       const { currentUser } = await serverAuth()
       const { movieId } = await req.json()
 
-      const existingMovie = await prisma.movie.findUnique({
+      const existingMovie = await db.movie.findUnique({
         where: {
           id: movieId
         }
@@ -20,7 +21,7 @@ async function handler(req: Request) {
         throw new Error('Invalid ID')
       }
 
-      const user = await prisma.user.update({
+      const user = await db.user.update({
         where: {
           email: currentUser.email || ''
         },

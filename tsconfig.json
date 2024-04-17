@@ -1,26 +1,39 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
+    /* Base Options: */
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
     "resolveJsonModule": true,
+    // "moduleDetection": "force",
     "isolatedModules": true,
+
+    /* Strictness */
+    "strict": true,
+    // NOTE: 这两个选项可以避免检查 src/markdoc 和 src/mdx
+    // "noUncheckedIndexedAccess": true,
+    // "checkJs": true,
+
+    /* Bundled projects */
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler", // "Bundler"
     "jsx": "preserve",
-    "incremental": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
+    "incremental": true,
+
+    /* Path Aliases */
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },
   "ts-node": {
@@ -32,8 +45,14 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    // "**/*.cjs",
+    // "**/*.js",
     ".next/types/**/*.ts",
-    "src/libs/env.mjs"
+    "src/env.mjs",
+    ".eslintrc.js",
+    // "next.config.mjs",
+    "prettier.config.js",
+    ".contentlayer/generated"
   ],
   "exclude": ["node_modules"]
 }

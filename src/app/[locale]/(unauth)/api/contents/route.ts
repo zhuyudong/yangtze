@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 
-import { prisma } from '@/libs/prisma'
-// import { serverAuth } from '@/libs/serverAuth'
+import { db } from '@/server/db'
+// import { serverAuth } from '@/lib/serverAuth'
 
 async function handler(
   req: Request,
@@ -15,7 +15,7 @@ async function handler(
 
     // await serverAuth()
     const match = /\?category=([a-zA-Z]+[\w]+)$/.exec(req.url!)
-    const contents = await prisma.content.findMany({
+    const contents = await db.content.findMany({
       where: {
         category: match ? match[1] : undefined
       }
