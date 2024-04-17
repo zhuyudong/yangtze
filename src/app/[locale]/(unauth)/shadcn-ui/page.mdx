@@ -1,0 +1,18 @@
+---
+title: "shadcn/ui 的使用"
+---
+
+## [shadcn/ui](https://ui.shadcn.com/) - Build your component library 
+
+Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
+
+### 初始化
+
+```bash
+# pnpm create next-app@latest my-app --typescript --tailwind --eslint
+# generate components.json
+pnpm dlx shadcn-ui@latest init
+npx --package-manager=pnpm  --registry https://registry.npmmirror.com shadcn-ui@latest add button
+# add all available components (default: false), will install @radix-ui/* packages src/components/ui/*
+npx --package-manager=pnpm  --registry https://registry.npmmirror.com shadcn-ui@latest add -a
+```
