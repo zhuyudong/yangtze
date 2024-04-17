@@ -40,7 +40,7 @@ async function handler(req: NextRequest) {
 
       const { movieId } = await req.json()
 
-      const existingMovie = await prisma.movie.findUnique({
+      const existingMovie = await db.movie.findUnique({
         where: {
           id: movieId
         }
@@ -52,7 +52,7 @@ async function handler(req: NextRequest) {
 
       const updatedFavoriteIds = without(currentUser.favoriteIds, movieId)
 
-      const updatedUser = await prisma.user.update({
+      const updatedUser = await db.user.update({
         where: {
           email: currentUser.email || ''
         },

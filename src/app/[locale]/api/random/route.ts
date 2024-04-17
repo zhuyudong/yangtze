@@ -12,7 +12,7 @@ async function handler(req: NextRequest) {
 
     // await serverAuth()
 
-    const moviesCount = await prisma.movie.count()
+    const moviesCount = await db.movie.count()
     const randomIndex = Math.floor(Math.random() * moviesCount)
 
     const randomMovies = await db.movie.findMany({

@@ -86,7 +86,7 @@ export function AvatarSelection() {
             initial={{ y: '-5rem' }}
             animate={{ y: 0 }}
             transition={{ duration: 0.4 }}
-            className="relative mx-auto -mt-[60px] rounded-full bg-background p-2"
+            className="relative mx-auto mt-[-60px] rounded-full bg-background p-2"
           >
             <Avatar className="mb ">
               <AvatarImage

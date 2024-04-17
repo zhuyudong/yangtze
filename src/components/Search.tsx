@@ -206,7 +206,7 @@ function SearchResult({
         <div
           id={`${id}-hierarchy`}
           aria-hidden="true"
-          className="text-2xs mt-1 truncate whitespace-nowrap text-zinc-500"
+          className="mt-1 truncate whitespace-nowrap text-2xs text-zinc-500"
         >
           {hierarchy.map((item, itemIndex, items) => (
             <Fragment key={itemIndex}>
@@ -390,7 +390,7 @@ function SearchDialog({
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Dialog.Panel className="ring-zinc-900/7.5 mx-auto transform-gpu overflow-hidden rounded-lg bg-zinc-50 shadow-xl ring-1 dark:bg-zinc-900 dark:ring-zinc-800 sm:max-w-xl">
+            <Dialog.Panel className="mx-auto transform-gpu overflow-hidden rounded-lg bg-zinc-50 shadow-xl ring-1 ring-zinc-900/7.5 dark:bg-zinc-900 dark:ring-zinc-800 sm:max-w-xl">
               <div {...autocomplete.getRootProps({})}>
                 <form
                   ref={formRef}
@@ -406,7 +406,7 @@ function SearchDialog({
                   />
                   <div
                     ref={panelRef}
-                    className="dark:bg-white/2.5 border-t border-zinc-200 bg-white empty:hidden dark:border-zinc-100/5"
+                    className="border-t border-zinc-200 bg-white empty:hidden dark:border-zinc-100/5 dark:bg-white/2.5"
                     {...autocomplete.getPanelProps({})}
                   >
                     {autocompleteState.isOpen && (
@@ -468,12 +468,12 @@ export function Search() {
     <div className="hidden lg:block lg:max-w-md lg:flex-auto">
       <button
         type="button"
-        className="ui-not-focus-visible:outline-none hidden h-8 w-full items-center gap-2 rounded-full bg-white pl-2 pr-3 text-sm text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 lg:flex"
+        className="hidden h-8 w-full items-center gap-2 rounded-full bg-white pl-2 pr-3 text-sm text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 ui-not-focus-visible:outline-none dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 lg:flex"
         {...buttonProps}
       >
         <SearchIcon className="size-5 stroke-current" />
         搜索...
-        <kbd className="text-2xs ml-auto text-zinc-400 dark:text-zinc-500">
+        <kbd className="ml-auto text-2xs text-zinc-400 dark:text-zinc-500">
           <kbd className="font-sans">{modifierKey}</kbd>
           <kbd className="font-sans">K</kbd>
         </kbd>
@@ -492,7 +492,7 @@ export function MobileSearch() {
     <div className="contents lg:hidden">
       <button
         type="button"
-        className="ui-not-focus-visible:outline-none flex size-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5 dark:hover:bg-white/5 lg:hidden"
+        className="flex size-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5 ui-not-focus-visible:outline-none dark:hover:bg-white/5 lg:hidden"
         aria-label="搜索..."
         {...buttonProps}
       >

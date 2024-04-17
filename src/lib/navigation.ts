@@ -4,7 +4,6 @@ import type { ComponentType } from 'react'
 import { ArticleIcon } from '@/components/icons/ArticleIcon'
 import { ExcerptIcon } from '@/components/icons/ExcerptIcon'
 import { FireIcon } from '@/components/icons/FireIcon'
-import { MovieIcon } from '@/components/icons/MovieIcon'
 import { NewIcon } from '@/components/icons/NewIcon'
 import { PhotoIcon } from '@/components/icons/PhotoIcon'
 import { QuotationIcon } from '@/components/icons/QuotationIcon'
@@ -46,7 +45,7 @@ export const navigation: Array<NavGroup> = [
       { title: 'Linux', href: '/awesome-linux' },
       { title: 'Redis', href: '/redis' },
       { title: 'MongoDB 常用语句', href: '/mongo' },
-      { title: 'Artificial Intelligence Generated Content', href: '/aigc' }
+      { title: 'Artificial Intelligence Generated', href: '/aigc' }
     ]
   },
   {
@@ -54,7 +53,7 @@ export const navigation: Array<NavGroup> = [
     links: [
       { title: '诗词', href: '/poetry', icon: FireIcon },
       { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },
-      { title: '电影', href: '/movies', icon: MovieIcon },
+      // { title: '电影', href: '/movies', icon: MovieIcon },
       {
         title: '文章',
         href: '/weekly-by-category/articles',

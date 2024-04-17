@@ -30,7 +30,7 @@ async function handler(req: NextRequest) {
       throw new Error('Invalid ID')
     }
 
-    const user = await prisma.user.findUnique({
+    const user = await db.user.findUnique({
       where: {
         email: session.user.email
       }
@@ -42,7 +42,7 @@ async function handler(req: NextRequest) {
 
     const updatedFavoriteIds = without(user.favoriteIds, movieId)
 
-    const updatedUser = await prisma.user.update({
+    const updatedUser = await db.user.update({
       where: {
         email: session.user.email
       },

@@ -36,7 +36,7 @@ export const Billboard: FC = () => {
           <PlayButton movieId={data?.id} />
           <button
             onClick={handleOpenModal}
-            className="flex w-auto flex-row items-center rounded-md bg-white bg-opacity-30 px-2 py-1 text-xs font-semibold text-white transition hover:bg-opacity-20 md:px-4 md:py-2 lg:text-lg"
+            className="flex w-auto flex-row items-center rounded-md bg-white px-2 py-1 text-xs font-semibold text-white opacity-30 transition hover:opacity-20 md:px-4 md:py-2 lg:text-lg"
           >
             <InformationCircleIcon className="mr-1 w-4 md:w-7" />
             More Info

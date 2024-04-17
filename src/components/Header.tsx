@@ -5,6 +5,7 @@ import type { CSSProperties, ElementRef, ReactNode } from 'react'
 import { forwardRef } from 'react'
 
 import { Button } from '@/components/Button'
+// import { MovieIcon } from '@/components/icons/MovieIcon'
 import { Logo } from '@/components/Logo'
 import {
   MobileNavigation,
@@ -13,19 +14,24 @@ import {
 } from '@/components/MobileNavigation'
 import { MobileSearch, Search } from '@/components/Search'
 import { ThemeToggle } from '@/components/ThemeToggle'
+import { cn } from '@/lib/utils'
+
+// import { ArticleIcon } from './icons/ArticleIcon'
 
 export function TopLevelNavItem({
   href,
+  className,
   children
 }: {
   href: string
+  className?: string
   children: ReactNode
 }) {
   return (
-    <li>
+    <li className={cn(className)}>
       <Link
         href={href}
-        className="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+        className="flex items-center space-x-2 text-sm leading-5 text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
       >
         {children}
       </Link>
@@ -91,7 +97,14 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
         <div className="flex items-center gap-5">
           <nav className="hidden md:block">
             <ul role="list" className="flex items-center gap-8">
-              <TopLevelNavItem href="/blog">Blog</TopLevelNavItem>
+              <TopLevelNavItem href="/blog">
+                {/* <ArticleIcon /> */}
+                Blog
+              </TopLevelNavItem>
+              <TopLevelNavItem href="/movies">
+                {/* <MovieIcon /> */}
+                <span>Movies</span>
+              </TopLevelNavItem>
             </ul>
           </nav>
           <div className="hidden md:block md:h-5 md:w-px md:bg-zinc-900/10 md:dark:bg-white/15" />

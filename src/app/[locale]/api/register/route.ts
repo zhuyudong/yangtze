@@ -25,7 +25,7 @@ async function handler(req: NextRequest) {
 
     // const hashedPassword = await bcrypt.hash(password, 12)
 
-    const user = await prisma.user.create({
+    const user = await db.user.create({
       data: {
         email,
         name,

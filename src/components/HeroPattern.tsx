@@ -16,7 +16,7 @@ export function HeroPattern() {
               [7, 3],
               [10, 6]
             ]}
-            className="dark:fill-white/2.5 absolute -inset-y-1/2 inset-x-0 h-[200%] w-full skew-y-[-18deg] fill-black/40 stroke-black/50 mix-blend-overlay dark:stroke-white/5"
+            className="absolute -inset-y-1/2 inset-x-0 h-[200%] w-full skew-y-[-18deg] fill-black/40 stroke-black/50 mix-blend-overlay dark:fill-white/2.5 dark:stroke-white/5"
           />
         </div>
         <svg

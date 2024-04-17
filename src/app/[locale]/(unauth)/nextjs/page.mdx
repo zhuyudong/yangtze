@@ -362,7 +362,14 @@ export default authHandler
 
 ### 常见问题
 
-1. 路由路径区分大小写吗？
+1. `useRouter` 仅可以在客户端组件中使用
+
+   ```bash
+   You're importing a component that needs useRouter. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+   Learn more: https://nextjs.org/docs/getting-started/react-essentials
+   ```
+
+2. 路由路径区分大小写吗？
 
 ## next-auth
 

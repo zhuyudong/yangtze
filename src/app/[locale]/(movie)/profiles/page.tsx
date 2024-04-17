@@ -1,5 +1,7 @@
+'use client'
+
 import { redirect, useRouter } from 'next/navigation'
-import { getSession } from 'next-auth/react'
+import { useSession } from 'next-auth/react'
 import type { FC } from 'react'
 import { useCallback } from 'react'
 
@@ -36,8 +38,8 @@ const UserCard: FC<UserCardProps> = ({ name }) => {
   )
 }
 
-const App = async () => {
-  const session = await getSession()
+const App = () => {
+  const session = useSession()
   if (!session) {
     redirect('/auth')
   }

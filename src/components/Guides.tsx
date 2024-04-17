@@ -24,7 +24,7 @@ const guides: { href: string; name: string; description: string }[] = [
   },
   {
     href: '/aigc',
-    name: 'Artificial Intelligence Generated Content',
+    name: 'Artificial Intelligence Generated',
     description: 'AIGC 就是未来'
   }
 ]
