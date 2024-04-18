@@ -11,7 +11,7 @@ export const Loading = () => {
   return (
     <RingLoader
       loading
-      size={99}
+      size={80}
       color="#0260A0"
       cssOverride={override}
       aria-label="Loading Spinner"

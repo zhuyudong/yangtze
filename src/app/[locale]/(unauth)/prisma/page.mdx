@@ -40,13 +40,7 @@ https://pris.ly/d/getting-started
 npx prisma generate
 ```
 
-5. 初始化数据
-
-```bash
-npx prisma db seed
-```
-
-6. 同步表结构到数据库
+5. 同步表结构到数据库
 
 ```bash
 npx prisma db push
@@ -77,23 +71,23 @@ declare global {
 //   db = new PrismaClient()
 // } else {
 //   if (!global.prisma) {
-//     global.prisma = new PrismaClient()
+//     global.db = new PrismaClient()
 //   }
-//   db = global.prisma
+//   db = global.db
 // }
 
-// const db = global.prisma || new PrismaClient()
-// if (process.env.NODE_ENV !== 'production') global.prisma = db
+// const db = global.db || new PrismaClient()
+// if (process.env.NODE_ENV !== 'production') global.db = db
 
 // export { db }
 
 // equivalent to
 
-// const globalForPrisma = global as unknown as { prisma: PrismaClient }
+// const globalForPrisma = global as unknown as { db: PrismaClient }
 
-// export const db = globalForPrisma.prisma || new PrismaClient()
+// export const db = globalForPrisma.db || new PrismaClient()
 
-// if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db
+// if (process.env.NODE_ENV !== 'production') globalForPrisma.db = db
 
 // equivalent to
 
@@ -103,15 +97,19 @@ const createPrismaClient = () =>
   })
 
 const globalForPrisma = globalThis as unknown as {
-  prisma: ReturnType<typeof createPrismaClient> | undefined
+  db: ReturnType<typeof createPrismaClient> | undefined
 }
 
-export const db = globalForPrisma.prisma ?? createPrismaClient()
+export const db = globalForPrisma.db ?? createPrismaClient()
 
-if (env.NODE_ENV !== 'production') globalForPrisma.prisma = db
+if (env.NODE_ENV !== 'production') globalForPrisma.db = db
 ```
 
-1. 数据初始化【可选】
+7. 数据初始化【可选】
+
+```bash
+npx prisma db seed
+```
 
 > prisma/seed.ts
 
@@ -122,14 +120,14 @@ import { PrismaClient } from '@prisma/client'
 declare global {
   namespace globalThis {
     // NOTE: 注意这里使用 var 而不是 let 或 const
-    // var prisma: import('@prisma/client').PrismaClient
+    // var db: import('@prisma/client').PrismaClient
     // or
-    var prisma: PrismaClient
+    var db: PrismaClient
   }
 }
 
-const db = global.prisma || new PrismaClient()
-if (process.env.NODE_ENV !== 'production') global.db = prisma
+const db = global.db || new PrismaClient()
+if (process.env.NODE_ENV !== 'production') global.db = db
 
 async function main() {
   console.log(`Start seeding ...`)
@@ -172,3 +170,13 @@ npx prisma studio
   }
 }
 ```
+
+9. schema.prisma 变更处理
+  
+   **生成迁移文件 prisma/migrations/xxx 并自动执行 `npx prisma db seed`，注意执行前先执行 `npx prisma generate`**
+
+   ```bash
+   npx primsa migrate dev
+   ```
+
+10. `npx prisma migrate deploy` 确认迁移，将会在数据库中新生成或更新 _prisma_migrations 表

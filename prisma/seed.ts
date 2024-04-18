@@ -20,12 +20,12 @@ declare global {
     // NOTE: 注意这里使用 var 而不是 let 或 const
     // var prisma: import('@prisma/client').PrismaClient
     // or
-    var prisma: PrismaClient
+    var db: PrismaClient
   }
 }
 
-const db = global.prisma || new PrismaClient()
-if (process.env.NODE_ENV !== 'production') global.db = prisma
+const db = global.db || new PrismaClient()
+if (process.env.NODE_ENV !== 'production') global.db = db
 
 const contents = [
   ...news,

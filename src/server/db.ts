@@ -18,23 +18,23 @@ declare global {
 //   db = new PrismaClient()
 // } else {
 //   if (!global.prisma) {
-//     global.prisma = new PrismaClient()
+//     global.db = new PrismaClient()
 //   }
-//   db = global.prisma
+//   db = global.db
 // }
 
-// const db = global.prisma || new PrismaClient()
-// if (process.env.NODE_ENV !== 'production') global.prisma = db
+// const db = global.db || new PrismaClient()
+// if (process.env.NODE_ENV !== 'production') global.db = db
 
 // export { db }
 
 // equivalent to
 
-// const globalForPrisma = global as unknown as { prisma: PrismaClient }
+// const globalForPrisma = global as unknown as { db: PrismaClient }
 
-// export const db = globalForPrisma.prisma || new PrismaClient()
+// export const db = globalForPrisma.db || new PrismaClient()
 
-// if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db
+// if (process.env.NODE_ENV !== 'production') globalForPrisma.db = db
 
 // equivalent to
 
@@ -44,9 +44,9 @@ const createPrismaClient = () =>
   })
 
 const globalForPrisma = globalThis as unknown as {
-  prisma: ReturnType<typeof createPrismaClient> | undefined
+  db: ReturnType<typeof createPrismaClient> | undefined
 }
 
-export const db = globalForPrisma.prisma ?? createPrismaClient()
+export const db = globalForPrisma.db ?? createPrismaClient()
 
-if (env.NODE_ENV !== 'production') globalForPrisma.prisma = db
+if (env.NODE_ENV !== 'production') globalForPrisma.db = db

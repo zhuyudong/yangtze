@@ -14,6 +14,7 @@ import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
 import { UserIcon } from '@/components/icons/UserIcon'
 import { useRandomIndex } from '@/hooks'
+import { cn } from '@/lib/utils'
 import wallpapers from '@/resources/bing_wallpaper.json'
 import movieQuotes from '@/resources/movie_quotes.json'
 import poetry from '@/resources/poetry.json'
@@ -32,6 +33,7 @@ import { ToolIcon } from './icons/ToolIcon'
 interface IResource {
   href: string
   name: string
+  bg?: string
   description: string
   icon: ComponentType<{ className?: string }>
   pattern: Omit<
@@ -46,6 +48,7 @@ const resources: Array<IResource> = [
     name: '博客【原创】',
     description: '',
     icon: ArticleIcon,
+    bg: 'bg-zinc-50',
     pattern: {
       y: -6,
       squares: [
@@ -59,6 +62,7 @@ const resources: Array<IResource> = [
     name: 'Linux 工具箱',
     description: '',
     icon: UserIcon,
+    bg: 'bg-red-50',
     pattern: {
       y: 16,
       squares: [
@@ -72,6 +76,7 @@ const resources: Array<IResource> = [
     name: '文章',
     description: '',
     icon: ArticleIcon,
+    bg: 'bg-violet-50',
     pattern: {
       y: -6,
       squares: [
@@ -85,6 +90,7 @@ const resources: Array<IResource> = [
     name: '文摘',
     description: '',
     icon: ExcerptIcon,
+    bg: 'bg-green-50',
     pattern: {
       y: -6,
       squares: [
@@ -98,6 +104,7 @@ const resources: Array<IResource> = [
     name: '言论',
     description: '',
     icon: QuotationIcon,
+    bg: 'bg-cyan-50',
     pattern: {
       y: -6,
       squares: [
@@ -111,6 +118,7 @@ const resources: Array<IResource> = [
     name: '社会图文',
     description: '',
     icon: PhotoIcon,
+    bg: 'bg-pink-50',
     pattern: {
       y: -6,
       squares: [
@@ -124,6 +132,7 @@ const resources: Array<IResource> = [
     name: '科技新闻',
     description: '',
     icon: NewIcon,
+    bg: 'bg-amber-50',
     pattern: {
       y: -6,
       squares: [
@@ -137,6 +146,7 @@ const resources: Array<IResource> = [
     name: '开发工具',
     description: '',
     icon: ToolIcon,
+    bg: 'bg-indigo-50',
     pattern: {
       y: -6,
       squares: [
@@ -150,6 +160,7 @@ const resources: Array<IResource> = [
     name: '科技动态',
     description: '',
     icon: TechnologyNewIcon,
+    bg: 'bg-lime-50',
     pattern: {
       y: -6,
       squares: [
@@ -163,6 +174,7 @@ const resources: Array<IResource> = [
     name: '开发与学习资源',
     description: '',
     icon: ResourcesIcon,
+    bg: 'bg-emerald-50',
     pattern: {
       y: -6,
       squares: [
@@ -283,7 +295,10 @@ function Resource({ resource }: { resource: IResource }) {
     <div
       key={resource.href}
       onMouseMove={onMouseMove}
-      className="group relative flex rounded-2xl bg-zinc-50 transition-shadow hover:shadow-md hover:shadow-zinc-900/5 dark:bg-white/2.5 dark:hover:shadow-black/5"
+      className={cn(
+        'group relative flex rounded-2xl transition-shadow hover:shadow-md hover:shadow-zinc-900/5 dark:bg-white/2.5 dark:hover:shadow-black/5',
+        resource.bg
+      )}
     >
       <ResourcePattern {...resource.pattern} mouseX={mouseX} mouseY={mouseY} />
       <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-zinc-900/7.5 group-hover:ring-zinc-900/10 dark:ring-white/10 dark:group-hover:ring-white/20" />
@@ -361,7 +376,7 @@ export function Resources() {
     // remove xl:max-w-none
     <div className="my-16">
       <Heading level={2} id="resources">
-        资源
+        阅读空间
       </Heading>
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-4">
         {resources.map(resource => (

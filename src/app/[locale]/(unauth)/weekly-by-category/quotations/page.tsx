@@ -49,6 +49,14 @@ export default function Excerpts() {
                 onClick={() => setIsLike({ ...isLike, [i.id]: !isLike[i.id] })}
               />
             </div>
+            <div className="relative mt-8">
+              <div
+                className="absolute inset-0 flex items-center"
+                aria-hidden="true"
+              >
+                <div className="w-full border-t border-gray-200" />
+              </div>
+            </div>
           </div>
         )
       })}

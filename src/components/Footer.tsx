@@ -125,7 +125,10 @@ function SmallPrint() {
         <SocialLink href="#" icon={XIcon}>
           Follow us on X
         </SocialLink>
-        <SocialLink href="#" icon={GitHubIcon}>
+        <SocialLink
+          href="https://github.com/zhuyudong/yangtze"
+          icon={GitHubIcon}
+        >
           Follow us on GitHub
         </SocialLink>
         <SocialLink href="#" icon={DiscordIcon}>

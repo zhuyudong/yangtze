@@ -28,8 +28,8 @@ const Movies = () => {
       {/* <Navbar /> */}
       <Billboard />
       <div className="pb-40">
-        <MovieList title="Trending Now" data={movies} />
-        <MovieList title="My List" data={favorites} />
+        <MovieList title="影片列表" data={movies} />
+        <MovieList title="我的收藏" data={favorites} />
       </div>
     </>
   )

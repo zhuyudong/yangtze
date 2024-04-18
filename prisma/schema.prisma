@@ -204,3 +204,17 @@ model Movie {
 
   @@map("movie")
 }
+
+model Essay {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  images      String[]
+  videos      String[]
+  voices      String[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("essay")
+}

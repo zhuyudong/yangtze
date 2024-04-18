@@ -3,7 +3,7 @@ import type { ComponentType } from 'react'
 
 import { ArticleIcon } from '@/components/icons/ArticleIcon'
 import { ExcerptIcon } from '@/components/icons/ExcerptIcon'
-// import { FireIcon } from '@/components/icons/FireIcon'
+import { FireIcon } from '@/components/icons/FireIcon'
 import { NewIcon } from '@/components/icons/NewIcon'
 import { PhotoIcon } from '@/components/icons/PhotoIcon'
 import { QuotationIcon } from '@/components/icons/QuotationIcon'
@@ -22,7 +22,7 @@ export interface NavGroup {
 
 export const navigation: Array<NavGroup> = [
   {
-    title: '概览',
+    title: '技术专栏',
     links: [
       { title: 'Introduction', href: '/' },
       { title: 'Node.js', href: '/nodejs' },
@@ -50,9 +50,9 @@ export const navigation: Array<NavGroup> = [
     ]
   },
   {
-    title: '资源',
+    title: '阅读',
     links: [
-      // { title: '诗词', href: '/poetry', icon: FireIcon },
+      { title: '诗词', href: '/poetry', icon: FireIcon },
       // { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },
       // { title: '电影', href: '/movies', icon: MovieIcon },
       {
