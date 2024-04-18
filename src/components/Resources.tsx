@@ -188,8 +188,8 @@ const resources: Array<IResource> = [
 const leisureStation: Array<IResource> = [
   {
     href: '/wallpaper',
-    name: '壁纸 - 大千世界、精彩纷呈',
-    description: '',
+    name: '壁纸',
+    description: '大千世界、精彩纷呈',
     icon: MapPinIcon,
     pattern: {
       y: -6,

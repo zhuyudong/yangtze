@@ -4,6 +4,10 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypePrettyCode from 'rehype-pretty-code'
 import rehypeSlug from 'rehype-slug'
 
+// TODO
+// import { rehypePlugins } from './src/mdx/rehype.mjs'
+// import { remarkPlugins } from './src/mdx/remark.mjs'
+
 export const Post = defineDocumentType(() => ({
   name: 'Post',
   filePathPattern: `blog/**/*.md`,
@@ -39,9 +43,12 @@ export default makeSource({
   contentDirPath: './content',
   documentTypes: [Post],
   mdx: {
+    // remarkPlugins: [...remarkPlugins],
     rehypePlugins: [
+      // ...rehypePlugins,
       rehypeSlug,
       [
+        // eslint-disable-next-line spaced-comment
         // @ts-expect-error would still work even though types are incorrect, need to fix this after contentlayer gets enough maintenenace
         rehypePrettyCode,
         {

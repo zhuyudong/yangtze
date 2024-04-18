@@ -19,7 +19,6 @@ export default async function BlogPage() {
         ? compareDesc(new Date(a.date), new Date(b.date))
         : 1
     })
-
   return (
     <div className="container relative max-w-7xl py-6 lg:py-10">
       {/* FIXME: Link Home */}
@@ -34,37 +33,6 @@ export default async function BlogPage() {
         Home
       </Link>
       {posts?.length ? (
-        // <div className="grid gap-10 sm:grid-cols-2">
-        //   {posts.map((post, index) => (
-        //     <article
-        //       key={post._id}
-        //       className="group relative flex flex-col space-y-2"
-        //     >
-        //       {post.image && (
-        //         <Image
-        //           src={post.image}
-        //           alt={post.title}
-        //           width={192}
-        //           height={108}
-        //           className="rounded-md border bg-muted transition-colors"
-        //           priority={index <= 1}
-        //         />
-        //       )}
-        //       <h2 className="text-2xl font-extrabold">{post.title}</h2>
-        //       {post.description && (
-        //         <p className="text-muted-foreground">{post.description}</p>
-        //       )}
-        //       {post.date && (
-        //         <p className="text-sm text-muted-foreground">
-        //           {formatDate(post.date)}
-        //         </p>
-        //       )}
-        //       <Link href={post.slug} className="absolute inset-0">
-        //         <span className="sr-only">View Article</span>
-        //       </Link>
-        //     </article>
-        //   ))}
-        // </div>
         <div className="m-4 grid gap-4">
           {posts.map(post => (
             <article
@@ -76,18 +44,19 @@ export default async function BlogPage() {
                 width={96}
                 height={54}
                 quality={100}
+                priority
                 src={
                   post?.image ||
                   '/images/OHR.AyutthayaTemple_ZH-CN5996587937_1920x1080.webp'
                 }
                 alt={post.title}
               />
-              <div className="flex flex-1 flex-col justify-between p-4">
+              <div className="flex flex-1 flex-col justify-between p-4 pt-1">
                 <h2 className="mb-1 text-lg font-semibold text-gray-900">
                   {post.title}
                 </h2>
                 {post.description && (
-                  <p className="text-ellipsis text-gray-700 md:mt-[-36px]">
+                  <p className="text-ellipsis text-gray-700 md:mt-[-32px]">
                     {post.description}
                   </p>
                 )}

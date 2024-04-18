@@ -1,0 +1,217 @@
+---
+title: mdx 解析技术详解
+description: 介绍 Python 几种环境和依赖管理方法的常见使用
+author: Yudong
+date: 2024-04-18
+published: true
+image: '/images/OHR.AlbaceteSpain_ZH-CN1597281896_1920x1080.webp'
+---
+
+## remark/rehype 的基本使用
+
+```js
+import { stream } from 'unified-stream'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import rehypeStringify from 'rehype-stringify'
+
+const processor = unified()
+  .use(remarkParse)
+  .use(remarkRehype)
+  .use(rehypeStringify)
+
+process.stdin.pipe(stream(processor)).pipe(process.stdout)
+```
+
+`node test.js < example.md > example.html` 执行生成
+
+<Row>
+
+  <Col>
+
+    ```md
+    # Hello World
+
+    ## Table of Content
+
+    ## Install
+
+    An **example**.
+
+    ## Use
+
+    More `text`.
+
+    ## License
+
+    MIT
+    ```
+
+  </Col>
+
+  <Col>
+
+    ```html
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <title>Contents</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+      </head>
+      <body>
+        <h1 id="hello-world">Hello World</h1>
+        <h2 id="table-of-content">Table of Content</h2>
+        <ul>
+          <li><a href="#install">Install</a></li>
+          <li><a href="#use">Use</a></li>
+          <li><a href="#license">License</a></li>
+        </ul>
+        <h2 id="install">Install</h2>
+        <p>An <strong>example</strong>.</p>
+        <h2 id="use">Use</h2>
+        <p>More <code>text</code>.</p>
+        <h2 id="license">License</h2>
+        <p>MIT</p>
+      </body>
+    </html>
+    ```
+
+  </Col>
+
+</Row>
+
+## 使用 remark 插件
+
+```js
+import { stream } from 'unified-stream'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkSlug from 'remark-slug'
+import remarkToc from 'remark-toc'
+import remarkRehype from 'remark-rehype'
+import rehypeDocument from 'rehype-document'
+import rehypeStringify from 'rehype-stringify'
+
+const processor = unified()
+  .use(remarkParse)
+  .use(remarkSlug) // DEPRECATED: use remark-rehype
+  .use(remarkToc) // generate a table of contents
+  .use(remarkRehype)
+  .use(rehypeDocument, { title: 'Contents' }) // 添加 <head> 和 <body> 等标签
+  .use(rehypeStringify)
+
+process.stdin.pipe(stream(processor)).pipe(process.stdout)
+
+// node test.js < example.md > example3.html
+```
+
+```html {{title: "example3.html"}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contents</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+  <body>
+    <h1 id="hello-world">Hello World</h1>
+    <h2 id="table-of-content">Table of Content</h2>
+    <ul>
+      <li><a href="#install">Install</a></li>
+      <li><a href="#use">Use</a></li>
+      <li><a href="#license">License</a></li>
+    </ul>
+    <h2 id="install">Install</h2>
+    <p>A <strong>example</strong>.</p>
+    <h2 id="use">Use</h2>
+    <p>More <code>text</code>.</p>
+    <h2 id="license">License</h2>
+    <p>MIT</p>
+  </body>
+</html>
+```
+
+## test4.js
+
+```js
+import { stream } from 'unified-stream'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkSlug from 'remark-slug'
+import remarkToc from 'remark-toc'
+import remarkRehype from 'remark-rehype'
+import rehypeDocument from 'rehype-document'
+import rehypeStringify from 'rehype-stringify'
+import rehypeFormat from 'rehype-format'
+import { readSync, writeSync } from 'to-vfile'
+import { reporter } from 'vfile-reporter'
+
+const processor = unified()
+  .use(remarkParse)
+  .use(remarkSlug) // DEPRECATED: use remark-rehype
+  .use(remarkToc) // generate a table of contents
+  .use(remarkRehype) // 转换为 HTML
+  .use(rehypeDocument, { title: 'Contents' }) // 添加 doctype, <head> 和 <body> 等标签
+  .use(rehypeFormat) // 格式化 HTML
+  .use(rehypeStringify) // 输出 HTML
+
+processor.process(readSync('example.md')).then(
+  file => {
+    console.error(reporter(file)) // example.md: no issues found
+    file.extname = '.html'
+    writeSync(file) // example.html
+  },
+  error => {
+    throw error
+  }
+)
+
+// node test4.js
+```
+
+## test5.js
+
+```js
+import { stream } from 'unified-stream'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkSlug from 'remark-slug'
+import remarkToc from 'remark-toc'
+import remarkRehype from 'remark-rehype'
+import rehypeDocument from 'rehype-document'
+import rehypeStringify from 'rehype-stringify'
+import rehypeFormat from 'rehype-format'
+import { readSync, writeSync } from 'to-vfile'
+import { reporter } from 'vfile-reporter'
+import remarkRetext from 'remark-retext'
+import retextEnglish from 'retext-english'
+import retextIndefiniteArticle from 'retext-indefinite-article'
+
+const processor = unified()
+  .use(remarkParse)
+  // 拼写检查，正确/错误
+  // 错误：example.md 7:1-7:2 warning Unexpected article `A` before `example`, expected `An` retext-indefinite-article retext-indefinite-article
+  // 正确：example.md: no issues found
+  .use(remarkRetext, unified().use(retextEnglish).use(retextIndefiniteArticle))
+  .use(remarkSlug) // DEPRECATED: use remark-rehype
+  .use(remarkToc) // generate a table of contents
+  .use(remarkRehype) // 转换为 HTML
+  .use(rehypeDocument, { title: 'Contents' }) // 添加 doctype, <head> 和 <body> 等标签
+  .use(rehypeFormat) // 格式化 HTML
+  .use(rehypeStringify) // 输出 HTML
+
+processor.process(readSync('example.md')).then(
+  file => {
+    console.error(reporter(file)) // example.md: no issues found
+    file.extname = '.html'
+    writeSync(file) // example.html
+  },
+  error => {
+    throw error
+  }
+)
+
+// node test5.js
+```

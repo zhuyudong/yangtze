@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import * as React from 'react'
 
+import { Col, Note, Properties, Property, Row } from '@/components/mdx'
 import { cn } from '@/lib/utils'
 
 const components = {
@@ -145,7 +146,12 @@ const components = {
       {...props}
     />
   ),
-  Image
+  Image,
+  Properties,
+  Property,
+  Row,
+  Col,
+  Note
 }
 
 interface MdxProps {
