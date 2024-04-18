@@ -14,6 +14,7 @@ import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
 import { UserIcon } from '@/components/icons/UserIcon'
 import { useRandomIndex } from '@/hooks'
+import wallpapers from '@/resources/bing_wallpaper.json'
 import movieQuotes from '@/resources/movie-quotes.json'
 import poetry from '@/resources/poetry.json'
 
@@ -303,6 +304,7 @@ function Resource({ resource }: { resource: IResource }) {
 }
 
 function Station({ resource }: { resource: IResource }) {
+  const { randomWallpaperIndex } = useRandomIndex()
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
 
@@ -315,17 +317,22 @@ function Station({ resource }: { resource: IResource }) {
     mouseX.set(clientX - left)
     mouseY.set(clientY - top)
   }
-
   return (
     <div
       key={resource.href}
       onMouseMove={onMouseMove}
-      className="group relative flex rounded-2xl bg-cyan-100 transition-shadow hover:shadow-md hover:shadow-zinc-900/5 dark:bg-white/2.5 dark:hover:shadow-black/5"
-      // style={{
-      //   backgroundImage:
-      //     "url('/images/OHR.ColleSantaLucia_ZH-CN7638164714_1920x1080.jpg&rf=LaDigue_1920x1080.jpg')",
-      //   objectFit: 'cover'
-      // }}
+      className="group relative flex h-40 rounded-xl bg-cyan-100 transition-shadow hover:shadow-md hover:shadow-zinc-900/5 dark:bg-white/2.5 dark:hover:shadow-black/5"
+      style={
+        resource.href === '/wallpaper'
+          ? {
+              backgroundImage: `url('${wallpapers[randomWallpaperIndex].url}')`,
+              // objectFit: 'contain',
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center right'
+            }
+          : {}
+      }
     >
       <ResourcePattern {...resource.pattern} mouseX={mouseX} mouseY={mouseY} />
       <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-zinc-900/7.5 group-hover:ring-zinc-900/10 dark:ring-white/10 dark:group-hover:ring-white/20" />

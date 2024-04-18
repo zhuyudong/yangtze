@@ -8,7 +8,6 @@ import { useMovie } from '@/hooks'
 const Watch = () => {
   const router = useRouter()
   const params = useParams()
-  console.log(9, params)
   const { data } = useMovie(params!.movieId as string)
 
   return (

@@ -1,20 +1,24 @@
 import { create } from 'zustand'
 
+import wallpaper from '@/resources/bing_wallpaper.json'
 import movieQuotes from '@/resources/movie-quotes.json'
 import poetry from '@/resources/poetry.json'
 
 type UseRandomIndexProps = {
-  randomMovieQuoteIndex: number
   randomPoetryIndex: number
+  randomWallpaperIndex: number
+  randomMovieQuoteIndex: number
   setRandomIndex: () => void
 }
 
 export const useRandomIndex = create<UseRandomIndexProps>(set => ({
-  randomMovieQuoteIndex: 0,
   randomPoetryIndex: 0,
+  randomWallpaperIndex: 0,
+  randomMovieQuoteIndex: 0,
   setRandomIndex: () =>
     set(() => ({
-      randomMovieQuoteIndex: Math.floor(Math.random() * movieQuotes.length),
-      randomPoetryIndex: Math.floor(Math.random() * poetry.length)
+      randomPoetryIndex: Math.floor(Math.random() * poetry.length),
+      randomWallpaperIndex: Math.floor(Math.random() * wallpaper.length),
+      randomMovieQuoteIndex: Math.floor(Math.random() * movieQuotes.length)
     }))
 }))
