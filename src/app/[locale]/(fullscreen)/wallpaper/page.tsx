@@ -7,7 +7,6 @@ import 'yet-another-react-lightbox/styles.css'
 import './page.css'
 
 import { useCallback, useState } from 'react'
-import Masonry from 'react-responsive-masonry'
 import Lightbox from 'yet-another-react-lightbox'
 import Captions from 'yet-another-react-lightbox/plugins/captions'
 import Counter from 'yet-another-react-lightbox/plugins/counter'
@@ -18,61 +17,13 @@ import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
 import Zoom from 'yet-another-react-lightbox/plugins/zoom'
 
 import NextJsImage from '@/components/NextJsImage'
-// import styles
-// import 'lightgallery/css/lightgallery.css'
-// import 'lightgallery/css/lg-autoplay.css'
-// import 'lightgallery/css/lg-comments.css'
-// import 'lightgallery/css/lg-fullscreen.css'
-// import 'lightgallery/css/lg-medium-zoom.css'
-// import 'lightgallery/css/lg-pager.css'
-// import 'lightgallery/css/lg-relative-caption.css'
-// import 'lightgallery/css/lg-rotate.css'
-// import 'lightgallery/css/lg-share.css'
-// import 'lightgallery/css/lg-thumbnail.css'
-// import 'lightgallery/css/lg-transitions.css'
-// import 'lightgallery/css/lg-video.css'
-// import 'lightgallery/css/lg-zoom.css'
-// import './page.css'
-// import lgAutoplay from 'lightgallery/plugins/autoplay'
-// import lgComment from 'lightgallery/plugins/comment'
-// import lgFullscreen from 'lightgallery/plugins/fullscreen'
-// import lgMediumZoom from 'lightgallery/plugins/mediumZoom'
-// import lgPager from 'lightgallery/plugins/pager'
-// import lgRelativeCaption from 'lightgallery/plugins/relativeCaption'
-// import lgRotate from 'lightgallery/plugins/rotate'
-// import lgShare from 'lightgallery/plugins/share'
-// import lgThumbnail from 'lightgallery/plugins/thumbnail'
-// import lgVideo from 'lightgallery/plugins/video'
-// import lgZoom from 'lightgallery/plugins/zoom'
-// import LightGallery from 'lightgallery/react'
-import data from '@/resources/bing_wallpaper.json'
+import images from '@/resources/bing_wallpaper.json'
 
-// const slides = [
-//   {
-//     src: 'https://yet-another-react-lightbox.com/images/image01.jpeg',
-//     width: 3840,
-//     height: 5760
-//   },
-//   {
-//     src: 'https://yet-another-react-lightbox.com/images/image02.jpeg',
-//     width: 3840,
-//     height: 5070
-//   },
-//   {
-//     src: 'https://yet-another-react-lightbox.com/images/image03.jpeg',
-//     width: 3840,
-//     height: 5120
-//   }
-// ]
-
-export default function WallpaperLightbox() {
-  // const [open, setOpen] = useState(false)
+export default function Wallpaper() {
   const [index, setIndex] = useState<null | number>(null)
 
   const handleChangeIndex = useCallback(
-    (
-      e: React.MouseEvent<HTMLImageElement> | React.TouchEvent<HTMLImageElement>
-    ) => {
+    (e: React.MouseEvent<HTMLLIElement> | React.TouchEvent<HTMLLIElement>) => {
       setIndex(
         e.currentTarget.dataset.index
           ? Number(e.currentTarget.dataset.index)
@@ -82,30 +33,38 @@ export default function WallpaperLightbox() {
     [index]
   )
 
-  // const onInit = () => {
-  //   console.log('lightGallery has been initialized')
-  // }
-
   return (
-    <div className="my-4">
-      <Masonry
-        columnsCount={5}
-        gutter="10px"
-        // columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+    <div>
+      <ul
+        role="list"
+        className="grid grid-cols-2 gap-x-4 gap-y-8 px-4 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-5 xl:gap-x-8"
       >
-        {data.map((i, ix) => (
+        {images.map((file, ix) => (
           // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-          <img
-            alt=""
-            key={i.title}
+          <li
+            key={`${file.headline}-${ix}`}
+            className="relative"
             data-index={ix}
-            // src={i.image_url}
-            src={i.url}
-            className="block w-full cursor-pointer"
             onClick={handleChangeIndex}
-          />
+          >
+            <div className="aspect-h-7 aspect-w-10 group block w-full overflow-hidden rounded-none bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+              <img
+                src={file.url}
+                alt=""
+                className="pointer-events-none object-cover group-hover:opacity-75"
+              />
+              <button
+                type="button"
+                className="absolute inset-0 focus:outline-none"
+              >
+                <span className="sr-only">View details for {file.title}</span>
+              </button>
+            </div>
+            {/* <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{file.title}</p> */}
+            {/* <p className="pointer-events-none block text-sm font-medium text-gray-500">{file.description}</p> */}
+          </li>
         ))}
-      </Masonry>
+      </ul>
       <Lightbox
         open={index !== null}
         index={index ?? 0}
@@ -120,7 +79,7 @@ export default function WallpaperLightbox() {
         ]}
         close={() => setIndex(null)}
         // slides={slides}
-        slides={data.map(i => ({
+        slides={images.map(i => ({
           // src: i.image_url,
           src: i.url,
           title: `${i.headline}[${i.title}]`,
@@ -128,30 +87,6 @@ export default function WallpaperLightbox() {
         }))}
         render={{ slide: NextJsImage }}
       />
-      {/* <LightGallery
-        // onInit={onInit}
-        speed={500}
-        plugins={[
-          lgAutoplay,
-          lgComment,
-          lgFullscreen,
-          lgMediumZoom,
-          lgPager,
-          lgRelativeCaption,
-          lgRotate,
-          lgShare,
-          lgThumbnail,
-          lgVideo,
-          lgZoom
-        ]}
-      >
-        {data.map(i => (
-          // eslint-disable-next-line jsx-a11y/control-has-associated-label
-          <a href={i.url} key={i.date} className="grid-item">
-            <img alt="" src={i.url} />
-          </a>
-        ))}
-      </LightGallery> */}
     </div>
   )
 }

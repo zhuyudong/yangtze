@@ -39,53 +39,12 @@ export async function AppShell({ children }: { children: React.ReactNode }) {
           />
         </Link>
         <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-          {isInApplicationRoute ? (
-            <>
-              <Link
-                href="/app/onboarding/user"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                Onboarding
-              </Link>
-              <Link
-                href="/app/subscriptions"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                Subscriptions
-              </Link>
-              <Link
-                href="/app/billing"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                Billing
-              </Link>
-              <Link
-                href="/app/usage"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                Usage
-              </Link>
-              <Link
-                href="/app/examples"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                Examples
-              </Link>
-              <Link
-                href="/app/user-management"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                Management
-              </Link>
-            </>
-          ) : (
-            <Link
-              href="/blog"
-              className="text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Blog
-            </Link>
-          )}
+          <Link
+            href="/"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Home
+          </Link>
         </nav>
         <Sheet>
           <SheetTrigger asChild>
@@ -110,49 +69,12 @@ export async function AppShell({ children }: { children: React.ReactNode }) {
           </SheetTrigger>
           <SheetContent side="left">
             <nav className="grid gap-6 text-lg font-medium">
-              {isInApplicationRoute ? (
-                <>
-                  <Link
-                    href="/app/subscriptions"
-                    className="text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    Subscriptions
-                  </Link>
-                  <Link
-                    href="/app/billing"
-                    className="text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    Billing
-                  </Link>
-                  <Link
-                    href="/app/usage"
-                    className="text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    Usage
-                  </Link>
-                  <Link
-                    href="/app/user-management"
-                    className="text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    Management
-                  </Link>
-                </>
-              ) : (
-                <>
-                  <Link
-                    href="/"
-                    className="text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    href="/blog"
-                    className="text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    Blog
-                  </Link>
-                </>
-              )}
+              <Link
+                href="/"
+                className="text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Home
+              </Link>
             </nav>
           </SheetContent>
         </Sheet>

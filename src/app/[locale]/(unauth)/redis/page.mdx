@@ -1,6 +1,6 @@
-# Redis
+## Redis
 
-## 如何进入 redis docker 容器
+### 如何进入 redis docker 容器
 
 ```bash
 $ docker exec -it redis-local /bin/bash
@@ -13,3 +13,7 @@ root@aeb61477521e:/data# redis-cli
 root@aeb61477521e:/data# exit
 exit
 ```
+
+选项说明
+`docker exec -it redis-local /bin/bash` 进入 redis 容器，
+`redis-cli` 连接当前默认 redis 服务

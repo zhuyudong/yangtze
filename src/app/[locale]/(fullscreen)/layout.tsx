@@ -3,6 +3,7 @@ import '@/styles/movie.css'
 import { getServerSession } from 'next-auth'
 import type { ReactNode } from 'react'
 
+import { AppShell } from '@/components/patterns/app-shell'
 import SessionProvider from '@/components/SessionProvider'
 
 export default async function RootLayout({
@@ -14,5 +15,9 @@ export default async function RootLayout({
 }) {
   const session = await getServerSession()
 
-  return <SessionProvider session={session}>{children}</SessionProvider>
+  return (
+    <SessionProvider session={session}>
+      <AppShell>{children}</AppShell>
+    </SessionProvider>
+  )
 }

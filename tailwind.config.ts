@@ -10,13 +10,13 @@ const config = {
   content: ['./content/**/*.{md,mdx}', './src/**/*.{ts,tsx,md,mdx}'],
   prefix: '',
   theme: {
-    container: {
-      center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px'
-      }
-    },
+    // container: {
+    //   center: true,
+    //   padding: '2rem',
+    //   screens: {
+    //     '2xl': '1400px'
+    //   }
+    // },
     fontSize: {
       '2xs': ['0.75rem', { lineHeight: '1.25rem' }],
       'xs': ['0.8125rem', { lineHeight: '1.5rem' }],

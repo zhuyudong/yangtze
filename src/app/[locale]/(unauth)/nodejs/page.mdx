@@ -1,13 +1,53 @@
 # Node.js
 
-## nvm
+## nvm - Node.js 版本管理工具
+
+安装 [nvm](https://github.com/nvm-sh/nvm)
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+or
+
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
 
 ### 常用命令
 
+查看已安装版本
+
 ```bash
 nvm ls
+```
+
+查看远程有哪些版本
+
+```bash
 nvm ls-remote
+```
+
+安装指定版本
+
+```bash
 nvm install 20.12.2
+```
+
+切换至指定版本
+
+```bash
 nvm use 20.12.2
+```
+
+指定默认版本
+
+```bash
 nvm alias default 20.12.2
+```
+
+查看帮助
+
+```bash
+nvm --help
 ```

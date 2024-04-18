@@ -1,8 +1,9 @@
 ---
 title: Next.js mdx tutorial
+description: Next.js mdx tutorial.
+author: Yudong
 date: 2024-04-17
 published: true
-description: Next.js mdx tutorial.
 image: '/images/OHR.AgueroSpain_ZH-CN9622864502_1920x1080.jpg&rf=LaDigue_1920x1080.jpg'
 ---
 

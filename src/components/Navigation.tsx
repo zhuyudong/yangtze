@@ -1,7 +1,9 @@
+/* eslint-disable unused-imports/no-unused-vars */
+
 'use client'
 
 import clsx from 'clsx'
-import { AnimatePresence, motion } from 'framer-motion' // useIsPresent
+import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
@@ -11,15 +13,16 @@ import { Button } from '@/components/Button'
 import { useIsInsideMobileNavigation } from '@/components/MobileNavigation'
 import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
-import { type NavGroup, navigation } from '@/lib/navigation'
-// import { remToPx } from '@/lib/remToPx'
+import type { NavGroup } from '@/lib/navigation'
+import { navigation } from '@/lib/navigation'
+import { remToPx } from '@/lib/remToPx'
 
 function useInitialValue<T>(value: T, condition = true) {
   const initialValue = useRef(value).current
   return condition ? initialValue : value
 }
 
-export function TopLevelNavItem({
+function TopLevelNavItem({
   href,
   children
 }: {
@@ -42,6 +45,7 @@ function NavLink({
   href,
   children,
   tag,
+  className,
   active = false,
   isAnchorLink = false
 }: {
@@ -49,6 +53,7 @@ function NavLink({
   children: ReactNode
   tag?: string
   active?: boolean
+  className?: string
   isAnchorLink?: boolean
 }) {
   return (
@@ -60,7 +65,8 @@ function NavLink({
         isAnchorLink ? 'pl-7' : 'pl-4',
         active
           ? 'text-zinc-900 dark:text-white'
-          : 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white'
+          : 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white',
+        className
       )}
     >
       <span className="truncate">{children}</span>
@@ -74,33 +80,31 @@ function NavLink({
 }
 
 function VisibleSectionHighlight({
-  // eslint-disable-next-line unused-imports/no-unused-vars
   group,
-  // eslint-disable-next-line unused-imports/no-unused-vars
   pathname
 }: {
   group: NavGroup
   pathname: string
 }) {
-  // const [sections, visibleSections] = useInitialValue(
-  //   [useSectionStore(s => s.sections), useSectionStore(s => s.visibleSections)],
-  //   useIsInsideMobileNavigation()
-  // )
+  const [sections, visibleSections] = useInitialValue(
+    [useSectionStore(s => s.sections), useSectionStore(s => s.visibleSections)],
+    useIsInsideMobileNavigation()
+  )
 
-  // const isPresent = useIsPresent()
-  // const firstVisibleSectionIndex = Math.max(
-  //   0,
-  //   [{ id: '_top' }, ...sections].findIndex(
-  //     section => section.id === visibleSections[0]
-  //   )
-  // )
-  // const itemHeight = remToPx(2)
-  // const height = isPresent
-  //   ? Math.max(1, visibleSections.length) * itemHeight
-  //   : itemHeight
-  // const top =
-  //   group.links.findIndex(link => link.href === pathname) * itemHeight +
-  //   firstVisibleSectionIndex * itemHeight
+  const isPresent = useIsPresent()
+  const firstVisibleSectionIndex = Math.max(
+    0,
+    [{ id: '_top' }, ...sections].findIndex(
+      section => section.id === visibleSections[0]
+    )
+  )
+  const itemHeight = remToPx(2)
+  const height = isPresent
+    ? Math.max(1, visibleSections.length) * itemHeight
+    : itemHeight
+  const top =
+    group.links.findIndex(link => link.href === pathname) * itemHeight +
+    firstVisibleSectionIndex * itemHeight
 
   return (
     <motion.div
@@ -109,26 +113,22 @@ function VisibleSectionHighlight({
       animate={{ opacity: 1, transition: { delay: 0.2 } }}
       exit={{ opacity: 0 }}
       className="absolute inset-x-0 top-0 bg-zinc-800/2.5 will-change-transform dark:bg-white/2.5"
-      // FIXME: Warning: Prop `style` did not match. Server: "border-radius:8px;height:32px;top:0;opacity:0" Client: "border-radius:8px;height:24px;top:0;opacity:0"
-      // style={{ borderRadius: 8, height, top }}
-      style={{ borderRadius: 8, height: 24, top: 0 }}
+      style={{ borderRadius: 8, height, top }}
     />
   )
 }
 
 function ActivePageMarker({
-  // eslint-disable-next-line unused-imports/no-unused-vars
   group,
-  // eslint-disable-next-line unused-imports/no-unused-vars
   pathname
 }: {
   group: NavGroup
   pathname: string
 }) {
-  // const itemHeight = remToPx(2)
-  // const offset = remToPx(0.25)
-  // const activePageIndex = group.links.findIndex(link => link.href === pathname)
-  // const top = offset + activePageIndex * itemHeight
+  const itemHeight = remToPx(2)
+  const offset = remToPx(0.25)
+  const activePageIndex = group.links.findIndex(link => link.href === pathname)
+  const top = offset + activePageIndex * itemHeight
 
   return (
     <motion.div
@@ -137,9 +137,7 @@ function ActivePageMarker({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 0.2 } }}
       exit={{ opacity: 0 }}
-      // FIXME: Warning: Prop `style` did not match. Server: "top:4px;opacity:1" Client: "top:3px;opacity:1"
-      // style={{ top }}
-      style={{ top: 3 }}
+      style={{ top }}
     />
   )
 }
@@ -192,9 +190,16 @@ function NavigationGroup({
         <ul role="list" className="border-l border-transparent">
           {group.links.map(link => (
             <motion.li key={link.href} layout="position" className="relative">
-              <NavLink href={link.href} active={link.href === pathname}>
-                {link.title}
-              </NavLink>
+              <div className="flex items-center">
+                {link.icon && <link.icon className="ml-1 size-5" />}
+                <NavLink
+                  href={link.href}
+                  className={link.icon ? '-ml-2' : ''}
+                  active={link.href === pathname}
+                >
+                  {link.title}
+                </NavLink>
+              </div>
               <AnimatePresence mode="popLayout" initial={false}>
                 {link.href === pathname && sections.length > 0 && (
                   <motion.ul
@@ -232,14 +237,12 @@ function NavigationGroup({
 }
 
 export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
-  // const t = getTranslations('RootLayout')
-
   return (
     <nav {...props}>
       <ul role="list">
-        {/* <TopLevelNavItem href="/">API</TopLevelNavItem>
-        <TopLevelNavItem href="#">Documentation</TopLevelNavItem>
-        <TopLevelNavItem href="#">Support</TopLevelNavItem> */}
+        <TopLevelNavItem href="/blog">Blog</TopLevelNavItem>
+        <TopLevelNavItem href="/movie">Movie</TopLevelNavItem>
+        <TopLevelNavItem href="/wallpaper">Wallpaper</TopLevelNavItem>
         {navigation.map((group, groupIndex) => (
           <NavigationGroup
             key={group.title}
@@ -249,8 +252,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
         ))}
         <li className="sticky bottom-0 z-10 mt-6 min-[416px]:hidden">
           <Button href="/sign-in" variant="filled" className="w-full">
-            {/* {t('sign_in_link')} */}
-            登录
+            Sign in
           </Button>
         </li>
       </ul>

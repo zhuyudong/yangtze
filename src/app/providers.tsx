@@ -35,6 +35,7 @@ function ThemeWatcher() {
 }
 
 const Identification = ({ children }: { children: ReactNode }) => {
+  // NOTE: `useSession` must be wrapped in a <SessionProvider />
   const { data: session } = useSession()
   const user = session?.user
 

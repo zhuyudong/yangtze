@@ -91,7 +91,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
         <div className="flex items-center gap-5 lg:hidden">
           <MobileNavigation />
           <Link href="/" aria-label="Home">
-            <Logo className="h-6" />
+            <Logo />
           </Link>
         </div>
         <div className="flex items-center gap-5">

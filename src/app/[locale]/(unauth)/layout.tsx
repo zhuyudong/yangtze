@@ -5,10 +5,10 @@ import { getServerSession } from 'next-auth'
 import type { ReactNode } from 'react'
 
 import { Providers } from '@/app/providers'
-// import { Layout } from '@/components/syntax/Layout'
 import { Layout } from '@/components/Layout'
+import { type Section } from '@/components/SectionProvider'
 import SessionProvider from '@/components/SessionProvider'
-// import { type Section } from '@/components/SectionProvider'
+import { navigation } from '@/lib/navigation'
 
 export default async function RootLayout({
   children
@@ -31,13 +31,24 @@ export default async function RootLayout({
   //   })
   // )) as Array<[string, Array<Section>]>
   // const allSections = Object.fromEntries(allSectionsEntries)
+  const allSections = navigation
+    .map(group => group.links)
+    .flat()
+    .reduce(
+      (acc, link) => {
+        acc[link.href] = []
+        return acc
+      },
+      {} as Record<string, Array<Section>>
+    )
+
   const session = await getServerSession()
+
   return (
     <SessionProvider session={session}>
       <Providers>
-        <div className="flex min-h-full w-full justify-center bg-white font-sans antialiased dark:bg-zinc-900">
-          {/* <Layout allSections={allSections}>{children}</Layout> */}
-          <Layout>{children}</Layout>
+        <div className="w-full bg-white dark:bg-zinc-900">
+          <Layout allSections={allSections}>{children}</Layout>
         </div>
       </Providers>
     </SessionProvider>

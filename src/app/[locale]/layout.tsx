@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import type { ReactNode } from 'react'
 
-import { AppShell } from '@/components/patterns/app-shell'
 import { TailwindIndicator } from '@/components/patterns/tailwind-indicator'
 import { Toaster } from '@/components/ui/sonner'
 import { AppConfig } from '@/utils/AppConfig'
@@ -59,9 +58,9 @@ export default function RootLayout({
 
   return (
     <html lang={params.locale} className="h-full" suppressHydrationWarning>
-      <body className={clsx(`font-sans antialiased  ${inter.variable}`)}>
+      <body className={clsx(`font-sans antialiased ${inter.variable}`)}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
-          <AppShell>{children}</AppShell>
+          {children}
         </NextIntlClientProvider>
         <Toaster />
         <TailwindIndicator />

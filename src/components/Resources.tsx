@@ -1,5 +1,6 @@
 'use client'
 
+import { MapPinIcon } from '@heroicons/react/24/outline'
 import {
   motion,
   type MotionValue,
@@ -7,11 +8,14 @@ import {
   useMotionValue
 } from 'framer-motion'
 import Link from 'next/link'
-import type { ComponentPropsWithoutRef, ComponentType } from 'react'
+import { type ComponentPropsWithoutRef, type ComponentType } from 'react'
 
 import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
 import { UserIcon } from '@/components/icons/UserIcon'
+import { useRandomIndex } from '@/hooks'
+import movieQuotes from '@/resources/movie-quotes.json'
+import poetry from '@/resources/poetry.json'
 
 import { ArticleIcon } from './icons/ArticleIcon'
 import { BookIcon } from './icons/BookIcon'
@@ -37,6 +41,19 @@ interface IResource {
 
 const resources: Array<IResource> = [
   {
+    href: '/blog',
+    name: '博客【原创】',
+    description: '',
+    icon: ArticleIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
     href: '/linux-tools',
     name: 'Linux 工具箱',
     description: '',
@@ -45,45 +62,6 @@ const resources: Array<IResource> = [
       y: 16,
       squares: [
         [0, 1],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/poetry',
-    name: '诗词 - 陶冶情操',
-    description: '',
-    icon: BookIcon,
-    pattern: {
-      y: 32,
-      squares: [
-        [0, 2],
-        [1, 4]
-      ]
-    }
-  },
-  // {
-  //   href: '/wallpaper',
-  //   name: '壁纸 - 大千世界、精彩纷呈',
-  //   description: '',
-  //   icon: MapPinIcon,
-  //   pattern: {
-  //     y: -6,
-  //     squares: [
-  //       [-1, 2],
-  //       [1, 3]
-  //     ]
-  //   }
-  // },
-  {
-    href: '/movies',
-    name: '电影',
-    description: '',
-    icon: MovieIcon,
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
         [1, 3]
       ]
     }
@@ -194,6 +172,48 @@ const resources: Array<IResource> = [
   }
 ]
 
+const leisureStation: Array<IResource> = [
+  {
+    href: '/wallpaper',
+    name: '壁纸 - 大千世界、精彩纷呈',
+    description: '',
+    icon: MapPinIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  },
+  {
+    href: '/poetry',
+    name: '诗词 - 陶冶情操',
+    description: '',
+    icon: BookIcon,
+    pattern: {
+      y: 32,
+      squares: [
+        [0, 2],
+        [1, 4]
+      ]
+    }
+  },
+  {
+    href: '/movies',
+    name: '电影',
+    description: '',
+    icon: MovieIcon,
+    pattern: {
+      y: -6,
+      squares: [
+        [-1, 2],
+        [1, 3]
+      ]
+    }
+  }
+]
+
 function ResourceIcon({ icon: Icon }: { icon: IResource['icon'] }) {
   return (
     <div className="flex size-7 items-center justify-center rounded-full bg-zinc-900/5 ring-1 ring-zinc-900/25 backdrop-blur-[2px] transition duration-300 group-hover:bg-white/50 group-hover:ring-zinc-900/25 dark:bg-white/7.5 dark:ring-white/15 dark:group-hover:bg-emerald-300/10 dark:group-hover:ring-emerald-400">
@@ -282,7 +302,54 @@ function Resource({ resource }: { resource: IResource }) {
   )
 }
 
+function Station({ resource }: { resource: IResource }) {
+  const mouseX = useMotionValue(0)
+  const mouseY = useMotionValue(0)
+
+  function onMouseMove({
+    currentTarget,
+    clientX,
+    clientY
+  }: React.MouseEvent<HTMLDivElement>) {
+    const { left, top } = currentTarget.getBoundingClientRect()
+    mouseX.set(clientX - left)
+    mouseY.set(clientY - top)
+  }
+
+  return (
+    <div
+      key={resource.href}
+      onMouseMove={onMouseMove}
+      className="group relative flex rounded-2xl bg-cyan-100 transition-shadow hover:shadow-md hover:shadow-zinc-900/5 dark:bg-white/2.5 dark:hover:shadow-black/5"
+      // style={{
+      //   backgroundImage:
+      //     "url('/images/OHR.ColleSantaLucia_ZH-CN7638164714_1920x1080.jpg&rf=LaDigue_1920x1080.jpg')",
+      //   objectFit: 'cover'
+      // }}
+    >
+      <ResourcePattern {...resource.pattern} mouseX={mouseX} mouseY={mouseY} />
+      <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-zinc-900/7.5 group-hover:ring-zinc-900/10 dark:ring-white/10 dark:group-hover:ring-white/20" />
+      <div className="relative rounded-2xl p-4">
+        <div className="mb-2 flex items-end space-x-2">
+          <ResourceIcon icon={resource.icon} />
+          <h3 className="mt-4 text-sm font-semibold leading-7 text-zinc-900 dark:text-white">
+            <Link href={resource.href}>
+              <span className="absolute inset-0 rounded-2xl" />
+              {resource.name}
+            </Link>
+          </h3>
+        </div>
+        <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+          {resource.description}
+        </p>
+      </div>
+    </div>
+  )
+}
+
 export function Resources() {
+  const { randomMovieQuoteIndex, randomPoetryIndex } = useRandomIndex()
+
   return (
     // remove xl:max-w-none
     <div className="my-16">
@@ -293,6 +360,23 @@ export function Resources() {
         {resources.map(resource => (
           <Resource key={resource.href} resource={resource} />
         ))}
+      </div>
+      <Heading level={2} id="leisure-station">
+        休闲驿站
+      </Heading>
+      <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-1 xl:grid-cols-1">
+        {leisureStation.map(i => {
+          if (i.href === '/poetry') {
+            // eslint-disable-next-line prefer-destructuring
+            i.description = poetry[randomPoetryIndex]
+          }
+          if (i.name === '电影') {
+            i.description = movieQuotes[randomMovieQuoteIndex].match(
+              /^\d+、\s?(.*)/
+            )?.[1] as string // Math.floor(Math.random() * movieQuotes.length)
+          }
+          return <Station key={i.href} resource={i} />
+        })}
       </div>
     </div>
   )

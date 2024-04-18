@@ -15,9 +15,7 @@ import {
 import { create } from 'zustand'
 
 import { Header } from '@/components/Header'
-
-import { Navigation } from './syntax/Navigation'
-// import { Navigation } from '@/components/Navigation'
+import { Navigation } from '@/components/Navigation'
 
 function MenuIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (

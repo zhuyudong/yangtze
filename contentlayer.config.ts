@@ -10,15 +10,16 @@ export const Post = defineDocumentType(() => ({
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
+    author: { type: 'string', required: false },
     image: {
       type: 'string',
-      required: true
+      required: false
     },
-    description: { type: 'string', required: true },
-    date: { type: 'date', required: true },
+    description: { type: 'string', required: false },
+    date: { type: 'date', required: false },
     published: {
       type: 'boolean',
-      required: true,
+      required: false,
       default: false
     }
   },

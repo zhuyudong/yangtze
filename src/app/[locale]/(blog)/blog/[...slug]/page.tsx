@@ -106,24 +106,26 @@ export default async function PostPage({ params }: PostPageProps) {
         >
           <Image
             src="/images/avatar.jpeg"
-            alt="Dimitri Ivashchuk"
+            alt=""
             width={36}
             height={36}
             className="rounded-full bg-white"
           />
-          <div className="flex-1 text-left leading-tight">
-            <p className="font-medium">Dima</p>
-            <p className="text-[12px] text-muted-foreground">@DivDev_</p>
-          </div>
+          {post?.author && (
+            <div className="flex-1 text-left leading-tight">
+              {/* <p className="font-medium"></p> */}
+              <p className="text-[12px] text-muted-foreground">{post.author}</p>
+            </div>
+          )}
         </Link>
       </div>
       {post.image && (
         <Image
           src={post.image}
           alt={post.title}
-          width={720}
-          height={405}
-          className="my-8 rounded-md border bg-muted transition-colors"
+          width={1920}
+          height={1080}
+          className="my-8 rounded-sm border bg-muted transition-colors"
           priority
         />
       )}

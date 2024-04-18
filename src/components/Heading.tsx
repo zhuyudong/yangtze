@@ -7,7 +7,10 @@ import { useEffect, useRef } from 'react'
 
 // import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
+import { useRandomIndex } from '@/hooks'
 import { remToPx } from '@/lib/remToPx'
+
+import { ArrowPathIcon } from './icons/ArrowPathIcon'
 
 function AnchorIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -81,6 +84,7 @@ export function Heading<Level extends 2 | 3>({
   level?: Level
   anchor?: boolean
 }) {
+  const { setRandomIndex } = useRandomIndex()
   level = level ?? (2 as Level)
   const Component = `h${level}` as 'h2' | 'h3'
   const ref = useRef<HTMLHeadingElement>(null)
@@ -98,7 +102,7 @@ export function Heading<Level extends 2 | 3>({
   })
 
   return (
-    <>
+    <div className="flex items-end justify-between">
       <Eyebrow tag={tag} label={label} />
       <Component
         ref={ref}
@@ -113,6 +117,12 @@ export function Heading<Level extends 2 | 3>({
           children
         )}
       </Component>
-    </>
+      {props.id === 'leisure-station' && (
+        <ArrowPathIcon
+          className="w-5 cursor-pointer"
+          onClick={() => setRandomIndex()}
+        />
+      )}
+    </div>
   )
 }
