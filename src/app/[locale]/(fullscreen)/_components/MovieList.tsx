@@ -1,8 +1,8 @@
 import { isEmpty } from 'lodash'
 import type { FC } from 'react'
 
-import type { MovieInterface } from '@/app/[locale]/(movie)/_components/MovieCard'
-import { MovieCard } from '@/app/[locale]/(movie)/_components/MovieCard'
+import type { MovieInterface } from '@/app/[locale]/(fullscreen)/_components/MovieCard'
+import { MovieCard } from '@/app/[locale]/(fullscreen)/_components/MovieCard'
 
 interface MovieListProps {
   data: MovieInterface[]

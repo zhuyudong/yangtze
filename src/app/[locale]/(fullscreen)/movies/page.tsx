@@ -3,9 +3,9 @@
 // import { redirect } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 
-import { Billboard } from '@/app/[locale]/(movie)/_components/Billboard'
-import { InfoModal } from '@/app/[locale]/(movie)/_components/InfoModal'
-import { MovieList } from '@/app/[locale]/(movie)/_components/MovieList'
+import { Billboard } from '@/app/[locale]/(fullscreen)/_components/Billboard'
+import { InfoModal } from '@/app/[locale]/(fullscreen)/_components/InfoModal'
+import { MovieList } from '@/app/[locale]/(fullscreen)/_components/MovieList'
 import { useFavorites, useInfoModalStore, useMovieList } from '@/hooks'
 
 const Movies = () => {

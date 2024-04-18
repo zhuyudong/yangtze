@@ -11,7 +11,6 @@ import type { ComponentPropsWithoutRef, ComponentType } from 'react'
 
 import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
-import { MapPinIcon } from '@/components/icons/MapPinIcon'
 import { UserIcon } from '@/components/icons/UserIcon'
 
 import { ArticleIcon } from './icons/ArticleIcon'
@@ -63,19 +62,19 @@ const resources: Array<IResource> = [
       ]
     }
   },
-  {
-    href: '/wallpaper',
-    name: '壁纸 - 大千世界、精彩纷呈',
-    description: '',
-    icon: MapPinIcon,
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
+  // {
+  //   href: '/wallpaper',
+  //   name: '壁纸 - 大千世界、精彩纷呈',
+  //   description: '',
+  //   icon: MapPinIcon,
+  //   pattern: {
+  //     y: -6,
+  //     squares: [
+  //       [-1, 2],
+  //       [1, 3]
+  //     ]
+  //   }
+  // },
   {
     href: '/movies',
     name: '电影',

@@ -103,7 +103,11 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
               </TopLevelNavItem>
               <TopLevelNavItem href="/movies">
                 {/* <MovieIcon /> */}
-                <span>Movies</span>
+                Movies
+              </TopLevelNavItem>
+              <TopLevelNavItem href="/wallpaper">
+                {/* <ArticleIcon /> */}
+                Wallpaper
               </TopLevelNavItem>
             </ul>
           </nav>

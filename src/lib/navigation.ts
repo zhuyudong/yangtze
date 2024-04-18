@@ -1,4 +1,4 @@
-import { MapPinIcon } from '@heroicons/react/24/outline'
+// import { MapPinIcon } from '@heroicons/react/24/outline'
 import type { ComponentType } from 'react'
 
 import { ArticleIcon } from '@/components/icons/ArticleIcon'
@@ -53,7 +53,7 @@ export const navigation: Array<NavGroup> = [
     title: '资源',
     links: [
       { title: '诗词', href: '/poetry', icon: FireIcon },
-      { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },
+      // { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },
       // { title: '电影', href: '/movies', icon: MovieIcon },
       {
         title: '文章',

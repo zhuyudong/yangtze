@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import type { FC } from 'react'
 import { useCallback } from 'react'
 
-import { FavoriteButton } from '@/app/[locale]/(movie)/_components/FavoriteButton'
+import { FavoriteButton } from '@/app/[locale]/(fullscreen)/_components/FavoriteButton'
 import { useInfoModalStore } from '@/hooks'
 
 export interface MovieInterface {
