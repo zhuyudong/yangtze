@@ -241,7 +241,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
     <nav {...props}>
       <ul role="list">
         <TopLevelNavItem href="/blog">Blog</TopLevelNavItem>
-        <TopLevelNavItem href="/movie">Movie</TopLevelNavItem>
+        <TopLevelNavItem href="/movies">Movie</TopLevelNavItem>
         <TopLevelNavItem href="/wallpaper">Wallpaper</TopLevelNavItem>
         {navigation.map((group, groupIndex) => (
           <NavigationGroup

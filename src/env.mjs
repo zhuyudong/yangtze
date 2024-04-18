@@ -25,7 +25,7 @@ export const env = createEnv({
     //         process.env.VERCEL ? z.string() : z.string().url()
     //       )
     //     : z.string().optional(),
-    OPENAI_API_KEY: z.string().optional(),
+    // OPENAI_API_KEY: z.string().optional(),
     GOOGLE_CLIENT_ID:
       process.env.NODE_ENV === 'production'
         ? z.string()
@@ -52,7 +52,7 @@ export const env = createEnv({
     NEXT_PUBLIC_DEPLOYMENT_URL: process.env.NEXT_PUBLIC_DEPLOYMENT_URL,
     NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
-    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+    // OPENAI_API_KEY: process.env.OPENAI_API_KEY,
     YANGTZE_DEMO: process.env.YANGTZE_DEMO,
     GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
     GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,

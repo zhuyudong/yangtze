@@ -15,7 +15,7 @@ import { Heading } from '@/components/Heading'
 import { UserIcon } from '@/components/icons/UserIcon'
 import { useRandomIndex } from '@/hooks'
 import wallpapers from '@/resources/bing_wallpaper.json'
-import movieQuotes from '@/resources/movie-quotes.json'
+import movieQuotes from '@/resources/movie_quotes.json'
 import poetry from '@/resources/poetry.json'
 
 import { ArticleIcon } from './icons/ArticleIcon'
