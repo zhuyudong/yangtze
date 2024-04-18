@@ -19,7 +19,8 @@ WORKDIR /app
 COPY . .
 
 # RUN apk add --update python3 make g++ && rm -rf /var/cache/apk/*
-RUN npm cache clean --force && rm -rf node_modules && pnpm i --frozen-lockfile --registry=https://registry.npmmirror.com
+#  --registry=https://registry.npmmirror.com
+RUN npm cache clean --force && rm -rf node_modules && pnpm i --frozen-lockfile
 
 RUN npx prisma generate
 
@@ -39,6 +40,7 @@ COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/scripts ./scripts
 COPY --from=builder /app/src ./src
+# NOTE: 在 zeabur 中手动创建环境变量，不要在代码仓库中暴露敏感信息
 # COPY --from=builder /app/.env ./.env
 COPY --from=builder /app/.next ./.next
 # COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
@@ -62,5 +64,5 @@ ENV NEXT_TELEMETRY_DISABLED 1
 # NOTE: "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
 CMD ["node_modules/.bin/next", "start"]
 
-# 构建镜像 docker build -t yangtze-app:0.1.0 -f Dockerfile . 或 docker build -t yangtze-app:0.1.0 . 或 docker build . -t yangtze-app:0.1.0
+# 构建镜像 docker build --no-cache -t yangtze-app:0.1.0 -f Dockerfile . 或 docker build --no-cache -t yangtze-app:0.1.0 . 或 docker build --no-cache . -t yangtze-app:0.1.0
 # 运行镜像 docker run -p 3000:3000 yangtze-app:0.1.0

@@ -20,12 +20,12 @@ const guides: { href: string; name: string; description: string }[] = [
   {
     href: '/mongo',
     name: '数据库',
-    description: 'MongoDB 常用语句'
+    description: '数据库常见问题'
   },
   {
     href: '/aigc',
-    name: 'Artificial Intelligence Generated',
-    description: 'AIGC 就是未来'
+    name: 'AIG',
+    description: 'AIG 就是未来'
   }
 ]
 
