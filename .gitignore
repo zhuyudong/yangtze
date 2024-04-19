@@ -131,7 +131,7 @@ dist
 
 analyze
 
-src/app/\[locale\]/\(unauth\)/weekly-issues
+weekly-issues/*.mdx
 
 analyze
 

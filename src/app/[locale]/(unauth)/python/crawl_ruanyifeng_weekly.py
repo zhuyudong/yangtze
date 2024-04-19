@@ -4,9 +4,10 @@ python crawl_ruanyifeng_weekly.py
 """
 
 # import json
-import math
+# import math
 import os
 import re
+import subprocess
 
 import requests
 from rich.console import Console
@@ -44,13 +45,27 @@ categories_locale = {
     "言论": "quotations",
 }
 
+eslint_path = os.path.abspath(
+    os.path.join(os.getcwd(), "../../../../../node_modules/.bin/eslint")
+)
+
+
+def prettier(file_path: str) -> None:
+    process = subprocess.Popen(
+        [eslint_path, "--fix", "--color", file_path],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
+    stdout, stderr = process.communicate()
+    return stdout, stderr
+
 
 def get_issues():
     """
     获取所有 issues
     """
     res = requests.get("https://github.com/ruanyf/weekly")
-    # ["294", ...]
+    # ["297", ...]
     issues = re.findall(
         r"href=\"/ruanyf/weekly/blob/master/docs/issue-(\d+).md\"", res.text
     )
@@ -73,7 +88,12 @@ def crawler():
     files = {category: [] for category in categories_en}
     # keys = list(files.keys())
     for issue in issues:
-        file_path = os.path.dirname(os.getcwd()) + f"/weekly-issues/{issue}.mdx"
+        # ["297.mdx", ...]
+        # file_path = os.path.dirname(os.getcwd()) + f"/weekly-issues/{issue}.mdx"
+        # yangtze/weekly-issues/297.mdx
+        file_path = os.path.abspath(
+            os.path.join(os.getcwd(), f"../../../../../weekly-issues/{issue}.mdx")
+        )
         if os.path.exists(file_path):
             with open(file_path, "r") as f:
                 # lines = f.readlines()
@@ -120,44 +140,48 @@ def write_mdxs():
             console(
                 f"src/app/[locale]/(unauth)/weekly-by-category/{file_category}/_page.mdx saved."
             )
+            console("prettier start...")
+            stdout, stderr = prettier(f"{directory}/_page.mdx")
+            console(stdout, stderr)
+            console("prettier done.")
 
 
-def add_index():
-    write_mdxs()
+# def add_index():
+#     write_mdxs()
 
-    for category in categories_en:
-        index = 1
-        with open(os.getcwd() + f"/{category}.mdx", "r") as f:
-            lines = f.readlines()
-            for line in lines:
-                is_title = re.match("\[[\w\s\-（）、.\u4e00-\u9fa5]*\]\(", line)  # noqa: W605
-                if is_title:
-                    line = f"#### {index}. {line}"
-                    index += 1
-                if (
-                    category == "quotations"
-                    and re.match("[\w\u4e00-\u9fa5]+", line)
-                    and not re.match("--", line)
-                ):
-                    line = f"> {line}"
+#     for category in categories_en:
+#         index = 1
+#         with open(os.getcwd() + f"/{category}.mdx", "r") as f:
+#             lines = f.readlines()
+#             for line in lines:
+#                 is_title = re.match("\[[\w\s\-（）、.\u4e00-\u9fa5]*\]\(", line)  # noqa: W605
+#                 if is_title:
+#                     line = f"#### {index}. {line}"
+#                     index += 1
+#                 if (
+#                     category == "quotations"
+#                     and re.match("[\w\u4e00-\u9fa5]+", line)
+#                     and not re.match("--", line)
+#                 ):
+#                     line = f"> {line}"
 
-                filename = (
-                    f"/{category}{math.floor(index/100)}01~{math.ceil(index/100)}00.mdx"
-                )
-                if index <= 101:
-                    filename = f"/{category}1~100.mdx"
-                if index in list(range(200, 10000, 100)):
-                    filename = f"/{category}{math.floor((index - 1)/100)}01~{math.ceil((index - 1)/100)}00.mdx"
-                if index in list(range(201, 10000, 100)):
-                    filename = f"/{category}{math.floor((index - 2)/100)}01~{math.ceil((index - 2)/100)}00.mdx"
-                if index in list(range(102, 10000, 100)):
-                    filename = f"/{category}{math.floor(index/100)}01~{math.ceil(index/100)}00.mdx"
-                # console(index, filename)
-                with open(
-                    os.getcwd() + filename,
-                    "a+",
-                ) as f:
-                    f.write(line)
+#                 filename = (
+#                     f"/{category}{math.floor(index/100)}01~{math.ceil(index/100)}00.mdx"
+#                 )
+#                 if index <= 101:
+#                     filename = f"/{category}1~100.mdx"
+#                 if index in list(range(200, 10000, 100)):
+#                     filename = f"/{category}{math.floor((index - 1)/100)}01~{math.ceil((index - 1)/100)}00.mdx"
+#                 if index in list(range(201, 10000, 100)):
+#                     filename = f"/{category}{math.floor((index - 2)/100)}01~{math.ceil((index - 2)/100)}00.mdx"
+#                 if index in list(range(102, 10000, 100)):
+#                     filename = f"/{category}{math.floor(index/100)}01~{math.ceil(index/100)}00.mdx"
+#                 # console(index, filename)
+#                 with open(
+#                     os.getcwd() + filename,
+#                     "a+",
+#                 ) as f:
+#                     f.write(line)
 
 
 if __name__ == "__main__":

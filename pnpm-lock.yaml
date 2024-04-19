@@ -457,6 +457,9 @@ importers:
       zustand:
         specifier: ^4.5.2
         version: 4.5.2(@types/react@18.2.79)(react@18.2.0)
+      zx:
+        specifier: ^8.0.2
+        version: 8.0.2
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.2.2
@@ -4357,6 +4360,12 @@ packages:
         integrity: sha512-TEbt+vaPFQ+xpxFLFssxUDXj5cWCxZJjIcB7Yg0k0GMHGtgtQgpvx/MUQUeAkNbA9AAGrwkAsoeItdTgS7FMyg==
       }
 
+  '@types/fs-extra@11.0.4':
+    resolution:
+      {
+        integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==
+      }
+
   '@types/hast@2.3.10':
     resolution:
       {
@@ -4397,6 +4406,12 @@ packages:
     resolution:
       {
         integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
+      }
+
+  '@types/jsonfile@6.1.4':
+    resolution:
+      {
+        integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==
       }
 
   '@types/keygrip@1.0.6':
@@ -14157,6 +14172,14 @@ packages:
         integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==
       }
 
+  zx@8.0.2:
+    resolution:
+      {
+        integrity: sha512-3g+ePtPYmyrjRuASlJiUhkje1je4a47woML/fzTKBb9PA5BzRQbSswwyJ8nlFWJjA1ORRi6TMyAdhuz/jK+Gaw==
+      }
+    engines: { node: '>= 16.0.0' }
+    hasBin: true
+
 snapshots:
   '@aashutoshrathi/word-wrap@1.2.6': {}
 
@@ -16734,6 +16757,12 @@ snapshots:
       '@types/qs': 6.9.14
       '@types/serve-static': 1.15.7
 
+  '@types/fs-extra@11.0.4':
+    dependencies:
+      '@types/jsonfile': 6.1.4
+      '@types/node': 20.12.7
+    optional: true
+
   '@types/hast@2.3.10':
     dependencies:
       '@types/unist': 2.0.10
@@ -16751,6 +16780,11 @@ snapshots:
   '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
+
+  '@types/jsonfile@6.1.4':
+    dependencies:
+      '@types/node': 20.12.7
+    optional: true
 
   '@types/keygrip@1.0.6': {}
 
@@ -23660,3 +23694,8 @@ snapshots:
       react: 18.2.0
 
   zwitch@2.0.4: {}
+
+  zx@8.0.2:
+    optionalDependencies:
+      '@types/fs-extra': 11.0.4
+      '@types/node': 20.12.7
