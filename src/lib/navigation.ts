@@ -50,7 +50,7 @@ export const navigation: Array<NavGroup> = [
     ]
   },
   {
-    title: '阅读',
+    title: '阅读空间',
     links: [
       { title: '诗词', href: '/poetry', icon: FireIcon },
       // { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },

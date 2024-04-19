@@ -151,22 +151,22 @@ export default function typographyStyles({ theme }: PluginUtils) {
 
         // Quotes
         'blockquote': {
-          fontWeight: '500',
-          fontStyle: 'italic',
+          fontWeight: '200', // '500',
+          // fontStyle: 'italic',
           color: 'var(--tw-prose-quotes)',
           borderLeftWidth: '0.25rem',
           borderLeftColor: 'var(--tw-prose-quote-borders)',
-          quotes: '"\\201C""\\201D""\\2018""\\2019"',
+          // quotes: '"\\201C""\\201D""\\2018""\\2019"',
           marginTop: theme('spacing.8'),
           marginBottom: theme('spacing.8'),
           paddingLeft: theme('spacing.5')
         },
-        'blockquote p:first-of-type::before': {
-          content: 'open-quote'
-        },
-        'blockquote p:last-of-type::after': {
-          content: 'close-quote'
-        },
+        // 'blockquote p:first-of-type::before': {
+        //   content: 'open-quote'
+        // },
+        // 'blockquote p:last-of-type::after': {
+        //   content: 'close-quote'
+        // },
 
         // Headings
         'h1': {

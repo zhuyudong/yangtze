@@ -88,3 +88,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+blockquote p {
+  font-size: 14px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

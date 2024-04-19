@@ -101,6 +101,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
                 {/* <ArticleIcon /> */}
                 Blog
               </TopLevelNavItem>
+              <TopLevelNavItem href="/poetry">Poetry</TopLevelNavItem>
               <TopLevelNavItem href="/movies">
                 {/* <MovieIcon /> */}
                 Movies
