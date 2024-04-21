@@ -30,12 +30,14 @@ model User {
   hashedPassword String?   @map("hashed_password")
   sessions       Session[]
   accounts       Account[]
+  likedIds       String[]  @map("liked_ids")
   favoriteIds    String[]  @map("favorite_ids")
+  noInterestIds  String[]  @map("no_interest_ids")
 
   LemonSqueezySubscription LemonSqueezySubscription[]
 
   plan         Plan?          @relation(fields: [planId], references: [id])
-  planId       Int?
+  planId       Int?           @map("plan_id")
   FeatureUsage FeatureUsage[]
 
   createdAt       DateTime          @default(now()) @map("created_at")
@@ -168,17 +170,15 @@ model FeatureUsage {
 }
 
 model Content {
-  id          String   @id @default(cuid())
-  title       String
-  content     String
-  category    String
-  originHref  String?  @map("origin_href")
-  coverUrl    String?  @map("cover_url")
-  tags        String[]
-  favorited   Int      @default(0)
-  favoritedBy String[] @map("favorited_by")
-  liked       Int      @default(0)
-  likedBy     String[] @map("liked_by")
+  id         String   @id @default(cuid())
+  title      String
+  content    String
+  category   String
+  originHref String?  @map("origin_href")
+  coverUrl   String?  @map("cover_url")
+  tags       String[]
+  favorited  Int      @default(0)
+  liked      Int      @default(0)
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
