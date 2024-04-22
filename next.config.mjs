@@ -60,6 +60,12 @@ const nextConfig = {
         hostname: 'yet-another-react-lightbox.com',
         port: '',
         pathname: '/images/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**'
       }
     ]
   },

@@ -1,6 +1,6 @@
 'use client'
 
-// import { redirect } from 'next/navigation'
+import { redirect } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 
 import { Billboard } from '@/app/[locale]/(fullscreen)/_components/Billboard'
@@ -15,7 +15,7 @@ const Movies = () => {
    */
   const { data: session } = useSession()
   if (!session) {
-    // redirect('/auth')
+    redirect('/auth')
   }
 
   const { data: movies = [] } = useMovieList()

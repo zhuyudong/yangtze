@@ -1,6 +1,8 @@
 import clsx from 'clsx'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
+import { signOut, useSession } from 'next-auth/react'
 import type { CSSProperties, ElementRef, ReactNode } from 'react'
 import { forwardRef } from 'react'
 
@@ -53,7 +55,7 @@ export function TopLevelNavItem({
 export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
   function Header({ className }, ref) {
     // const t = getTranslations('RootLayout')
-
+    const { data: session } = useSession()
     const { isOpen: mobileNavIsOpen } = useMobileNavigationStore()
     const isInsideMobileNavigation = useIsInsideMobileNavigation()
 
@@ -97,19 +99,10 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
         <div className="flex items-center gap-5">
           <nav className="hidden md:block">
             <ul role="list" className="flex items-center gap-8">
-              <TopLevelNavItem href="/blog">
-                {/* <ArticleIcon /> */}
-                Blog
-              </TopLevelNavItem>
+              <TopLevelNavItem href="/blog">Blog</TopLevelNavItem>
               <TopLevelNavItem href="/poetry">Poetry</TopLevelNavItem>
-              <TopLevelNavItem href="/movies">
-                {/* <MovieIcon /> */}
-                Movies
-              </TopLevelNavItem>
-              <TopLevelNavItem href="/wallpaper">
-                {/* <ArticleIcon /> */}
-                Wallpaper
-              </TopLevelNavItem>
+              <TopLevelNavItem href="/movies">Movies</TopLevelNavItem>
+              <TopLevelNavItem href="/wallpaper">Wallpaper</TopLevelNavItem>
             </ul>
           </nav>
           <div className="hidden md:block md:h-5 md:w-px md:bg-zinc-900/10 md:dark:bg-white/15" />
@@ -117,10 +110,21 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
             <MobileSearch />
             <ThemeToggle />
           </div>
-          {/* TODO */}
           <div className="hidden min-[416px]:contents">
-            {/* <Button href="/sign-in">{t('sign_in_link')}</Button> */}
-            <Button href="/auth">Sign in</Button>
+            {session ? (
+              <Image
+                className="inline-block size-8 rounded-full"
+                width={32}
+                height={32}
+                src={
+                  (session.user.image as string) || '/images/default-blue.png'
+                }
+                alt=""
+                onClick={() => signOut()}
+              />
+            ) : (
+              <Button href="/auth">Sign in</Button>
+            )}
           </div>
         </div>
       </motion.div>

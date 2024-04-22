@@ -39,7 +39,7 @@ const UserCard: FC<UserCardProps> = ({ name }) => {
 }
 
 const App = () => {
-  const session = useSession()
+  const { data: session } = useSession()
   if (!session) {
     redirect('/auth')
   }

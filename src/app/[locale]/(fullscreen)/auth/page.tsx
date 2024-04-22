@@ -4,17 +4,14 @@ import axios from 'axios'
 import { redirect, useRouter } from 'next/navigation'
 import { signIn, useSession } from 'next-auth/react'
 import { useCallback, useState } from 'react'
+import { FaGithub } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 
-// import { FaGithub } from 'react-icons/fa';
 import { Input } from '@/components/Input'
 
 const Auth = () => {
-  // const session = await getSession();
   // status: 'loading' | 'authenticated' | 'unauthenticated'
   const { data: session } = useSession()
-  // const session = await getServerSession();
-  console.log('Auth: ', session)
   if (session) {
     redirect('/')
   }
@@ -43,7 +40,7 @@ const Auth = () => {
         callbackUrl: '/'
       })
 
-      router.push('/movies')
+      router.push('/')
     } catch (error) {
       console.log(error)
     }
@@ -64,13 +61,15 @@ const Auth = () => {
   }, [email, name, password, login])
 
   return (
-    <div className="relative size-full bg-[url('/images/hero.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
-      <div className="lg:bg-opacity/50 size-full bg-black">
+    // bg-[url('/images/hero.jpg')] bg-cover bg-fixed bg-center bg-no-repeat
+    <div className="relative size-full min-h-screen">
+      {/* lg:bg-opacity/50  bg-black */}
+      <div className="size-full">
         {/* <nav className="px-12 py-5">
           <img src="/images/logo.png" className="h-12" alt="Logo" />
         </nav> */}
-        <div className="flex justify-center">
-          <div className="bg-opacity/70 mt-2 w-full self-center rounded-md bg-black p-16 lg:w-2/5 lg:max-w-lg">
+        <div className="flex min-h-screen justify-center">
+          <div className="bg-opacity/70 lg:bg-opacity/50 mt-2 w-full self-center rounded-md bg-black p-16 lg:w-2/5 lg:max-w-lg">
             <h2 className="mb-8 text-4xl font-semibold text-white">
               {variant === 'login' ? 'Sign in' : 'Register'}
             </h2>
@@ -112,9 +111,12 @@ const Auth = () => {
               >
                 <FcGoogle size={32} />
               </div>
-              {/* <div onClick={() => signIn('github', { callbackUrl: '/movies' })} className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity/80 transition">
+              <div
+                onClick={() => signIn('github', { callbackUrl: '/movies' })}
+                className="hover:opacity/80 flex size-10 cursor-pointer items-center justify-center rounded-full bg-white transition"
+              >
                 <FaGithub size={32} />
-              </div> */}
+              </div>
             </div>
             <p className="mt-12 text-neutral-500">
               {variant === 'login'

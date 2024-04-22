@@ -1,9 +1,9 @@
 import { PrismaAdapter } from '@next-auth/prisma-adapter'
-// import { compare } from 'bcrypt'
+import { compare } from 'bcrypt'
 import type { AuthOptions } from 'next-auth'
 import Credentials from 'next-auth/providers/credentials'
 // import EmailProvider from 'next-auth/providers/email'
-// import GitHubProvider from 'next-auth/providers/github'
+import GitHubProvider from 'next-auth/providers/github'
 import GoogleProvider from 'next-auth/providers/google'
 import type { Provider } from 'next-auth/providers/index'
 
@@ -11,12 +11,12 @@ import { db } from '@/server/db'
 
 export const authOptions: AuthOptions = {
   providers: [
-    // process.env.GITHUB_ID &&
-    //   process.env.GITHUB_SECRET &&
-    //   GitHubProvider({
-    //     clientId: process.env.GITHUB_ID,
-    //     clientSecret: process.env.GITHUB_SECRET
-    //   }),
+    process.env.GITHUB_ID &&
+      process.env.GITHUB_SECRET &&
+      GitHubProvider({
+        clientId: process.env.GITHUB_ID,
+        clientSecret: process.env.GITHUB_SECRET
+      }),
     process.env.GOOGLE_CLIENT_ID &&
       process.env.GOOGLE_CLIENT_SECRET &&
       GoogleProvider({
@@ -64,16 +64,14 @@ export const authOptions: AuthOptions = {
             email: credentials.email
           }
         })
-
         if (!user || !user.hashedPassword) {
           throw new Error('Email does not exist')
         }
 
-        // const isCorrectPassword = await compare(
-        //   credentials.password,
-        //   user.hashedPassword
-        // )
-        const isCorrectPassword = true
+        const isCorrectPassword = await compare(
+          credentials.password,
+          user.hashedPassword
+        )
 
         if (!isCorrectPassword) {
           throw new Error('Incorrect password')

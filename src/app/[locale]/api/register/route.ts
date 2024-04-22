@@ -1,4 +1,4 @@
-// import bcrypt from 'bcrypt'
+import bcrypt from 'bcrypt'
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
@@ -19,17 +19,16 @@ async function handler(req: NextRequest) {
     })
 
     if (existingUser) {
-      // return res.status(422).json({ error: 'Email taken' });
       return NextResponse.json({ error: 'Email taken' }, { status: 422 })
     }
 
-    // const hashedPassword = await bcrypt.hash(password, 12)
+    const hashedPassword = await bcrypt.hash(password, 12)
 
     const user = await db.user.create({
       data: {
         email,
         name,
-        hashedPassword: password,
+        hashedPassword,
         image: '',
         emailVerified: new Date()
       }
@@ -37,7 +36,6 @@ async function handler(req: NextRequest) {
 
     return NextResponse.json(user)
   } catch (error) {
-    // return res.status(400).json({ error: `Something went wrong: ${error}` });
     return NextResponse.json({ error }, { status: 400 })
   }
 }

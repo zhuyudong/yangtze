@@ -43,4 +43,5 @@ export const config = {
   ]
 }
 
-export default clerkAuthMiddleware
+// export default clerkAuthMiddleware
+export default intlMiddleware

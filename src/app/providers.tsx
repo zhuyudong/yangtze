@@ -36,6 +36,7 @@ function ThemeWatcher() {
 
 const Identification = ({ children }: { children: ReactNode }) => {
   // NOTE: `useSession` must be wrapped in a <SessionProvider />
+  // session: { user: { name: string, email: string, image: string }, expires: string }
   const { data: session } = useSession()
   const user = session?.user
 
@@ -43,10 +44,10 @@ const Identification = ({ children }: { children: ReactNode }) => {
   const newLoginState = params.get('loginState')
 
   if (newLoginState === 'signedIn' && session) {
-    // TODO: monitor
+    // TODO
   }
   useEffect(() => {
-    // TODO: monitor
+    // TODO
   }, [user])
 
   // eslint-disable-next-line react/jsx-no-useless-fragment
