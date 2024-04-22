@@ -12,28 +12,31 @@ async function handler(req: NextRequest) {
 
     const { currentUser } = await serverAuth()
 
-    const favoritedIds = await db.user.findMany({
+    const userInfo = await db.user.findMany({
       where: {
         id: currentUser?.id
       },
       select: {
-        favoriteIds: true
+        favoriteIds: true,
+        likedIds: true,
+        noInterestIds: true
       }
     })
-    const favorites = await db.content.findMany({
+    const contentInfo = await db.content.findMany({
       where: {
         id: {
           in: currentUser?.favoriteIds
         }
       },
       select: {
-        favorites: true
+        favorites: true,
+        likes: true,
+        noInteresteds: true
       }
     })
-    console.log(favorites, favoritedIds)
     return NextResponse.json({
-      favorites,
-      favoritedIds
+      userInfo,
+      contentInfo
     })
   } catch (error) {
     console.log(error)

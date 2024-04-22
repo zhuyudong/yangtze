@@ -170,16 +170,17 @@ model FeatureUsage {
 }
 
 model Content {
-  id         String   @id @default(cuid())
-  title      String
-  content    String
-  category   String
-  originHref String?  @map("origin_href")
-  coverUrl   String?  @map("cover_url")
-  tags       String[]
-  favorites  Int      @default(0)
-  likes      Int      @default(0)
-  weekly     Int?
+  id            String   @id @default(cuid())
+  title         String
+  content       String
+  category      String
+  originHref    String?  @map("origin_href")
+  coverUrl      String?  @map("cover_url")
+  tags          String[]
+  favorites     Int      @default(0)
+  likes         Int      @default(0)
+  noInteresteds Int      @default(0)
+  weekly        Int?
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
