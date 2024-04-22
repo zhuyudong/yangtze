@@ -177,8 +177,9 @@ model Content {
   originHref String?  @map("origin_href")
   coverUrl   String?  @map("cover_url")
   tags       String[]
-  favorited  Int      @default(0)
-  liked      Int      @default(0)
+  favorits   Int      @default(0)
+  likes      Int      @default(0)
+  weekly     Int?
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")

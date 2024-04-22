@@ -99,7 +99,12 @@ const readMdxFile = (filePath: string, category: string) => {
   }
 
   if (title !== '') {
-    result.push({ title, content, category, originHref })
+    result.push({
+      title,
+      content: content.replace(/（.*投稿）$/, ''),
+      category,
+      originHref
+    })
   }
 
   return result

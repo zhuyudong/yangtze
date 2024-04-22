@@ -64,12 +64,15 @@ async function main() {
   if (cs.length) {
     console.log(`Seeding skipped. Contents already exist.`)
   } else {
-    for (let i = 0; i < contents.length; i++) {
-      await db.content.create({
-        data: contents[i]
-      })
-      console.log(`Created content ${i + 1}`)
-    }
+    // for (let i = 0; i < contents.length; i++) {
+    //   await db.content.create({
+    //     data: contents[i]
+    //   })
+    //   console.log(`Created content ${i + 1}`)
+    // }
+    await db.content.createMany({
+      data: contents
+    })
   }
   console.log(`Seeding finished.`)
 }
