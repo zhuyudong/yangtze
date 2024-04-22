@@ -20,7 +20,7 @@
       "type": "debugpy",
       "request": "launch",
       "module": "uvicorn",
-      "cwd": "${workspaceFolder}/backend",
+      "cwd": "${workspaceFolder}",
       "args": [
         "yangtze.app.main:app",
         "--reload",
@@ -28,7 +28,7 @@
         // "--no-access-log"
       ],
       "env": {
-        "PYTHONPATH": "${workspaceFolder}/backend"
+        "PYTHONPATH": "${workspaceFolder}"
         // "MONGODB_HOST": "localhost",
         // "MONGODB_PORT": "27017"
       },
@@ -42,7 +42,7 @@
       "program": "${file}",
       "console": "internalConsole",
       "env": {
-        "PYTHONPATH": "${workspaceFolder}/backend"
+        "PYTHONPATH": "${workspaceFolder"
       }
     },
     {

@@ -1,6 +1,7 @@
 """
-cd src/app/[locale]/(unauth)/python
-python crawl_ruanyifeng_weekly.py
+cd src/app/[locale]/(unauth)/python && python crawl_ruanyifeng_weekly.py
+# or
+python src/app/[locale]/(unauth)/python/crawl_ruanyifeng_weekly.py
 """
 
 # import json
@@ -29,10 +30,13 @@ categories_cn = [
     "文摘",
     "文章",
     "资讯",
+    "新闻",
     "工具",
     "图片",
+    "本周图片",
     "资源",
     "言论",
+    "本周金句",
 ]
 categories_locale = {
     "科技动态": "technology-news",
@@ -40,17 +44,31 @@ categories_locale = {
     "文章": "articles",
     "工具": "tools",
     "资讯": "news",
+    "新闻": "news",
     "图片": "photos",
+    "本周图片": "photos",
     "资源": "resources",
     "言论": "quotations",
+    "本周金句": "quotations",
 }
 
-eslint_path = os.path.abspath(
-    os.path.join(os.getcwd(), "../../../../../node_modules/.bin/eslint")
-)
+
+def find_root_path(current_path: str = os.getcwd()) -> str:
+    path = os.path.abspath(current_path)
+    if "node_modules" in os.listdir(path):
+        return current_path
+
+    parent_dir = os.path.dirname(current_path)
+
+    return find_root_path(parent_dir)
 
 
-def prettier(file_path: str) -> None:
+root_path = find_root_path()
+
+eslint_path = os.path.join(root_path, "node_modules/.bin/eslint")
+
+
+def formatting(file_path: str) -> None:
     process = subprocess.Popen(
         [eslint_path, "--fix", "--color", file_path],
         stdout=subprocess.PIPE,
@@ -73,42 +91,44 @@ def get_issues():
     return issues
 
 
-def files_by_category(text: str, files: dict) -> None:
+def files_by_category(text: str, files: dict, weekly: int) -> None:
     categories = text.split("## ")
     for category in categories:
         for key in categories_cn:
-            # ## 科技动态
+            """
+            ## 科技动态
+            """
             if category.strip().startswith(key):
                 content = re.sub(r"\d、", "", category.strip().replace(key, ""))
+                # NOTE: 在内容中暂存 issue 编号，parse md 时擦除
+                content = f"\n==={weekly}===\n" + content
                 files[categories_locale[key]].append(content)
 
 
 def crawler():
     issues = get_issues()
     files = {category: [] for category in categories_en}
-    # keys = list(files.keys())
     for issue in issues:
-        # ["297.mdx", ...]
-        # file_path = os.path.dirname(os.getcwd()) + f"/weekly-issues/{issue}.mdx"
-        # yangtze/weekly-issues/297.mdx
-        file_path = os.path.abspath(
-            os.path.join(os.getcwd(), f"../../../../../weekly-issues/{issue}.mdx")
-        )
+        # yangtze/weekly-issues/297.mdx,...
+        file_path = root_path + f"/weekly-issues/{issue}.mdx"
         if os.path.exists(file_path):
             with open(file_path, "r") as f:
-                # lines = f.readlines()
                 text = f.read()
-                files_by_category(text, files)
+                files_by_category(text, files, weekly=int(issue))
         else:
             res = requests.get(
                 f"https://raw.githubusercontent.com/ruanyf/weekly/master/docs/issue-{issue}.md"
             )
             if res.ok:
-                text = res.text
+                text = res.text.replace("<br>", "")
                 with open(file_path, "w") as f:
+                    console(f"issue-{issue} write and formatting start...")
                     f.write(text)
-                    console(f"issue-{issue} saved.")
-                files_by_category(text, files)
+                    # stdout, stderr = formatting(file_path)
+                    formatting(file_path)
+                    # console(stdout, stderr)
+                    console(f"issue-{issue} saved and formatting.")
+                files_by_category(text, files, weekly=int(issue))
             else:
                 console(f"issue-{issue} not found.")
 
@@ -119,7 +139,7 @@ def write_mdxs():
     files = crawler()
     for file_category, content in files.items():
         directory = (
-            os.path.dirname(os.getcwd()) + f"/weekly-by-category/{file_category}"
+            root_path + f"/src/app/[locale]/(unauth)/weekly-by-category/{file_category}"
         )
         if not os.path.exists(directory):
             os.makedirs(directory)
@@ -140,10 +160,10 @@ def write_mdxs():
             console(
                 f"src/app/[locale]/(unauth)/weekly-by-category/{file_category}/_page.mdx saved."
             )
-            console("prettier start...")
-            stdout, stderr = prettier(f"{directory}/_page.mdx")
-            console(stdout, stderr)
-            console("prettier done.")
+            console("formatting start...")
+            formatting(f"{directory}/_page.mdx")
+            # console(stdout, stderr)
+            console("formatting done.")
 
 
 # def add_index():

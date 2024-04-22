@@ -27,7 +27,7 @@ declare global {
 const db = global.db || new PrismaClient()
 if (process.env.NODE_ENV !== 'production') global.db = db
 
-const contents = [
+const weeklys = [
   ...news,
   ...articles,
   ...technology_news,
@@ -60,19 +60,29 @@ async function main() {
       console.log(`Created movie with id: ${movie.id}`)
     }
   }
-  const cs = await db.content.findMany()
-  if (cs.length) {
-    console.log(`Seeding skipped. Contents already exist.`)
-  } else {
-    // for (let i = 0; i < contents.length; i++) {
-    //   await db.content.create({
-    //     data: contents[i]
-    //   })
-    //   console.log(`Created content ${i + 1}`)
-    // }
+  // for (let i = 0; i < contents.length; i++) {
+  //   await db.content.create({
+  //     data: contents[i]
+  //   })
+  //   console.log(`Created content ${i + 1}`)
+  // }
+  const weeklyIndexs = (
+    await db.content.findMany({
+      distinct: ['weekly'],
+      select: { weekly: true }
+    })
+  )
+    .map(c => c.weekly)
+    .filter(Boolean)
+
+  const contents = weeklys.filter(
+    c => c.weekly && !weeklyIndexs.includes(c.weekly)
+  )
+  if (contents.length) {
     await db.content.createMany({
       data: contents
     })
+    console.log(`Created ${contents.length} contents`)
   }
   console.log(`Seeding finished.`)
 }

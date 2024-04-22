@@ -47,13 +47,23 @@ const readMdxFile = (filePath: string, category: string) => {
   let title = ''
   let content = ''
   let originHref = ''
+  let weekly!: number
 
   for (const line of lines) {
+    if (/===(\d+)===/.exec(line)) {
+      weekly = Number(/===(\d+)===/.exec(line)?.[1])
+    }
     if (filePath.indexOf('/quotations/') !== -1) {
       const match = quotationTitleReg.exec(line)
       if (match) {
         if (title !== '') {
-          result.push({ title, content, category, originHref })
+          result.push({
+            title,
+            content: content.replace(/===\d+===/, ''),
+            category,
+            originHref,
+            weekly
+          })
           content = ''
         }
         // eslint-disable-next-line prefer-destructuring
@@ -78,7 +88,13 @@ const readMdxFile = (filePath: string, category: string) => {
         boldTitleReg.exec(line)
       if (match) {
         if (title !== '') {
-          result.push({ title, content, category, originHref })
+          result.push({
+            title,
+            content: content.replace(/===\d+===/, ''),
+            category,
+            originHref,
+            weekly
+          })
           content = ''
         }
         // eslint-disable-next-line prefer-destructuring
@@ -101,9 +117,10 @@ const readMdxFile = (filePath: string, category: string) => {
   if (title !== '') {
     result.push({
       title,
-      content: content.replace(/（.*投稿）$/, ''),
+      content: content.replace(/（.*投稿）$/, '').replace(/===\d+===/, ''),
       category,
-      originHref
+      originHref,
+      weekly
     })
   }
 
@@ -145,7 +162,7 @@ findMdxFiles().then(files => {
       JSON.stringify(resultArray, null, 2),
       'utf8'
     )
-    console.log(`Structured ${category}.json`)
+    console.log(`Generated ${category}.json`)
     // }
   })
 })
