@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { useCallback } from 'react'
 
 import { useNoInterested } from '@/hooks'
@@ -5,8 +6,11 @@ import { useNoInterested } from '@/hooks'
 export default function InterestedLine({ id }: { id: string }) {
   const { setNoInterested } = useNoInterested()
 
-  const onInterested = useCallback(() => {
+  const onInterested = useCallback(async () => {
     setNoInterested(id, false)
+    await axios.patch(`/api/contents/'interested`, {
+      id
+    })
   }, [])
 
   return (

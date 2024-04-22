@@ -80,7 +80,9 @@ const Auth = () => {
                   type="text"
                   label="Username"
                   value={name}
-                  onChange={(e: any) => setName(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setName(e.target.value)
+                  }
                 />
               )}
               <Input
@@ -88,14 +90,18 @@ const Auth = () => {
                 type="email"
                 label="Email address or phone number"
                 value={email}
-                onChange={(e: any) => setEmail(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  setEmail(e.target.value)
+                }
               />
               <Input
                 type="password"
                 id="password"
                 label="Password"
                 value={password}
-                onChange={(e: any) => setPassword(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  setPassword(e.target.value)
+                }
               />
             </div>
             <button
@@ -106,13 +112,13 @@ const Auth = () => {
             </button>
             <div className="mt-8 flex flex-row items-center justify-center gap-4">
               <div
-                onClick={() => signIn('google', { callbackUrl: '/movies' })}
+                onClick={() => signIn('google', { callbackUrl: '/' })}
                 className="hover:opacity/80 flex size-10 cursor-pointer items-center justify-center rounded-full bg-white transition"
               >
                 <FcGoogle size={32} />
               </div>
               <div
-                onClick={() => signIn('github', { callbackUrl: '/movies' })}
+                onClick={() => signIn('github', { callbackUrl: '/' })}
                 className="hover:opacity/80 flex size-10 cursor-pointer items-center justify-center rounded-full bg-white transition"
               >
                 <FaGithub size={32} />

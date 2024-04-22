@@ -177,7 +177,7 @@ model Content {
   originHref String?  @map("origin_href")
   coverUrl   String?  @map("cover_url")
   tags       String[]
-  favorits   Int      @default(0)
+  favorites  Int      @default(0)
   likes      Int      @default(0)
   weekly     Int?
 
@@ -188,17 +188,15 @@ model Content {
 }
 
 model Movie {
-  id           String   @id @default(cuid())
+  id           String @id @default(cuid())
   title        String
   description  String
-  videoUrl     String   @map("video_url")
-  thumbnailUrl String   @map("thumbnail_url")
+  videoUrl     String @map("video_url")
+  thumbnailUrl String @map("thumbnail_url")
   genre        String
   duration     String
-  favorited    Int      @default(0)
-  favoritedBy  String[] @map("favorited_by")
-  liked        Int      @default(0)
-  likedBy      String[] @map("liked_by")
+  favorites    Int    @default(0)
+  likes        Int    @default(0)
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")

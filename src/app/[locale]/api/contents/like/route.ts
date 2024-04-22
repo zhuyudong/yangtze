@@ -1,3 +1,4 @@
+import { without } from 'lodash'
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
@@ -25,23 +26,42 @@ async function handler(req: NextRequest) {
           email: currentUser.email || ''
         },
         data: {
-          noInterestIds: {
+          likedIds: {
             push: contentId
-          }
-        }
-      })
-      await db.content.update({
-        where: {
-          id: contentId
-        },
-        data: {
-          favorits: {
-            increment: 1
           }
         }
       })
 
       return NextResponse.json(user)
+    }
+
+    if (req.method === 'DELETE') {
+      const { currentUser } = await serverAuth()
+
+      const { contentId } = await req.json()
+
+      const existingContent = await db.content.findUnique({
+        where: {
+          id: contentId
+        }
+      })
+
+      if (!existingContent) {
+        throw new Error('Invalid ID')
+      }
+
+      const updatedFavoriteIds = without(currentUser.likedIds, contentId)
+
+      const updatedUser = await db.user.update({
+        where: {
+          email: currentUser.email || ''
+        },
+        data: {
+          likedIds: updatedFavoriteIds
+        }
+      })
+
+      return NextResponse.json(updatedUser)
     }
 
     return NextResponse.json(null, { status: 405 })
@@ -52,4 +72,4 @@ async function handler(req: NextRequest) {
   }
 }
 
-export { handler as PATCH }
+export { handler as DELETE, handler as PATCH }
