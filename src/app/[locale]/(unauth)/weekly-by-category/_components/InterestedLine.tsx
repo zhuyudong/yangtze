@@ -1,24 +1,69 @@
 import axios from 'axios'
-import { useCallback } from 'react'
+import { useCallback, useMemo } from 'react'
 
-import { useContentLocalState } from '@/hooks'
+import { useContentsRemoteState, useCurrentUser } from '@/hooks'
+
+import type { ContentsStateResponse } from './Content'
 
 export default function InterestedLine({ id }: { id: string }) {
-  const { setNoInterested } = useContentLocalState()
+  const { data: currentUser, mutate: mutateCurrentUser } = useCurrentUser()
+  const { data: contentsState, mutate: mutateContentsState } =
+    useContentsRemoteState()
 
-  const onInterested = useCallback(async () => {
-    setNoInterested(id, false)
-    await axios.patch(`/api/contents/'interested`, {
-      id
+  const isNoInterested = useMemo(() => {
+    return currentUser?.noInterestedIds?.includes(id) as boolean
+  }, [currentUser?.noInterestedIds, id])
+
+  const toggleNoInterested = useCallback(async () => {
+    let response: ContentsStateResponse
+    if (isNoInterested) {
+      response = await axios.delete('/api/contents/nointerested', {
+        data: { contentId: id }
+      })
+    } else {
+      response = await axios.post(`/api/contents/nointerested`, {
+        contentId: id
+      })
+    }
+    const updatedNoInterestedIds = response?.data?.noInterestedIds as string[]
+    mutateCurrentUser({
+      ...currentUser!,
+      noInterestedIds: updatedNoInterestedIds
     })
-  }, [])
+    mutateContentsState({
+      // favoriteIds: contentsState?.favoriteIds as string[],
+      // likedIds: contentsState?.likedIds as string[],
+      ...contentsState,
+      noInterestedIds: updatedNoInterestedIds,
+      // @ts-ignore
+      contents: {
+        ...contentsState?.contents!,
+        [id]: {
+          // likes: contentsState?.contents?.[id]?.likes as number,
+          // favorites: contentsState?.contents?.[id]?.favorites as number,
+          ...contentsState?.contents?.[id],
+          noInteresteds: response?.data?.contents?.[id]?.noInteresteds as number
+        }
+      }
+    })
+  }, [
+    id,
+    currentUser,
+    isNoInterested,
+    contentsState,
+    mutateCurrentUser,
+    mutateContentsState
+  ])
 
   return (
     <div className="relative mb-[-36px] mt-16">
       <div className="absolute inset-0 flex items-center" aria-hidden="true">
         <div className="w-full border-t border-gray-200" />
       </div>
-      <div className="relative flex justify-center" onClick={onInterested}>
+      <div
+        className="relative flex cursor-pointer justify-center"
+        onClick={toggleNoInterested}
+      >
         <span className="bg-white px-2 text-gray-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"

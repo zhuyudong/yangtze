@@ -44,7 +44,7 @@ async function handler(req: NextRequest) {
         favoriteIds: updatedUser.favoriteIds,
         likes: updatedUser.likedIds,
         noInteresteds: updatedUser.noInterestedIds,
-        content: {
+        contents: {
           [contentId]: updatedContent
         }
       })
@@ -75,7 +75,7 @@ async function handler(req: NextRequest) {
         favoriteIds: updatedUser.favoriteIds,
         likes: updatedUser.likedIds,
         noInteresteds: updatedUser.noInterestedIds,
-        content: {
+        contents: {
           [contentId]: updatedContent
         }
       })

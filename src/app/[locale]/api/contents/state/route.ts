@@ -25,11 +25,6 @@ async function handler(req: NextRequest) {
 
     const contents = (
       await db.content.findMany({
-        where: {
-          id: {
-            in: currentUser?.favoriteIds
-          }
-        },
         select: {
           id: true,
           favorites: true,
