@@ -1,10 +1,13 @@
+import fs from 'fs'
+import path from 'path'
+
 import { slugifyWithCounter } from '@sindresorhus/slugify'
 import * as acorn from 'acorn'
 import { toString } from 'mdast-util-to-string'
 import { mdxAnnotations } from 'mdx-annotations'
 import { bundledLanguages, bundledThemes, getHighlighter } from 'shiki'
 import { visit } from 'unist-util-visit'
-import rehypePrettyCode from 'rehype-pretty-code'
+// import rehypePrettyCode from 'rehype-pretty-code'
 
 // NOTE: deprecated hast@1.0.0: Renamed to rehype
 
@@ -49,13 +52,78 @@ function rehypeShiki() {
         langs: Object.keys(bundledLanguages),
         themes: Object.keys(bundledThemes)
       }))
-
+    /**
+     * tree
+     * {
+          type: 'root',
+          children: [
+            { type: 'mdxjsEsm', value: '', data: [Object] },
+            { type: 'text', value: '\n' },
+            {
+              type: 'element',
+              tagName: 'h1',
+              properties: {},
+              children: [Array],
+              position: [Object]
+            }
+          ],
+          position: {
+            start: { line: 1, column: 1, offset: 0 },
+            end: { line: 16, column: 1, offset: 252 }
+          }
+        }
+     * @param {Node} tree
+     * node
+     * {
+          type: 'element',
+          tagName: 'pre',
+          properties: {
+            language: 'tsx',
+            code: '...'
+          },
+          children: [
+            {
+              type: 'element',
+              tagName: 'code',
+              properties: [Object],
+              children: [Array],
+              position: [Object]
+            }
+          ],
+          position: {
+            start: { line: 13, column: 1, offset: 217 },
+            end: { line: 15, column: 4, offset: 251 }
+          }
+        }
+     */
     visit(tree, 'element', node => {
       if (node.tagName === 'pre' && node.children[0]?.tagName === 'code') {
         let codeNode = node.children[0]
+        /**
+         * ```tsx
+           @import('./Alerts.tsx')
+           ```
+           { type: 'text', value: "@import('./Alerts.tsx')\n" }
+         */
         let textNode = codeNode.children[0]
-
-        node.properties.code = textNode.value
+        const fileMatch =
+          /@import\('([.\/a-zA-Z\d]*\.(tsx|ts|js|jsx|py|sh|sql|html|css|scss|sass|less))'\)/.exec(
+            textNode.value
+          )
+        // ./Alerts.tsx
+        if (fileMatch?.[1]) {
+          const codePath = path.resolve(
+            process.cwd(),
+            // TODO: 使用当前目录替换
+            `src/app/[locale]/(unauth)/postgres/${fileMatch[1]}`
+          )
+          const actualCode = fs.readFileSync(codePath).toString()
+          node.properties.code = actualCode
+          textNode.value = actualCode
+          // console.log(textNode, actualCode)
+        } else {
+          node.properties.code = textNode.value
+        }
 
         if (node.properties.language) {
           const tokens = highlighter.codeToHtml(textNode.value, {
@@ -157,7 +225,7 @@ const rehypePrettyCodeOptions = {
 
 export const rehypePlugins = [
   mdxAnnotations.rehype,
-  [rehypePrettyCode, rehypePrettyCodeOptions],
+  // [rehypePrettyCode, rehypePrettyCodeOptions],
   rehypeParseCodeBlocks,
   rehypeShiki,
   rehypeSlugify,
