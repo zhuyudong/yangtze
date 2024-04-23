@@ -364,6 +364,9 @@ importers:
       react-spinners:
         specifier: ^0.13.8
         version: 0.13.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      rehype:
+        specifier: ^13.0.1
+        version: 13.0.1
       rehype-autolink-headings:
         specifier: ^7.1.0
         version: 7.1.0
@@ -12060,6 +12063,12 @@ packages:
         integrity: sha512-Uk5xu1YKdqobe5XpSskwPvo1XeHUUucWEQSl8hTrXt5selvca1e8K1EZ37E6YoZ4BT8BCqCdVfQW7OfHfthtVQ==
       }
 
+  rehype@13.0.1:
+    resolution:
+      {
+        integrity: sha512-AcSLS2mItY+0fYu9xKxOu1LhUZeBZZBx8//5HKzF+0XP+eP8+6a5MXn2+DW2kfXR6Dtp1FEXMVrjyKAcvcU8vg==
+      }
+
   remark-frontmatter@4.0.1:
     resolution:
       {
@@ -22269,6 +22278,13 @@ snapshots:
       '@types/hast': 2.3.10
       hast-util-to-html: 8.0.4
       unified: 10.1.2
+
+  rehype@13.0.1:
+    dependencies:
+      '@types/hast': 3.0.4
+      rehype-parse: 9.0.0
+      rehype-stringify: 10.0.0
+      unified: 11.0.4
 
   remark-frontmatter@4.0.1:
     dependencies:

@@ -18,7 +18,13 @@ async function handler(
     const contents = await db.content.findMany({
       where: {
         category: match ? match[1] : undefined
-      }
+      },
+      orderBy: {
+        weekly: 'desc'
+      },
+      skip: 0
+      // TODO
+      // take: 5
     })
     return NextResponse.json(contents)
   } catch (error) {

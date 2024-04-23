@@ -154,6 +154,7 @@
     "react-resizable-panels": "^2.0.18",
     "react-responsive-masonry": "^2.2.0",
     "react-spinners": "^0.13.8",
+    "rehype": "^13.0.1",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-pretty-code": "^0.13.1",
     "rehype-sanitize": "^6.0.0",
@@ -259,7 +260,7 @@
     "tsx": "^4.7.2",
     "typescript": "^5.4.5"
   },
-  "packageManager": "pnpm@9.0.4",
+  "packageManager": "pnpm@9.0.5",
   "engines": {
     "node": "20.x"
   },

@@ -1,5 +1,8 @@
 'use client'
 
+// import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+// import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { type Atom, Provider } from 'jotai'
 import { useSearchParams } from 'next/navigation'
 // import { useSession } from '@clerk/nextjs'
 import { useSession } from 'next-auth/react'
@@ -8,6 +11,7 @@ import type { ReactNode } from 'react'
 import { useEffect } from 'react'
 
 import { TooltipProvider } from '@/components/ui/tooltip'
+import store from '@/store'
 import { TRPCReactProvider } from '@/trpc/react'
 
 function ThemeWatcher() {
@@ -54,20 +58,37 @@ const Identification = ({ children }: { children: ReactNode }) => {
   return <>{children}</>
 }
 
+// const queryClient = new QueryClient()
+
 export function Providers({ children }: { children: ReactNode }) {
+  const [initialState] = useSearchParams().get('initialState') || [0]
+
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
+    <Provider
+      // @ts-expect-error initialValue is not in the types
+      initialValues={
+        initialState &&
+        ([[store.counterAtom, initialState]] as Iterable<
+          readonly [Atom<unknown>, unknown]
+        >)
+      }
     >
-      <ThemeWatcher />
-      <TRPCReactProvider>
-        <TooltipProvider>
-          <Identification>{children}</Identification>
-        </TooltipProvider>
-      </TRPCReactProvider>
-    </ThemeProvider>
+      <ThemeProvider
+        enableSystem
+        attribute="class"
+        defaultTheme="system"
+        disableTransitionOnChange
+      >
+        <ThemeWatcher />
+        {/* <QueryClientProvider client={queryClient}> */}
+        <TRPCReactProvider>
+          <TooltipProvider>
+            <Identification>{children}</Identification>
+          </TooltipProvider>
+        </TRPCReactProvider>
+        {/* </QueryClientProvider> */}
+        {/* <ReactQueryDevtools initialIsOpen={false} /> */}
+      </ThemeProvider>
+    </Provider>
   )
 }

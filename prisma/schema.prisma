@@ -21,18 +21,18 @@ enum Role {
 }
 
 model User {
-  id             String    @id @default(cuid())
-  name           String
-  image          String?
-  email          String?   @unique
-  emailVerified  DateTime? @map("email_verified")
-  role           Role      @default(USER)
-  hashedPassword String?   @map("hashed_password")
-  sessions       Session[]
-  accounts       Account[]
-  likedIds       String[]  @map("liked_ids")
-  favoriteIds    String[]  @map("favorite_ids")
-  noInterestIds  String[]  @map("no_interest_ids")
+  id              String    @id @default(cuid())
+  name            String
+  image           String?
+  email           String?   @unique
+  emailVerified   DateTime? @map("email_verified")
+  role            Role      @default(USER)
+  hashedPassword  String?   @map("hashed_password")
+  sessions        Session[]
+  accounts        Account[]
+  likedIds        String[]  @default([]) @map("liked_ids")
+  favoriteIds     String[]  @default([]) @map("favorite_ids")
+  noInterestedIds String[]  @default([]) @map("no_interest_ids")
 
   LemonSqueezySubscription LemonSqueezySubscription[]
 
@@ -179,7 +179,7 @@ model Content {
   tags          String[]
   favorites     Int      @default(0)
   likes         Int      @default(0)
-  noInteresteds Int      @default(0)
+  noInteresteds Int      @default(0) @map("no_interesteds")
   weekly        Int?
 
   createdAt DateTime @default(now()) @map("created_at")

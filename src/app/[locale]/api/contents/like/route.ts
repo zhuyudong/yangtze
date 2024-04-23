@@ -7,23 +7,23 @@ import { db } from '@/server/db'
 
 async function handler(req: NextRequest) {
   try {
-    if (req.method === 'PATCH') {
-      const { currentUser } = await serverAuth()
-      const { contentId } = await req.json()
+    const { currentUser } = await serverAuth()
 
-      const existingContent = await db.content.findUnique({
-        where: {
-          id: contentId
-        }
-      })
+    const { contentId } = await req.json()
 
-      if (!existingContent) {
-        throw new Error('Invalid ID')
+    const existingContent = await db.content.findUnique({
+      where: {
+        id: contentId
       }
+    })
+    if (!existingContent) {
+      throw new Error('Invalid ID')
+    }
 
-      const user = await db.user.update({
+    if (req.method === 'POST') {
+      const updatedUser = await db.user.update({
         where: {
-          email: currentUser.email || ''
+          id: currentUser.id
         },
         data: {
           likedIds: {
@@ -31,37 +31,55 @@ async function handler(req: NextRequest) {
           }
         }
       })
-
-      return NextResponse.json(user)
+      const updatedContent = await db.content.update({
+        where: {
+          id: contentId
+        },
+        data: {
+          likes: {
+            increment: 1
+          }
+        }
+      })
+      return NextResponse.json({
+        favoriteIds: updatedUser.favoriteIds,
+        likes: updatedUser.likedIds,
+        noInteresteds: updatedUser.noInterestedIds,
+        content: {
+          [contentId]: updatedContent
+        }
+      })
     }
 
     if (req.method === 'DELETE') {
-      const { currentUser } = await serverAuth()
-
-      const { contentId } = await req.json()
-
-      const existingContent = await db.content.findUnique({
-        where: {
-          id: contentId
-        }
-      })
-
-      if (!existingContent) {
-        throw new Error('Invalid ID')
-      }
-
-      const updatedFavoriteIds = without(currentUser.likedIds, contentId)
+      const updatedLikeIds = without(currentUser.likedIds, contentId)
 
       const updatedUser = await db.user.update({
         where: {
-          email: currentUser.email || ''
+          id: currentUser.id
         },
         data: {
-          likedIds: updatedFavoriteIds
+          likedIds: updatedLikeIds
         }
       })
-
-      return NextResponse.json(updatedUser)
+      const updatedContent = await db.content.update({
+        where: {
+          id: contentId
+        },
+        data: {
+          likes: {
+            decrement: 1
+          }
+        }
+      })
+      return NextResponse.json({
+        favoriteIds: updatedUser.favoriteIds,
+        likes: updatedUser.likedIds,
+        noInteresteds: updatedUser.noInterestedIds,
+        content: {
+          [contentId]: updatedContent
+        }
+      })
     }
 
     return NextResponse.json(null, { status: 405 })
@@ -72,4 +90,4 @@ async function handler(req: NextRequest) {
   }
 }
 
-export { handler as DELETE, handler as PATCH }
+export { handler as DELETE, handler as POST }

@@ -1,10 +1,10 @@
 import axios from 'axios'
 import { useCallback } from 'react'
 
-import { useNoInterested } from '@/hooks'
+import { useContentLocalState } from '@/hooks'
 
 export default function InterestedLine({ id }: { id: string }) {
-  const { setNoInterested } = useNoInterested()
+  const { setNoInterested } = useContentLocalState()
 
   const onInterested = useCallback(async () => {
     setNoInterested(id, false)

@@ -4,8 +4,22 @@ import { toString } from 'mdast-util-to-string'
 import { mdxAnnotations } from 'mdx-annotations'
 import { bundledLanguages, bundledThemes, getHighlighter } from 'shiki'
 import { visit } from 'unist-util-visit'
+import rehypePrettyCode from 'rehype-pretty-code'
 
+// NOTE: deprecated hast@1.0.0: Renamed to rehype
+
+/**
+ * @typedef {import('unified').Plugin} Plugin
+ * @typedef {import('unist').Node} Node
+ */
+
+/**
+ * @returns {Plugin}
+ */
 function rehypeParseCodeBlocks() {
+  /**
+   * @param {Plugin} tree
+   */
   return tree => {
     visit(tree, 'element', (node, _nodeIndex, parentNode) => {
       if (node.tagName === 'code' && node.properties.className) {
@@ -20,7 +34,14 @@ function rehypeParseCodeBlocks() {
 
 let highlighter
 
+/**
+ *
+ * @returns {Plugin}
+ */
 function rehypeShiki() {
+  /**
+   * @param {Plugin} tree
+   */
   return async tree => {
     highlighter =
       highlighter ??
@@ -52,7 +73,13 @@ function rehypeShiki() {
   }
 }
 
+/**
+ * @returns {Plugin}
+ */
 function rehypeSlugify() {
+  /**
+   * @param {Plugin} tree
+   */
   return tree => {
     let slugify = slugifyWithCounter()
     visit(tree, 'element', node => {
@@ -63,7 +90,13 @@ function rehypeSlugify() {
   }
 }
 
+/**
+ * @returns {Plugin}
+ */
 function rehypeAddMDXExports(getExports) {
+  /**
+   * @param {Plugin} tree
+   */
   return tree => {
     let exports = Object.entries(getExports(tree))
 
@@ -93,6 +126,11 @@ function rehypeAddMDXExports(getExports) {
   }
 }
 
+/**
+ * TODO
+ * @param {*} node
+ * @returns
+ */
 function getSections(node) {
   let sections = []
 
@@ -111,8 +149,15 @@ function getSections(node) {
   return sections
 }
 
+// https://rehype-pretty.pages.dev/
+/** @type {import('rehype-pretty-code').Options} */
+const rehypePrettyCodeOptions = {
+  // ...
+}
+
 export const rehypePlugins = [
   mdxAnnotations.rehype,
+  [rehypePrettyCode, rehypePrettyCodeOptions],
   rehypeParseCodeBlocks,
   rehypeShiki,
   rehypeSlugify,

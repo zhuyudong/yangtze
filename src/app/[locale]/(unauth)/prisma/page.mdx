@@ -172,11 +172,11 @@ npx prisma studio
 ```
 
 9. schema.prisma 变更处理
-  
+
    **生成迁移文件 prisma/migrations/xxx 并自动执行 `npx prisma db seed`，注意执行前先执行 `npx prisma generate`**
 
    ```bash
    npx primsa migrate dev
    ```
 
-10. `npx prisma migrate deploy` 确认迁移，将会在数据库中新生成或更新 _prisma_migrations 表
+10. `npx prisma migrate deploy` 确认迁移，将会在数据库中新生成或更新 \_prisma_migrations 表

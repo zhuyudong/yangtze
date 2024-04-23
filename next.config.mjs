@@ -1,4 +1,8 @@
+import withBundleAnalyzer from '@next/bundle-analyzer'
+import { withContentlayer } from 'next-contentlayer'
 import nextMDX from '@next/mdx'
+import createNextIntlPlugin from 'next-intl/plugin'
+import { createSecureHeaders } from 'next-secure-headers'
 
 import { recmaPlugins } from './src/mdx/recma.mjs'
 import { rehypePlugins } from './src/mdx/rehype.mjs'
@@ -11,9 +15,6 @@ import withSearch from './src/mdx/search.mjs'
 // import './src/env.mjs'
 // equivalent to
 await import('./src/env.mjs')
-import withBundleAnalyzer from '@next/bundle-analyzer'
-import { withContentlayer } from 'next-contentlayer'
-import createNextIntlPlugin from 'next-intl/plugin'
 const withNextIntl = createNextIntlPlugin('./src/lib/i18n.ts')
 
 const bundleAnalyzer = withBundleAnalyzer({
@@ -42,6 +43,7 @@ const nextConfig = {
   },
   // https://nextjs.org/docs/messages/next-image-unconfigured-host
   images: {
+    dangerouslyAllowSVG: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -49,6 +51,10 @@ const nextConfig = {
         port: '',
         pathname: '/images/**'
       },
+      // {
+      //   protocol: 'https',
+      //   hostname: 'vercel.com'
+      // },
       {
         protocol: 'https',
         hostname: 'cn.bing.com',

@@ -1,3 +1,4 @@
+import { without } from 'lodash'
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
@@ -6,42 +7,78 @@ import { db } from '@/server/db'
 
 async function handler(req: NextRequest) {
   try {
-    if (req.method === 'PATCH') {
-      const { currentUser } = await serverAuth()
-      const { contentId } = await req.json()
+    const { currentUser } = await serverAuth()
 
-      const existingContent = await db.content.findUnique({
-        where: {
-          id: contentId
-        }
-      })
+    const { contentId } = await req.json()
 
-      if (!existingContent) {
-        throw new Error('Invalid ID')
+    const existingContent = await db.content.findUnique({
+      where: {
+        id: contentId
       }
-
-      const user = await db.user.update({
+    })
+    if (!existingContent) {
+      throw new Error('Invalid ID')
+    }
+    if (req.method === 'POST') {
+      const updatedUser = await db.user.update({
         where: {
-          email: currentUser.email || ''
+          id: currentUser.id
         },
         data: {
-          noInterestIds: {
+          noInterestedIds: {
             push: contentId
           }
         }
       })
-      await db.content.update({
+      const updatedContent = await db.content.update({
         where: {
           id: contentId
         },
         data: {
-          favorites: {
+          noInteresteds: {
             increment: 1
           }
         }
       })
+      return NextResponse.json({
+        favoriteIds: updatedUser.favoriteIds,
+        likes: updatedUser.likedIds,
+        noInteresteds: updatedUser.noInterestedIds,
+        content: {
+          [contentId]: updatedContent
+        }
+      })
+    }
 
-      return NextResponse.json(user)
+    if (req.method === 'DELETE') {
+      const updatedFavoriteIds = without(currentUser.noInterestedIds, contentId)
+
+      const updatedUser = await db.user.update({
+        where: {
+          id: currentUser.id
+        },
+        data: {
+          noInterestedIds: updatedFavoriteIds
+        }
+      })
+      const updatedContent = await db.content.update({
+        where: {
+          id: contentId
+        },
+        data: {
+          noInteresteds: {
+            decrement: 1
+          }
+        }
+      })
+      return NextResponse.json({
+        favoriteIds: updatedUser.favoriteIds,
+        likes: updatedUser.likedIds,
+        noInteresteds: updatedUser.noInterestedIds,
+        content: {
+          [contentId]: updatedContent
+        }
+      })
     }
 
     return NextResponse.json(null, { status: 405 })
@@ -52,4 +89,4 @@ async function handler(req: NextRequest) {
   }
 }
 
-export { handler as PATCH }
+export { handler as DELETE, handler as POST }

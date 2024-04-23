@@ -58,7 +58,7 @@ const App = () => {
         </h1>
         <div className="mt-10 flex items-center justify-center gap-8">
           <div onClick={() => selectProfile()}>
-            <UserCard name={currentUser?.name} />
+            <UserCard name={currentUser!.name} />
           </div>
         </div>
       </div>

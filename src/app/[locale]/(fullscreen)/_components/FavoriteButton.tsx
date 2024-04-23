@@ -35,7 +35,7 @@ export const FavoriteButton: FC<FavoriteButtonProps> = ({ movieId }) => {
     const updatedFavoriteIds = response?.data?.favoriteIds
 
     mutate({
-      ...currentUser,
+      ...currentUser!,
       favoriteIds: updatedFavoriteIds
     })
     mutateFavorites()

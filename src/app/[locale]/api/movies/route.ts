@@ -1,10 +1,20 @@
-import type { NextRequest } from 'next/server'
+import type { NextApiRequest } from 'next'
 import { NextResponse } from 'next/server'
 
+// import { withValidation } from 'next-validations'
+// import { z } from 'zod'
 // import { serverAuth } from '@/lib/server-auth'
 import { db } from '@/server/db'
 
-async function handler(req: NextRequest) {
+// const schema = z.object({})
+
+// const validate = withValidation({
+//   schema,
+//   type: 'Zod',
+//   mode: 'body'
+// })
+
+async function handler(req: NextApiRequest) {
   try {
     if (req.method !== 'GET') {
       return NextResponse.json(null, { status: 405 })
@@ -21,3 +31,5 @@ async function handler(req: NextRequest) {
 }
 
 export { handler as GET }
+// const vHandler = validate(handler)
+// export { vHandler as GET }

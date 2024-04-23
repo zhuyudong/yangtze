@@ -1,22 +1,27 @@
 import { PrismaAdapter } from '@next-auth/prisma-adapter'
 import { compare } from 'bcrypt'
 import type { AuthOptions } from 'next-auth'
+import Auth0Provider from 'next-auth/providers/auth0'
 import Credentials from 'next-auth/providers/credentials'
-// import EmailProvider from 'next-auth/providers/email'
+import EmailProvider from 'next-auth/providers/email'
+import FacebookProvider from 'next-auth/providers/facebook'
 import GitHubProvider from 'next-auth/providers/github'
 import GoogleProvider from 'next-auth/providers/google'
 import type { Provider } from 'next-auth/providers/index'
+import TwitterProvider from 'next-auth/providers/twitter'
 
 import { db } from '@/server/db'
 
 export const authOptions: AuthOptions = {
   providers: [
+    // NOTE: signIn('github', { callbackUrl: '/' })
     process.env.GITHUB_ID &&
       process.env.GITHUB_SECRET &&
       GitHubProvider({
         clientId: process.env.GITHUB_ID,
         clientSecret: process.env.GITHUB_SECRET
       }),
+    // NOTE: signIn('google', { callbackUrl: '/' })
     process.env.GOOGLE_CLIENT_ID &&
       process.env.GOOGLE_CLIENT_SECRET &&
       GoogleProvider({
@@ -26,22 +31,44 @@ export const authOptions: AuthOptions = {
           timeout: 50000
         }
       }),
-    // process.env.SMTP_HOST &&
-    //   process.env.SMTP_PORT &&
-    //   process.env.SMTP_USER &&
-    //   process.env.SMTP_PASSWORD &&
-    //   EmailProvider({
-    //     server: {
-    //       host: process.env.SMTP_HOST,
-    //       port: Number(process.env.SMTP_PORT),
-    //       auth: {
-    //         user: process.env.SMTP_USER,
-    //         pass: process.env.SMTP_PASSWORD
-    //       }
-    //     },
-    //     from: process.env.SMTP_FROM
-    //   }),
+    process.env.FACEBOOK_ID &&
+      process.env.FACEBOOK_SECRET &&
+      FacebookProvider({
+        clientId: process.env.FACEBOOK_ID,
+        clientSecret: process.env.FACEBOOK_SECRET
+      }),
+    process.env.AUTH0_ID &&
+      process.env.AUTH0_SECRET &&
+      process.env.AUTH0_ISSUER &&
+      Auth0Provider({
+        clientId: process.env.AUTH0_ID,
+        clientSecret: process.env.AUTH0_SECRET,
+        issuer: process.env.AUTH0_ISSUER
+      }),
+    process.env.TWITTER_ID &&
+      process.env.TWITTER_SECRET &&
+      TwitterProvider({
+        clientId: process.env.TWITTER_ID,
+        clientSecret: process.env.TWITTER_SECRET
+      }),
+    process.env.SMTP_HOST &&
+      process.env.SMTP_PORT &&
+      process.env.SMTP_USER &&
+      process.env.SMTP_PASSWORD &&
+      EmailProvider({
+        // server: process.env.EMAIL_SERVER,
+        server: {
+          host: process.env.SMTP_HOST,
+          port: Number(process.env.SMTP_PORT),
+          auth: {
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASSWORD
+          }
+        },
+        from: process.env.SMTP_FROM
+      }),
     Credentials({
+      // NOTE: src/app/[locale]/(fullscreen)/auth/page.ts signIn('credentials', {})
       id: 'credentials',
       name: 'Credentials',
       credentials: {
