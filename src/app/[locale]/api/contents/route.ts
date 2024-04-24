@@ -23,7 +23,6 @@ async function handler(
         weekly: 'desc'
       },
       skip: 0
-      // TODO
       // take: 5
     })
     return NextResponse.json(contents)

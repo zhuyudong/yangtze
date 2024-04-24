@@ -14,7 +14,7 @@ import { useContentsRemoteState, useCurrentUser } from '@/hooks'
 
 import InterestedLine from './InterestedLine'
 
-type ContentsState = {
+export type ContentsState = {
   likedIds: string[] // Prisma.User
   favoriteIds: string[]
   noInterestedIds: string[]
@@ -27,7 +27,7 @@ type ContentsState = {
     }
   > // Prisma.Content
 }
-type ContentsStateResponse = AxiosResponse<ContentsState>
+export type ContentsStateResponse = AxiosResponse<ContentsState>
 
 export const Content = ({
   id,
@@ -35,8 +35,13 @@ export const Content = ({
   title,
   content,
   originHref,
-  currentUser,
-  contentsState
+  currentUser = {} as Prisma.User,
+  contentsState = {
+    favoriteIds: [],
+    likedIds: [],
+    noInterestedIds: [],
+    contents: {}
+  }
 }: {
   id: string
   ix: number
@@ -47,8 +52,8 @@ export const Content = ({
   contentsState?: ContentsState
 }) => {
   // const { data: session } = useSession()
-  const { mutate } = useCurrentUser()
-  const { mutate: mutateState } = useContentsRemoteState()
+  const { mutate: mutateCurrentUser } = useCurrentUser()
+  const { mutate: mutateContentsState } = useContentsRemoteState()
   const t = useMemo(() => {
     return title.startsWith('**') && title.endsWith('**')
       ? title.slice(2, -2)
@@ -82,23 +87,26 @@ export const Content = ({
       })
     }
     const updatedFavoriteIds = response?.data?.favoriteIds as string[]
-    mutate({ ...currentUser!, favoriteIds: updatedFavoriteIds })
-    mutateState({
-      likedIds: contentsState?.likedIds as string[],
-      noInterestedIds: contentsState?.noInterestedIds as string[],
-      // ...contentState,
+    mutateCurrentUser({ ...currentUser!, favoriteIds: updatedFavoriteIds })
+    mutateContentsState({
+      ...contentsState,
       favoriteIds: updatedFavoriteIds,
       contents: {
         ...contentsState?.contents!,
         [id]: {
-          likes: contentsState?.contents?.[id]?.likes as number,
-          noInteresteds: contentsState?.contents?.[id]?.noInteresteds as number,
-          // ...contentState?.contents?.[id],
+          ...contentsState?.contents?.[id],
           favorites: response?.data?.contents?.[id]?.favorites as number
         }
       }
     })
-  }, [id, isFavorite, currentUser, contentsState, mutate])
+  }, [
+    id,
+    isFavorite,
+    currentUser,
+    contentsState,
+    mutateCurrentUser,
+    mutateContentsState
+  ])
 
   const toggleLike = useCallback(async () => {
     let response: ContentsStateResponse
@@ -112,21 +120,26 @@ export const Content = ({
       })
     }
     const updatedLikeIds = response?.data?.likedIds as string[]
-    mutate({ ...currentUser!, likedIds: updatedLikeIds })
-    mutateState({
-      favoriteIds: contentsState?.favoriteIds as string[],
-      noInterestedIds: contentsState?.noInterestedIds as string[],
+    mutateCurrentUser({ ...currentUser!, likedIds: updatedLikeIds })
+    mutateContentsState({
+      ...contentsState,
       likedIds: updatedLikeIds,
       contents: {
         ...contentsState?.contents!,
         [id]: {
-          favorites: contentsState?.contents?.[id]?.favorites as number,
-          noInteresteds: contentsState?.contents?.[id]?.noInteresteds as number,
+          ...contentsState?.contents?.[id],
           likes: response?.data?.contents?.[id]?.likes as number
         }
       }
     })
-  }, [id, currentUser, isLike, contentsState, mutate])
+  }, [
+    id,
+    currentUser,
+    isLike,
+    contentsState,
+    mutateCurrentUser,
+    mutateContentsState
+  ])
 
   const toggleNoInterested = useCallback(async () => {
     let response: ContentsStateResponse
@@ -140,21 +153,29 @@ export const Content = ({
       })
     }
     const updatedNoInterestedIds = response?.data?.noInterestedIds as string[]
-    mutate({ ...currentUser!, noInterestedIds: updatedNoInterestedIds })
-    mutateState({
-      favoriteIds: contentsState?.favoriteIds as string[],
-      likedIds: contentsState?.likedIds as string[],
+    mutateCurrentUser({
+      ...currentUser!,
+      noInterestedIds: updatedNoInterestedIds
+    })
+    mutateContentsState({
+      ...contentsState,
       noInterestedIds: updatedNoInterestedIds,
       contents: {
         ...contentsState?.contents!,
         [id]: {
-          likes: contentsState?.contents?.[id]?.likes as number,
-          favorites: contentsState?.contents?.[id]?.favorites as number,
+          ...contentsState?.contents?.[id],
           noInteresteds: response?.data?.contents?.[id]?.noInteresteds as number
         }
       }
     })
-  }, [id, currentUser, isNoInterested, contentsState, mutate])
+  }, [
+    id,
+    currentUser,
+    isNoInterested,
+    contentsState,
+    mutateCurrentUser,
+    mutateContentsState
+  ])
 
   if (isNoInterested) {
     return <InterestedLine key={id} id={id} />

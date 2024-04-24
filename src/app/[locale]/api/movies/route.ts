@@ -1,4 +1,4 @@
-import type { NextApiRequest } from 'next'
+import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
 // import { withValidation } from 'next-validations'
@@ -14,7 +14,7 @@ import { db } from '@/server/db'
 //   mode: 'body'
 // })
 
-async function handler(req: NextApiRequest) {
+async function handler(req: NextRequest) {
   try {
     if (req.method !== 'GET') {
       return NextResponse.json(null, { status: 405 })
