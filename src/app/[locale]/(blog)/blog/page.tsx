@@ -51,12 +51,12 @@ export default async function BlogPage() {
                 }
                 alt={post.title}
               />
-              <div className="flex flex-1 flex-col justify-between p-4 pt-1">
+              <div className="flex flex-1 flex-col justify-between p-4 py-1">
                 <h2 className="mb-1 text-lg font-semibold text-gray-900">
                   {post.title}
                 </h2>
                 {post.description && (
-                  <p className="text-ellipsis text-gray-700 md:mt-[-32px]">
+                  <p className="text-ellipsis text-sm text-gray-700">
                     {post.description}
                   </p>
                 )}

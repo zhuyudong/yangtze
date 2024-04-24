@@ -149,6 +149,8 @@ module.exports = {
         'jsx-a11y/media-has-caption': 'off', // Allow media without caption
         'jsx-a11y/heading-has-content': 'off',
         'jsx-a11y/alt-text': 'off',
+        // 允许 button children 是一个组件而非必须是文本
+        'jsx-a11y/control-has-associated-label': 'off',
         '@next/next/no-img-element': 'off', // Allow img without alt
         'tailwindcss/no-custom-classname': 'off', // Allow custom classnames
         'tailwindcss/no-contradicting-classname': 'off'
