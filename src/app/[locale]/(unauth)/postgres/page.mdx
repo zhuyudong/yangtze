@@ -1,15 +1,23 @@
-# 项目常用 SQL
+# PostgreSQL
+
+## 项目常用 SQL
+
+查看某一条具体数据
 
 ```sql
 SELECT * FROM public.content where id = 'clvanlu1p00u08h1gwk3n0md6'
 ORDER BY id ASC
+```
 
+搜索点赞、收藏或不感兴趣数大于 0 的数据
+
+```sql
 SELECT * FROM public.content where likes > 0 or favorites > 0 or no_interesteds > 0
 ORDER BY id ASC
 ```
 
-## tsx
+快速删除表内数据
 
-```tsx
-@import('./Alerts.tsx')
+```sql
+TRUNCATE TABLE public.content
 ```
