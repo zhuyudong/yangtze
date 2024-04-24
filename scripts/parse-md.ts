@@ -61,7 +61,7 @@ const readMdxFile = (filePath: string, category: string) => {
             title,
             content: content
               .replace(
-                /(（|\()?@?\s*\[[\u4e00-\u9fa5a-zA-Z\d@\s-_]*\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)[\\*\s_]*\s*(投稿)?(）|\))?\n?/g,
+                /(（|\()?@?\s*\[[\u4e00-\u9fa5a-zA-Z\d@\s-_]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)[\\*\s_]*\s*(投稿)?(）|\))?\n?/g,
                 ''
               )
               .replace(/@[\u4e00-\u9fa5a-zA-Z\d]+\s*投稿/g, '')
@@ -98,7 +98,7 @@ const readMdxFile = (filePath: string, category: string) => {
             title,
             content: content
               .replace(
-                /(（|\()?@?\s*\[[\u4e00-\u9fa5a-zA-Z\d@\s-_]*\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)[\\*\s_]*\s*(投稿)?(）|\))?\n?/g,
+                /(（|\()?@?\s*\[[\u4e00-\u9fa5a-zA-Z\d@\s-_]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)[\\*\s_]*\s*(投稿)?(）|\))?\n?/g,
                 ''
               )
               .replace(/@[\u4e00-\u9fa5a-zA-Z\d]+\s*投稿/g, '')
@@ -131,7 +131,7 @@ const readMdxFile = (filePath: string, category: string) => {
       title,
       content: content
         .replace(
-          /(（|\()?@?\s*\[[\u4e00-\u9fa5a-zA-Z\d@\s-_]*\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)[\\*\s_]*\s*(投稿)?(）|\))?\n?/g,
+          /(（|\()?@?\s*\[[\u4e00-\u9fa5a-zA-Z\d@\s-_]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)[\\*\s_]*\s*(投稿)?(）|\))?\n?/g,
           ''
         )
         .replace(/@[\u4e00-\u9fa5a-zA-Z\d]+\s*投稿/g, '')

@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import { type Metadata } from 'next'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import type { ReactNode } from 'react'
@@ -9,10 +9,10 @@ import { TailwindIndicator } from '@/components/patterns/tailwind-indicator'
 import { Toaster } from '@/components/ui/sonner'
 import { AppConfig } from '@/utils/AppConfig'
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-sans'
-})
+// const inter = Inter({
+//   subsets: ['latin'],
+//   variable: '--font-sans'
+// })
 
 export const metadata: Metadata = {
   title: {
@@ -58,7 +58,8 @@ export default function RootLayout({
 
   return (
     <html lang={params.locale} className="h-full" suppressHydrationWarning>
-      <body className={clsx(`font-sans antialiased ${inter.variable}`)}>
+      {/* ${inter.variable} */}
+      <body className={clsx(`font-sans antialiased`)}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
