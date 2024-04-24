@@ -1,0 +1,148 @@
+# 如何实现一个 Tabs 组件
+
+基本骨架
+
+- 移动端使用 `select` 和 `option` 标签，因为 select 是行内组件，加上 `block w-full` 使其占满一行
+- `select` 组件同级加上
+  ```tsx
+  <label className="sr-only" htmlFor="tabs">
+    Select a tab
+  </label>
+  ```
+- 桌面端使用 `nav` 和 `a` 标签，关注点：边框、文字
+- `nav` 标签加上 `aria-label="Tabs"`
+- `a` 标签加上 `aria-current={tab.current ? 'page' : undefined}` 属性，`whitespace-nowrap` 保证文字不换行
+- `tab.icon` 加上 `aria-hidden="true"` 属性
+- 如果子项有 icon、count 等就在 `a` 的 `className` 上加上 `'group inline-flex items-center'`
+- `group-hover:text-gray-500` 配合父组件的 `group` 类
+
+```tsx
+<div>
+  {/* 移动端 */}
+  <div className="sm:hidden">
+    <label className="sr-only" htmlFor="tabs">
+      Select a tab
+    </label>
+    <select
+      className="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+      defaultValue={tabs.find(tab => tab.current).name}
+      id="tabs"
+      name="tabs"
+    >
+      {tabs.map(tab => (
+        <option key={tab.name}>{tab.name}</option>
+      ))}
+    </select>
+  </div>
+  {/* 桌面端 */}
+  <div className="hidden sm:block">
+    <div className="border-b border-gray-200">
+      <nav aria-label="Tabs" className="-mb-px flex space-x-8">
+        {tabs.map(tab => (
+          <a
+            aria-current={tab.current ? 'page' : undefined}
+            href={tab.href}
+            key={tab.name}
+            className={clsx(
+              tab.current
+                ? 'border-indigo-500 text-indigo-600'
+                : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
+              'whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium',
+              // NOTE: 如果子项有 icon、count 等加上此布局
+              'group inline-flex items-center'
+            )}
+          >
+            <tab.icon
+              aria-hidden="true"
+              className={clsx(
+                tab.current
+                  ? 'text-indigo-500'
+                  : 'text-gray-400 group-hover:text-gray-500',
+                '-ml-0.5 mr-2 h-5 w-5'
+              )}
+            />
+            <span>{tab.name}</span>
+            {tab.count ? (
+              <span
+                className={clsx(
+                  tab.current
+                    ? 'bg-indigo-100 text-indigo-600'
+                    : 'bg-gray-100 text-gray-900',
+                  'ml-3 hidden rounded-full py-0.5 px-2.5 text-xs font-medium md:inline-block'
+                )}
+              >
+                {tab.count}
+              </span>
+            ) : null}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </div>
+</div>
+```
+
+import { tabs } from './tabs'
+import clsx from 'clsx'
+
+<div>
+  <div className="sm:hidden">
+    <label className="sr-only" htmlFor="tabs">
+      Select a tab
+    </label>
+    <select
+      className="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+      defaultValue={tabs.find(tab => tab.current).name}
+      id="tabs"
+      name="tabs"
+    >
+      {tabs.map(tab => (
+        <option key={tab.name}>{tab.name}</option>
+      ))}
+    </select>
+  </div>
+  <div className="hidden sm:block">
+    <div className="border-b border-gray-200">
+      <nav aria-label="Tabs" className="-mb-px flex space-x-8">
+        {tabs.map(tab => (
+          <a
+            aria-current={tab.current ? 'page' : undefined}
+            className={clsx(
+              tab.current
+                ? 'border-indigo-500 text-indigo-600'
+                : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
+              'whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium',
+              // NOTE: 如果子项有 icon、count 等加上此布局
+              'group inline-flex items-center'
+            )}
+            href={tab.href}
+            key={tab.name}
+          >
+            <tab.icon
+              aria-hidden="true"
+              className={clsx(
+                tab.current
+                  ? 'text-indigo-500'
+                  : 'text-gray-400 group-hover:text-gray-500',
+                '-ml-0.5 mr-2 h-5 w-5'
+              )}
+            />
+            <span>{tab.name}</span>
+            {tab.count ? (
+              <span
+                className={clsx(
+                  tab.current
+                    ? 'bg-indigo-100 text-indigo-600'
+                    : 'bg-gray-100 text-gray-900',
+                  'ml-3 hidden rounded-full py-0.5 px-2.5 text-xs font-medium md:inline-block'
+                )}
+              >
+                {tab.count}
+              </span>
+            ) : null}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </div>
+</div>

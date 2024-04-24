@@ -109,7 +109,12 @@ const config = {
       }
     }
   },
-  plugins: [require('tailwindcss-animate'), typographyPlugin, headlessuiPlugin],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwindcss-animate'),
+    typographyPlugin,
+    headlessuiPlugin
+  ],
   corePlugins: {}
 } satisfies Config
 

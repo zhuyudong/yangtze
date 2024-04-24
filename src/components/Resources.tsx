@@ -12,7 +12,7 @@ import { type ComponentPropsWithoutRef, type ComponentType } from 'react'
 
 import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
-import { UserIcon } from '@/components/icons/UserIcon'
+// import { UserIcon } from '@/components/icons/UserIcon'
 import { useRandomIndex } from '@/hooks'
 import { cn } from '@/lib/utils'
 import wallpapers from '@/resources/bing_wallpaper.json'
@@ -43,34 +43,34 @@ interface IResource {
 }
 
 const resources: Array<IResource> = [
-  {
-    href: '/blog',
-    name: '博客【原创】',
-    description: '',
-    icon: ArticleIcon,
-    bg: 'bg-zinc-50',
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/linux-tools',
-    name: 'Linux 工具箱',
-    description: '',
-    icon: UserIcon,
-    bg: 'bg-red-50',
-    pattern: {
-      y: 16,
-      squares: [
-        [0, 1],
-        [1, 3]
-      ]
-    }
-  },
+  // {
+  //   href: '/blog',
+  //   name: '博客【原创】',
+  //   description: '',
+  //   icon: ArticleIcon,
+  //   bg: 'bg-zinc-50',
+  //   pattern: {
+  //     y: -6,
+  //     squares: [
+  //       [-1, 2],
+  //       [1, 3]
+  //     ]
+  //   }
+  // },
+  // {
+  //   href: '/linux-tools',
+  //   name: 'Linux 工具箱',
+  //   description: '',
+  //   icon: UserIcon,
+  //   bg: 'bg-red-50',
+  //   pattern: {
+  //     y: 16,
+  //     squares: [
+  //       [0, 1],
+  //       [1, 3]
+  //     ]
+  //   }
+  // },
   {
     href: '/weekly-by-category/articles',
     name: '文章',

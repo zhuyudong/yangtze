@@ -101,22 +101,24 @@ function rehypeShiki() {
         let codeNode = node.children[0]
         /**
          * ```tsx
-           @import('./Alerts.tsx')
+           @import("components/tailwindui/Buttons/Button1.tsx")
            ```
-           { type: 'text', value: "@import('./Alerts.tsx')\n" }
+           { type: 'text', value: '@import("components/tailwindui/Buttons/Button1.tsx")' }
          */
         let textNode = codeNode.children[0]
+        // NOTE: 所有自定义导入都要相对于 src 目录
+        /**
+         * @import("components/tailwindui/Buttons/Button1.tsx")
+         * fileMatch[2] components/tailwindui/Buttons/Button1.tsx
+         * fileMatch[3] Button1
+         * fileMatch[4] tsx
+         */
         const fileMatch =
-          /@import\('([.\/a-zA-Z\d]*\.(tsx|ts|js|jsx|py|sh|sql|html|css|scss|sass|less))'\)/.exec(
+          /@import\(('|")[a-zA-Z\d-_]*\/([a-zA-Z\d-_]*\/)*([a-zA-Z\d-_]*)\.(tsx|ts|js|jsx|py|sh|sql|html|css|scss|sass|less)('|")\)/.exec(
             textNode.value
           )
-        // ./Alerts.tsx
-        if (fileMatch?.[1]) {
-          const codePath = path.resolve(
-            process.cwd(),
-            // TODO: 使用当前目录替换
-            `src/app/[locale]/(unauth)/postgres/${fileMatch[1]}`
-          )
+        if (fileMatch?.[2]) {
+          const codePath = path.resolve(process.cwd(), `src/${fileMatch[2]}`)
           const actualCode = fs.readFileSync(codePath).toString()
           node.properties.code = actualCode
           textNode.value = actualCode

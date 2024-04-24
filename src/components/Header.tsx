@@ -1,8 +1,7 @@
 import clsx from 'clsx'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
-import { signOut, useSession } from 'next-auth/react'
+import { useSession } from 'next-auth/react'
 import type { CSSProperties, ElementRef, ReactNode } from 'react'
 import { forwardRef } from 'react'
 
@@ -17,6 +16,8 @@ import {
 import { MobileSearch, Search } from '@/components/Search'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { cn } from '@/lib/utils'
+
+import { UserMenu } from './UserMenu'
 
 // import { ArticleIcon } from './icons/ArticleIcon'
 
@@ -99,7 +100,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
         <div className="flex items-center gap-5">
           <nav className="hidden md:block">
             <ul role="list" className="flex items-center gap-8">
-              <TopLevelNavItem href="/blog">Blog</TopLevelNavItem>
+              {/* <TopLevelNavItem href="/blog">Blog</TopLevelNavItem> */}
               <TopLevelNavItem href="/poetry">Poetry</TopLevelNavItem>
               <TopLevelNavItem href="/movies">Movies</TopLevelNavItem>
               <TopLevelNavItem href="/wallpaper">Wallpaper</TopLevelNavItem>
@@ -112,16 +113,17 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
           </div>
           <div className="hidden min-[416px]:contents">
             {session ? (
-              <Image
-                className="inline-block size-8 rounded-full"
-                width={32}
-                height={32}
-                src={
-                  (session.user.image as string) || '/images/default-blue.png'
-                }
-                alt=""
-                onClick={() => signOut()}
-              />
+              // <Image
+              //   className="inline-block size-8 rounded-full"
+              //   width={32}
+              //   height={32}
+              //   src={
+              //     (session.user.image as string) || '/images/default-blue.png'
+              //   }
+              //   alt=""
+              //   onClick={() => signOut()}
+              // />
+              <UserMenu />
             ) : (
               <Button href="/auth">Sign in</Button>
             )}
