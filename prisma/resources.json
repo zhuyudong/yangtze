@@ -659,9 +659,16 @@
   },
   {
     "title": "[特殊 HTTP 标头字段](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/special-http-headers)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023073101.webp)\n\n这个页面介绍一些不常见的 HTTP 标头字段。\n\n[瑞安航空（Roblox 版）](https://www.robloxryanair.com/)\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023102401.webp)\n\n虚拟空间 Roblox 里面的瑞安航空官网，看上去跟现实世界的版本一样，让玩家在游戏里面访问。\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023102402.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023102403.webp)\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023073101.webp)\n\n这个页面介绍一些不常见的 HTTP 标头字段。\n\n",
     "category": "resource",
     "originHref": "https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/special-http-headers",
+    "weekly": 275
+  },
+  {
+    "title": "[瑞安航空（Roblox 版）](https://www.robloxryanair.com/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023102401.webp)\n\n虚拟空间 Roblox 里面的瑞安航空官网，看上去跟现实世界的版本一样，让玩家在游戏里面访问。\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023102402.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023102403.webp)\n\n",
+    "category": "resource",
+    "originHref": "https://www.robloxryanair.com/",
     "weekly": 275
   },
   {
@@ -841,9 +848,16 @@
   },
   {
     "title": "[Awesome Domain LLM](https://github.com/luban-agi/Awesome-Domain-LLM)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023090603.webp)\n\n这个仓库收集各种垂直领域的大语言模型。\n\n\n[电子邮件加密指南（中文版）](https://emailselfdefense.fsf.org/zh-hans/)\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072301.webp)\n\n自由软件基金会发布的详细操作步骤，如何在各种平台上对邮件使用 GnuPG 加密。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023090603.webp)\n\n这个仓库收集各种垂直领域的大语言模型。\n\n\n",
     "category": "resource",
     "originHref": "https://github.com/luban-agi/Awesome-Domain-LLM",
+    "weekly": 269
+  },
+  {
+    "title": "[电子邮件加密指南（中文版）](https://emailselfdefense.fsf.org/zh-hans/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072301.webp)\n\n自由软件基金会发布的详细操作步骤，如何在各种平台上对邮件使用 GnuPG 加密。\n\n",
+    "category": "resource",
+    "originHref": "https://emailselfdefense.fsf.org/zh-hans/",
     "weekly": 269
   },
   {
@@ -911,9 +925,16 @@
   },
   {
     "title": "[Workout.lol](https://workout.lol/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071007.webp)\n\n一个有趣的网站，你先选择健身器械，然后选择要锻炼哪一块肌肉，它就告诉你应该用什么姿势锻炼（视频和图解）。\n\n[Name by AI（AI 起名）](https://www.namedbyai.com/)\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071302.webp)\n\n回答一些问题，该网站就会帮你起一个英文名字。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071007.webp)\n\n一个有趣的网站，你先选择健身器械，然后选择要锻炼哪一块肌肉，它就告诉你应该用什么姿势锻炼（视频和图解）。\n\n",
     "category": "resource",
     "originHref": "https://workout.lol/",
+    "weekly": 267
+  },
+  {
+    "title": "[Name by AI（AI 起名）](https://www.namedbyai.com/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071302.webp)\n\n回答一些问题，该网站就会帮你起一个英文名字。\n\n\n\n",
+    "category": "resource",
+    "originHref": "https://www.namedbyai.com/",
     "weekly": 266
   },
   {
@@ -1030,9 +1051,16 @@
   },
   {
     "title": "[ToolAI](https://www.toolai.io/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071903.webp)\n\nAI 网站目录，收录了全球5000个 AI 网站。\n[Python 数据分析（第三版）](https://wesmckinney.com/book/)（Python for Data Analysis）\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070305.webp)\n\n一本英文教材，最新的第三版，讲授 Python 数据分析的初步知识，免费阅读。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071903.webp)\n\nAI 网站目录，收录了全球5000个 AI 网站。\n",
     "category": "resource",
     "originHref": "https://www.toolai.io/",
+    "weekly": 263
+  },
+  {
+    "title": "[Python 数据分析（第三版）](https://wesmckinney.com/book/)（Python for Data Analysis）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070305.webp)\n\n一本英文教材，最新的第三版，讲授 Python 数据分析的初步知识，免费阅读。\n\n\n\n",
+    "category": "resource",
+    "originHref": "https://wesmckinney.com/book/",
     "weekly": 262
   },
   {
@@ -1324,9 +1352,16 @@
   },
   {
     "title": "[Next.js 和 React 完整指南](https://www.bilibili.com/read/cv20992052)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023050403.webp)\n\nUdemy 高分付费课程的中文字幕版。\n[图解 QUIC 连接（中文版）](https://cangsdarm.github.io/illustrate/quic)\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023050404.webp)\n\n解释 QUIC 协议通信的每个字节的含义，的翻译。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023050403.webp)\n\nUdemy 高分付费课程的中文字幕版。\n",
     "category": "resource",
     "originHref": "https://www.bilibili.com/read/cv20992052",
+    "weekly": 253
+  },
+  {
+    "title": "[图解 QUIC 连接（中文版）](https://cangsdarm.github.io/illustrate/quic)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023050404.webp)\n\n解释 QUIC 协议通信的每个字节的含义，的翻译。\n",
+    "category": "resource",
+    "originHref": "https://cangsdarm.github.io/illustrate/quic",
     "weekly": 253
   },
   {
@@ -1366,9 +1401,16 @@
   },
   {
     "title": "[PromptBoom](https://www.promptboom.com/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023042707.webp)\n\n免费使用、不需要注册的 ChatGPT 网站。\n\n\n[计算机程序的构造和解释（JavaScript 版）](https://sourceacademy.org/sicpjs/index)\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023020807.webp)\n\n这是名著《SICP》（计算机程序的构造和解释）一书的官方 JavaScript 版，并且是麻省理工学院的官方版本，可以免费阅读，参见。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023042707.webp)\n\n免费使用、不需要注册的 ChatGPT 网站。\n\n\n",
     "category": "resource",
     "originHref": "https://www.promptboom.com/",
+    "weekly": 251
+  },
+  {
+    "title": "[计算机程序的构造和解释（JavaScript 版）](https://sourceacademy.org/sicpjs/index)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023020807.webp)\n\n这是名著《SICP》（计算机程序的构造和解释）一书的官方 JavaScript 版，并且是麻省理工学院的官方版本，可以免费阅读，参见。\n\n",
+    "category": "resource",
+    "originHref": "https://sourceacademy.org/sicpjs/index",
     "weekly": 251
   },
   {
@@ -3193,9 +3235,16 @@
   },
   {
     "title": "[misbrands](https://github.com/mkrl/misbrands)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021122502.webp)\n\n这个仓库提供 SVG 文件，让你可以打印上面这些贴纸。\n\n[数据结构（C 语言）](https://lookcos.cn/archives/1120.html)\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022020601.webp)\n\n一个大三同学原创的系列文章，逐一分析 C 语言的各种数据结构，并配上自己画的图片，以及从零实现的源码。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021122502.webp)\n\n这个仓库提供 SVG 文件，让你可以打印上面这些贴纸。\n\n",
     "category": "resource",
     "originHref": "https://github.com/mkrl/misbrands",
+    "weekly": 194
+  },
+  {
+    "title": "[数据结构（C 语言）](https://lookcos.cn/archives/1120.html)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022020601.webp)\n\n一个大三同学原创的系列文章，逐一分析 C 语言的各种数据结构，并配上自己画的图片，以及从零实现的源码。\n",
+    "category": "resource",
+    "originHref": "https://lookcos.cn/archives/1120.html",
     "weekly": 194
   },
   {
@@ -3290,10 +3339,10 @@
     "weekly": 191
   },
   {
-    "title": "[中国山水画生成器](https://github.com/LingDong-/shan-shui-inf)是一个很有名的软件，一个老外用户很惊叹，希望把它彻底搞懂，就写了这个由24篇文章组成的系列，逐一分析代码，看看能否自己重新实现。（",
-    "content": "\n",
+    "title": "[中国山水画生成器](https://github.com/LingDong-/shan-shui-inf)是一个很有名的软件，一个老外用户很惊叹，希望把它彻底搞懂，就写了这个由24篇文章组成的系列，逐一分析代码，看看能否自己重新实现。（[@ameizi](https://github.com/ruanyf/weekly/issues/2140) 投稿）",
+    "content": "\n\n",
     "category": "resource",
-    "originHref": "https://github.com/LingDong-/shan-shui-inf",
+    "originHref": "https://github.com/ruanyf/weekly/issues/2140",
     "weekly": 191
   },
   {
@@ -3956,9 +4005,16 @@
   },
   {
     "title": "[Daryl 的 TCP/IP 入门](https://www.ipprimer.com/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021062810.jpg)\n\n一份英语教程，向初学者介绍 TCP/IP 协议的子网、寻址和路由知识。\n\n[算法（第 4 版）的 Rust 实现](https://github.com/douchuan/algorithm/tree/main/src)\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021081708.jpg)\n\n作者学习《算法（第 4 版）》时，将书中的算法逐一用 Rust 语言实现，做成了一个仓库。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021062810.jpg)\n\n一份英语教程，向初学者介绍 TCP/IP 协议的子网、寻址和路由知识。\n\n",
     "category": "resource",
     "originHref": "https://www.ipprimer.com/",
+    "weekly": 172
+  },
+  {
+    "title": "[算法（第 4 版）的 Rust 实现](https://github.com/douchuan/algorithm/tree/main/src)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021081708.jpg)\n\n作者学习《算法（第 4 版）》时，将书中的算法逐一用 Rust 语言实现，做成了一个仓库。\n",
+    "category": "resource",
+    "originHref": "https://github.com/douchuan/algorithm/tree/main/src",
     "weekly": 172
   },
   {
@@ -4047,9 +4103,16 @@
   },
   {
     "title": "[网络迷踪](https://chao.fun/f/84?time=1627397908906)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021072710.jpg)\n\n炒饭社区的一个板块，网友上传照片（比如上图），请求帮助找出这是在哪里拍的。\n[Mac 电脑如何设置开发环境（2021版）](https://www.swyx.io/new-mac-setup-2021/)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021070716.jpg)\n\n一个程序员买了新的 Mac 电脑，用于全栈开发。他详细记录了，如何将这台电脑设置成开发环境。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021072710.jpg)\n\n炒饭社区的一个板块，网友上传照片（比如上图），请求帮助找出这是在哪里拍的。\n",
     "category": "resource",
     "originHref": "https://chao.fun/f/84?time=1627397908906",
+    "weekly": 169
+  },
+  {
+    "title": "[Mac 电脑如何设置开发环境（2021版）](https://www.swyx.io/new-mac-setup-2021/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021070716.jpg)\n\n一个程序员买了新的 Mac 电脑，用于全栈开发。他详细记录了，如何将这台电脑设置成开发环境。\n\n",
+    "category": "resource",
+    "originHref": "https://www.swyx.io/new-mac-setup-2021/",
     "weekly": 169
   },
   {
@@ -4348,9 +4411,16 @@
   },
   {
     "title": "[Rust 第一步](https://docs.microsoft.com/en-us/learn/paths/rust-first-steps/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202104/bg2021041812.jpg)\n\n微软官网上面的 Rust 教程，从零讲起，教你如何在 Windows 里面使用 Rust 编程。\n\n[远程工作软件地图（2021版）](https://friday.app/remote-work/market-map)\n\n![](https://cdn.beekka.com/blogimg/asset/202104/bg2021042001.jpg)\n\n本文列出了远程工作可选择的软件，一共有几十种。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202104/bg2021041812.jpg)\n\n微软官网上面的 Rust 教程，从零讲起，教你如何在 Windows 里面使用 Rust 编程。\n\n",
     "category": "resource",
     "originHref": "https://docs.microsoft.com/en-us/learn/paths/rust-first-steps/",
+    "weekly": 158
+  },
+  {
+    "title": "[远程工作软件地图（2021版）](https://friday.app/remote-work/market-map)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202104/bg2021042001.jpg)\n\n本文列出了远程工作可选择的软件，一共有几十种。\n\n",
+    "category": "resource",
+    "originHref": "https://friday.app/remote-work/market-map",
     "weekly": 158
   },
   {
@@ -4404,9 +4474,16 @@
   },
   {
     "title": "[lofi.cafe](https://lofi.cafe/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202104/bg2021041416.jpg)\n\n这个网站是一个制作精良的在线电台，播放工作学习时放松精神的背景音乐，可以根据音乐风格切换房间。\n\n[学习 iOS 开发指南（2021版）](https://matteomanferdini.com/become-an-ios-developer/)\n\n这篇英语长文向初学者介绍如何学习 iOS 开发，大家关心的各种问题都能在里面找到解答，比如应该学习 Object-C 语言还是 Swift 语言。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202104/bg2021041416.jpg)\n\n这个网站是一个制作精良的在线电台，播放工作学习时放松精神的背景音乐，可以根据音乐风格切换房间。\n\n",
     "category": "resource",
     "originHref": "https://lofi.cafe/",
+    "weekly": 156
+  },
+  {
+    "title": "[学习 iOS 开发指南（2021版）](https://matteomanferdini.com/become-an-ios-developer/)",
+    "content": "\n\n这篇英语长文向初学者介绍如何学习 iOS 开发，大家关心的各种问题都能在里面找到解答，比如应该学习 Object-C 语言还是 Swift 语言。\n\n",
+    "category": "resource",
+    "originHref": "https://matteomanferdini.com/become-an-ios-developer/",
     "weekly": 156
   },
   {
@@ -4950,9 +5027,16 @@
   },
   {
     "title": "[bigdata_analyse](https://github.com/TurboWay/bigdata_analyse)",
-    "content": "\n\n这个仓库收集一些真实的大数据分析案例，用来了解如何处理不同行业的分析指标。目前有4个案例，包括1亿条淘宝用户行为数据分析、7000条租房数据分析等等。\n[Hello GitHub（第 57 期）](https://github.com/521xueweihan/HelloGitHub/blob/master/content/57/HelloGitHub57.md)\n\n分享GitHub上有趣，入门级的开源项目的月刊，帮你找到编程的乐趣。\n",
+    "content": "\n\n这个仓库收集一些真实的大数据分析案例，用来了解如何处理不同行业的分析指标。目前有4个案例，包括1亿条淘宝用户行为数据分析、7000条租房数据分析等等。\n",
     "category": "resource",
     "originHref": "https://github.com/TurboWay/bigdata_analyse",
+    "weekly": 141
+  },
+  {
+    "title": "[Hello GitHub（第 57 期）](https://github.com/521xueweihan/HelloGitHub/blob/master/content/57/HelloGitHub57.md)",
+    "content": "\n\n分享GitHub上有趣，入门级的开源项目的月刊，帮你找到编程的乐趣。\n",
+    "category": "resource",
+    "originHref": "https://github.com/521xueweihan/HelloGitHub/blob/master/content/57/HelloGitHub57.md",
     "weekly": 141
   },
   {
@@ -5538,9 +5622,16 @@
   },
   {
     "title": "[WebRTC 示例仓库](https://webrtc.github.io/samples/)",
-    "content": "\n\nWebRTC 是浏览器点对点通信的 API，这个仓库给出了各种使用示例，覆盖了主要的使用场景。\n\n\n\n[解决算法和数据结构问题（Python 版）](https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf)\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020082801.jpg)\n\n免费的英文电子书， 使用 Python 语言介绍基本的算法和数据结构，内容比较简单，也不厚200多页，适合初学者。\n\n",
+    "content": "\n\nWebRTC 是浏览器点对点通信的 API，这个仓库给出了各种使用示例，覆盖了主要的使用场景。\n\n\n\n",
     "category": "resource",
     "originHref": "https://webrtc.github.io/samples/",
+    "weekly": 124
+  },
+  {
+    "title": "[解决算法和数据结构问题（Python 版）](https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020082801.jpg)\n\n免费的英文电子书， 使用 Python 语言介绍基本的算法和数据结构，内容比较简单，也不厚200多页，适合初学者。\n\n",
+    "category": "resource",
+    "originHref": "https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf",
     "weekly": 124
   },
   {
@@ -6721,9 +6812,16 @@
   },
   {
     "title": "[随机过程导论](https://web.ma.utexas.edu/users/gordanz/notes/introduction_to_stochastic_processes.pdf)",
-    "content": "\n\n美国德州大学奥斯汀分校的免费电子教科书，PDF 格式。这里还有同一个老师写的概率论、梳理统计、随机过程的。\n\n[SICP（JavaScript 语言版）](https://sicp.comp.nus.edu.sg/)\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019121804.jpg)\n\n经典计算机教材 SICP 的 JavaScript 语言版，新加坡国立大学改编的。\n\n",
+    "content": "\n\n美国德州大学奥斯汀分校的免费电子教科书，PDF 格式。这里还有同一个老师写的概率论、梳理统计、随机过程的。\n\n",
     "category": "resource",
     "originHref": "https://web.ma.utexas.edu/users/gordanz/notes/introduction_to_stochastic_processes.pdf",
+    "weekly": 91
+  },
+  {
+    "title": "[SICP（JavaScript 语言版）](https://sicp.comp.nus.edu.sg/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019121804.jpg)\n\n经典计算机教材 SICP 的 JavaScript 语言版，新加坡国立大学改编的。\n\n",
+    "category": "resource",
+    "originHref": "https://sicp.comp.nus.edu.sg/",
     "weekly": 91
   },
   {
@@ -7036,9 +7134,16 @@
   },
   {
     "title": "[《高性能 Go 代码工坊》中译](https://www.yuque.com/ksco/uiondt)",
-    "content": "\n\n[原文](%EF%BC%9Ahttps://dave.cheney.net/high-performance-go-workshop/dotgo-paris.html)是深入研究 Go 应用性能提升的英语系列文章，这里是中译。\n",
+    "content": "\n\n",
     "category": "resource",
     "originHref": "https://www.yuque.com/ksco/uiondt",
+    "weekly": 82
+  },
+  {
+    "title": "[原文](%EF%BC%9Ahttps://dave.cheney.net/high-performance-go-workshop/dotgo-paris.html)是深入研究 Go 应用性能提升的英语系列文章，这里是中译。（@[hznuksco](https://github.com/ruanyf/weekly/issues/905) 投稿）",
+    "content": "\n\n",
+    "category": "resource",
+    "originHref": "https://github.com/ruanyf/weekly/issues/905",
     "weekly": 82
   },
   {
@@ -7162,9 +7267,16 @@
   },
   {
     "title": "[简明 Python 教程](https://bop.mol.uno/)",
-    "content": "\n\nPython 初学者教程[《A Byte of Python》](https://python.swaroopch.com/)的中文翻译。\n[Modern C（第二版）](http://modernc.gforge.inria.fr/)\n\n![](https://cdn.beekka.com/blogimg/asset/201909/bg2019091902.jpg)\n\n最新出版的 C 语言的英文教材，作者提供免费下载。\n\n",
+    "content": "\n\nPython 初学者教程[《A Byte of Python》](https://python.swaroopch.com/)的中文翻译。\n",
     "category": "resource",
     "originHref": "https://bop.mol.uno/",
+    "weekly": 78
+  },
+  {
+    "title": "[Modern C（第二版）](http://modernc.gforge.inria.fr/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201909/bg2019091902.jpg)\n\n最新出版的 C 语言的英文教材，作者提供免费下载。\n\n",
+    "category": "resource",
+    "originHref": "http://modernc.gforge.inria.fr/",
     "weekly": 78
   },
   {
@@ -7357,10 +7469,10 @@
     "weekly": 73
   },
   {
-    "title": "[Golangbot](https://golangbot.com/) 是国外开发者写的 Go 的初级教程，对小白和基础比较薄弱的开发者比较适用。作者没有讲很高深的理论，而是用很多简单的例子和代码进行讲解。（",
-    "content": "\n",
+    "title": "[Golangbot](https://golangbot.com/) 是国外开发者写的 Go 的初级教程，对小白和基础比较薄弱的开发者比较适用。作者没有讲很高深的理论，而是用很多简单的例子和代码进行讲解。（@[hznuksco](https://github.com/ruanyf/weekly/issues/772) 投稿）",
+    "content": "\n\n",
     "category": "resource",
-    "originHref": "https://golangbot.com/",
+    "originHref": "https://github.com/ruanyf/weekly/issues/772",
     "weekly": 73
   },
   {
@@ -8667,9 +8779,16 @@
   },
   {
     "title": "[中国科大计算机学院课程](https://github.com/mbinary/USTC-CS-Courses-Resource)",
-    "content": "\n\n该仓库收集中科大计算机学院的课程, 包括课程电子版书籍、参考书、slides(ppt)、考试试卷、学习心得、一部分习题答案。收集）\n\n[《Linux 命令行（第五版）》](https://nostarch.com/tlcl.htm)\n\n![](https://cdn.beekka.com/blogimg/asset/201902/bg2019022228.jpg)\n\n介绍 Linux 命令行基础用法的开源书籍。\n\n",
+    "content": "\n\n该仓库收集中科大计算机学院的课程, 包括课程电子版书籍、参考书、slides(ppt)、考试试卷、学习心得、一部分习题答案。收集）\n\n",
     "category": "resource",
     "originHref": "https://github.com/mbinary/USTC-CS-Courses-Resource",
+    "weekly": 44
+  },
+  {
+    "title": "[《Linux 命令行（第五版）》](https://nostarch.com/tlcl.htm)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201902/bg2019022228.jpg)\n\n介绍 Linux 命令行基础用法的开源书籍。\n\n",
+    "category": "resource",
+    "originHref": "https://nostarch.com/tlcl.htm",
     "weekly": 44
   },
   {
@@ -8730,9 +8849,16 @@
   },
   {
     "title": "[如果保留后台进程](https://dontkillmyapp.com/)",
-    "content": "\n\n手机为了节省电力，会主动杀死后台进程，有时这种行为不是用户希望的。该网站收集各品牌安卓手机的做法，如何关闭主动杀死后台进程这个功能。\n\n[《组合程序》（Composing Programs）](https://composingprograms.com/)\n\n加州大学伯克莱分校以 SICP 为范本，使用 Python 3 语言解释编程原理的教程。\n\n",
+    "content": "\n\n手机为了节省电力，会主动杀死后台进程，有时这种行为不是用户希望的。该网站收集各品牌安卓手机的做法，如何关闭主动杀死后台进程这个功能。\n\n",
     "category": "resource",
     "originHref": "https://dontkillmyapp.com/",
+    "weekly": 43
+  },
+  {
+    "title": "[《组合程序》（Composing Programs）](https://composingprograms.com/)",
+    "content": "\n\n加州大学伯克莱分校以 SICP 为范本，使用 Python 3 语言解释编程原理的教程。\n\n",
+    "category": "resource",
+    "originHref": "https://composingprograms.com/",
     "weekly": 43
   },
   {
@@ -9122,9 +9248,16 @@
   },
   {
     "title": "[HelloGitHub](https://github.com/521xueweihan/HelloGitHub)",
-    "content": "\n\n一个分享 GitHub 上有趣的、入门级开源项目的月刊，每个月 28 号发布。\n1![](https://cdn.beekka.com/blogimg/asset/201812/bg2018122117.jpg)\n\n1977年发射的旅行者二号（Voyager 2）最近飞出了太阳系，成为飞得最远的人类飞行器。美国宇航局为了庆祝这个事件，在官网发布了一系列可以下载的海报。\n\n\n\n",
+    "content": "\n\n一个分享 GitHub 上有趣的、入门级开源项目的月刊，每个月 28 号发布。\n",
     "category": "resource",
     "originHref": "https://github.com/521xueweihan/HelloGitHub",
+    "weekly": 36
+  },
+  {
+    "title": "[旅行者二号的海报](https://voyager.jpl.nasa.gov/downloads/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201812/bg2018122117.jpg)\n\n1977年发射的旅行者二号（Voyager 2）最近飞出了太阳系，成为飞得最远的人类飞行器。美国宇航局为了庆祝这个事件，在官网发布了一系列可以下载的海报。\n\n\n\n",
+    "category": "resource",
+    "originHref": "https://voyager.jpl.nasa.gov/downloads/",
     "weekly": 35
   },
   {

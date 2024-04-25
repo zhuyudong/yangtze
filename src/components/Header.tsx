@@ -112,21 +112,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
             <ThemeToggle />
           </div>
           <div className="hidden min-[416px]:contents">
-            {session ? (
-              // <Image
-              //   className="inline-block size-8 rounded-full"
-              //   width={32}
-              //   height={32}
-              //   src={
-              //     (session.user.image as string) || '/images/default-blue.png'
-              //   }
-              //   alt=""
-              //   onClick={() => signOut()}
-              // />
-              <UserMenu />
-            ) : (
-              <Button href="/auth">Sign in</Button>
-            )}
+            {session ? <UserMenu /> : <Button href="/auth">Sign in</Button>}
           </div>
         </div>
       </motion.div>

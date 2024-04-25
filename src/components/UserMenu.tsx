@@ -22,7 +22,7 @@ export function UserMenu() {
             aria-hidden="true"
           />
         </Menu.Button> */}
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50">
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 px-3 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50">
           <Image
             className="inline-block size-8 rounded-full"
             width={32}
