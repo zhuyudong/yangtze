@@ -27,17 +27,17 @@ const findMdxFiles = async () => {
  * [学习现代 C++](https://learnmoderncpp.com/)
  */
 const titleReg =
-  /^\[[\u4e00-\u9fa5\u3000-\u303F《》()?？·a-zA-Z,，。：,.\d\s+-~～]+\]\s?(\[[\u4e00-\u9fa5\u3000-\u303F《》()?？·a-zA-Z,，。：,.\d\s+-~～]+\])?\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)([，（）\u4e00-\u9fa5\u3000-\u303Fa-zA-Z\d-,\s“”。]*)?/gi
+  /^\[[\u4e00-\u9fa5\u3000-\u303F《》()"“”%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\s?(\[[\u4e00-\u9fa5\u3000-\u303F《》()"“”%?？·a-zA-Z,，。：,.\d\s+-~～]+\])?\((https?:\/\/[a-zA-Z.\-_\d/?@:&=%#]*)\)([，（）\u4e00-\u9fa5\u3000-\u303Fa-zA-Z\d-,\s“”。]*)?/gi
 // **C 语言教程：构建 Lisp 编译器**（[中文](https://ksco.gitbooks.io/build-your-own-lisp/)，[英文](http://www.buildyourownlisp.com/contents)）
 const specialTitleReg =
-  /^\*\*[\u4e00-\u9fa5\u3000-\u303F《》()?？·a-zA-Z,，。：,.\d\s+-~～]+\*\*\s?（[[\u4e00-\u9fa5\u3000-\u303F《》()?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)([，（）\u4e00-\u9fa5\u3000-\u303Fa-zA-Z\d-,\s“”。]*)?/gi
+  /^\*\*[\u4e00-\u9fa5\u3000-\u303F《》()"“”%?？·a-zA-Z,，。：,.\d\s+-~～]+\*\*\s?（[[\u4e00-\u9fa5\u3000-\u303F《》()"“”%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?@:&=%#]*)\)([，（）\u4e00-\u9fa5\u3000-\u303Fa-zA-Z\d-,\s“”。]*)?/gi
 // **马达加斯加的猴面包树**
 const boldTitleReg =
-  /^\*\*[\u4e00-\u9fa5\u3000-\u303F《》()?？·a-zA-Z,，。：,.\d\s+-~～]+\*\*/gi
+  /^\*\*[\u4e00-\u9fa5\u3000-\u303F《》()"“”?？·a-zA-Z,，。：,.\d\s+-~～]+\*\*/gi
 // const quotationTitleReg =
-//   /^--\s+\[[\u4e00-\u9fa5\u3000-\u303F《》()?？·a-zA-Z,，。：,.\d\s+-~～]+\]\s?(\[[\u4e00-\u9fa5\u3000-\u303F《》()?？·a-zA-Z,，。：,.\d\s+-~～]+\])?\((https?:\/\/[a-zA-Z.-_\d/?&=%#]*)\)([，（）\u4e00-\u9fa5\u3000-\u303Fa-zA-Z\d-,\s“”。]*)?/gi
+//   /^--\s+\[[\u4e00-\u9fa5\u3000-\u303F《》()"“”?？·a-zA-Z,，。：,.\d\s+-~～]+\]\s?(\[[\u4e00-\u9fa5\u3000-\u303F《》()"“”%?？·a-zA-Z,，。：,.\d\s+-~～]+\])?\((https?:\/\/[a-zA-Z.-_\d/?@:&=%#]*)\)([，（）\u4e00-\u9fa5\u3000-\u303Fa-zA-Z\d-,\s“”。]*)?/gi
 const quotationTitleReg =
-  /^--\s+.*\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)(.*)?/gi
+  /^--\s+.*\((https?:\/\/[a-zA-Z.\-_\d/?@:&=%#]*)\)(.*)?/gi
 
 const readMdxFile = (filePath: string, category: string) => {
   const data = fs.readFileSync(filePath, 'utf8')

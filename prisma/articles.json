@@ -246,9 +246,16 @@
   },
   {
     "title": "[OpenAI 回应马斯克的长文](https://finance.sina.com.cn/stock/usstock/c/2024-03-06/doc-inamkuik5589602.shtml)（中文）",
-    "content": "\n\n马斯克，称后者违背开源承诺，成为微软的盈利性子公司。\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030708.webp)\n\n这篇是 OpenAI 长篇回应的中文翻译，透露了很多内幕。主要内容是 AI 需要大量算力和资金，所以不得不成立盈利性部门，马斯克当年对此知情，并表示支持。\n\n[Perplexity 会是“搜索的未来”吗？](https://wallstreetcn.com/articles/3709779)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030607.webp)\n\n英伟达 CEO 黄仁勋向媒体透露，他每天都使用 AI 工具 Perplexity 进行搜索。本文介绍这个对话式搜索引擎。\n\n",
+    "content": "\n\n马斯克，称后者违背开源承诺，成为微软的盈利性子公司。\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030708.webp)\n\n这篇是 OpenAI 长篇回应的中文翻译，透露了很多内幕。主要内容是 AI 需要大量算力和资金，所以不得不成立盈利性部门，马斯克当年对此知情，并表示支持。\n\n",
     "category": "article",
     "originHref": "https://finance.sina.com.cn/stock/usstock/c/2024-03-06/doc-inamkuik5589602.shtml",
+    "weekly": 292
+  },
+  {
+    "title": "[Perplexity 会是“搜索的未来”吗？](https://wallstreetcn.com/articles/3709779)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030607.webp)\n\n英伟达 CEO 黄仁勋向媒体透露，他每天都使用 AI 工具 Perplexity 进行搜索。本文介绍这个对话式搜索引擎。\n\n",
+    "category": "article",
+    "originHref": "https://wallstreetcn.com/articles/3709779",
     "weekly": 292
   },
   {
@@ -281,9 +288,16 @@
   },
   {
     "title": "[text-wrap 的换行控制](https://clagnut.com/blog/2424)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100516.webp)\n\n长文本的自动换行，由 CSS 的 text-wrap 属性控制。本文讨论如何使用这个属性，让标题产生更美观的自动换行。\n\n[计算机从哪里获取时间？](https://dotat.at/@/2023-05-26-whence-time.html)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100607.webp)\n\n计算机从 NTP（时间服务器）获取当前时间，但是 NTP 的时间又从何而来？本文图文形式地介绍人类如何确定时间。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100516.webp)\n\n长文本的自动换行，由 CSS 的 text-wrap 属性控制。本文讨论如何使用这个属性，让标题产生更美观的自动换行。\n\n",
     "category": "article",
     "originHref": "https://clagnut.com/blog/2424",
+    "weekly": 292
+  },
+  {
+    "title": "[计算机从哪里获取时间？](https://dotat.at/@/2023-05-26-whence-time.html)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100607.webp)\n\n计算机从 NTP（时间服务器）获取当前时间，但是 NTP 的时间又从何而来？本文图文形式地介绍人类如何确定时间。\n\n",
+    "category": "article",
+    "originHref": "https://dotat.at/@/2023-05-26-whence-time.html",
     "weekly": 292
   },
   {
@@ -624,9 +638,16 @@
   },
   {
     "title": "[近似值的一个取值技巧](https://www.johndcook.com/blog/2023/02/07/mediant-approximation-trick/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023111908.webp)\n\n如果知道一个数值变量的上限和下限，那么有一种快速的方法，快速获取该变量更准确的近似值。\n\n比如，已知变量`e`的大小范围是`19/7 < e < 87/32`，就可以快速得到它的近似值。\n\n\n\n[为什么手机最后1%的电可以用很久？](https://m.huxiu.com/article/2467552.html)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122602.webp)\n\n本文介绍手机剩余电量的计算方法。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023111908.webp)\n\n如果知道一个数值变量的上限和下限，那么有一种快速的方法，快速获取该变量更准确的近似值。\n\n比如，已知变量`e`的大小范围是`19/7 < e < 87/32`，就可以快速得到它的近似值。\n\n\n\n",
     "category": "article",
     "originHref": "https://www.johndcook.com/blog/2023/02/07/mediant-approximation-trick/",
+    "weekly": 284
+  },
+  {
+    "title": "[为什么手机最后1%的电可以用很久？](https://m.huxiu.com/article/2467552.html)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122602.webp)\n\n本文介绍手机剩余电量的计算方法。\n\n",
+    "category": "article",
+    "originHref": "https://m.huxiu.com/article/2467552.html",
     "weekly": 284
   },
   {
@@ -680,9 +701,16 @@
   },
   {
     "title": "[Have I Been Pwned 的创始人](https://www.abc.net.au/news/2023-09-23/cybersecurity-troy-hunt-have-i-been-pwned-fighting-data-breaches/102803748)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122109.webp)\n\n[“Have I Been Pwned”](https://haveibeenpwned.com/)（上图）是一个著名的密码泄漏检查网站，输入邮件地址，它会显示你的密码是否泄漏。本文介绍该网站创始人的故事（下图）。\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092405.webp)\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122109.webp)\n\n",
     "category": "article",
     "originHref": "https://www.abc.net.au/news/2023-09-23/cybersecurity-troy-hunt-have-i-been-pwned-fighting-data-breaches/102803748",
+    "weekly": 283
+  },
+  {
+    "title": "[“Have I Been Pwned”](https://haveibeenpwned.com/)（上图）是一个著名的密码泄漏检查网站，输入邮件地址，它会显示你的密码是否泄漏。本文介绍该网站创始人的故事（下图）。",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092405.webp)\n\n",
+    "category": "article",
+    "originHref": "https://haveibeenpwned.com/",
     "weekly": 283
   },
   {
@@ -897,9 +925,16 @@
   },
   {
     "title": "[Linux 命名管道简介](https://goodyduru.github.io/os/2023/09/26/ipc-named-pipes.html)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023101001.webp)\n\n本文是“Linux 进程间通信”的系列之一，作为初级教程，介绍命名管道的概念，写得简洁清晰。同系列的[《套接字》](https://goodyduru.github.io/os/2023/10/03/ipc-unix-domain-sockets.html)和[《Unix 信号》](https://goodyduru.github.io/os/2023/10/05/ipc-unix-signals.html)也可以看一下。\n\n[Target=\"\\_Blank\" 属性的安全漏洞](https://blog.bolajiayodeji.com/the-security-vulnerabilities-of-the-target-blank-attribute)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023083003.webp)\n\n一篇老，介绍网页`<a>`标签的`target=\"_blank\"`属性打开新窗口时，会使得新窗口可以引用原始窗口，因此可能有安全风险。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023101001.webp)\n\n本文是“Linux 进程间通信”的系列之一，作为初级教程，介绍命名管道的概念，写得简洁清晰。同系列的[《套接字》](https://goodyduru.github.io/os/2023/10/03/ipc-unix-domain-sockets.html)和[《Unix 信号》](https://goodyduru.github.io/os/2023/10/05/ipc-unix-signals.html)也可以看一下。\n\n",
     "category": "article",
     "originHref": "https://goodyduru.github.io/os/2023/09/26/ipc-named-pipes.html",
+    "weekly": 279
+  },
+  {
+    "title": "[Target=\"\\_Blank\" 属性的安全漏洞](https://blog.bolajiayodeji.com/the-security-vulnerabilities-of-the-target-blank-attribute)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023083003.webp)\n\n一篇老，介绍网页`<a>`标签的`target=\"_blank\"`属性打开新窗口时，会使得新窗口可以引用原始窗口，因此可能有安全风险。\n\n",
+    "category": "article",
+    "originHref": "https://blog.bolajiayodeji.com/the-security-vulnerabilities-of-the-target-blank-attribute",
     "weekly": 279
   },
   {
@@ -988,23 +1023,44 @@
   },
   {
     "title": "[我的创业故事：两年内从零到每月4.5万美元](https://news.tonydinh.com/p/my-solopreneur-story-zero-to-45kmo)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092404.webp)\n\n一个越南程序员的自述，辞职两年，做了4个应用，最近收入达到了每月4.5万美元。\n\n[男孩概率问题](https://web.archive.org/web/20230828043838/https://www.maa.org/external_archive/devlin/devlin_04_10.html)（英文）\n\n本文讨论一个概率问题：有两个孩子，已知一个是男孩，请问另一个也是男孩的概率是多少。很多人会回答是50%，这个答案是错的。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092404.webp)\n\n一个越南程序员的自述，辞职两年，做了4个应用，最近收入达到了每月4.5万美元。\n\n",
     "category": "article",
     "originHref": "https://news.tonydinh.com/p/my-solopreneur-story-zero-to-45kmo",
     "weekly": 277
   },
   {
+    "title": "[男孩概率问题](https://web.archive.org/web/20230828043838/https://www.maa.org/external_archive/devlin/devlin_04_10.html)（英文）",
+    "content": "\n\n本文讨论一个概率问题：有两个孩子，已知一个是男孩，请问另一个也是男孩的概率是多少。很多人会回答是50%，这个答案是错的。\n\n",
+    "category": "article",
+    "originHref": "https://web.archive.org/web/20230828043838/https://www.maa.org/external_archive/devlin/devlin_04_10.html",
+    "weekly": 277
+  },
+  {
     "title": "[Twitter 社区笔记的算法](https://vitalik.ca/general/2023/08/16/communitynotes.html)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023082806.webp)\n\nTwitter 今年推出了一个“社区笔记”功能，允许用户对别人的发言撰写笔记，其他用户可以对这些笔记进行投票，系统自动选出一条，跟原始发言一起展示。本文分析该功能背后的开源算法。\n\n[分片不等于分布式](https://medium.com/@magda7817/sharded-does-not-imply-distributed-572fdafc4040)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092302.webp)\n\n本文区分两个概念，数据库分片（sharding）不等于分布式数据库。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023082806.webp)\n\nTwitter 今年推出了一个“社区笔记”功能，允许用户对别人的发言撰写笔记，其他用户可以对这些笔记进行投票，系统自动选出一条，跟原始发言一起展示。本文分析该功能背后的开源算法。\n\n",
     "category": "article",
     "originHref": "https://vitalik.ca/general/2023/08/16/communitynotes.html",
     "weekly": 277
   },
   {
+    "title": "[分片不等于分布式](https://medium.com/@magda7817/sharded-does-not-imply-distributed-572fdafc4040)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092302.webp)\n\n本文区分两个概念，数据库分片（sharding）不等于分布式数据库。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@magda7817/sharded-does-not-imply-distributed-572fdafc4040",
+    "weekly": 277
+  },
+  {
     "title": "[如何让字体等比例缩放？](https://tobiasahlin.com/blog/responsive-fluid-css-type-scales/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092402.webp)\n\n本文介绍使用 CSS，将字体缩着窗口大小等比例缩放。\n\n\n\n[“苹果皮”复活](https://i.ifeng.com/c/8UMiWPZTz6l)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110207.webp)\n\n美版的 iPhone 只支持 eSIM，不支持实体 SIM 卡。国内现在出现了一款手机壳，让美版 iPhone 可以使用实体 SIM 卡。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092402.webp)\n\n本文介绍使用 CSS，将字体缩着窗口大小等比例缩放。\n\n\n\n",
     "category": "article",
     "originHref": "https://tobiasahlin.com/blog/responsive-fluid-css-type-scales/",
+    "weekly": 276
+  },
+  {
+    "title": "[“苹果皮”复活](https://i.ifeng.com/c/8UMiWPZTz6l)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110207.webp)\n\n美版的 iPhone 只支持 eSIM，不支持实体 SIM 卡。国内现在出现了一款手机壳，让美版 iPhone 可以使用实体 SIM 卡。\n\n",
+    "category": "article",
+    "originHref": "https://i.ifeng.com/c/8UMiWPZTz6l",
     "weekly": 276
   },
   {
@@ -1492,9 +1548,16 @@
   },
   {
     "title": "[Mastodon 驱动的博客评论](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070701.webp)\n\n作者介绍了一种新鲜的做法，将 Mastodon 社交网络用作网站评论。它的最大好处是数据开放，不会被第三方控制，因为 Mastodon 是一个开放式、无中心的网络服务。\n\n[2048位的 RSA 密钥2030年可以破解吗？](https://articles.59.ca/doku.php?id=em:20482030)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071102.webp)\n\n有一种说法，随着计算能力的增长，2048位的 RSA 密钥在2030年将被破解，作者分析这种说法是否可信。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070701.webp)\n\n作者介绍了一种新鲜的做法，将 Mastodon 社交网络用作网站评论。它的最大好处是数据开放，不会被第三方控制，因为 Mastodon 是一个开放式、无中心的网络服务。\n\n",
     "category": "article",
     "originHref": "https://cassidyjames.com/blog/fediverse-blog-comments-mastodon/",
+    "weekly": 266
+  },
+  {
+    "title": "[2048位的 RSA 密钥2030年可以破解吗？](https://articles.59.ca/doku.php?id=em:20482030)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071102.webp)\n\n有一种说法，随着计算能力的增长，2048位的 RSA 密钥在2030年将被破解，作者分析这种说法是否可信。\n\n",
+    "category": "article",
+    "originHref": "https://articles.59.ca/doku.php?id=em:20482030",
     "weekly": 266
   },
   {
@@ -1681,9 +1744,16 @@
   },
   {
     "title": "[socket 到底是个啥](https://mp.weixin.qq.com/s/Ebvjy132eRDOmcIL5cmxJw)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071902.webp)\n\nsocket 的概念往往是常见面试问题，作者介绍了 socket 的使用场景和底层实现。\n\n\n[“进化”这个词正确吗？](https://mp.weixin.qq.com/s/5fF7o8EePoIhqZ4x0KrTaQ)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070511.webp)\n\n本文讨论一个观点，“进化”（evolution）这个词是否应该改成“演化”？因为生物更多是在适应环境，不一定变得进步。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071902.webp)\n\nsocket 的概念往往是常见面试问题，作者介绍了 socket 的使用场景和底层实现。\n\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/Ebvjy132eRDOmcIL5cmxJw",
+    "weekly": 262
+  },
+  {
+    "title": "[“进化”这个词正确吗？](https://mp.weixin.qq.com/s/5fF7o8EePoIhqZ4x0KrTaQ)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070511.webp)\n\n本文讨论一个观点，“进化”（evolution）这个词是否应该改成“演化”？因为生物更多是在适应环境，不一定变得进步。\n\n",
+    "category": "article",
+    "originHref": "https://mp.weixin.qq.com/s/5fF7o8EePoIhqZ4x0KrTaQ",
     "weekly": 262
   },
   {
@@ -1786,9 +1856,23 @@
   },
   {
     "title": "[MySQL 和 MariaDB 的差异](https://www.skeema.io/blog/2023/05/10/mysql-vs-mariadb-schema/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023051201.webp)\n\nMySQL 和 MariaDB 是两个常用的关系型数据库，后者是从前者分叉出来。两者基本是一样的，但也有很多差异。本文总结这些差异。\n\n[AI “越大越好”已经走不通了](https://www.economist.com/science-and-technology/2023/06/21/the-bigger-is-better-approach-to-ai-is-running-out-of-road)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023062507.webp)\n\n《经济学家》杂志的一篇新闻分析，认为由于成本和训练材料的限制，AI 模型的规模可能已经到头了，以后不会变得更大，并分析下一步的发展方向是什么。\n\n\n\n[我改装了一台“能拍照”的 GameBoy](https://sspai.com/post/80561)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023062812.webp)\n\n作者介绍如何将一台二手 GameBoy 更换高分辨率屏幕，并添加摄像头。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023051201.webp)\n\nMySQL 和 MariaDB 是两个常用的关系型数据库，后者是从前者分叉出来。两者基本是一样的，但也有很多差异。本文总结这些差异。\n\n",
     "category": "article",
     "originHref": "https://www.skeema.io/blog/2023/05/10/mysql-vs-mariadb-schema/",
+    "weekly": 261
+  },
+  {
+    "title": "[AI “越大越好”已经走不通了](https://www.economist.com/science-and-technology/2023/06/21/the-bigger-is-better-approach-to-ai-is-running-out-of-road)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023062507.webp)\n\n《经济学家》杂志的一篇新闻分析，认为由于成本和训练材料的限制，AI 模型的规模可能已经到头了，以后不会变得更大，并分析下一步的发展方向是什么。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://www.economist.com/science-and-technology/2023/06/21/the-bigger-is-better-approach-to-ai-is-running-out-of-road",
+    "weekly": 260
+  },
+  {
+    "title": "[我改装了一台“能拍照”的 GameBoy](https://sspai.com/post/80561)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023062812.webp)\n\n作者介绍如何将一台二手 GameBoy 更换高分辨率屏幕，并添加摄像头。\n\n",
+    "category": "article",
+    "originHref": "https://sspai.com/post/80561",
     "weekly": 260
   },
   {
@@ -2311,9 +2395,16 @@
   },
   {
     "title": "[一人运营的时事通讯价值几百万美元](https://growthinreverse.com/tldr/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202301/bg2023011301.webp)\n\n美国有一个 TLDR Newsletter，每天通过邮件发送时事新闻。它是一个人运营的，年收入超过500万美元，本文介绍他是怎么做的。\n\n[我为什么选择不稳定的排序算法](https://medium.com/@erik_68861/sorting-algorithms-that-dont-hate-you-165ba313bbc2)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202301/bg2023011303.webp)\n\n作者原为 V8 引擎团队的成员，负责排序算法。他解释，为什么他为 V8 选择了不稳定的排序算法，即排序的成员排列顺序可能与原始顺序不同。\n\n不过，标准后来改了，现在已经变成了稳定排序算法。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202301/bg2023011301.webp)\n\n美国有一个 TLDR Newsletter，每天通过邮件发送时事新闻。它是一个人运营的，年收入超过500万美元，本文介绍他是怎么做的。\n\n",
     "category": "article",
     "originHref": "https://growthinreverse.com/tldr/",
+    "weekly": 251
+  },
+  {
+    "title": "[我为什么选择不稳定的排序算法](https://medium.com/@erik_68861/sorting-algorithms-that-dont-hate-you-165ba313bbc2)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202301/bg2023011303.webp)\n\n作者原为 V8 引擎团队的成员，负责排序算法。他解释，为什么他为 V8 选择了不稳定的排序算法，即排序的成员排列顺序可能与原始顺序不同。\n\n不过，标准后来改了，现在已经变成了稳定排序算法。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@erik_68861/sorting-algorithms-that-dont-hate-you-165ba313bbc2",
     "weekly": 251
   },
   {
@@ -2367,9 +2458,16 @@
   },
   {
     "title": "[物理学18大未解之谜](https://www.livescience.com/34052-unsolved-mysteries-physics.html)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023032807.webp)\n\n本文通俗介绍了物理学家至今无法回答的18个基本问题，都跟宇宙、时空、粒子有关。\n\n\n\n[苏州的高科技“机械手”](http://www.yzwb.net/zncontent/2842214.html)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023040615.webp)\n\n中国科学院苏州生物医学工程技术研究所的博士后胡旭晖，为一位残疾女子研发了高科技“机械手”，获得全球半机械人奥运会第一名。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023032807.webp)\n\n本文通俗介绍了物理学家至今无法回答的18个基本问题，都跟宇宙、时空、粒子有关。\n\n\n\n",
     "category": "article",
     "originHref": "https://www.livescience.com/34052-unsolved-mysteries-physics.html",
+    "weekly": 249
+  },
+  {
+    "title": "[苏州的高科技“机械手”](http://www.yzwb.net/zncontent/2842214.html)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023040615.webp)\n\n中国科学院苏州生物医学工程技术研究所的博士后胡旭晖，为一位残疾女子研发了高科技“机械手”，获得全球半机械人奥运会第一名。\n\n",
+    "category": "article",
+    "originHref": "http://www.yzwb.net/zncontent/2842214.html",
     "weekly": 249
   },
   {
@@ -2675,9 +2773,16 @@
   },
   {
     "title": "[Windows 11 有多少层 UI？](https://ntdotdev.wordpress.com/2023/01/01/state-of-the-windows-how-many-layers-of-ui-inconsistencies-are-in-windows-11/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202301/bg2023010302.webp)\n\n一篇挺有趣的，作者检视 Windows 11 的 UI 里面保存了多少以前的样式，甚至找出了遗留的 Windows XP 和 Windows 3.1 的样式。\n\n\n\n[“中国植物画第一人”曾孝濂](https://redian.news/wxnews/267808)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023022202.webp)\n\n曾孝濂退休前任中科院昆明植物研究所教授级工程师，为《中国植物志》、《云南植物志》等书绘制画稿超过2000幅。上图是他画的猪笼草。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202301/bg2023010302.webp)\n\n一篇挺有趣的，作者检视 Windows 11 的 UI 里面保存了多少以前的样式，甚至找出了遗留的 Windows XP 和 Windows 3.1 的样式。\n\n\n\n",
     "category": "article",
     "originHref": "https://ntdotdev.wordpress.com/2023/01/01/state-of-the-windows-how-many-layers-of-ui-inconsistencies-are-in-windows-11/",
+    "weekly": 243
+  },
+  {
+    "title": "[“中国植物画第一人”曾孝濂](https://redian.news/wxnews/267808)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023022202.webp)\n\n曾孝濂退休前任中科院昆明植物研究所教授级工程师，为《中国植物志》、《云南植物志》等书绘制画稿超过2000幅。上图是他画的猪笼草。\n\n",
+    "category": "article",
+    "originHref": "https://redian.news/wxnews/267808",
     "weekly": 243
   },
   {
@@ -2948,9 +3053,16 @@
   },
   {
     "title": "[Windows 如何检测互联网是否连通](https://devblogs.microsoft.com/oldnewthing/20221115-00/?p=107399)（英文）",
-    "content": "\n\nWindows 系统怎么知道，当前计算机能不能访问互联网。\n\n[如何修改 Git 仓库的历史](https://medium.com/@vs28031996/remove-git-history-with-bfg-repo-cleaner-866808826eea)（英文）\n\n修改 git 历史是常见需求，但是很难操作。本文介绍使用一个叫做 BFG 的工具，从 Git 仓库删除内容，修改历史。\n\n\n\n",
+    "content": "\n\nWindows 系统怎么知道，当前计算机能不能访问互联网。\n\n",
     "category": "article",
     "originHref": "https://devblogs.microsoft.com/oldnewthing/20221115-00/?p=107399",
+    "weekly": 239
+  },
+  {
+    "title": "[如何修改 Git 仓库的历史](https://medium.com/@vs28031996/remove-git-history-with-bfg-repo-cleaner-866808826eea)（英文）",
+    "content": "\n\n修改 git 历史是常见需求，但是很难操作。本文介绍使用一个叫做 BFG 的工具，从 Git 仓库删除内容，修改历史。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@vs28031996/remove-git-history-with-bfg-repo-cleaner-866808826eea",
     "weekly": 238
   },
   {
@@ -3053,9 +3165,16 @@
   },
   {
     "title": "[巧用版本依赖解决数独](https://www.splitgraph.com/blog/poetry-dependency-resolver-sudoku)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022061610.webp)\n\n版本管理器有一套处理版本依赖关系的语法，作者突发奇想，能不能用 Python 版本管理器 Poetry 来解决数独问题？\n\n81个方格可以看作81个软件包，每个包有9个版本（即1-9）。只要给出约束条件，版本管理器会计算应该使用哪个版本，从而解出数独。\n\n[“加密猫”面临崩溃](https://spectrum.ieee.org/cryptokitties)（英文）\n\n加密猫（CryptoKitties）是第一个基于区块链（以太坊）的大型游戏，2017年发布。\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022091601.webp)\n\n当年，它曾经轰动一时，甚至造成了以太坊的价格飙升，但是现在已经沉寂了，面临崩溃。这篇报道就分析，为什么基于区块链的游戏可能都不可行。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022061610.webp)\n\n版本管理器有一套处理版本依赖关系的语法，作者突发奇想，能不能用 Python 版本管理器 Poetry 来解决数独问题？\n\n81个方格可以看作81个软件包，每个包有9个版本（即1-9）。只要给出约束条件，版本管理器会计算应该使用哪个版本，从而解出数独。\n\n",
     "category": "article",
     "originHref": "https://www.splitgraph.com/blog/poetry-dependency-resolver-sudoku",
+    "weekly": 237
+  },
+  {
+    "title": "[“加密猫”面临崩溃](https://spectrum.ieee.org/cryptokitties)（英文）",
+    "content": "\n\n加密猫（CryptoKitties）是第一个基于区块链（以太坊）的大型游戏，2017年发布。\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022091601.webp)\n\n当年，它曾经轰动一时，甚至造成了以太坊的价格飙升，但是现在已经沉寂了，面临崩溃。这篇报道就分析，为什么基于区块链的游戏可能都不可行。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://spectrum.ieee.org/cryptokitties",
     "weekly": 236
   },
   {
@@ -3144,9 +3263,16 @@
   },
   {
     "title": "[替代 dd 命令](https://eklitzke.org/the-cult-of-dd)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102501.webp)\n\nLinux 的`dd`命令常常用来复制磁盘镜像文件，其实完全可以使用`cat`命令替代它。\n\n[traceroute 命令查看简历](https://web.archive.org/web/20220903153142/https://cv6.poinsignon.org/)（英文）\n\ntraceroute 命令用来查看网络请求经过的每一个路由节点。一个程序员灵机一动，买下一个 IPv6 的区段，使用 traceroute 命令就能查看他的简历。原理查看。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102501.webp)\n\nLinux 的`dd`命令常常用来复制磁盘镜像文件，其实完全可以使用`cat`命令替代它。\n\n",
     "category": "article",
     "originHref": "https://eklitzke.org/the-cult-of-dd",
+    "weekly": 235
+  },
+  {
+    "title": "[traceroute 命令查看简历](https://web.archive.org/web/20220903153142/https://cv6.poinsignon.org/)（英文）",
+    "content": "\n\ntraceroute 命令用来查看网络请求经过的每一个路由节点。一个程序员灵机一动，买下一个 IPv6 的区段，使用 traceroute 命令就能查看他的简历。原理查看。\n\n",
+    "category": "article",
+    "originHref": "https://web.archive.org/web/20220903153142/https://cv6.poinsignon.org/",
     "weekly": 235
   },
   {
@@ -3606,9 +3732,16 @@
   },
   {
     "title": "[如何保持网页图像的纵横比](https://jakearchibald.com/2022/img-aspect-ratio/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071423.webp)\n\n作者详细讨论了，在网页图像加载之前，就提前留出图像空间的两种方法：CSS 的 aspect-ratio 属性，以及`<img>`的 height 和 width 属性。\n\n[什么是“干净的代码”？](https://technologywolf.net/the-top-10-tips-to-write-clean-code/)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071401.webp)\n\n有一本名著叫做《Clean Code》，提倡程序员要写“干净的代码”。这篇短文就总结了一些特征，什么样的代码可以称为干净。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071423.webp)\n\n作者详细讨论了，在网页图像加载之前，就提前留出图像空间的两种方法：CSS 的 aspect-ratio 属性，以及`<img>`的 height 和 width 属性。\n\n",
     "category": "article",
     "originHref": "https://jakearchibald.com/2022/img-aspect-ratio/",
+    "weekly": 227
+  },
+  {
+    "title": "[什么是“干净的代码”？](https://technologywolf.net/the-top-10-tips-to-write-clean-code/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071401.webp)\n\n有一本名著叫做《Clean Code》，提倡程序员要写“干净的代码”。这篇短文就总结了一些特征，什么样的代码可以称为干净。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://technologywolf.net/the-top-10-tips-to-write-clean-code/",
     "weekly": 226
   },
   {
@@ -3641,9 +3774,16 @@
   },
   {
     "title": "[PowerToys 用法介绍](https://www.fourth-wall.co.uk/post/powertoys-11-awesome-features-microsoft-won-t-add-to-windows)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022050901.webp)\n\nPowerToys 是微软官方推出的 Windows 工具集，包含11个有用的小工具，本文介绍它们的用法。\n\n[25个有用的 Mac 小应用](https://medium.com/@parttimeben/10-little-macos-apps-that-make-a-big-difference-in-2022-part-1-c6428f92a079)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070901.webp)\n\n一组系列，作者逐一介绍了25个很有用的 Mac 小应用，其中不少是免费的。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022050901.webp)\n\nPowerToys 是微软官方推出的 Windows 工具集，包含11个有用的小工具，本文介绍它们的用法。\n\n",
     "category": "article",
     "originHref": "https://www.fourth-wall.co.uk/post/powertoys-11-awesome-features-microsoft-won-t-add-to-windows",
+    "weekly": 226
+  },
+  {
+    "title": "[25个有用的 Mac 小应用](https://medium.com/@parttimeben/10-little-macos-apps-that-make-a-big-difference-in-2022-part-1-c6428f92a079)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070901.webp)\n\n一组系列，作者逐一介绍了25个很有用的 Mac 小应用，其中不少是免费的。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@parttimeben/10-little-macos-apps-that-make-a-big-difference-in-2022-part-1-c6428f92a079",
     "weekly": 225
   },
   {
@@ -3760,9 +3900,16 @@
   },
   {
     "title": "[高德地图的隐秘群聊](https://mp.weixin.qq.com/s/NdTQrx8VoUrhlSe_J4rQCw)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022091505.webp)\n\n高德地图有一个功能，如果某条道路发生严重堵塞，它会为堵在这条路上的人，自动建一个聊天群。\n\n[中国推动“饲料粮替代”](https://www.yicai.com/news/101534070.html)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022091404.webp)\n\n今年饲料价格大幅上涨，主要是玉米和豆粕，对肉蛋奶等畜产品的生产极不利。国内开始推动工业化合成生物蛋白，然后添加酶制剂，做成“人工饲料”。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022091505.webp)\n\n高德地图有一个功能，如果某条道路发生严重堵塞，它会为堵在这条路上的人，自动建一个聊天群。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/NdTQrx8VoUrhlSe_J4rQCw",
+    "weekly": 223
+  },
+  {
+    "title": "[中国推动“饲料粮替代”](https://www.yicai.com/news/101534070.html)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022091404.webp)\n\n今年饲料价格大幅上涨，主要是玉米和豆粕，对肉蛋奶等畜产品的生产极不利。国内开始推动工业化合成生物蛋白，然后添加酶制剂，做成“人工饲料”。\n\n",
+    "category": "article",
+    "originHref": "https://www.yicai.com/news/101534070.html",
     "weekly": 223
   },
   {
@@ -3844,9 +3991,16 @@
   },
   {
     "title": "[99美元的 Chromebook 是什么体验？](https://threadreaderapp.com/thread/1550598445248811008.html)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072301.webp)\n\n作者为了测试 Flutter 应用在低端设备的表现，花99美元买了一台全新的联想 Chromebook 笔记本。他原本预期会很糟糕，结果完全出乎他的意料。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072302.webp)\n\n[软件工程师如何成为全职“创作者”？](https://blog.pragmaticengineer.com/how-to-become-a-full-time-creator/)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072706.webp)\n\n作者是一个软件工程师，从 Uber 辞职以后，全职依靠创作（写、卖课程、做视频等等）为生。他写了对这种商业模式的思考。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072301.webp)\n\n作者为了测试 Flutter 应用在低端设备的表现，花99美元买了一台全新的联想 Chromebook 笔记本。他原本预期会很糟糕，结果完全出乎他的意料。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072302.webp)\n\n",
     "category": "article",
     "originHref": "https://threadreaderapp.com/thread/1550598445248811008.html",
+    "weekly": 222
+  },
+  {
+    "title": "[软件工程师如何成为全职“创作者”？](https://blog.pragmaticengineer.com/how-to-become-a-full-time-creator/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072706.webp)\n\n作者是一个软件工程师，从 Uber 辞职以后，全职依靠创作（写、卖课程、做视频等等）为生。他写了对这种商业模式的思考。\n\n",
+    "category": "article",
+    "originHref": "https://blog.pragmaticengineer.com/how-to-become-a-full-time-creator/",
     "weekly": 222
   },
   {
@@ -3977,9 +4131,16 @@
   },
   {
     "title": "[中国的木拱桥](https://mp.weixin.qq.com/s/Zc47jf3OCYjjdgJ2qpu1rg)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022081707.webp)\n\n中国古代除了石拱桥，还有木拱桥，也就是用木头做的拱桥。前不久烧毁的福建万安桥，就是一座木拱桥。\n\n[灵隐寺“智慧寺院管理系统”](https://mp.weixin.qq.com/s/xeNhTRQIY_EQheJyRVTr6Q)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022081816.webp)\n\n杭州灵隐寺“智慧寺院管理系统”近期正式上线，网上流传一张照片，一位僧人正在讲解该系统。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022081707.webp)\n\n中国古代除了石拱桥，还有木拱桥，也就是用木头做的拱桥。前不久烧毁的福建万安桥，就是一座木拱桥。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/Zc47jf3OCYjjdgJ2qpu1rg",
+    "weekly": 219
+  },
+  {
+    "title": "[灵隐寺“智慧寺院管理系统”](https://mp.weixin.qq.com/s/xeNhTRQIY_EQheJyRVTr6Q)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022081816.webp)\n\n杭州灵隐寺“智慧寺院管理系统”近期正式上线，网上流传一张照片，一位僧人正在讲解该系统。\n\n",
+    "category": "article",
+    "originHref": "https://mp.weixin.qq.com/s/xeNhTRQIY_EQheJyRVTr6Q",
     "weekly": 219
   },
   {
@@ -4243,9 +4404,16 @@
   },
   {
     "title": "[银行人脸识别被破解](https://finance.sina.com.cn/money/bank/gsdt/2022-07-06/doc-imizmscv0377623.shtml)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071424.webp)\n\n本文报道了一个真实案例，银行使用人脸识别 + 短信进行身份验证，结果被犯罪分子破解，多名用户的存款被转走。\n\n[在游戏《刺客信条》逛希腊](https://web.archive.org/web/20211010121826/https://www.douban.com/note/814326492/)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070708.webp)\n\n游戏《刺客信条：奥德赛》忠实还原了古希腊，本文进行了整理，将游戏里面的场景与真实场景一一对照。上图是游戏里面的雅典卫城，下图是真实的雅典卫城。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070709.webp)\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071424.webp)\n\n本文报道了一个真实案例，银行使用人脸识别 + 短信进行身份验证，结果被犯罪分子破解，多名用户的存款被转走。\n\n",
     "category": "article",
     "originHref": "https://finance.sina.com.cn/money/bank/gsdt/2022-07-06/doc-imizmscv0377623.shtml",
+    "weekly": 214
+  },
+  {
+    "title": "[在游戏《刺客信条》逛希腊](https://web.archive.org/web/20211010121826/https://www.douban.com/note/814326492/)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070708.webp)\n\n游戏《刺客信条：奥德赛》忠实还原了古希腊，本文进行了整理，将游戏里面的场景与真实场景一一对照。上图是游戏里面的雅典卫城，下图是真实的雅典卫城。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070709.webp)\n\n",
+    "category": "article",
+    "originHref": "https://web.archive.org/web/20211010121826/https://www.douban.com/note/814326492/",
     "weekly": 214
   },
   {
@@ -4516,9 +4684,16 @@
   },
   {
     "title": "[国产 GPU 创业潮](https://www.latepost.com/news/dj_detail?id=1166)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022060806.webp)\n\n最近，国内出现了好几家 GPU 创业公司。大家知道，独立 GPU 市场现在完全被 Nvidia 和 AMD 两大巨头垄断，技术壁垒非常高，新公司很难进入，本文就来分析了这些创业公司是怎么出现的。\n\n[手机号“一键解绑”](https://www.sohu.com/a/555332422_120388781)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022060901.webp)\n\n中国信息通信研究院推出“一号通查”功能，可以查询用户手机绑定的互联网帐号服务（目前只有微博、淘宝、抖音、美团等若干服务），并可以“一键解绑”。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022060806.webp)\n\n最近，国内出现了好几家 GPU 创业公司。大家知道，独立 GPU 市场现在完全被 Nvidia 和 AMD 两大巨头垄断，技术壁垒非常高，新公司很难进入，本文就来分析了这些创业公司是怎么出现的。\n\n",
     "category": "article",
     "originHref": "https://www.latepost.com/news/dj_detail?id=1166",
+    "weekly": 209
+  },
+  {
+    "title": "[手机号“一键解绑”](https://www.sohu.com/a/555332422_120388781)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022060901.webp)\n\n中国信息通信研究院推出“一号通查”功能，可以查询用户手机绑定的互联网帐号服务（目前只有微博、淘宝、抖音、美团等若干服务），并可以“一键解绑”。\n\n",
+    "category": "article",
+    "originHref": "https://www.sohu.com/a/555332422_120388781",
     "weekly": 209
   },
   {
@@ -4572,9 +4747,16 @@
   },
   {
     "title": "[他用50张 1080Ti 对抗癌症](https://www.toutiao.com/article/7094940100450107935/)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022052108.webp)\n\n4年前，一个程序员发帖称，他训练了一个模型，可以从 X 光片识别早期乳腺癌。最近，他又发帖了，使用人工智能治疗脑瘤。\n\n[寻找“树王”辛达布](https://mp.weixin.qq.com/s/UHAnsrvzu-Hc9orfICwv3Q)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022052109.webp)\n\n本文讲述研究人员如何在墨脱县寻找和测量中国大陆最高的树。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022052108.webp)\n\n4年前，一个程序员发帖称，他训练了一个模型，可以从 X 光片识别早期乳腺癌。最近，他又发帖了，使用人工智能治疗脑瘤。\n\n",
     "category": "article",
     "originHref": "https://www.toutiao.com/article/7094940100450107935/",
+    "weekly": 208
+  },
+  {
+    "title": "[寻找“树王”辛达布](https://mp.weixin.qq.com/s/UHAnsrvzu-Hc9orfICwv3Q)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022052109.webp)\n\n本文讲述研究人员如何在墨脱县寻找和测量中国大陆最高的树。\n\n",
+    "category": "article",
+    "originHref": "https://mp.weixin.qq.com/s/UHAnsrvzu-Hc9orfICwv3Q",
     "weekly": 208
   },
   {
@@ -5160,9 +5342,16 @@
   },
   {
     "title": "[npm audit 命令的作用和缺点](https://overreacted.io/npm-audit-broken-by-design/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022012503.webp)\n\nRedux 作者 Dan Abramov 的，通俗地解释了 `npm audit` 命令的作用，就是检查每个包的安全漏洞，这部分写得很好。但是他认为该命令作用有限，反而有时像一种骚扰。\n\n[我们为什么不选择 Slack 和 Telegram](https://scribe.rip/@jimbk/why-we-chose-telegram-for-team-app-over-slack-and-microsoft-team-and-then-moved-away-from-it-2b87012d2095)（英文）\n\n作者公司的产品要加入团队通信的功能，开始考虑的是集成 Slack 或 Telegram。但是最后都放弃了，改用开源软件。本文解释为什么这是更好的选择。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022012503.webp)\n\nRedux 作者 Dan Abramov 的，通俗地解释了 `npm audit` 命令的作用，就是检查每个包的安全漏洞，这部分写得很好。但是他认为该命令作用有限，反而有时像一种骚扰。\n\n",
     "category": "article",
     "originHref": "https://overreacted.io/npm-audit-broken-by-design/",
+    "weekly": 198
+  },
+  {
+    "title": "[我们为什么不选择 Slack 和 Telegram](https://scribe.rip/@jimbk/why-we-chose-telegram-for-team-app-over-slack-and-microsoft-team-and-then-moved-away-from-it-2b87012d2095)（英文）",
+    "content": "\n\n作者公司的产品要加入团队通信的功能，开始考虑的是集成 Slack 或 Telegram。但是最后都放弃了，改用开源软件。本文解释为什么这是更好的选择。\n\n",
+    "category": "article",
+    "originHref": "https://scribe.rip/@jimbk/why-we-chose-telegram-for-team-app-over-slack-and-microsoft-team-and-then-moved-away-from-it-2b87012d2095",
     "weekly": 198
   },
   {
@@ -5188,9 +5377,16 @@
   },
   {
     "title": "[Grid 用于布局，Flexbox 用于组件](https://ishadeed.com/article/grid-layout-flexbox-components/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022011318.webp)\n\nCSS 的 Grid 布局和 Flexbox 布局，作用相似，经常有人讨论，两者的适用场合是什么。作者提出，Grid 布局应该用于页面，Flexbox 布局应该用于组件。\n\n[TypeScript 和 Python 类型系统的不同](https://medium.com/@Pilot-EPD-Blog/typescript-for-pythonistas-f90bbb297f0a)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022030309.webp)\n\n作者是一个 Python 程序员，最近转向 TypeScript，他发现这两种语言的类型系统有两个重大差异。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022011318.webp)\n\nCSS 的 Grid 布局和 Flexbox 布局，作用相似，经常有人讨论，两者的适用场合是什么。作者提出，Grid 布局应该用于页面，Flexbox 布局应该用于组件。\n\n",
     "category": "article",
     "originHref": "https://ishadeed.com/article/grid-layout-flexbox-components/",
+    "weekly": 197
+  },
+  {
+    "title": "[TypeScript 和 Python 类型系统的不同](https://medium.com/@Pilot-EPD-Blog/typescript-for-pythonistas-f90bbb297f0a)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022030309.webp)\n\n作者是一个 Python 程序员，最近转向 TypeScript，他发现这两种语言的类型系统有两个重大差异。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@Pilot-EPD-Blog/typescript-for-pythonistas-f90bbb297f0a",
     "weekly": 197
   },
   {
@@ -5692,9 +5888,16 @@
   },
   {
     "title": "[Meta 开放虚拟世界 Horizon Worlds](https://www.ifanr.com/1459851)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021121114.webp)\n\n脸书公司改名 Meta 以后，发布了第一个元宇宙产品，叫做 Horizon Worlds，很像一个虚拟社区。本文是对 Horizon Worlds 的初步介绍。\n\n[如何创建你的第一个 NFT](https://medium.com/@contact_9164/how-to-create-your-first-nft-illustrated-with-shitty-stock-photos-bec48c91b4b9)（英文）\n\nNFT 到底是什么？本文是从技术上做了一个比较通俗的解释，而且给出了创建 NFT 的方法。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021121114.webp)\n\n脸书公司改名 Meta 以后，发布了第一个元宇宙产品，叫做 Horizon Worlds，很像一个虚拟社区。本文是对 Horizon Worlds 的初步介绍。\n\n",
     "category": "article",
     "originHref": "https://www.ifanr.com/1459851",
+    "weekly": 188
+  },
+  {
+    "title": "[如何创建你的第一个 NFT](https://medium.com/@contact_9164/how-to-create-your-first-nft-illustrated-with-shitty-stock-photos-bec48c91b4b9)（英文）",
+    "content": "\n\nNFT 到底是什么？本文是从技术上做了一个比较通俗的解释，而且给出了创建 NFT 的方法。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@contact_9164/how-to-create-your-first-nft-illustrated-with-shitty-stock-photos-bec48c91b4b9",
     "weekly": 188
   },
   {
@@ -5909,9 +6112,16 @@
   },
   {
     "title": "[printf() 的返回值](https://www.netmeister.org/blog/return-printf.html)（英文）",
-    "content": "\n\n本文介绍 C 语言的一个很奇怪的语法点：printf() 为什么会有两种返回值。\n\n[如何侦测开发者工具](https://medium.com/@weizmangal/javascript-anti-debugging-some-next-level-sh-t-part-2-abusing-chromium-devtools-scope-pane-b2796c00331d)（英文）\n\n本文介绍了几个技巧，可以侦测用户是否打开了浏览器的开发者工具。\n\n",
+    "content": "\n\n本文介绍 C 语言的一个很奇怪的语法点：printf() 为什么会有两种返回值。\n\n",
     "category": "article",
     "originHref": "https://www.netmeister.org/blog/return-printf.html",
+    "weekly": 184
+  },
+  {
+    "title": "[如何侦测开发者工具](https://medium.com/@weizmangal/javascript-anti-debugging-some-next-level-sh-t-part-2-abusing-chromium-devtools-scope-pane-b2796c00331d)（英文）",
+    "content": "\n\n本文介绍了几个技巧，可以侦测用户是否打开了浏览器的开发者工具。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@weizmangal/javascript-anti-debugging-some-next-level-sh-t-part-2-abusing-chromium-devtools-scope-pane-b2796c00331d",
     "weekly": 184
   },
   {
@@ -6413,9 +6623,16 @@
   },
   {
     "title": "[React usePrevious 钩子](https://davidwalsh.name/react-useprevious-hook)（英文）",
-    "content": "\n\n本文介绍如何使用 useEffect 和 useRef 的官方钩子，写一个自己的 usePrevious 钩子，返回组件上一次渲染时的 props 参数。\n\n[浏览器的“包导入地图”](https://github.com/wicg/import-maps)（英文）\n\nChrome 89 开始支持 ES 模块的“包导入地图”功能（package import maps），可以为导入模块指定别名。\n\n\n\n",
+    "content": "\n\n本文介绍如何使用 useEffect 和 useRef 的官方钩子，写一个自己的 usePrevious 钩子，返回组件上一次渲染时的 props 参数。\n\n",
     "category": "article",
     "originHref": "https://davidwalsh.name/react-useprevious-hook",
+    "weekly": 176
+  },
+  {
+    "title": "[浏览器的“包导入地图”](https://github.com/wicg/import-maps)（英文）",
+    "content": "\n\nChrome 89 开始支持 ES 模块的“包导入地图”功能（package import maps），可以为导入模块指定别名。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://github.com/wicg/import-maps",
     "weekly": 175
   },
   {
@@ -6532,9 +6749,16 @@
   },
   {
     "title": "[电源管理芯片为什么难造？](https://finance.sina.com.cn/chanjing/cyxw/2021-07-29/doc-ikqciyzk8373189.shtml)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021080910.jpg)\n\n随着充电协议越来越复杂，只要是电子产品，都需要电源管理芯片。本文介绍电源管理芯片市场目前的状况，以及为什么大部分市场份额都被国外几家大公司掌握。\n\n[如何评价中国自主知识产权的“.chn”域名？](https://www.zhihu.com/question/324843186)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021081707.jpg)\n\n这是知乎的一个讨论帖，2019年一家中国公司宣布，推出自主知识产权的“.chn”顶级域名，根域名服务器不再受制于人，并开放购买注册。\n\n但是，该域名没有得到 ICANN、CNNIC 的承认，浏览器无法访问，必须修改 hosts 文件才可以。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021080910.jpg)\n\n随着充电协议越来越复杂，只要是电子产品，都需要电源管理芯片。本文介绍电源管理芯片市场目前的状况，以及为什么大部分市场份额都被国外几家大公司掌握。\n\n",
     "category": "article",
     "originHref": "https://finance.sina.com.cn/chanjing/cyxw/2021-07-29/doc-ikqciyzk8373189.shtml",
+    "weekly": 173
+  },
+  {
+    "title": "[如何评价中国自主知识产权的“.chn”域名？](https://www.zhihu.com/question/324843186)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021081707.jpg)\n\n这是知乎的一个讨论帖，2019年一家中国公司宣布，推出自主知识产权的“.chn”顶级域名，根域名服务器不再受制于人，并开放购买注册。\n\n但是，该域名没有得到 ICANN、CNNIC 的承认，浏览器无法访问，必须修改 hosts 文件才可以。\n\n",
+    "category": "article",
+    "originHref": "https://www.zhihu.com/question/324843186",
     "weekly": 173
   },
   {
@@ -7036,9 +7260,16 @@
   },
   {
     "title": "[Docker Compose 快速使用指南](https://linuxhandbook.com/docker-compose-quick-start/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061203.jpg)\n\n一篇简短的 Docker Compose 入门教程，让你通过动手实践，理解 Docker Compose 怎么搭建多容器的应用程序。\n\n[新的 HTTP 规范可以消除“Cookie 横幅”](https://arstechnica.com/gadgets/2021/06/tired-of-accepting-rejecting-cookies-adpc-wants-to-automate-the-process/)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061710.jpg)\n\n由于欧洲议会的规定，国外的网站都有一个讨厌的“Cookie 横幅”，询问用户是否接受 Cookie。\n\n现在有一个新的 HTTP 提案（还未通过），用户只需设置一次，浏览器就可以用一个 HTTP 标头通知网站，不必放置 Cookie 横幅。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061203.jpg)\n\n一篇简短的 Docker Compose 入门教程，让你通过动手实践，理解 Docker Compose 怎么搭建多容器的应用程序。\n\n",
     "category": "article",
     "originHref": "https://linuxhandbook.com/docker-compose-quick-start/",
+    "weekly": 165
+  },
+  {
+    "title": "[新的 HTTP 规范可以消除“Cookie 横幅”](https://arstechnica.com/gadgets/2021/06/tired-of-accepting-rejecting-cookies-adpc-wants-to-automate-the-process/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061710.jpg)\n\n由于欧洲议会的规定，国外的网站都有一个讨厌的“Cookie 横幅”，询问用户是否接受 Cookie。\n\n现在有一个新的 HTTP 提案（还未通过），用户只需设置一次，浏览器就可以用一个 HTTP 标头通知网站，不必放置 Cookie 横幅。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://arstechnica.com/gadgets/2021/06/tired-of-accepting-rejecting-cookies-adpc-wants-to-automate-the-process/",
     "weekly": 164
   },
   {
@@ -8429,9 +8660,16 @@
   },
   {
     "title": "[编程需要多少数学？](https://lispmachine.wordpress.com/2014/12/05/how-much-math-you-need-for-programming/)（英文）",
-    "content": "\n\n这是一个程序员学习数学的体会。结论很简单：你不需要懂数学就可以成为一流的程序员，但是通过学习数学，可以了解更多解决问题的方法。\n\n[移动优先为什么是一个坏主意？](https://web.archive.org/web/20201228005247if_/https://planflow.dev/blog/why-mobile-first-is-a-bad-idea)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020122808.jpg)\n\n很多人提倡，网站的样式应该“移动优先”（mobile first）。作者认为，这种想法不正确，应该优先设计桌面端的样式，然后再考虑移动端。\n\n",
+    "content": "\n\n这是一个程序员学习数学的体会。结论很简单：你不需要懂数学就可以成为一流的程序员，但是通过学习数学，可以了解更多解决问题的方法。\n\n",
     "category": "article",
     "originHref": "https://lispmachine.wordpress.com/2014/12/05/how-much-math-you-need-for-programming/",
+    "weekly": 141
+  },
+  {
+    "title": "[移动优先为什么是一个坏主意？](https://web.archive.org/web/20201228005247if_/https://planflow.dev/blog/why-mobile-first-is-a-bad-idea)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020122808.jpg)\n\n很多人提倡，网站的样式应该“移动优先”（mobile first）。作者认为，这种想法不正确，应该优先设计桌面端的样式，然后再考虑移动端。\n\n",
+    "category": "article",
+    "originHref": "https://web.archive.org/web/20201228005247if_/https://planflow.dev/blog/why-mobile-first-is-a-bad-idea",
     "weekly": 141
   },
   {
@@ -9234,9 +9472,16 @@
   },
   {
     "title": "[前端开发的 VS Code 插件推荐](https://dev.to/klamserdev/vs-code-extensions-i-use-daily-568i)（英文）",
-    "content": "\n\n作者推荐他每天使用的 VS Code 插件，专门用于前端开发。\n\n[别在网页上显示“注册”](https://www.gkogan.co/blog/stop-asking-me-to-sign-up/)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092702.jpg)\n\n很多网站在页面上有注册按钮或注册链接（上图），作者认为，“注册”这个词大大降低了用户进一步使用的欲望，因为这要求用户付出操作成本，但没有给出足够的诱因。\n\n经过他的实验，只要将“注册”改成“开始使用”或“免费试用”，就能将转化率提高三倍。\n\n",
+    "content": "\n\n作者推荐他每天使用的 VS Code 插件，专门用于前端开发。\n\n",
     "category": "article",
     "originHref": "https://dev.to/klamserdev/vs-code-extensions-i-use-daily-568i",
+    "weekly": 127
+  },
+  {
+    "title": "[别在网页上显示“注册”](https://www.gkogan.co/blog/stop-asking-me-to-sign-up/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092702.jpg)\n\n很多网站在页面上有注册按钮或注册链接（上图），作者认为，“注册”这个词大大降低了用户进一步使用的欲望，因为这要求用户付出操作成本，但没有给出足够的诱因。\n\n经过他的实验，只要将“注册”改成“开始使用”或“免费试用”，就能将转化率提高三倍。\n\n",
+    "category": "article",
+    "originHref": "https://www.gkogan.co/blog/stop-asking-me-to-sign-up/",
     "weekly": 127
   },
   {
@@ -9290,16 +9535,30 @@
   },
   {
     "title": "[我如何使用 Netlify 的 Serverless 功能](https://ttntm.me/blog/serverless-recipes-app-faunadb-vuejs/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092003.jpg)\n\n作者介绍他如何开发一个没有后端服务器、只有前端静态网页的 Web 数据库应用。\n\n[谷歌搜索的10个小技巧](https://medium.com/@shalithasuranga/10-hidden-features-in-google-search-83b347b48157)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092004.jpg)\n\n谷歌搜索有很多小功能，比如搜索`stopwatch`会出现一个倒计时器（上图）。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092003.jpg)\n\n作者介绍他如何开发一个没有后端服务器、只有前端静态网页的 Web 数据库应用。\n\n",
     "category": "article",
     "originHref": "https://ttntm.me/blog/serverless-recipes-app-faunadb-vuejs/",
     "weekly": 126
   },
   {
+    "title": "[谷歌搜索的10个小技巧](https://medium.com/@shalithasuranga/10-hidden-features-in-google-search-83b347b48157)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092004.jpg)\n\n谷歌搜索有很多小功能，比如搜索`stopwatch`会出现一个倒计时器（上图）。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@shalithasuranga/10-hidden-features-in-google-search-83b347b48157",
+    "weekly": 126
+  },
+  {
     "title": "[中国大周期](https://finance.sina.com.cn/china/gncj/2020-09-21/doc-iivhvpwy8038347.shtml)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092213.jpg)\n\n桥水基金创始人瑞·达利欧（Ray Dalio）的长文，以一个美国人的角度，谈了他对中国历史和经济政策的理解。这里是中文摘译版，也有。\n\n[GitHub 仓库的默认分支不叫“master”了](https://www.jiqizhixin.com/articles/2020-09-21-10)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092214.jpg)\n\n从 2020 年 10 月 1 日开始，GitHub 所有新库的默认分支都将用中性词“main”命名，取代原来的“master”。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092213.jpg)\n\n桥水基金创始人瑞·达利欧（Ray Dalio）的长文，以一个美国人的角度，谈了他对中国历史和经济政策的理解。这里是中文摘译版，也有。\n\n",
     "category": "article",
     "originHref": "https://finance.sina.com.cn/china/gncj/2020-09-21/doc-iivhvpwy8038347.shtml",
+    "weekly": 126
+  },
+  {
+    "title": "[GitHub 仓库的默认分支不叫“master”了](https://www.jiqizhixin.com/articles/2020-09-21-10)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092214.jpg)\n\n从 2020 年 10 月 1 日开始，GitHub 所有新库的默认分支都将用中性词“main”命名，取代原来的“master”。\n\n",
+    "category": "article",
+    "originHref": "https://www.jiqizhixin.com/articles/2020-09-21-10",
     "weekly": 126
   },
   {
@@ -9514,9 +9773,16 @@
   },
   {
     "title": "[理解 Python 哈希表](http://thepythoncorner.com/dev/hash-tables-understanding-dictionaries/)（英文）",
-    "content": "\n\n本文详细讲解 Python 哈希函数的用法，然后用它实现一个简单的哈希表。\n\n[如何在谷歌云安装 Pi-Hole](https://medium.com/@devinjaystokes/how-to-set-up-a-pi-hole-ad-blocking-vpn-server-on-google-clouds-always-free-usage-tier-ff1d8a8c407e)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020082308.jpg)\n\n一篇非常详细的教程，一步步教你在谷歌云上安装 Pi-Hole，自己搭建一个 DNS 服务器，能够屏蔽广告。\n\n",
+    "content": "\n\n本文详细讲解 Python 哈希函数的用法，然后用它实现一个简单的哈希表。\n\n",
     "category": "article",
     "originHref": "http://thepythoncorner.com/dev/hash-tables-understanding-dictionaries/",
+    "weekly": 122
+  },
+  {
+    "title": "[如何在谷歌云安装 Pi-Hole](https://medium.com/@devinjaystokes/how-to-set-up-a-pi-hole-ad-blocking-vpn-server-on-google-clouds-always-free-usage-tier-ff1d8a8c407e)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020082308.jpg)\n\n一篇非常详细的教程，一步步教你在谷歌云上安装 Pi-Hole，自己搭建一个 DNS 服务器，能够屏蔽广告。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@devinjaystokes/how-to-set-up-a-pi-hole-ad-blocking-vpn-server-on-google-clouds-always-free-usage-tier-ff1d8a8c407e",
     "weekly": 122
   },
   {
@@ -10186,9 +10452,16 @@
   },
   {
     "title": "[Web Animations API 简介](https://web.dev/web-animations/)（英文）",
-    "content": "\n\nChrome 84 增强了对 Web Animations API 的支持。这个 API 的主要作用是使用 JavaScript 控制 CSS 动画。\n\n[游戏摄影师，这种靠“截图”赚钱的新职业](https://www.ifanr.com/1134181)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052811.jpg)\n\n随着游戏画质和细节的不断进步，里面史诗级的风景已经足以让玩家流连忘返。\n\n在游戏圈里，还真有一个叫做游戏摄影师的职业，他们更像是游戏中的旅客，重点是拍摄游戏中的有趣画面而非玩游戏，而这种「拍摄」更准确来说是在游戏中截图。\n\n![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052812.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052813.jpg)\n\n",
+    "content": "\n\nChrome 84 增强了对 Web Animations API 的支持。这个 API 的主要作用是使用 JavaScript 控制 CSS 动画。\n\n",
     "category": "article",
     "originHref": "https://web.dev/web-animations/",
+    "weekly": 110
+  },
+  {
+    "title": "[游戏摄影师，这种靠“截图”赚钱的新职业](https://www.ifanr.com/1134181)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052811.jpg)\n\n随着游戏画质和细节的不断进步，里面史诗级的风景已经足以让玩家流连忘返。\n\n在游戏圈里，还真有一个叫做游戏摄影师的职业，他们更像是游戏中的旅客，重点是拍摄游戏中的有趣画面而非玩游戏，而这种「拍摄」更准确来说是在游戏中截图。\n\n![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052812.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052813.jpg)\n\n",
+    "category": "article",
+    "originHref": "https://www.ifanr.com/1134181",
     "weekly": 110
   },
   {
@@ -10928,9 +11201,16 @@
   },
   {
     "title": "[静态网站为什么需要 HTTPS](https://www.troyhunt.com/heres-why-your-static-website-needs-https/)（英文）",
-    "content": "\n\n本文总结了对 HTTP 网页进行攻击的方法。\n\n[我编程20年的指导原则](https://medium.com/@alexewerlof/my-guiding-principles-after-20-years-of-programming-a087dc55596c)（英文）\n\n一个编程20年的资深程序员，总结自己编写软件的原则，其中一条是：安全性 > 可用性 > 可维护性 > 代码简洁 > 性能 。另一条是，除非已经完全理解了所要解决的问题，否则不要动手写代码。\n\n",
+    "content": "\n\n本文总结了对 HTTP 网页进行攻击的方法。\n\n",
     "category": "article",
     "originHref": "https://www.troyhunt.com/heres-why-your-static-website-needs-https/",
+    "weekly": 97
+  },
+  {
+    "title": "[我编程20年的指导原则](https://medium.com/@alexewerlof/my-guiding-principles-after-20-years-of-programming-a087dc55596c)（英文）",
+    "content": "\n\n一个编程20年的资深程序员，总结自己编写软件的原则，其中一条是：安全性 > 可用性 > 可维护性 > 代码简洁 > 性能 。另一条是，除非已经完全理解了所要解决的问题，否则不要动手写代码。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@alexewerlof/my-guiding-principles-after-20-years-of-programming-a087dc55596c",
     "weekly": 97
   },
   {
@@ -11509,9 +11789,16 @@
   },
   {
     "title": "[隧道掘进机示意图](http://www.cat-bus.com/2018/01/far-from-boringmeet-the-most-interesting-tunnel-boring-machines/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019111805.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019111806.jpg)\n\n本文收集了大量动画图片，展示各种隧道掘进机的工作原理。\n\n[我如何制作 3D 网页？](https://medium.com/@bruno_simon/bruno-simon-portfolio-case-study-960402cc259b)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019112012.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019112013.jpg)\n\n作者的主页是一个 3D 网页，他介绍了这是怎么制作的。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019111805.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019111806.jpg)\n\n本文收集了大量动画图片，展示各种隧道掘进机的工作原理。\n\n",
     "category": "article",
     "originHref": "http://www.cat-bus.com/2018/01/far-from-boringmeet-the-most-interesting-tunnel-boring-machines/",
+    "weekly": 88
+  },
+  {
+    "title": "[我如何制作 3D 网页？](https://medium.com/@bruno_simon/bruno-simon-portfolio-case-study-960402cc259b)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019112012.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019112013.jpg)\n\n作者的主页是一个 3D 网页，他介绍了这是怎么制作的。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@bruno_simon/bruno-simon-portfolio-case-study-960402cc259b",
     "weekly": 88
   },
   {
@@ -12048,9 +12335,16 @@
   },
   {
     "title": "[休假十周的感受](http://cushychicken.github.io/leave-of-absence/)（英文）",
-    "content": "\n\n作者是一个程序员，离开工作岗位，进行了一次为期十周的长途旅行。本文是他的一些感受，如何从繁忙的工作中脱身，以及从旅行中得到了什么。\n\n[看清机器学习的炒作](https://medium.com/@sapy/get-over-the-machine-learning-hype-79abcbe37272)（英文）\n\n作者认为，机器学习这个词是一种炒作，已经被神化了。实际上，机器学习就是要解决四类问题，每一类问题都有对应的算法，并没有神奇之处。\n\n",
+    "content": "\n\n作者是一个程序员，离开工作岗位，进行了一次为期十周的长途旅行。本文是他的一些感受，如何从繁忙的工作中脱身，以及从旅行中得到了什么。\n\n",
     "category": "article",
     "originHref": "http://cushychicken.github.io/leave-of-absence/",
+    "weekly": 79
+  },
+  {
+    "title": "[看清机器学习的炒作](https://medium.com/@sapy/get-over-the-machine-learning-hype-79abcbe37272)（英文）",
+    "content": "\n\n作者认为，机器学习这个词是一种炒作，已经被神化了。实际上，机器学习就是要解决四类问题，每一类问题都有对应的算法，并没有神奇之处。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@sapy/get-over-the-machine-learning-hype-79abcbe37272",
     "weekly": 79
   },
   {
@@ -12097,9 +12391,16 @@
   },
   {
     "title": "[我的一人互联网公司](https://broadcast.listennotes.com/the-boring-technology-behind-listen-notes-56697c2e347b)（英文）",
-    "content": "\n\n一个开发者介绍，他如何一个人开发和管理20台服务器，运营一个商业网站。\n\n[短网址（short URL）系统的原理及其实现](https://hufangyun.com/2017/short-url/)（中文）\n\n本文介绍短网址服务的原理，以及如何写一个实现。\n[JavaScript 的新语法](https://medium.com/@ideepak.jsd/javascript-new-features-part-1-f1a4360466)（英文）\n\n本文介绍一些即将进入 JavaScript 标准的新语法。\n\n",
+    "content": "\n\n一个开发者介绍，他如何一个人开发和管理20台服务器，运营一个商业网站。\n\n[短网址（short URL）系统的原理及其实现](https://hufangyun.com/2017/short-url/)（中文）\n\n本文介绍短网址服务的原理，以及如何写一个实现。\n",
     "category": "article",
     "originHref": "https://broadcast.listennotes.com/the-boring-technology-behind-listen-notes-56697c2e347b",
+    "weekly": 78
+  },
+  {
+    "title": "[JavaScript 的新语法](https://medium.com/@ideepak.jsd/javascript-new-features-part-1-f1a4360466)（英文）",
+    "content": "\n\n本文介绍一些即将进入 JavaScript 标准的新语法。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@ideepak.jsd/javascript-new-features-part-1-f1a4360466",
     "weekly": 78
   },
   {
@@ -12587,9 +12888,16 @@
   },
   {
     "title": "[海盗党的版权改革主张](https://christianengstrom.wordpress.com/the-pirate-party-on-copyright-reform/)（英文）",
-    "content": "\n\n这篇是瑞典盗版党的版权改革主张：非商业用途应该免费，商业用途只能保护作品发布后的五年，允许衍生作品不支付版权费，废除数字版权机制 DRM。\n\n[Flutter 带给我的挫败感](https://medium.com/@bernaferrari/from-android-dev-flutter-looks-good-but-is-painful-here-are-my-frustrations-with-it-81b4bbe739f8)（英文）\n\n一个安卓开发者谈他对 Flutter 初次尝试的印象。\n\n",
+    "content": "\n\n这篇是瑞典盗版党的版权改革主张：非商业用途应该免费，商业用途只能保护作品发布后的五年，允许衍生作品不支付版权费，废除数字版权机制 DRM。\n\n",
     "category": "article",
     "originHref": "https://christianengstrom.wordpress.com/the-pirate-party-on-copyright-reform/",
+    "weekly": 70
+  },
+  {
+    "title": "[Flutter 带给我的挫败感](https://medium.com/@bernaferrari/from-android-dev-flutter-looks-good-but-is-painful-here-are-my-frustrations-with-it-81b4bbe739f8)（英文）",
+    "content": "\n\n一个安卓开发者谈他对 Flutter 初次尝试的印象。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@bernaferrari/from-android-dev-flutter-looks-good-but-is-painful-here-are-my-frustrations-with-it-81b4bbe739f8",
     "weekly": 70
   },
   {
@@ -12650,9 +12958,16 @@
   },
   {
     "title": "[CSS 的 background-image 属性是反模式](https://nystudio107.com/blog/the-css-background-image-property-as-an-anti-pattern)",
-    "content": "\n\n作者提出，如果图像是内容一部分，就不应该设置成 CSS 的背景图像，而应该使用`<picture>`标签加上 CSS 的`object-fit`属性。\n\n[如何用 Puppeteer 破解滑块验证](https://medium.com/@filipvitas/how-to-bypass-slider-captcha-with-js-and-puppeteer-cd5e28105e3c)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019073004.jpg)\n\n很多网站现在都有滑块验证，识别用户是否为真人。但是，其实它们都可以用 Puppeteer 的自动化脚本破解，本文展示怎么做到这一点。\n\n[ping 的故事](https://ftp.arl.army.mil/~mike/ping.html)（英文）\n\n`ping`是最常用的网络命令之一。这篇是`ping`的作者介绍他怎么写出这个工具。他以前的工作是研究声纳和雷达，声纳发出的声音脉冲就叫做`ping`。\n\n",
+    "content": "\n\n作者提出，如果图像是内容一部分，就不应该设置成 CSS 的背景图像，而应该使用`<picture>`标签加上 CSS 的`object-fit`属性。\n\n",
     "category": "article",
     "originHref": "https://nystudio107.com/blog/the-css-background-image-property-as-an-anti-pattern",
+    "weekly": 69
+  },
+  {
+    "title": "[如何用 Puppeteer 破解滑块验证](https://medium.com/@filipvitas/how-to-bypass-slider-captcha-with-js-and-puppeteer-cd5e28105e3c)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019073004.jpg)\n\n很多网站现在都有滑块验证，识别用户是否为真人。但是，其实它们都可以用 Puppeteer 的自动化脚本破解，本文展示怎么做到这一点。\n\n[ping 的故事](https://ftp.arl.army.mil/~mike/ping.html)（英文）\n\n`ping`是最常用的网络命令之一。这篇是`ping`的作者介绍他怎么写出这个工具。他以前的工作是研究声纳和雷达，声纳发出的声音脉冲就叫做`ping`。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@filipvitas/how-to-bypass-slider-captcha-with-js-and-puppeteer-cd5e28105e3c",
     "weekly": 69
   },
   {
@@ -12783,9 +13098,16 @@
   },
   {
     "title": "[利用谷歌爬虫的 XSS 攻击](https://www.tomanthony.co.uk/blog/xss-attacks-googlebot-index-manipulation/)（英文）",
-    "content": "\n\n有的网站安全性差，可以注入外部脚本，即 XSS 攻击。作者发现，注入脚本的网页可以提交给谷歌爬虫，被谷歌收录，用来提高第三方网站的排名。这个漏洞已经被谷歌修复了，但是攻击思路值得学习。\n\n[我的创业体会](https://medium.com/@rishdotblog/bootstrapping-a-data-api-company-in-asia-from-0-80m-monthly-requests-in-2-years-lessons-learnt-f48297823c7c)（英文）\n\n一个印度创业者讲述自己的创业经历，最后总结三条体会。有一条说，不要想着做独角兽，要想着做蟑螂，那些大公司和风投看不上的角落，有更大的机会活下去。\n\n1（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019072003.jpg)\n\n1942年，美军的一个飞行中队，包括6架战斗机和2架轰炸机，在飞越大西洋的过程中，由于天气恶劣而迷航，不得不在格陵兰冰川上迫降。1988年，这些飞机在冰下80多米的深处被发现，探险队抢救出了一架战斗机。经过修复，这架飞机于2002年10月重新飞上了天空。本文讲述飞机的发现和挖掘过程。\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019072004.jpg)\n\n\n\n",
+    "content": "\n\n有的网站安全性差，可以注入外部脚本，即 XSS 攻击。作者发现，注入脚本的网页可以提交给谷歌爬虫，被谷歌收录，用来提高第三方网站的排名。这个漏洞已经被谷歌修复了，但是攻击思路值得学习。\n\n",
     "category": "article",
     "originHref": "https://www.tomanthony.co.uk/blog/xss-attacks-googlebot-index-manipulation/",
+    "weekly": 67
+  },
+  {
+    "title": "[我的创业体会](https://medium.com/@rishdotblog/bootstrapping-a-data-api-company-in-asia-from-0-80m-monthly-requests-in-2-years-lessons-learnt-f48297823c7c)（英文）",
+    "content": "\n\n一个印度创业者讲述自己的创业经历，最后总结三条体会。有一条说，不要想着做独角兽，要想着做蟑螂，那些大公司和风投看不上的角落，有更大的机会活下去。\n\n1（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019072003.jpg)\n\n1942年，美军的一个飞行中队，包括6架战斗机和2架轰炸机，在飞越大西洋的过程中，由于天气恶劣而迷航，不得不在格陵兰冰川上迫降。1988年，这些飞机在冰下80多米的深处被发现，探险队抢救出了一架战斗机。经过修复，这架飞机于2002年10月重新飞上了天空。本文讲述飞机的发现和挖掘过程。\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019072004.jpg)\n\n\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@rishdotblog/bootstrapping-a-data-api-company-in-asia-from-0-80m-monthly-requests-in-2-years-lessons-learnt-f48297823c7c",
     "weekly": 66
   },
   {
@@ -12902,9 +13224,16 @@
   },
   {
     "title": "[如何写网页的社交媒体分享功能](https://css-tricks.com/simple-social-sharing-links/)（英文）",
-    "content": "\n\n网页的分享按钮，可以分享到 Facebook、推特等社交媒体，这是怎么实现的？\n\n[fzf 和 ripgrep](https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861)（英文）\n\n本文介绍 find 和 grep 命令的替代品 fzf 和 ripgrep。\n\n",
+    "content": "\n\n网页的分享按钮，可以分享到 Facebook、推特等社交媒体，这是怎么实现的？\n\n",
     "category": "article",
     "originHref": "https://css-tricks.com/simple-social-sharing-links/",
+    "weekly": 65
+  },
+  {
+    "title": "[fzf 和 ripgrep](https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861)（英文）",
+    "content": "\n\n本文介绍 find 和 grep 命令的替代品 fzf 和 ripgrep。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861",
     "weekly": 65
   },
   {
@@ -13595,9 +13924,16 @@
   },
   {
     "title": "[什么是幂等？](https://lispcast.com/what-is-idempotence/)（英文）",
-    "content": "\n\n幂等这个概念，指重复操作不会产生任何影响。比如，电梯重复按两次，不会有差异。分布式系统特别强调幂等，因为通信可能丢失，就会需要重复发信号。\n\n1[使用 systemd 创建 Linux 服务](https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6)（英文）\n\n创建 Linux 服务相当容易：使用你喜欢的编程语言编写一个长期运行的程序，并使用 systemd 将其转换为服务。\n\n1（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019050319.jpg)\n\nChrome 浏览器离线时，会出现一个恐龙跳跃的游戏。为了庆祝 Chrome 浏览器诞生10周年，谷歌官方博客采访了游戏的创造者，并且展示了恐龙头戴蛋糕的一个特别版。\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019050320.jpg)\n\n\n\n[加强 Linux 服务器安全的七个步骤](https://medium.com/@mutendebrian/how-to-secure-your-linux-server-6026cfcdefd8)（英文）\n\n自己架设 Linux 服务器的时候，按照本文的步骤，可以防止90%以上的攻击。\n\n",
+    "content": "\n\n幂等这个概念，指重复操作不会产生任何影响。比如，电梯重复按两次，不会有差异。分布式系统特别强调幂等，因为通信可能丢失，就会需要重复发信号。\n\n1[使用 systemd 创建 Linux 服务](https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6)（英文）\n\n创建 Linux 服务相当容易：使用你喜欢的编程语言编写一个长期运行的程序，并使用 systemd 将其转换为服务。\n\n1（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019050319.jpg)\n\nChrome 浏览器离线时，会出现一个恐龙跳跃的游戏。为了庆祝 Chrome 浏览器诞生10周年，谷歌官方博客采访了游戏的创造者，并且展示了恐龙头戴蛋糕的一个特别版。\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019050320.jpg)\n\n\n\n",
     "category": "article",
     "originHref": "https://lispcast.com/what-is-idempotence/",
+    "weekly": 53
+  },
+  {
+    "title": "[加强 Linux 服务器安全的七个步骤](https://medium.com/@mutendebrian/how-to-secure-your-linux-server-6026cfcdefd8)（英文）",
+    "content": "\n\n自己架设 Linux 服务器的时候，按照本文的步骤，可以防止90%以上的攻击。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@mutendebrian/how-to-secure-your-linux-server-6026cfcdefd8",
     "weekly": 53
   },
   {
@@ -13616,9 +13952,16 @@
   },
   {
     "title": "[Node.js 的多线程指南](https://blog.logrocket.com/a-complete-guide-to-threads-in-node-js-4fa3898fe74f)（英文）",
-    "content": "\n\nJavaScript 是单线程语言，但是 Nodejs v10.5.0 版本增加了 `worker_threads` 模块，使得 Node 也支持多线程。\n\n[如何无限延长一首歌](https://medium.com/@metalex9/generating-more-of-my-favorite-aphex-twin-track-cde9b7ecda3a)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/201904/bg2019042610.jpg)\n\n作者使用马尔可夫链将一首5分钟的歌，延长到了一个小时。多出来的部分都由软件自动生成。\n\n",
+    "content": "\n\nJavaScript 是单线程语言，但是 Nodejs v10.5.0 版本增加了 `worker_threads` 模块，使得 Node 也支持多线程。\n\n",
     "category": "article",
     "originHref": "https://blog.logrocket.com/a-complete-guide-to-threads-in-node-js-4fa3898fe74f",
+    "weekly": 53
+  },
+  {
+    "title": "[如何无限延长一首歌](https://medium.com/@metalex9/generating-more-of-my-favorite-aphex-twin-track-cde9b7ecda3a)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201904/bg2019042610.jpg)\n\n作者使用马尔可夫链将一首5分钟的歌，延长到了一个小时。多出来的部分都由软件自动生成。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@metalex9/generating-more-of-my-favorite-aphex-twin-track-cde9b7ecda3a",
     "weekly": 53
   },
   {
@@ -13665,9 +14008,16 @@
   },
   {
     "title": "[什么是 Wayback Machine？](https://www.256kilobytes.com/content/show/4808/what-is-the-wayback-machine-how-the-internet-archive-uses-web-crawlers-to-preserve-internet-history)（英文）",
-    "content": "\n\nWayback Machine 是一个庞大的网页数字档案库，为全世界的网页存档。该项目于1996年启动，目前保存了100亿个快照，数据量达到 30PB，另外还有 30PB 备份。\n\n[类型正在向右移动](https://medium.com/@elizarov/types-are-moving-to-the-right-22c0ef31dd4a)（英文）\n\n以前的编程语言，类型声明都是写在变量的左边，比如 int count 。但是，现在越来越多的编程语言，将类型声明写在变量的右边，比如 count:int ，这是为什么？\n\n",
+    "content": "\n\nWayback Machine 是一个庞大的网页数字档案库，为全世界的网页存档。该项目于1996年启动，目前保存了100亿个快照，数据量达到 30PB，另外还有 30PB 备份。\n\n",
     "category": "article",
     "originHref": "https://www.256kilobytes.com/content/show/4808/what-is-the-wayback-machine-how-the-internet-archive-uses-web-crawlers-to-preserve-internet-history",
+    "weekly": 52
+  },
+  {
+    "title": "[类型正在向右移动](https://medium.com/@elizarov/types-are-moving-to-the-right-22c0ef31dd4a)（英文）",
+    "content": "\n\n以前的编程语言，类型声明都是写在变量的左边，比如 int count 。但是，现在越来越多的编程语言，将类型声明写在变量的右边，比如 count:int ，这是为什么？\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@elizarov/types-are-moving-to-the-right-22c0ef31dd4a",
     "weekly": 52
   },
   {
@@ -13686,9 +14036,16 @@
   },
   {
     "title": "[10个 Homebrew 软件包](https://picocoder.io/best-homebrew-packages-for-mac/)（英文）",
-    "content": "\n\nHomebrew 是 Mac 系统的软件包管理器，可用于安装 Unix 软件包。本文推荐10个值得安装的软件包。\n\n[Java 语言的 null 是一个设计错误](https://medium.com/@elizarov/null-is-your-friend-not-a-mistake-b63ff1751dd5)（英文）\n\nJava 语言的 null 值导致了很多问题，本文解释为什么 Java 的设计是错的，而 Kotlin 的设计是对的。\n\n",
+    "content": "\n\nHomebrew 是 Mac 系统的软件包管理器，可用于安装 Unix 软件包。本文推荐10个值得安装的软件包。\n\n",
     "category": "article",
     "originHref": "https://picocoder.io/best-homebrew-packages-for-mac/",
+    "weekly": 52
+  },
+  {
+    "title": "[Java 语言的 null 是一个设计错误](https://medium.com/@elizarov/null-is-your-friend-not-a-mistake-b63ff1751dd5)（英文）",
+    "content": "\n\nJava 语言的 null 值导致了很多问题，本文解释为什么 Java 的设计是错的，而 Kotlin 的设计是对的。\n\n",
+    "category": "article",
+    "originHref": "https://medium.com/@elizarov/null-is-your-friend-not-a-mistake-b63ff1751dd5",
     "weekly": 52
   },
   {
@@ -13854,9 +14211,16 @@
   },
   {
     "title": "[单页应用的二进制打包](https://medium.com/from-the-couch/a-single-binary-spa-97b1a2b327de)（英文）",
-    "content": "\n\n本文介绍了一种方法，将网站打包成一个 Go 语言的二进制程序。启动网站，就是运行这个程序。\n\n[抽象的成本](http://250bpm.com/blog:86)（英文）\n\n重复的代码通常会被抽象掉，本文讨论抽象带来的额外成本。\n\n",
+    "content": "\n\n本文介绍了一种方法，将网站打包成一个 Go 语言的二进制程序。启动网站，就是运行这个程序。\n\n",
     "category": "article",
     "originHref": "https://medium.com/from-the-couch/a-single-binary-spa-97b1a2b327de",
+    "weekly": 49
+  },
+  {
+    "title": "[抽象的成本](http://250bpm.com/blog:86)（英文）",
+    "content": "\n\n重复的代码通常会被抽象掉，本文讨论抽象带来的额外成本。\n\n",
+    "category": "article",
+    "originHref": "http://250bpm.com/blog:86",
     "weekly": 49
   },
   {

@@ -701,9 +701,16 @@
   },
   {
     "title": "[《好的代码就像写给接手者的一封情书》](https://addyosmani.com/blog/good-code/)",
-    "content": "\n\n\n\n扎克伯格、贝佐斯、比尔·盖茨、马斯克，这些人有一个共同点，就是都有有钱的父母。\n\n-- [《每个白手起家的百万富翁背后》](https://medium.com/@moh.aboelez/mark-zuckerberg-jeff-bezos-bill-gates-behind-every-self-made-millionaire-is-a-father-with-money-a69c32218ac4)\n\n美国制造业为什么节节败退？一个重要原因是，美国工人要求更多的工资和更少的工作时间。\n\n",
+    "content": "\n\n\n\n扎克伯格、贝佐斯、比尔·盖茨、马斯克，这些人有一个共同点，就是都有有钱的父母。\n\n",
     "category": "quotation",
     "originHref": "https://addyosmani.com/blog/good-code/",
+    "weekly": 273
+  },
+  {
+    "title": "[《每个白手起家的百万富翁背后》](https://medium.com/@moh.aboelez/mark-zuckerberg-jeff-bezos-bill-gates-behind-every-self-made-millionaire-is-a-father-with-money-a69c32218ac4)",
+    "content": "\n\n美国制造业为什么节节败退？一个重要原因是，美国工人要求更多的工资和更少的工作时间。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@moh.aboelez/mark-zuckerberg-jeff-bezos-bill-gates-behind-every-self-made-millionaire-is-a-father-with-money-a69c32218ac4",
     "weekly": 273
   },
   {
@@ -764,9 +771,16 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=37597244)，评论吉卜力被卖给日本电视网络公司",
-    "content": "\n\n\n\n不要在疲劳的时候写代码。敬业和专业精神，更多地体现在你的纪律性，而不是体现在投入的时间。\n\n-- [Robert C. Martin](https://medium.com/@Fcmam5/trying-to-become-a-better-developer-by-learning-more-about-aviation-5241e7092f7e)（鲍勃大叔），《Clean Coder》的作者\n\n2022年11月，OpenAI 发布了 ChatGPT，突然之间就引发了人们从未见过的技术爆炸，图灵测试成为历史，搜索引擎成为濒临灭绝的物种，任何大学论文都不再可信，没有工作是安全的，没有什么科学问题是一成不变的。\n\n",
+    "content": "\n\n\n\n不要在疲劳的时候写代码。敬业和专业精神，更多地体现在你的纪律性，而不是体现在投入的时间。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=37597244",
+    "weekly": 271
+  },
+  {
+    "title": "[Robert C. Martin](https://medium.com/@Fcmam5/trying-to-become-a-better-developer-by-learning-more-about-aviation-5241e7092f7e)（鲍勃大叔），《Clean Coder》的作者",
+    "content": "\n\n2022年11月，OpenAI 发布了 ChatGPT，突然之间就引发了人们从未见过的技术爆炸，图灵测试成为历史，搜索引擎成为濒临灭绝的物种，任何大学论文都不再可信，没有工作是安全的，没有什么科学问题是一成不变的。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@Fcmam5/trying-to-become-a-better-developer-by-learning-more-about-aviation-5241e7092f7e",
     "weekly": 271
   },
   {
@@ -820,9 +834,16 @@
   },
   {
     "title": "[《实时数据分析是不必要的》](https://mcfunley.com/whom-the-gods-would-destroy-they-first-give-real-time-analytics)",
-    "content": "\n\n点击维基百科条目的第一个链接，不断重复该过程，最终几乎一定会点击到“哲学”条目。\n\n据统计，2016年2月，维基百科97%的文章都是如此。\n\n-- [维基百科](https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy)。对任何问题进行解释，不断深入，最终一定会变成哲学问题。\n\n互联网很可能建立在废弃原则之上：一个好用的新事物出现，同类的现有事物很快就会被废弃。\n\n",
+    "content": "\n\n点击维基百科条目的第一个链接，不断重复该过程，最终几乎一定会点击到“哲学”条目。\n\n据统计，2016年2月，维基百科97%的文章都是如此。\n\n",
     "category": "quotation",
     "originHref": "https://mcfunley.com/whom-the-gods-would-destroy-they-first-give-real-time-analytics",
+    "weekly": 269
+  },
+  {
+    "title": "[维基百科](https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy)。对任何问题进行解释，不断深入，最终一定会变成哲学问题。",
+    "content": "\n\n互联网很可能建立在废弃原则之上：一个好用的新事物出现，同类的现有事物很快就会被废弃。\n\n",
+    "category": "quotation",
+    "originHref": "https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy",
     "weekly": 269
   },
   {
@@ -2346,9 +2367,16 @@
   },
   {
     "title": "[《计划是为了做》](https://biggestfish.substack.com/p/planning-is-for-doing)",
-    "content": "\n\n很多年前，Drupal 是世界最流行的内容管理系统，你可以用它做任何事情，总有一个插件可以提供你需要的功能。\n\n但是，正是这一点成为它的致命伤。几年后，基于它的每一个项目都变得过于复杂且维护成本高昂。\n\n-- [《Drupal 快死了》](https://medium.com/@maximetopolov/drupal-is-dying-6129b4bd3d22)\n\n未来几十年将是一个无序时代：超级大国相互冲突、社会不平等加剧、经济发展缓慢、世代争吵、生态系统恶化、大量人口生活艰难。\n\n",
+    "content": "\n\n很多年前，Drupal 是世界最流行的内容管理系统，你可以用它做任何事情，总有一个插件可以提供你需要的功能。\n\n但是，正是这一点成为它的致命伤。几年后，基于它的每一个项目都变得过于复杂且维护成本高昂。\n\n",
     "category": "quotation",
     "originHref": "https://biggestfish.substack.com/p/planning-is-for-doing",
+    "weekly": 218
+  },
+  {
+    "title": "[《Drupal 快死了》](https://medium.com/@maximetopolov/drupal-is-dying-6129b4bd3d22)",
+    "content": "\n\n未来几十年将是一个无序时代：超级大国相互冲突、社会不平等加剧、经济发展缓慢、世代争吵、生态系统恶化、大量人口生活艰难。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@maximetopolov/drupal-is-dying-6129b4bd3d22",
     "weekly": 218
   },
   {
@@ -2556,9 +2584,16 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=30985795)",
-    "content": "\n\n我们创业失败的原因是，我们改变了自己的方针，从制造人们想要的产品转向制造我们希望人们想要的产品。\n\n-- [Eric Migicovsky](https://medium.com/@ericmigi/why-pebble-failed-d7be937c6232)，智能手表 Pebble 的创始人\n\n人类的语言就是用来描述问题的接口（interface）。你的语言越清晰准确，就越容易描述问题、解决问题。\n\n",
+    "content": "\n\n我们创业失败的原因是，我们改变了自己的方针，从制造人们想要的产品转向制造我们希望人们想要的产品。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=30985795",
+    "weekly": 212
+  },
+  {
+    "title": "[Eric Migicovsky](https://medium.com/@ericmigi/why-pebble-failed-d7be937c6232)，智能手表 Pebble 的创始人",
+    "content": "\n\n人类的语言就是用来描述问题的接口（interface）。你的语言越清晰准确，就越容易描述问题、解决问题。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@ericmigi/why-pebble-failed-d7be937c6232",
     "weekly": 212
   },
   {
@@ -2660,7 +2695,7 @@
     "weekly": 209
   },
   {
-    "title": "[知乎网友](https://www.zhihu.com/question/295181406/answer/2518670947)",
+    "title": "[知乎网友](https://www.zhihu.com/question/295181406/answer/2518670947)（[@daGaiGuanYu](https://github.com/ruanyf/weekly/issues/2438) 投稿）",
     "content": "\n\n我们不搞培养制，我们没有责任培养你，我们是选拔制，选拔更优秀的人上来，在全公司和全世界范围内选拔优秀者，落后者我们就淘汰。\n\n",
     "category": "quotation",
     "originHref": "https://github.com/ruanyf/weekly/issues/2438",
@@ -2913,9 +2948,16 @@
   },
   {
     "title": "[Bruce Dawson](https://randomascii.wordpress.com/2022/01/12/5-5-mm-in-1-25-nanoseconds/)",
-    "content": "\n\nNFT 绝对不会为你提供艺术品的版权、使用权或所有权，没有任何一个国家的法律承认 NFT。\n\n你购买 NFT，实际得到的只是一张收据，其他什么都没有。NFT 的有趣之处是，它让你可以倒卖这张收据。\n\n-- [《教你关于 NFT 的知识》](https://medium.com/@Timoth3y/what-three-card-monte-can-teach-you-about-nfts-48d9fcf38be7)\n\n缓慢的、持久的、有纪律的努力，最终会导致令人难以置信的结果。\n\n每当我无法忍受日常生活时，我就提醒自己，没有什么比每天坚持做下去更重要了。虽然我很难看到未来会怎样，但我知道持久性具有强大的威力，就像一句古老格言说的“继续去做”（keep doing）。\n\n",
+    "content": "\n\nNFT 绝对不会为你提供艺术品的版权、使用权或所有权，没有任何一个国家的法律承认 NFT。\n\n你购买 NFT，实际得到的只是一张收据，其他什么都没有。NFT 的有趣之处是，它让你可以倒卖这张收据。\n\n",
     "category": "quotation",
     "originHref": "https://randomascii.wordpress.com/2022/01/12/5-5-mm-in-1-25-nanoseconds/",
+    "weekly": 199
+  },
+  {
+    "title": "[《教你关于 NFT 的知识》](https://medium.com/@Timoth3y/what-three-card-monte-can-teach-you-about-nfts-48d9fcf38be7)",
+    "content": "\n\n缓慢的、持久的、有纪律的努力，最终会导致令人难以置信的结果。\n\n每当我无法忍受日常生活时，我就提醒自己，没有什么比每天坚持做下去更重要了。虽然我很难看到未来会怎样，但我知道持久性具有强大的威力，就像一句古老格言说的“继续去做”（keep doing）。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@Timoth3y/what-three-card-monte-can-teach-you-about-nfts-48d9fcf38be7",
     "weekly": 199
   },
   {
@@ -3339,7 +3381,7 @@
     "weekly": 185
   },
   {
-    "title": "[马斯克](https://www.cnbc.com/2021/11/19/elon-musk-emails-at-tesla-in-october-2021-music-direct-orders.html)今年10月发给所有特斯拉经理的内部邮件",
+    "title": "[马斯克](https://www.cnbc.com/2021/11/19/elon-musk-emails-at-tesla-in-october-2021-music-direct-orders.html)今年10月发给所有特斯拉经理的内部邮件（[@jwenjian](https://github.com/ruanyf/weekly/issues/2080) 投稿）",
     "content": "\n\n5G 手机需要更多的天线和更大的电池，所以手机尺寸不会变小，制造小手机将很困难。\n\n",
     "category": "quotation",
     "originHref": "https://github.com/ruanyf/weekly/issues/2080",
@@ -4243,9 +4285,16 @@
   },
   {
     "title": "[《我如何收购一家 SaaS 公司》](https://every.to/superorganizers/how-i-bought-a-business-for-0)",
-    "content": "\n\n以前是其它行业的公司购买软件，现在是某一个公司创建一种软件，然后使用自己的软件进入该行业，并对这个行业加以改造。\n\n--[《超越软件》](https://www.ben-evans.com/benedictevans/2021/3/18/outgrowing-software)\n\n2020年，音乐产业的总收入不到200亿美元，是20年前的一半。流媒体的发展，大大缩小了音乐市场的产值。\n\n--[《超越软件》](https://www.ben-evans.com/benedictevans/2021/3/18/outgrowing-software)\n\n\n\n有些计算机语言，运算可能会返回空值（null），这是一个设计错误，因为会中断类型系统，你将无法依靠编译器来检查代码的有效性。\n\n任何可能为 null 的值都是等待爆炸的炸弹。我们必须依靠运行时手动检查来确保所处理的值不为 null。即使是静态类型语言，null 也剥夺了类型系统的许多好处。\n\n-- [《可变状态是新的 Goto》](https://web.archive.org/web/20210224005240/https://medium.com/better-programming/goto-destroys-lives-7636dd9201dd)\n\n项目做完了，员工都闲着，老板会让这些人立即投入到下一个项目中。毕竟每天都在烧钱，是不可能等主创人员想清楚再开工的。\n\n反过来，这些人力也会给项目负责人带来压力，必须尽快做决策，以免让员工闲着没事干。这种情况下，能做出多少正确的决策？\n\n",
+    "content": "\n\n以前是其它行业的公司购买软件，现在是某一个公司创建一种软件，然后使用自己的软件进入该行业，并对这个行业加以改造。\n\n--[《超越软件》](https://www.ben-evans.com/benedictevans/2021/3/18/outgrowing-software)\n\n2020年，音乐产业的总收入不到200亿美元，是20年前的一半。流媒体的发展，大大缩小了音乐市场的产值。\n\n--[《超越软件》](https://www.ben-evans.com/benedictevans/2021/3/18/outgrowing-software)\n\n\n\n有些计算机语言，运算可能会返回空值（null），这是一个设计错误，因为会中断类型系统，你将无法依靠编译器来检查代码的有效性。\n\n任何可能为 null 的值都是等待爆炸的炸弹。我们必须依靠运行时手动检查来确保所处理的值不为 null。即使是静态类型语言，null 也剥夺了类型系统的许多好处。\n\n",
     "category": "quotation",
     "originHref": "https://every.to/superorganizers/how-i-bought-a-business-for-0",
+    "weekly": 150
+  },
+  {
+    "title": "[《可变状态是新的 Goto》](https://web.archive.org/web/20210224005240/https://medium.com/better-programming/goto-destroys-lives-7636dd9201dd)",
+    "content": "\n\n项目做完了，员工都闲着，老板会让这些人立即投入到下一个项目中。毕竟每天都在烧钱，是不可能等主创人员想清楚再开工的。\n\n反过来，这些人力也会给项目负责人带来压力，必须尽快做决策，以免让员工闲着没事干。这种情况下，能做出多少正确的决策？\n\n",
+    "category": "quotation",
+    "originHref": "https://web.archive.org/web/20210224005240/https://medium.com/better-programming/goto-destroys-lives-7636dd9201dd",
     "weekly": 150
   },
   {
@@ -5412,9 +5461,23 @@
   },
   {
     "title": "[《JavaScript 语言准备提出新的时间和日期 API》](https://news.ycombinator.com/item?id=23781819)",
-    "content": "\n\n许多 AI 研究人员追求的目标是开发与人类智能原理相同的人工智能，但是这永远不可能实现，因为人的思维基本上没有算法。\n\n--[《为什么将无法实现通用人工智能》](https://www.nature.com/articles/s41599-020-0494-4)\n\n\n\n看到抽象的东西，应该尽量使它变得具体；看到具体的东西，应该尽量使它变得抽象。\n\n-- 李敖\n\n创业公司不要专注于创造产品，而要专注于解决问题。\n\n-- [《创业公司要创造客户不期望的产品》](https://medium.com/@jproco/why-your-startup-needs-to-build-the-product-your-customers-arent-expecting-8d769054db53)\n\n创新型的创业公司，一开始的目标用户应该是对新产品最有兴趣的那2％的人群，并设法与剩下的那 98％的人建立一座桥梁，把那些人推向未来。\n\n-- [《创业公司要创造客户不期望的产品》](https://medium.com/@jproco/why-your-startup-needs-to-build-the-product-your-customers-arent-expecting-8d769054db53)\n\nNPM 现在有130万个软件包，绝大部分都不是长期维护的。即使你找到一个长期维护的软件包，它可能会有10层或更多的依赖，涉及其他数百个包，你根本不可能每一个都去验证。\n\n",
+    "content": "\n\n许多 AI 研究人员追求的目标是开发与人类智能原理相同的人工智能，但是这永远不可能实现，因为人的思维基本上没有算法。\n\n--[《为什么将无法实现通用人工智能》](https://www.nature.com/articles/s41599-020-0494-4)\n\n\n\n看到抽象的东西，应该尽量使它变得具体；看到具体的东西，应该尽量使它变得抽象。\n\n-- 李敖\n\n创业公司不要专注于创造产品，而要专注于解决问题。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=23781819",
+    "weekly": 115
+  },
+  {
+    "title": "[《创业公司要创造客户不期望的产品》](https://medium.com/@jproco/why-your-startup-needs-to-build-the-product-your-customers-arent-expecting-8d769054db53)",
+    "content": "\n\n创新型的创业公司，一开始的目标用户应该是对新产品最有兴趣的那2％的人群，并设法与剩下的那 98％的人建立一座桥梁，把那些人推向未来。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@jproco/why-your-startup-needs-to-build-the-product-your-customers-arent-expecting-8d769054db53",
+    "weekly": 115
+  },
+  {
+    "title": "[《创业公司要创造客户不期望的产品》](https://medium.com/@jproco/why-your-startup-needs-to-build-the-product-your-customers-arent-expecting-8d769054db53)",
+    "content": "\n\nNPM 现在有130万个软件包，绝大部分都不是长期维护的。即使你找到一个长期维护的软件包，它可能会有10层或更多的依赖，涉及其他数百个包，你根本不可能每一个都去验证。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@jproco/why-your-startup-needs-to-build-the-product-your-customers-arent-expecting-8d769054db53",
     "weekly": 115
   },
   {
@@ -5895,9 +5958,16 @@
   },
   {
     "title": "[《牛津英语词典如何诞生》](https://www.abc.net.au/news/2020-04-09/history-of-the-oxford-english-dictionary/12010628)",
-    "content": "\n\n病毒的全球大流行，证明了国家之间的相互依存关系，希望这件事不会造成这种关系的终结。\n\n-- [《冠状病毒将留给我们什么》](https://medium.com/@farainechikwiranechz/what-the-coronavirus-will-leave-on-us-8ea4d540005f)\n\n我通过删除 WordPress 的 Mailchimp 插件中 20 KB 的 JavaScript 依赖关系，每月估计减少了59,000 公斤的二氧化碳排放量。\n\n",
+    "content": "\n\n病毒的全球大流行，证明了国家之间的相互依存关系，希望这件事不会造成这种关系的终结。\n\n",
     "category": "quotation",
     "originHref": "https://www.abc.net.au/news/2020-04-09/history-of-the-oxford-english-dictionary/12010628",
+    "weekly": 102
+  },
+  {
+    "title": "[《冠状病毒将留给我们什么》](https://medium.com/@farainechikwiranechz/what-the-coronavirus-will-leave-on-us-8ea4d540005f)",
+    "content": "\n\n我通过删除 WordPress 的 Mailchimp 插件中 20 KB 的 JavaScript 依赖关系，每月估计减少了59,000 公斤的二氧化碳排放量。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@farainechikwiranechz/what-the-coronavirus-will-leave-on-us-8ea4d540005f",
     "weekly": 102
   },
   {
@@ -6126,9 +6196,16 @@
   },
   {
     "title": "[《科学家北冰洋的漂流实验》](https://www.npr.org/2019/12/04/784691513/polar-bears-ice-cracks-and-isolation-scientists-drift-across-the-arctic-ocean)",
-    "content": "\n\n2018年，世界卫生组织的报告称，5-29岁人口的主要死因是交通事故，全世界估计每年有135万人死于车祸。其中，94％的情况是驾驶员有过错。\n\n解决此问题的方法：不要让人类开车。\n\n-- [《无人驾驶汽车兴起的原因》](https://medium.com/@sarveshmathi/what-drives-a-driverless-car-5a5f43367354)\n\n我发现，报纸的阅读体验极好。一切都是静态的，加载时间为零（基本上就是翻页的时间）。\n\n与之形成鲜明对比的是，当今的新闻网站已经变得臃肿不堪，每页需要加载50种静态资源，即使是宽带，速度也非常缓慢。\n\n",
+    "content": "\n\n2018年，世界卫生组织的报告称，5-29岁人口的主要死因是交通事故，全世界估计每年有135万人死于车祸。其中，94％的情况是驾驶员有过错。\n\n解决此问题的方法：不要让人类开车。\n\n",
     "category": "quotation",
     "originHref": "https://www.npr.org/2019/12/04/784691513/polar-bears-ice-cracks-and-isolation-scientists-drift-across-the-arctic-ocean",
+    "weekly": 96
+  },
+  {
+    "title": "[《无人驾驶汽车兴起的原因》](https://medium.com/@sarveshmathi/what-drives-a-driverless-car-5a5f43367354)",
+    "content": "\n\n我发现，报纸的阅读体验极好。一切都是静态的，加载时间为零（基本上就是翻页的时间）。\n\n与之形成鲜明对比的是，当今的新闻网站已经变得臃肿不堪，每页需要加载50种静态资源，即使是宽带，速度也非常缓慢。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@sarveshmathi/what-drives-a-driverless-car-5a5f43367354",
     "weekly": 96
   },
   {
@@ -6938,9 +7015,16 @@
   },
   {
     "title": "[《乔布斯签名的 Pixar 海报》](https://www.cnet.com/news/toy-story-poster-signed-by-steve-jobs-sells-for-31000/)",
-    "content": "\n\n2010年3月，一个比特币的价格是0.003美元，2017年12月17日是19,783.06美元。\n\n-- [《投资比特币之前要考虑的事情》](https://medium.com/@janithkasun/thing-you-need-to-consider-before-investing-in-bitcoins-1b3261f009a7)\n\n每一天很长，但几十年很短。\n\n",
+    "content": "\n\n2010年3月，一个比特币的价格是0.003美元，2017年12月17日是19,783.06美元。\n\n",
     "category": "quotation",
     "originHref": "https://www.cnet.com/news/toy-story-poster-signed-by-steve-jobs-sells-for-31000/",
+    "weekly": 74
+  },
+  {
+    "title": "[《投资比特币之前要考虑的事情》](https://medium.com/@janithkasun/thing-you-need-to-consider-before-investing-in-bitcoins-1b3261f009a7)",
+    "content": "\n\n每一天很长，但几十年很短。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@janithkasun/thing-you-need-to-consider-before-investing-in-bitcoins-1b3261f009a7",
     "weekly": 74
   },
   {
@@ -6973,9 +7057,16 @@
   },
   {
     "title": "[Nassim Nicholas Taleb，《黑天鹅》的作者](https://www.goodreads.com/quotes/612389-the-three-most-harmful-addictions-are-heroin-carbohydrates-and-a)",
-    "content": "\n\n\n\n2011年，旧金山创业公司的种子轮风投平均为50万美元；2018年，种子轮平均达到了210万美元。\n\n-- [Medium 文章](https://medium.com/@sbuss/software-was-eating-the-world-now-landlords-are-eating-everything-e21ba6802f54)\n\n大气中，氧气占20.95％，浓度为 209500 ppm。相比之下，二氧化碳浓度为 405 ppm。1990年以来，人类活动导致氧气浓度下降约0.005％，可以忽略不计，但是二氧化碳浓度上升了37ppm，即10％。\n\n--[《亚马逊提供20％的氧气吗？》](http://www.yadvindermalhi.org/blog/does-the-amazon-provide-20-of-our-oxygen)\n\n学习编程很酷的一点是，你会同时获得两个专长。一个专长是计算机科学和编程，另一个是需要你来编程的那个专门领域。除非你是编译器作者，否则你总是会有自己的专门领域。\n\n",
+    "content": "\n\n\n\n2011年，旧金山创业公司的种子轮风投平均为50万美元；2018年，种子轮平均达到了210万美元。\n\n",
     "category": "quotation",
     "originHref": "https://www.goodreads.com/quotes/612389-the-three-most-harmful-addictions-are-heroin-carbohydrates-and-a",
+    "weekly": 72
+  },
+  {
+    "title": "[Medium 文章](https://medium.com/@sbuss/software-was-eating-the-world-now-landlords-are-eating-everything-e21ba6802f54)",
+    "content": "\n\n大气中，氧气占20.95％，浓度为 209500 ppm。相比之下，二氧化碳浓度为 405 ppm。1990年以来，人类活动导致氧气浓度下降约0.005％，可以忽略不计，但是二氧化碳浓度上升了37ppm，即10％。\n\n--[《亚马逊提供20％的氧气吗？》](http://www.yadvindermalhi.org/blog/does-the-amazon-provide-20-of-our-oxygen)\n\n学习编程很酷的一点是，你会同时获得两个专长。一个专长是计算机科学和编程，另一个是需要你来编程的那个专门领域。除非你是编译器作者，否则你总是会有自己的专门领域。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@sbuss/software-was-eating-the-world-now-landlords-are-eating-everything-e21ba6802f54",
     "weekly": 72
   },
   {
@@ -7022,9 +7113,16 @@
   },
   {
     "title": "[一位美国国会议员](https://www.forbes.com/sites/ktorpey/2019/07/30/us-lawmakers-are-realizing-they-cant-ban-bitcoin/#545406523e31)",
-    "content": "\n\n我在美国时，在和IBM、 CISCO、LUCENT等几个大公司领导讨论问题时谈到，IT是什么？他们说，IT就是裁员、裁员、再裁员。以电子流来替代人工的操作，以降低运作成本，增强企业竞争力。\n\n-- 任正非《华为的冬天》，2001年\n\n尼日利亚人平均60％的收入用于食品，这意味着，你卖给普通尼日利亚人的任何东西都与食物竞争。\n\n在尼日利亚东北部，121％的收入用于食品。这意味着，花光所有收入，也只能吃八成饱。\n\n由于人口增长快于 GDP，尼日利亚是全球唯一一个人均国内生产总值在过去20年中稳步下降的国家。\n\n-- [《尼日利亚市场规模之谜》](https://medium.com/@drola/the-mystery-of-market-size-in-nigeria-a7c863f537bb)\n\n\n\n软件的运行速度快，说明这个软件是专注的。\n\n",
+    "content": "\n\n我在美国时，在和IBM、 CISCO、LUCENT等几个大公司领导讨论问题时谈到，IT是什么？他们说，IT就是裁员、裁员、再裁员。以电子流来替代人工的操作，以降低运作成本，增强企业竞争力。\n\n-- 任正非《华为的冬天》，2001年\n\n尼日利亚人平均60％的收入用于食品，这意味着，你卖给普通尼日利亚人的任何东西都与食物竞争。\n\n在尼日利亚东北部，121％的收入用于食品。这意味着，花光所有收入，也只能吃八成饱。\n\n由于人口增长快于 GDP，尼日利亚是全球唯一一个人均国内生产总值在过去20年中稳步下降的国家。\n\n",
     "category": "quotation",
     "originHref": "https://www.forbes.com/sites/ktorpey/2019/07/30/us-lawmakers-are-realizing-they-cant-ban-bitcoin/#545406523e31",
+    "weekly": 70
+  },
+  {
+    "title": "[《尼日利亚市场规模之谜》](https://medium.com/@drola/the-mystery-of-market-size-in-nigeria-a7c863f537bb)",
+    "content": "\n\n\n\n软件的运行速度快，说明这个软件是专注的。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@drola/the-mystery-of-market-size-in-nigeria-a7c863f537bb",
     "weekly": 69
   },
   {
@@ -7134,9 +7232,16 @@
   },
   {
     "title": "[《为什么我们睡眠》](https://www.amazon.com/Why-We-Sleep-Unlocking-Dreams/dp/1501144316/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=nort0ff-20&linkId=b85f86fc2007f212b2d540d3551f1d17&language=en_US)",
-    "content": "\n\n一旦语言足够复杂，编程就好像从所有功能之中选择一个子集，其他大多数功能我们从来没有学过。\n\n一旦语言感觉是无限的，增加更多功能的成本就不再明显了。\n\n-- [《为什么大型语言会爆炸》](https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9)\n\n\n\n世界上我最佩服的勇士是蜘蛛，不管狂风暴雨，不畏任何艰难困苦，不管网破碎多少次，它仍孜孜不倦的用它纤细的丝织补。数千年来没有人去赞美蜘蛛，它们仍然勤奋，不屈不挠，生生不息。\n\n我最欣赏的是蜜蜂，由于它给人们蜂蜜，尽管它多螫，人们都对它赞不绝口。不管您如何称赞，蜜蜂仍孜孜不倦的酿蜜，天天埋头苦干，并不因为赞美产蜜少一些。胜不骄，败不馁，从他们身上完全反射出来。在荣誉与失败面前，平静得象一湖水，这就是华为应具有的心胸与内涵。\n\n",
+    "content": "\n\n一旦语言足够复杂，编程就好像从所有功能之中选择一个子集，其他大多数功能我们从来没有学过。\n\n一旦语言感觉是无限的，增加更多功能的成本就不再明显了。\n\n",
     "category": "quotation",
     "originHref": "https://www.amazon.com/Why-We-Sleep-Unlocking-Dreams/dp/1501144316/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=nort0ff-20&linkId=b85f86fc2007f212b2d540d3551f1d17&language=en_US",
+    "weekly": 65
+  },
+  {
+    "title": "[《为什么大型语言会爆炸》](https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9)",
+    "content": "\n\n\n\n世界上我最佩服的勇士是蜘蛛，不管狂风暴雨，不畏任何艰难困苦，不管网破碎多少次，它仍孜孜不倦的用它纤细的丝织补。数千年来没有人去赞美蜘蛛，它们仍然勤奋，不屈不挠，生生不息。\n\n我最欣赏的是蜜蜂，由于它给人们蜂蜜，尽管它多螫，人们都对它赞不绝口。不管您如何称赞，蜜蜂仍孜孜不倦的酿蜜，天天埋头苦干，并不因为赞美产蜜少一些。胜不骄，败不馁，从他们身上完全反射出来。在荣誉与失败面前，平静得象一湖水，这就是华为应具有的心胸与内涵。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9",
     "weekly": 64
   },
   {
@@ -7183,9 +7288,16 @@
   },
   {
     "title": "[斯蒂芬·霍金](https://www.quantamagazine.org/physicists-debate-hawkings-idea-that-the-universe-had-no-beginning-20190606/)",
-    "content": "\n\n我们为电影起名《阿丽塔：战斗天使》（Alita: Battle Angel），因为开拍之前，就想好了第二集和第三集的名字，分别是《阿丽塔：堕落天使》（Alita: Fallen Angel）和《阿丽塔：复仇天使》（Alita: Avenging Angel）。\n\n-- [导演卡麦隆](https://en.wikipedia.org/wiki/Alita:_Battle_Angel#Future)谈电影《阿丽塔：战斗天使》\n\n\n\n年轻时，我认为旅行是人生重要的事情。但是现在，我意识到旅行不是如此。它没有那么让人兴奋，也算不上成就，跟其他的消费行为没有太大区别。\n\n旅行中，我们真正感兴趣的东西，都是那些留在原地、努力建设的人们创造出来的。\n\n",
+    "content": "\n\n我们为电影起名《阿丽塔：战斗天使》（Alita: Battle Angel），因为开拍之前，就想好了第二集和第三集的名字，分别是《阿丽塔：堕落天使》（Alita: Fallen Angel）和《阿丽塔：复仇天使》（Alita: Avenging Angel）。\n\n",
     "category": "quotation",
     "originHref": "https://www.quantamagazine.org/physicists-debate-hawkings-idea-that-the-universe-had-no-beginning-20190606/",
+    "weekly": 63
+  },
+  {
+    "title": "[导演卡麦隆](https://en.wikipedia.org/wiki/Alita:_Battle_Angel#Future)谈电影《阿丽塔：战斗天使》",
+    "content": "\n\n\n\n年轻时，我认为旅行是人生重要的事情。但是现在，我意识到旅行不是如此。它没有那么让人兴奋，也算不上成就，跟其他的消费行为没有太大区别。\n\n旅行中，我们真正感兴趣的东西，都是那些留在原地、努力建设的人们创造出来的。\n\n",
+    "category": "quotation",
+    "originHref": "https://en.wikipedia.org/wiki/Alita:_Battle_Angel#Future",
     "weekly": 62
   },
   {
@@ -7540,9 +7652,16 @@
   },
   {
     "title": "[Paul Kingsnorth](http://paulkingsnorth.net/2015/10/23/planting-trees-in-the-anthropocene/)",
-    "content": "\n\n\n\n全周期工程师就是一个人负责完整的软件生命周期：设计，开发，测试，部署，操作和支持。\n\n-- [《从全栈工程师到全周期工程师》](https://medium.com/@eminetto/full-stack-vs-full-cycle-developer-2a454942291b)\n\n只有大型工业，才会让人口大量聚集在一小块地方，愿意不干净地挤在一起生活。\n\n-- T.E.劳伦斯《智慧七柱》\n\n磁带储存数据有一个好处，要是断了，只要把两头再连起来，依然可以读取文件，只丢了断掉的那部分。\n\n",
+    "content": "\n\n\n\n全周期工程师就是一个人负责完整的软件生命周期：设计，开发，测试，部署，操作和支持。\n\n",
     "category": "quotation",
     "originHref": "http://paulkingsnorth.net/2015/10/23/planting-trees-in-the-anthropocene/",
+    "weekly": 50
+  },
+  {
+    "title": "[《从全栈工程师到全周期工程师》](https://medium.com/@eminetto/full-stack-vs-full-cycle-developer-2a454942291b)",
+    "content": "\n\n只有大型工业，才会让人口大量聚集在一小块地方，愿意不干净地挤在一起生活。\n\n-- T.E.劳伦斯《智慧七柱》\n\n磁带储存数据有一个好处，要是断了，只要把两头再连起来，依然可以读取文件，只丢了断掉的那部分。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@eminetto/full-stack-vs-full-cycle-developer-2a454942291b",
     "weekly": 50
   },
   {
@@ -7596,9 +7715,16 @@
   },
   {
     "title": "[《Lambda 和 无服务器将锁定你》](https://www.theregister.co.uk/2017/11/06/coreos_kubernetes_v_world/)",
-    "content": "\n\n如果你跟风险投资家说，你的项目将使得他们三年内获得3倍的回报，他们可能根本不会进行投资。每年50％的回报率不值得他们花时间。\n\n这是因为所有风投项目如果有1/3提供3倍的回报，其余的都失败了，那么这个风投基金将一无所获。\n\n-- [《我们未能建立一个10亿美元的公司》](https://medium.com/@jimgreer/we-also-failed-to-build-a-billion-dollar-company-b7a2aab742cf)\n\n我的80多岁的阿姨说，她没有太大困难适应新事物，但是她无法适应旧东西的消失。\n\n",
+    "content": "\n\n如果你跟风险投资家说，你的项目将使得他们三年内获得3倍的回报，他们可能根本不会进行投资。每年50％的回报率不值得他们花时间。\n\n这是因为所有风投项目如果有1/3提供3倍的回报，其余的都失败了，那么这个风投基金将一无所获。\n\n",
     "category": "quotation",
     "originHref": "https://www.theregister.co.uk/2017/11/06/coreos_kubernetes_v_world/",
+    "weekly": 48
+  },
+  {
+    "title": "[《我们未能建立一个10亿美元的公司》](https://medium.com/@jimgreer/we-also-failed-to-build-a-billion-dollar-company-b7a2aab742cf)",
+    "content": "\n\n我的80多岁的阿姨说，她没有太大困难适应新事物，但是她无法适应旧东西的消失。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@jimgreer/we-also-failed-to-build-a-billion-dollar-company-b7a2aab742cf",
     "weekly": 48
   },
   {
@@ -7736,9 +7862,16 @@
   },
   {
     "title": "[理查德·费曼](https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230)",
-    "content": "\n\n“X公司使用的是什么语言”，这种话毫无意义，编程语言与公司的成功关系不大。某个公司使用哪种语言，主要是早期创始人的偏好。\n\n-- [《论编程语言的选择》](https://medium.com/@nemshilov/on-choosing-programming-languages-8281c6f370b2)\n\n学习函数式编程对我产生的影响是，让我更加关注哪些概念自然地被视为“对象”，哪些概念是不可变的“值”。\n\n我还会更加注意，我的代码是否包含副作用，从而更谨慎地隔离这些地方，使代码更多是“纯的”，这大大提高了我的面向对象代码的可测试性。\n\n",
+    "content": "\n\n“X公司使用的是什么语言”，这种话毫无意义，编程语言与公司的成功关系不大。某个公司使用哪种语言，主要是早期创始人的偏好。\n\n",
     "category": "quotation",
     "originHref": "https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230",
+    "weekly": 43
+  },
+  {
+    "title": "[《论编程语言的选择》](https://medium.com/@nemshilov/on-choosing-programming-languages-8281c6f370b2)",
+    "content": "\n\n学习函数式编程对我产生的影响是，让我更加关注哪些概念自然地被视为“对象”，哪些概念是不可变的“值”。\n\n我还会更加注意，我的代码是否包含副作用，从而更谨慎地隔离这些地方，使代码更多是“纯的”，这大大提高了我的面向对象代码的可测试性。\n\n",
+    "category": "quotation",
+    "originHref": "https://medium.com/@nemshilov/on-choosing-programming-languages-8281c6f370b2",
     "weekly": 43
   },
   {
@@ -8156,9 +8289,16 @@
   },
   {
     "title": "[Philip Greenspun](http://blogs.harvard.edu/philg/2018/09/18/is-data-scientist-the-new-programmer/)，麻省理工学院的计算机教授",
-    "content": "\n\n\n\n我把许可证授予 IBM、它的顾客、合作者和下属公司，允许他们使用 JSLint 做坏事。\n\n-- [JSLint 许可证](https://web.archive.org/web/20170722132351/https://dev.hasenj.org/post/3272592502/ibm-and-its-minions)写着：\"这个软件只能用于善事，不得用于邪恶\"。由于善和恶的含义很难准确定义，IBM 公司的律师要求找到开发者 Douglas Crockford 要求给予 IBM 特别许可，Douglas Crockford 就在许可证里面加了上面一行。\n\n我们购买任何商品时，支付价格不包括商品的全部成本。我们没有支付商品回收处理的成本，也没有支付修复环境的成本，更没有支付应对生产过程中排放的二氧化碳的成本。换句话说，每一件商品里面都包含后代支付给我们的大量补贴。\n\n",
+    "content": "\n\n\n\n我把许可证授予 IBM、它的顾客、合作者和下属公司，允许他们使用 JSLint 做坏事。\n\n",
     "category": "quotation",
     "originHref": "http://blogs.harvard.edu/philg/2018/09/18/is-data-scientist-the-new-programmer/",
+    "weekly": 22
+  },
+  {
+    "title": "[JSLint 许可证](https://web.archive.org/web/20170722132351/https://dev.hasenj.org/post/3272592502/ibm-and-its-minions)写着：\"这个软件只能用于善事，不得用于邪恶\"。由于善和恶的含义很难准确定义，IBM 公司的律师要求找到开发者 Douglas Crockford 要求给予 IBM 特别许可，Douglas Crockford 就在许可证里面加了上面一行。",
+    "content": "\n\n我们购买任何商品时，支付价格不包括商品的全部成本。我们没有支付商品回收处理的成本，也没有支付修复环境的成本，更没有支付应对生产过程中排放的二氧化碳的成本。换句话说，每一件商品里面都包含后代支付给我们的大量补贴。\n\n",
+    "category": "quotation",
+    "originHref": "https://web.archive.org/web/20170722132351/https://dev.hasenj.org/post/3272592502/ibm-and-its-minions",
     "weekly": 22
   },
   {

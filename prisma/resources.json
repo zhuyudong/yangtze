@@ -1261,9 +1261,16 @@
   },
   {
     "title": "[Spring 中文文档](https://springdoc.cn/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023051802.webp)\n\n网友整理的 Spring 框架中文文档。\n[维基大学](https://en.wikiversity.org/wiki/Wikiversity:Main_Page)\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102716.webp)\n\n维基百科的官方项目，志愿者在这个网站制作各种主题的开放课程，已经有很多课程了。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023051802.webp)\n\n网友整理的 Spring 框架中文文档。\n",
     "category": "resource",
     "originHref": "https://springdoc.cn/",
+    "weekly": 255
+  },
+  {
+    "title": "[维基大学](https://en.wikiversity.org/wiki/Wikiversity:Main_Page)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102716.webp)\n\n维基百科的官方项目，志愿者在这个网站制作各种主题的开放课程，已经有很多课程了。\n\n",
+    "category": "resource",
+    "originHref": "https://en.wikiversity.org/wiki/Wikiversity:Main_Page",
     "weekly": 255
   },
   {
@@ -3228,9 +3235,16 @@
   },
   {
     "title": "[区块链工程师的学习材料](https://betterprogramming.pub/how-to-become-a-blockchain-engineer-fa4386a0504f)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021121802.webp)\n\n这个网页列出了区块链工程师的英文学习。\n\n[软件工程师书单推荐](https://medium.com/@iamjwr/software-engineer-roadmap-via-books-a6aabdc2589c)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021122005.webp)\n\n作者推荐了12本英文专业书籍，推荐软件工程师阅读。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021121802.webp)\n\n这个网页列出了区块链工程师的英文学习。\n\n",
     "category": "resource",
     "originHref": "https://betterprogramming.pub/how-to-become-a-blockchain-engineer-fa4386a0504f",
+    "weekly": 193
+  },
+  {
+    "title": "[软件工程师书单推荐](https://medium.com/@iamjwr/software-engineer-roadmap-via-books-a6aabdc2589c)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021122005.webp)\n\n作者推荐了12本英文专业书籍，推荐软件工程师阅读。\n\n\n\n",
+    "category": "resource",
+    "originHref": "https://medium.com/@iamjwr/software-engineer-roadmap-via-books-a6aabdc2589c",
     "weekly": 192
   },
   {
@@ -3466,7 +3480,14 @@
   },
   {
     "title": "[comp.lang.c FAQ](http://c-faq.com/)",
-    "content": "\n\n免费的英文电子书，以问答形式介绍 C 语言的基本语法，都是作者早年在网上回答网友问题时写的。\n\n**“元宇宙” 网站**\n\n据说，下面三个是目前最具有“元宇宙”特征的网站。它们都允许用户拥有虚拟土地，在上面构建自己的世界，创造一种独特的体验。\n\n---![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091409.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091410.jpg)\n\n",
+    "content": "\n\n免费的英文电子书，以问答形式介绍 C 语言的基本语法，都是作者早年在网上回答网友问题时写的。\n\n",
+    "category": "resource",
+    "originHref": "http://c-faq.com/",
+    "weekly": 186
+  },
+  {
+    "title": "**“元宇宙” 网站**",
+    "content": "\n\n据说，下面三个是目前最具有“元宇宙”特征的网站。它们都允许用户拥有虚拟土地，在上面构建自己的世界，创造一种独特的体验。\n\n---![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091409.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091410.jpg)\n\n",
     "category": "resource",
     "originHref": "http://c-faq.com/",
     "weekly": 186
@@ -3662,9 +3683,16 @@
   },
   {
     "title": "[Javascript 游戏基础教程](https://codeincomplete.com/articles/javascript-game-foundations/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091607.jpg)\n\n这个英文教程一共10节课，教你使用 JavaScript 开发一个网页游戏。\n\n[“一证通查”电话卡服务](https://getsimnum.caict.ac.cn/)\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091503.jpg)\n\n工信部推出的官方服务，查看个人名下登记了多少张电话卡。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091607.jpg)\n\n这个英文教程一共10节课，教你使用 JavaScript 开发一个网页游戏。\n\n",
     "category": "resource",
     "originHref": "https://codeincomplete.com/articles/javascript-game-foundations/",
+    "weekly": 180
+  },
+  {
+    "title": "[“一证通查”电话卡服务](https://getsimnum.caict.ac.cn/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091503.jpg)\n\n工信部推出的官方服务，查看个人名下登记了多少张电话卡。\n\n",
+    "category": "resource",
+    "originHref": "https://getsimnum.caict.ac.cn/",
     "weekly": 180
   },
   {
@@ -4698,9 +4726,16 @@
   },
   {
     "title": "[Learn X by doing Y](https://aquadzn.github.io/learn-x-by-doing-y)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021021107.jpg)\n\n这个网站收集以学习为目的各种实战教程（比如自己动手写数据库、编译器等等），按照计算机语言进行分类，帮助读者快速查找可以自己动手做的简单项目。\n\n[Youtube 计算机科学课程](https://web.archive.org/web/20210210143025/https://laconicml.com/computer-science-curriculum-youtube-videos/)\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021021105.jpg)\n\nYoutube 上面有很多优秀的计算机科学的免费教学视频，本文整理了一张清单，列出了其中最好的一些课程，覆盖计算机本科的所有领域。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021021107.jpg)\n\n这个网站收集以学习为目的各种实战教程（比如自己动手写数据库、编译器等等），按照计算机语言进行分类，帮助读者快速查找可以自己动手做的简单项目。\n\n",
     "category": "resource",
     "originHref": "https://aquadzn.github.io/learn-x-by-doing-y",
+    "weekly": 147
+  },
+  {
+    "title": "[Youtube 计算机科学课程](https://web.archive.org/web/20210210143025/https://laconicml.com/computer-science-curriculum-youtube-videos/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021021105.jpg)\n\nYoutube 上面有很多优秀的计算机科学的免费教学视频，本文整理了一张清单，列出了其中最好的一些课程，覆盖计算机本科的所有领域。\n\n",
+    "category": "resource",
+    "originHref": "https://web.archive.org/web/20210210143025/https://laconicml.com/computer-science-curriculum-youtube-videos/",
     "weekly": 147
   },
   {
@@ -5685,9 +5720,16 @@
   },
   {
     "title": "[如何管理 Redis 数据库](https://www.digitalocean.com/community/books/how-to-manage-a-redis-database-ebook)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020080610.jpg)\n\nDigitalOcean 发布的免费英文电子书，向初学者介绍什么是 Redis 和它的基本用法。\n\n[BUI App 开发教程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyNjQxNjUwMg==&action=getalbum&album_id=1338511290868006913&subscene=159&subscene=158&scenenote=https://mp.weixin.qq.com/s?__biz=MzIyNjQxNjUwMg==&mid=2247483675&idx=1&sn=fc494fc7e05dd5d05c2049e04816190d&chksm=e8718302df060a14dc64d5ffddc76c319fd7cbfc8f7ac9c2ca09975a5431f23e85309cdb1820&scene=158#rd#wechat_redirect)\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020080902.jpg)\n\nBUI 是一个国产的移动端 H5 框架，这是框架作者写的系列教程，演示如何用 BUI 开发一个网易新闻 App。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020080610.jpg)\n\nDigitalOcean 发布的免费英文电子书，向初学者介绍什么是 Redis 和它的基本用法。\n\n",
     "category": "resource",
     "originHref": "https://www.digitalocean.com/community/books/how-to-manage-a-redis-database-ebook",
+    "weekly": 120
+  },
+  {
+    "title": "[BUI App 开发教程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyNjQxNjUwMg==&action=getalbum&album_id=1338511290868006913&subscene=159&subscene=158&scenenote=https://mp.weixin.qq.com/s?__biz=MzIyNjQxNjUwMg==&mid=2247483675&idx=1&sn=fc494fc7e05dd5d05c2049e04816190d&chksm=e8718302df060a14dc64d5ffddc76c319fd7cbfc8f7ac9c2ca09975a5431f23e85309cdb1820&scene=158#rd#wechat_redirect)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020080902.jpg)\n\nBUI 是一个国产的移动端 H5 框架，这是框架作者写的系列教程，演示如何用 BUI 开发一个网易新闻 App。\n\n\n",
+    "category": "resource",
+    "originHref": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyNjQxNjUwMg==&action=getalbum&album_id=1338511290868006913&subscene=159&subscene=158&scenenote=https://mp.weixin.qq.com/s?__biz=MzIyNjQxNjUwMg==&mid=2247483675&idx=1&sn=fc494fc7e05dd5d05c2049e04816190d&chksm=e8718302df060a14dc64d5ffddc76c319fd7cbfc8f7ac9c2ca09975a5431f23e85309cdb1820&scene=158#rd#wechat_redirect",
     "weekly": 119
   },
   {
@@ -6336,9 +6378,16 @@
   },
   {
     "title": "[Unity 官方教程](https://learn.unity.com/)",
-    "content": "\n\nUnity 是一个游戏开发引擎，它的官方教程现在免费开放3个月，从零教你写一个 3D 游戏，教程质量相当高。\n\n![](https://cdn.beekka.com/blogimg/asset/202003/bg2020032704.jpg)\n\n[D3.js 教程](https://observablehq.com/@d3/learn-d3)\n\nD3.js 是功能强大、使用最广泛的 JavaScript 可视化图形库，这组九篇的系列文章是最新的入门教程。\n\n![](https://cdn.beekka.com/blogimg/asset/202003/bg2020032705.jpg)\n\n",
+    "content": "\n\nUnity 是一个游戏开发引擎，它的官方教程现在免费开放3个月，从零教你写一个 3D 游戏，教程质量相当高。\n\n![](https://cdn.beekka.com/blogimg/asset/202003/bg2020032704.jpg)\n\n",
     "category": "resource",
     "originHref": "https://learn.unity.com/",
+    "weekly": 101
+  },
+  {
+    "title": "[D3.js 教程](https://observablehq.com/@d3/learn-d3)",
+    "content": "\n\nD3.js 是功能强大、使用最广泛的 JavaScript 可视化图形库，这组九篇的系列文章是最新的入门教程。\n\n![](https://cdn.beekka.com/blogimg/asset/202003/bg2020032705.jpg)\n\n",
+    "category": "resource",
+    "originHref": "https://observablehq.com/@d3/learn-d3",
     "weekly": 101
   },
   {
@@ -6462,9 +6511,16 @@
   },
   {
     "title": "[货币汇率 API](https://currencyscoop.com/)",
-    "content": "\n\n该网站提供免费货币汇率的 JSON API。\n\n[GameBoy 模拟器教程：使用 JavaScript 语言](http://imrannazar.com/GameBoy-Emulation-in-JavaScript:-The-CPU)\n\n这组系列文章讲解，如何用 JavaScript 语言模拟 GameBoy 的硬件，可以用来了解硬件知识。\n\n",
+    "content": "\n\n该网站提供免费货币汇率的 JSON API。\n\n",
     "category": "resource",
     "originHref": "https://currencyscoop.com/",
+    "weekly": 97
+  },
+  {
+    "title": "[GameBoy 模拟器教程：使用 JavaScript 语言](http://imrannazar.com/GameBoy-Emulation-in-JavaScript:-The-CPU)",
+    "content": "\n\n这组系列文章讲解，如何用 JavaScript 语言模拟 GameBoy 的硬件，可以用来了解硬件知识。\n\n",
+    "category": "resource",
+    "originHref": "http://imrannazar.com/GameBoy-Emulation-in-JavaScript:-The-CPU",
     "weekly": 97
   },
   {
@@ -6805,9 +6861,16 @@
   },
   {
     "title": "[微积分图说教程](https://0a.io/chapter1/calculus-explained.html)",
-    "content": "\n\n一篇英文的微积分入门教程，使用图片解释微积分的基本概念。\n\n[古埃及女王头像的 3D 打印源文件](https://www.thingiverse.com/thing:3974391)\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019120103.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019120104.jpg)\n\n古埃及女王 Nefertiti 的头像制作于公元前1345年，是柏林博物馆的镇馆之宝。现在，这个头像的 3D 打印源文件放上了网，可以免费下载。这次扫描的精度非常高，可以打印出跟原件完全一致的复制品。\n\n\n\n",
+    "content": "\n\n一篇英文的微积分入门教程，使用图片解释微积分的基本概念。\n\n",
     "category": "resource",
     "originHref": "https://0a.io/chapter1/calculus-explained.html",
+    "weekly": 87
+  },
+  {
+    "title": "[古埃及女王头像的 3D 打印源文件](https://www.thingiverse.com/thing:3974391)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019120103.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019120104.jpg)\n\n古埃及女王 Nefertiti 的头像制作于公元前1345年，是柏林博物馆的镇馆之宝。现在，这个头像的 3D 打印源文件放上了网，可以免费下载。这次扫描的精度非常高，可以打印出跟原件完全一致的复制品。\n\n\n\n",
+    "category": "resource",
+    "originHref": "https://www.thingiverse.com/thing:3974391",
     "weekly": 86
   },
   {
@@ -8828,9 +8891,16 @@
   },
   {
     "title": "[《几何原本》在线版](https://www.c82.net/euclid/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201901/bg2019011813.jpg)\n\n在线还原1847年的欧几里得《几何原本》的彩色版本。\n[页面加载动画](https://medium.com/@ann.green/loading-indicators-e9d9ac9680b)\n\n这篇文章收集了近20个加载页面的优秀动画效果。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201901/bg2019011813.jpg)\n\n在线还原1847年的欧几里得《几何原本》的彩色版本。\n",
     "category": "resource",
     "originHref": "https://www.c82.net/euclid/",
+    "weekly": 40
+  },
+  {
+    "title": "[页面加载动画](https://medium.com/@ann.green/loading-indicators-e9d9ac9680b)",
+    "content": "\n\n这篇文章收集了近20个加载页面的优秀动画效果。\n\n",
+    "category": "resource",
+    "originHref": "https://medium.com/@ann.green/loading-indicators-e9d9ac9680b",
     "weekly": 40
   },
   {
@@ -9591,9 +9661,16 @@
   },
   {
     "title": "[计算机之前的计算设备](http://ed-thelen.org/comp-hist/CBC.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018092117.jpg)\n\n这是一本免费电子书，介绍计算机出现之前的人类计算设备，从算盘、差分机、穿孔计算机，直到电子计算器。\n\n\n\n[Windows 2000 的浏览器版](https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/win2k.cfg&mem=192&graphic=1&w=1024&h=768)\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018091415.jpg)\n\nWindows 2000 通过 WebAssembly，可以在浏览器里运行了。\n\n[数据挖掘教材](https://www-users.cs.umn.edu/~kumar001/dmbook/index.php)\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018091416.jpg)\n\n《数据挖掘》（第二版）这本书本身没有全部开源，这个网页提供了所有章节的 PPT 教辅材料和实验代码。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018092117.jpg)\n\n这是一本免费电子书，介绍计算机出现之前的人类计算设备，从算盘、差分机、穿孔计算机，直到电子计算器。\n\n\n\n",
     "category": "resource",
     "originHref": "http://ed-thelen.org/comp-hist/CBC.html",
+    "weekly": 22
+  },
+  {
+    "title": "[Windows 2000 的浏览器版](https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/win2k.cfg&mem=192&graphic=1&w=1024&h=768)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018091415.jpg)\n\nWindows 2000 通过 WebAssembly，可以在浏览器里运行了。\n\n[数据挖掘教材](https://www-users.cs.umn.edu/~kumar001/dmbook/index.php)\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018091416.jpg)\n\n《数据挖掘》（第二版）这本书本身没有全部开源，这个网页提供了所有章节的 PPT 教辅材料和实验代码。\n\n",
+    "category": "resource",
+    "originHref": "https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/win2k.cfg&mem=192&graphic=1&w=1024&h=768",
     "weekly": 22
   },
   {

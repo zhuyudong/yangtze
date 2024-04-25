@@ -3507,7 +3507,7 @@
     "weekly": 241
   },
   {
-    "title": "[开源](https://github.com/huajian-pro/resume-design)的简历制作网站。",
+    "title": "[开源](https://github.com/huajian-pro/resume-design)的简历制作网站。([@Hacker233](https://github.com/ruanyf/weekly/issues/2879) 投稿",
     "content": ")\n\n1一个国产的 IDE，支持 Python 和 SQL，适用于数据工程师。\n\n\n",
     "category": "tool",
     "originHref": "https://github.com/ruanyf/weekly/issues/2879",
@@ -12048,9 +12048,16 @@
   },
   {
     "title": "[JSON Generator](https://next.json-generator.com/)",
-    "content": "\n\n一个生成虚拟 JSON 数据的在线，可以根据给定的模式，自动生成 JSON 数据。\n\n1一种安全令牌的数据格式，比 JWT 更安全，同类项目还有。\n\n\n\n[Messenger 桌面版](https://www.microsoft.com/en-us/p/messenger/9wzdncrf0083#activetab=pivot:overviewtab)\n\n![](https://cdn.beekka.com/blogimg/asset/202004/bg2020040302.jpg)\n\n脸书宣布，为了适应激增的通话量，通信软件 Messenger 推出桌面版，提供免费的无限量多人视频聊天。上面是 Windows 版的下载链接，Mac 版下载在。\n\n",
+    "content": "\n\n一个生成虚拟 JSON 数据的在线，可以根据给定的模式，自动生成 JSON 数据。\n\n1一种安全令牌的数据格式，比 JWT 更安全，同类项目还有。\n\n\n\n",
     "category": "tool",
     "originHref": "https://next.json-generator.com/",
+    "weekly": 102
+  },
+  {
+    "title": "[Messenger 桌面版](https://www.microsoft.com/en-us/p/messenger/9wzdncrf0083#activetab=pivot:overviewtab)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202004/bg2020040302.jpg)\n\n脸书宣布，为了适应激增的通话量，通信软件 Messenger 推出桌面版，提供免费的无限量多人视频聊天。上面是 Windows 版的下载链接，Mac 版下载在。\n\n",
+    "category": "tool",
+    "originHref": "https://www.microsoft.com/en-us/p/messenger/9wzdncrf0083#activetab=pivot:overviewtab",
     "weekly": 102
   },
   {
@@ -13315,9 +13322,16 @@
   },
   {
     "title": "[imgproxy](https://github.com/imgproxy/imgproxy)",
-    "content": "\n\n一个 Go 语言写的图片代理网关，可以代理远程图片，并且提供格式转换和大小缩放功能。\n\n[WebTest.app](https://webtest.app/?url=https://www.sina.com.cn)\n\n一个在线，比较广告拦截器对指定网址加载速度的影响，比如少了多少个请求、页面总体积下降多少。\n\n",
+    "content": "\n\n一个 Go 语言写的图片代理网关，可以代理远程图片，并且提供格式转换和大小缩放功能。\n\n",
     "category": "tool",
     "originHref": "https://github.com/imgproxy/imgproxy",
+    "weekly": 82
+  },
+  {
+    "title": "[WebTest.app](https://webtest.app/?url=https://www.sina.com.cn)",
+    "content": "\n\n一个在线，比较广告拦截器对指定网址加载速度的影响，比如少了多少个请求、页面总体积下降多少。\n\n",
+    "category": "tool",
+    "originHref": "https://webtest.app/?url=https://www.sina.com.cn",
     "weekly": 82
   },
   {
@@ -14589,9 +14603,16 @@
   },
   {
     "title": "[几枝](https://chrome.google.com/webstore/detail/%E5%87%A0%E6%9E%9D/hfohpokminpknagcgncibpacohagppjn)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019062826.jpg)\n\nChrome 浏览器的插件，在新标签页展示中国传统色的层叠波浪动画效果，搭配经典诗词。\n[“吐个槽”反馈平台](https://tucao.qq.com/)\n\n腾讯推出的，几行代码就可以为页面加入一个互动社区，可以接入应用程序、小程序、WEB、H微信公众号等各端。\n1一个 Node.js 的静态网站生成器，类似 Hugo，但是支持 Vue、React 或其他前端框架编写 UI。\n1一个 npm 模块，可以作为 `git commit` 的钩子，检查 Git 提交信息的格式是否正确。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019062826.jpg)\n\nChrome 浏览器的插件，在新标签页展示中国传统色的层叠波浪动画效果，搭配经典诗词。\n",
     "category": "tool",
     "originHref": "https://chrome.google.com/webstore/detail/%E5%87%A0%E6%9E%9D/hfohpokminpknagcgncibpacohagppjn",
+    "weekly": 62
+  },
+  {
+    "title": "[“吐个槽”反馈平台](https://tucao.qq.com/)",
+    "content": "\n\n腾讯推出的，几行代码就可以为页面加入一个互动社区，可以接入应用程序、小程序、WEB、H微信公众号等各端。\n1一个 Node.js 的静态网站生成器，类似 Hugo，但是支持 Vue、React 或其他前端框架编写 UI。\n1一个 npm 模块，可以作为 `git commit` 的钩子，检查 Git 提交信息的格式是否正确。\n\n\n",
+    "category": "tool",
+    "originHref": "https://tucao.qq.com/",
     "weekly": 61
   },
   {
@@ -14855,9 +14876,16 @@
   },
   {
     "title": "[香港地铁站的颜色](http://metrocolor.live/index.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201903/bg2019030120.jpg)\n\n一个 CSS 颜色库，使用每一个香港地铁站的颜色命名 CSS 变量。\n\n[rbx](https://medium.com/@dfee/introducing-rbx-8bd358197b)\n\n![](https://cdn.beekka.com/blogimg/asset/201903/bg2019030121.jpg)\n\n基于 CSS 框架 Bluma 的 React 组件库。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201903/bg2019030120.jpg)\n\n一个 CSS 颜色库，使用每一个香港地铁站的颜色命名 CSS 变量。\n\n",
     "category": "tool",
     "originHref": "http://metrocolor.live/index.html",
+    "weekly": 45
+  },
+  {
+    "title": "[rbx](https://medium.com/@dfee/introducing-rbx-8bd358197b)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201903/bg2019030121.jpg)\n\n基于 CSS 框架 Bluma 的 React 组件库。\n\n",
+    "category": "tool",
+    "originHref": "https://medium.com/@dfee/introducing-rbx-8bd358197b",
     "weekly": 45
   },
   {
@@ -16920,9 +16948,16 @@
   },
   {
     "title": "[mkcert](https://github.com/FiloSottile/mkcert)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201807/bg2018070616.jpg)\n\n生成本地 HTTPS 加密证书的，一个命令就可以生成证书，不需要任何配置。图片是就是它默认为 localhost 生成的加密证书。\n\n[lightify](https://medium.com/@alash3al/speed-any-website-by-3-4x-without-any-hassle-97ab34974dbc)\n\n一个反向代理服务器，主要特点是进行了各种优化和压缩，号称可以把网站速度提高3到4倍。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201807/bg2018070616.jpg)\n\n生成本地 HTTPS 加密证书的，一个命令就可以生成证书，不需要任何配置。图片是就是它默认为 localhost 生成的加密证书。\n\n",
     "category": "tool",
     "originHref": "https://github.com/FiloSottile/mkcert",
+    "weekly": 12
+  },
+  {
+    "title": "[lightify](https://medium.com/@alash3al/speed-any-website-by-3-4x-without-any-hassle-97ab34974dbc)",
+    "content": "\n\n一个反向代理服务器，主要特点是进行了各种优化和压缩，号称可以把网站速度提高3到4倍。\n\n\n\n",
+    "category": "tool",
+    "originHref": "https://medium.com/@alash3al/speed-any-website-by-3-4x-without-any-hassle-97ab34974dbc",
     "weekly": 11
   },
   {
