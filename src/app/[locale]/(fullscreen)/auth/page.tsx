@@ -1,7 +1,7 @@
 'use client'
 
 import axios from 'axios'
-import { redirect, useRouter } from 'next/navigation'
+import { redirect } from 'next/navigation'
 import { signIn, useSession } from 'next-auth/react'
 import { useCallback, useState } from 'react'
 import { FaGithub } from 'react-icons/fa'
@@ -15,8 +15,6 @@ const Auth = () => {
   if (session) {
     redirect('/')
   }
-
-  const router = useRouter()
 
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
@@ -39,12 +37,10 @@ const Auth = () => {
         redirect: false,
         callbackUrl: '/'
       })
-
-      router.push('/')
     } catch (error) {
       console.log(error)
     }
-  }, [email, password, router])
+  }, [email, password])
 
   const register = useCallback(async () => {
     try {
@@ -61,10 +57,8 @@ const Auth = () => {
   }, [email, name, password, login])
 
   return (
-    // bg-[url('/images/hero.jpg')] bg-cover bg-fixed bg-center bg-no-repeat
-    <div className="relative size-full min-h-screen">
-      {/* lg:bg-opacity/50  bg-black */}
-      <div className="size-full">
+    <div className="relative size-full min-h-screen bg-[url('/images/OHR.BorromeanIslands_ZH-CN0480730115_1920x1080.jpg&rf=LaDigue_1920x1080.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
+      <div className="size-full bg-black lg:bg-opacity-50">
         {/* <nav className="px-12 py-5">
           <img src="/images/logo.png" className="h-12" alt="Logo" />
         </nav> */}

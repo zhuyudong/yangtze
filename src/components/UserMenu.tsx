@@ -27,7 +27,7 @@ export function UserMenu() {
             className="inline-block size-8 rounded-full"
             width={32}
             height={32}
-            src={(session?.user.image as string) || '/images/default-blue.png'}
+            src={(session?.user?.image as string) || '/images/default-blue.png'}
             alt=""
             // onClick={() => signOut()}
           />

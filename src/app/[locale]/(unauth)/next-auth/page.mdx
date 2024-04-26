@@ -1,0 +1,172 @@
+# next-auth tutorial
+
+## 环境变量设置
+
+> .env
+
+```bash
+NEXTAUTH_JWT_SECRET=uDnS3UmJzgYSUjRjzr1CHQuLUNSTPegfDH3AMlpWdLg=
+NEXTAUTH_SECRET=uDnS3UmJzgYSUjRjzr1CHQuLUNSTPegfDH3AMlpWdLg=
+```
+
+## auth options 配置
+
+> src/server/auth.ts
+
+```ts
+import type { NextAuthOptions } from 'next-auth'
+const authOptions: NextAuthOptions = {}
+```
+
+## 登录/登出
+
+发起登录
+
+```tsx
+import { signIn } from 'next-auth/react'
+
+// 页面组件用户事件内
+await signIn('credentials', {
+  username,
+  password,
+  callbackUrl: '/'
+})
+```
+
+退出登录
+
+```tsx
+import { signOut } from 'next-auth/react'
+
+// 页面组件用户事件内
+await signOut()
+```
+
+## 服务端组件获取 session
+
+【方式 1】使用 next-auth 自带的 `getServerSession`，亦可用于 api 中
+
+```tsx
+import { getServerSession } from 'next-auth'
+
+export default async function Protected() {
+  const session = await getServerAuthSession()
+  return <main>{/*...*/}</main>
+}
+```
+
+如 Google 方式登录，session 如下
+
+```json
+{
+  "user": {
+    "name": "朱玉东",
+    "email": "yudong8.zhu@gmail.com",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocLrS23_9KNopcH53pY--K-hwAS7O_qfcy1sq5kYo57yu0lKmw=s96-c"
+  }
+}
+```
+
+【方式 2】使用基于 getServerSession 封装的函数
+
+> src/server/auth.ts
+
+```ts
+/**
+ * Wrapper for `getServerSession` so that you don't need to import the `authOptions` in every file.
+ *
+ * @see https://next-auth.js.org/configuration/nextjs
+ */
+export const getServerAuthSession = () => getServerSession(authOptions)
+```
+
+服务端页面组件内
+
+```tsx
+export default async function Protected() {
+  const session = await getServerAuthSession()
+  return <main>{/*...*/}</main>
+}
+```
+
+## 登录后产生的数据
+
+未登录时会在 LocalStorage 里自动写入 Name: `nextauth.message`, Value: `{"event":"session","data":{"trigger":"getSession"},"timestamp":1714116733}`
+
+登陆成功后会在 Cookies 里种入
+
+| name                    | Value                           | Doamin    | Path | Expires/Max-Age          | Size | HttpOnly | Secure | SameSite | Patition Key | Priority |
+| :---------------------- | :------------------------------ | :-------- | :--- | :----------------------- | :--- | :------- | :----- | :------- | :----------- | :------- |
+| next-auth.callback-url  | http://localhost:3000/protected | localhost | /    | Session                  | 63   | √        |        | Lax      |              | Medium   |
+| next-auth.csrf-token    | 001dd1...                       | localhost | /    | Session                  | 63   | √        |        | Lax      |              | Medium   |
+| next-auth.session-token | eyJhbG...                       | localhost | /    | 2024-05-26T07:32:13.822Z | 464  | √        |        | Lax      |              | Medium   |
+
+服务端组件通过 `await getServerSession()` 获取的信息示例如下
+
+```tsx
+import { getServerSession } from 'next-auth'
+
+export default async function Protected() {
+  const session = await getServerSession()
+  return <main>{/*...*/}</main>
+}
+```
+
+session
+
+```json
+{
+  "user": {
+    "name": "朱玉东",
+    "email": "yudong8.zhu@gmail.com",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocLrS23_9KNopcH53pY--K-hwAS7O_qfcy1sq5kYo57yu0lKmw=s96-c"
+  }
+}
+```
+
+## 使用 Google 登录
+
+### 登录
+
+- `GET /api/auth/providers`
+- `POST /api/auth/signin/google`
+  使用 application/x-www-form-urlencoded 格式
+
+  ```bash
+  csrfToken: 001dd1f0066e777f3ba84a82c706c1d6e2049c4692193c50e1580822cc1f527b
+  callbackUrl: http://localhost:3000/protected
+  json:true
+  ```
+
+- `GET /api/auth/session`
+
+  ```json
+  {
+    "user": {
+      "name": "朱玉东",
+      "email": "yudong8.zhu@gmail.com",
+      "image": "https://lh3.googleusercontent.com/a/ACg8ocLrS23_9KNopcH53pY--K-hwAS7O_qfcy1sq5kYo57yu0lKmw=s96-c"
+    },
+    "expires": "2024-05-26T07:57:54.198Z"
+  }
+  ```
+
+### 退出登录
+
+- `GET /api/auth/csrf`
+- `POST /api/auth/signout`
+
+  使用 application/x-www-form-urlencoded 格式
+
+  ```bash
+  csrfToken: 001dd1f0066e777f3ba84a82c706c1d6e2049c4692193c50e1580822cc1f527b
+  callbackUrl: http://localhost:3000/protected
+  json:true
+  ```
+
+- `GET /api/auth/session`
+  response
+
+  ```json
+  {}
+  ```

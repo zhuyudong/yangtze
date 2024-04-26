@@ -29,8 +29,8 @@ async function handler(req: NextRequest) {
         email,
         name,
         hashedPassword,
-        image: '',
-        emailVerified: new Date()
+        image: ''
+        // emailVerified: new Date()
       }
     })
 

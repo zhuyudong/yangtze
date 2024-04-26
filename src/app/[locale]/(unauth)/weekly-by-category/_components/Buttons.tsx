@@ -12,16 +12,17 @@ export function Buttons({
   return (
     <span className="isolate mt-2 inline-flex rounded-sm shadow-sm">
       {items.map((i, ix) => {
+        console.log(15, i, typeof i, current, typeof current, i === current)
         return (
           <button
             key={i}
             type="button"
             onClick={() => onClick(i)}
             className={clsx(
-              'relative -ml-px  inline-flex items-center bg-white px-6 py-1 text-sm font-light text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10',
+              'relative -ml-px inline-flex items-center bg-white px-6 py-1 text-sm font-light text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10',
               ix === 0 && 'rounded-l-sm',
               ix === items.length - 1 && 'rounded-r-sm',
-              i === current && 'bg-gray-400'
+              i === current && '!bg-gray-300'
             )}
           >
             {i}

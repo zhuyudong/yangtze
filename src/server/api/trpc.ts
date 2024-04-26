@@ -92,7 +92,7 @@ export const publicProcedure = t.procedure
 //   if (!ctx.session || !ctx.session.user) {
 //     throw new TRPCError({ code: "UNAUTHORIZED" });
 //   }
-//   Sentry.setUser({ id: ctx.session.user.id });
+//   Sentry.setUser({ id: ctx.session.user?.id });
 //   return next({
 //     ctx: {
 //       // infers the `session` as non-nullable

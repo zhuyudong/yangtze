@@ -91,7 +91,7 @@ export default function Contents(props: {
   return (
     <Wrapper>
       <h1>{props.title}</h1>
-      <div className="mb-3 space-x-3">
+      <div className="mb-4 space-x-3">
         <span className="mb-1 inline-block text-sm text-gray-700">
           items/page:
         </span>
