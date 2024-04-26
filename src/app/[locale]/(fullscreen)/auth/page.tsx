@@ -4,9 +4,9 @@ import axios from 'axios'
 import { redirect } from 'next/navigation'
 import { signIn, useSession } from 'next-auth/react'
 import { useCallback, useState } from 'react'
-import { FaGithub } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 
+import { GitHubIcon } from '@/components/icons/GithubIcon'
 import { Input } from '@/components/Input'
 
 const Auth = () => {
@@ -58,12 +58,12 @@ const Auth = () => {
 
   return (
     <div className="relative size-full min-h-screen bg-[url('/images/OHR.BorromeanIslands_ZH-CN0480730115_1920x1080.jpg&rf=LaDigue_1920x1080.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
-      <div className="size-full bg-black lg:bg-opacity-50">
+      <div className="size-full bg-black bg-opacity-10 lg:bg-opacity-10">
         {/* <nav className="px-12 py-5">
           <img src="/images/logo.png" className="h-12" alt="Logo" />
         </nav> */}
         <div className="flex min-h-screen justify-center">
-          <div className="bg-opacity/70 lg:bg-opacity/50 mt-2 w-full self-center rounded-md bg-black p-16 lg:w-2/5 lg:max-w-lg">
+          <div className="mt-2 w-full self-center rounded-md bg-black bg-opacity-35 p-16 lg:w-2/5 lg:max-w-lg lg:bg-opacity-35">
             <h2 className="mb-8 text-4xl font-semibold text-white">
               {variant === 'login' ? 'Sign in' : 'Register'}
             </h2>
@@ -82,7 +82,7 @@ const Auth = () => {
               <Input
                 id="email"
                 type="email"
-                label="Email address or phone number"
+                label="Email address" // or phone number
                 value={email}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                   setEmail(e.target.value)
@@ -115,10 +115,11 @@ const Auth = () => {
                 onClick={() => signIn('github', { callbackUrl: '/' })}
                 className="hover:opacity/80 flex size-10 cursor-pointer items-center justify-center rounded-full bg-white transition"
               >
-                <FaGithub size={32} />
+                {/* <FaGithub size={32} /> */}
+                <GitHubIcon className="size-8" />
               </div>
             </div>
-            <p className="mt-12 text-neutral-500">
+            <p className="mt-12 text-neutral-300">
               {variant === 'login'
                 ? 'First time using Yangtze?'
                 : 'Already have an account?'}

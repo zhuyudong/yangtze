@@ -94,3 +94,9 @@ blockquote p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+img[src^="https://img.shields.io"] {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}

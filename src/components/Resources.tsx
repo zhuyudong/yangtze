@@ -201,7 +201,7 @@ const leisureStation: Array<IResource> = [
   },
   {
     href: '/poetry',
-    name: '诗词 - 陶冶情操',
+    name: '诗词',
     description: '',
     icon: BookIcon,
     pattern: {
