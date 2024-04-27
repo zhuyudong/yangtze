@@ -27,9 +27,7 @@ const findContents = async (params: Parameters) => {
   )
 }
 
-// eslint-disable-next-line unused-imports/no-unused-vars
-export const useContents = () => {
-  // params?: Parameters
+export const useContents = (params?: Parameters) => {
   // const c = window.location.pathname
   //   .match(/weekly-by-category\/([a-zA-Z-]+)/)?.[1]
   //   .slice(0, -1)
@@ -40,22 +38,22 @@ export const useContents = () => {
       return findContents({
         category:
           _params?.category ||
-          // params?.category ||
+          params?.category ||
           (currentCategory as WeeklyCategory),
         page_number:
           _params?.page_number ||
-          // params?.page_number ||
+          params?.page_number ||
           (currentCategory && pageNumber[currentCategory as WeeklyCategory]) ||
           1,
         page_size:
           _params?.page_size ||
-          // params?.page_size ||
+          params?.page_size ||
           (currentCategory && pageSize[currentCategory as WeeklyCategory]) ||
           20
       })
     },
     {
-      manual: true
+      // manual: true
       // onSuccess(data, params) {
       //   console.log('onSuccess', data, params)
       // }

@@ -37,6 +37,7 @@ async function handler(
       },
       orderBy: {
         weekly: 'desc'
+        // createdAt: 'desc'
       },
       skip,
       take

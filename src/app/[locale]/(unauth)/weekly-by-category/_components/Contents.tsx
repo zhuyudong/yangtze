@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 import { useSession } from 'next-auth/react'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { toast } from 'sonner'
 
 // import { Loading } from '@/components/Loading'
@@ -34,38 +34,14 @@ export default function Contents({
   category: WeeklyCategory
 }) {
   const { data: session } = useSession()
-  const { data, run, mutate: mutateContents } = useContents() // { category }
+  const { data, run, mutate: mutateContents } = useContents({ category })
   const { data: currentUser } = useCurrentUser()
-  const {
-    currentCategory,
-    setCurrentCategory,
-    pageSize,
-    pageNumber,
-    setPageSize,
-    setPageNumber
-  } = usePagination()
+  const { pageSize, pageNumber, setPageSize, setPageNumber } = usePagination()
   const [favoritedEnabled, setFavoritedEnabled] = useState(false)
   const [likedEnabled, setLikedEnabled] = useState(false)
   const [hiddenNoInterestedEnabled, setHiddenNoInterestedEnabled] =
     useState(false)
   const { mutate: mutateCurrentUser } = useCurrentUser()
-
-  useEffect(() => {
-    if (currentCategory !== category) {
-      setCurrentCategory(category)
-      run({
-        category,
-        page_number: pageNumber[category],
-        page_size: pageSize[category]
-      })
-    } else {
-      run({
-        category: currentCategory,
-        page_number: pageNumber[category],
-        page_size: pageSize[category]
-      })
-    }
-  }, [currentCategory, category, setCurrentCategory])
 
   const res = useMemo(() => {
     return {
@@ -130,13 +106,14 @@ export default function Contents({
         })
       }
       const updatedFavoriteIds = response?.data?.favoriteIds as string[]
+
       mutateCurrentUser({ ...currentUser!, favoriteIds: updatedFavoriteIds })
       mutateContents(_data => {
-        _data?.data.data.map(i => {
+        _data!.data.data = _data!.data.data.map(i => {
           if (i.id === id) {
             return {
               ...i,
-              favorites: response?.data?.contents?.[id]?.favorites || []
+              favorites: response?.data?.contents?.[id].favorites
             }
           }
           return i
@@ -168,11 +145,11 @@ export default function Contents({
       const updatedLikeIds = response?.data?.likedIds as string[]
       mutateCurrentUser({ ...currentUser!, likedIds: updatedLikeIds })
       mutateContents(_data => {
-        _data?.data.data.map(i => {
+        _data!.data.data = _data!.data.data.map(i => {
           if (i.id === id) {
             return {
               ...i,
-              likes: response?.data?.contents?.[id]?.likes || []
+              likes: response?.data?.contents?.[id].likes
             }
           }
           return i
@@ -207,11 +184,11 @@ export default function Contents({
         noInterestedIds: updatedNoInterestedIds
       })
       mutateContents(_data => {
-        _data?.data.data.map(i => {
+        _data!.data.data = _data!.data.data.map(i => {
           if (i.id === id) {
             return {
               ...i,
-              noInteresteds: response?.data?.contents?.[id]?.noInteresteds || []
+              noInteresteds: response?.data?.contents?.[id].noInteresteds
             }
           }
           return i
@@ -263,6 +240,9 @@ export default function Contents({
             title={i.title}
             content={i.content}
             originHref={i.originHref}
+            favorites={i.favorites}
+            likes={i.likes}
+            // noInteresteds={i.noInteresteds}
             isFavorite={currentUser?.favoriteIds?.includes(i.id)}
             isLike={currentUser?.likedIds?.includes(i.id)}
             isNoInterested={currentUser?.noInterestedIds?.includes(i.id)}

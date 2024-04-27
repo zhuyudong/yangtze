@@ -21,6 +21,10 @@ async function handler(req: NextRequest) {
         },
         select: {
           id: true
+        },
+        orderBy: {
+          weekly: 'desc'
+          // createdAt: 'desc'
         }
       })
     ).map(i => i.id)

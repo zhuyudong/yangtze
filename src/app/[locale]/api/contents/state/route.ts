@@ -46,6 +46,7 @@ async function handler(req: NextRequest) {
         },
         orderBy: {
           weekly: 'desc'
+          // createdAt: 'desc'
         }
         // skip,
         // take

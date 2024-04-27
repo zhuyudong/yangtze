@@ -15,8 +15,9 @@ export const Content = ({
   title,
   content,
   originHref,
-  likes,
   favorites,
+  likes,
+  // noInteresteds,
   isFavorite,
   isLike,
   isNoInterested,
@@ -29,8 +30,9 @@ export const Content = ({
   title: string
   content: string
   originHref?: string | null
-  likes?: number
-  favorites?: number
+  favorites: number
+  likes: number
+  // noInteresteds: number
   isFavorite?: boolean
   isLike?: boolean
   isNoInterested?: boolean
