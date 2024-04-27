@@ -1,9 +1,9 @@
 import { CheckIcon, PlusIcon } from '@heroicons/react/24/outline'
-import axios from 'axios'
 import type { FC } from 'react'
 import { useCallback, useMemo } from 'react'
 
 import { useCurrentUser, useFavorites } from '@/hooks'
+import axios from '@/lib/axios'
 
 interface FavoriteButtonProps {
   movieId: string

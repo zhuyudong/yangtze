@@ -2,7 +2,8 @@
 
 import type Prisma from '@prisma/client'
 import { useRequest } from 'ahooks'
-import axios from 'axios'
+
+import axios from '@/lib/axios'
 
 import type { WeeklyCategory } from './use-pagination'
 import { usePagination } from './use-pagination'

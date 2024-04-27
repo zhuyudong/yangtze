@@ -1,6 +1,5 @@
 'use client'
 
-import axios from 'axios'
 import { redirect } from 'next/navigation'
 import { signIn, useSession } from 'next-auth/react'
 import { useCallback, useState } from 'react'
@@ -8,6 +7,7 @@ import { FcGoogle } from 'react-icons/fc'
 
 import { GitHubIcon } from '@/components/icons/GithubIcon'
 import { Input } from '@/components/Input'
+import axios from '@/lib/axios'
 
 const Auth = () => {
   // status: 'loading' | 'authenticated' | 'unauthenticated'
