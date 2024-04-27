@@ -1,6 +1,5 @@
 export * from './use-billboard'
 export * from './use-content-local-state'
-export * from './use-content-remote-state'
 export * from './use-contents'
 export * from './use-current-user'
 export * from './use-data-table'

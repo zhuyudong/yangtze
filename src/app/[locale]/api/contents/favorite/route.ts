@@ -9,6 +9,10 @@ async function handler(req: NextRequest) {
   try {
     const { currentUser } = await serverAuth()
 
+    if (!currentUser) {
+      throw new Error('Please Sign in')
+    }
+
     const { contentId } = await req.json()
 
     const existingContent = await db.content.findUnique({

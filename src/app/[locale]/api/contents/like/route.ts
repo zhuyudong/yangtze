@@ -9,6 +9,10 @@ async function handler(req: NextRequest) {
   try {
     const { currentUser } = await serverAuth()
 
+    if (!currentUser) {
+      throw new Error('Please Sign in')
+    }
+
     const { contentId } = await req.json()
 
     const existingContent = await db.content.findUnique({
@@ -31,6 +35,7 @@ async function handler(req: NextRequest) {
           }
         }
       })
+
       const updatedContent = await db.content.update({
         where: {
           id: contentId
@@ -42,9 +47,9 @@ async function handler(req: NextRequest) {
         }
       })
       return NextResponse.json({
-        favoriteIds: updatedUser.favoriteIds,
-        likes: updatedUser.likedIds,
-        noInteresteds: updatedUser.noInterestedIds,
+        favoriteIds: updatedUser?.favoriteIds || [],
+        likes: updatedUser?.likedIds || [],
+        noInteresteds: updatedUser?.noInterestedIds || [],
         contents: {
           [contentId]: updatedContent
         }
@@ -62,6 +67,7 @@ async function handler(req: NextRequest) {
           likedIds: updatedLikeIds
         }
       })
+
       const updatedContent = await db.content.update({
         where: {
           id: contentId
@@ -73,9 +79,9 @@ async function handler(req: NextRequest) {
         }
       })
       return NextResponse.json({
-        favoriteIds: updatedUser.favoriteIds,
-        likes: updatedUser.likedIds,
-        noInteresteds: updatedUser.noInterestedIds,
+        favoriteIds: updatedUser?.favoriteIds || [],
+        likes: updatedUser?.likedIds || [],
+        noInteresteds: updatedUser?.noInterestedIds || [],
         contents: {
           [contentId]: updatedContent
         }

@@ -21,16 +21,18 @@ async function handler(req: NextRequest) {
         throw new Error('Invalid ID')
       }
 
-      const user = await db.user.update({
-        where: {
-          email: currentUser.email || ''
-        },
-        data: {
-          favoriteIds: {
-            push: movieId
-          }
-        }
-      })
+      const user = currentUser
+        ? await db.user.update({
+            where: {
+              email: currentUser.email || ''
+            },
+            data: {
+              favoriteIds: {
+                push: movieId
+              }
+            }
+          })
+        : null
 
       return NextResponse.json(user)
     }
@@ -50,16 +52,21 @@ async function handler(req: NextRequest) {
         throw new Error('Invalid ID')
       }
 
-      const updatedFavoriteIds = without(currentUser.favoriteIds, movieId)
+      const updatedFavoriteIds = without(
+        currentUser?.favoriteIds || [],
+        movieId
+      )
 
-      const updatedUser = await db.user.update({
-        where: {
-          email: currentUser.email || ''
-        },
-        data: {
-          favoriteIds: updatedFavoriteIds
-        }
-      })
+      const updatedUser = currentUser
+        ? await db.user.update({
+            where: {
+              email: currentUser.email || ''
+            },
+            data: {
+              favoriteIds: updatedFavoriteIds
+            }
+          })
+        : null
 
       return NextResponse.json(updatedUser)
     }

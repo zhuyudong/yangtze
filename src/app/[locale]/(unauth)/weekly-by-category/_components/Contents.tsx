@@ -1,21 +1,20 @@
 'use client'
 
-import { useCallback, useMemo, useState } from 'react'
+import axios from 'axios'
+import { useSession } from 'next-auth/react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { toast } from 'sonner'
 
 // import { Loading } from '@/components/Loading'
 import { wrapper as Wrapper } from '@/components/mdx'
 import type { WeeklyCategory } from '@/hooks'
-import {
-  useContentList,
-  useContentsRemoteState,
-  useCurrentUser,
-  usePagination
-} from '@/hooks'
+import { useContents, useCurrentUser, usePagination } from '@/hooks'
 
 import { Buttons } from './Buttons'
 import { Content } from './Content'
 import { Pagination } from './Pagination'
 import SwitchOpen from './Switch'
+import type { UpdatedContentsResponse } from './types'
 
 type Title =
   | '文章'
@@ -27,18 +26,46 @@ type Title =
   | '科技动态'
   | '开发工具'
 
-export default function Contents(props: {
+export default function Contents({
+  title,
+  category
+}: {
   title: Title
   category: WeeklyCategory
 }) {
-  const { data, run } = useContentList({ category: props.category })
-  const { data: contentsState } = useContentsRemoteState()
+  const { data: session } = useSession()
+  const { data, run, mutate: mutateContents } = useContents() // { category }
   const { data: currentUser } = useCurrentUser()
-  const { pageSize, pageNumber, setPageSize, setPageNumber } = usePagination()
+  const {
+    currentCategory,
+    setCurrentCategory,
+    pageSize,
+    pageNumber,
+    setPageSize,
+    setPageNumber
+  } = usePagination()
   const [favoritedEnabled, setFavoritedEnabled] = useState(false)
   const [likedEnabled, setLikedEnabled] = useState(false)
   const [hiddenNoInterestedEnabled, setHiddenNoInterestedEnabled] =
     useState(false)
+  const { mutate: mutateCurrentUser } = useCurrentUser()
+
+  useEffect(() => {
+    if (currentCategory !== category) {
+      setCurrentCategory(category)
+      run({
+        category,
+        page_number: pageNumber[category],
+        page_size: pageSize[category]
+      })
+    } else {
+      run({
+        category: currentCategory,
+        page_number: pageNumber[category],
+        page_size: pageSize[category]
+      })
+    }
+  }, [currentCategory, category, setCurrentCategory])
 
   const res = useMemo(() => {
     return {
@@ -47,31 +74,29 @@ export default function Contents(props: {
       prev: data?.data.prev,
       next: data?.data.next
     }
-  }, [data?.data.data, pageNumber, pageSize])
+  }, [data?.data.data])
 
   // console.log(data)
 
   const handlePagination = useCallback((page_number: number) => {
-    setPageNumber(props.category, page_number)
-    run({ category: 'article', page_number, page_size: 20 })
+    setPageNumber(category, page_number)
+    run({
+      category,
+      page_number,
+      page_size: pageSize[category]
+    })
   }, [])
 
   const handlePageSize = useCallback(
     (page_size: number | string) => {
-      setPageSize(props.category, page_size as number)
+      setPageSize(category, page_size as number)
       run({
-        category: 'article',
+        category,
         page_number: 1,
         page_size: page_size as number
       })
     },
-    [
-      props.category,
-      run,
-      setPageSize,
-      pageNumber[props.category],
-      pageSize[props.category]
-    ]
+    [category, run, setPageSize, pageNumber[category], pageSize[category]]
   )
 
   const handleOnlyFavorited = useCallback(() => {
@@ -86,18 +111,129 @@ export default function Contents(props: {
     setHiddenNoInterestedEnabled(!hiddenNoInterestedEnabled)
   }, [hiddenNoInterestedEnabled])
 
+  const toggleFavorite = useCallback(
+    async (id: string) => {
+      if (!session) {
+        toast.warning('Please sign in', {
+          position: 'top-center'
+        })
+      }
+      let response: UpdatedContentsResponse
+      const isFavorite = currentUser?.favoriteIds?.includes(id)
+      if (isFavorite) {
+        response = await axios.delete('/api/contents/favorite', {
+          data: { contentId: id }
+        })
+      } else {
+        response = await axios.post(`/api/contents/favorite`, {
+          contentId: id
+        })
+      }
+      const updatedFavoriteIds = response?.data?.favoriteIds as string[]
+      mutateCurrentUser({ ...currentUser!, favoriteIds: updatedFavoriteIds })
+      mutateContents(_data => {
+        _data?.data.data.map(i => {
+          if (i.id === id) {
+            return {
+              ...i,
+              favorites: response?.data?.contents?.[id]?.favorites || []
+            }
+          }
+          return i
+        })
+        return _data
+      })
+    },
+    [currentUser, mutateCurrentUser]
+  )
+
+  const toggleLike = useCallback(
+    async (id: string) => {
+      if (!session) {
+        toast.warning('Please sign in', {
+          position: 'top-center'
+        })
+      }
+      let response: UpdatedContentsResponse
+      const isLike = currentUser?.likedIds?.includes(id)
+      if (isLike) {
+        response = await axios.delete('/api/contents/like', {
+          data: { contentId: id }
+        })
+      } else {
+        response = await axios.post(`/api/contents/like`, {
+          contentId: id
+        })
+      }
+      const updatedLikeIds = response?.data?.likedIds as string[]
+      mutateCurrentUser({ ...currentUser!, likedIds: updatedLikeIds })
+      mutateContents(_data => {
+        _data?.data.data.map(i => {
+          if (i.id === id) {
+            return {
+              ...i,
+              likes: response?.data?.contents?.[id]?.likes || []
+            }
+          }
+          return i
+        })
+        return _data
+      })
+    },
+    [currentUser, mutateCurrentUser]
+  )
+
+  const toggleNoInterested = useCallback(
+    async (id: string) => {
+      if (!session) {
+        toast.warning('Please sign in', {
+          position: 'top-center'
+        })
+      }
+      let response: UpdatedContentsResponse
+      const isNoInterested = currentUser?.noInterestedIds?.includes(id)
+      if (isNoInterested) {
+        response = await axios.delete('/api/contents/nointerested', {
+          data: { contentId: id }
+        })
+      } else {
+        response = await axios.post(`/api/contents/nointerested`, {
+          contentId: id
+        })
+      }
+      const updatedNoInterestedIds = response?.data?.noInterestedIds as string[]
+      mutateCurrentUser({
+        ...currentUser!,
+        noInterestedIds: updatedNoInterestedIds
+      })
+      mutateContents(_data => {
+        _data?.data.data.map(i => {
+          if (i.id === id) {
+            return {
+              ...i,
+              noInteresteds: response?.data?.contents?.[id]?.noInteresteds || []
+            }
+          }
+          return i
+        })
+        return _data
+      })
+    },
+    [currentUser, mutateCurrentUser]
+  )
+
   // if (isLoading) return <Loading />
 
   return (
     <Wrapper>
-      <h1>{props.title}</h1>
+      <h1>{title}</h1>
       <div className="mb-4 space-x-3">
         <span className="mb-1 inline-block text-sm text-gray-700">
           items/page:
         </span>
         <Buttons
-          items={[20, 40, 60]}
-          current={pageSize[props.category]}
+          items={[20, 40, 60, 80, 100]}
+          current={pageSize[category]}
           onClick={handlePageSize}
         />
       </div>
@@ -123,20 +259,22 @@ export default function Contents(props: {
           <Content
             key={i.id}
             id={i.id}
-            ix={
-              (pageNumber[props.category] - 1) * pageSize[props.category] + ix
-            }
+            ix={(pageNumber[category] - 1) * pageSize[category] + ix}
             title={i.title}
             content={i.content}
             originHref={i.originHref}
-            currentUser={currentUser}
-            contentsState={contentsState}
+            isFavorite={currentUser?.favoriteIds?.includes(i.id)}
+            isLike={currentUser?.likedIds?.includes(i.id)}
+            isNoInterested={currentUser?.noInterestedIds?.includes(i.id)}
+            onFavorite={toggleFavorite}
+            onLike={toggleLike}
+            onNoInterested={toggleNoInterested}
           />
         )
       })}
       <Pagination
-        pageNumber={pageNumber[props.category]}
-        pageSize={pageSize[props.category]}
+        pageNumber={pageNumber[category]}
+        pageSize={pageSize[category]}
         total={res.total}
         onClick={handlePagination}
       />

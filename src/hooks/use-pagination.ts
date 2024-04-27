@@ -11,13 +11,16 @@ export type WeeklyCategory =
   | 'tool'
 
 type UsePaginationProps = {
+  currentCategory: WeeklyCategory | null
   pageSize: Record<WeeklyCategory, number>
   pageNumber: Record<WeeklyCategory, number>
+  setCurrentCategory: (category: WeeklyCategory) => void
   setPageSize: (category: string, num: number) => void
   setPageNumber: (category: string, num: number) => void
 }
 
 export const usePagination = create<UsePaginationProps>((set, get) => ({
+  currentCategory: null,
   pageSize: {
     'article': 20,
     'photo': 20,
@@ -38,6 +41,7 @@ export const usePagination = create<UsePaginationProps>((set, get) => ({
     'technology-new': 1,
     'tool': 1
   },
+  setCurrentCategory: category => set(() => ({ currentCategory: category })),
   setPageSize: (category, num) =>
     set(() => ({
       pageSize: {

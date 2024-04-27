@@ -111,7 +111,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
             <MobileSearch />
             <ThemeToggle />
           </div>
-          <div className="hidden min-[416px]:contents">
+          <div className="hidden min-[350px]:contents">
             {session ? <UserMenu /> : <Button href="/auth">Sign in</Button>}
           </div>
         </div>

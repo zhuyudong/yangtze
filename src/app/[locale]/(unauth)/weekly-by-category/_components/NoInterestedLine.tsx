@@ -1,21 +1,19 @@
 import axios from 'axios'
 import { useCallback, useMemo } from 'react'
 
-import { useContentsRemoteState, useCurrentUser } from '@/hooks'
+import { useCurrentUser } from '@/hooks'
 
-import type { ContentsStateResponse } from './Content'
+import type { UpdatedContentsResponse } from './types'
 
-export default function InterestedLine({ id }: { id: string }) {
+export function NoInterestedLine({ id }: { id: string }) {
   const { data: currentUser, mutate: mutateCurrentUser } = useCurrentUser()
-  const { data: contentsState, mutate: mutateContentsState } =
-    useContentsRemoteState()
 
   const isNoInterested = useMemo(() => {
     return currentUser?.noInterestedIds?.includes(id) as boolean
   }, [currentUser?.noInterestedIds, id])
 
   const toggleNoInterested = useCallback(async () => {
-    let response: ContentsStateResponse
+    let response: UpdatedContentsResponse
     if (isNoInterested) {
       response = await axios.delete('/api/contents/nointerested', {
         data: { contentId: id }
@@ -30,30 +28,23 @@ export default function InterestedLine({ id }: { id: string }) {
       ...currentUser!,
       noInterestedIds: updatedNoInterestedIds
     })
-    mutateContentsState({
-      // favoriteIds: contentsState?.favoriteIds as string[],
-      // likedIds: contentsState?.likedIds as string[],
-      ...contentsState,
-      noInterestedIds: updatedNoInterestedIds,
-      // @ts-ignore
-      contents: {
-        ...contentsState?.contents!,
-        [id]: {
-          // likes: contentsState?.contents?.[id]?.likes as number,
-          // favorites: contentsState?.contents?.[id]?.favorites as number,
-          ...contentsState?.contents?.[id],
-          noInteresteds: response?.data?.contents?.[id]?.noInteresteds as number
-        }
-      }
-    })
-  }, [
-    id,
-    currentUser,
-    isNoInterested,
-    contentsState,
-    mutateCurrentUser,
-    mutateContentsState
-  ])
+    // mutateContents({
+    //   // favoriteIds: contentsState?.favoriteIds as string[],
+    //   // likedIds: contentsState?.likedIds as string[],
+    //   ...contentsState,
+    //   noInterestedIds: updatedNoInterestedIds,
+    //   // @ts-ignore
+    //   contents: {
+    //     ...contentsState?.contents!,
+    //     [id]: {
+    //       // likes: contentsState?.contents?.[id]?.likes as number,
+    //       // favorites: contentsState?.contents?.[id]?.favorites as number,
+    //       ...contentsState?.contents?.[id],
+    //       noInteresteds: response?.data?.contents?.[id]?.noInteresteds as number
+    //     }
+    //   }
+    // })
+  }, [id, currentUser, isNoInterested, mutateCurrentUser])
 
   return (
     <div className="relative mb-[-36px] mt-16">

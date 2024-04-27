@@ -3,6 +3,9 @@
 import type Prisma from '@prisma/client'
 import { useRequest } from 'ahooks'
 import axios from 'axios'
+
+import type { WeeklyCategory } from './use-pagination'
+import { usePagination } from './use-pagination'
 // import useSwr from 'swr'
 
 // import fetcher from '@/lib/fetcher'
@@ -24,35 +27,40 @@ const findContents = async (params: Parameters) => {
   )
 }
 
-export const useContentList = (params: Parameters) => {
-  // const { data, error, isLoading } = useSwr<Prisma.Content[]>(
-  //   `/api/contents?category=${category}`,
-  //   fetcher,
-  //   {
-  //     revalidateIfStale: false,
-  //     revalidateOnFocus: true,
-  //     revalidateOnReconnect: true
-  //   }
-  // )
-  // return {
-  //   data,
-  //   error,
-  //   isLoading
-  // }
-  const { data, error, loading, run } = useRequest(
+// eslint-disable-next-line unused-imports/no-unused-vars
+export const useContents = () => {
+  // params?: Parameters
+  // const c = window.location.pathname
+  //   .match(/weekly-by-category\/([a-zA-Z-]+)/)?.[1]
+  //   .slice(0, -1)
+  const { currentCategory, pageNumber, pageSize } = usePagination()
+
+  const { data, error, loading, run, mutate } = useRequest(
     (_params: Parameters) => {
       return findContents({
-        category: _params?.category || params?.category,
-        page_number: _params?.page_number || params?.page_number,
-        page_size: _params?.page_size || params?.page_size
+        category:
+          _params?.category ||
+          // params?.category ||
+          (currentCategory as WeeklyCategory),
+        page_number:
+          _params?.page_number ||
+          // params?.page_number ||
+          (currentCategory && pageNumber[currentCategory as WeeklyCategory]) ||
+          1,
+        page_size:
+          _params?.page_size ||
+          // params?.page_size ||
+          (currentCategory && pageSize[currentCategory as WeeklyCategory]) ||
+          20
       })
     },
     {
+      manual: true
       // onSuccess(data, params) {
       //   console.log('onSuccess', data, params)
       // }
     }
   )
 
-  return { data, error, isLoading: loading, run }
+  return { data, error, isLoading: loading, run, mutate }
 }

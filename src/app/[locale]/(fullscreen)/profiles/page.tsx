@@ -38,7 +38,7 @@ const UserCard: FC<UserCardProps> = ({ name }) => {
   )
 }
 
-const App = () => {
+const Profiles = () => {
   const { data: session } = useSession()
   if (!session) {
     redirect('/auth')
@@ -66,4 +66,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Profiles

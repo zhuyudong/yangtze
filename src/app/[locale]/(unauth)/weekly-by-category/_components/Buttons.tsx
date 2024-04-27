@@ -12,7 +12,6 @@ export function Buttons({
   return (
     <span className="isolate mt-2 inline-flex rounded-sm shadow-sm">
       {items.map((i, ix) => {
-        console.log(15, i, typeof i, current, typeof current, i === current)
         return (
           <button
             key={i}
