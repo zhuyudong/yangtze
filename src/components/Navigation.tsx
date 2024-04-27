@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useSession } from 'next-auth/react'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import { useRef } from 'react'
 
@@ -16,6 +17,8 @@ import { Tag } from '@/components/Tag'
 import type { NavGroup } from '@/lib/navigation'
 import { navigation } from '@/lib/navigation'
 import { remToPx } from '@/lib/remToPx'
+
+import { UserMenu } from './UserMenu'
 
 function useInitialValue<T>(value: T, condition = true) {
   const initialValue = useRef(value).current
@@ -237,10 +240,12 @@ function NavigationGroup({
 }
 
 export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
+  const { data: session } = useSession()
   return (
     <nav {...props}>
       <ul role="list">
         {/* <TopLevelNavItem href="/blog">Blog</TopLevelNavItem> */}
+        <TopLevelNavItem href="/poetry">Poetry</TopLevelNavItem>
         <TopLevelNavItem href="/movies">Movie</TopLevelNavItem>
         <TopLevelNavItem href="/wallpaper">Wallpaper</TopLevelNavItem>
         {navigation.map((group, groupIndex) => (
@@ -250,10 +255,14 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
             className={groupIndex === 0 ? 'md:mt-0' : ''}
           />
         ))}
-        <li className="sticky bottom-0 z-10 mt-6 min-[416px]:hidden">
-          <Button href="/sign-in" variant="filled" className="w-full">
-            Sign in
-          </Button>
+        <li className="sticky bottom-0 z-10 mt-6 min-[375px]:hidden">
+          {session ? (
+            <UserMenu />
+          ) : (
+            <Button href="/sign-in" variant="filled" className="w-full">
+              Sign in
+            </Button>
+          )}
         </li>
       </ul>
     </nav>

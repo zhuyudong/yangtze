@@ -13,7 +13,7 @@ export function LoginScreen() {
         <div className="absolute inset-0 block lg:hidden [&_canvas]:h-screen [&_canvas]:w-screen">
           <Zenitho />
         </div>
-        <div className="relative mx-auto  grid w-[350px] gap-6 rounded-lg bg-background px-4 py-8">
+        <div className="relative mx-auto  grid w-[375px] gap-6 rounded-lg bg-background px-4 py-8">
           <div className="grid gap-2 text-center">
             <h1 className="text-3xl font-bold">Login</h1>
             <p className="text-balance text-muted-foreground">
