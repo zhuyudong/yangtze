@@ -10,7 +10,8 @@ async function handler(req: NextRequest) {
     const { currentUser } = await serverAuth()
 
     if (!currentUser) {
-      throw new Error('Please Sign in')
+      // throw new Error('Please sign in')
+      return NextResponse.json({ message: 'Please sign in' }, { status: 401 })
     }
 
     const { contentId } = await req.json()
@@ -85,7 +86,7 @@ async function handler(req: NextRequest) {
       })
     }
 
-    return NextResponse.json(null, { status: 405 })
+    return NextResponse.json({ message: 'Method not allowed' }, { status: 405 })
   } catch (error) {
     console.log(error)
 

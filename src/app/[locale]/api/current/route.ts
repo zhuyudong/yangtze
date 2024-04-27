@@ -6,7 +6,10 @@ import { serverAuth } from '@/lib/server-auth'
 async function handler(req: NextRequest) {
   try {
     if (req.method !== 'GET') {
-      return NextResponse.json(null, { status: 405 })
+      return NextResponse.json(
+        { message: 'Method not allowed' },
+        { status: 405 }
+      )
     }
 
     const { currentUser } = await serverAuth()

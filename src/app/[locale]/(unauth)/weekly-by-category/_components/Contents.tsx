@@ -1,6 +1,5 @@
 'use client'
 
-import axios from 'axios'
 import { useSession } from 'next-auth/react'
 import { useCallback, useMemo, useState } from 'react'
 import { toast } from 'sonner'
@@ -9,6 +8,7 @@ import { toast } from 'sonner'
 import { wrapper as Wrapper } from '@/components/mdx'
 import type { WeeklyCategory } from '@/hooks'
 import { useContents, useCurrentUser, usePagination } from '@/hooks'
+import axios from '@/lib/axios'
 
 import { Buttons } from './Buttons'
 import { Content } from './Content'

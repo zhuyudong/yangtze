@@ -1,7 +1,7 @@
-import axios from 'axios'
 import { useCallback, useMemo } from 'react'
 
 import { useCurrentUser } from '@/hooks'
+import axios from '@/lib/axios'
 
 import type { UpdatedContentsResponse } from './types'
 

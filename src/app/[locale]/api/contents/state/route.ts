@@ -8,7 +8,10 @@ import { db } from '@/server/db'
 async function handler(req: NextRequest) {
   try {
     if (req.method !== 'GET') {
-      return NextResponse.json(null, { status: 405 })
+      return NextResponse.json(
+        { message: 'Method not allowed' },
+        { status: 405 }
+      )
     }
 
     // const { currentUser } = await serverAuth()
@@ -44,10 +47,14 @@ async function handler(req: NextRequest) {
           likes: true,
           noInteresteds: true
         },
-        orderBy: {
-          weekly: 'desc'
-          // createdAt: 'desc'
-        }
+        orderBy: [
+          {
+            weekly: 'desc'
+          },
+          {
+            createdAt: 'desc'
+          }
+        ]
         // skip,
         // take
       })

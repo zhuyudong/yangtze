@@ -60,12 +60,6 @@ async function main() {
       console.log(`Created movie with id: ${movie.id}`)
     }
   }
-  // for (let i = 0; i < contents.length; i++) {
-  //   await db.content.create({
-  //     data: contents[i]
-  //   })
-  //   console.log(`Created content ${i + 1}`)
-  // }
   const weeklyIndexs = (
     await db.content.findMany({
       distinct: ['weekly'],
@@ -78,12 +72,18 @@ async function main() {
   const contents = weeklys.filter(
     c => c.weekly && !weeklyIndexs.includes(c.weekly)
   )
-  if (contents.length) {
-    await db.content.createMany({
-      data: contents
+  for (let i = 0; i < contents.length; i++) {
+    await db.content.create({
+      data: contents[i]
     })
-    console.log(`Created ${contents.length} contents`)
+    console.log(`Created content ${i + 1}`)
   }
+  // if (contents.length) {
+  //   await db.content.createMany({
+  //     data: contents
+  //   })
+  //   console.log(`Created ${contents.length} contents`)
+  // }
   console.log(`Seeding finished.`)
 }
 

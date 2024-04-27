@@ -11,7 +11,10 @@ async function handler(
 ) {
   try {
     if (req.method !== 'GET') {
-      return NextResponse.json(null, { status: 405 })
+      return NextResponse.json(
+        { message: 'Method not allowed' },
+        { status: 405 }
+      )
     }
 
     // await serverAuth()
@@ -35,10 +38,14 @@ async function handler(
       where: {
         category
       },
-      orderBy: {
-        weekly: 'desc'
-        // createdAt: 'desc'
-      },
+      orderBy: [
+        {
+          weekly: 'desc'
+        },
+        {
+          createdAt: 'desc'
+        }
+      ],
       skip,
       take
     })

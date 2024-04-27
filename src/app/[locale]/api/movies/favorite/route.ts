@@ -71,7 +71,7 @@ async function handler(req: NextRequest) {
       return NextResponse.json(updatedUser)
     }
 
-    return NextResponse.json(null, { status: 405 })
+    return NextResponse.json({ message: 'Method not allowed' }, { status: 405 })
   } catch (error) {
     console.log(error)
 

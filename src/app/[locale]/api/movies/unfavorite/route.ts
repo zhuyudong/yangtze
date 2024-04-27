@@ -8,7 +8,10 @@ import { db } from '@/server/db'
 async function handler(req: NextRequest) {
   try {
     if (req.method !== 'POST') {
-      return NextResponse.json(null, { status: 405 })
+      return NextResponse.json(
+        { message: 'Method not allowed' },
+        { status: 405 }
+      )
     }
 
     // const session = await getSession({ req });
