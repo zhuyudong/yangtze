@@ -223,11 +223,11 @@ export default function Contents({
     <Wrapper>
       <h1>{title}</h1>
       <div className="mb-4 space-x-3">
-        <span className="mb-1 inline-block text-sm text-gray-700">
+        <span className="mb-1 inline-block text-sm font-medium">
           items/page:
         </span>
         <Buttons
-          items={[20, 40, 60, 80, 100]}
+          items={[20, 50, 80, 100]}
           current={pageSize[category]}
           onClick={handlePageSize}
         />

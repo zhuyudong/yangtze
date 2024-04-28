@@ -29,7 +29,7 @@ export default function SwitchOpen({
         />
       </Switch>
       <Switch.Label as="span" className="ml-2 text-sm">
-        <span className="font-medium text-gray-700">{text}</span>
+        <span className="font-medium">{text}</span>
       </Switch.Label>
     </Switch.Group>
   )

@@ -118,3 +118,15 @@ export function Property({
     </li>
   )
 }
+
+export function Details({ children }: { children: ReactNode }) {
+  return <details className="p-2">{children}</details>
+}
+
+export function Summary({ children }: { children: ReactNode }) {
+  return (
+    <summary className="cursor-pointer rounded-sm bg-zinc-100 p-1 text-[16px] outline-none">
+      {children}
+    </summary>
+  )
+}
