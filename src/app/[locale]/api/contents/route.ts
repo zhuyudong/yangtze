@@ -47,12 +47,12 @@ async function handler(
       }
     }
     const where: Prisma.ContentWhereInput = { category }
-    if (favoritedIds.length > 0 || likedIds.length > 0) {
+    if (favoritedIds.length || likedIds.length) {
       where.id = {
         in: [...new Set(favoritedIds.concat(likedIds))]
       }
     }
-    if (noInterestedIds.length > 0) {
+    if (noInterestedIds.length) {
       where.id = {
         not: {
           in: noInterestedIds
@@ -60,9 +60,6 @@ async function handler(
       }
     }
     // console.log({
-    //   onlyFavorited,
-    //   onlyLiked,
-    //   hiddenNoInterested,
     //   skip,
     //   take,
     //   where

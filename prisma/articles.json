@@ -449,7 +449,7 @@
   },
   {
     "title": "[Base32 编码解释](https://ptrchm.com/posts/base32-explained/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023121801.webp)\n\n本文详细解释 Base6Base3Base8 等等是如何编码实现的。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023121801.webp)\n\n本文详细解释 Base64、Base32、Base8 等等是如何编码实现的。\n\n",
     "category": "article",
     "originHref": "https://ptrchm.com/posts/base32-explained/",
     "weekly": 290
@@ -3703,7 +3703,7 @@
     "weekly": 229
   },
   {
-    "title": "[为什么电池只有7号？](https://finance.sina.com.cn/wm/2022-10-24/doc-imqqsmrp3595606.shtml)（中文）",
+    "title": "[为什么电池只有1、5、7号？](https://finance.sina.com.cn/wm/2022-10-24/doc-imqqsmrp3595606.shtml)（中文）",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102709.webp)\n\n本文介绍一些干电池的知识，它们的编号怎么来的。\n\n",
     "category": "article",
     "originHref": "https://finance.sina.com.cn/wm/2022-10-24/doc-imqqsmrp3595606.shtml",
@@ -11439,7 +11439,7 @@
   },
   {
     "title": "[AWS 精萃介绍](https://hassenchaieb.com/aws-good-parts/)（英文）",
-    "content": "\n\nAWS 是世界排名第一的云服务，本文以简单易懂的语言和图片，解释它的几个主要服务：DynamoDB、SECELB 等等。\n\n",
+    "content": "\n\nAWS 是世界排名第一的云服务，本文以简单易懂的语言和图片，解释它的几个主要服务：DynamoDB、S3、EC2、ELB 等等。\n\n",
     "category": "article",
     "originHref": "https://hassenchaieb.com/aws-good-parts/",
     "weekly": 99

@@ -610,7 +610,7 @@
   },
   {
     "title": "[YesChat.ai](https://www.yeschat.ai/zh-CN)",
-    "content": "\n\n该网站提供最新 AI 模型（GPT4V、DalleClaude 2）的免费体验，不过每天有次数限制。\n",
+    "content": "\n\n该网站提供最新 AI 模型（GPT4V、Dalle3、Claude 2）的免费体验，不过每天有次数限制。\n",
     "category": "resource",
     "originHref": "https://www.yeschat.ai/zh-CN",
     "weekly": 278

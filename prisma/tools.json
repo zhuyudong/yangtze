@@ -8,7 +8,7 @@
   },
   {
     "title": "[UnoCssUi](https://github.com/cherryful/unocss-ui)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041904.webp)\n\n一个基于 VueUnoCSS、Tailwindcss 的组件库，原子化设计，没有任何依赖。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041904.webp)\n\n一个基于 Vue3、UnoCSS、Tailwindcss 的组件库，原子化设计，没有任何依赖。\n",
     "category": "tool",
     "originHref": "https://github.com/cherryful/unocss-ui",
     "weekly": 298
@@ -5041,7 +5041,14 @@
   },
   {
     "title": "[Notesnook](https://notesnook.com/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022090518.webp)\n\n一个开源的端对端加密的笔记服务，保证内容完全私密，即使泄漏也无法破解。它有 Web 端、桌面端、手机端。你可以用官方服务器，也可以自己架设服务器。\n\n1**人生报告**\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022111725.webp)\n\n一个微信小程序（微信搜索“人生报告”），将周刊224期介绍的 life-stats 改造成中文版。用户输入生日，它返回一些统计数字，比如心跳了多少次，睡了多少小时。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022090518.webp)\n\n一个开源的端对端加密的笔记服务，保证内容完全私密，即使泄漏也无法破解。它有 Web 端、桌面端、手机端。你可以用官方服务器，也可以自己架设服务器。\n\n",
+    "category": "tool",
+    "originHref": "https://notesnook.com/",
+    "weekly": 231
+  },
+  {
+    "title": "**人生报告**",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022111725.webp)\n\n一个微信小程序（微信搜索“人生报告”），将周刊224期介绍的 life-stats 改造成中文版。用户输入生日，它返回一些统计数字，比如心跳了多少次，睡了多少小时。\n\n\n",
     "category": "tool",
     "originHref": "https://notesnook.com/",
     "weekly": 230
@@ -6294,7 +6301,7 @@
   },
   {
     "title": "[Hooks Admin](https://github.com/HalseySpicy/Hooks-Admin)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022063006.webp)\n\n基于 React1React-Router vReact-Hooks、Redux、TypeScript、ViteAnt-Design 搭建的一套后台管理界面，这里有。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022063006.webp)\n\n基于 React18、React-Router v6、React-Hooks、Redux、TypeScript、Vite2、Ant-Design 搭建的一套后台管理界面，这里有。\n",
     "category": "tool",
     "originHref": "https://github.com/HalseySpicy/Hooks-Admin",
     "weekly": 212
@@ -8450,7 +8457,7 @@
   },
   {
     "title": "[jsvu](https://github.com/GoogleChromeLabs/jsvu)",
-    "content": "\n\njsvu 是一个 JS 引擎的调用器，用来调用各种 JS 引擎（比如 VQuickJS、Chakra 等等），或者同一个引擎的各种版本。它的主要用途是测试代码在不同引擎下的表现。\n\n",
+    "content": "\n\njsvu 是一个 JS 引擎的调用器，用来调用各种 JS 引擎（比如 V8、QuickJS、Chakra 等等），或者同一个引擎的各种版本。它的主要用途是测试代码在不同引擎下的表现。\n\n",
     "category": "tool",
     "originHref": "https://github.com/GoogleChromeLabs/jsvu",
     "weekly": 180
@@ -10634,7 +10641,7 @@
   },
   {
     "title": "[Ebook Reader](https://www.loudreader.com/)",
-    "content": "\n\n浏览器里面的电子书阅读器，只要把 azwepub、mobi、pdf 格式的电子书拖到网页上，就能打开阅读。如果临时需要一个阅读器，这个就很方便。\n\n",
+    "content": "\n\n浏览器里面的电子书阅读器，只要把 azw3、epub、mobi、pdf 格式的电子书拖到网页上，就能打开阅读。如果临时需要一个阅读器，这个就很方便。\n\n",
     "category": "tool",
     "originHref": "https://www.loudreader.com/",
     "weekly": 145
@@ -16619,7 +16626,7 @@
   },
   {
     "title": "[“吐个槽”反馈平台](https://tucao.qq.com/)",
-    "content": "\n\n腾讯推出的，几行代码就可以为页面加入一个互动社区，可以接入应用程序、小程序、WEB、H微信公众号等各端。\n",
+    "content": "\n\n腾讯推出的，几行代码就可以为页面加入一个互动社区，可以接入应用程序、小程序、WEB、H5、微信公众号等各端。\n",
     "category": "tool",
     "originHref": "https://tucao.qq.com/",
     "weekly": 62
@@ -19321,7 +19328,7 @@
   },
   {
     "title": "[react-native-windows](https://github.com/Microsoft/react-native-windows)",
-    "content": "\n\n微软推出的 React Native 渲染器，允许用 RN 编译成 Windows 1Windows 10 mobile、Xbox one 应用。\n\n\n\n",
+    "content": "\n\n微软推出的 React Native 渲染器，允许用 RN 编译成 Windows 10、Windows 10 mobile、Xbox one 应用。\n\n\n\n",
     "category": "tool",
     "originHref": "https://github.com/Microsoft/react-native-windows",
     "weekly": 10
@@ -19433,7 +19440,7 @@
   },
   {
     "title": "[Jadesktop](https://github.com/codesardine/Jadesktop)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201806/bg2018060817.jpg)\n\n一个使用 HTMLCSS、JavaScript 和 Python 开发 Linux 桌面应用的。对的，你不需要 Electron。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201806/bg2018060817.jpg)\n\n一个使用 HTML5、CSS、JavaScript 和 Python 开发 Linux 桌面应用的。对的，你不需要 Electron。\n\n",
     "category": "tool",
     "originHref": "https://github.com/codesardine/Jadesktop",
     "weekly": 8

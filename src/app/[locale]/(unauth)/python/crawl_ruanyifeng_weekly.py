@@ -99,7 +99,18 @@ def files_by_category(text: str, files: dict, weekly: int) -> None:
             ## 科技动态
             """
             if category.strip().startswith(key):
-                content = re.sub(r"\d、", "", category.strip().replace(key, ""))
+                # 1、[
+                p1 = r"\d+、\s*(\[.*)"
+                # 2、**
+                p2 = r"\d+、\s*(\*\*.*)"
+                content = category.strip().replace(key, "")
+                if re.search(p1, content):
+                    content = re.sub(p1, r"\1", content)
+                if re.search(p2, content):
+                    content = re.sub(p2, r"\1", content)
+
+                if re.search(r"\*\*\d+、", content):
+                    content = re.sub(r"(\*\*)\d+、", r"\1", content)
                 # NOTE: 在内容中暂存 issue 编号，parse md 时擦除
                 content = f"\n==={weekly}===\n" + content
                 files[categories_locale[key]].append(content)

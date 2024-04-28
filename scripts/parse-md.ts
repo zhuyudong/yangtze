@@ -62,6 +62,11 @@ const readMdxFile = (filePath: string, category: string) => {
     // 1[Pixar 公司是如何成立的？](https://spectrum.ieee.org/the-real-story-of-pixar)（英文） ->
     // [Pixar 公司是如何成立的？](https://spectrum.ieee.org/the-real-story-of-pixar)（英文）
     line = line.replace(/^\d+\[/, '[')
+    // '\n1、\n' -> \n\n
+    line = line.replace(/^(\n)*\d+、(\n)*$/, '$1$2')
+    line = line.replace(/\n{4}/, '\n\n')
+    // line = line.replace(/\n{2}/, '\n')
+    line = line.replace(/\n{3}/, '\n')
     if (/===(\d+)===/.exec(line)) {
       weekly = Number(/===(\d+)===/.exec(line)?.[1])
     }
