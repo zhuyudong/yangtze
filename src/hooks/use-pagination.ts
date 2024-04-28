@@ -14,6 +14,13 @@ type UsePaginationProps = {
   currentCategory: WeeklyCategory | null
   pageSize: Record<WeeklyCategory, number>
   pageNumber: Record<WeeklyCategory, number>
+  onlyFavorited: boolean
+  onlyLiked: boolean
+  hiddenNoInterested: boolean
+  setFilter: (
+    filter: 'onlyFavorited' | 'onlyLiked' | 'hiddenNoInterested',
+    value: boolean
+  ) => void
   setCurrentCategory: (category: WeeklyCategory) => void
   setPageSize: (category: string, num: number) => void
   setPageNumber: (category: string, num: number) => void
@@ -41,6 +48,10 @@ export const usePagination = create<UsePaginationProps>((set, get) => ({
     'technology-new': 1,
     'tool': 1
   },
+  onlyFavorited: false,
+  onlyLiked: false,
+  hiddenNoInterested: false,
+  setFilter: (filter, value) => set(() => ({ [filter]: value })),
   setCurrentCategory: category => set(() => ({ currentCategory: category })),
   setPageSize: (category, num) =>
     set(() => ({

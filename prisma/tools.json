@@ -1,7 +1,77 @@
 [
   {
+    "title": "[Lan Mouse](https://github.com/feschber/lan-mouse)",
+    "content": "\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202401/bg2024010703.webp)\n\n一个开源软件，使用同一个鼠标和键盘，控制局域网的多台电脑。\n\n",
+    "category": "tool",
+    "originHref": "https://github.com/feschber/lan-mouse",
+    "weekly": 298
+  },
+  {
+    "title": "[UnoCssUi](https://github.com/cherryful/unocss-ui)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041904.webp)\n\n一个基于 VueUnoCSS、Tailwindcss 的组件库，原子化设计，没有任何依赖。\n",
+    "category": "tool",
+    "originHref": "https://github.com/cherryful/unocss-ui",
+    "weekly": 298
+  },
+  {
+    "title": "[drawDB](https://github.com/drawdb-io/drawdb)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024040703.webp)\n\n开源的数据库结构图和 SQL 生成。\n",
+    "category": "tool",
+    "originHref": "https://github.com/drawdb-io/drawdb",
+    "weekly": 298
+  },
+  {
+    "title": "[vscode-highlight-text](https://github.com/Simon-He95/vscode-highlight-text)",
+    "content": "\n\n一个 VS Code 插件，可以自定义任意语言和框架的高亮规则。\n",
+    "category": "tool",
+    "originHref": "https://github.com/Simon-He95/vscode-highlight-text",
+    "weekly": 298
+  },
+  {
+    "title": "[Easy GitHub 2FA authentication](https://github.com/Dolov/chrome-github-2fa)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042304.webp)\n\n一款开源的浏览器插件，自动填写 GitHub 双因素认证的验证码。\n",
+    "category": "tool",
+    "originHref": "https://github.com/Dolov/chrome-github-2fa",
+    "weekly": 298
+  },
+  {
+    "title": "[JavaVision](https://gitee.com/giteeClass/java-vision)",
+    "content": "\n\n一个视觉识别项目，具备物体识别、人脸识别、以图搜图等核心功能，使用 Java 开发，需要本地部署，然后通过 Web API 调用。\n",
+    "category": "tool",
+    "originHref": "https://gitee.com/giteeClass/java-vision",
+    "weekly": 298
+  },
+  {
+    "title": "[Shion](https://github.com/shion-app/shion)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042502.webp)\n\n开源的 Windows 软件，用来追踪统计个人的时间消耗，自动记录各种软件的使用时间，以及同步浏览器历史。\n",
+    "category": "tool",
+    "originHref": "https://github.com/shion-app/shion",
+    "weekly": 298
+  },
+  {
+    "title": "[Chat2DB](https://github.com/chat2db/Chat2DB)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042503.webp)\n\n开源的数据库管理，有桌面端和 Web 端，用来浏览操作各种数据库。\n",
+    "category": "tool",
+    "originHref": "https://github.com/chat2db/Chat2DB",
+    "weekly": 298
+  },
+  {
+    "title": "[Teable](https://github.com/teableio/teable)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042504.webp)\n\n开源的 Airtable 替代品，无代码搭建数据库应用，建立在 PostgreSQL 之上，界面友好、响应快速。\n",
+    "category": "tool",
+    "originHref": "https://github.com/teableio/teable",
+    "weekly": 298
+  },
+  {
+    "title": "[main-thread-scheduling](https://github.com/astoilkov/main-thread-scheduling)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202401/bg2024010602.webp)\n\n这个 JS 模块号称可以把计算量大的任务放到主进程，同时又不会阻塞主进程，UI 界面保持对用户的随时响应。它的源码有学习价值。\n\n\n\n",
+    "category": "tool",
+    "originHref": "https://github.com/astoilkov/main-thread-scheduling",
+    "weekly": 297
+  },
+  {
     "title": "[sshx](https://sshx.io/)",
-    "content": "\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110602.webp)\n\n这个可以通过链接，与其他人共享你的终端。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110602.webp)\n\n这个可以通过链接，与其他人共享你的终端。\n\n",
     "category": "tool",
     "originHref": "https://sshx.io/",
     "weekly": 297
@@ -3255,7 +3325,7 @@
     "weekly": 256
   },
   {
-    "title": "[Product Hunt 的投票中](https://www.producthunt.com/posts/dora-ai-alpha)，暂时排在第一，作者到周刊讨论区求票了。（[@CharlesLiuyx](https://github.com/ruanyf/weekly/issues/3144) 投稿）",
+    "title": "[Product Hunt 的投票中](https://www.producthunt.com/posts/dora-ai-alpha)，暂时排在第一，作者到周刊讨论区求票了。",
     "content": "\n\n\n\n",
     "category": "tool",
     "originHref": "https://github.com/ruanyf/weekly/issues/3144",
@@ -4159,9 +4229,16 @@
   },
   {
     "title": "[CryptBoard.io](https://cryptboard.io/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022112601.webp)\n\n一个的网络加密剪贴板。它为每个用户生成一对密钥，其他人只有拿到（你给他们的）公钥，才能看到你张贴的内容。\n\n[Hippotat](https://www.chiark.greenend.org.uk/~ianmdlvl/hippotat/current/docs/)\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022112604.webp)\n\n有些咖啡馆和旅馆的 Wifi，只允许连接外部服务器的80端口和443端口，不能使用其他端口，很不方便，作者就写了这个。\n\n只要在你的服务器安装它的服务端，本地再运行客户端，就能在它之上运行各种，通过 Web 端口连接服务器的各种端口。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022112601.webp)\n\n一个的网络加密剪贴板。它为每个用户生成一对密钥，其他人只有拿到（你给他们的）公钥，才能看到你张贴的内容。\n\n",
     "category": "tool",
     "originHref": "https://cryptboard.io/",
+    "weekly": 243
+  },
+  {
+    "title": "[Hippotat](https://www.chiark.greenend.org.uk/~ianmdlvl/hippotat/current/docs/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022112604.webp)\n\n有些咖啡馆和旅馆的 Wifi，只允许连接外部服务器的80端口和443端口，不能使用其他端口，很不方便，作者就写了这个。\n\n只要在你的服务器安装它的服务端，本地再运行客户端，就能在它之上运行各种，通过 Web 端口连接服务器的各种端口。\n\n",
+    "category": "tool",
+    "originHref": "https://www.chiark.greenend.org.uk/~ianmdlvl/hippotat/current/docs/",
     "weekly": 243
   },
   {
@@ -4319,7 +4396,7 @@
     "weekly": 241
   },
   {
-    "title": "[开源](https://github.com/huajian-pro/resume-design)的简历制作网站。([@Hacker233](https://github.com/ruanyf/weekly/issues/2879) 投稿",
+    "title": "[开源](https://github.com/huajian-pro/resume-design)的简历制作网站。",
     "content": ")\n\n",
     "category": "tool",
     "originHref": "https://github.com/ruanyf/weekly/issues/2879",
@@ -15513,9 +15590,16 @@
   },
   {
     "title": "[中国传统颜色手册](https://works.yangerxiao.com/chinese-colors/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201909/bg2019092007.jpg)\n\n一个方便使用的在线色表，列出中国古典的常见颜色。\n\n\n[Unison](https://www.cis.upenn.edu/~bcpierce/unison/)\n\n一个桌面软件，可以让 OSX、Unix 和 Windows 系统的文件同步。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201909/bg2019092007.jpg)\n\n一个方便使用的在线色表，列出中国古典的常见颜色。\n\n\n",
     "category": "tool",
     "originHref": "https://works.yangerxiao.com/chinese-colors/",
+    "weekly": 74
+  },
+  {
+    "title": "[Unison](https://www.cis.upenn.edu/~bcpierce/unison/)",
+    "content": "\n\n一个桌面软件，可以让 OSX、Unix 和 Windows 系统的文件同步。\n\n",
+    "category": "tool",
+    "originHref": "https://www.cis.upenn.edu/~bcpierce/unison/",
     "weekly": 74
   },
   {

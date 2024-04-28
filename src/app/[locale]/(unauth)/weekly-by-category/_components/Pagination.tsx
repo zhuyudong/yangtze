@@ -33,7 +33,7 @@ export function Pagination({
   const pages = [...Array(Math.ceil(total / pageSize))].map((_, ix) => ix + 1)
 
   return (
-    <nav className="flex items-center justify-between border-t border-gray-200 px-4 sm:px-0">
+    <nav className="mt-16 flex items-center justify-between border-t border-gray-200 px-4 sm:px-0">
       <div className="-mt-px flex w-0 flex-1 cursor-pointer">
         {pageNumber > 1 ? (
           <a

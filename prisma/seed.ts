@@ -72,12 +72,15 @@ async function main() {
   const contents = weeklys.filter(
     c => c.weekly && !weeklyIndexs.includes(c.weekly)
   )
+  // 逐条创建，确保 created_at 重复，查询时根据 created_at 排序能够确保顺序
   for (let i = 0; i < contents.length; i++) {
     await db.content.create({
       data: contents[i]
     })
-    console.log(`Created content ${i + 1}`)
+    console.log(i + 1)
+    // console.log(`Created content ${i + 1}`)
   }
+  // 批量创建，created_at 重复，查询时根据 created_at 排序不能确保顺序
   // if (contents.length) {
   //   await db.content.createMany({
   //     data: contents

@@ -1,7 +1,28 @@
 [
   {
+    "title": "[图解 Word2vec](https://cloud.tencent.com/developer/article/1430171)（中文）",
+    "content": "\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042003.webp)\n\n一篇2019年的长文，Word2vec 技术入门。虽然写得不是很清楚，但是很多例子很有启发，还配有插图，可参考。\n\n[硬地骇客——两个月 $12000 ARR 实践之路](https://github.com/hardhackerlabs/book)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042208.webp)\n\n一本开源电子书，介绍从灵感到变现的全过程。\n",
+    "category": "resource",
+    "originHref": "https://cloud.tencent.com/developer/article/1430171",
+    "weekly": 298
+  },
+  {
+    "title": "[Serach for John](https://www.searchforjohn.com/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020301.webp)\n\n一个新的搜索引擎，可以聚合其他搜索引擎的结果，我的试用效果非常好。\n\n",
+    "category": "resource",
+    "originHref": "https://www.searchforjohn.com/",
+    "weekly": 298
+  },
+  {
+    "title": "[计算机网络简介](https://intronetworks.cs.luc.edu/)（An Introduction to Computer Networks）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100518.webp)\n\n一本免费的英文书籍，介绍计算机网络知识，美国大学的教材。\n\n\n\n",
+    "category": "resource",
+    "originHref": "https://intronetworks.cs.luc.edu/",
+    "weekly": 297
+  },
+  {
     "title": "[中国大学矢量校徽合集](https://www.urongda.com/)",
-    "content": "\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041201.webp)\n\n高校校徽的矢量文件下载，目前收集了100多个校徽，还在不断增长中。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041201.webp)\n\n高校校徽的矢量文件下载，目前收集了100多个校徽，还在不断增长中。\n",
     "category": "resource",
     "originHref": "https://www.urongda.com/",
     "weekly": 297
@@ -162,9 +183,16 @@
   },
   {
     "title": "[Docker Compose Examples](https://github.com/Haxxnet/Compose-Examples)",
-    "content": "\n\n这个仓库收集各种常用的 Docker Compose 配置文件。\n\n[学习 x86-64 汇编语言](http://www.egr.unlv.edu/~ed/x86.html)\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122601.webp)\n\n一本英文的汇编语言入门教材，以 Ubuntu 平台为例。\n\n\n\n",
+    "content": "\n\n这个仓库收集各种常用的 Docker Compose 配置文件。\n\n",
     "category": "resource",
     "originHref": "https://github.com/Haxxnet/Compose-Examples",
+    "weekly": 292
+  },
+  {
+    "title": "[学习 x86-64 汇编语言](http://www.egr.unlv.edu/~ed/x86.html)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122601.webp)\n\n一本英文的汇编语言入门教材，以 Ubuntu 平台为例。\n\n\n\n",
+    "category": "resource",
+    "originHref": "http://www.egr.unlv.edu/~ed/x86.html",
     "weekly": 291
   },
   {
@@ -1177,9 +1205,16 @@
   },
   {
     "title": "[GitHub Actions 示例教程](https://www.actionsbyexample.com/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022012504.webp)\n\n通过10个详细注释的示例，解释怎么使用 GitHub Actions。\n\n[编译器设计入门](https://www3.nd.edu/~dthain/compilerbook/)（Introduction to Compilers and Language Design）\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022052305.webp)\n\n一本免费阅读的英文教科书，介绍编译器设计的基本知识。内容很新，2021年才完稿。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022012504.webp)\n\n通过10个详细注释的示例，解释怎么使用 GitHub Actions。\n\n",
     "category": "resource",
     "originHref": "https://www.actionsbyexample.com/",
+    "weekly": 259
+  },
+  {
+    "title": "[编译器设计入门](https://www3.nd.edu/~dthain/compilerbook/)（Introduction to Compilers and Language Design）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022052305.webp)\n\n一本免费阅读的英文教科书，介绍编译器设计的基本知识。内容很新，2021年才完稿。\n\n\n\n",
+    "category": "resource",
+    "originHref": "https://www3.nd.edu/~dthain/compilerbook/",
     "weekly": 258
   },
   {
@@ -2892,9 +2927,16 @@
   },
   {
     "title": "[Device Info](https://www.deviceinfo.me/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021092001.jpg)\n\n一个网页工具，显示浏览器可以收集的所有用户设备信息，比如电池、麦克风、蓝牙等。\n\n[操作系统导论](https://pages.cs.wisc.edu/~remzi/OSTEP/)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022022703.webp)\n\n《操作系统导论》（Operating Systems: Three Easy Pieces）是免费的操作系统入门教程，评价很高的一本书。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021092001.jpg)\n\n一个网页工具，显示浏览器可以收集的所有用户设备信息，比如电池、麦克风、蓝牙等。\n\n",
     "category": "resource",
     "originHref": "https://www.deviceinfo.me/",
+    "weekly": 204
+  },
+  {
+    "title": "[操作系统导论](https://pages.cs.wisc.edu/~remzi/OSTEP/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022022703.webp)\n\n《操作系统导论》（Operating Systems: Three Easy Pieces）是免费的操作系统入门教程，评价很高的一本书。\n\n",
+    "category": "resource",
+    "originHref": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
     "weekly": 204
   },
   {
@@ -3339,7 +3381,7 @@
     "weekly": 191
   },
   {
-    "title": "[中国山水画生成器](https://github.com/LingDong-/shan-shui-inf)是一个很有名的软件，一个老外用户很惊叹，希望把它彻底搞懂，就写了这个由24篇文章组成的系列，逐一分析代码，看看能否自己重新实现。（[@ameizi](https://github.com/ruanyf/weekly/issues/2140) 投稿）",
+    "title": "[中国山水画生成器](https://github.com/LingDong-/shan-shui-inf)是一个很有名的软件，一个老外用户很惊叹，希望把它彻底搞懂，就写了这个由24篇文章组成的系列，逐一分析代码，看看能否自己重新实现。",
     "content": "\n\n",
     "category": "resource",
     "originHref": "https://github.com/ruanyf/weekly/issues/2140",
@@ -4194,9 +4236,16 @@
   },
   {
     "title": "[五笔输入法7天速成](https://wubi.yantuz.cn/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021070810.jpg)\n\n作者结合自身学习经历，收集整理了五笔输入法相关知识，按照每天2-3小时的时间，结合小游戏，预计一周时间即可掌握五笔输入法。\n[Zsh 的最佳主题](https://www.slant.co/topics/7553/~theme-for-oh-my-zsh)\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021070809.jpg)\n\n当前的热门 Zsh 主题的排名，更新及时。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021070810.jpg)\n\n作者结合自身学习经历，收集整理了五笔输入法相关知识，按照每天2-3小时的时间，结合小游戏，预计一周时间即可掌握五笔输入法。\n",
     "category": "resource",
     "originHref": "https://wubi.yantuz.cn/",
+    "weekly": 166
+  },
+  {
+    "title": "[Zsh 的最佳主题](https://www.slant.co/topics/7553/~theme-for-oh-my-zsh)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021070809.jpg)\n\n当前的热门 Zsh 主题的排名，更新及时。\n",
+    "category": "resource",
+    "originHref": "https://www.slant.co/topics/7553/~theme-for-oh-my-zsh",
     "weekly": 166
   },
   {
@@ -4229,9 +4278,16 @@
   },
   {
     "title": "[具有源码的商业视频游戏](https://en.wikipedia.org/wiki/List_of_commercial_video_games_with_available_source_code)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061403.jpg)\n\n维基百科的这个页面，列出了所有可以拿到源码的商业视频游戏，包括开源的游戏和源码泄露的游戏。\n\n\n\n[初等微积分](https://people.math.wisc.edu/~keisler/calc.html)\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021060403.jpg)\n\n一本大学新生的微积分英文教程《Elementary Calculus: An Infinitesimal Approach》，从无穷小入手，详细解释什么是微积分。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061403.jpg)\n\n维基百科的这个页面，列出了所有可以拿到源码的商业视频游戏，包括开源的游戏和源码泄露的游戏。\n\n\n\n",
     "category": "resource",
     "originHref": "https://en.wikipedia.org/wiki/List_of_commercial_video_games_with_available_source_code",
+    "weekly": 164
+  },
+  {
+    "title": "[初等微积分](https://people.math.wisc.edu/~keisler/calc.html)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021060403.jpg)\n\n一本大学新生的微积分英文教程《Elementary Calculus: An Infinitesimal Approach》，从无穷小入手，详细解释什么是微积分。\n\n",
+    "category": "resource",
+    "originHref": "https://people.math.wisc.edu/~keisler/calc.html",
     "weekly": 164
   },
   {
@@ -5454,9 +5510,16 @@
   },
   {
     "title": "[Coded Mails](https://codedmails.com/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101302.jpg)\n\n电子邮件的 HTML 模版很难写，因为客户端有着各种限制。该网站提供各种主题的响应式电子邮件模版下载。\n\n[Musicnet](https://homes.cs.washington.edu/~thickstn/musicnet.html)\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101601.jpg)\n\n一个古典音乐的数据集，包括超过一百万个标签，指明每首曲子的每个音符出现的准确时间和位置，以及演奏该音符的乐器，主要用于 AI 的数据训练。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101302.jpg)\n\n电子邮件的 HTML 模版很难写，因为客户端有着各种限制。该网站提供各种主题的响应式电子邮件模版下载。\n\n",
     "category": "resource",
     "originHref": "https://codedmails.com/",
+    "weekly": 130
+  },
+  {
+    "title": "[Musicnet](https://homes.cs.washington.edu/~thickstn/musicnet.html)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101601.jpg)\n\n一个古典音乐的数据集，包括超过一百万个标签，指明每首曲子的每个音符出现的准确时间和位置，以及演奏该音符的乐器，主要用于 AI 的数据训练。\n\n",
+    "category": "resource",
+    "originHref": "https://homes.cs.washington.edu/~thickstn/musicnet.html",
     "weekly": 130
   },
   {
@@ -6056,9 +6119,16 @@
   },
   {
     "title": "[Starlink Map](https://satellitemap.space/indexA.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061801.jpg)\n\n星联计划（Starlink）是 SpaceX 公司的一个全球卫星上网项目（详见本期《文摘》部分的介绍），计划最终发射几万颗小卫星，目前已经发射了500多颗。这个网站可以查看所有卫星的实时位置。\n\n[美国海军电气与电子培训教材](https://archive.org/search.php?query=subject%3A%22The+Navy+Electricity+and+Electronics+Training+Series%22&sort=publicdate)\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061904.jpg)\n\n互联网档案馆收藏的一套英文教材，美国海军用来培训官兵成为电气工程师和电子工程师，从最基础的概念（电是什么）开始讲起，一共24册。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061801.jpg)\n\n星联计划（Starlink）是 SpaceX 公司的一个全球卫星上网项目（详见本期《文摘》部分的介绍），计划最终发射几万颗小卫星，目前已经发射了500多颗。这个网站可以查看所有卫星的实时位置。\n\n",
     "category": "resource",
     "originHref": "https://satellitemap.space/indexA.html",
+    "weekly": 113
+  },
+  {
+    "title": "[美国海军电气与电子培训教材](https://archive.org/search.php?query=subject%3A%22The+Navy+Electricity+and+Electronics+Training+Series%22&sort=publicdate)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061904.jpg)\n\n互联网档案馆收藏的一套英文教材，美国海军用来培训官兵成为电气工程师和电子工程师，从最基础的概念（电是什么）开始讲起，一共24册。\n\n\n\n",
+    "category": "resource",
+    "originHref": "https://archive.org/search.php?query=subject%3A%22The+Navy+Electricity+and+Electronics+Training+Series%22&sort=publicdate",
     "weekly": 112
   },
   {
@@ -6896,16 +6966,30 @@
   },
   {
     "title": "[Swift 的 iOS 开发教程](https://www.appcoda.com/learnswift/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019121223.jpg)\n\n免费电子书，介绍如何用 Swift 语言进行 iOS 编程。\n\n[编译器设计基础](http://hjemmesider.diku.dk/~torbenm/Basics/basics_lulu2.pdf)\n\n免费的英文电子书，PDF 格式。从最基础的内容讲起如何写编译器，偏重数学知识。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019121223.jpg)\n\n免费电子书，介绍如何用 Swift 语言进行 iOS 编程。\n\n",
     "category": "resource",
     "originHref": "https://www.appcoda.com/learnswift/",
     "weekly": 89
   },
   {
+    "title": "[编译器设计基础](http://hjemmesider.diku.dk/~torbenm/Basics/basics_lulu2.pdf)",
+    "content": "\n\n免费的英文电子书，PDF 格式。从最基础的内容讲起如何写编译器，偏重数学知识。\n\n",
+    "category": "resource",
+    "originHref": "http://hjemmesider.diku.dk/~torbenm/Basics/basics_lulu2.pdf",
+    "weekly": 89
+  },
+  {
     "title": "[死亡的微软产品](https://www.versionmuseum.com/history-of/discontinued-microsoft-products)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202001/bg2020010203.jpg)\n\n该网页列出微软公司所有已经死亡的产品，其中我最怀念的是微软的 Encarta 百科全书。\n\n\n\n[软件 bug 大事记](https://www5.in.tum.de/~huckle/bugse.html)\n\n该网页收集历史上各种软件 Bug 导致的重大事件的新闻报道。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202001/bg2020010203.jpg)\n\n该网页列出微软公司所有已经死亡的产品，其中我最怀念的是微软的 Encarta 百科全书。\n\n\n\n",
     "category": "resource",
     "originHref": "https://www.versionmuseum.com/history-of/discontinued-microsoft-products",
+    "weekly": 88
+  },
+  {
+    "title": "[软件 bug 大事记](https://www5.in.tum.de/~huckle/bugse.html)",
+    "content": "\n\n该网页收集历史上各种软件 Bug 导致的重大事件的新闻报道。\n\n",
+    "category": "resource",
+    "originHref": "https://www5.in.tum.de/~huckle/bugse.html",
     "weekly": 88
   },
   {
@@ -7140,7 +7224,7 @@
     "weekly": 82
   },
   {
-    "title": "[原文](%EF%BC%9Ahttps://dave.cheney.net/high-performance-go-workshop/dotgo-paris.html)是深入研究 Go 应用性能提升的英语系列文章，这里是中译。（@[hznuksco](https://github.com/ruanyf/weekly/issues/905) 投稿）",
+    "title": "[原文](%EF%BC%9Ahttps://dave.cheney.net/high-performance-go-workshop/dotgo-paris.html)是深入研究 Go 应用性能提升的英语系列文章，这里是中译。",
     "content": "\n\n",
     "category": "resource",
     "originHref": "https://github.com/ruanyf/weekly/issues/905",
@@ -7469,7 +7553,7 @@
     "weekly": 73
   },
   {
-    "title": "[Golangbot](https://golangbot.com/) 是国外开发者写的 Go 的初级教程，对小白和基础比较薄弱的开发者比较适用。作者没有讲很高深的理论，而是用很多简单的例子和代码进行讲解。（@[hznuksco](https://github.com/ruanyf/weekly/issues/772) 投稿）",
+    "title": "[Golangbot](https://golangbot.com/) 是国外开发者写的 Go 的初级教程，对小白和基础比较薄弱的开发者比较适用。作者没有讲很高深的理论，而是用很多简单的例子和代码进行讲解。",
     "content": "\n\n",
     "category": "resource",
     "originHref": "https://github.com/ruanyf/weekly/issues/772",
@@ -8681,9 +8765,16 @@
   },
   {
     "title": "[黑客工具课程](https://hacker-tools.github.io/lectures/)",
-    "content": "\n\n麻省理工学院的入门课程，介绍 Linux 系统使用者需要掌握的各种基本工具，适合刚入门的初级用户。\n\n[数据结构可视化](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)\n\n该网站收集各种数据结构，并将它们用可视化的形式表现出来。\n\n",
+    "content": "\n\n麻省理工学院的入门课程，介绍 Linux 系统使用者需要掌握的各种基本工具，适合刚入门的初级用户。\n\n",
     "category": "resource",
     "originHref": "https://hacker-tools.github.io/lectures/",
+    "weekly": 46
+  },
+  {
+    "title": "[数据结构可视化](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)",
+    "content": "\n\n该网站收集各种数据结构，并将它们用可视化的形式表现出来。\n\n",
+    "category": "resource",
+    "originHref": "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html",
     "weekly": 46
   },
   {
@@ -9801,9 +9892,16 @@
   },
   {
     "title": "[Windows 2000 的浏览器版](https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/win2k.cfg&mem=192&graphic=1&w=1024&h=768)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018091415.jpg)\n\nWindows 2000 通过 WebAssembly，可以在浏览器里运行了。\n\n[数据挖掘教材](https://www-users.cs.umn.edu/~kumar001/dmbook/index.php)\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018091416.jpg)\n\n《数据挖掘》（第二版）这本书本身没有全部开源，这个网页提供了所有章节的 PPT 教辅材料和实验代码。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018091415.jpg)\n\nWindows 2000 通过 WebAssembly，可以在浏览器里运行了。\n\n",
     "category": "resource",
     "originHref": "https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/win2k.cfg&mem=192&graphic=1&w=1024&h=768",
+    "weekly": 22
+  },
+  {
+    "title": "[数据挖掘教材](https://www-users.cs.umn.edu/~kumar001/dmbook/index.php)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201809/bg2018091416.jpg)\n\n《数据挖掘》（第二版）这本书本身没有全部开源，这个网页提供了所有章节的 PPT 教辅材料和实验代码。\n\n",
+    "category": "resource",
+    "originHref": "https://www-users.cs.umn.edu/~kumar001/dmbook/index.php",
     "weekly": 22
   },
   {

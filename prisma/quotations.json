@@ -1,7 +1,42 @@
 [
   {
+    "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=40064741)，评论特斯拉的股价不断下跌",
+    "content": "===298===\n\n特斯拉的市值高得离谱，达到4800亿美元，2022年总收入810亿美元，市盈率36倍。\n\n相比之下，美国最大的汽车公司——通用汽车的市值500亿美元，2022年总收入为1720亿美元，市盈率6倍。\n\n特斯拉的问题在于，市场把它当成 Meta 和谷歌那样的科技公司，但它实际上是一家汽车公司。一旦市场开始认清这一点，股价就不可避免地下跌了。\n\n\n\n十九世纪现代医学出现后，人类的寿命大大延长，再加上法律对个人财产的保护，使得全世界大部分财产和权力掌握在老年人手中。\n\n有文章称，世界上最富裕城市的最优质地区都居住着老年人。\n\n",
+    "category": "quotation",
+    "originHref": "https://news.ycombinator.com/item?id=40064741",
+    "weekly": 298
+  },
+  {
+    "title": "[《老人的烦恼》](https://granta.com/the-trouble-with-old-men/)",
+    "content": "\n\nReact 这个库的革命性在于，之前的网页应用都直接构建在 DOM 之上，开发者必须自己处理 DOM 的状态，自己保证各个节点之间的同步。\n\nReact 改变了一切，使得应用程序脱离了 DOM。你不必再管 DOM 的状态，只需要管理自己应用的状态。这消除了复杂 Web 应用中繁琐且容易出错的许多工作量。\n\n",
+    "category": "quotation",
+    "originHref": "https://granta.com/the-trouble-with-old-men/",
+    "weekly": 298
+  },
+  {
+    "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=39310142)",
+    "content": "\n\n社交媒体就是一个水族馆，网红和名人是那里的展品——水母、鲨鱼、章鱼、小丑鱼等等。普通访问者就是游客，对展品的形状和颜色惊叹不已。\n\n",
+    "category": "quotation",
+    "originHref": "https://news.ycombinator.com/item?id=39310142",
+    "weekly": 298
+  },
+  {
+    "title": "[《社交媒体是隐喻的水族馆》](https://kottke.org/24/02/social-media-sites-are-metaphorical-aquariums)",
+    "content": "\n\n敏捷开发有一个问题，就是它要求“新的冲刺在上一个冲刺结束后立即开始。”\n\n有了这个规则，程序员就陷入了永远冲刺的陷阱。\n\n",
+    "category": "quotation",
+    "originHref": "https://kottke.org/24/02/social-media-sites-are-metaphorical-aquariums",
+    "weekly": 298
+  },
+  {
+    "title": "[《永远冲刺》](https://cbh.bearblog.dev/always-sprinting/)",
+    "content": "\n\n===297===\n\n1986年，第一批癌症的放疗机上市，型号是Therac-25，使用电脑控制。但是使用后，发生了几起严重事故，病人的放射剂量大大超标。\n\n事后发现，这不是硬件错误，而是软件错误。程序员没有考虑到键盘的连击，一旦操作人员击键速度快，发生连击，就会连续发出射线。\n\n",
+    "category": "quotation",
+    "originHref": "https://cbh.bearblog.dev/always-sprinting/",
+    "weekly": 297
+  },
+  {
     "title": "[《THERAC-25 事故》](https://thedailywtf.com/articles/the-therac-25-incident)",
-    "content": "\n\n1986年，第一批癌症的放疗机上市，型号是Therac-25，使用电脑控制。但是使用后，发生了几起严重事故，病人的放射剂量大大超标。\n\n事后发现，这不是硬件错误，而是软件错误。程序员没有考虑到键盘的连击，一旦操作人员击键速度快，发生连击，就会连续发出射线。\n\n\n\n很多时候，我们觉得某样东西非常糟糕，但是其他人却很欣赏。\n\n与其怀疑别人，不妨换个角度，假定那确实是很好的东西，然后尝试去理解它。有了这种态度，更容易学到新东西，并会为你省去很多挫折、误解和与他人的冲突。\n\n",
+    "content": "\n\n很多时候，我们觉得某样东西非常糟糕，但是其他人却很欣赏。\n\n与其怀疑别人，不妨换个角度，假定那确实是很好的东西，然后尝试去理解它。有了这种态度，更容易学到新东西，并会为你省去很多挫折、误解和与他人的冲突。\n\n",
     "category": "quotation",
     "originHref": "https://thedailywtf.com/articles/the-therac-25-incident",
     "weekly": 297
@@ -22,7 +57,7 @@
   },
   {
     "title": "[《死海效应》](https://brucefwebster.com/2008/04/11/the-wetware-crisis-the-dead-sea-effect/)",
-    "content": "\n\n\n\n马斯克的管理风格非常独特，他不需要非技术性的中层管理人员，员工表现不佳就会被裁，也不喜欢大型会议。\n\n",
+    "content": "\n\n===296===\n\n马斯克的管理风格非常独特，他不需要非技术性的中层管理人员，员工表现不佳就会被裁，也不喜欢大型会议。\n\n",
     "category": "quotation",
     "originHref": "https://brucefwebster.com/2008/04/11/the-wetware-crisis-the-dead-sea-effect/",
     "weekly": 296
@@ -57,7 +92,7 @@
   },
   {
     "title": "[《小型自动化》](https://www.johndcook.com/blog/2023/01/29/small-scale-automation/)",
-    "content": "\n\n\n\n电动汽车的最大缺点是，大部分能量用来移动电池，而不是移动乘客。\n\n人类的体重并不重（大约70公斤左右），特斯拉 Y 型汽车的电池重量是770公斤。所以，运送电池的耗能是运送乘客的10倍。\n\n",
+    "content": "\n\n===295===\n\n电动汽车的最大缺点是，大部分能量用来移动电池，而不是移动乘客。\n\n人类的体重并不重（大约70公斤左右），特斯拉 Y 型汽车的电池重量是770公斤。所以，运送电池的耗能是运送乘客的10倍。\n\n",
     "category": "quotation",
     "originHref": "https://www.johndcook.com/blog/2023/01/29/small-scale-automation/",
     "weekly": 295
@@ -92,7 +127,7 @@
   },
   {
     "title": "[《最早提出黑洞的人》](https://www.amnh.org/learn-teach/curriculum-collections/cosmic-horizons-book/john-michell-black-holes)",
-    "content": "\n\n\n\n有一种程序员，技术非常好，但创建的项目过于复杂，其他人很难完成。他们选择自己完成大部分工作，并将不太重要的任务交给其他人。当他们退出时，由于代码的复杂性和缺乏理解，团队陷入了巨大的困境。\n\n有些人认为，这种程序员是大牛，但我认为他们实际上是很糟糕的，因为他们的工作不易被其他人接手或维护。\n\n",
+    "content": "\n\n===294===\n\n有一种程序员，技术非常好，但创建的项目过于复杂，其他人很难完成。他们选择自己完成大部分工作，并将不太重要的任务交给其他人。当他们退出时，由于代码的复杂性和缺乏理解，团队陷入了巨大的困境。\n\n有些人认为，这种程序员是大牛，但我认为他们实际上是很糟糕的，因为他们的工作不易被其他人接手或维护。\n\n",
     "category": "quotation",
     "originHref": "https://www.amnh.org/learn-teach/curriculum-collections/cosmic-horizons-book/john-michell-black-holes",
     "weekly": 294
@@ -120,7 +155,7 @@
   },
   {
     "title": "[《为什么要有工作效率？》](https://thinkingthrough.substack.com/p/why-be-productive)",
-    "content": "\n\n\n\n以后不会存在“程序员”这种职业了，只要会说话，人人都具备程序员的能力。未来的编程语言只会剩下两种，一种叫做英文，一种叫做中文。\n\n",
+    "content": "\n\n===293===\n\n以后不会存在“程序员”这种职业了，只要会说话，人人都具备程序员的能力。未来的编程语言只会剩下两种，一种叫做英文，一种叫做中文。\n\n",
     "category": "quotation",
     "originHref": "https://thinkingthrough.substack.com/p/why-be-productive",
     "weekly": 293
@@ -148,7 +183,7 @@
   },
   {
     "title": "[亚历山大·查默斯](https://www.forbes.com/quotes/252/)，19世纪美国著名医生",
-    "content": "\n\n\n\n如果你没有时间集中精力学习新知识，那么就花时间复习已经学过的内容。\n\n",
+    "content": "\n\n===292===\n\n如果你没有时间集中精力学习新知识，那么就花时间复习已经学过的内容。\n\n",
     "category": "quotation",
     "originHref": "https://www.forbes.com/quotes/252/",
     "weekly": 292
@@ -183,7 +218,7 @@
   },
   {
     "title": "[Julia Evans](https://buttondown.email/hillelwayne/archive/advice-for-new-software-devs-whove-read-all-those/)",
-    "content": "\n\n\n\n纽约市最古老的脚手架搭建于2002年，当时是为了翻新一栋百年大楼，可是由于各种原因（资金短缺、找不到供应商等等），一直没有完工。直到2023年底，这个搭建了21年的脚手架终于开始拆除了。\n\n",
+    "content": "\n\n===291===\n\n纽约市最古老的脚手架搭建于2002年，当时是为了翻新一栋百年大楼，可是由于各种原因（资金短缺、找不到供应商等等），一直没有完工。直到2023年底，这个搭建了21年的脚手架终于开始拆除了。\n\n",
     "category": "quotation",
     "originHref": "https://buttondown.email/hillelwayne/archive/advice-for-new-software-devs-whove-read-all-those/",
     "weekly": 291
@@ -211,7 +246,7 @@
   },
   {
     "title": "[《快时尚赌场》](https://dirt.fyi/article/2023/11/fast-fashion-casino)",
-    "content": "\n\n\n\n有些手机厂商表示，提供7年的手机软件更新，这就好像在说，三明治面包可以吃上七年。但是他们不会告诉你，7年以后用户体验会非常差，面包可能早就发霉了。\n\n退一步说，就算软件可以用7年，但是手机电池往往用不到7年。\n\n",
+    "content": "\n\n===290===\n\n有些手机厂商表示，提供7年的手机软件更新，这就好像在说，三明治面包可以吃上七年。但是他们不会告诉你，7年以后用户体验会非常差，面包可能早就发霉了。\n\n退一步说，就算软件可以用7年，但是手机电池往往用不到7年。\n\n",
     "category": "quotation",
     "originHref": "https://dirt.fyi/article/2023/11/fast-fashion-casino",
     "weekly": 290
@@ -246,7 +281,7 @@
   },
   {
     "title": "[安·兰德](https://newideal.aynrand.org/the-quotable-ayn-rand-you-can-avoid-reality-but/)，美国著名作家",
-    "content": "\n\n\n\n我们将在1月25日震惊世界。\n\n",
+    "content": "\n\n===289===\n\n我们将在1月25日震惊世界。\n\n",
     "category": "quotation",
     "originHref": "https://newideal.aynrand.org/the-quotable-ayn-rand-you-can-avoid-reality-but/",
     "weekly": 289
@@ -274,7 +309,7 @@
   },
   {
     "title": "[《创意者与官僚》](https://www.hottakes.space/p/creatives-vs-bureaucrats)",
-    "content": "\n\n\n\nAI 聊天机器人很快就会变得强大无比，看上去像神一样，未来也许会出现崇拜 AI 的教派。\n\n",
+    "content": "\n\n===288===\n\nAI 聊天机器人很快就会变得强大无比，看上去像神一样，未来也许会出现崇拜 AI 的教派。\n\n",
     "category": "quotation",
     "originHref": "https://www.hottakes.space/p/creatives-vs-bureaucrats",
     "weekly": 288
@@ -302,7 +337,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=34567237)",
-    "content": "\n\n\n\nRISC-V 只是一种 CPU 的操作指令集，限制中国人接触 RISC-V，就好比中国人可以阅读一本用英文写的核武器书籍，所以我们通过禁止英文字母来解决问题。\n\n",
+    "content": "\n\n===287===\n\nRISC-V 只是一种 CPU 的操作指令集，限制中国人接触 RISC-V，就好比中国人可以阅读一本用英文写的核武器书籍，所以我们通过禁止英文字母来解决问题。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=34567237",
     "weekly": 287
@@ -330,7 +365,7 @@
   },
   {
     "title": "[《我想输掉每一场辩论》](https://sive.rs/led)",
-    "content": "\n\n\n\n如果他知道你没有浪费他的时间，他就会很慷慨。\n\n",
+    "content": "\n\n===286===\n\n如果他知道你没有浪费他的时间，他就会很慷慨。\n\n",
     "category": "quotation",
     "originHref": "https://sive.rs/led",
     "weekly": 286
@@ -365,7 +400,7 @@
   },
   {
     "title": "[《AI 如何改变我们的知识》](https://slite.com/blog/gpt-knowledge-revolution-is-coming)",
-    "content": "\n\n\n\n我使用 ChatGPT 的感觉，就像在使用某个电话自动应答系统，到了某些时候我不得不大声尖叫，要求与人类交谈。\n\n",
+    "content": "\n\n===285===\n\n我使用 ChatGPT 的感觉，就像在使用某个电话自动应答系统，到了某些时候我不得不大声尖叫，要求与人类交谈。\n\n",
     "category": "quotation",
     "originHref": "https://slite.com/blog/gpt-knowledge-revolution-is-coming",
     "weekly": 285
@@ -393,7 +428,7 @@
   },
   {
     "title": "[《卫报》](https://www.theguardian.com/science/2023/nov/15/magicians-less-prone-to-mental-disorders-than-other-artists-finds-research)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202401/bg2024010319.webp)\n\n\n\n直到有一天，你意识到了你会死，手头的事情做不完，一切就都发生了改变。从那一天开始，你花费的时间才是真正花出去的时间。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202401/bg2024010319.webp)\n\n===284===\n\n直到有一天，你意识到了你会死，手头的事情做不完，一切就都发生了改变。从那一天开始，你花费的时间才是真正花出去的时间。\n\n",
     "category": "quotation",
     "originHref": "https://www.theguardian.com/science/2023/nov/15/magicians-less-prone-to-mental-disorders-than-other-artists-finds-research",
     "weekly": 284
@@ -421,7 +456,7 @@
   },
   {
     "title": "[dbreunig.com](https://www.dbreunig.com/2023/11/14/the-tyranny-of-the-blank-textbox.html)",
-    "content": "\n\n\n\n学生不再是学生，新手变成专家，大家开始组建家庭，所有对你的时间的要求都变得非常苛刻。\n\n",
+    "content": "\n\n===283===\n\n学生不再是学生，新手变成专家，大家开始组建家庭，所有对你的时间的要求都变得非常苛刻。\n\n",
     "category": "quotation",
     "originHref": "https://www.dbreunig.com/2023/11/14/the-tyranny-of-the-blank-textbox.html",
     "weekly": 283
@@ -456,7 +491,7 @@
   },
   {
     "title": "[《历史地图》](https://resobscura.substack.com/p/historical-maps-probably-helped-cause)",
-    "content": "\n\n\n\n世界上最富有的10位富豪，离婚过13次。\n\n",
+    "content": "\n\n===282===\n\n世界上最富有的10位富豪，离婚过13次。\n\n",
     "category": "quotation",
     "originHref": "https://resobscura.substack.com/p/historical-maps-probably-helped-cause",
     "weekly": 282
@@ -484,7 +519,7 @@
   },
   {
     "title": "[杜克大学的一项研究](https://www.sciencedirect.com/science/article/abs/pii/S0022103122001615)",
-    "content": "\n\n任何不经常改主意的人，都大大低估了我们生活的世界的复杂性。\n\n-- 贝佐斯，亚马逊创始人\n\n\n\n我在 LinkedIn 公司任职。一年前我的汇报顺序是经理 > 高级经理 > 总监 > 高级总监 > 副总裁 > 高级副总裁 > 首席执行官。\n\n后来，公司削减层级，我的汇报顺序变成高级经理 > 高级总监 > 副总裁 > 高级副总裁 > 首席执行官。\n\n",
+    "content": "\n\n任何不经常改主意的人，都大大低估了我们生活的世界的复杂性。\n\n-- 贝佐斯，亚马逊创始人\n\n===281===\n\n我在 LinkedIn 公司任职。一年前我的汇报顺序是经理 > 高级经理 > 总监 > 高级总监 > 副总裁 > 高级副总裁 > 首席执行官。\n\n后来，公司削减层级，我的汇报顺序变成高级经理 > 高级总监 > 副总裁 > 高级副总裁 > 首席执行官。\n\n",
     "category": "quotation",
     "originHref": "https://www.sciencedirect.com/science/article/abs/pii/S0022103122001615",
     "weekly": 281
@@ -505,7 +540,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=37919124)",
-    "content": "\n\n不要把职业（career）当成某一件具体的事情，这是人类发明的最危险、最令人窒息的概念之一，也是大多数梦想和直觉的敌人。\n\n职业应该是一个抽象的概念，指的是一个人在日常的工作和生活中，不断探索、培训、实践、逐步进步的过程。\n\n--[《乔布斯的遗产》](https://every.to/napkin-math/steve-jobs-legacy-for-builders)\n\n\n\n每当你认为别人毁了你的生活时，实际上是你自己毁了你的生活。受害者心态是一种非常有害的心态。\n\n如果你换一种心态：无论情况多糟糕，这始终是你自己的问题，并且你尽力来解决它。我认为这更有效。\n\n",
+    "content": "\n\n不要把职业（career）当成某一件具体的事情，这是人类发明的最危险、最令人窒息的概念之一，也是大多数梦想和直觉的敌人。\n\n职业应该是一个抽象的概念，指的是一个人在日常的工作和生活中，不断探索、培训、实践、逐步进步的过程。\n\n--[《乔布斯的遗产》](https://every.to/napkin-math/steve-jobs-legacy-for-builders)\n\n===280===\n\n每当你认为别人毁了你的生活时，实际上是你自己毁了你的生活。受害者心态是一种非常有害的心态。\n\n如果你换一种心态：无论情况多糟糕，这始终是你自己的问题，并且你尽力来解决它。我认为这更有效。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=37919124",
     "weekly": 280
@@ -540,7 +575,7 @@
   },
   {
     "title": "[马克·库班](https://mrsteinberg.com/how-to-find-out-what-you-want-to-do-creatively/)，美国企业家",
-    "content": "\n\n\n\n真是难以置信，我们距离第一款智能手机发布，只有区区15年，而现在已经到了这样的阶段：新发布的智能手机，已经没有太大的改进，增加的都是一些微不足道的“创新”。\n\n",
+    "content": "\n\n===279===\n\n真是难以置信，我们距离第一款智能手机发布，只有区区15年，而现在已经到了这样的阶段：新发布的智能手机，已经没有太大的改进，增加的都是一些微不足道的“创新”。\n\n",
     "category": "quotation",
     "originHref": "https://mrsteinberg.com/how-to-find-out-what-you-want-to-do-creatively/",
     "weekly": 279
@@ -568,7 +603,7 @@
   },
   {
     "title": "[《白鲸》](https://erikwernquist.com/wanderers)，美国经典小说",
-    "content": "\n\n\n\n软件的第一个版本，最多三个人就够了：一个程序员、一个设计师、还有一个机动，既干一点编程，也干一点设计。\n\n如果你发现三个人不够，那就换人，或者缩小软件初始版本的构想。\n\n-- 《Getting Real》\n\n我对 ChatGPT 的理解就是，它类似于“整个人类知识的最大似然估计”。\n\n我发现，周围的人对它有两种截然不同的看法：（1）嗯，这只是一个愚蠢的统计模型；（2）该死，人类完蛋了！\n\n",
+    "content": "\n\n===278===\n\n软件的第一个版本，最多三个人就够了：一个程序员、一个设计师、还有一个机动，既干一点编程，也干一点设计。\n\n如果你发现三个人不够，那就换人，或者缩小软件初始版本的构想。\n\n-- 《Getting Real》\n\n我对 ChatGPT 的理解就是，它类似于“整个人类知识的最大似然估计”。\n\n我发现，周围的人对它有两种截然不同的看法：（1）嗯，这只是一个愚蠢的统计模型；（2）该死，人类完蛋了！\n\n",
     "category": "quotation",
     "originHref": "https://erikwernquist.com/wanderers",
     "weekly": 278
@@ -589,7 +624,7 @@
   },
   {
     "title": "[《错误信息的解药》](https://fcpp.org/2021/07/28/misinformation-should-be-refuted-not-censored/)",
-    "content": "\n\n\n\n新的科技公司创新，老的科技公司诉讼。\n\n",
+    "content": "\n\n===277===\n\n新的科技公司创新，老的科技公司诉讼。\n\n",
     "category": "quotation",
     "originHref": "https://fcpp.org/2021/07/28/misinformation-should-be-refuted-not-censored/",
     "weekly": 277
@@ -610,7 +645,7 @@
   },
   {
     "title": "[彼得·希格斯](https://www.theguardian.com/science/2013/dec/06/peter-higgs-boson-academic-system)，“希格斯玻色子”的发现者。从1964年至今，他发表的论文不超过10篇。",
-    "content": "\n\n\n\n有一次，古希腊哲学家皮浪乘船时，遇到了巨大的暴风雨。他看到有些乘客非常害怕，就以自己携带的猪还在专心进食，来安慰他们不要担心。\n\n这件事让我们思考，人类引以为傲的理性，是不是在折磨我们，让我们失去平静？\n\n",
+    "content": "\n\n===276===\n\n有一次，古希腊哲学家皮浪乘船时，遇到了巨大的暴风雨。他看到有些乘客非常害怕，就以自己携带的猪还在专心进食，来安慰他们不要担心。\n\n这件事让我们思考，人类引以为傲的理性，是不是在折磨我们，让我们失去平静？\n\n",
     "category": "quotation",
     "originHref": "https://www.theguardian.com/science/2013/dec/06/peter-higgs-boson-academic-system",
     "weekly": 276
@@ -638,7 +673,7 @@
   },
   {
     "title": "[@andrewchen](https://andrewchen.com/the-next-feature-fallacy-the-fallacy-that-the-next-new-feature-will-suddenly-make-people-use-your-product/)",
-    "content": "\n\n\n\n人们表达对其他人的感激之情，有一种方式就是创造一些美好的东西。在你精心制作这个东西的过程中，你会把爱包含在里面，不知不觉传递出去。\n\n",
+    "content": "\n\n===275===\n\n人们表达对其他人的感激之情，有一种方式就是创造一些美好的东西。在你精心制作这个东西的过程中，你会把爱包含在里面，不知不觉传递出去。\n\n",
     "category": "quotation",
     "originHref": "https://andrewchen.com/the-next-feature-fallacy-the-fallacy-that-the-next-new-feature-will-suddenly-make-people-use-your-product/",
     "weekly": 275
@@ -666,7 +701,7 @@
   },
   {
     "title": "[《停止沉迷于工具》](https://plug-world.com/posts/stop-obsessing-over-tools/)",
-    "content": "\n\n\n\n世界上有成千上万的聪明人，他们可以创办公司，也可以不创办。外界只要在适当的地方施加一些小小的推动，世界就会涌现一大批本来不存在的创业企业。\n\n",
+    "content": "\n\n===274===\n\n世界上有成千上万的聪明人，他们可以创办公司，也可以不创办。外界只要在适当的地方施加一些小小的推动，世界就会涌现一大批本来不存在的创业企业。\n\n",
     "category": "quotation",
     "originHref": "https://plug-world.com/posts/stop-obsessing-over-tools/",
     "weekly": 274
@@ -701,7 +736,7 @@
   },
   {
     "title": "[《好的代码就像写给接手者的一封情书》](https://addyosmani.com/blog/good-code/)",
-    "content": "\n\n\n\n扎克伯格、贝佐斯、比尔·盖茨、马斯克，这些人有一个共同点，就是都有有钱的父母。\n\n",
+    "content": "\n\n===273===\n\n扎克伯格、贝佐斯、比尔·盖茨、马斯克，这些人有一个共同点，就是都有有钱的父母。\n\n",
     "category": "quotation",
     "originHref": "https://addyosmani.com/blog/good-code/",
     "weekly": 273
@@ -736,7 +771,7 @@
   },
   {
     "title": "[Twitter 用户](https://lindynewsletter.beehiiv.com/p/subtitles-everything)",
-    "content": "\n\n\n\n世界上有两种人：一种人接受教条并且知道它，另一种人接受教条但不知道它。\n\n",
+    "content": "\n\n===272===\n\n世界上有两种人：一种人接受教条并且知道它，另一种人接受教条但不知道它。\n\n",
     "category": "quotation",
     "originHref": "https://lindynewsletter.beehiiv.com/p/subtitles-everything",
     "weekly": 272
@@ -771,7 +806,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=37597244)，评论吉卜力被卖给日本电视网络公司",
-    "content": "\n\n\n\n不要在疲劳的时候写代码。敬业和专业精神，更多地体现在你的纪律性，而不是体现在投入的时间。\n\n",
+    "content": "\n\n===271===\n\n不要在疲劳的时候写代码。敬业和专业精神，更多地体现在你的纪律性，而不是体现在投入的时间。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=37597244",
     "weekly": 271
@@ -792,7 +827,7 @@
   },
   {
     "title": "[《10 个最昂贵的设计错误》](https://adplist.substack.com/p/10-most-expensive-design-mistakes)",
-    "content": "\n\n长期计划属于臆测，没有人能够未卜先知。篇幅庞大的计划书最终都会成为文件柜里的化石。\n\n你只需要决定这周要做什么，找出下一项最重要的任务，然后去做，不必去管全年计划。\n\n无计划地工作看上去挺悬，但是盲目遵循不切实际的计划，后果更糟糕。\n\n-- 《Rework》\n\n\n\nCSS 每年都添加众多的新特性，对任何人来说都很难跟上，更不要说利用它们了。\n\n基本上，CSS 的复杂度已经赶上了 JavaScript。\n\n",
+    "content": "\n\n长期计划属于臆测，没有人能够未卜先知。篇幅庞大的计划书最终都会成为文件柜里的化石。\n\n你只需要决定这周要做什么，找出下一项最重要的任务，然后去做，不必去管全年计划。\n\n无计划地工作看上去挺悬，但是盲目遵循不切实际的计划，后果更糟糕。\n\n-- 《Rework》\n\n===270===\n\nCSS 每年都添加众多的新特性，对任何人来说都很难跟上，更不要说利用它们了。\n\n基本上，CSS 的复杂度已经赶上了 JavaScript。\n\n",
     "category": "quotation",
     "originHref": "https://adplist.substack.com/p/10-most-expensive-design-mistakes",
     "weekly": 270
@@ -827,7 +862,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=36904240)",
-    "content": "\n\n\n\n实时数据分析很诱人，满足了我们对最新数据的渴望。但是实际上，很少需要根据实时数据做出产品决策。数据分析已经够困难了，真的没有必要尝试实时完成。\n\n",
+    "content": "\n\n===269===\n\n实时数据分析很诱人，满足了我们对最新数据的渴望。但是实际上，很少需要根据实时数据做出产品决策。数据分析已经够困难了，真的没有必要尝试实时完成。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=36904240",
     "weekly": 269
@@ -862,7 +897,7 @@
   },
   {
     "title": "[《我已经不再使用 Red Hat 了》](https://www.jeffgeerling.com/blog/2023/im-done-red-hat-enterprise-linux)",
-    "content": "\n\n\n\n很多成功的艺术家，不是因为模仿某种风格而成功，恰恰相反，他们不顾一切地做自己想做的事情，直到建立了自己独特的风格。\n\n",
+    "content": "\n\n===268===\n\n很多成功的艺术家，不是因为模仿某种风格而成功，恰恰相反，他们不顾一切地做自己想做的事情，直到建立了自己独特的风格。\n\n",
     "category": "quotation",
     "originHref": "https://www.jeffgeerling.com/blog/2023/im-done-red-hat-enterprise-linux",
     "weekly": 268
@@ -897,7 +932,7 @@
   },
   {
     "title": "[《自动驾驶与交通安全》](https://slate.com/technology/2023/07/cruise-autonomous-vehicles-safety-waymo-self-driving-cars-ad-new-york-times.html)",
-    "content": "\n\n\n\n每个人都应该有一个网站。它会被安全地保存在 archive.org 中，供你的后代研究和思考。网站的可持久性，比社交媒体好得多，也比人们以为的更长久。\n\n",
+    "content": "\n\n===267===\n\n每个人都应该有一个网站。它会被安全地保存在 archive.org 中，供你的后代研究和思考。网站的可持久性，比社交媒体好得多，也比人们以为的更长久。\n\n",
     "category": "quotation",
     "originHref": "https://slate.com/technology/2023/07/cruise-autonomous-vehicles-safety-waymo-self-driving-cars-ad-new-york-times.html",
     "weekly": 267
@@ -925,7 +960,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=36251536)",
-    "content": "\n\n\n\n所有堆积如山的东西，都是不可预测的。\n\n简化系统的首选方法，就是将一个大系统，转变为多个更小的子系统组成的系统。\n\n",
+    "content": "\n\n===266===\n\n所有堆积如山的东西，都是不可预测的。\n\n简化系统的首选方法，就是将一个大系统，转变为多个更小的子系统组成的系统。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=36251536",
     "weekly": 266
@@ -953,7 +988,7 @@
   },
   {
     "title": "[《后 ChatGPT 世界的 SEO》](https://www.animalz.co/blog/seo-and-chatgpt/)",
-    "content": "\n\n\n\n科学研究最重要的行为准则之一，就是“不要相信权威的话”。他们太多的论点被证明是错误的，权威必须像其他人一样证明他们的论点。\n\n",
+    "content": "\n\n===265===\n\n科学研究最重要的行为准则之一，就是“不要相信权威的话”。他们太多的论点被证明是错误的，权威必须像其他人一样证明他们的论点。\n\n",
     "category": "quotation",
     "originHref": "https://www.animalz.co/blog/seo-and-chatgpt/",
     "weekly": 265
@@ -988,7 +1023,7 @@
   },
   {
     "title": "[《如何在数字时代更好地学习》](https://giansegato.com/essays/edutainment-is-not-learning)",
-    "content": "\n\n\n\n在任何一个领域，刻意练习都是造就顶尖人才的方法，也是顶尖人才用来保持领先地位的方法。如果你想成为专业人士，刻意训练自己是绝对必不可少的。\n\n",
+    "content": "\n\n===264===\n\n在任何一个领域，刻意练习都是造就顶尖人才的方法，也是顶尖人才用来保持领先地位的方法。如果你想成为专业人士，刻意训练自己是绝对必不可少的。\n\n",
     "category": "quotation",
     "originHref": "https://giansegato.com/essays/edutainment-is-not-learning",
     "weekly": 264
@@ -1016,7 +1051,7 @@
   },
   {
     "title": "[Stephen Wolfram](https://alphalist.com/podcast/78-stephen-wolfram-founder-ceo-of-wolfram-research)，著名计算机学家",
-    "content": "\n\n\n\n我们家的洗碗机经常坏，上一次是我自己修好的，这一次修不好了。\n\n一连10天，我都用手洗碗。虽然我小时候就是这样做，但是洗碗机让我忘了，自己曾经多么讨厌这件事。好在新洗碗机终于到了。\n\n",
+    "content": "\n\n===263===\n\n我们家的洗碗机经常坏，上一次是我自己修好的，这一次修不好了。\n\n一连10天，我都用手洗碗。虽然我小时候就是这样做，但是洗碗机让我忘了，自己曾经多么讨厌这件事。好在新洗碗机终于到了。\n\n",
     "category": "quotation",
     "originHref": "https://alphalist.com/podcast/78-stephen-wolfram-founder-ceo-of-wolfram-research",
     "weekly": 263
@@ -1037,7 +1072,7 @@
   },
   {
     "title": "[《杀死社区》](https://www.marginalia.nu/log/82_killing_community/)",
-    "content": "\n\n以太坊发明者 Vitalik Buterin 在创建以太坊之前，是一名记者，为比特币杂志撰稿。\n他（或者他的父亲）说，他们相信写作帮助他理清了思想。\n\n跟大家想的不一样，编程并不需要掌握深刻的思想，而是需要某种程度上记住文档，以便用某些固定词汇，清晰表达我们的想法。\n\n",
+    "content": "\n\n以太坊发明者 Vitalik Buterin 在创建以太坊之前，是一名记者，为比特币杂志撰稿。\n他（或者他的父亲）说，他们相信写作帮助他理清了思想。===262===\n\n跟大家想的不一样，编程并不需要掌握深刻的思想，而是需要某种程度上记住文档，以便用某些固定词汇，清晰表达我们的想法。\n\n",
     "category": "quotation",
     "originHref": "https://www.marginalia.nu/log/82_killing_community/",
     "weekly": 262
@@ -1065,7 +1100,7 @@
   },
   {
     "title": "[《休息不是为了优化》](https://theconvivialsociety.substack.com/p/you-cant-optimize-for-rest)",
-    "content": "\n\n\n\n320年，12位总统，10位皇帝，2个共和国，一份报纸。\n\n",
+    "content": "\n\n===261===\n\n320年，12位总统，10位皇帝，2个共和国，一份报纸。\n\n",
     "category": "quotation",
     "originHref": "https://theconvivialsociety.substack.com/p/you-cant-optimize-for-rest",
     "weekly": 261
@@ -1093,7 +1128,7 @@
   },
   {
     "title": "[《逻辑、严谨和辩论》](https://demodexio.substack.com/p/is-it-possible-to-use-logic-rigor)",
-    "content": "\n\n\n\n生命的行为目的，不是为了食物和能量，而是为了负熵，争取负熵最大化。\n\n熵代表衰老和死亡，那么负熵就代表对抗衰老和死亡。\n\n",
+    "content": "\n\n===260===\n\n生命的行为目的，不是为了食物和能量，而是为了负熵，争取负熵最大化。\n\n熵代表衰老和死亡，那么负熵就代表对抗衰老和死亡。\n\n",
     "category": "quotation",
     "originHref": "https://demodexio.substack.com/p/is-it-possible-to-use-logic-rigor",
     "weekly": 260
@@ -1121,7 +1156,7 @@
   },
   {
     "title": "[《高级工程师的道路》](https://smyachenkov.com/posts/book-review-the-staff-engineers-path/)",
-    "content": "\n\n\n\n这个世界日以继夜、竭尽全力让你成为其他人，如果你想做你自己，就意味着要打一场最艰难的仗。\n\n",
+    "content": "\n\n===259===\n\n这个世界日以继夜、竭尽全力让你成为其他人，如果你想做你自己，就意味着要打一场最艰难的仗。\n\n",
     "category": "quotation",
     "originHref": "https://smyachenkov.com/posts/book-review-the-staff-engineers-path/",
     "weekly": 259
@@ -1149,7 +1184,7 @@
   },
   {
     "title": "[《我20年的职业生涯》](https://blog.visionarycto.com/p/my-20-year-career-is-technical-debt)",
-    "content": "\n\n\n\n1977年上线的计算机系统中，只有两个至今仍在可靠的运行，而且都不在地球。它们就是旅行者1号和2号飞行器，目前都离开了太阳系，飞向宇宙深处。\n\n",
+    "content": "\n\n===258===\n\n1977年上线的计算机系统中，只有两个至今仍在可靠的运行，而且都不在地球。它们就是旅行者1号和2号飞行器，目前都离开了太阳系，飞向宇宙深处。\n\n",
     "category": "quotation",
     "originHref": "https://blog.visionarycto.com/p/my-20-year-career-is-technical-debt",
     "weekly": 258
@@ -1184,7 +1219,7 @@
   },
   {
     "title": "[伦敦皇家学会](https://nautil.us/the-19th-century-trippers-who-probed-the-mind-303265/)，1660年成立时选择的座右铭",
-    "content": "\n\n\n\n以后不再有《教父》，也不再有《绿野仙踪》，只有15秒的人类愚蠢片段。\n\n",
+    "content": "\n\n===257===\n\n以后不再有《教父》，也不再有《绿野仙踪》，只有15秒的人类愚蠢片段。\n\n",
     "category": "quotation",
     "originHref": "https://nautil.us/the-19th-century-trippers-who-probed-the-mind-303265/",
     "weekly": 257
@@ -1212,7 +1247,7 @@
   },
   {
     "title": "[Hacker News 网友](https://news.ycombinator.com/item?id=35850324)",
-    "content": "\n\n\n\n美国经济的一个优势是，在美国创业很容易，解雇员工和企业破产也很容易，这大大方便了资源的快速重组。\n\n",
+    "content": "\n\n===256===\n\n美国经济的一个优势是，在美国创业很容易，解雇员工和企业破产也很容易，这大大方便了资源的快速重组。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=35850324",
     "weekly": 256
@@ -1240,7 +1275,7 @@
   },
   {
     "title": "[《手机的“位置关闭”开关是一个谎言》](https://gabrielsieben.tech/2023/05/01/the-location-off-switch-on-your-phone-is-a-lie/)",
-    "content": "\n\n\n\n人类已经处于与 AI 共同进化的阶段：AI 影响和感染了我们，然后我们又改进了 AI，让它更像人类。\n\n",
+    "content": "\n\n===255===\n\n人类已经处于与 AI 共同进化的阶段：AI 影响和感染了我们，然后我们又改进了 AI，让它更像人类。\n\n",
     "category": "quotation",
     "originHref": "https://gabrielsieben.tech/2023/05/01/the-location-off-switch-on-your-phone-is-a-lie/",
     "weekly": 255
@@ -1268,7 +1303,7 @@
   },
   {
     "title": "[《最大可行产品》](https://debugger.medium.com/its-time-for-maximum-viable-product-eec9d5211156)",
-    "content": "\n\n\n\n一项研究发现，小团体比单独交往，更容易建立友谊，也更持久。\n\n因为小团体经常有定期活动，容易产生更多的接触机会。因此，如果你想交朋友，加入一些小团体吧。\n\n--[《成年后交朋友太难了》](https://www.wbur.org/hereandnow/2021/11/10/making-friends-adults)\n\n为什么 AI 最终将取代人类工作？因为当你是生产链条中最慢的那个部分时，取代你将提高整个链条的生产力。\n\n",
+    "content": "\n\n===254===\n\n一项研究发现，小团体比单独交往，更容易建立友谊，也更持久。\n\n因为小团体经常有定期活动，容易产生更多的接触机会。因此，如果你想交朋友，加入一些小团体吧。\n\n--[《成年后交朋友太难了》](https://www.wbur.org/hereandnow/2021/11/10/making-friends-adults)\n\n为什么 AI 最终将取代人类工作？因为当你是生产链条中最慢的那个部分时，取代你将提高整个链条的生产力。\n\n",
     "category": "quotation",
     "originHref": "https://debugger.medium.com/its-time-for-maximum-viable-product-eec9d5211156",
     "weekly": 254
@@ -1289,7 +1324,7 @@
   },
   {
     "title": "[推特网友](https://twitter.com/landgren/status/1650054767987548160)",
-    "content": "\n\n\n\n我离开谷歌，是为了呼吁 AI 的风险，在谷歌任职不方便谈论这些事情。\n\n",
+    "content": "\n\n===253===\n\n我离开谷歌，是为了呼吁 AI 的风险，在谷歌任职不方便谈论这些事情。\n\n",
     "category": "quotation",
     "originHref": "https://twitter.com/landgren/status/1650054767987548160",
     "weekly": 253
@@ -1310,7 +1345,7 @@
   },
   {
     "title": "[Yann LeCun](https://twitter.com/ylecun/status/1647533059212812289)，Meta 首席 AI 科学家",
-    "content": "\n\n要成为优秀程序员，请编写大量代码；要成为顶级程序员，请阅读大量代码。\n\n--[《请编写 CRISP 代码》](https://bitfieldconsulting.com/golang/crisp-code)\n\n\n\n人们一直寻找十倍生产力的 10X 工程师。现在，你只需要一个 OpenAI API 密钥，就能找到 1000X 工程师。\n\n",
+    "content": "\n\n要成为优秀程序员，请编写大量代码；要成为顶级程序员，请阅读大量代码。\n\n--[《请编写 CRISP 代码》](https://bitfieldconsulting.com/golang/crisp-code)\n\n===252===\n\n人们一直寻找十倍生产力的 10X 工程师。现在，你只需要一个 OpenAI API 密钥，就能找到 1000X 工程师。\n\n",
     "category": "quotation",
     "originHref": "https://twitter.com/ylecun/status/1647533059212812289",
     "weekly": 252
@@ -1331,7 +1366,7 @@
   },
   {
     "title": "[Hacker news 读者](https://news.ycombinator.com/item?id=35520582)",
-    "content": "\n\n\n\n如果一个人使用 C 语言，那往往不是因为他选择了 C 语言，而是 C 语言选择了他。\n\n如果你开发的是操作系统、编译器、硬件驱动，那么你没有选择，只能使用 C 语言。\n\n",
+    "content": "\n\n===251===\n\n如果一个人使用 C 语言，那往往不是因为他选择了 C 语言，而是 C 语言选择了他。\n\n如果你开发的是操作系统、编译器、硬件驱动，那么你没有选择，只能使用 C 语言。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=35520582",
     "weekly": 251
@@ -1366,7 +1401,7 @@
   },
   {
     "title": "[大卫·福斯特·华莱士](https://www.salon.com/1996/03/09/wallace_5/)，美国小说家",
-    "content": "\n\n\n\n企业家谈成功经验，就好像在说：“我曾经用这些号码，赢得过彩票。”\n\n",
+    "content": "\n\n===250===\n\n企业家谈成功经验，就好像在说：“我曾经用这些号码，赢得过彩票。”\n\n",
     "category": "quotation",
     "originHref": "https://www.salon.com/1996/03/09/wallace_5/",
     "weekly": 250
@@ -1394,7 +1429,7 @@
   },
   {
     "title": "[《AI 颠覆世界》](https://techxplore.com/news/2023-03-ai-upend-world-electricity-internet.html)",
-    "content": "\n\n\n\n一开始，程序直接在硬件上运行；后来，程序在操作系统上运行；现在，程序自带一个浏览器底层（Electron），在浏览器上运行。\n\n",
+    "content": "\n\n===249===\n\n一开始，程序直接在硬件上运行；后来，程序在操作系统上运行；现在，程序自带一个浏览器底层（Electron），在浏览器上运行。\n\n",
     "category": "quotation",
     "originHref": "https://techxplore.com/news/2023-03-ai-upend-world-electricity-internet.html",
     "weekly": 249
@@ -1422,7 +1457,7 @@
   },
   {
     "title": "[台湾网友](https://mapleduh.pixnet.net/blog/post/50321284)",
-    "content": "\n\n\n\n一旦你有足够的原子，你就开始搞化学。一旦你有足够的分子，你就开始搞生物学。一旦你有足够的算力，你就开始搞 AI。\n\n",
+    "content": "\n\n===248===\n\n一旦你有足够的原子，你就开始搞化学。一旦你有足够的分子，你就开始搞生物学。一旦你有足够的算力，你就开始搞 AI。\n\n",
     "category": "quotation",
     "originHref": "https://mapleduh.pixnet.net/blog/post/50321284",
     "weekly": 248
@@ -1457,7 +1492,7 @@
   },
   {
     "title": "[《发布 Newsletter 35年的35条教训》](https://www.cjchilvers.com/blog/35-lessons-from-35-years-of-newsletter-publishing/)",
-    "content": "\n\n\n\n亚马逊创始人贝佐斯禁止在公司使用 Powerpoint，他觉得这种方式太低效了。\n\n以前，每当有人站在他面前演示幻灯片，刚说了开头几句，贝佐斯就要那个人直接切换到最后一张幻灯片，展示他的结论。\n\n",
+    "content": "\n\n===247===\n\n亚马逊创始人贝佐斯禁止在公司使用 Powerpoint，他觉得这种方式太低效了。\n\n以前，每当有人站在他面前演示幻灯片，刚说了开头几句，贝佐斯就要那个人直接切换到最后一张幻灯片，展示他的结论。\n\n",
     "category": "quotation",
     "originHref": "https://www.cjchilvers.com/blog/35-lessons-from-35-years-of-newsletter-publishing/",
     "weekly": 247
@@ -1471,9 +1506,16 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=34421785)",
-    "content": "\n\n现代数学理论书籍只有两种：一种是第一页就读不下去，另一种是第一句就读不下去。\n\n-- [杨振宁](https://www.math.columbia.edu/~woit/wordpress/?p=674)\n\n苹果公司的招聘理念就是两点。\n\n（1）优秀人才是自我管理的，但需要领导者为大家提供一个共同目标。\n\n（2） 只有某个人看到 Macintosh 电脑感到无比兴奋，我们才会雇佣他。\n\n",
+    "content": "\n\n现代数学理论书籍只有两种：一种是第一页就读不下去，另一种是第一句就读不下去。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=34421785",
+    "weekly": 247
+  },
+  {
+    "title": "[杨振宁](https://www.math.columbia.edu/~woit/wordpress/?p=674)",
+    "content": "\n\n苹果公司的招聘理念就是两点。\n\n（1）优秀人才是自我管理的，但需要领导者为大家提供一个共同目标。\n\n（2） 只有某个人看到 Macintosh 电脑感到无比兴奋，我们才会雇佣他。\n\n",
+    "category": "quotation",
+    "originHref": "https://www.math.columbia.edu/~woit/wordpress/?p=674",
     "weekly": 247
   },
   {
@@ -1485,7 +1527,7 @@
   },
   {
     "title": "[phys.org](https://phys.org/news/2023-01-ai-intelligent-alien-lifeand-weve.html)",
-    "content": "\n\n\n\n艺术家看到的不是世界的本来面目，而是一些更丰富、更简单、更强大的东西。\n\n艺术作品不是为了让观众重温现实，而是从现实中创造出一些东西，把一种更强烈的情绪传递给观众。\n\n",
+    "content": "\n\n===246===\n\n艺术家看到的不是世界的本来面目，而是一些更丰富、更简单、更强大的东西。\n\n艺术作品不是为了让观众重温现实，而是从现实中创造出一些东西，把一种更强烈的情绪传递给观众。\n\n",
     "category": "quotation",
     "originHref": "https://phys.org/news/2023-01-ai-intelligent-alien-lifeand-weve.html",
     "weekly": 246
@@ -1513,7 +1555,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=34368904)",
-    "content": "\n\n\n\n人是由他们的经历和生活环境塑造的。如果不发生一些疯狂的事情，就不可能迅速改变一个人。\n\n--[《从最难塑造的开始》](https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/)\n\n狂热和不宽容的主要来源，或者来源之一，就是有些人坚信自己的宗教是终极真理，比其他宗教更正确。\n\n人类的悲剧之一，就是变得傲慢比变得谦虚更容易。\n\n",
+    "content": "\n\n===245===\n\n人是由他们的经历和生活环境塑造的。如果不发生一些疯狂的事情，就不可能迅速改变一个人。\n\n--[《从最难塑造的开始》](https://devpoga.org/blog/2023-01-02_start_with_the_least_malleable/)\n\n狂热和不宽容的主要来源，或者来源之一，就是有些人坚信自己的宗教是终极真理，比其他宗教更正确。\n\n人类的悲剧之一，就是变得傲慢比变得谦虚更容易。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=34368904",
     "weekly": 245
@@ -1541,7 +1583,7 @@
   },
   {
     "title": "[《加密货币与皇帝的新衣》](https://robinwinslow.uk/crypto-house-of-cards)",
-    "content": "\n\n\n\n摩尔定律只说了，每18个月计算机芯片的晶体管数量增加一倍，但是没有说增加一倍所需要投入的科研人员，今天是1970年代的18倍。\n\n",
+    "content": "\n\n===244===\n\n摩尔定律只说了，每18个月计算机芯片的晶体管数量增加一倍，但是没有说增加一倍所需要投入的科研人员，今天是1970年代的18倍。\n\n",
     "category": "quotation",
     "originHref": "https://robinwinslow.uk/crypto-house-of-cards",
     "weekly": 244
@@ -1576,7 +1618,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=34211460)",
-    "content": "\n\n\n\n我实际上不明白，为什么有些人在昏暗空间中工作时，还喜欢在显示器上启用黑暗模式。这会让人感觉如此慵懒和阴郁。\n\n",
+    "content": "\n\n===243===\n\n我实际上不明白，为什么有些人在昏暗空间中工作时，还喜欢在显示器上启用黑暗模式。这会让人感觉如此慵懒和阴郁。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=34211460",
     "weekly": 243
@@ -1611,7 +1653,7 @@
   },
   {
     "title": "[卡尔萨根](https://www.goodreads.com/quotes/190741-we-are-like-butterflies-who-flutter-for-a-day-and)，美国科普作家",
-    "content": "\n\n\n\n我是 React 用户，最让我烦恼的是，React 团队对开发者面对的实际问题，似乎一无所知，只关注一些不那么重要的事情。\n\n他们设计了很多新的做法（比如事件处理、数据获取等等），确实可以更快地加载网页。但是让开发者关注这些东西，对于高级用途来说，这是完全错误的。\n\n",
+    "content": "\n\n===242===\n\n我是 React 用户，最让我烦恼的是，React 团队对开发者面对的实际问题，似乎一无所知，只关注一些不那么重要的事情。\n\n他们设计了很多新的做法（比如事件处理、数据获取等等），确实可以更快地加载网页。但是让开发者关注这些东西，对于高级用途来说，这是完全错误的。\n\n",
     "category": "quotation",
     "originHref": "https://www.goodreads.com/quotes/190741-we-are-like-butterflies-who-flutter-for-a-day-and",
     "weekly": 242
@@ -1646,7 +1688,7 @@
   },
   {
     "title": "[《更快的马》](https://redmonk.com/sogrady/2022/12/09/faster-horse/)",
-    "content": "\n\n\n\n十年前，如果你想从其他行业转入人工智能，只要钻研研究生数学，大概就可以了。\n\n现在不行了，容易的路径都被堵死了。你只能选择一个子领域，钻研所用到的专门知识，比如文本、图像、音频或者蛋白质折叠，那就更难了。\n\n",
+    "content": "\n\n===241===\n\n十年前，如果你想从其他行业转入人工智能，只要钻研研究生数学，大概就可以了。\n\n现在不行了，容易的路径都被堵死了。你只能选择一个子领域，钻研所用到的专门知识，比如文本、图像、音频或者蛋白质折叠，那就更难了。\n\n",
     "category": "quotation",
     "originHref": "https://redmonk.com/sogrady/2022/12/09/faster-horse/",
     "weekly": 241
@@ -1674,7 +1716,7 @@
   },
   {
     "title": "[Antirez](https://vickiboykis.com/2022/12/05/the-cloudy-layers-of-modern-day-programming/)，Redis 的作者",
-    "content": "\n\n乔布斯的营销方法，从来不侧重于产品规格，而是侧重于产品对人们的价值。\n\n-- David Perell\n\n\n\n费曼最大的特点之一，就是拥有永不满足的好奇心。从玛雅象形文字到非洲鼓，再到猫的解剖，他什么都学。而且，每当发现一个感兴趣的主题时，他从不等待老师出现，而是决心自己掌握它。\n\n",
+    "content": "\n\n乔布斯的营销方法，从来不侧重于产品规格，而是侧重于产品对人们的价值。\n\n-- David Perell\n\n===240===\n\n费曼最大的特点之一，就是拥有永不满足的好奇心。从玛雅象形文字到非洲鼓，再到猫的解剖，他什么都学。而且，每当发现一个感兴趣的主题时，他从不等待老师出现，而是决心自己掌握它。\n\n",
     "category": "quotation",
     "originHref": "https://vickiboykis.com/2022/12/05/the-cloudy-layers-of-modern-day-programming/",
     "weekly": 240
@@ -1709,7 +1751,7 @@
   },
   {
     "title": "[《关于美国的孤独者》](https://walkingtheworld.substack.com/p/happy-thanksgiving)",
-    "content": "\n\n\n\n权力斗争无所不在。只要你坚持自己的立场，克服阻力，说服他人，争取自己想要的结果，你就是在权力斗争。\n\n",
+    "content": "\n\n===239===\n\n权力斗争无所不在。只要你坚持自己的立场，克服阻力，说服他人，争取自己想要的结果，你就是在权力斗争。\n\n",
     "category": "quotation",
     "originHref": "https://walkingtheworld.substack.com/p/happy-thanksgiving",
     "weekly": 239
@@ -1737,7 +1779,7 @@
   },
   {
     "title": "[《停止提拔程序员》](https://blog.steatoda.com/stop-promoting-programmers)",
-    "content": "\n\n有人不喜欢自由，因为自由意味着人必须对自己的命运负责。他宁愿把自己的命运交给别人控制，这样可以活得轻松一些。\n\n-- 网友\n\n\n\n拍电影时，最重要的是你知道你想用电影表达什么。很多导演追求使用高科技拍电影，但对于他们真正想要表达的内容，却只有一个非常模糊的概念。\n\n人们其实非常欣赏那些制作技术并不先进、但知道自己想说什么的电影。\n\n",
+    "content": "\n\n有人不喜欢自由，因为自由意味着人必须对自己的命运负责。他宁愿把自己的命运交给别人控制，这样可以活得轻松一些。\n\n-- 网友\n\n===238===\n\n拍电影时，最重要的是你知道你想用电影表达什么。很多导演追求使用高科技拍电影，但对于他们真正想要表达的内容，却只有一个非常模糊的概念。\n\n人们其实非常欣赏那些制作技术并不先进、但知道自己想说什么的电影。\n\n",
     "category": "quotation",
     "originHref": "https://blog.steatoda.com/stop-promoting-programmers",
     "weekly": 238
@@ -1772,7 +1814,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=33652243)",
-    "content": "\n\n\n\n摩托车的危险性远高于汽车，前者的驾驶员死亡率是后者的27倍。最危险的事情莫过于夜间骑摩托车，占所有死亡事故的近一半。\n\n",
+    "content": "\n\n===237===\n\n摩托车的危险性远高于汽车，前者的驾驶员死亡率是后者的27倍。最危险的事情莫过于夜间骑摩托车，占所有死亡事故的近一半。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=33652243",
     "weekly": 237
@@ -1793,7 +1835,7 @@
   },
   {
     "title": "[《采矿业的有毒矿渣》](https://gerrymcgovern.com/tailings-minings-toxic-legacy/)",
-    "content": "\n\n因为有了互联网，现在最聪明的年轻人比以往任何时候都聪明。\n\n-- David Perell\n\n\n\n我面试应聘者有一个窍门，就是看他说话是否具体。那些合适的应聘者会告诉你大量的细节，而那些只会夸夸其谈术语和概念的人，几乎总是不合适的。\n\n-- David Perell\n\n我原以为，进入太空会感到欢欣鼓舞。但是实际上，看到的宇宙是一片寒冷、黑暗的空虚。\n\n我们唯一的家园——地球——显得那么渺小，而我正在远离它。我感到了强烈的悲伤。\n\n",
+    "content": "\n\n因为有了互联网，现在最聪明的年轻人比以往任何时候都聪明。\n\n-- David Perell\n\n===236===\n\n我面试应聘者有一个窍门，就是看他说话是否具体。那些合适的应聘者会告诉你大量的细节，而那些只会夸夸其谈术语和概念的人，几乎总是不合适的。\n\n-- David Perell\n\n我原以为，进入太空会感到欢欣鼓舞。但是实际上，看到的宇宙是一片寒冷、黑暗的空虚。\n\n我们唯一的家园——地球——显得那么渺小，而我正在远离它。我感到了强烈的悲伤。\n\n",
     "category": "quotation",
     "originHref": "https://gerrymcgovern.com/tailings-minings-toxic-legacy/",
     "weekly": 236
@@ -1821,7 +1863,7 @@
   },
   {
     "title": "[《走向知识驱动的系统管理》](https://research.redhat.com/events/toward-knowledge-driven-system-management-to-control-timeliness/)",
-    "content": "\n\n\n\n不分心的一天是非常漫长的一天。（A day without distractions is a very long day.）\n\n",
+    "content": "\n\n===235===\n\n不分心的一天是非常漫长的一天。（A day without distractions is a very long day.）\n\n",
     "category": "quotation",
     "originHref": "https://research.redhat.com/events/toward-knowledge-driven-system-management-to-control-timeliness/",
     "weekly": 235
@@ -1856,7 +1898,7 @@
   },
   {
     "title": "[《为什么医学教材不好用？》](https://mp.weixin.qq.com/s/9NV0sYqtRmiqYNGh20FN8w)",
-    "content": "\n\n\n\n软件工程师和项目主管每周都必须发布代码，否则就要走人。\n\n项目分析、开发文档、帮助队友……这些都是工作的基础部分，但不能替代编写代码。\n\n",
+    "content": "\n\n===234===\n\n软件工程师和项目主管每周都必须发布代码，否则就要走人。\n\n项目分析、开发文档、帮助队友……这些都是工作的基础部分，但不能替代编写代码。\n\n",
     "category": "quotation",
     "originHref": "https://mp.weixin.qq.com/s/9NV0sYqtRmiqYNGh20FN8w",
     "weekly": 234
@@ -1891,7 +1933,7 @@
   },
   {
     "title": "[《为什么内疚感可能预示着领导潜力》](https://www.gsb.stanford.edu/insights/why-feelings-guilt-may-signal-leadership-potential)",
-    "content": "\n\n\n\n那么多人去健身房，我一直想知道，他们健身释放的能量都去哪儿了？\n\n事实是，这些能量都没有利用起来，最终变成了热能，这真是人力的巨大浪费。\n\n",
+    "content": "\n\n===233===\n\n那么多人去健身房，我一直想知道，他们健身释放的能量都去哪儿了？\n\n事实是，这些能量都没有利用起来，最终变成了热能，这真是人力的巨大浪费。\n\n",
     "category": "quotation",
     "originHref": "https://www.gsb.stanford.edu/insights/why-feelings-guilt-may-signal-leadership-potential",
     "weekly": 233
@@ -1919,7 +1961,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=32877991)",
-    "content": "\n\n笔直的街道上，你往往会忽略周围的建筑物。但是，弯曲的街道上，你不可避免会关注两旁的建筑。弯曲的街道有助于创造人与城市的和谐环境。\n\n-- David Perell\n\n\n\n我做了几十年编码，我的职业生涯都被敏捷开发破坏了。没错，你始终是机器的一个齿轮，但敏捷开发让你每时每刻都感觉到这一点。\n\n",
+    "content": "\n\n笔直的街道上，你往往会忽略周围的建筑物。但是，弯曲的街道上，你不可避免会关注两旁的建筑。弯曲的街道有助于创造人与城市的和谐环境。\n\n-- David Perell\n\n===232===\n\n我做了几十年编码，我的职业生涯都被敏捷开发破坏了。没错，你始终是机器的一个齿轮，但敏捷开发让你每时每刻都感觉到这一点。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=32877991",
     "weekly": 232
@@ -1954,7 +1996,7 @@
   },
   {
     "title": "[《什么是高级工程师？》](https://codewithstyle.info/software-vs-systems/)",
-    "content": "\n\n\n\n人与人有冲突，就会去法院。国与国有冲突，最终是看谁的力量大。\n\n",
+    "content": "\n\n===231===\n\n人与人有冲突，就会去法院。国与国有冲突，最终是看谁的力量大。\n\n",
     "category": "quotation",
     "originHref": "https://codewithstyle.info/software-vs-systems/",
     "weekly": 231
@@ -1982,7 +2024,7 @@
   },
   {
     "title": "[诺亚·史密斯](https://noahpinion.substack.com/p/yes-your-house-is-wealth)（Noah Smith）",
-    "content": "\n\n我认识的那些不知道自己热衷什么的人，都努力得不够。他们只是坐在那里，等待事业的灵感来袭。\n\n他们不应该等待，应该去创造，然后就会知道自己的激情在哪里。\n\n-- David Perell\n\n\n\n你的每一个行动，都是对你想成为怎样的人的投票。\n\n",
+    "content": "\n\n我认识的那些不知道自己热衷什么的人，都努力得不够。他们只是坐在那里，等待事业的灵感来袭。\n\n他们不应该等待，应该去创造，然后就会知道自己的激情在哪里。\n\n-- David Perell\n\n===230===\n\n你的每一个行动，都是对你想成为怎样的人的投票。\n\n",
     "category": "quotation",
     "originHref": "https://noahpinion.substack.com/p/yes-your-house-is-wealth",
     "weekly": 230
@@ -2017,7 +2059,7 @@
   },
   {
     "title": "[《解码 AWS 的预留实例》](https://blog.symops.com/2022/08/24/decoding-aws-reserved-instances/)",
-    "content": "\n\n\n\n“准备悖论”指的是，如果提前采取有效措施，就可以减轻某种未来的灾难，那么人们就会倾向于认为，这种灾难没有那么严重，不会造成太大损害，从而阻碍对这种灾难进行提前准备。\n\n",
+    "content": "\n\n===229===\n\n“准备悖论”指的是，如果提前采取有效措施，就可以减轻某种未来的灾难，那么人们就会倾向于认为，这种灾难没有那么严重，不会造成太大损害，从而阻碍对这种灾难进行提前准备。\n\n",
     "category": "quotation",
     "originHref": "https://blog.symops.com/2022/08/24/decoding-aws-reserved-instances/",
     "weekly": 229
@@ -2052,7 +2094,7 @@
   },
   {
     "title": "[《推特的问题》](https://noahpinion.substack.com/p/twitters-problems-a-roundup)",
-    "content": "\n\n\n\n2010年，中央情报局发现，拉登可能藏身在巴基斯坦农村的一座神秘三层小楼，但是无法确定。\n\n他们就开始监视楼外的晾衣绳，通过晾晒衣服的种类和数量，判断楼里住了什么人和多少人。\n\n",
+    "content": "\n\n===228===\n\n2010年，中央情报局发现，拉登可能藏身在巴基斯坦农村的一座神秘三层小楼，但是无法确定。\n\n他们就开始监视楼外的晾衣绳，通过晾晒衣服的种类和数量，判断楼里住了什么人和多少人。\n\n",
     "category": "quotation",
     "originHref": "https://noahpinion.substack.com/p/twitters-problems-a-roundup",
     "weekly": 228
@@ -2087,7 +2129,7 @@
   },
   {
     "title": "[《开源悖论》](http://antirez.com/news/134)",
-    "content": "\n\n\n\n抖音对于创作者的价值在于，你不需要订阅者就可以获得浏览量，它的发现引擎会把你推给其他人。\n\n",
+    "content": "\n\n===227===\n\n抖音对于创作者的价值在于，你不需要订阅者就可以获得浏览量，它的发现引擎会把你推给其他人。\n\n",
     "category": "quotation",
     "originHref": "http://antirez.com/news/134",
     "weekly": 227
@@ -2122,7 +2164,7 @@
   },
   {
     "title": "[《开发开源项目的三个 F》](https://boyter.org/posts/the-three-f-s-of-open-source/)",
-    "content": "\n\n\n\n每当我在网站上看到“免费订阅”按钮，我就把网站主办方的邮箱提交上去。\n\n我还把这些邮箱保留下来，等到有空了，把它们逐个提交到各种订阅服务。\n\n",
+    "content": "\n\n===226===\n\n每当我在网站上看到“免费订阅”按钮，我就把网站主办方的邮箱提交上去。\n\n我还把这些邮箱保留下来，等到有空了，把它们逐个提交到各种订阅服务。\n\n",
     "category": "quotation",
     "originHref": "https://boyter.org/posts/the-three-f-s-of-open-source/",
     "weekly": 226
@@ -2150,7 +2192,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=32290813)",
-    "content": "\n\n\n\n你需要在互联网表达你自己。\n\n如果你在互联网上表达了你真正的兴趣，有一股神奇的力量会将你推给志同道合的人，让你们靠近。这些人会成为你最好的朋友、同事，有时甚至是伴侣。\n\n",
+    "content": "\n\n===225===\n\n你需要在互联网表达你自己。\n\n如果你在互联网上表达了你真正的兴趣，有一股神奇的力量会将你推给志同道合的人，让你们靠近。这些人会成为你最好的朋友、同事，有时甚至是伴侣。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=32290813",
     "weekly": 225
@@ -2185,9 +2227,16 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=32222849)",
-    "content": "\n\n\n\n我的一个朋友说，他的生活被尖锐地分成了两个部分。上半场，他始终是小组中最年轻的人；下半场，他突然就成了小组中年纪最大的，中间没有过渡期。\n\n我现在意识到，人生就是这样。到了一定年龄后，你就不再被视为一个人，而是被当成一个机构，别人看你就像看一件仿古家具、一个地标建筑或一个古墓。\n\n-- [《我希望我被教导的十个教训》](https://alumni.media.mit.edu/~cahn/life/gian-carlo-rota-10-lessons.html)\n\n我那些开发者兄弟，不要为这次代码泄漏垂头丧气，它会过去的。将来有一天，人们玩你们的游戏，欣赏你们的手艺，而这次的泄漏事件只会成为维基百科的一个脚注。向前看，继续创造吧。\n\n",
+    "content": "\n\n===224===\n\n我的一个朋友说，他的生活被尖锐地分成了两个部分。上半场，他始终是小组中最年轻的人；下半场，他突然就成了小组中年纪最大的，中间没有过渡期。\n\n我现在意识到，人生就是这样。到了一定年龄后，你就不再被视为一个人，而是被当成一个机构，别人看你就像看一件仿古家具、一个地标建筑或一个古墓。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=32222849",
+    "weekly": 224
+  },
+  {
+    "title": "[《我希望我被教导的十个教训》](https://alumni.media.mit.edu/~cahn/life/gian-carlo-rota-10-lessons.html)",
+    "content": "\n\n我那些开发者兄弟，不要为这次代码泄漏垂头丧气，它会过去的。将来有一天，人们玩你们的游戏，欣赏你们的手艺，而这次的泄漏事件只会成为维基百科的一个脚注。向前看，继续创造吧。\n\n",
+    "category": "quotation",
+    "originHref": "https://alumni.media.mit.edu/~cahn/life/gian-carlo-rota-10-lessons.html",
     "weekly": 224
   },
   {
@@ -2213,7 +2262,7 @@
   },
   {
     "title": "[David Kohn](https://www.timescale.com/blog/how-postgresql-views-and-materialized-views-work-and-how-they-influenced-timescaledb-continuous-aggregates/)",
-    "content": "\n\n\n\n我认为，人工智能不会取代人类。因为计算机只会计算，它们做不了任何不能表示为计算的事情。\n\n",
+    "content": "\n\n===223===\n\n我认为，人工智能不会取代人类。因为计算机只会计算，它们做不了任何不能表示为计算的事情。\n\n",
     "category": "quotation",
     "originHref": "https://www.timescale.com/blog/how-postgresql-views-and-materialized-views-work-and-how-they-influenced-timescaledb-continuous-aggregates/",
     "weekly": 223
@@ -2241,16 +2290,30 @@
   },
   {
     "title": "[路易斯·阿姆斯特朗](https://www.brainyquote.com/quotes/louis_armstrong_100265)，美国音乐家",
-    "content": "\n\n你的脑海中，必须始终记着十几个你最喜欢的问题，平时它们处于休眠状态。每次你听到或读到一个新发现时，就针对这十几个问题中的每一个进行测试，看看对解答问题是否有帮助，很多突破就是这样产生的。\n\n-- [理查德·费曼](https://alumni.media.mit.edu/~cahn/life/gian-carlo-rota-10-lessons.html)，著名物理学家\n\n\n\n一位护士问临终的病人，他们有什么遗憾。她后来总结出了5个最常见的回答。\n\n不要忽视梦想。不要工作过久。说出想法。交朋友。要开心。\n\n",
+    "content": "\n\n你的脑海中，必须始终记着十几个你最喜欢的问题，平时它们处于休眠状态。每次你听到或读到一个新发现时，就针对这十几个问题中的每一个进行测试，看看对解答问题是否有帮助，很多突破就是这样产生的。\n\n",
     "category": "quotation",
     "originHref": "https://www.brainyquote.com/quotes/louis_armstrong_100265",
+    "weekly": 223
+  },
+  {
+    "title": "[理查德·费曼](https://alumni.media.mit.edu/~cahn/life/gian-carlo-rota-10-lessons.html)，著名物理学家",
+    "content": "\n\n===222===\n\n一位护士问临终的病人，他们有什么遗憾。她后来总结出了5个最常见的回答。\n\n不要忽视梦想。不要工作过久。说出想法。交朋友。要开心。\n\n",
+    "category": "quotation",
+    "originHref": "https://alumni.media.mit.edu/~cahn/life/gian-carlo-rota-10-lessons.html",
     "weekly": 222
   },
   {
     "title": "[Paul Graham](http://www.paulgraham.com/todo.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022090805.webp)\n\n一位医生曾经告诉我，医学院没教的一件事情是，医学和当医生是有区别的。\n\n医学是一门生物科学，而当医生是一种社会技能，涉及到管理期望、了解医保制度、人际关系、有效沟通等。\n\n-- [《医学和当医生的区别》](http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2022-07.html#e2022-07-03T09_00_55.htm)\n\n医院最喜欢的病人是慢性病患者，他们依赖医院，但是又不会很快病死而不能支付账单。\n\n美国的医疗体系依靠患者赚钱，因此预防疾病并不积极，只有2.9%的医疗支出用于预防医学。这造成的结果就是，病人的寿命虽然长，但是健康的时间并不长。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022090805.webp)\n\n一位医生曾经告诉我，医学院没教的一件事情是，医学和当医生是有区别的。\n\n医学是一门生物科学，而当医生是一种社会技能，涉及到管理期望、了解医保制度、人际关系、有效沟通等。\n\n",
     "category": "quotation",
     "originHref": "http://www.paulgraham.com/todo.html",
+    "weekly": 222
+  },
+  {
+    "title": "[《医学和当医生的区别》](http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2022-07.html#e2022-07-03T09_00_55.htm)",
+    "content": "\n\n医院最喜欢的病人是慢性病患者，他们依赖医院，但是又不会很快病死而不能支付账单。\n\n美国的医疗体系依靠患者赚钱，因此预防疾病并不积极，只有2.9%的医疗支出用于预防医学。这造成的结果就是，病人的寿命虽然长，但是健康的时间并不长。\n\n",
+    "category": "quotation",
+    "originHref": "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2022-07.html#e2022-07-03T09_00_55.htm",
     "weekly": 222
   },
   {
@@ -2262,7 +2325,7 @@
   },
   {
     "title": "[Hacker News 网友](https://news.ycombinator.com/item?id=32012566)",
-    "content": "\n\n\n\n畜牧业是能量效率很低的产业，100卡路里的谷物饲料，只能转换成3卡路的牛肉。全世界只有13%的玉米是人类食用的，其他大部分都做成了饲料。此外，畜牧业还会占用大量本来生产人类食物的土地。\n\n--[《世界大部分粮食不是被人类吃掉的》](https://www.economist.com/graphic-detail/2022/06/23/most-of-the-worlds-grain-is-not-eaten-by-humans)\n\n我在 LinkedIn 上看到同事有很多证书。我不知道他们是如何拿到证书的，这是一个谜，因为团队中最弱的人通常有证书，最优秀的人倒没有。\n\n",
+    "content": "\n\n===221===\n\n畜牧业是能量效率很低的产业，100卡路里的谷物饲料，只能转换成3卡路的牛肉。全世界只有13%的玉米是人类食用的，其他大部分都做成了饲料。此外，畜牧业还会占用大量本来生产人类食物的土地。\n\n--[《世界大部分粮食不是被人类吃掉的》](https://www.economist.com/graphic-detail/2022/06/23/most-of-the-worlds-grain-is-not-eaten-by-humans)\n\n我在 LinkedIn 上看到同事有很多证书。我不知道他们是如何拿到证书的，这是一个谜，因为团队中最弱的人通常有证书，最优秀的人倒没有。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=32012566",
     "weekly": 221
@@ -2290,7 +2353,7 @@
   },
   {
     "title": "[《垃圾工作》](https://www.strike.coop/bullshit-jobs/)",
-    "content": "\n\n\n\n真的想做一个项目，那就开始得越快越好。早点做出有价值的成果，你会吸引到客户；如果做不出来，你就可以早点放弃，节省自己的时间，并了解哪里行不通。\n\n",
+    "content": "\n\n===220===\n\n真的想做一个项目，那就开始得越快越好。早点做出有价值的成果，你会吸引到客户；如果做不出来，你就可以早点放弃，节省自己的时间，并了解哪里行不通。\n\n",
     "category": "quotation",
     "originHref": "https://www.strike.coop/bullshit-jobs/",
     "weekly": 220
@@ -2325,7 +2388,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=31848315)",
-    "content": "\n\n\n\n一个好的领导（或者产品经理），应该具备五项技能：SQL、Excel、简洁写作、讲故事、区分优先级。\n\n",
+    "content": "\n\n===219===\n\n一个好的领导（或者产品经理），应该具备五项技能：SQL、Excel、简洁写作、讲故事、区分优先级。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=31848315",
     "weekly": 219
@@ -2353,7 +2416,7 @@
   },
   {
     "title": "[《不同的 Windows 体积有多大？》](https://www.neowin.net/forum/topic/1060820-how-big-were-the-different-windows-versions-95-19-mb/)",
-    "content": "\n\n\n\n有时候，我坐在电脑前，想写一些东西。面对着空白的文本编辑器，坐了一个小时，什么也写不出来，非常有挫折感。\n\n后来，我想通了，提醒自己写不出来没关系，这是为好作品的发生创造时间和空间。\n\n",
+    "content": "\n\n===218===\n\n有时候，我坐在电脑前，想写一些东西。面对着空白的文本编辑器，坐了一个小时，什么也写不出来，非常有挫折感。\n\n后来，我想通了，提醒自己写不出来没关系，这是为好作品的发生创造时间和空间。\n\n",
     "category": "quotation",
     "originHref": "https://www.neowin.net/forum/topic/1060820-how-big-were-the-different-windows-versions-95-19-mb/",
     "weekly": 218
@@ -2388,7 +2451,7 @@
   },
   {
     "title": "[《欢迎来到新的数据库时代》](https://ethanjb.medium.com/welcome-to-the-new-database-era-f4f8c8c407e1)",
-    "content": "\n\n\n\n软件开发的目标不是类型安全、100%的测试覆盖率、流畅的代码逻辑、完善的开发工具、高效的系统、使用最好的编程语言、优雅的 API 设计、快速的反馈循环、编写很棒的代码等等……\n\n软件开发的真正目标只有一个：发布解决客户问题的软件，为客户提供价值。\n\n",
+    "content": "\n\n===217===\n\n软件开发的目标不是类型安全、100%的测试覆盖率、流畅的代码逻辑、完善的开发工具、高效的系统、使用最好的编程语言、优雅的 API 设计、快速的反馈循环、编写很棒的代码等等……\n\n软件开发的真正目标只有一个：发布解决客户问题的软件，为客户提供价值。\n\n",
     "category": "quotation",
     "originHref": "https://ethanjb.medium.com/welcome-to-the-new-database-era-f4f8c8c407e1",
     "weekly": 217
@@ -2423,7 +2486,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=32305190)，对上面那条 Linus 的评论",
-    "content": "\n\n\n\n世界上最值得肯定的行为是，你创造了一些东西，然后你销售它们。\n\n世界上第二值得肯定的行为是，别人创造出你一直想要的东西，然后别人销售它们。\n\n",
+    "content": "\n\n===216===\n\n世界上最值得肯定的行为是，你创造了一些东西，然后你销售它们。\n\n世界上第二值得肯定的行为是，别人创造出你一直想要的东西，然后别人销售它们。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=32305190",
     "weekly": 216
@@ -2458,7 +2521,7 @@
   },
   {
     "title": "[《成为专业程序员10周年的感悟》](https://thorstenball.com/blog/2022/05/17/professional-programming-the-first-10-years/)",
-    "content": "\n\n\n\n工业革命之前，一个农民最多养活四个人，这意味着大部分人都必须是农民。现在21世纪，一个美国农民平均可以养活130人，所以农民占人口比例很小。\n\n科技使得农业生产大大集中了，其他行业也大致如此。人类历史是一个日益集中化的趋势，去中心化只是海市蜃楼般的幻想。\n\n",
+    "content": "\n\n===215===\n\n工业革命之前，一个农民最多养活四个人，这意味着大部分人都必须是农民。现在21世纪，一个美国农民平均可以养活130人，所以农民占人口比例很小。\n\n科技使得农业生产大大集中了，其他行业也大致如此。人类历史是一个日益集中化的趋势，去中心化只是海市蜃楼般的幻想。\n\n",
     "category": "quotation",
     "originHref": "https://thorstenball.com/blog/2022/05/17/professional-programming-the-first-10-years/",
     "weekly": 215
@@ -2493,7 +2556,7 @@
   },
   {
     "title": "[马克・库班](https://www.ithome.com/0/630/100.htm)（Mark Cuban）",
-    "content": "\n\n\n\n这个星球有将近80亿人，可能有一万人与你非常相似、心灵相通。互联网是你找到他们、并发生联系的最可能方式。\n\n",
+    "content": "\n\n===214===\n\n这个星球有将近80亿人，可能有一万人与你非常相似、心灵相通。互联网是你找到他们、并发生联系的最可能方式。\n\n",
     "category": "quotation",
     "originHref": "https://www.ithome.com/0/630/100.htm",
     "weekly": 214
@@ -2528,7 +2591,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=30157986)",
-    "content": "\n\n\n\n说服他人的一种常见手法是，不要争辩某事是假的，只需要证明它与低地位的人有关；反之亦然，不要争论某事是真的，只需要证明它与高地位的人有关。\n\n",
+    "content": "\n\n===213===\n\n说服他人的一种常见手法是，不要争辩某事是假的，只需要证明它与低地位的人有关；反之亦然，不要争论某事是真的，只需要证明它与高地位的人有关。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=30157986",
     "weekly": 213
@@ -2563,7 +2626,7 @@
   },
   {
     "title": "[《为什么程序员停滞不前》](https://blog.devgenius.io/why-developers-stagnate-77d9bfc5c91e)",
-    "content": "\n\n\n\n有一句名言：编程是思考，而不是打字。多年编程后，我时常觉得自己打字太多，思考太少。\n\n",
+    "content": "\n\n===212===\n\n有一句名言：编程是思考，而不是打字。多年编程后，我时常觉得自己打字太多，思考太少。\n\n",
     "category": "quotation",
     "originHref": "https://blog.devgenius.io/why-developers-stagnate-77d9bfc5c91e",
     "weekly": 212
@@ -2598,7 +2661,7 @@
   },
   {
     "title": "[《技术含量低一些》](https://www.sequential.dev/posts/be-less-technical/)",
-    "content": "\n\n\n\n如果你的项目调用谷歌地图，会付出很高的成本。谷歌对每个请求都收费：方向、搜索自动补全、地点详细信息、地点照片、街景照片、静态地图、动态地图和时区查找……所有 API 没有一个是免费的。\n\n而且，谷歌禁止你将它的数据与其他地图服务结合，所以没法某一个 API用它的，其他 API 用别家的。\n\n",
+    "content": "\n\n===211===\n\n如果你的项目调用谷歌地图，会付出很高的成本。谷歌对每个请求都收费：方向、搜索自动补全、地点详细信息、地点照片、街景照片、静态地图、动态地图和时区查找……所有 API 没有一个是免费的。\n\n而且，谷歌禁止你将它的数据与其他地图服务结合，所以没法某一个 API用它的，其他 API 用别家的。\n\n",
     "category": "quotation",
     "originHref": "https://www.sequential.dev/posts/be-less-technical/",
     "weekly": 211
@@ -2633,7 +2696,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=30956271)",
-    "content": "\n\n\n\n一件事最可怕的时刻，总是在你开始做之前。\n\n",
+    "content": "\n\n===210===\n\n一件事最可怕的时刻，总是在你开始做之前。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=30956271",
     "weekly": 210
@@ -2668,7 +2731,7 @@
   },
   {
     "title": "[《我从博客中学到的东西》](https://bhupesh.me//what-i-have-learned-from-blogging-so-far-retrospect/)",
-    "content": "\n\n\n\n美国有一项世界纪录。1790年出生的第十任总统约翰·泰勒的孙子，至今还在世。\n\n这个总统在1853年有了儿子，当时63岁。他的儿子在1928年70多岁时，生了孙子。他的孙子今年已经94岁了。\n\n",
+    "content": "\n\n===209===\n\n美国有一项世界纪录。1790年出生的第十任总统约翰·泰勒的孙子，至今还在世。\n\n这个总统在1853年有了儿子，当时63岁。他的儿子在1928年70多岁时，生了孙子。他的孙子今年已经94岁了。\n\n",
     "category": "quotation",
     "originHref": "https://bhupesh.me//what-i-have-learned-from-blogging-so-far-retrospect/",
     "weekly": 209
@@ -2695,7 +2758,7 @@
     "weekly": 209
   },
   {
-    "title": "[知乎网友](https://www.zhihu.com/question/295181406/answer/2518670947)（[@daGaiGuanYu](https://github.com/ruanyf/weekly/issues/2438) 投稿）",
+    "title": "[知乎网友](https://www.zhihu.com/question/295181406/answer/2518670947)",
     "content": "\n\n我们不搞培养制，我们没有责任培养你，我们是选拔制，选拔更优秀的人上来，在全公司和全世界范围内选拔优秀者，落后者我们就淘汰。\n\n",
     "category": "quotation",
     "originHref": "https://github.com/ruanyf/weekly/issues/2438",
@@ -2703,7 +2766,7 @@
   },
   {
     "title": "[任正非](https://finance.sina.com.cn/jjxw/2022-04-03/doc-imcwiwss9772070.shtml)",
-    "content": "\n\n\n\n维护开源项目，缺乏资助，加上人们对你大喊要求你做这做那，让我根本不想做这件事。\n\n",
+    "content": "\n\n===208===\n\n维护开源项目，缺乏资助，加上人们对你大喊要求你做这做那，让我根本不想做这件事。\n\n",
     "category": "quotation",
     "originHref": "https://finance.sina.com.cn/jjxw/2022-04-03/doc-imcwiwss9772070.shtml",
     "weekly": 208
@@ -2731,7 +2794,7 @@
   },
   {
     "title": "[《我不再需要 VPS》](https://greenash.net.au/thoughts/2022/03/i-dont-need-a-vps-anymore/)",
-    "content": "\n\n你活着的每一天，都是你还能拥有的最年轻的时候。\n\n-- 网友\n\n\n\n有一句古老的工程格言：工期短、质量好、价格便宜，这三项里面你最多只能同时做到两项。\n\n",
+    "content": "\n\n你活着的每一天，都是你还能拥有的最年轻的时候。\n\n-- 网友\n\n===207===\n\n有一句古老的工程格言：工期短、质量好、价格便宜，这三项里面你最多只能同时做到两项。\n\n",
     "category": "quotation",
     "originHref": "https://greenash.net.au/thoughts/2022/03/i-dont-need-a-vps-anymore/",
     "weekly": 207
@@ -2766,7 +2829,7 @@
   },
   {
     "title": "[《失控的 Python3 类型》](https://neverworkintheory.org/2022/03/18/python-3-types-in-the-wild.html)",
-    "content": "\n\n\n\n一样东西只要可以赚钱，就会开始变质。\n\n2000年前后，谷歌发明了一种算法，根据链接去计算网站的权重。从此，链接就不再是客观中立的，而成了赚钱的手段。垃圾链接就是从那个时候起，成为一个大问题，永远改变了互联网。\n\n",
+    "content": "\n\n===206===\n\n一样东西只要可以赚钱，就会开始变质。\n\n2000年前后，谷歌发明了一种算法，根据链接去计算网站的权重。从此，链接就不再是客观中立的，而成了赚钱的手段。垃圾链接就是从那个时候起，成为一个大问题，永远改变了互联网。\n\n",
     "category": "quotation",
     "originHref": "https://neverworkintheory.org/2022/03/18/python-3-types-in-the-wild.html",
     "weekly": 206
@@ -2787,7 +2850,7 @@
   },
   {
     "title": "[《为什么企业软件如此臃肿》](https://www.mailbox.my/blog/posts/why-enterprise-software-is-bloated/)",
-    "content": "\n\n语文课总是偏爱讲授那些很美、很有诗意的散文和小说，这是不对的，就像篮球课不应该鼓励学生进行花哨的运球。写作最重要的目标是写得清楚，此后才考虑写得有诗意。\n\n-- David Perell\n\n\n\n你的工作将占据人生的很大一部分，因此真正让自己满意人生只有一种方法，那就是做你觉得值得的工作。\n\n",
+    "content": "\n\n语文课总是偏爱讲授那些很美、很有诗意的散文和小说，这是不对的，就像篮球课不应该鼓励学生进行花哨的运球。写作最重要的目标是写得清楚，此后才考虑写得有诗意。\n\n-- David Perell\n\n===204===\n\n你的工作将占据人生的很大一部分，因此真正让自己满意人生只有一种方法，那就是做你觉得值得的工作。\n\n",
     "category": "quotation",
     "originHref": "https://www.mailbox.my/blog/posts/why-enterprise-software-is-bloated/",
     "weekly": 204
@@ -2815,7 +2878,7 @@
   },
   {
     "title": "[《将硅再次带回硅谷》](https://future.a16z.com/the-silicon-in-silicon-valley-again/)",
-    "content": "\n\n\n\n当我们宣传保护生物多样性的时候，常常被问起，少了一个物种会怎么样？\n\n对于这个问题，有一个精妙的比喻，中国有那么多汉字，少了一个汉字会怎么样？\n\n",
+    "content": "\n\n===203===\n\n当我们宣传保护生物多样性的时候，常常被问起，少了一个物种会怎么样？\n\n对于这个问题，有一个精妙的比喻，中国有那么多汉字，少了一个汉字会怎么样？\n\n",
     "category": "quotation",
     "originHref": "https://future.a16z.com/the-silicon-in-silicon-valley-again/",
     "weekly": 203
@@ -2850,7 +2913,7 @@
   },
   {
     "title": "[《拥抱冒名顶替综合症》](https://www.justindfuller.com/2022/02/embracing-impostor-syndrome/)",
-    "content": "\n\n\n\n贝佐斯最近预测，未来的人类将生活在太空中，地球将成为一个度假胜地，就像一个国家公园。\n\n这种预测本身很幼稚。但是，它的作用在于提供了一个未来的愿景，仿佛救生筏，当人们对现实世界感到厌倦和不满时，这一类太空旅行、加密货币社会、云中数字生活等等空洞的承诺，就可能成为人们唯一关注的事情被转发。\n\n",
+    "content": "\n\n===202===\n\n贝佐斯最近预测，未来的人类将生活在太空中，地球将成为一个度假胜地，就像一个国家公园。\n\n这种预测本身很幼稚。但是，它的作用在于提供了一个未来的愿景，仿佛救生筏，当人们对现实世界感到厌倦和不满时，这一类太空旅行、加密货币社会、云中数字生活等等空洞的承诺，就可能成为人们唯一关注的事情被转发。\n\n",
     "category": "quotation",
     "originHref": "https://www.justindfuller.com/2022/02/embracing-impostor-syndrome/",
     "weekly": 202
@@ -2885,7 +2948,7 @@
   },
   {
     "title": "[《初级开发者和高级开发者的区别》](https://itnext.io/the-difference-between-junior-developers-and-senior-developers-c1d5841b7289)",
-    "content": "\n\n\n\n整个自由软件社区，弥漫着一种不信任的气氛：不信任大公司，不信任政府，不信任专有软件。\n\n这些不信任的根源在于，自由软件社区不信任集中化，更喜欢去中心的设计。\n\n",
+    "content": "\n\n===201===\n\n整个自由软件社区，弥漫着一种不信任的气氛：不信任大公司，不信任政府，不信任专有软件。\n\n这些不信任的根源在于，自由软件社区不信任集中化，更喜欢去中心的设计。\n\n",
     "category": "quotation",
     "originHref": "https://itnext.io/the-difference-between-junior-developers-and-senior-developers-c1d5841b7289",
     "weekly": 201
@@ -2920,7 +2983,7 @@
   },
   {
     "title": "[《Web3 的隐私与透明度》](https://coinsights.substack.com/p/the-duality-of-web3)",
-    "content": "\n\n\n\n软件行业中，错误的做法往往得到更多的资源。下面是两个例子：\n\n- 一个公司里面，技术债务最多的团队，员工最多。\n- 问题最多的软件库或编程语言，产生最多的话题。\n\n",
+    "content": "\n\n===200===\n\n软件行业中，错误的做法往往得到更多的资源。下面是两个例子：\n\n- 一个公司里面，技术债务最多的团队，员工最多。\n- 问题最多的软件库或编程语言，产生最多的话题。\n\n",
     "category": "quotation",
     "originHref": "https://coinsights.substack.com/p/the-duality-of-web3",
     "weekly": 200
@@ -2941,7 +3004,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=30142175)",
-    "content": "\n\n大多数网站都有一个隐含的假设：它是为短期而设计的，最多存在五年。\n\n十年以后？运气好的话，可能还在，但设计网站时不会考虑这点。十五年或二十年以后？算了吧，那时网站大概早就消失，或者换一种样子了。没有人为长期存在而设计网站。\n\n--[《大多数网站都是为短生命周期而设计的》](https://utcc.utoronto.ca/~cks/space/blog/web/WebsiteShortDesignLifetime?showcomments)\n\n\n\n加入微软 Xbox 团队时，我没有被分到 CPU 组，只是获得了阅读 CPU 开发文档的访问权限。\n\n但是，我对 CPU 很有兴趣，简直到了狂热的地步。有一年冬天，暴雪压断了电线，我家停电了。我睡在客厅地板上，打着手电筒阅读文档，直到搞清楚每根连线的作用。后来，我就成了团队的 CPU 专家。\n\n",
+    "content": "\n\n大多数网站都有一个隐含的假设：它是为短期而设计的，最多存在五年。\n\n十年以后？运气好的话，可能还在，但设计网站时不会考虑这点。十五年或二十年以后？算了吧，那时网站大概早就消失，或者换一种样子了。没有人为长期存在而设计网站。\n\n--[《大多数网站都是为短生命周期而设计的》](https://utcc.utoronto.ca/~cks/space/blog/web/WebsiteShortDesignLifetime?showcomments)\n\n===199===\n\n加入微软 Xbox 团队时，我没有被分到 CPU 组，只是获得了阅读 CPU 开发文档的访问权限。\n\n但是，我对 CPU 很有兴趣，简直到了狂热的地步。有一年冬天，暴雪压断了电线，我家停电了。我睡在客厅地板上，打着手电筒阅读文档，直到搞清楚每根连线的作用。后来，我就成了团队的 CPU 专家。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=30142175",
     "weekly": 199
@@ -2969,7 +3032,7 @@
   },
   {
     "title": "[《贝尔实验室的组织结构图》](https://neil.computer/notes/bell-labs-org-chart/)",
-    "content": "\n\n\n\n与某些人争论很像在泥泞中与一头猪摔跤；不需要很久，你就会意识到猪喜欢它。\n\n",
+    "content": "\n\n===198===\n\n与某些人争论很像在泥泞中与一头猪摔跤；不需要很久，你就会意识到猪喜欢它。\n\n",
     "category": "quotation",
     "originHref": "https://neil.computer/notes/bell-labs-org-chart/",
     "weekly": 198
@@ -3004,16 +3067,23 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=29905415)",
-    "content": "\n\n\n\n中国北方以种植小麦为主，南方以种植水稻为主。有一种理论，认为水稻需要稻农合作，解决灌溉和水灾，而小麦主要依靠雨水，不需要与其他人合作，所以北方人的个人主义倾向更强一些，南方人则是群体性倾向更强。\n\n",
+    "content": "\n\n===197===\n\n中国北方以种植小麦为主，南方以种植水稻为主。有一种理论，认为水稻需要稻农合作，解决灌溉和水灾，而小麦主要依靠雨水，不需要与其他人合作，所以北方人的个人主义倾向更强一些，南方人则是群体性倾向更强。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29905415",
     "weekly": 197
   },
   {
     "title": "[《全球范围的南北方差异》](https://www.economist.com/christmas-specials/2021/12/18/north-south-antipathies-endure-around-the-globe)",
-    "content": "\n\n电子邮件是不同组织之间唯一可靠的通信方式。几乎每个大型企业都有一个内部通信系统（Slack、Microsoft Teams、Discord 等），它们在组织内部或封闭群体中工作得很好，各方面都强于电子邮件。\n\n但是，当你想要进行组织之间的通信、或与外部人员合作时，这些通信系统都不理想，并且无法补救，因为它们都不支持对等网络的联合（federated）。\n\n-- [《电子邮件是互联网的关键基础设施》](https://utcc.utoronto.ca/~cks/space/blog/tech/EmailCriticalInfrastructure)\n\n自由软件最好的部分是，它有时会产生你付钱也开发不出来的产品（比如 Linux），或者比你付钱得到的软件质量更好的软件（比如 SQLite）。\n\n自由软件最糟糕的部分是，开发人员可能根本不理睬用户。\n\n",
+    "content": "\n\n电子邮件是不同组织之间唯一可靠的通信方式。几乎每个大型企业都有一个内部通信系统（Slack、Microsoft Teams、Discord 等），它们在组织内部或封闭群体中工作得很好，各方面都强于电子邮件。\n\n但是，当你想要进行组织之间的通信、或与外部人员合作时，这些通信系统都不理想，并且无法补救，因为它们都不支持对等网络的联合（federated）。\n\n",
     "category": "quotation",
     "originHref": "https://www.economist.com/christmas-specials/2021/12/18/north-south-antipathies-endure-around-the-globe",
+    "weekly": 197
+  },
+  {
+    "title": "[《电子邮件是互联网的关键基础设施》](https://utcc.utoronto.ca/~cks/space/blog/tech/EmailCriticalInfrastructure)",
+    "content": "\n\n自由软件最好的部分是，它有时会产生你付钱也开发不出来的产品（比如 Linux），或者比你付钱得到的软件质量更好的软件（比如 SQLite）。\n\n自由软件最糟糕的部分是，开发人员可能根本不理睬用户。\n\n",
+    "category": "quotation",
+    "originHref": "https://utcc.utoronto.ca/~cks/space/blog/tech/EmailCriticalInfrastructure",
     "weekly": 197
   },
   {
@@ -3032,7 +3102,7 @@
   },
   {
     "title": "[《表演行为的兴起》](https://www.economist.com/business/2022/01/08/the-rise-of-performative-work)",
-    "content": "\n\n\n\n人们总是以为，数学定理一旦被证明，就会永远流传下去。但是现在有些数学证明过于艰深，少数理解它们的数学家年龄增长离开该领域以后，就没人懂了，有被遗忘的风险。\n\n",
+    "content": "\n\n===196===\n\n人们总是以为，数学定理一旦被证明，就会永远流传下去。但是现在有些数学证明过于艰深，少数理解它们的数学家年龄增长离开该领域以后，就没人懂了，有被遗忘的风险。\n\n",
     "category": "quotation",
     "originHref": "https://www.economist.com/business/2022/01/08/the-rise-of-performative-work",
     "weekly": 196
@@ -3067,7 +3137,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=29682963)",
-    "content": "\n\n\n\n任何一个有效的东西，都会引来1000个模仿者。\n\n",
+    "content": "\n\n===195===\n\n任何一个有效的东西，都会引来1000个模仿者。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29682963",
     "weekly": 195
@@ -3102,7 +3172,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=29673707)",
-    "content": "\n\n\n\n1980年，IBM 公司选择微软公司，作为自家 PC 的操作系统提供商，这是一笔改变历史的交易。\n\n个人因素在其中起到了一定的作用。比尔·盖茨的母亲玛丽曾在 United Way 基金会的董事会任职，IBM 董事长约翰·欧宝也在那里任职。手下人向他汇报的时候，他说：“哦，那是玛丽·盖茨的儿子的公司吗？”\n\n",
+    "content": "\n\n===194===\n\n1980年，IBM 公司选择微软公司，作为自家 PC 的操作系统提供商，这是一笔改变历史的交易。\n\n个人因素在其中起到了一定的作用。比尔·盖茨的母亲玛丽曾在 United Way 基金会的董事会任职，IBM 董事长约翰·欧宝也在那里任职。手下人向他汇报的时候，他说：“哦，那是玛丽·盖茨的儿子的公司吗？”\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29673707",
     "weekly": 194
@@ -3137,7 +3207,7 @@
   },
   {
     "title": "[萧伯纳](https://news.ycombinator.com/item?id=29598581)",
-    "content": "\n\n\n\n太空研究正在进入一个新阶段，随着火箭的负载越来越大，以及发射成本的降低和发射频率的提高，我们现在可以把真正大型的仪器发射到太空。\n\n",
+    "content": "\n\n===193===\n\n太空研究正在进入一个新阶段，随着火箭的负载越来越大，以及发射成本的降低和发射频率的提高，我们现在可以把真正大型的仪器发射到太空。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29598581",
     "weekly": 193
@@ -3172,7 +3242,7 @@
   },
   {
     "title": "[美国经济学家加尔布雷斯](https://quoteinvestigator.com/2018/05/17/change-view/)",
-    "content": "\n\n\n\n课堂是一个人造的美妙地方，老师拿着薪水关注你的想法，同学也关注你的想法。日常生活中，你再也不会有这样一群观众了。事实上，真实世界的大多数人并不在意你的想法。\n\n",
+    "content": "\n\n===192===\n\n课堂是一个人造的美妙地方，老师拿着薪水关注你的想法，同学也关注你的想法。日常生活中，你再也不会有这样一群观众了。事实上，真实世界的大多数人并不在意你的想法。\n\n",
     "category": "quotation",
     "originHref": "https://quoteinvestigator.com/2018/05/17/change-view/",
     "weekly": 192
@@ -3207,7 +3277,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=29205322)",
-    "content": "\n\n\n\nC 和 C++ 这两种语言不保证内存安全，后果就是所有软件安全问题的大约三分之二，都跟内存处理不当有或多或少的关系。\n\n",
+    "content": "\n\n===191===\n\nC 和 C++ 这两种语言不保证内存安全，后果就是所有软件安全问题的大约三分之二，都跟内存处理不当有或多或少的关系。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29205322",
     "weekly": 191
@@ -3228,7 +3298,7 @@
   },
   {
     "title": "[富勒](https://news.ycombinator.com/item?id=29441945)，美国建筑师",
-    "content": "\n\n\n\n新冠肺炎之前，苹果手机从郑州的富士康工厂生产出来，直接空运到美国阿拉斯加州的安克雷奇机场，供应美国市场。\n\n现在，几乎所有中国到美国的货运航班，都会中途在韩国或日本停一下，将货物搬到另一架飞机，再飞往安克雷奇。原始的机组人员直接从韩国或日本飞回中国，这样就避免了跟国外人员的接触，回到中国就不必隔离了。\n\n",
+    "content": "\n\n===190===\n\n新冠肺炎之前，苹果手机从郑州的富士康工厂生产出来，直接空运到美国阿拉斯加州的安克雷奇机场，供应美国市场。\n\n现在，几乎所有中国到美国的货运航班，都会中途在韩国或日本停一下，将货物搬到另一架飞机，再飞往安克雷奇。原始的机组人员直接从韩国或日本飞回中国，这样就避免了跟国外人员的接触，回到中国就不必隔离了。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29441945",
     "weekly": 190
@@ -3263,7 +3333,7 @@
   },
   {
     "title": "[《叔本华论阅读和书籍》](https://fs.blog/schopenhauer-on-reading/)",
-    "content": "\n\n\n\n欧洲有很方便的火车系统，但是跨国旅游时，欧洲人更喜欢坐飞机，而不是火车。因为，欧洲大陆30多个国家，每一个都有自己独立的票务系统，你需要在不同的网站上，以多种语言跟多家火车运营商打交道，完全是一场噩梦。\n\n",
+    "content": "\n\n===189===\n\n欧洲有很方便的火车系统，但是跨国旅游时，欧洲人更喜欢坐飞机，而不是火车。因为，欧洲大陆30多个国家，每一个都有自己独立的票务系统，你需要在不同的网站上，以多种语言跟多家火车运营商打交道，完全是一场噩梦。\n\n",
     "category": "quotation",
     "originHref": "https://fs.blog/schopenhauer-on-reading/",
     "weekly": 189
@@ -3291,7 +3361,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=29341991)",
-    "content": "\n\n\n\n十年前，我写了一篇文章，题目是《为什么比特币会失败？》。十年过去了，比特币活得很好，价格上涨了许许多多倍。\n\n我还是不认为自己判断错了，只是我忽略了一点：人们真的、真的、真的想要它。我现在意识到，一个项目的成败，不取决于它是否合理，而是取决于人们是否愿意相信该项目。\n\n",
+    "content": "\n\n===188===\n\n十年前，我写了一篇文章，题目是《为什么比特币会失败？》。十年过去了，比特币活得很好，价格上涨了许许多多倍。\n\n我还是不认为自己判断错了，只是我忽略了一点：人们真的、真的、真的想要它。我现在意识到，一个项目的成败，不取决于它是否合理，而是取决于人们是否愿意相信该项目。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29341991",
     "weekly": 188
@@ -3326,7 +3396,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=29388921)",
-    "content": "\n\n\n\n我所能做的就是坐下来，惊讶地看着它。\n\n",
+    "content": "\n\n===187===\n\n我所能做的就是坐下来，惊讶地看着它。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29388921",
     "weekly": 187
@@ -3354,7 +3424,7 @@
   },
   {
     "title": "[《物理模型无法解释的五个谜团》](https://www.symmetrymagazine.org/article/five-mysteries-the-standard-model-cant-explain)",
-    "content": "\n\n\n\n微世纪（microcentury）指的是一个世纪的百万分之一，相当于52分35.7秒。\n\n差不多每过一个小时，你就度过了这个世纪的百万分之一。\n\n",
+    "content": "\n\n===186===\n\n微世纪（microcentury）指的是一个世纪的百万分之一，相当于52分35.7秒。\n\n差不多每过一个小时，你就度过了这个世纪的百万分之一。\n\n",
     "category": "quotation",
     "originHref": "https://www.symmetrymagazine.org/article/five-mysteries-the-standard-model-cant-explain",
     "weekly": 186
@@ -3375,13 +3445,13 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=29191068)",
-    "content": "\n\n\n\n2016年，WhatsApp 的用户超过10亿，但是只有50个工程师。每个小团队由1到3名工程师组成，拥有很大的自主权。\n\n--[《WhatsApp 如何在只有50名工程师的情况下扩展到10亿用户》](https://www.quastor.org/p/how-whatsapp-scaled-to-1-billion)\n\n如果你收到我的邮件，只允许三种操作，否则就要立即辞职。\n\n第一种，回邮给我，解释为什么我说错了；\n\n第二种，如果有歧义，要求我进一步澄清；\n\n第三种，按照我说的去做。\n\n",
+    "content": "\n\n===185===\n\n2016年，WhatsApp 的用户超过10亿，但是只有50个工程师。每个小团队由1到3名工程师组成，拥有很大的自主权。\n\n--[《WhatsApp 如何在只有50名工程师的情况下扩展到10亿用户》](https://www.quastor.org/p/how-whatsapp-scaled-to-1-billion)\n\n如果你收到我的邮件，只允许三种操作，否则就要立即辞职。\n\n第一种，回邮给我，解释为什么我说错了；\n\n第二种，如果有歧义，要求我进一步澄清；\n\n第三种，按照我说的去做。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29191068",
     "weekly": 185
   },
   {
-    "title": "[马斯克](https://www.cnbc.com/2021/11/19/elon-musk-emails-at-tesla-in-october-2021-music-direct-orders.html)今年10月发给所有特斯拉经理的内部邮件（[@jwenjian](https://github.com/ruanyf/weekly/issues/2080) 投稿）",
+    "title": "[马斯克](https://www.cnbc.com/2021/11/19/elon-musk-emails-at-tesla-in-october-2021-music-direct-orders.html)今年10月发给所有特斯拉经理的内部邮件",
     "content": "\n\n5G 手机需要更多的天线和更大的电池，所以手机尺寸不会变小，制造小手机将很困难。\n\n",
     "category": "quotation",
     "originHref": "https://github.com/ruanyf/weekly/issues/2080",
@@ -3396,7 +3466,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=29053619)",
-    "content": "\n\n美国人喜欢轻资产的高科技业，互联网巨头 FAANG 都是轻资产重设计的模式，凡是要盖厂房搞制造就外包，让亚洲人穷忙又赚不了太多的钱，这才是美国人想要的产业模式。\n\n-- Mobile01 读者\n\n\n\n我不投资加密货币，原因主要是我不喜欢价格剧烈波动带来的心理负担。\n\n",
+    "content": "\n\n美国人喜欢轻资产的高科技业，互联网巨头 FAANG 都是轻资产重设计的模式，凡是要盖厂房搞制造就外包，让亚洲人穷忙又赚不了太多的钱，这才是美国人想要的产业模式。\n\n-- Mobile01 读者\n\n===184===\n\n我不投资加密货币，原因主要是我不喜欢价格剧烈波动带来的心理负担。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=29053619",
     "weekly": 184
@@ -3431,7 +3501,7 @@
   },
   {
     "title": "[Archive.is blog](https://blog.archive.today/post/665401109290074112/why-do-you-view-fb-ig-tiktok-snapchat-as)",
-    "content": "\n\n\n\n经常有人说：“学习 xx 语言会让你成为更好的程序员。” 我认为，这种说法有些误导。学习新的语言确实很有趣，而且非常有用，但是真正让我更擅长编程的是做大量的编程练习，尤其是那些挑战能力极限的问题。\n\n",
+    "content": "\n\n===183===\n\n经常有人说：“学习 xx 语言会让你成为更好的程序员。” 我认为，这种说法有些误导。学习新的语言确实很有趣，而且非常有用，但是真正让我更擅长编程的是做大量的编程练习，尤其是那些挑战能力极限的问题。\n\n",
     "category": "quotation",
     "originHref": "https://blog.archive.today/post/665401109290074112/why-do-you-view-fb-ig-tiktok-snapchat-as",
     "weekly": 183
@@ -3459,7 +3529,7 @@
   },
   {
     "title": "[《为什么汽车制造商不使用最新芯片》](https://jalopnik.com/i-asked-experts-why-carmakers-cant-just-transition-to-n-1847739665)",
-    "content": "\n\n\n\n我很讨厌每个网站都使用 Discord 作为讨论区。\n\n这样很难搜索以前的内容，更糟的是，不太容易在 Discord 切换身份。我不愿意将在 Discord 使用的游戏爱好者身份，与咨询软件问题的用户身份混在一起。\n\n",
+    "content": "\n\n===182===\n\n我很讨厌每个网站都使用 Discord 作为讨论区。\n\n这样很难搜索以前的内容，更糟的是，不太容易在 Discord 切换身份。我不愿意将在 Discord 使用的游戏爱好者身份，与咨询软件问题的用户身份混在一起。\n\n",
     "category": "quotation",
     "originHref": "https://jalopnik.com/i-asked-experts-why-carmakers-cant-just-transition-to-n-1847739665",
     "weekly": 182
@@ -3480,14 +3550,21 @@
   },
   {
     "title": "[骆华忠](https://cn.nytimes.com/china/20210714/lying-flat-in-china/)，摘自《纽约时报》对他的专访",
-    "content": "\n\n用户研究中，有一个众所周知的事实。如果你询问用户是否需要新功能，他们通常会大叫“是的”。毕竟谁会不想要更多的功能呢？\n\n但是，等到发布以后，你才意识到用户可能不使用这个功能。\n\n-- [《当用户从不使用他们要求的功能时》](https://web.eecs.utk.edu/~azh/blog/featurestheywanted.html)\n\n理财的核心原则，就是两句话：“增加收入，减少开支”。\n\n但是，这两句话相互矛盾，需要不同的技能。增加收入通常需要花钱，提高获利潜力。减少开支意味着对于投资新事物持有保守态度，这种心态会阻止你赚更多的钱。\n\n",
+    "content": "\n\n用户研究中，有一个众所周知的事实。如果你询问用户是否需要新功能，他们通常会大叫“是的”。毕竟谁会不想要更多的功能呢？\n\n但是，等到发布以后，你才意识到用户可能不使用这个功能。\n\n",
     "category": "quotation",
     "originHref": "https://cn.nytimes.com/china/20210714/lying-flat-in-china/",
     "weekly": 182
   },
   {
+    "title": "[《当用户从不使用他们要求的功能时》](https://web.eecs.utk.edu/~azh/blog/featurestheywanted.html)",
+    "content": "\n\n理财的核心原则，就是两句话：“增加收入，减少开支”。\n\n但是，这两句话相互矛盾，需要不同的技能。增加收入通常需要花钱，提高获利潜力。减少开支意味着对于投资新事物持有保守态度，这种心态会阻止你赚更多的钱。\n\n",
+    "category": "quotation",
+    "originHref": "https://web.eecs.utk.edu/~azh/blog/featurestheywanted.html",
+    "weekly": 182
+  },
+  {
     "title": "[《我的十条金钱规则》](https://jonpauluritis.com/articles/my-top-10-money-rules/)",
-    "content": "\n\n\n\n当我 80 岁时，我不会后悔尝试过的事情，比如我尝试了互联网创业，就算失败了，我也不后悔。我后悔的是那些我想尝试却没做的事情，它们每天困扰着我，如果我当时尝试了，我的人生会怎样。\n\n",
+    "content": "\n\n===181===\n\n当我 80 岁时，我不会后悔尝试过的事情，比如我尝试了互联网创业，就算失败了，我也不后悔。我后悔的是那些我想尝试却没做的事情，它们每天困扰着我，如果我当时尝试了，我的人生会怎样。\n\n",
     "category": "quotation",
     "originHref": "https://jonpauluritis.com/articles/my-top-10-money-rules/",
     "weekly": 181
@@ -3508,7 +3585,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=28526969)",
-    "content": "\n\n\n\n跨平台 UI 技术（比如 Electron）的优势，不是界面和体验的统一，而是能让不同平台版本的开发进展和功能保持一致。\n\nApp 越大，不同平台之间保持版本一致，并在指定时间同时发布，就会越来越难。\n\n",
+    "content": "\n\n===180===\n\n跨平台 UI 技术（比如 Electron）的优势，不是界面和体验的统一，而是能让不同平台版本的开发进展和功能保持一致。\n\nApp 越大，不同平台之间保持版本一致，并在指定时间同时发布，就会越来越难。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=28526969",
     "weekly": 180
@@ -3529,7 +3606,7 @@
   },
   {
     "title": "[《德国希望立法要求手机厂商提供七年系统更新》](https://www.xda-developers.com/germany-smartphone-makers-7-years-software-updates/)",
-    "content": "\n\n每秒是不相等的。早上精力充沛的一个小时工作，相当于晚上疲倦时三个小时的工作。\n\n-- David Perell\n\n月球对人类的意义，远远超出大多数人的想象。因为有了月球，夜空照亮了，地球的倾斜度得到缓和，才有了一个更稳定、更宜居的气候。月球也导致潮汐产生，这有助于将热量从赤道穿过海洋转移到两极。\n\n--[《科学家计划在月球上新建望远镜》](https://www.salon.com/2021/09/05/scientists-say-a-telescope-on-the-moon-could-advance-physics-and-theyre-hoping-to-build-one/)\n\n\n\n飞行汽车结合了两种完全不同的工程体系：它必须既能飞行，又能适应地面运输的狭窄空间限制。\n\n同时满足飞行和地面运输的各种安全和效率要求并非易事，这就是为什么至今没有公司能造出飞行汽车，最多就是造出点对点的飞行汽车，这种车辆通常没有车轮，更像小飞机。\n\n--[《技术成功的规则》](https://spectrum.ieee.org/the-rodney-brooks-rules-for-predicting-a-technologys-commercial-success)\n\n程序员没有必要局限在一种语言或工具。工具每天都在变化，只要新工具适合你的用例，就可以选择它。你的标准应该是，选择最能够快速有效地解决问题的任何语言或工具。\n\n",
+    "content": "\n\n每秒是不相等的。早上精力充沛的一个小时工作，相当于晚上疲倦时三个小时的工作。\n\n-- David Perell\n\n月球对人类的意义，远远超出大多数人的想象。因为有了月球，夜空照亮了，地球的倾斜度得到缓和，才有了一个更稳定、更宜居的气候。月球也导致潮汐产生，这有助于将热量从赤道穿过海洋转移到两极。\n\n--[《科学家计划在月球上新建望远镜》](https://www.salon.com/2021/09/05/scientists-say-a-telescope-on-the-moon-could-advance-physics-and-theyre-hoping-to-build-one/)\n\n===179===\n\n飞行汽车结合了两种完全不同的工程体系：它必须既能飞行，又能适应地面运输的狭窄空间限制。\n\n同时满足飞行和地面运输的各种安全和效率要求并非易事，这就是为什么至今没有公司能造出飞行汽车，最多就是造出点对点的飞行汽车，这种车辆通常没有车轮，更像小飞机。\n\n--[《技术成功的规则》](https://spectrum.ieee.org/the-rodney-brooks-rules-for-predicting-a-technologys-commercial-success)\n\n程序员没有必要局限在一种语言或工具。工具每天都在变化，只要新工具适合你的用例，就可以选择它。你的标准应该是，选择最能够快速有效地解决问题的任何语言或工具。\n\n",
     "category": "quotation",
     "originHref": "https://www.xda-developers.com/germany-smartphone-makers-7-years-software-updates/",
     "weekly": 179
@@ -3550,7 +3627,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=28838861)",
-    "content": "\n\n\n\n开发人员是创建软件最宝贵的资源，但他们的时间往往被管理层低估和滥用。\n\n管理者的作用应该是让开发人员能够工作，而不是拿走开发人员的时间。\n\n",
+    "content": "\n\n===178===\n\n开发人员是创建软件最宝贵的资源，但他们的时间往往被管理层低估和滥用。\n\n管理者的作用应该是让开发人员能够工作，而不是拿走开发人员的时间。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=28838861",
     "weekly": 178
@@ -3571,7 +3648,7 @@
   },
   {
     "title": "[《无限创业》](https://www.indiehackers.com/post/infinite-entrepreneurship-da92f36f21)",
-    "content": "\n\n\n\n失败很少是一种永久状态。失败后，继续前进就可以了。失败只是旅程中的一站，不要让它成为你的目的地。\n\n",
+    "content": "\n\n===177===\n\n失败很少是一种永久状态。失败后，继续前进就可以了。失败只是旅程中的一站，不要让它成为你的目的地。\n\n",
     "category": "quotation",
     "originHref": "https://www.indiehackers.com/post/infinite-entrepreneurship-da92f36f21",
     "weekly": 177
@@ -3606,7 +3683,7 @@
   },
   {
     "title": "[《如何提早发现宏观趋势》](https://www.fastcompany.com/90667124/how-to-spot-tomorrows-macrotrends-before-they-change-everything)",
-    "content": "\n\n\n\n如果你走得足够远，其实就再也没办法回去了。当你回到故乡，原来的一切都已经消失了。\n\n不过，这也不算什么，归根结底，旅程才是你的故事中最重要的部分。\n\n",
+    "content": "\n\n===176===\n\n如果你走得足够远，其实就再也没办法回去了。当你回到故乡，原来的一切都已经消失了。\n\n不过，这也不算什么，归根结底，旅程才是你的故事中最重要的部分。\n\n",
     "category": "quotation",
     "originHref": "https://www.fastcompany.com/90667124/how-to-spot-tomorrows-macrotrends-before-they-change-everything",
     "weekly": 176
@@ -3627,7 +3704,7 @@
   },
   {
     "title": "[Joel Spolsky](https://news.ycombinator.com/item?id=27865101)",
-    "content": "\n\n幸福的秘诀就是永远抱有低期望值。（the secret to happiness is low expectations.）\n\n-- Hacker News 读者\n\n\n\n宇宙诞生于138亿年前的大爆炸，可能会在未来数十亿年后终结。我们还不知道宇宙到底是什么，但是无论宇宙是什么，它肯定与我们人类无关。我们越了解宇宙，宇宙也就越发显得毫无意义。\n\n",
+    "content": "\n\n幸福的秘诀就是永远抱有低期望值。（the secret to happiness is low expectations.）\n\n-- Hacker News 读者\n\n===175===\n\n宇宙诞生于138亿年前的大爆炸，可能会在未来数十亿年后终结。我们还不知道宇宙到底是什么，但是无论宇宙是什么，它肯定与我们人类无关。我们越了解宇宙，宇宙也就越发显得毫无意义。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=27865101",
     "weekly": 175
@@ -3662,7 +3739,7 @@
   },
   {
     "title": "[贝佐斯](https://get21stnight.com/2021/08/09/difficult-math-is-about-recognizing-patterns-lessons-from-jeff-bezos/)，亚马逊公司的老板，回忆大学生活",
-    "content": "\n\n\n\n我从互联网上得到的最好的经验之一，就是永远不要复制和粘贴不是自己编写的代码。如果你一定要复制，那就照着它逐字输入，逼着自己思考，这些代码实际上是什么意思。\n\n",
+    "content": "\n\n===174===\n\n我从互联网上得到的最好的经验之一，就是永远不要复制和粘贴不是自己编写的代码。如果你一定要复制，那就照着它逐字输入，逼着自己思考，这些代码实际上是什么意思。\n\n",
     "category": "quotation",
     "originHref": "https://get21stnight.com/2021/08/09/difficult-math-is-about-recognizing-patterns-lessons-from-jeff-bezos/",
     "weekly": 174
@@ -3697,7 +3774,7 @@
   },
   {
     "title": "[Taylor Swift](https://www.thecut.com/2021/07/how-thrilling-ceo-shilla-kim-parker-gets-it-done.html)",
-    "content": "\n\n\n\n最好的程序员不是善于编写复杂代码，而是有能力为复杂的问题提出简单的解决方案。只有糟糕的程序员，才会对简单的问题提出复杂的解决方案。\n\n",
+    "content": "\n\n===173===\n\n最好的程序员不是善于编写复杂代码，而是有能力为复杂的问题提出简单的解决方案。只有糟糕的程序员，才会对简单的问题提出复杂的解决方案。\n\n",
     "category": "quotation",
     "originHref": "https://www.thecut.com/2021/07/how-thrilling-ceo-shilla-kim-parker-gets-it-done.html",
     "weekly": 173
@@ -3732,7 +3809,7 @@
   },
   {
     "title": "[AgriWebb](https://www.agriwebb.com/au/your-code-should-be-a-love-letter-to-the-next-developer/)",
-    "content": "\n\n\n\n向别人销售东西时，要把它说得很复杂，人们愿意为复杂的东西买单；说服别人时，要把内容说得很简单，越复杂的东西，能说服的听众就越少。\n\n",
+    "content": "\n\n===172===\n\n向别人销售东西时，要把它说得很复杂，人们愿意为复杂的东西买单；说服别人时，要把内容说得很简单，越复杂的东西，能说服的听众就越少。\n\n",
     "category": "quotation",
     "originHref": "https://www.agriwebb.com/au/your-code-should-be-a-love-letter-to-the-next-developer/",
     "weekly": 172
@@ -3774,7 +3851,7 @@
   },
   {
     "title": "[兰迪·威金顿](https://www.quora.com/When-Apple-began-designating-employee-numbers-was-Steve-Jobs-offended-that-Wozniak-received-1-while-he-got-2-and-so-he-believed-he-should-be-second-to-no-one-so-he-took-0-instead/answer/Randy-Wigginton)，苹果公司第一位软件工程师",
-    "content": "\n\n\n\n抖音的推荐算法有一个最大的优势，就是它的内容很短，用户的观看历史以秒计算。用户使用一个小时，可以产生几百条观看记录。Netflix 需要等待一个月，才能获得相同数量的用户观看记录。\n\n",
+    "content": "\n\n===171===\n\n抖音的推荐算法有一个最大的优势，就是它的内容很短，用户的观看历史以秒计算。用户使用一个小时，可以产生几百条观看记录。Netflix 需要等待一个月，才能获得相同数量的用户观看记录。\n\n",
     "category": "quotation",
     "originHref": "https://www.quora.com/When-Apple-began-designating-employee-numbers-was-Steve-Jobs-offended-that-Wozniak-received-1-while-he-got-2-and-so-he-believed-he-should-be-second-to-no-one-so-he-took-0-instead/answer/Randy-Wigginton",
     "weekly": 171
@@ -3795,7 +3872,7 @@
   },
   {
     "title": "[李连杰](https://www.scmp.com/abacus/culture/article/3028904/jet-li-says-he-rejected-matrix-because-he-didnt-want-his-kung-fu)，谈为什么拒绝出演《黑客帝国》续集",
-    "content": "\n\n\n\n银牌真的让我很不舒服。如果你赢得了金牌，你会感觉很好； 如果你赢得了铜牌，你会安慰自己，“好吧，至少我得到了一些东西”。\n\n但是当你赢得银牌时，就像有人对你说，“恭喜你，你差点赢了。在所有输家中，你排在第一名，没有人比你更靠近金牌！”\n\n——。一项研究称，根据奥运会颁奖时的面部表情识别，铜牌得主比银牌得主更快乐。\n\n我们的目标是永远保存 10 亿人的著作。\n\n",
+    "content": "\n\n===170===\n\n银牌真的让我很不舒服。如果你赢得了金牌，你会感觉很好； 如果你赢得了铜牌，你会安慰自己，“好吧，至少我得到了一些东西”。\n\n但是当你赢得银牌时，就像有人对你说，“恭喜你，你差点赢了。在所有输家中，你排在第一名，没有人比你更靠近金牌！”\n\n——。一项研究称，根据奥运会颁奖时的面部表情识别，铜牌得主比银牌得主更快乐。\n\n我们的目标是永远保存 10 亿人的著作。\n\n",
     "category": "quotation",
     "originHref": "https://www.scmp.com/abacus/culture/article/3028904/jet-li-says-he-rejected-matrix-because-he-didnt-want-his-kung-fu",
     "weekly": 170
@@ -3816,7 +3893,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=27719052)",
-    "content": "\n\n每一行代码都是一种负担。如果增加代码行数，就会增加你的责任。\n\n--[《创业公司生存指南》](https://blog.kalvad.com/surviving-guide-for-a-tech-startup/)\n\n\n\n年轻时，我犯的最大错误，就是没有及时离职。我以为我必须向公司证明自己，然后再离开，但这其实没有任何意义。你不欠雇主任何东西，不必向雇主证明任何事情。他们对你丝毫没有忠诚度，对你做对或做错、是聪明还是愚蠢，毫不在意。\n\n把时间用在你最终不会引以为豪的东西上面，是一件可怕的事情，浪费了你在地球上的短暂旅程。\n\n",
+    "content": "\n\n每一行代码都是一种负担。如果增加代码行数，就会增加你的责任。\n\n--[《创业公司生存指南》](https://blog.kalvad.com/surviving-guide-for-a-tech-startup/)\n\n===169===\n\n年轻时，我犯的最大错误，就是没有及时离职。我以为我必须向公司证明自己，然后再离开，但这其实没有任何意义。你不欠雇主任何东西，不必向雇主证明任何事情。他们对你丝毫没有忠诚度，对你做对或做错、是聪明还是愚蠢，毫不在意。\n\n把时间用在你最终不会引以为豪的东西上面，是一件可怕的事情，浪费了你在地球上的短暂旅程。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=27719052",
     "weekly": 169
@@ -3844,7 +3921,7 @@
   },
   {
     "title": "[《动作要快，但要先了解问题》](https://jacobobryant.com/blog/understand/)",
-    "content": "\n\n\n\n比起琴棋书画的培训班，国家应该培训家长必须学会心肺复苏，学校里也要教育孩子学会心肺复苏。让身边的每一个人都成为有能力能救助别人的人，作为升职加薪子女入学的必需品。\n\n",
+    "content": "\n\n===168===\n\n比起琴棋书画的培训班，国家应该培训家长必须学会心肺复苏，学校里也要教育孩子学会心肺复苏。让身边的每一个人都成为有能力能救助别人的人，作为升职加薪子女入学的必需品。\n\n",
     "category": "quotation",
     "originHref": "https://jacobobryant.com/blog/understand/",
     "weekly": 168
@@ -3879,7 +3956,7 @@
   },
   {
     "title": "[马克·安德森](https://www.thepullrequest.com/p/the-man-whose-software-ate-the-world)，美国风险投资家",
-    "content": "\n\n\n\n很多人喜欢向后兼容的软件，但是这意味着，软件需要保留它的错误。在以前版本犯下的设计错误，以后就必须一直兼容，不能废除。\n\n--[《承诺向后兼容，就是承诺保留错误》](https://utcc.utoronto.ca/~cks/space/blog/tech/MistakesAndBackwardCompatibility)\n\n与其编写 Javadoc 注释，不如为方法和变量起好名字，使得它们可以解释编码意图，成为自文档的代码（self-documenting code）。\n\n",
+    "content": "\n\n===167===\n\n很多人喜欢向后兼容的软件，但是这意味着，软件需要保留它的错误。在以前版本犯下的设计错误，以后就必须一直兼容，不能废除。\n\n--[《承诺向后兼容，就是承诺保留错误》](https://utcc.utoronto.ca/~cks/space/blog/tech/MistakesAndBackwardCompatibility)\n\n与其编写 Javadoc 注释，不如为方法和变量起好名字，使得它们可以解释编码意图，成为自文档的代码（self-documenting code）。\n\n",
     "category": "quotation",
     "originHref": "https://www.thepullrequest.com/p/the-man-whose-software-ate-the-world",
     "weekly": 167
@@ -3900,7 +3977,7 @@
   },
   {
     "title": "[《奥运会应该选择一个永久举办地》](https://www.popsci.com/science/permanent-olympic-stadium/)",
-    "content": "\n\n\n\n公司不喜欢员工远程工作，因为觉得员工像在兼职，而公司却支付了全职的薪水。\n\n公司的想法是，既然我支付了全职薪水，那么从早上9点到下午5点，我对你的所有时间、注意力和精力，拥有所有权。这种所有权的体现就是，这段时间你需要到我指定的办公场所，让我看着你在工作。\n\n",
+    "content": "\n\n===166===\n\n公司不喜欢员工远程工作，因为觉得员工像在兼职，而公司却支付了全职的薪水。\n\n公司的想法是，既然我支付了全职薪水，那么从早上9点到下午5点，我对你的所有时间、注意力和精力，拥有所有权。这种所有权的体现就是，这段时间你需要到我指定的办公场所，让我看着你在工作。\n\n",
     "category": "quotation",
     "originHref": "https://www.popsci.com/science/permanent-olympic-stadium/",
     "weekly": 166
@@ -3928,7 +4005,7 @@
   },
   {
     "title": "[史蒂夫·乔布斯](https://betterprogramming.pub/10-admirable-attributes-of-a-great-technical-lead-251d13a8843b)",
-    "content": "\n\n\n\nPython 是我最喜欢的语言，但它替代不了 Bash。一行 Bash 代码就能完成的任务，Python 要写许多行，比如`mv`命令，Python 可能需要120行才能实现。\n\nBash 把命令行环境的复杂性都抽象掉了，如果改用 Python 实现，就不得不自己处理这些复杂性。\n\n",
+    "content": "\n\n===165===\n\nPython 是我最喜欢的语言，但它替代不了 Bash。一行 Bash 代码就能完成的任务，Python 要写许多行，比如`mv`命令，Python 可能需要120行才能实现。\n\nBash 把命令行环境的复杂性都抽象掉了，如果改用 Python 实现，就不得不自己处理这些复杂性。\n\n",
     "category": "quotation",
     "originHref": "https://betterprogramming.pub/10-admirable-attributes-of-a-great-technical-lead-251d13a8843b",
     "weekly": 165
@@ -3963,7 +4040,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=27628210)",
-    "content": "\n\n\n\n写作是你对自己思想的研究和开发。\n\n-- David Perell\n\n我从欧洲搬到美国工作，工资涨到了原来的三倍，但是生活质量明显下降。\n\n美国有很多种税，联邦税加上州税以后，税率并不比欧洲低。但是，欧洲免费提供的社会福利，在美国却要付费购买，比如医疗保健。另外，美国的工作时间要比欧洲长，假期却比欧洲少，所以美国的生活质量无法与欧洲相比。\n\n",
+    "content": "\n\n===164===\n\n写作是你对自己思想的研究和开发。\n\n-- David Perell\n\n我从欧洲搬到美国工作，工资涨到了原来的三倍，但是生活质量明显下降。\n\n美国有很多种税，联邦税加上州税以后，税率并不比欧洲低。但是，欧洲免费提供的社会福利，在美国却要付费购买，比如医疗保健。另外，美国的工作时间要比欧洲长，假期却比欧洲少，所以美国的生活质量无法与欧洲相比。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=27628210",
     "weekly": 164
@@ -3977,14 +4054,21 @@
   },
   {
     "title": "[《如何解决 WebAuthn+ 认证问题》](https://hackernoon.com/how-to-solve-the-authentication-problem-with-webauthn-m24w35yn)",
-    "content": "\n\n最容易使用的程序，是那些对用户的新知识要求最少的程序。\n\n-- [《Unix 哲学基础》](http://www.catb.org/~esr/writings/taoup/html/ch01s06.html)\n\n高级工程师的技能之一，就是要帮助其他人晋升。\n\n",
+    "content": "\n\n最容易使用的程序，是那些对用户的新知识要求最少的程序。\n\n",
     "category": "quotation",
     "originHref": "https://hackernoon.com/how-to-solve-the-authentication-problem-with-webauthn-m24w35yn",
     "weekly": 164
   },
   {
+    "title": "[《Unix 哲学基础》](http://www.catb.org/~esr/writings/taoup/html/ch01s06.html)",
+    "content": "\n\n高级工程师的技能之一，就是要帮助其他人晋升。\n\n",
+    "category": "quotation",
+    "originHref": "http://www.catb.org/~esr/writings/taoup/html/ch01s06.html",
+    "weekly": 164
+  },
+  {
     "title": "[《高级工程师的技能清单》](https://skamille.medium.com/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding-8ed4a521b29f)",
-    "content": "\n\n\n\n我将 Twitter、Facebook、Instagram 看成是当今最大的游戏，30亿人在积极玩它们。\n\n只要用户打开它们，就会进入游戏空间，沉浸其中，感受到乐趣。它们本质上有点像老虎机，你投入一个硬币，不知道会跳出什么。\n\n",
+    "content": "\n\n===163===\n\n我将 Twitter、Facebook、Instagram 看成是当今最大的游戏，30亿人在积极玩它们。\n\n只要用户打开它们，就会进入游戏空间，沉浸其中，感受到乐趣。它们本质上有点像老虎机，你投入一个硬币，不知道会跳出什么。\n\n",
     "category": "quotation",
     "originHref": "https://skamille.medium.com/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding-8ed4a521b29f",
     "weekly": 163
@@ -4005,7 +4089,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=27321739)",
-    "content": "\n\n上海有一条网红道路“武康路”，路宽15.2米，沿街建筑的高度以8-16米为主，街道的高宽比接近1:1。\n\n按照土地规划专家的说法，这样高宽比的道路最容易给人天然的亲切感和安全感。\n\n--[《网红道路武康路》](https://mp.weixin.qq.com/s/cJsjdqYJNfmsnsPo9gPeXw)\n\n![](https://cdn.beekka.com/blogimg/asset/202105/bg2021052808.jpg)\n\n\n\n1919年，英国天文学家阿瑟·爱丁顿使用日全食的观测数据，首次证明爱因斯坦的广义相对论是正确的。\n\n当时能看懂广义相对论的没有几个人。据说，一位物理学家当面对爱丁顿说，您是世界上第三个懂广义相对论的人。言外之意，前两个人是爱因斯坦和该物理学家本人。爱丁顿风趣地回答：“我也在寻找第三个人。”\n\n-- 何香涛《追逐类星体》\n\n根据 Cloudflare 的统计，用户完成网站的图形识别验证码，平均需要32秒。\n\n假设用户每10天就会遇到一次这样的验证码，乘以全球46亿互联网用户，那么人类每天共花费500人年以完成这些验证码。\n\n",
+    "content": "\n\n上海有一条网红道路“武康路”，路宽15.2米，沿街建筑的高度以8-16米为主，街道的高宽比接近1:1。\n\n按照土地规划专家的说法，这样高宽比的道路最容易给人天然的亲切感和安全感。\n\n--[《网红道路武康路》](https://mp.weixin.qq.com/s/cJsjdqYJNfmsnsPo9gPeXw)\n\n![](https://cdn.beekka.com/blogimg/asset/202105/bg2021052808.jpg)\n\n===162===\n\n1919年，英国天文学家阿瑟·爱丁顿使用日全食的观测数据，首次证明爱因斯坦的广义相对论是正确的。\n\n当时能看懂广义相对论的没有几个人。据说，一位物理学家当面对爱丁顿说，您是世界上第三个懂广义相对论的人。言外之意，前两个人是爱因斯坦和该物理学家本人。爱丁顿风趣地回答：“我也在寻找第三个人。”\n\n-- 何香涛《追逐类星体》\n\n根据 Cloudflare 的统计，用户完成网站的图形识别验证码，平均需要32秒。\n\n假设用户每10天就会遇到一次这样的验证码，乘以全球46亿互联网用户，那么人类每天共花费500人年以完成这些验证码。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=27321739",
     "weekly": 162
@@ -4019,7 +4103,7 @@
   },
   {
     "title": "[一位美国科学家](https://www.aei.org/op-eds/an-obama-scientist-debunks-the-climate-doom-mongers/)认为人类很难阻止气候变化",
-    "content": "\n\n\n\n一个人站在地球上，脚和头受到的地球引力是不一样的，只不过这点差别太小了，人完全感觉不到。潮汐也是由于这种引力差造成的，朝向月球一面的海水和背向月球一面的海水，所受的月球引力差别就十分明显了，因而造成海水的涨落。\n\n-- 何香涛《追逐类星体》\n\n华为宣布，将在一年内把大约 100 款不同型号的华为 Android 手机，升级到鸿蒙操作系统。通常情况下，开发一个全新的操作系统，并支持一百个旧型号将是一项昂贵的、艰巨的工作，大多数公司会说“不可行”，但由于鸿蒙操作系统实际上就是 Android，所以这没什么大不了的。\n\n",
+    "content": "\n\n===161===\n\n一个人站在地球上，脚和头受到的地球引力是不一样的，只不过这点差别太小了，人完全感觉不到。潮汐也是由于这种引力差造成的，朝向月球一面的海水和背向月球一面的海水，所受的月球引力差别就十分明显了，因而造成海水的涨落。\n\n-- 何香涛《追逐类星体》\n\n华为宣布，将在一年内把大约 100 款不同型号的华为 Android 手机，升级到鸿蒙操作系统。通常情况下，开发一个全新的操作系统，并支持一百个旧型号将是一项昂贵的、艰巨的工作，大多数公司会说“不可行”，但由于鸿蒙操作系统实际上就是 Android，所以这没什么大不了的。\n\n",
     "category": "quotation",
     "originHref": "https://www.aei.org/op-eds/an-obama-scientist-debunks-the-climate-doom-mongers/",
     "weekly": 161
@@ -4040,7 +4124,7 @@
   },
   {
     "title": "[David Perell](https://twitter.com/david_perell/status/1378943650755842050)",
-    "content": "\n\n建于古罗马时代的万神殿，至今仍然是世界上最大的非钢筋混凝土穹顶，依然非常坚固。但是，20 世纪的许多钢筋混凝土结构（桥梁，公路和建筑物）正在崩溃。\n\n钢筋混凝土建筑的寿命比人们以为的短得多，只有50到100年，甚至更短。只过了十年或二十年，就出现钢筋生锈、水泥块剥落。而且，这种建筑材料也无法回收利用。\n\n--[《钢筋混凝土的问题》](https://theconversation.com/the-problem-with-reinforced-concrete-56078)\n\n![](https://cdn.beekka.com/blogimg/asset/202105/bg2021052606.jpg)\n\n\n\n电视机的分辨率越高，屏幕尺寸就会越大，所以 8K 电视机不太可能进入家庭。正常情况下，在 3 米的距离观看电视，8K 屏幕需要达到300英寸，否则意义不大，4K 分辨率也有类似问题。\n\n较高的动态范围和较宽的色域，对于电视机可能更有意义。\n\n",
+    "content": "\n\n建于古罗马时代的万神殿，至今仍然是世界上最大的非钢筋混凝土穹顶，依然非常坚固。但是，20 世纪的许多钢筋混凝土结构（桥梁，公路和建筑物）正在崩溃。\n\n钢筋混凝土建筑的寿命比人们以为的短得多，只有50到100年，甚至更短。只过了十年或二十年，就出现钢筋生锈、水泥块剥落。而且，这种建筑材料也无法回收利用。\n\n--[《钢筋混凝土的问题》](https://theconversation.com/the-problem-with-reinforced-concrete-56078)\n\n![](https://cdn.beekka.com/blogimg/asset/202105/bg2021052606.jpg)\n\n===160===\n\n电视机的分辨率越高，屏幕尺寸就会越大，所以 8K 电视机不太可能进入家庭。正常情况下，在 3 米的距离观看电视，8K 屏幕需要达到300英寸，否则意义不大，4K 分辨率也有类似问题。\n\n较高的动态范围和较宽的色域，对于电视机可能更有意义。\n\n",
     "category": "quotation",
     "originHref": "https://twitter.com/david_perell/status/1378943650755842050",
     "weekly": 160
@@ -4068,7 +4152,7 @@
   },
   {
     "title": "[维基百科的“袁隆平”条目](https://en.wikipedia.org/wiki/Yuan_Longping)",
-    "content": "\n\n\n\n机器学习模型的耗电量越来越大。目前，最复杂的模型 GPT-3，要使用 1,287 兆瓦的电能，相当于大型水电站的发电量，运行一次产生552公吨的二氧化碳排放量。\n\n",
+    "content": "\n\n===159===\n\n机器学习模型的耗电量越来越大。目前，最复杂的模型 GPT-3，要使用 1,287 兆瓦的电能，相当于大型水电站的发电量，运行一次产生552公吨的二氧化碳排放量。\n\n",
     "category": "quotation",
     "originHref": "https://en.wikipedia.org/wiki/Yuan_Longping",
     "weekly": 159
@@ -4103,7 +4187,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=27028620)",
-    "content": "\n\n\n\n巴菲特的财产为845亿美元。其中842亿美元是在他50岁生日后获得的。他20岁进入投资业，如果只做了30年就不干了，就根本不会有人听说过他。\n\n只有坚持下来不放弃，才可能有所作为，因为只有在足够长的时间里面，复利才会显示威力。\n\n",
+    "content": "\n\n===158===\n\n巴菲特的财产为845亿美元。其中842亿美元是在他50岁生日后获得的。他20岁进入投资业，如果只做了30年就不干了，就根本不会有人听说过他。\n\n只有坚持下来不放弃，才可能有所作为，因为只有在足够长的时间里面，复利才会显示威力。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=27028620",
     "weekly": 158
@@ -4124,7 +4208,7 @@
   },
   {
     "title": "[《我们为什么要接受过度劳累的工作文化？》](https://www.bbc.com/worklife/article/20210507-why-we-glorify-the-cult-of-burnout-and-overwork)",
-    "content": "\n\n\n\n1980年，加利福尼亚的一名商人创办了一个精子库，只存储诺贝尔奖获得者和其他杰出知识权威的精子，承诺为女性提供科学界最佳精子，帮助她们生下天才婴儿。\n\n在该精子库的努力之下，大约有200名儿童出生，但还没有一人成为杰出天才，甚至连成就斐然的工程师都没有。\n\n--《人体简史》，作者为比尔·布莱森\n\n上个世纪60年代到80年代，你写好程序，需要提交给大型机运行，然后等待它返回结果。\n\n现在2020年代，大型机又回来了！它们只是被改称为“云”。\n\n",
+    "content": "\n\n===157===\n\n1980年，加利福尼亚的一名商人创办了一个精子库，只存储诺贝尔奖获得者和其他杰出知识权威的精子，承诺为女性提供科学界最佳精子，帮助她们生下天才婴儿。\n\n在该精子库的努力之下，大约有200名儿童出生，但还没有一人成为杰出天才，甚至连成就斐然的工程师都没有。\n\n--《人体简史》，作者为比尔·布莱森\n\n上个世纪60年代到80年代，你写好程序，需要提交给大型机运行，然后等待它返回结果。\n\n现在2020年代，大型机又回来了！它们只是被改称为“云”。\n\n",
     "category": "quotation",
     "originHref": "https://www.bbc.com/worklife/article/20210507-why-we-glorify-the-cult-of-burnout-and-overwork",
     "weekly": 157
@@ -4145,7 +4229,7 @@
   },
   {
     "title": "[《雇佣我，只要你给我有趣的工作》](https://truzzi.me/hire-me-pay-what-you-want-interesting-work/)",
-    "content": "\n\n年轻时，你希望成为大明星。随着年龄的增长，你的目标降低了一些，希望打动别人，在这个世界上留下印记。后来，你就会想，只要熬过去了，有几个人记得你的名字，就已经在这个世界上留下了印记。你没必要去影响整个世界，还是好好享受生活为好。\n\n--[《死亡和疫情教会我的事情》](https://cn.nytimes.com/opinion/20210420/life-adulthood-death/)\n\n\n\n我最近禁止了安卓手机的所有动画，手机的零延迟让我震惊，仿佛一瞬间它就变快了。\n\n",
+    "content": "\n\n年轻时，你希望成为大明星。随着年龄的增长，你的目标降低了一些，希望打动别人，在这个世界上留下印记。后来，你就会想，只要熬过去了，有几个人记得你的名字，就已经在这个世界上留下了印记。你没必要去影响整个世界，还是好好享受生活为好。\n\n--[《死亡和疫情教会我的事情》](https://cn.nytimes.com/opinion/20210420/life-adulthood-death/)\n\n===156===\n\n我最近禁止了安卓手机的所有动画，手机的零延迟让我震惊，仿佛一瞬间它就变快了。\n\n",
     "category": "quotation",
     "originHref": "https://truzzi.me/hire-me-pay-what-you-want-interesting-work/",
     "weekly": 156
@@ -4159,7 +4243,7 @@
   },
   {
     "title": "[Ben Davenpor](https://m.facebook.com/HanksWorldWide/photos/pb.160385744474061.-2207520000.1564413746./238546423324659/)，风险投资家",
-    "content": "\n\n在泰国工作的人，都说那是一个很糟糕的地方；在泰国休假的人，都说那个地方好极了。\n\n-- 网友\n\n面向对象编程的哲学思想是，通过对语言建模来适应问题，而不是对问题建模来适应语言。\n\n-- 《C prime plus》教材\n\n入职以后，公司给每位员工发了一台电脑，表面上看是每个人拥有了一台电脑，其实是给每个电脑配了一个人。\n\n--\n\n世界上每个程序员一觉醒来，都会有“我应该开发一个 Todo 清单程序的想法”，人们喜欢开发生产力工具。所以，你应该尽量避免将生产力工具作为创业项目，那类软件根本没有护城河。\n\n--[《我如何因为创业损失1000万美元的故事》](https://threadreaderapp.com/thread/1376985869542887425.html)\n\nRedHat 公司现在由 IBM 拥有，他们的企业发行版附带了许多非自由软件，并且积极地告诉客户如何获得更多收益。他们没有采取任何措施来推广自由软件，而只是将其视为他们可以随意使用的东西。他们最近还杀死了社区支持的 CentOS。这看起来像一家在乎自由软件的公司吗？\n\n",
+    "content": "\n\n在泰国工作的人，都说那是一个很糟糕的地方；在泰国休假的人，都说那个地方好极了。\n\n-- 网友\n\n面向对象编程的哲学思想是，通过对语言建模来适应问题，而不是对问题建模来适应语言。\n\n-- 《C prime plus》教材\n\n入职以后，公司给每位员工发了一台电脑，表面上看是每个人拥有了一台电脑，其实是给每个电脑配了一个人。\n\n--===155===\n\n世界上每个程序员一觉醒来，都会有“我应该开发一个 Todo 清单程序的想法”，人们喜欢开发生产力工具。所以，你应该尽量避免将生产力工具作为创业项目，那类软件根本没有护城河。\n\n--[《我如何因为创业损失1000万美元的故事》](https://threadreaderapp.com/thread/1376985869542887425.html)\n\nRedHat 公司现在由 IBM 拥有，他们的企业发行版附带了许多非自由软件，并且积极地告诉客户如何获得更多收益。他们没有采取任何措施来推广自由软件，而只是将其视为他们可以随意使用的东西。他们最近还杀死了社区支持的 CentOS。这看起来像一家在乎自由软件的公司吗？\n\n",
     "category": "quotation",
     "originHref": "https://m.facebook.com/HanksWorldWide/photos/pb.160385744474061.-2207520000.1564413746./238546423324659/",
     "weekly": 155
@@ -4187,7 +4271,7 @@
   },
   {
     "title": "[Ted Chiang](https://kottke.org/21/04/ted-chiang-fears-of-technology-are-fears-of-capitalism)，美国科幻小说作家",
-    "content": "\n\n\n\nLinux 服务器经常发生磁盘已满的错误，我的解决方法是，在所有的服务器硬盘上，都预先放置一个8GB的空文件，除了占用空间，它没有其他作用。\n\n一旦磁盘已满，就删了这个文件，顿时就有了多余空间，也有了解决问题的缓冲时间。\n\n--[《为什么我所有的服务器都有 8GB 的空文件》](https://brianschrader.com/archive/why-all-my-servers-have-an-8gb-empty-file/)\n\n很多人认为他们需要使用面向对象编程，实际上他们只需要模块化。\n\n",
+    "content": "\n\n===154===\n\nLinux 服务器经常发生磁盘已满的错误，我的解决方法是，在所有的服务器硬盘上，都预先放置一个8GB的空文件，除了占用空间，它没有其他作用。\n\n一旦磁盘已满，就删了这个文件，顿时就有了多余空间，也有了解决问题的缓冲时间。\n\n--[《为什么我所有的服务器都有 8GB 的空文件》](https://brianschrader.com/archive/why-all-my-servers-have-an-8gb-empty-file/)\n\n很多人认为他们需要使用面向对象编程，实际上他们只需要模块化。\n\n",
     "category": "quotation",
     "originHref": "https://kottke.org/21/04/ted-chiang-fears-of-technology-are-fears-of-capitalism",
     "weekly": 154
@@ -4208,7 +4292,7 @@
   },
   {
     "title": "[《网络浏览器的无限范围》](https://drewdevault.com/2020/03/18/Reckless-limitless-scope.html)",
-    "content": "\n\n\n\n为了提炼出一个清晰的观点，我需要充足的睡眠、贪婪地阅读、修炼者一样地冥想、不跟任何人解释我在干嘛。\n\n-- 纳西姆·塔莱布（Nassim Taleb），畅销书《黑天鹅》的作者\n\n写作过程分为两个阶段：发散和收敛。在发散阶段，你自由地探索新想法；在收敛阶段，你变得专注，将想法尽量简化，以便将其发布。我最喜欢的一句写作格言：收集点，然后连接点。\n\n-- David Perell\n\n金钱杀死了黑客团体，加密货币的兴起是最后一击。有些黑客团队通过入侵比特币交易所而成为亿万富翁，那些声称自己不在乎钱的黑客几乎毫无例外地都是孩子，或者只是假装自己不在乎。\n\n",
+    "content": "\n\n===153===\n\n为了提炼出一个清晰的观点，我需要充足的睡眠、贪婪地阅读、修炼者一样地冥想、不跟任何人解释我在干嘛。\n\n-- 纳西姆·塔莱布（Nassim Taleb），畅销书《黑天鹅》的作者\n\n写作过程分为两个阶段：发散和收敛。在发散阶段，你自由地探索新想法；在收敛阶段，你变得专注，将想法尽量简化，以便将其发布。我最喜欢的一句写作格言：收集点，然后连接点。\n\n-- David Perell\n\n金钱杀死了黑客团体，加密货币的兴起是最后一击。有些黑客团队通过入侵比特币交易所而成为亿万富翁，那些声称自己不在乎钱的黑客几乎毫无例外地都是孩子，或者只是假装自己不在乎。\n\n",
     "category": "quotation",
     "originHref": "https://drewdevault.com/2020/03/18/Reckless-limitless-scope.html",
     "weekly": 153
@@ -4229,7 +4313,7 @@
   },
   {
     "title": "[David Perell](https://twitter.com/david_perell/status/1376378046752653313)",
-    "content": "\n\n\n\n旅行是非常棒的经历，但是你不能寄希望于旅行会让你的生活真正发生变革。我曾经环球旅行，现在差不多过去了十年，感觉就像对我的生活没有发生过影响。随着现在的生活越来越安定，旅行的记忆正在迅速消失。\n\n",
+    "content": "\n\n===152===\n\n旅行是非常棒的经历，但是你不能寄希望于旅行会让你的生活真正发生变革。我曾经环球旅行，现在差不多过去了十年，感觉就像对我的生活没有发生过影响。随着现在的生活越来越安定，旅行的记忆正在迅速消失。\n\n",
     "category": "quotation",
     "originHref": "https://twitter.com/david_perell/status/1376378046752653313",
     "weekly": 152
@@ -4257,7 +4341,7 @@
   },
   {
     "title": "[维基百科](https://zh.wikipedia.org/wiki/%E7%9C%BC%E9%95%9C%E8%9B%87%E6%95%88%E5%BA%94)",
-    "content": "\n\n\n\n有史以来发行的所有美元，几乎有四分之一是在2020年发行的。\n\n",
+    "content": "\n\n===151===\n\n有史以来发行的所有美元，几乎有四分之一是在2020年发行的。\n\n",
     "category": "quotation",
     "originHref": "https://zh.wikipedia.org/wiki/%E7%9C%BC%E9%95%9C%E8%9B%87%E6%95%88%E5%BA%94",
     "weekly": 151
@@ -4285,7 +4369,7 @@
   },
   {
     "title": "[《我如何收购一家 SaaS 公司》](https://every.to/superorganizers/how-i-bought-a-business-for-0)",
-    "content": "\n\n以前是其它行业的公司购买软件，现在是某一个公司创建一种软件，然后使用自己的软件进入该行业，并对这个行业加以改造。\n\n--[《超越软件》](https://www.ben-evans.com/benedictevans/2021/3/18/outgrowing-software)\n\n2020年，音乐产业的总收入不到200亿美元，是20年前的一半。流媒体的发展，大大缩小了音乐市场的产值。\n\n--[《超越软件》](https://www.ben-evans.com/benedictevans/2021/3/18/outgrowing-software)\n\n\n\n有些计算机语言，运算可能会返回空值（null），这是一个设计错误，因为会中断类型系统，你将无法依靠编译器来检查代码的有效性。\n\n任何可能为 null 的值都是等待爆炸的炸弹。我们必须依靠运行时手动检查来确保所处理的值不为 null。即使是静态类型语言，null 也剥夺了类型系统的许多好处。\n\n",
+    "content": "\n\n以前是其它行业的公司购买软件，现在是某一个公司创建一种软件，然后使用自己的软件进入该行业，并对这个行业加以改造。\n\n--[《超越软件》](https://www.ben-evans.com/benedictevans/2021/3/18/outgrowing-software)\n\n2020年，音乐产业的总收入不到200亿美元，是20年前的一半。流媒体的发展，大大缩小了音乐市场的产值。\n\n--[《超越软件》](https://www.ben-evans.com/benedictevans/2021/3/18/outgrowing-software)\n\n===150===\n\n有些计算机语言，运算可能会返回空值（null），这是一个设计错误，因为会中断类型系统，你将无法依靠编译器来检查代码的有效性。\n\n任何可能为 null 的值都是等待爆炸的炸弹。我们必须依靠运行时手动检查来确保所处理的值不为 null。即使是静态类型语言，null 也剥夺了类型系统的许多好处。\n\n",
     "category": "quotation",
     "originHref": "https://every.to/superorganizers/how-i-bought-a-business-for-0",
     "weekly": 150
@@ -4327,7 +4411,7 @@
   },
   {
     "title": "[凯文·凯利](https://3g.163.com/dy/article/G09O4IN10531G0IB.html)",
-    "content": "\n\n\n\n特斯拉公司解雇了媒体关系部门的所用员工，正式表明它不想再跟媒体和记者打交道了，而是直接通过社交媒体跟公众对话。以后越来越多的公司会采用这种方式。\n\n",
+    "content": "\n\n===149===\n\n特斯拉公司解雇了媒体关系部门的所用员工，正式表明它不想再跟媒体和记者打交道了，而是直接通过社交媒体跟公众对话。以后越来越多的公司会采用这种方式。\n\n",
     "category": "quotation",
     "originHref": "https://3g.163.com/dy/article/G09O4IN10531G0IB.html",
     "weekly": 149
@@ -4348,7 +4432,7 @@
   },
   {
     "title": "[《为什么鸟的脚不冷？》](https://medium.com/i-wanna-know/why-birds-dont-get-cold-feet-515487d50ed5)",
-    "content": "\n\n中国文化的特点是尊重权力，表现为在家尊重父母，在学校里尊重老师，在单位里尊重领导。尊重权力强调的是服从领导者的意志，在这种背景下，公司管理的进步相对来说比较难，因为权力太好用了。\n\n--[《与五位学者对谈互联网加班文化》](https://mp.weixin.qq.com/s/4kN65Eu_mYKmC-GLig082g)\n\n我年轻时有个梦想，希望能在大学任教，传授自己学习与创业上的心得，但后来我某位在大学任教的朋友聊到，现在学生都很混，包括研究生。\n\n我心想，这不是我要的啊！跟一群没有兴趣听你课的人讲述你的人生经验，这无异是对牛弹琴呢！这不是分享，而是痛苦，从此我打消了到大学任教的念头。\n\n--[《在个人网站写文章，我更自在》](https://mapleduh.pixnet.net/blog/post/49595249)\n\n\n\nSVG 是一个非常臃肿的文件格式，规格文档厚达826页。如果要正确渲染所有 SVG 文件，还需要考虑另外20页的 XLink 规范。此外，SVG 支持 CSS 样式和 JAVASCRIPT 脚本。是的，SVG 文件可以包含`<script>`标签。\n\n",
+    "content": "\n\n中国文化的特点是尊重权力，表现为在家尊重父母，在学校里尊重老师，在单位里尊重领导。尊重权力强调的是服从领导者的意志，在这种背景下，公司管理的进步相对来说比较难，因为权力太好用了。\n\n--[《与五位学者对谈互联网加班文化》](https://mp.weixin.qq.com/s/4kN65Eu_mYKmC-GLig082g)\n\n我年轻时有个梦想，希望能在大学任教，传授自己学习与创业上的心得，但后来我某位在大学任教的朋友聊到，现在学生都很混，包括研究生。\n\n我心想，这不是我要的啊！跟一群没有兴趣听你课的人讲述你的人生经验，这无异是对牛弹琴呢！这不是分享，而是痛苦，从此我打消了到大学任教的念头。\n\n--[《在个人网站写文章，我更自在》](https://mapleduh.pixnet.net/blog/post/49595249)\n\n===148===\n\nSVG 是一个非常臃肿的文件格式，规格文档厚达826页。如果要正确渲染所有 SVG 文件，还需要考虑另外20页的 XLink 规范。此外，SVG 支持 CSS 样式和 JAVASCRIPT 脚本。是的，SVG 文件可以包含`<script>`标签。\n\n",
     "category": "quotation",
     "originHref": "https://medium.com/i-wanna-know/why-birds-dont-get-cold-feet-515487d50ed5",
     "weekly": 148
@@ -4383,7 +4467,7 @@
   },
   {
     "title": "[《捍卫无智能的电视机》](https://frame.work/blog/in-defense-of-dumb-tvs)",
-    "content": "\n\n\n\n如果你只看大众媒体和算法推荐给你的文章，你最终将罹患智力糖尿病。\n\n",
+    "content": "\n\n===147===\n\n如果你只看大众媒体和算法推荐给你的文章，你最终将罹患智力糖尿病。\n\n",
     "category": "quotation",
     "originHref": "https://frame.work/blog/in-defense-of-dumb-tvs",
     "weekly": 147
@@ -4418,7 +4502,7 @@
   },
   {
     "title": "[《点金术：心理学的神奇力量》](https://www.collaborativefund.com/blog/story/)",
-    "content": "\n\n\n\n公司发给我的笔记本，配置并不好，并且装有很多监控软件。幸运的是，我上班时只需要 SSH 连接到服务器，在服务器上做开发。\n\n后来来了一个实习生，公司发给他的是我见过的最差的笔记本电脑，功能与 Chromebook 差不多，并且运行与我相同的监控软件，难怪他什么也做不了。\n\n",
+    "content": "\n\n===146===\n\n公司发给我的笔记本，配置并不好，并且装有很多监控软件。幸运的是，我上班时只需要 SSH 连接到服务器，在服务器上做开发。\n\n后来来了一个实习生，公司发给他的是我见过的最差的笔记本电脑，功能与 Chromebook 差不多，并且运行与我相同的监控软件，难怪他什么也做不了。\n\n",
     "category": "quotation",
     "originHref": "https://www.collaborativefund.com/blog/story/",
     "weekly": 146
@@ -4460,7 +4544,7 @@
   },
   {
     "title": "[David Perell](https://perell.com/note/the-paradox-of-abundance/)",
-    "content": "\n\n\n\n我在游戏《星露谷》（Stardew Valley）上面花了很多时间，不禁希望可以在游戏里，雇用某人为牛和山羊挤奶，而不必每天早上花时间陪它们。\n\n我喜欢这个游戏，是因为向往田园生活，渴望逃避大公司的人生。但是最终，我仍然想雇用别人为我工作，这个游戏让我在支持资本主义还是反对资本主义方面摇摆不定。\n\n",
+    "content": "\n\n===145===\n\n我在游戏《星露谷》（Stardew Valley）上面花了很多时间，不禁希望可以在游戏里，雇用某人为牛和山羊挤奶，而不必每天早上花时间陪它们。\n\n我喜欢这个游戏，是因为向往田园生活，渴望逃避大公司的人生。但是最终，我仍然想雇用别人为我工作，这个游戏让我在支持资本主义还是反对资本主义方面摇摆不定。\n\n",
     "category": "quotation",
     "originHref": "https://perell.com/note/the-paradox-of-abundance/",
     "weekly": 145
@@ -4495,7 +4579,7 @@
   },
   {
     "title": "[《狗的驯化至少已经有23000年》](https://arstechnica.com/science/2021/02/dogs-have-been-our-best-friends-for-at-least-23000-years/)",
-    "content": "\n\n\n\n协和飞机是一架超音速客机，于1969年首飞，距今已经超过50年。1969年的人们大概以为，我们现在应该生活在太空中，或者到处都是飞行汽车，而不会想到今天最快的客机依然比协和飞机慢。\n\n",
+    "content": "\n\n===144===\n\n协和飞机是一架超音速客机，于1969年首飞，距今已经超过50年。1969年的人们大概以为，我们现在应该生活在太空中，或者到处都是飞行汽车，而不会想到今天最快的客机依然比协和飞机慢。\n\n",
     "category": "quotation",
     "originHref": "https://arstechnica.com/science/2021/02/dogs-have-been-our-best-friends-for-at-least-23000-years/",
     "weekly": 144
@@ -4523,14 +4607,14 @@
   },
   {
     "title": "[理查德·斯托曼](https://www.gnu.org/philosophy/keep-control-of-your-computing.en.html)",
-    "content": "\n\nC 语言很保守，变化和增长非常缓慢。这其实是一项吸引人的功能，开发人员常常低估了它。\n\n--[《为什么没有 C 语言大会？》](https://nullprogram.com/blog/2018/11/21/)\n\n\n\n代码应该尽可能简单，因为下一个维护你的代码的人不会像你那么聪明。\n\n--[《我在软件行业45年学到的东西》](https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/)\n\n为什么我需要钱？原因跟你想的不一样，我几乎没有时间休闲，也没有度假屋或游艇之类的东西。\n\n我一半的钱用于解决地球上的问题，另一半钱用来在火星上建立一个自给自足的居民点，确保一旦地球被流星击中（恐龙灭绝就是这种情况）、或者第三次世界大战爆发、人类自己消灭自己时，（所有生物种群的）生命能够延续下去。\n\n",
+    "content": "\n\nC 语言很保守，变化和增长非常缓慢。这其实是一项吸引人的功能，开发人员常常低估了它。\n\n--[《为什么没有 C 语言大会？》](https://nullprogram.com/blog/2018/11/21/)\n\n===143===\n\n代码应该尽可能简单，因为下一个维护你的代码的人不会像你那么聪明。\n\n--[《我在软件行业45年学到的东西》](https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/)\n\n为什么我需要钱？原因跟你想的不一样，我几乎没有时间休闲，也没有度假屋或游艇之类的东西。\n\n我一半的钱用于解决地球上的问题，另一半钱用来在火星上建立一个自给自足的居民点，确保一旦地球被流星击中（恐龙灭绝就是这种情况）、或者第三次世界大战爆发、人类自己消灭自己时，（所有生物种群的）生命能够延续下去。\n\n",
     "category": "quotation",
     "originHref": "https://www.gnu.org/philosophy/keep-control-of-your-computing.en.html",
     "weekly": 143
   },
   {
     "title": "[伊隆·马斯克](https://twitter.com/elonmusk/status/1050812486226599936)，由于特斯拉股价暴涨，他已经接近世界首富",
-    "content": "\n\n英语中，“大学”（university）这个词是“单一性”（uni-）和“多样性”（versity）两个词的结合。它的意思是，大学就是将各种各样的知识统一起来，寻求规律。\n\n-- David Perell\n\n我在日常工作中使用 Java 。我不喜欢这门语言，但愿意使用它，原因是它可以让我有所作为。\n\n--无人驾驶技术的公司是这样估值的，每位工程师大约1000万美元。例如，一个刚起步的三人创业公司，估值就是3000万美元。\n\n--[《纽约时报》](https://www.nytimes.com/2020/05/12/technology/self-driving-cars-coronavirus.html)\n\n\n\n大公司想尽办法引诱人们多消费，真正的解决方案通常恰恰相反：你应该少消费。\n\n大多数情况下，我们的问题主要是由过度消费引起的。如果你超重，不是要购买健身鞋和蛋白质粉，而是要少吃东西。如果你头痛和感到巨大压力，不是要购买头痛药和抗抑郁药，而要更多地睡觉和走路，并且不在深夜浏览社交媒体。\n\n--[《少消费，多创造》](https://telegra.ph/Consume-Less-Create-More-Its-More-Fun-12-04)\n\n投资于研发可以促进经济增长。但是，研究发现，促进经济增长的主要是公司投资的研发，而不是政府投资的研发。\n\n",
+    "content": "\n\n英语中，“大学”（university）这个词是“单一性”（uni-）和“多样性”（versity）两个词的结合。它的意思是，大学就是将各种各样的知识统一起来，寻求规律。\n\n-- David Perell\n\n我在日常工作中使用 Java 。我不喜欢这门语言，但愿意使用它，原因是它可以让我有所作为。\n\n--无人驾驶技术的公司是这样估值的，每位工程师大约1000万美元。例如，一个刚起步的三人创业公司，估值就是3000万美元。\n\n--[《纽约时报》](https://www.nytimes.com/2020/05/12/technology/self-driving-cars-coronavirus.html)\n\n===142===\n\n大公司想尽办法引诱人们多消费，真正的解决方案通常恰恰相反：你应该少消费。\n\n大多数情况下，我们的问题主要是由过度消费引起的。如果你超重，不是要购买健身鞋和蛋白质粉，而是要少吃东西。如果你头痛和感到巨大压力，不是要购买头痛药和抗抑郁药，而要更多地睡觉和走路，并且不在深夜浏览社交媒体。\n\n--[《少消费，多创造》](https://telegra.ph/Consume-Less-Create-More-Its-More-Fun-12-04)\n\n投资于研发可以促进经济增长。但是，研究发现，促进经济增长的主要是公司投资的研发，而不是政府投资的研发。\n\n",
     "category": "quotation",
     "originHref": "https://twitter.com/elonmusk/status/1050812486226599936",
     "weekly": 142
@@ -4558,7 +4642,7 @@
   },
   {
     "title": "[《喜马拉雅山脉：人类历史》](https://www.nytimes.com/2021/01/05/books/review/himalaya-a-human-history-ed-douglas.html)",
-    "content": "\n\n\n与数字\n\n美国每天大约有55,000首新曲目（含纯音乐）上传到网上。\n\n",
+    "content": "\n\n===141===\n与数字\n\n美国每天大约有55,000首新曲目（含纯音乐）上传到网上。\n\n",
     "category": "quotation",
     "originHref": "https://www.nytimes.com/2021/01/05/books/review/himalaya-a-human-history-ed-douglas.html",
     "weekly": 141
@@ -4600,7 +4684,7 @@
   },
   {
     "title": "[《入职两个月后辞职》](https://yolken.net/blog/quitting-a-new-job)",
-    "content": "\n\n\n\n一个知道怎么做的人可能总能找到一份工作，但是知道为什么做的人将成为他的老板。\n\n",
+    "content": "\n\n===140===\n\n一个知道怎么做的人可能总能找到一份工作，但是知道为什么做的人将成为他的老板。\n\n",
     "category": "quotation",
     "originHref": "https://yolken.net/blog/quitting-a-new-job",
     "weekly": 140
@@ -4642,7 +4726,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=25470030)",
-    "content": "\n\n\n\n不要被贪婪的公司动机所吸引，不要投入全部的时间和精力，这绝对会导致您毫无正当理由地失去自己的一生。\n\n",
+    "content": "\n\n===139===\n\n不要被贪婪的公司动机所吸引，不要投入全部的时间和精力，这绝对会导致您毫无正当理由地失去自己的一生。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=25470030",
     "weekly": 139
@@ -4670,7 +4754,7 @@
   },
   {
     "title": "[Jason Fried](https://twitter.com/jasonfried/status/1338626702264582146)（Basecamp 的创始人）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020121501.jpg)\n\n如果我与某人在办公室合作一年，我会知道他的孩子的名字，以及他在周末要做的事情。但如果我们是远程合作，我就什么都不会知道，因为远程会让工作变得直接，没有人与人之间的了解。\n\n-- David Perell\n\n\n\n时尚服饰的变化越来越快，而且新衣服正变得与二手衣服一样便宜，这导致同一件服装的穿着次数急剧下降。世界范围内，这个数值平均下降了36％，在中国则是下降了70％。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020121501.jpg)\n\n如果我与某人在办公室合作一年，我会知道他的孩子的名字，以及他在周末要做的事情。但如果我们是远程合作，我就什么都不会知道，因为远程会让工作变得直接，没有人与人之间的了解。\n\n-- David Perell\n\n===138===\n\n时尚服饰的变化越来越快，而且新衣服正变得与二手衣服一样便宜，这导致同一件服装的穿着次数急剧下降。世界范围内，这个数值平均下降了36％，在中国则是下降了70％。\n\n",
     "category": "quotation",
     "originHref": "https://twitter.com/jasonfried/status/1338626702264582146",
     "weekly": 138
@@ -4705,7 +4789,7 @@
   },
   {
     "title": "据说出自[爱因斯坦](https://quoteinvestigator.com/2014/05/22/solve/)",
-    "content": "\n\n\n\nDNS 相关协议在过去的三十年一直在增长，平均每两天增加一页，现在已经有数千页的密集文本。实际上，没人有办法在开发前阅读所有文档。\n\nDNS 已经到了如此复杂的地步，以至于没人能完全掌握一切。这将导致不可能编写任何新的 DNS 实现。\n\n",
+    "content": "\n\n===137===\n\nDNS 相关协议在过去的三十年一直在增长，平均每两天增加一页，现在已经有数千页的密集文本。实际上，没人有办法在开发前阅读所有文档。\n\nDNS 已经到了如此复杂的地步，以至于没人能完全掌握一切。这将导致不可能编写任何新的 DNS 实现。\n\n",
     "category": "quotation",
     "originHref": "https://quoteinvestigator.com/2014/05/22/solve/",
     "weekly": 137
@@ -4747,7 +4831,7 @@
   },
   {
     "title": "[《32位 Linux 系统的未来》](https://lwn.net/SubscriberLink/838807/9b293f03c03ef0c5/)",
-    "content": "\n\n\n\n亚马逊云服务开始提供 macOS 实例，底层是 M1 芯片的 Mac mini。价格不便宜，每小时1.083美元，相当于每天25.99美元。这意味着，如果你的使用时间多于77天，那就不如自己买一台 Mac mini 了（价格1999美元）。\n\n",
+    "content": "\n\n===136===\n\n亚马逊云服务开始提供 macOS 实例，底层是 M1 芯片的 Mac mini。价格不便宜，每小时1.083美元，相当于每天25.99美元。这意味着，如果你的使用时间多于77天，那就不如自己买一台 Mac mini 了（价格1999美元）。\n\n",
     "category": "quotation",
     "originHref": "https://lwn.net/SubscriberLink/838807/9b293f03c03ef0c5/",
     "weekly": 136
@@ -4789,7 +4873,7 @@
   },
   {
     "title": "[eBay 创始团队成员马蒂·卡根](https://mgadams.com/the-founders-guide-to-actually-understanding-users-c68feaecac44)（Marty Cagan）",
-    "content": "\n\n\n\n中国模式的经济起飞，实际上就是美国模式。日本和亚洲四小龙都以此模式来发展经济，然后中国模仿了它们。\n\n",
+    "content": "\n\n===135===\n\n中国模式的经济起飞，实际上就是美国模式。日本和亚洲四小龙都以此模式来发展经济，然后中国模仿了它们。\n\n",
     "category": "quotation",
     "originHref": "https://mgadams.com/the-founders-guide-to-actually-understanding-users-c68feaecac44",
     "weekly": 135
@@ -4824,7 +4908,7 @@
   },
   {
     "title": "[《建设性辩论的初学者指南》](http://www.liamrosen.com/arguments.html)",
-    "content": "\n\n\n\n4G 上网的二氧化碳排放比 WIFI 上网高4～7倍。\n\n",
+    "content": "\n\n===134===\n\n4G 上网的二氧化碳排放比 WIFI 上网高4～7倍。\n\n",
     "category": "quotation",
     "originHref": "http://www.liamrosen.com/arguments.html",
     "weekly": 134
@@ -4866,7 +4950,7 @@
   },
   {
     "title": "[《巴黎评论》杂志](https://www.theparisreview.org/blog/2020/11/16/we-are-built-to-forget/)",
-    "content": "\n\n\n\n阿里为什么在杭州城西？\n\n因为城西是文教区，马云在那里念的大学，在那里教的英语，在那里买了一套约 150 平米的房子，在新房的客厅创立了阿里。\n\n",
+    "content": "\n\n===133===\n\n阿里为什么在杭州城西？\n\n因为城西是文教区，马云在那里念的大学，在那里教的英语，在那里买了一套约 150 平米的房子，在新房的客厅创立了阿里。\n\n",
     "category": "quotation",
     "originHref": "https://www.theparisreview.org/blog/2020/11/16/we-are-built-to-forget/",
     "weekly": 133
@@ -4908,7 +4992,7 @@
   },
   {
     "title": "[《开源软件对软件商品化的挑战》](https://www.zdnet.com/article/the-commoditization-of-software/)",
-    "content": "\n\n\n\n如果你喜欢“建造”，但是对“产品”无动于衷，那么你似乎适合在谷歌工作。\n\n",
+    "content": "\n\n===132===\n\n如果你喜欢“建造”，但是对“产品”无动于衷，那么你似乎适合在谷歌工作。\n\n",
     "category": "quotation",
     "originHref": "https://www.zdnet.com/article/the-commoditization-of-software/",
     "weekly": 132
@@ -4929,7 +5013,7 @@
   },
   {
     "title": "[一位蒙大拿州的农村居民](https://www.businessinsider.com/starlink-internet-satellite-public-beta-speed-spacex-mbps-elon-musk-2020-11)。由于地处偏远，当地一直没有铺设宽带。他试用了 Starlink 的卫星宽度，下载速度达到 174 Mbps，快于美国95%的地区。",
-    "content": "\n\n\n\n如果你拿到5万月薪时，并没有比5千月薪时更快乐，那就说明你是一个利己主义者，而不是利他主义者。\n\n-- 一个 Facebook 用户\n\n生产一吨大豆需要约1500吨水，所以中国的大豆可能永远都会生产不足。\n\n",
+    "content": "\n\n===131===\n\n如果你拿到5万月薪时，并没有比5千月薪时更快乐，那就说明你是一个利己主义者，而不是利他主义者。\n\n-- 一个 Facebook 用户\n\n生产一吨大豆需要约1500吨水，所以中国的大豆可能永远都会生产不足。\n\n",
     "category": "quotation",
     "originHref": "https://www.businessinsider.com/starlink-internet-satellite-public-beta-speed-spacex-mbps-elon-musk-2020-11",
     "weekly": 131
@@ -4957,7 +5041,7 @@
   },
   {
     "title": "[李开复](https://www.ncuscr.org/media/podcast/uschinainsights/kai-fu-lee-future-ai-united-states-china)",
-    "content": "\n\n\n\n现在，世界人口的年增长率约为1.1％，科学家的年增长率超过4％，科学研究（论文、书籍、数据集等）的年增长率约为8-9％。\n\n这就是说，科学知识的增长速度，几乎比人口增长高一个数量级。\n\n",
+    "content": "\n\n===130===\n\n现在，世界人口的年增长率约为1.1％，科学家的年增长率超过4％，科学研究（论文、书籍、数据集等）的年增长率约为8-9％。\n\n这就是说，科学知识的增长速度，几乎比人口增长高一个数量级。\n\n",
     "category": "quotation",
     "originHref": "https://www.ncuscr.org/media/podcast/uschinainsights/kai-fu-lee-future-ai-united-states-china",
     "weekly": 130
@@ -4999,7 +5083,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=24712573)",
-    "content": "\n\n\n\n只有员工倾向于长期待在一家公司中，培训员工才是有意义的。\n\n",
+    "content": "\n\n===129===\n\n只有员工倾向于长期待在一家公司中，培训员工才是有意义的。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=24712573",
     "weekly": 129
@@ -5041,7 +5125,7 @@
   },
   {
     "title": "[乔布斯](https://www.inc.com/marcel-schwantes/warren-buffett-says-this-is-1-simple-habit-that-separates-successful-people-from-everyone-else.html)",
-    "content": "\n\n\n\n一百多年前美国有一个物理学家叫做亨利·罗兰，做过一次演讲，他说假如我们停止科学的进步而只留意科学的应用，很快就会退化成中国人那样。多少代人以来，中国人都没有什么进步，因为他们只满足科学应用，却从来没有追问过他们所做事情的原理。\n\n",
+    "content": "\n\n===128===\n\n一百多年前美国有一个物理学家叫做亨利·罗兰，做过一次演讲，他说假如我们停止科学的进步而只留意科学的应用，很快就会退化成中国人那样。多少代人以来，中国人都没有什么进步，因为他们只满足科学应用，却从来没有追问过他们所做事情的原理。\n\n",
     "category": "quotation",
     "originHref": "https://www.inc.com/marcel-schwantes/warren-buffett-says-this-is-1-simple-habit-that-separates-successful-people-from-everyone-else.html",
     "weekly": 128
@@ -5069,7 +5153,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=24595613)",
-    "content": "\n\n人工智能不需要恨我们就可以摧毁我们。正如我们不讨厌蚂蚁，但是如果我们需要修建高速公路，就会摧毁蚁丘一样。人工智能将以同样的方式对待我们，你不讨厌蚂蚁，你只是在修路。\n\n-– [伊隆·马斯克](https://podcastnotes.org/sway/elon-musk-wants-to-hack-your-brain-elon-musk-on-sway-with-kara-swisher/)（Elon Musk）\n\n我脑子里有太多东西了，就像打开太多浏览器窗口。\n\n-– [伊隆·马斯克](https://podcastnotes.org/sway/elon-musk-wants-to-hack-your-brain-elon-musk-on-sway-with-kara-swisher/)（Elon Musk）\n\n\n\n如果你无法将产品的价格翻倍，那么你的产品就不占有市场优势。\n\n",
+    "content": "\n\n人工智能不需要恨我们就可以摧毁我们。正如我们不讨厌蚂蚁，但是如果我们需要修建高速公路，就会摧毁蚁丘一样。人工智能将以同样的方式对待我们，你不讨厌蚂蚁，你只是在修路。\n\n-– [伊隆·马斯克](https://podcastnotes.org/sway/elon-musk-wants-to-hack-your-brain-elon-musk-on-sway-with-kara-swisher/)（Elon Musk）\n\n我脑子里有太多东西了，就像打开太多浏览器窗口。\n\n-– [伊隆·马斯克](https://podcastnotes.org/sway/elon-musk-wants-to-hack-your-brain-elon-musk-on-sway-with-kara-swisher/)（Elon Musk）\n\n===127===\n\n如果你无法将产品的价格翻倍，那么你的产品就不占有市场优势。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=24595613",
     "weekly": 127
@@ -5104,7 +5188,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=24576832)",
-    "content": "\n\n\n\n技术的快速进步，尽管带来了不可预测的后果，但是它让人类站到了更高的地方。\n\n--[《时代变化中的技术隐喻》](https://hawaiigentech.com/post/commentary/frogs-wont-let-themselves-be-cooked/)\n\n你会在20个方向上走一步，还是在一个方向上走20步？\n\n-- 匿名\n\n我创造不出来的东西，我都无法理解。（What I cannot create, I do not understand.）\n\n-- 理查德·费曼\n\nJava 语言的真正问题是，它对编程思想的分享和贡献，已经垂死很久了。\n\n",
+    "content": "\n\n===126===\n\n技术的快速进步，尽管带来了不可预测的后果，但是它让人类站到了更高的地方。\n\n--[《时代变化中的技术隐喻》](https://hawaiigentech.com/post/commentary/frogs-wont-let-themselves-be-cooked/)\n\n你会在20个方向上走一步，还是在一个方向上走20步？\n\n-- 匿名\n\n我创造不出来的东西，我都无法理解。（What I cannot create, I do not understand.）\n\n-- 理查德·费曼\n\nJava 语言的真正问题是，它对编程思想的分享和贡献，已经垂死很久了。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=24576832",
     "weekly": 126
@@ -5118,7 +5202,7 @@
   },
   {
     "title": "[《编织在一起的 Web》](https://css-tricks.com/weaved-webs/)",
-    "content": "\n\n\n\n2002年，我在中关村一间不算豪华的酒店里专访 NVIDIA CEO 黄仁勋的时候，他小声对我说，英特尔有 CPU，我们有 GPU。\n\n他说得那么不自信。我也只是微笑着容忍他将 NVIDIA 和 Intel 相提并论。18年过去，NVIDIA 市值超过 Intel。\n\n-- 刘韧\n\n2005年，我的毕业论文的《参考书目》部分包含了152个 URL。为了纪念毕业十五周年，我重新检查了这些 URL，其中82个不再起作用。我因此假定，互联网链接的腐烂率是57%。\n\n--[《测量链接腐烂率》](https://www.lightbluetouchpaper.org/2020/09/03/a-measurement-of-link-rot-57/)\n\n李光耀在新加坡的成功，不仅是因为他的专制主义，而且还因为新加坡决策精英阶层的纯粹实用主义。他们没有固定不变的意识形态，而是选择合适的意识形态。\n\n",
+    "content": "\n\n===125===\n\n2002年，我在中关村一间不算豪华的酒店里专访 NVIDIA CEO 黄仁勋的时候，他小声对我说，英特尔有 CPU，我们有 GPU。\n\n他说得那么不自信。我也只是微笑着容忍他将 NVIDIA 和 Intel 相提并论。18年过去，NVIDIA 市值超过 Intel。\n\n-- 刘韧\n\n2005年，我的毕业论文的《参考书目》部分包含了152个 URL。为了纪念毕业十五周年，我重新检查了这些 URL，其中82个不再起作用。我因此假定，互联网链接的腐烂率是57%。\n\n--[《测量链接腐烂率》](https://www.lightbluetouchpaper.org/2020/09/03/a-measurement-of-link-rot-57/)\n\n李光耀在新加坡的成功，不仅是因为他的专制主义，而且还因为新加坡决策精英阶层的纯粹实用主义。他们没有固定不变的意识形态，而是选择合适的意识形态。\n\n",
     "category": "quotation",
     "originHref": "https://css-tricks.com/weaved-webs/",
     "weekly": 125
@@ -5153,7 +5237,7 @@
   },
   {
     "title": "[Moment.js](https://momentjs.com/docs/#/-project-status/) 宣布停止开发，进入维护状态。",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020091508.jpg)\n\n\n\n维基百科的苏格兰语版本很糟糕，排名第一的贡献者是一个根本不懂苏格兰语的美国少年。他使用在线词典，把英语文章翻译成苏格兰语。\n\n我认为，这个人对苏格兰语的破坏可能比历史上其他任何人都大，他以前所未有的规模从事文化破坏活动。维基百科是世界上访问量最大的网站之一，现在可能有数以千万计的人认为苏格兰语是英语的一种糟糕的变体。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020091508.jpg)\n\n===124===\n\n维基百科的苏格兰语版本很糟糕，排名第一的贡献者是一个根本不懂苏格兰语的美国少年。他使用在线词典，把英语文章翻译成苏格兰语。\n\n我认为，这个人对苏格兰语的破坏可能比历史上其他任何人都大，他以前所未有的规模从事文化破坏活动。维基百科是世界上访问量最大的网站之一，现在可能有数以千万计的人认为苏格兰语是英语的一种糟糕的变体。\n\n",
     "category": "quotation",
     "originHref": "https://momentjs.com/docs/#/-project-status/",
     "weekly": 124
@@ -5181,7 +5265,7 @@
   },
   {
     "title": "[《苹果和流行文化》](https://finance.yahoo.com/news/2020-02-26-rian-johnson-apple-movie-villains-use-iphones-on-came.html)",
-    "content": "\n\n\n\n架构师的工作不是做出决策，而是尽可能久地推迟决策，先在不做出重大决策的情况下构建程序，以便以后有足够信息时再做出决策。\n\n",
+    "content": "\n\n===123===\n\n架构师的工作不是做出决策，而是尽可能久地推迟决策，先在不做出重大决策的情况下构建程序，以便以后有足够信息时再做出决策。\n\n",
     "category": "quotation",
     "originHref": "https://finance.yahoo.com/news/2020-02-26-rian-johnson-apple-movie-villains-use-iphones-on-came.html",
     "weekly": 123
@@ -5223,7 +5307,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=24346163)评论 [GitHub 推出容器仓库服务](https://github.blog/2020-09-01-introducing-github-container-registry/)",
-    "content": "\n\n\n\n物理学家狄拉克（Dirac）沉默寡言，回答别人时经常只用一个单词。他顽皮的同事们引入了一种新的度量单位，测量人类的语速，就叫做Dirac，每小时只说一个词即为一个 Dirac。\n\n",
+    "content": "\n\n===122===\n\n物理学家狄拉克（Dirac）沉默寡言，回答别人时经常只用一个单词。他顽皮的同事们引入了一种新的度量单位，测量人类的语速，就叫做Dirac，每小时只说一个词即为一个 Dirac。\n\n",
     "category": "quotation",
     "originHref": "https://github.blog/2020-09-01-introducing-github-container-registry/",
     "weekly": 122
@@ -5251,7 +5335,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=24230266)",
-    "content": "\n\n跟随马斯克12年的助理玛莉，要求大幅调薪。马斯克对她说：“你先放两个礼拜的假吧！让我想想。”\n\n过了两个礼拜，马斯克发现没有玛莉，他一个人也能稳妥地完成工作，就拒绝了调薪要求。\n\n--[《年资高，工作量大是谈加薪最大筹码？》](https://buzzorange.com/techorange/2019/07/12/does-your-boss-really-need-you/)\n\n\n\nWeb 和浏览器已经发展到令人恐怖的技术规模。微软完全放弃了，Mozilla 在死亡线上挣扎，Safari 根本无足轻重，只剩下 Google 一个玩家。\n\n我呼吁谷歌立即无限期地中止向 Web 和浏览器添加新 API。浏览器实际上应该开始考虑缩小 API 并削减功能，更关注性能、效率、可靠性和安全性。\n\n",
+    "content": "\n\n跟随马斯克12年的助理玛莉，要求大幅调薪。马斯克对她说：“你先放两个礼拜的假吧！让我想想。”\n\n过了两个礼拜，马斯克发现没有玛莉，他一个人也能稳妥地完成工作，就拒绝了调薪要求。\n\n--[《年资高，工作量大是谈加薪最大筹码？》](https://buzzorange.com/techorange/2019/07/12/does-your-boss-really-need-you/)\n\n===121===\n\nWeb 和浏览器已经发展到令人恐怖的技术规模。微软完全放弃了，Mozilla 在死亡线上挣扎，Safari 根本无足轻重，只剩下 Google 一个玩家。\n\n我呼吁谷歌立即无限期地中止向 Web 和浏览器添加新 API。浏览器实际上应该开始考虑缩小 API 并削减功能，更关注性能、效率、可靠性和安全性。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=24230266",
     "weekly": 121
@@ -5293,7 +5377,7 @@
   },
   {
     "title": "[《苹果从 Fortnite 获利3.6亿美元》](https://www.businessinsider.com/apple-made-360-million-from-fortnite-in-app-purchases-2020-8)",
-    "content": "\n\n\n\nTikTok 揭示了美国乃至全世界的精神病程度。\n\n",
+    "content": "\n\n===120===\n\nTikTok 揭示了美国乃至全世界的精神病程度。\n\n",
     "category": "quotation",
     "originHref": "https://www.businessinsider.com/apple-made-360-million-from-fortnite-in-app-purchases-2020-8",
     "weekly": 120
@@ -5321,7 +5405,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=24098725)",
-    "content": "\n\n\n\n地球与火星之间的通讯大约需要40分钟，发出一条指令，40分钟以后才能收到，这意味着火星登陆器必须高度自动化，具有自主决策的能力。\n\n",
+    "content": "\n\n===119===\n\n地球与火星之间的通讯大约需要40分钟，发出一条指令，40分钟以后才能收到，这意味着火星登陆器必须高度自动化，具有自主决策的能力。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=24098725",
     "weekly": 119
@@ -5356,7 +5440,7 @@
   },
   {
     "title": "[安托万·德圣埃克絮佩里](https://www.brainyquote.com/quotes/antoine_de_saintexupery_103610)，《小王子》作者",
-    "content": "\n\n\n\n谷歌的网页排名算法 PageRank，得名于创始人拉里·佩奇（ Larry Page），实际含义是佩奇的算法（Page's rank）。\n\n",
+    "content": "\n\n===118===\n\n谷歌的网页排名算法 PageRank，得名于创始人拉里·佩奇（ Larry Page），实际含义是佩奇的算法（Page's rank）。\n\n",
     "category": "quotation",
     "originHref": "https://www.brainyquote.com/quotes/antoine_de_saintexupery_103610",
     "weekly": 118
@@ -5398,7 +5482,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=23911243)",
-    "content": "\n\n\n与数字\n\n至少12年 Kubernetes 经验。\n\n",
+    "content": "\n\n===117===\n与数字\n\n至少12年 Kubernetes 经验。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=23911243",
     "weekly": 117
@@ -5426,7 +5510,7 @@
   },
   {
     "title": "[《锚定偏差》](https://models.substack.com/p/why-are-we-anchored-often)",
-    "content": "\n\n\n与数字\n\n如果你花钱买，你就是客户，如果你免费获得，你就是产品。\n\n",
+    "content": "\n\n===116===\n与数字\n\n如果你花钱买，你就是客户，如果你免费获得，你就是产品。\n\n",
     "category": "quotation",
     "originHref": "https://models.substack.com/p/why-are-we-anchored-often",
     "weekly": 116
@@ -5461,7 +5545,7 @@
   },
   {
     "title": "[《JavaScript 语言准备提出新的时间和日期 API》](https://news.ycombinator.com/item?id=23781819)",
-    "content": "\n\n许多 AI 研究人员追求的目标是开发与人类智能原理相同的人工智能，但是这永远不可能实现，因为人的思维基本上没有算法。\n\n--[《为什么将无法实现通用人工智能》](https://www.nature.com/articles/s41599-020-0494-4)\n\n\n\n看到抽象的东西，应该尽量使它变得具体；看到具体的东西，应该尽量使它变得抽象。\n\n-- 李敖\n\n创业公司不要专注于创造产品，而要专注于解决问题。\n\n",
+    "content": "\n\n许多 AI 研究人员追求的目标是开发与人类智能原理相同的人工智能，但是这永远不可能实现，因为人的思维基本上没有算法。\n\n--[《为什么将无法实现通用人工智能》](https://www.nature.com/articles/s41599-020-0494-4)\n\n===115===\n\n看到抽象的东西，应该尽量使它变得具体；看到具体的东西，应该尽量使它变得抽象。\n\n-- 李敖\n\n创业公司不要专注于创造产品，而要专注于解决问题。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=23781819",
     "weekly": 115
@@ -5489,7 +5573,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=23657458)",
-    "content": "\n\n\n\n创建一家大型互联网公司的最佳方法，就是帮助人们去做他们想做的事情，并使事情变得容易10倍。\n\n人们想在网上写东西，但是大多数网站的发布门槛太高了，所以才有了推特，你只需要写一句话就能发布。\n\n-- Evan Williams，Twitter 的创始人之一\n\n唯一不适应远程工作的是中层管理人员。\n\n基层员工对于在家工作感到很高兴，只要把活做好就可以了。高层管理人员只需要对销售和产量数字负责。中层管理人员的不适应在于，他们的职责是直接监控基层员工，最常用的判断方法是通过是否坐在座位上等迹象，来判断工作量和工作是否勤奋。\n\n",
+    "content": "\n\n===114===\n\n创建一家大型互联网公司的最佳方法，就是帮助人们去做他们想做的事情，并使事情变得容易10倍。\n\n人们想在网上写东西，但是大多数网站的发布门槛太高了，所以才有了推特，你只需要写一句话就能发布。\n\n-- Evan Williams，Twitter 的创始人之一\n\n唯一不适应远程工作的是中层管理人员。\n\n基层员工对于在家工作感到很高兴，只要把活做好就可以了。高层管理人员只需要对销售和产量数字负责。中层管理人员的不适应在于，他们的职责是直接监控基层员工，最常用的判断方法是通过是否坐在座位上等迹象，来判断工作量和工作是否勤奋。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=23657458",
     "weekly": 114
@@ -5503,7 +5587,7 @@
   },
   {
     "title": "[李敖](https://known.ifeng.com/a/20180123/44856075_0.shtml)",
-    "content": "\n\n如果目标只是到达终点，那样的成功是非常空洞的。\n\n最好的目标是，你和很多胜利者一起到达终点。身边的胜利者越多，成功就越让人满足。\n\n-- 霍华德·舒尔茨（星巴克创始人）的自传\n\n\n\n初学者眼里有很多可能性，专家眼里只有很少可能性。（In the beginner's mind there are many possibilities, but in the expert's there are few.）\n\n",
+    "content": "\n\n如果目标只是到达终点，那样的成功是非常空洞的。\n\n最好的目标是，你和很多胜利者一起到达终点。身边的胜利者越多，成功就越让人满足。\n\n-- 霍华德·舒尔茨（星巴克创始人）的自传\n\n===113===\n\n初学者眼里有很多可能性，专家眼里只有很少可能性。（In the beginner's mind there are many possibilities, but in the expert's there are few.）\n\n",
     "category": "quotation",
     "originHref": "https://known.ifeng.com/a/20180123/44856075_0.shtml",
     "weekly": 113
@@ -5545,7 +5629,7 @@
   },
   {
     "title": "[《汉明问题》](https://www.lesswrong.com/posts/P5k3PGzebd5yYrYqd/the-hamming-question)",
-    "content": "\n\n\n\n美国大学的学生成绩一直在贬值。\n\n1940年，14.9％的学生获得A，35％的学生获得C。\n\n2013年，45％的学生获得A，14％的学生获得C。\n\n",
+    "content": "\n\n===112===\n\n美国大学的学生成绩一直在贬值。\n\n1940年，14.9％的学生获得A，35％的学生获得C。\n\n2013年，45％的学生获得A，14％的学生获得C。\n\n",
     "category": "quotation",
     "originHref": "https://www.lesswrong.com/posts/P5k3PGzebd5yYrYqd/the-hamming-question",
     "weekly": 112
@@ -5587,7 +5671,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=23546121)",
-    "content": "\n\n\n\n我的皮肤黑，冬天在美国呆了两个多月后，缺乏日照，就感到很糟糕，身心崩溃了，感冒，偏头痛，关节痛。直到后来被诊断出患有急性维生素 D 缺乏症。\n\n",
+    "content": "\n\n===111===\n\n我的皮肤黑，冬天在美国呆了两个多月后，缺乏日照，就感到很糟糕，身心崩溃了，感冒，偏头痛，关节痛。直到后来被诊断出患有急性维生素 D 缺乏症。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=23546121",
     "weekly": 111
@@ -5629,7 +5713,7 @@
   },
   {
     "title": "宇航员[迈克尔·柯林斯](https://en.wikipedia.org/wiki/Michael_Collins_%28astronaut%29)（Michael Collins）",
-    "content": "\n\n\n\n如今，大多数网站都是由专业人士和市场营销人员作为商业产品构建的，经过优化可以吸引最大的受众，产生参与度和转化率。\n\n但是，世界上还有一小撮鲜为人知的网页，由普通人设计，目的是与世界分享他们的兴趣和爱好。没有过分的修饰，通常也很古怪，但也往往很有趣和富有创意。\n\n",
+    "content": "\n\n===110===\n\n如今，大多数网站都是由专业人士和市场营销人员作为商业产品构建的，经过优化可以吸引最大的受众，产生参与度和转化率。\n\n但是，世界上还有一小撮鲜为人知的网页，由普通人设计，目的是与世界分享他们的兴趣和爱好。没有过分的修饰，通常也很古怪，但也往往很有趣和富有创意。\n\n",
     "category": "quotation",
     "originHref": "https://en.wikipedia.org/wiki/Michael_Collins_%28astronaut%29",
     "weekly": 110
@@ -5657,7 +5741,7 @@
   },
   {
     "title": "[《美国法院判决，Youtube 审查用户上传的内容合法》](https://www.swissinfo.ch/chi/afp/%E7%A7%81%E4%BA%BA%E7%BD%91%E8%B7%AF%E4%B8%8D%E5%8F%97%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1%E9%99%90%E5%88%B6-%E6%B3%95%E5%AE%98%E8%A3%81%E8%83%BD%E5%AE%A1%E6%9F%A5%E5%86%85%E5%AE%B9/45582646)",
-    "content": "\n\n\n\n402 错误是要求付款，你请求的内容不能免费获取。\n\n",
+    "content": "\n\n===109===\n\n402 错误是要求付款，你请求的内容不能免费获取。\n\n",
     "category": "quotation",
     "originHref": "https://www.swissinfo.ch/chi/afp/%E7%A7%81%E4%BA%BA%E7%BD%91%E8%B7%AF%E4%B8%8D%E5%8F%97%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1%E9%99%90%E5%88%B6-%E6%B3%95%E5%AE%98%E8%A3%81%E8%83%BD%E5%AE%A1%E6%9F%A5%E5%86%85%E5%AE%B9/45582646",
     "weekly": 109
@@ -5699,7 +5783,7 @@
   },
   {
     "title": "[《贝索斯谈写作与叙事谬误》](https://jacklimpert.com/2018/04/jeff-bezos-talks-about-writing-and-the-narrative-fallacy/)",
-    "content": "\n\n\n\n创业公司所有的时间，都应该用来编码，与客户交谈，上体育馆或睡觉。\n\n",
+    "content": "\n\n===108===\n\n创业公司所有的时间，都应该用来编码，与客户交谈，上体育馆或睡觉。\n\n",
     "category": "quotation",
     "originHref": "https://jacklimpert.com/2018/04/jeff-bezos-talks-about-writing-and-the-narrative-fallacy/",
     "weekly": 108
@@ -5734,7 +5818,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=23234117)",
-    "content": "\n\n\n\n会议有利于性格外向的人，尤其是那些说话大声并且不需要时间思考问题的人，不利于那些性格内向的人。这是不公平的，但很少被提出。\n\n",
+    "content": "\n\n===107===\n\n会议有利于性格外向的人，尤其是那些说话大声并且不需要时间思考问题的人，不利于那些性格内向的人。这是不公平的，但很少被提出。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=23234117",
     "weekly": 107
@@ -5776,7 +5860,7 @@
   },
   {
     "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=22476860)",
-    "content": "\n\n\n\n你用哪种语言记忆电话号码，那种语言就是你的母语。\n\n-- 推特用户\n\n遇到非常复杂的逻辑时，我喜欢把每个步骤写成一个变量，使它读起来像英语。\n\n",
+    "content": "\n\n===106===\n\n你用哪种语言记忆电话号码，那种语言就是你的母语。\n\n-- 推特用户\n\n遇到非常复杂的逻辑时，我喜欢把每个步骤写成一个变量，使它读起来像英语。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=22476860",
     "weekly": 106
@@ -5811,7 +5895,7 @@
   },
   {
     "title": "[《第二只袜子综合症》](https://sheepamongwolves.net/2018/09/second-sock-syndrome-what-it-is-and-how-to-fight-it/)",
-    "content": "\n\n\n与数字\n\n小心，尝到自由的滋味，可能会让你变得失业。（A taste of freedom can make you unemployable.）\n\n",
+    "content": "\n\n===105===\n与数字\n\n小心，尝到自由的滋味，可能会让你变得失业。（A taste of freedom can make you unemployable.）\n\n",
     "category": "quotation",
     "originHref": "https://sheepamongwolves.net/2018/09/second-sock-syndrome-what-it-is-and-how-to-fight-it/",
     "weekly": 105
@@ -5853,7 +5937,7 @@
   },
   {
     "title": "[《秘境：探寻全球仙境、废墟与乌托邦》](https://book.douban.com/subject/33446318/)",
-    "content": "\n\n\n与数字\n\n我相信，只有六个人读完了我的书《数学原理》，后来其中三人被希特勒杀害。\n\n",
+    "content": "\n\n===104===\n与数字\n\n我相信，只有六个人读完了我的书《数学原理》，后来其中三人被希特勒杀害。\n\n",
     "category": "quotation",
     "originHref": "https://book.douban.com/subject/33446318/",
     "weekly": 104
@@ -5895,7 +5979,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=22325739)",
-    "content": "\n\n\n与数字\n\n501程序员指的是，一到 5:01 就离开办公室下班回家的程序员。\n\n",
+    "content": "\n\n===103===\n与数字\n\n501程序员指的是，一到 5:01 就离开办公室下班回家的程序员。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=22325739",
     "weekly": 103
@@ -5937,7 +6021,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=22321023)",
-    "content": "\n\n\n与数字\n\n我会购买华为作为下一部手机，以避免使用谷歌的服务。\n\n",
+    "content": "\n\n===102===\n与数字\n\n我会购买华为作为下一部手机，以避免使用谷歌的服务。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=22321023",
     "weekly": 102
@@ -5979,7 +6063,7 @@
   },
   {
     "title": "[《足够金钱的好处》](https://dragonquest64.blogspot.com/2020/02/having-fu-career.html)",
-    "content": "\n\n\n与数字\n\n去年成功套现/卖掉的创业公司，都值得祝贺。\n\n",
+    "content": "\n\n===101===\n与数字\n\n去年成功套现/卖掉的创业公司，都值得祝贺。\n\n",
     "category": "quotation",
     "originHref": "https://dragonquest64.blogspot.com/2020/02/having-fu-career.html",
     "weekly": 101
@@ -6014,7 +6098,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=22746433)",
-    "content": "\n\n\n\n咖啡的兴起与资本主义有千丝万缕的联系。资本主义兴起之前，体力劳动主要依靠酒精刺激体力的兴奋。但是当工作涉及机器和数字时，酒精就成为一个问题，而咖啡比酒精更安全，可以提高精神的兴奋。\n\n",
+    "content": "\n\n===100===\n\n咖啡的兴起与资本主义有千丝万缕的联系。资本主义兴起之前，体力劳动主要依靠酒精刺激体力的兴奋。但是当工作涉及机器和数字时，酒精就成为一个问题，而咖啡比酒精更安全，可以提高精神的兴奋。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=22746433",
     "weekly": 100
@@ -6049,7 +6133,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=22185250)",
-    "content": "\n\n\n\n1665年8月，剑桥大学由于鼠疫传播而关闭，一个叫做艾萨克·牛顿的学生不得不回到乡下的老家，躲避瘟疫。\n\n整整18个月，他与世隔绝，努力地读书和做实验，创造性地提出了一整套引力理论。人类的科学进展由于这个单一事件，从此彻底改变。\n\n",
+    "content": "\n\n===99===\n\n1665年8月，剑桥大学由于鼠疫传播而关闭，一个叫做艾萨克·牛顿的学生不得不回到乡下的老家，躲避瘟疫。\n\n整整18个月，他与世隔绝，努力地读书和做实验，创造性地提出了一整套引力理论。人类的科学进展由于这个单一事件，从此彻底改变。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=22185250",
     "weekly": 99
@@ -6091,7 +6175,7 @@
   },
   {
     "title": "[Ryan Dahl](http://www.stephendiehl.com/posts/decade.html)，Node.js 的发明者",
-    "content": "\n\n\n与数字\n\n一篇论文分析了英国400万例手术，发现星期五手术的死亡率比星期一高出40%，周末手术的死亡率更是高出80%。\n\n论文结论是，上半周手术风险明显小于下半周。\n\n",
+    "content": "\n\n===98===\n与数字\n\n一篇论文分析了英国400万例手术，发现星期五手术的死亡率比星期一高出40%，周末手术的死亡率更是高出80%。\n\n论文结论是，上半周手术风险明显小于下半周。\n\n",
     "category": "quotation",
     "originHref": "http://www.stephendiehl.com/posts/decade.html",
     "weekly": 98
@@ -6133,7 +6217,7 @@
   },
   {
     "title": "[《更好的技术带来更多的工作》](https://www.theatlantic.com/ideas/archive/2019/12/why-you-never-have-time/603937/)",
-    "content": "\n\n\n与数字\n\n为了解决气候变暖，人类生活的所有方面需要彻底的改变。\n\n我们需要少吃肉，通过体外细胞培养的方式人工生产蛋白质，每个家庭的家用电器减少到两台，完全淘汰干衣机，2030年全面过渡到电动汽车，2050年将全球人口限制在84亿以内，到2100年下降到69亿。\n\n",
+    "content": "\n\n===97===\n与数字\n\n为了解决气候变暖，人类生活的所有方面需要彻底的改变。\n\n我们需要少吃肉，通过体外细胞培养的方式人工生产蛋白质，每个家庭的家用电器减少到两台，完全淘汰干衣机，2030年全面过渡到电动汽车，2050年将全球人口限制在84亿以内，到2100年下降到69亿。\n\n",
     "category": "quotation",
     "originHref": "https://www.theatlantic.com/ideas/archive/2019/12/why-you-never-have-time/603937/",
     "weekly": 97
@@ -6175,7 +6259,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=21853885)",
-    "content": "\n\n\n与数字\n\n如果我要分发文本文件，首选的格式是 RTF。因为它包含 TXT 格式所没有的元数据，还能设置斜体、粗体和特殊字符，可以使用 Word 轻松转换为其他格式，同时不能包含宏，所以不会有病毒，并且是一种开放格式。\n\n",
+    "content": "\n\n===96===\n与数字\n\n如果我要分发文本文件，首选的格式是 RTF。因为它包含 TXT 格式所没有的元数据，还能设置斜体、粗体和特殊字符，可以使用 Word 轻松转换为其他格式，同时不能包含宏，所以不会有病毒，并且是一种开放格式。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21853885",
     "weekly": 96
@@ -6210,7 +6294,7 @@
   },
   {
     "title": "[《难以忍受的新闻网站》](https://zainamro.com/notes/unbearable-news)",
-    "content": "\n\n如果你经营酒店，退房时间放宽30分钟。如果你经营餐馆，给客人提供免费的小点心。如果你经营面包店，柜台上放一些额外的饼干。\n\n这些短期成本会创造顾客长期的忠诚度。\n\n-- David Perell\n\n\n与数字\n\n我刚进入甲骨文公司时，在新入职培训中问 CEO 拉里·埃里森：“甲骨文的五年计划是什么？” 他的回答很简单：“我们没有五年计划，连六个月计划也没有。”\n\n我后来发现，甲骨文实际上没有书面计划，只有预算。我们的工作就是弄清楚拉里心里想要什么。\n\n",
+    "content": "\n\n如果你经营酒店，退房时间放宽30分钟。如果你经营餐馆，给客人提供免费的小点心。如果你经营面包店，柜台上放一些额外的饼干。\n\n这些短期成本会创造顾客长期的忠诚度。\n\n-- David Perell\n\n===95===\n与数字\n\n我刚进入甲骨文公司时，在新入职培训中问 CEO 拉里·埃里森：“甲骨文的五年计划是什么？” 他的回答很简单：“我们没有五年计划，连六个月计划也没有。”\n\n我后来发现，甲骨文实际上没有书面计划，只有预算。我们的工作就是弄清楚拉里心里想要什么。\n\n",
     "category": "quotation",
     "originHref": "https://zainamro.com/notes/unbearable-news",
     "weekly": 95
@@ -6252,7 +6336,7 @@
   },
   {
     "title": "[《生物学正在吞噬世界》](https://a16z.com/2019/10/28/biology-eating-world-a16z-manifesto/)",
-    "content": "\n\n\n与数字\n\nSQLite 的代码托管在 Fossil 上，永远不会迁移到 Git。Fossil 专为支持 SQLite 开发而设计，并且做得非常好。与 Git / GitHub 相比，Fossil 填补了不同的市场。\n\n",
+    "content": "\n\n===94===\n与数字\n\nSQLite 的代码托管在 Fossil 上，永远不会迁移到 Git。Fossil 专为支持 SQLite 开发而设计，并且做得非常好。与 Git / GitHub 相比，Fossil 填补了不同的市场。\n\n",
     "category": "quotation",
     "originHref": "https://a16z.com/2019/10/28/biology-eating-world-a16z-manifesto/",
     "weekly": 94
@@ -6294,7 +6378,7 @@
   },
   {
     "title": "[《我无聊，怎么办？》](https://idiallo.com/blog/im-bored-what-do-i-do)",
-    "content": "\n\n\n与数字\n\n埃隆·马斯克（Elon Musk）的项目，似乎都是为人类失败做准备。\n\n发电厂无法可靠供电时，太阳能电池板必不可少。沙特阿拉伯无法供应石油时，电动汽车必不可少。地面互联网关闭时，星联计划提供卫星上网。地球无法居住时，就移居火星。\n\n",
+    "content": "\n\n===93===\n与数字\n\n埃隆·马斯克（Elon Musk）的项目，似乎都是为人类失败做准备。\n\n发电厂无法可靠供电时，太阳能电池板必不可少。沙特阿拉伯无法供应石油时，电动汽车必不可少。地面互联网关闭时，星联计划提供卫星上网。地球无法居住时，就移居火星。\n\n",
     "category": "quotation",
     "originHref": "https://idiallo.com/blog/im-bored-what-do-i-do",
     "weekly": 93
@@ -6329,7 +6413,7 @@
   },
   {
     "title": "[《Mac Pro 和苹果公司的滑坡》](https://lexic.co/barfblog/the-mac-pro-and-apple-s-slide)",
-    "content": "\n\n\n与数字\n\n我使用树莓派 4 时，发现 CPU 温度大约为 73 度。我拿一个2英镑的硬币放在 CPU 上，温度在几秒钟内下降 10 度。\n\n",
+    "content": "\n\n===92===\n与数字\n\n我使用树莓派 4 时，发现 CPU 温度大约为 73 度。我拿一个2英镑的硬币放在 CPU 上，温度在几秒钟内下降 10 度。\n\n",
     "category": "quotation",
     "originHref": "https://lexic.co/barfblog/the-mac-pro-and-apple-s-slide",
     "weekly": 92
@@ -6364,7 +6448,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=21609987)",
-    "content": "\n\n苹果公司的市值等于丹麦（世界第28大经济体）的净资产，用户数量等于中国人口。所以，如果把苹果公司看成一个国家，它将是一个超级大国，对世界人民的生活、政治和文化产生了深远的影响。\n\n--[《欢迎来到库比蒂诺共和国》](https://members.tortoisemedia.com/2020/01/06/day-1-apple-state-of-the-nation-2/content.html)\n\n\n与数字\n\n如果一项技术足够流行，就会有人将其添加到烤面包机中。\n\n",
+    "content": "\n\n苹果公司的市值等于丹麦（世界第28大经济体）的净资产，用户数量等于中国人口。所以，如果把苹果公司看成一个国家，它将是一个超级大国，对世界人民的生活、政治和文化产生了深远的影响。\n\n--[《欢迎来到库比蒂诺共和国》](https://members.tortoisemedia.com/2020/01/06/day-1-apple-state-of-the-nation-2/content.html)\n\n===91===\n与数字\n\n如果一项技术足够流行，就会有人将其添加到烤面包机中。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21609987",
     "weekly": 91
@@ -6406,7 +6490,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=21550991)",
-    "content": "\n\n\n与数字\n\n如果蜜蜂从地球消失，人类将只剩下四年的生命。没有蜜蜂，就没有授粉；没有授粉，就没有植物；没有植物，就没有动物；没有动物，就没有人。\n\n",
+    "content": "\n\n===90===\n与数字\n\n如果蜜蜂从地球消失，人类将只剩下四年的生命。没有蜜蜂，就没有授粉；没有授粉，就没有植物；没有植物，就没有动物；没有动物，就没有人。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21550991",
     "weekly": 90
@@ -6448,7 +6532,7 @@
   },
   {
     "title": "[《英国政府要求以 HTML 发布文档，而不是 PDF》](https://news.ycombinator.com/item?id=21859520)",
-    "content": "\n\n\n与数字\n\n2019年可能会是过去十年里最差的一年，但却是未来十年里最好的一年。\n\n",
+    "content": "\n\n===89===\n与数字\n\n2019年可能会是过去十年里最差的一年，但却是未来十年里最好的一年。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21859520",
     "weekly": 89
@@ -6490,7 +6574,7 @@
   },
   {
     "title": "[《为什么站立会议是无用的？》](https://andyjohns.co/why-standups-are-useless-and-how-to-run-great-product-team-meetings/)",
-    "content": "\n\n\n与数字\n\n有人认为，日本善于复制其他国家的东西。我不这样认为，日本人所做的是重塑事物。他们对别人的发明进行研究，直到完全理解为止。某些情况下，他们比原始发明人更了解它。基于这种理解，他们将在更精致的第二代版本中进行重新发明。\n\n不过，只有那种东西变化不大时，该策略才能奏效，音响和汽车行业就是两个例子。当目标行业快速发展时，这种策略就很困难，因为重新发明需要几年时间（，而原始发明已经被淘汰了）。\n\n",
+    "content": "\n\n===88===\n与数字\n\n有人认为，日本善于复制其他国家的东西。我不这样认为，日本人所做的是重塑事物。他们对别人的发明进行研究，直到完全理解为止。某些情况下，他们比原始发明人更了解它。基于这种理解，他们将在更精致的第二代版本中进行重新发明。\n\n不过，只有那种东西变化不大时，该策略才能奏效，音响和汽车行业就是两个例子。当目标行业快速发展时，这种策略就很困难，因为重新发明需要几年时间（，而原始发明已经被淘汰了）。\n\n",
     "category": "quotation",
     "originHref": "https://andyjohns.co/why-standups-are-useless-and-how-to-run-great-product-team-meetings/",
     "weekly": 88
@@ -6532,7 +6616,7 @@
   },
   {
     "title": "读者对[《不要雇佣有小孩的人》](https://philip.greenspun.com/blog/2019/12/23/paul-graham-dont-hire-anyone-with-children/)一文的留言",
-    "content": "\n\n\n与数字\n\n我们都知道，如果可以回到过去，改变任何一件小事情，都将极大地改变未来。然而，几乎没有人想到，今天只要小小改变，就会改变自己的未来。\n\n",
+    "content": "\n\n===87===\n与数字\n\n我们都知道，如果可以回到过去，改变任何一件小事情，都将极大地改变未来。然而，几乎没有人想到，今天只要小小改变，就会改变自己的未来。\n\n",
     "category": "quotation",
     "originHref": "https://philip.greenspun.com/blog/2019/12/23/paul-graham-dont-hire-anyone-with-children/",
     "weekly": 87
@@ -6567,7 +6651,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=21360284)",
-    "content": "\n\n\n与数字\n\n我觉得探索火星很愚蠢，而且真的很可惜。用于太空探索的资金，应被用来拯救我们自己的星球。现在，地球的情况如此严峻，全球正在变暖，这是第三次世界大战，我们却浪费这些钱去火星，火星上什么也没有。\n\n",
+    "content": "\n\n===86===\n与数字\n\n我觉得探索火星很愚蠢，而且真的很可惜。用于太空探索的资金，应被用来拯救我们自己的星球。现在，地球的情况如此严峻，全球正在变暖，这是第三次世界大战，我们却浪费这些钱去火星，火星上什么也没有。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21360284",
     "weekly": 86
@@ -6602,7 +6686,7 @@
   },
   {
     "title": "[《面向未来的代码》](https://slate.com/technology/2019/10/y2k-2038-bug-coding-future.html)",
-    "content": "\n\n\n与数字\n\n星期天，我收到一封电子邮件，通知要在星期一早上开会。星期一，我被告知公司已经解雇我了，不要返回办公室，规定期限内不能为竞争对手工作。\n\n我联系了工会，工会帮我将合同交给了一个非常昂贵的律师，他打了几个电话。第二周，我就被解除了竞业限制，并获得了7个月的免税薪水的补偿。\n\n",
+    "content": "\n\n===85===\n与数字\n\n星期天，我收到一封电子邮件，通知要在星期一早上开会。星期一，我被告知公司已经解雇我了，不要返回办公室，规定期限内不能为竞争对手工作。\n\n我联系了工会，工会帮我将合同交给了一个非常昂贵的律师，他打了几个电话。第二周，我就被解除了竞业限制，并获得了7个月的免税薪水的补偿。\n\n",
     "category": "quotation",
     "originHref": "https://slate.com/technology/2019/10/y2k-2038-bug-coding-future.html",
     "weekly": 85
@@ -6637,7 +6721,7 @@
   },
   {
     "title": "[史蒂夫·乔布斯](https://community.intelligentfanatics.com/t/the-best-product-a-great-team/1771)",
-    "content": "\n\n\n与数字\n\n特斯拉汽车的自动驾驶可以挽救数百万人的生命，但它可能首先会造成一些人的死亡，然后才能达到这个目标。\n\n",
+    "content": "\n\n===84===\n与数字\n\n特斯拉汽车的自动驾驶可以挽救数百万人的生命，但它可能首先会造成一些人的死亡，然后才能达到这个目标。\n\n",
     "category": "quotation",
     "originHref": "https://community.intelligentfanatics.com/t/the-best-product-a-great-team/1771",
     "weekly": 84
@@ -6679,7 +6763,7 @@
   },
   {
     "title": "[维基百科](https://news.ycombinator.com/item?id=21037556)",
-    "content": "\n\n\n与数字\n\n这些年来，我都是凌晨4点被电话叫醒，去紧急处理代码问题。这一切只是为了贯彻“快速行动”（move fast）的理念。\n\n",
+    "content": "\n\n===83===\n与数字\n\n这些年来，我都是凌晨4点被电话叫醒，去紧急处理代码问题。这一切只是为了贯彻“快速行动”（move fast）的理念。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21037556",
     "weekly": 83
@@ -6707,7 +6791,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=21578270)",
-    "content": "\n\n\n与数字\n\n软胜硬，慢胜快。\n\n让你的工作是个谜，只是向人们展示结果。\n\n",
+    "content": "\n\n===82===\n与数字\n\n软胜硬，慢胜快。\n\n让你的工作是个谜，只是向人们展示结果。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21578270",
     "weekly": 82
@@ -6749,7 +6833,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=21503353)",
-    "content": "\n\n\n与数字\n\n负利率的一个严重问题是，规模万亿美元的金融工具所使用的数学模型，根本无法使用负数。\n\n",
+    "content": "\n\n===81===\n与数字\n\n负利率的一个严重问题是，规模万亿美元的金融工具所使用的数学模型，根本无法使用负数。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21503353",
     "weekly": 81
@@ -6777,7 +6861,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=21421058)评论美国政府宣布对抖音收购 Musical.ly 进行国家安全审核",
-    "content": "\n\n\n与数字\n\n马克思理论认为，利率降至零时，共产主义的时机就会到来，因为零利率意味着资本家不再知道如何处理他们的钱，没有好的投资机会，此时唯一要做的就是重新分配资本。\n\n",
+    "content": "\n\n===80===\n与数字\n\n马克思理论认为，利率降至零时，共产主义的时机就会到来，因为零利率意味着资本家不再知道如何处理他们的钱，没有好的投资机会，此时唯一要做的就是重新分配资本。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21421058",
     "weekly": 80
@@ -6819,7 +6903,7 @@
   },
   {
     "title": "[托马斯·弗里德曼](https://www.nytimes.com/2019/04/02/opinion/brexit-news.html)评论英国脱欧",
-    "content": "\n\n\n和数字\n\n可以数学证明，一个项目拖得越久，它的预期完成日期就越遥远。\n\n",
+    "content": "\n\n===79===\n和数字\n\n可以数学证明，一个项目拖得越久，它的预期完成日期就越遥远。\n\n",
     "category": "quotation",
     "originHref": "https://www.nytimes.com/2019/04/02/opinion/brexit-news.html",
     "weekly": 79
@@ -6861,7 +6945,7 @@
   },
   {
     "title": "[谷歌](https://thenextweb.com/plugged/2019/10/17/rant-google-has-no-good-excuse-for-the-pixel-4s-missing-ultrawide-camera/)在 Pixel 4 手机发布会上解释，为什么 Pixel 4 只有长焦摄像头，没有广角摄像头。",
-    "content": "\n\n\n和数字\n\n拥有个人网站，就好像拥有了互联网的一小部分。\n\n",
+    "content": "\n\n===78===\n和数字\n\n拥有个人网站，就好像拥有了互联网的一小部分。\n\n",
     "category": "quotation",
     "originHref": "https://thenextweb.com/plugged/2019/10/17/rant-google-has-no-good-excuse-for-the-pixel-4s-missing-ultrawide-camera/",
     "weekly": 78
@@ -6896,7 +6980,7 @@
   },
   {
     "title": "[保罗·格拉汉姆（Paul Graham）](https://news.ycombinator.com/item?id=21232352)。他已经54岁了，发布了一门自创的计算机语言 Bel。有人问他目的何在，他做了上面的回答。",
-    "content": "\n\n\n和数字\n\n每次打开一个源码文件，你都应该让它变得更好。\n\n",
+    "content": "\n\n===77===\n和数字\n\n每次打开一个源码文件，你都应该让它变得更好。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21232352",
     "weekly": 77
@@ -6938,7 +7022,7 @@
   },
   {
     "title": "[《93％的瓶装水发现微塑料》](https://www.cbc.ca/news/technology/bottled-water-microplastics-1.4575045)",
-    "content": "\n\n\n和数字\n\n有些开发者对技术上瘾，而不是务实地看待技术。每当一种新技术出现，他们会立刻选择它，跳船到它上面，虔诚地传播它，应用它，然后跳船到下一个新技术。\n\n这部分是因为，在这个行业里，简历需要很多时髦的流行语，务实的简单的技术选择，无法让别人留下深刻印象。\n\n",
+    "content": "\n\n===76===\n和数字\n\n有些开发者对技术上瘾，而不是务实地看待技术。每当一种新技术出现，他们会立刻选择它，跳船到它上面，虔诚地传播它，应用它，然后跳船到下一个新技术。\n\n这部分是因为，在这个行业里，简历需要很多时髦的流行语，务实的简单的技术选择，无法让别人留下深刻印象。\n\n",
     "category": "quotation",
     "originHref": "https://www.cbc.ca/news/technology/bottled-water-microplastics-1.4575045",
     "weekly": 76
@@ -6966,7 +7050,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=21085847)对静态站点生成器 Gatsby 筹集1500万美元的评论",
-    "content": "\n\n\n和数字\n\n工业化的风险越来越大。因为工业化使得人们集中在城市、使得生产消耗更多的能源，有更多的自动化，更快的技术变革，最后是更加相互依赖的系统网络。\n\n",
+    "content": "\n\n===75===\n和数字\n\n工业化的风险越来越大。因为工业化使得人们集中在城市、使得生产消耗更多的能源，有更多的自动化，更快的技术变革，最后是更加相互依赖的系统网络。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=21085847",
     "weekly": 75
@@ -6994,7 +7078,7 @@
   },
   {
     "title": "[维基百科](https://en.wikipedia.org/wiki/Rekursiv)",
-    "content": "\n\n创造伟大产品的秘诀，不是去创造各种了不起的功能，而是让你的客户变得了不起。\n\n-- Kathy Sierra\n\n\n和数据\n\n食品应该标注两个日期：最佳质量日期和丢弃日期。\n\n",
+    "content": "\n\n创造伟大产品的秘诀，不是去创造各种了不起的功能，而是让你的客户变得了不起。\n\n-- Kathy Sierra\n\n===74===\n和数据\n\n食品应该标注两个日期：最佳质量日期和丢弃日期。\n\n",
     "category": "quotation",
     "originHref": "https://en.wikipedia.org/wiki/Rekursiv",
     "weekly": 74
@@ -7029,7 +7113,7 @@
   },
   {
     "title": "Sam Altman，[《我的30岁感想》](https://blog.samaltman.com/the-days-are-long-but-the-decades-are-short)",
-    "content": "\n\n\n和数字\n\n青木原（Aokigahara forest）的日语意思是树木之海。1993年出版的 Waturu Tsurumi 的《自杀完全手册》宣布它是日本最佳的死亡地点。因为它的树木长得很紧密，所以它们阻挡了风，而且由于动物和鸟类很少，森林异常安静。树木之海面积很大，十四平方英里，所以尸体可以被掩盖几个月未被发现。\n\n",
+    "content": "\n\n===73===\n和数字\n\n青木原（Aokigahara forest）的日语意思是树木之海。1993年出版的 Waturu Tsurumi 的《自杀完全手册》宣布它是日本最佳的死亡地点。因为它的树木长得很紧密，所以它们阻挡了风，而且由于动物和鸟类很少，森林异常安静。树木之海面积很大，十四平方英里，所以尸体可以被掩盖几个月未被发现。\n\n",
     "category": "quotation",
     "originHref": "https://blog.samaltman.com/the-days-are-long-but-the-decades-are-short",
     "weekly": 73
@@ -7057,7 +7141,7 @@
   },
   {
     "title": "[Nassim Nicholas Taleb，《黑天鹅》的作者](https://www.goodreads.com/quotes/612389-the-three-most-harmful-addictions-are-heroin-carbohydrates-and-a)",
-    "content": "\n\n\n\n2011年，旧金山创业公司的种子轮风投平均为50万美元；2018年，种子轮平均达到了210万美元。\n\n",
+    "content": "\n\n===72===\n\n2011年，旧金山创业公司的种子轮风投平均为50万美元；2018年，种子轮平均达到了210万美元。\n\n",
     "category": "quotation",
     "originHref": "https://www.goodreads.com/quotes/612389-the-three-most-harmful-addictions-are-heroin-carbohydrates-and-a",
     "weekly": 72
@@ -7078,7 +7162,7 @@
   },
   {
     "title": "[《糟糕的设计师是否躲在 UX 这个词后面？》](https://uxdesign.cc/are-bad-designers-hiding-behind-the-term-ux-c3e30f0a4778)",
-    "content": "\n\n\n\n90%的 Web 应用是数据库前端。\n\n",
+    "content": "\n\n===71===\n\n90%的 Web 应用是数据库前端。\n\n",
     "category": "quotation",
     "originHref": "https://uxdesign.cc/are-bad-designers-hiding-behind-the-term-ux-c3e30f0a4778",
     "weekly": 71
@@ -7106,9 +7190,16 @@
   },
   {
     "title": "[《如何测试 SQLite》](https://www.sqlite.org/testing.html)",
-    "content": "\n\n\n\n写一本书需要坚强的意志、忍耐力、厚脸皮（敢于说出自己的观点）和非金钱动机。\n\n-- [《我写了一本 C++ 教材》](https://lospi.net/c/c++/programming/developing/software/2019/07/28/cpp-crash-course.html)\n\n改革开放40年，中国社会发生了翻天覆地的变化，除了总的制度没变，能够改变的几乎都变了。\n\n--[《纽约时报》](https://cn.nytimes.com/opinion/20190730/can-the-us-still-change-china/)\n\n我认为，美国无法禁止比特币或其他加密货币。它们实际上是一种开源软件，存在于互联网上。任何人都可以实现它，可以运行在互联网运行的任何地方。\n\n",
+    "content": "\n\n===70===\n\n写一本书需要坚强的意志、忍耐力、厚脸皮（敢于说出自己的观点）和非金钱动机。\n\n",
     "category": "quotation",
     "originHref": "https://www.sqlite.org/testing.html",
+    "weekly": 70
+  },
+  {
+    "title": "[《我写了一本 C++ 教材》](https://lospi.net/c/c++/programming/developing/software/2019/07/28/cpp-crash-course.html)",
+    "content": "\n\n改革开放40年，中国社会发生了翻天覆地的变化，除了总的制度没变，能够改变的几乎都变了。\n\n--[《纽约时报》](https://cn.nytimes.com/opinion/20190730/can-the-us-still-change-china/)\n\n我认为，美国无法禁止比特币或其他加密货币。它们实际上是一种开源软件，存在于互联网上。任何人都可以实现它，可以运行在互联网运行的任何地方。\n\n",
+    "category": "quotation",
+    "originHref": "https://lospi.net/c/c++/programming/developing/software/2019/07/28/cpp-crash-course.html",
     "weekly": 70
   },
   {
@@ -7120,7 +7211,7 @@
   },
   {
     "title": "[《尼日利亚市场规模之谜》](https://medium.com/@drola/the-mystery-of-market-size-in-nigeria-a7c863f537bb)",
-    "content": "\n\n\n\n软件的运行速度快，说明这个软件是专注的。\n\n",
+    "content": "\n\n===69===\n\n软件的运行速度快，说明这个软件是专注的。\n\n",
     "category": "quotation",
     "originHref": "https://medium.com/@drola/the-mystery-of-market-size-in-nigeria-a7c863f537bb",
     "weekly": 69
@@ -7141,7 +7232,7 @@
   },
   {
     "title": "[HN 读者](https://news.ycombinator.com/item?id=20539000)",
-    "content": "\n\n\n\n美国癌症协会、FDA 和许多其他组织强烈反对食用鱼翅，或者食用鲨鱼肝油，认为效果跟吃自己的指甲差不多。\n\n",
+    "content": "\n\n===68===\n\n美国癌症协会、FDA 和许多其他组织强烈反对食用鱼翅，或者食用鲨鱼肝油，认为效果跟吃自己的指甲差不多。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=20539000",
     "weekly": 68
@@ -7169,7 +7260,7 @@
   },
   {
     "title": "[《如何创建一个有效的课程》](http://teachtogether.tech/)",
-    "content": "\n\n\n\n知识使人自由，或者起码渴望自由。\n\n",
+    "content": "\n\n===67===\n\n知识使人自由，或者起码渴望自由。\n\n",
     "category": "quotation",
     "originHref": "http://teachtogether.tech/",
     "weekly": 67
@@ -7190,7 +7281,7 @@
   },
   {
     "title": "[《极简宇宙史》](https://book.douban.com/subject/26697350/)",
-    "content": "\n\n日食与遮住头顶的遮阳伞没有什么不同。只不过挡住太阳的不是伞，而是月亮。\n\n-- [《向女儿解释月蚀》](https://groups.google.com/forum/#!msg/b-a-s/9rcz9MbC5p8/2Q8txQgGBAAJ)\n\n\n\n人才政策一贯是“爱一行，干一行；干一行，专一行”，没有强迫大家去干一行就一定要爱一行。\n\n-- 任正非\n\n认同华为公司价值观的、而且能给企业创造效益的员工，要给予重用和提拨。\n\n不认同华为公司价值观的、而且不能给企业创造效益的员工，要给予劝退。\n\n具备两者之一的员工，要予以分类和改造。\n\n-- 任正非\n\n如果太阳是一只西瓜那样大小，地球将会处于43米之外，需要望远镜才能看到它。\n\n--[《极简宇宙史》](https://book.douban.com/subject/26697350/)\n\n喜欢读书的人在死之前，活过1000次，不读书的人只活过一次。\n\n",
+    "content": "\n\n日食与遮住头顶的遮阳伞没有什么不同。只不过挡住太阳的不是伞，而是月亮。\n\n-- [《向女儿解释月蚀》](https://groups.google.com/forum/#!msg/b-a-s/9rcz9MbC5p8/2Q8txQgGBAAJ)\n\n===66===\n\n人才政策一贯是“爱一行，干一行；干一行，专一行”，没有强迫大家去干一行就一定要爱一行。\n\n-- 任正非\n\n认同华为公司价值观的、而且能给企业创造效益的员工，要给予重用和提拨。\n\n不认同华为公司价值观的、而且不能给企业创造效益的员工，要给予劝退。\n\n具备两者之一的员工，要予以分类和改造。\n\n-- 任正非\n\n如果太阳是一只西瓜那样大小，地球将会处于43米之外，需要望远镜才能看到它。\n\n--[《极简宇宙史》](https://book.douban.com/subject/26697350/)\n\n喜欢读书的人在死之前，活过1000次，不读书的人只活过一次。\n\n",
     "category": "quotation",
     "originHref": "https://book.douban.com/subject/26697350/",
     "weekly": 66
@@ -7204,7 +7295,7 @@
   },
   {
     "title": "[《我如何制作每月收入8000美元的播客》](https://blog.usejournal.com/how-i-made-8-000-per-month-podcasting-and-why-you-probably-dont-want-to-855966a557aa)",
-    "content": "\n\n\n\n电影《阿拉伯的劳伦斯》有一个伟大的镜头，茫茫的沙漠出现了一个小点，慢慢向镜头走来，那是劳伦斯骑着骆驼。\n\n现在的电影就不会这样拍，因为导演必须想到，人们会在手机上看电影。现在拍《阿拉伯的劳伦斯》就不会有这个镜头。\n\n",
+    "content": "\n\n===65===\n\n电影《阿拉伯的劳伦斯》有一个伟大的镜头，茫茫的沙漠出现了一个小点，慢慢向镜头走来，那是劳伦斯骑着骆驼。\n\n现在的电影就不会这样拍，因为导演必须想到，人们会在手机上看电影。现在拍《阿拉伯的劳伦斯》就不会有这个镜头。\n\n",
     "category": "quotation",
     "originHref": "https://blog.usejournal.com/how-i-made-8-000-per-month-podcasting-and-why-you-probably-dont-want-to-855966a557aa",
     "weekly": 65
@@ -7239,7 +7330,7 @@
   },
   {
     "title": "[《为什么大型语言会爆炸》](https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9)",
-    "content": "\n\n\n\n世界上我最佩服的勇士是蜘蛛，不管狂风暴雨，不畏任何艰难困苦，不管网破碎多少次，它仍孜孜不倦的用它纤细的丝织补。数千年来没有人去赞美蜘蛛，它们仍然勤奋，不屈不挠，生生不息。\n\n我最欣赏的是蜜蜂，由于它给人们蜂蜜，尽管它多螫，人们都对它赞不绝口。不管您如何称赞，蜜蜂仍孜孜不倦的酿蜜，天天埋头苦干，并不因为赞美产蜜少一些。胜不骄，败不馁，从他们身上完全反射出来。在荣誉与失败面前，平静得象一湖水，这就是华为应具有的心胸与内涵。\n\n",
+    "content": "\n\n===64===\n\n世界上我最佩服的勇士是蜘蛛，不管狂风暴雨，不畏任何艰难困苦，不管网破碎多少次，它仍孜孜不倦的用它纤细的丝织补。数千年来没有人去赞美蜘蛛，它们仍然勤奋，不屈不挠，生生不息。\n\n我最欣赏的是蜜蜂，由于它给人们蜂蜜，尽管它多螫，人们都对它赞不绝口。不管您如何称赞，蜜蜂仍孜孜不倦的酿蜜，天天埋头苦干，并不因为赞美产蜜少一些。胜不骄，败不馁，从他们身上完全反射出来。在荣誉与失败面前，平静得象一湖水，这就是华为应具有的心胸与内涵。\n\n",
     "category": "quotation",
     "originHref": "https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9",
     "weekly": 64
@@ -7267,7 +7358,7 @@
   },
   {
     "title": "[《创业公司 Atrium 如何提供法律服务》](https://techcrunch.com/2019/06/20/atrium-startup-lawyer/)",
-    "content": "\n\n\n\n极端悲观者认为任何事都没有意义，极端乐观者认为没必要任何事，所以它们都收敛于无所事事。\n\n健康的态度要么是温和的乐观主义，要么是温和的悲观主义。\n\n",
+    "content": "\n\n===63===\n\n极端悲观者认为任何事都没有意义，极端乐观者认为没必要任何事，所以它们都收敛于无所事事。\n\n健康的态度要么是温和的乐观主义，要么是温和的悲观主义。\n\n",
     "category": "quotation",
     "originHref": "https://techcrunch.com/2019/06/20/atrium-startup-lawyer/",
     "weekly": 63
@@ -7295,7 +7386,7 @@
   },
   {
     "title": "[导演卡麦隆](https://en.wikipedia.org/wiki/Alita:_Battle_Angel#Future)谈电影《阿丽塔：战斗天使》",
-    "content": "\n\n\n\n年轻时，我认为旅行是人生重要的事情。但是现在，我意识到旅行不是如此。它没有那么让人兴奋，也算不上成就，跟其他的消费行为没有太大区别。\n\n旅行中，我们真正感兴趣的东西，都是那些留在原地、努力建设的人们创造出来的。\n\n",
+    "content": "\n\n===62===\n\n年轻时，我认为旅行是人生重要的事情。但是现在，我意识到旅行不是如此。它没有那么让人兴奋，也算不上成就，跟其他的消费行为没有太大区别。\n\n旅行中，我们真正感兴趣的东西，都是那些留在原地、努力建设的人们创造出来的。\n\n",
     "category": "quotation",
     "originHref": "https://en.wikipedia.org/wiki/Alita:_Battle_Angel#Future",
     "weekly": 62
@@ -7330,7 +7421,7 @@
   },
   {
     "title": "[《安卓有多碎片化？》](https://eggonomy.com/blogs/news/how-fragmented-is-android)",
-    "content": "\n\n\n\n除非你对量子力学感到震惊，否则你并不理解它。\n\n-- 玻尔，量子理论创始人之一\n\n一家公司要么全部人员都是远程办公，要么根本就没有远程办公，不太可能有中间状态。\n\n很多公司吹嘘自己的员工可以自由选择远程办公，其实做不到，因为办公室工作的团队成员，不可避免地会具有信息优势，能够更早更多地得知信息，特别是如果领导层都在公司办公的话。\n\n",
+    "content": "\n\n===61===\n\n除非你对量子力学感到震惊，否则你并不理解它。\n\n-- 玻尔，量子理论创始人之一\n\n一家公司要么全部人员都是远程办公，要么根本就没有远程办公，不太可能有中间状态。\n\n很多公司吹嘘自己的员工可以自由选择远程办公，其实做不到，因为办公室工作的团队成员，不可避免地会具有信息优势，能够更早更多地得知信息，特别是如果领导层都在公司办公的话。\n\n",
     "category": "quotation",
     "originHref": "https://eggonomy.com/blogs/news/how-fragmented-is-android",
     "weekly": 61
@@ -7344,7 +7435,7 @@
   },
   {
     "title": "[《孙正义只是商人而已》](https://www.cnbc.com/2019/05/19/masayoshi-son-genius-or-insane-maybe-neither.html)",
-    "content": "\n\n拉丁语中，“激情”的意思就是“受苦”。如果你热爱一样东西，却不感到痛苦，那就不是激情。\n\n--[ 《我热爱的是什么？》](https://debugandrelease.blogspot.com/2019/04/what-am-i-passionate-about.html)\n\n非洲原始部落里面，那些酋长的女人们都戴着沉重的金属链子作为装饰，路都走不快。中国古代文人留着长长的指甲，根本无法劳动。17世纪欧洲贵族的衣服没有口袋，东西都让身后的仆人拿。\n\n这些事情的共同点，就是让别人看到，他们可以不参加日常的生产活动，过着悠闲缓慢的生活，所以这些都是身份的象征，表示他们比普通人更高贵。\n\n-- 李翔\n\n\n\n技术新闻和技术会议等地方，传播的都是行业的前瞻性观点，这些声音过于响亮，得到了最大的权重。但是，请不要忘记，世界仍然运行在 Excel、Java 8 和 Sharepoint 上面。\n\n",
+    "content": "\n\n拉丁语中，“激情”的意思就是“受苦”。如果你热爱一样东西，却不感到痛苦，那就不是激情。\n\n--[ 《我热爱的是什么？》](https://debugandrelease.blogspot.com/2019/04/what-am-i-passionate-about.html)\n\n非洲原始部落里面，那些酋长的女人们都戴着沉重的金属链子作为装饰，路都走不快。中国古代文人留着长长的指甲，根本无法劳动。17世纪欧洲贵族的衣服没有口袋，东西都让身后的仆人拿。\n\n这些事情的共同点，就是让别人看到，他们可以不参加日常的生产活动，过着悠闲缓慢的生活，所以这些都是身份的象征，表示他们比普通人更高贵。\n\n-- 李翔\n\n===60===\n\n技术新闻和技术会议等地方，传播的都是行业的前瞻性观点，这些声音过于响亮，得到了最大的权重。但是，请不要忘记，世界仍然运行在 Excel、Java 8 和 Sharepoint 上面。\n\n",
     "category": "quotation",
     "originHref": "https://www.cnbc.com/2019/05/19/masayoshi-son-genius-or-insane-maybe-neither.html",
     "weekly": 60
@@ -7379,7 +7470,7 @@
   },
   {
     "title": "[antirez](http://antirez.com/news/129)，Redis 的发明者",
-    "content": "\n\n\n\nReact hooks 发布以后，同事们很想重写公司 App 的大部分代码，只是因为现在有了新的 API。\n\n",
+    "content": "\n\n===59===\n\nReact hooks 发布以后，同事们很想重写公司 App 的大部分代码，只是因为现在有了新的 API。\n\n",
     "category": "quotation",
     "originHref": "http://antirez.com/news/129",
     "weekly": 59
@@ -7407,7 +7498,7 @@
   },
   {
     "title": "[《ORM，用还是不用》](https://eli.thegreenplace.net/2019/to-orm-or-not-to-orm/)",
-    "content": "\n\n\n\n季后赛我有没有压力？不，这只是打篮球而已。\n\n那些无家可归的人，才有真正的压力，他们不知道下一顿饭在哪里。单亲母亲为了支付房租而苦苦挣扎。我们打一场比赛就会赚到很多钱，确实会有一些挑战，但如果把这叫做压力，那对于普通人来说几乎就是侮辱。\n\n",
+    "content": "\n\n===58===\n\n季后赛我有没有压力？不，这只是打篮球而已。\n\n那些无家可归的人，才有真正的压力，他们不知道下一顿饭在哪里。单亲母亲为了支付房租而苦苦挣扎。我们打一场比赛就会赚到很多钱，确实会有一些挑战，但如果把这叫做压力，那对于普通人来说几乎就是侮辱。\n\n",
     "category": "quotation",
     "originHref": "https://eli.thegreenplace.net/2019/to-orm-or-not-to-orm/",
     "weekly": 58
@@ -7442,7 +7533,7 @@
   },
   {
     "title": "[《美国住房政策》](https://www.citylab.com/perspective/2018/11/housing-cant-both-be-a-good-investment-and-be-affordable/574813/)",
-    "content": "\n\n\n\n工会不允许波音公司解雇任何人，结果导致有大量不干活的员工。我保守估计，同事中有30％是反社会人士，他们会积极破坏其他人的工作；另外50％的人在那里愚蠢地整天瞎扯，阅读报纸或书籍；剩下的20％才是那些真正关心飞机乘客不会死亡的人。\n\n",
+    "content": "\n\n===57===\n\n工会不允许波音公司解雇任何人，结果导致有大量不干活的员工。我保守估计，同事中有30％是反社会人士，他们会积极破坏其他人的工作；另外50％的人在那里愚蠢地整天瞎扯，阅读报纸或书籍；剩下的20％才是那些真正关心飞机乘客不会死亡的人。\n\n",
     "category": "quotation",
     "originHref": "https://www.citylab.com/perspective/2018/11/housing-cant-both-be-a-good-investment-and-be-affordable/574813/",
     "weekly": 57
@@ -7470,7 +7561,7 @@
   },
   {
     "title": "[《技术冷战已经开始》](https://www.bloomberg.com/opinion/articles/2019-05-20/huawei-supply-freeze-points-to-u-s-china-tech-cold-war)，彭博社评论",
-    "content": "\n\n\n\n友谊悖论指的是，你总是觉得，自己的朋友比自己有更多的朋友。\n\n",
+    "content": "\n\n===56===\n\n友谊悖论指的是，你总是觉得，自己的朋友比自己有更多的朋友。\n\n",
     "category": "quotation",
     "originHref": "https://www.bloomberg.com/opinion/articles/2019-05-20/huawei-supply-freeze-points-to-u-s-china-tech-cold-war",
     "weekly": 56
@@ -7491,7 +7582,7 @@
   },
   {
     "title": "[袁征](https://news.ycombinator.com/item?id=19696852)，Zoom 创始人",
-    "content": "\n\n\n\n我的工作压力很大，我能想到的唯一应对方法就是努力投入工作，这是我释放压力的唯一途径。\n\n",
+    "content": "\n\n===55===\n\n我的工作压力很大，我能想到的唯一应对方法就是努力投入工作，这是我释放压力的唯一途径。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=19696852",
     "weekly": 55
@@ -7526,7 +7617,7 @@
   },
   {
     "title": "[《印刷术推动欧洲》](https://blogs.lse.ac.uk/businessreview/2019/03/19/gutenbergs-moving-type-propelled-europe-towards-the-scientific-revolution/)",
-    "content": "\n\n\n\n比特币其实只是一个计算机程序。这个程序连接到其他运行该程序的计算机，所有计算机都共享一个文件，该文件称为区块链。\n\n--[ 《什么是比特币？》](http://learnmeabitcoin.com/)\n\n我认为，2017年的时候，硅谷已经不再适合创业公司了。但是由于廉价种子资金的大量增加，使得这一点不那么明显。\n\n",
+    "content": "\n\n===54===\n\n比特币其实只是一个计算机程序。这个程序连接到其他运行该程序的计算机，所有计算机都共享一个文件，该文件称为区块链。\n\n--[ 《什么是比特币？》](http://learnmeabitcoin.com/)\n\n我认为，2017年的时候，硅谷已经不再适合创业公司了。但是由于廉价种子资金的大量增加，使得这一点不那么明显。\n\n",
     "category": "quotation",
     "originHref": "https://blogs.lse.ac.uk/businessreview/2019/03/19/gutenbergs-moving-type-propelled-europe-towards-the-scientific-revolution/",
     "weekly": 54
@@ -7547,7 +7638,7 @@
   },
   {
     "title": "[Jeff Bezos](https://news.ycombinator.com/item?id=19468288)",
-    "content": "\n\n\n\n软件行业是一个年轻的行业，谷歌和亚马逊的员工平均年龄是30岁。全球10万名程序员的2018年 Stack Overflow 调查发现，四分之三的人未满35岁。\n\n尽管技术领域的起薪很高，但是年轻人的优势在就业的前十年就会减少一半。2017年的一份报告发现，50岁以上的技术工人的工资实际上低于年轻人。\n\n",
+    "content": "\n\n===53===\n\n软件行业是一个年轻的行业，谷歌和亚马逊的员工平均年龄是30岁。全球10万名程序员的2018年 Stack Overflow 调查发现，四分之三的人未满35岁。\n\n尽管技术领域的起薪很高，但是年轻人的优势在就业的前十年就会减少一半。2017年的一份报告发现，50岁以上的技术工人的工资实际上低于年轻人。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=19468288",
     "weekly": 53
@@ -7582,7 +7673,7 @@
   },
   {
     "title": "计算机语言大师 [Joe Armstrong](http://www.defprogramming.com/quotes-by/joe-armstrong/)，2019年4月20日去世。他非常不喜欢面向对象编程，发明了函数式语言 Erlang。",
-    "content": "\n\n\n\n阿里和腾讯都是膨胀的大平台，将用户聚集在一起，创造一个生态系统。我们听多了创业和快速移动，但是实际上，企业集团正在卷土重来，在政府的支持下成为一个可怕的巨头。这样的互联网公司，正成为当今时代和未来的主导。\n\n",
+    "content": "\n\n===52===\n\n阿里和腾讯都是膨胀的大平台，将用户聚集在一起，创造一个生态系统。我们听多了创业和快速移动，但是实际上，企业集团正在卷土重来，在政府的支持下成为一个可怕的巨头。这样的互联网公司，正成为当今时代和未来的主导。\n\n",
     "category": "quotation",
     "originHref": "http://www.defprogramming.com/quotes-by/joe-armstrong/",
     "weekly": 52
@@ -7610,7 +7701,7 @@
   },
   {
     "title": "[逻辑思维](http://www.luojiji.com/thread-14259-1-1.html)",
-    "content": "\n\n一般来说，帮企业赚钱的系统好卖，帮企业省钱的不好卖，因为省钱的系统基本上都要动到既得利益者。\n\n-- 子柳\n\n\n\n随着在线服务的激增，每个用户2007年大约有25个密码，2015年增加到130个，预计到2020年将增长到207个。\n\n",
+    "content": "\n\n一般来说，帮企业赚钱的系统好卖，帮企业省钱的不好卖，因为省钱的系统基本上都要动到既得利益者。\n\n-- 子柳\n\n===51===\n\n随着在线服务的激增，每个用户2007年大约有25个密码，2015年增加到130个，预计到2020年将增长到207个。\n\n",
     "category": "quotation",
     "originHref": "http://www.luojiji.com/thread-14259-1-1.html",
     "weekly": 51
@@ -7652,7 +7743,7 @@
   },
   {
     "title": "[Paul Kingsnorth](http://paulkingsnorth.net/2015/10/23/planting-trees-in-the-anthropocene/)",
-    "content": "\n\n\n\n全周期工程师就是一个人负责完整的软件生命周期：设计，开发，测试，部署，操作和支持。\n\n",
+    "content": "\n\n===50===\n\n全周期工程师就是一个人负责完整的软件生命周期：设计，开发，测试，部署，操作和支持。\n\n",
     "category": "quotation",
     "originHref": "http://paulkingsnorth.net/2015/10/23/planting-trees-in-the-anthropocene/",
     "weekly": 50
@@ -7666,7 +7757,7 @@
   },
   {
     "title": "[《CERN 见闻》](https://remysharp.com/2019/02/13/cern-day-2)",
-    "content": "\n\n互联网公司的时间是狗年。狗的一年，据说相当于人的七年。一家开张两年的互联网公司，就像经营了二十年的传统行业公司。\n\n-- 某微信公号\n\n任何一种专门服务小企业的软件都很糟糕。对于大众软件来说，客户获取成本低，开发成本可以分散在数百万人身上，因此即使价格低，也有巨大的利润潜力。对于大企业软件而言，客户获取成本很高，但报酬也很高。对于小企业软件而言，客户获取成本仍然很昂贵（面对面的个人销售和售后支持），但销售价格仍然很低。\n\n--[《从零到一》](https://news.ycombinator.com/item?id=19164389)\n\n\n\n我们这个时代的痛苦在于，那些愚蠢的人都非常自信，那些有想象力和理解能力的人充满了怀疑和犹豫不决。\n\n",
+    "content": "\n\n互联网公司的时间是狗年。狗的一年，据说相当于人的七年。一家开张两年的互联网公司，就像经营了二十年的传统行业公司。\n\n-- 某微信公号\n\n任何一种专门服务小企业的软件都很糟糕。对于大众软件来说，客户获取成本低，开发成本可以分散在数百万人身上，因此即使价格低，也有巨大的利润潜力。对于大企业软件而言，客户获取成本很高，但报酬也很高。对于小企业软件而言，客户获取成本仍然很昂贵（面对面的个人销售和售后支持），但销售价格仍然很低。\n\n--[《从零到一》](https://news.ycombinator.com/item?id=19164389)\n\n===49===\n\n我们这个时代的痛苦在于，那些愚蠢的人都非常自信，那些有想象力和理解能力的人充满了怀疑和犹豫不决。\n\n",
     "category": "quotation",
     "originHref": "https://remysharp.com/2019/02/13/cern-day-2",
     "weekly": 49
@@ -7701,7 +7792,7 @@
   },
   {
     "title": "[HN 读者留言](https://news.ycombinator.com/item?id=19236487)",
-    "content": "\n\n\n\n云计算领域对于学习者几乎没有进入障碍，只需要一点天生的好奇心。所有云服务都有免费层，优秀的文档，示例项目等，Kubernetes 是免费和开源的。\n\n技术很有趣，你边玩边学，就会得到一份工作。\n\n",
+    "content": "\n\n===48===\n\n云计算领域对于学习者几乎没有进入障碍，只需要一点天生的好奇心。所有云服务都有免费层，优秀的文档，示例项目等，Kubernetes 是免费和开源的。\n\n技术很有趣，你边玩边学，就会得到一份工作。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=19236487",
     "weekly": 48
@@ -7736,7 +7827,7 @@
   },
   {
     "title": "英国[《卫报》](https://www.theguardian.com/lifeandstyle/2019/feb/23/truth-world-built-for-men-car-crashes)",
-    "content": "\n\n\n\n中国正在变成一个高工资的低增长经济体。\n\n",
+    "content": "\n\n===47===\n\n中国正在变成一个高工资的低增长经济体。\n\n",
     "category": "quotation",
     "originHref": "https://www.theguardian.com/lifeandstyle/2019/feb/23/truth-world-built-for-men-car-crashes",
     "weekly": 47
@@ -7771,7 +7862,7 @@
   },
   {
     "title": "[《区块链的流行场景，已经为什么它们不起作用》](https://news.ycombinator.com/item?id=19225857)",
-    "content": "\n\n\n\n最好的教育是有趣的，学起来像娱乐。\n\n",
+    "content": "\n\n===46===\n\n最好的教育是有趣的，学起来像娱乐。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=19225857",
     "weekly": 46
@@ -7792,7 +7883,7 @@
   },
   {
     "title": "[HN 读者留言](https://news.ycombinator.com/item?id=19176502)",
-    "content": "\n\n\n\n你不应该进入那种行业，做了两年的人可以和那些已经做了二十年的人，具有一样的工作效率。\n\n",
+    "content": "\n\n===45===\n\n你不应该进入那种行业，做了两年的人可以和那些已经做了二十年的人，具有一样的工作效率。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=19176502",
     "weekly": 45
@@ -7820,7 +7911,7 @@
   },
   {
     "title": "[《关于“我没有足够的时间”》](https://blog.stephsmith.io/you-dont-need-to-quit-your-job-to-make/)",
-    "content": "\n\n\n\n我多年来一直研究危机管理和决策科学，即使去餐厅或剧院的时候，我也会考虑坐在门口，或者接近紧急出口的地方。这几乎是我的第二天性。\n\n",
+    "content": "\n\n===44===\n\n我多年来一直研究危机管理和决策科学，即使去餐厅或剧院的时候，我也会考虑坐在门口，或者接近紧急出口的地方。这几乎是我的第二天性。\n\n",
     "category": "quotation",
     "originHref": "https://blog.stephsmith.io/you-dont-need-to-quit-your-job-to-make/",
     "weekly": 44
@@ -7855,7 +7946,7 @@
   },
   {
     "title": "[《选择核能》](https://www.city-journal.org/atomic-power)",
-    "content": "\n\n\n\n不要刻意去记住某件事，而要去寻找使其显而易见的解释。\n\n",
+    "content": "\n\n===43===\n\n不要刻意去记住某件事，而要去寻找使其显而易见的解释。\n\n",
     "category": "quotation",
     "originHref": "https://www.city-journal.org/atomic-power",
     "weekly": 43
@@ -7883,7 +7974,7 @@
   },
   {
     "title": "[《招聘人才不是买，而是卖》](https://hiringengineersbook.com/post/trouble-hiring/)",
-    "content": "\n\n\n\n在创业公司工作，很可能报酬更少（公司失败的话），工作更多。如果钱少活多对你没有吸引力，那么我建议你不要加入创业公司。\n\n",
+    "content": "\n\n===42===\n\n在创业公司工作，很可能报酬更少（公司失败的话），工作更多。如果钱少活多对你没有吸引力，那么我建议你不要加入创业公司。\n\n",
     "category": "quotation",
     "originHref": "https://hiringengineersbook.com/post/trouble-hiring/",
     "weekly": 42
@@ -7911,7 +8002,7 @@
   },
   {
     "title": "[《为什么城市中的人们走得很快》](https://www.citylab.com/life/2012/03/why-people-cities-walk-fast/1550/)",
-    "content": "\n\n\n\n以后晋升会越来越难，因为技术减少了中层干部的数量。\n\n",
+    "content": "\n\n===41===\n\n以后晋升会越来越难，因为技术减少了中层干部的数量。\n\n",
     "category": "quotation",
     "originHref": "https://www.citylab.com/life/2012/03/why-people-cities-walk-fast/1550/",
     "weekly": 41
@@ -7939,7 +8030,7 @@
   },
   {
     "title": "[《智商是伪科学诈骗》](https://medium.com/incerto/iq-is-largely-a-pseudoscientific-swindle-f131c101ba39)",
-    "content": "\n\n\n\n鸡应该不会灭绝，因为人类发现鸡肉味道鲜美，所以会想尽办法保证我们有鸡可吃。\n\n",
+    "content": "\n\n===40===\n\n鸡应该不会灭绝，因为人类发现鸡肉味道鲜美，所以会想尽办法保证我们有鸡可吃。\n\n",
     "category": "quotation",
     "originHref": "https://medium.com/incerto/iq-is-largely-a-pseudoscientific-swindle-f131c101ba39",
     "weekly": 40
@@ -7967,7 +8058,7 @@
   },
   {
     "title": "[《纽约时报》](https://www.nytimes.com/2018/12/31/business/breast-feeding-discrimination-pregnancy.html)",
-    "content": "\n\n\n\n一个敢于浪费一小时生命的人并没有发现生命的价值。\n\n-- 查尔斯·达尔文\n\n创建一个手机操作系统有多难？\n\n2014年，六个移动操作系统企图替代 iOS 和 Android：Blackberry OS，Sailfish，Ubuntu Mobile，Firefox OS，Tizen 和 Windows Phone，现在它们都死了或不再有这种可能。\n\n",
+    "content": "\n\n===39===\n\n一个敢于浪费一小时生命的人并没有发现生命的价值。\n\n-- 查尔斯·达尔文\n\n创建一个手机操作系统有多难？\n\n2014年，六个移动操作系统企图替代 iOS 和 Android：Blackberry OS，Sailfish，Ubuntu Mobile，Firefox OS，Tizen 和 Windows Phone，现在它们都死了或不再有这种可能。\n\n",
     "category": "quotation",
     "originHref": "https://www.nytimes.com/2018/12/31/business/breast-feeding-discrimination-pregnancy.html",
     "weekly": 39
@@ -7988,7 +8079,7 @@
   },
   {
     "title": "《[如何维护复杂系统](https://unintendedconsequenc.es/dont-touch-anything/)》",
-    "content": "\n\n\n\n任何成功创业的实质都是指数增长。\n\n",
+    "content": "\n\n===38===\n\n任何成功创业的实质都是指数增长。\n\n",
     "category": "quotation",
     "originHref": "https://unintendedconsequenc.es/dont-touch-anything/",
     "weekly": 38
@@ -8016,7 +8107,7 @@
   },
   {
     "title": "[《QUIC 协议的加密机制》](https://cryptologie.net/article/446/quic-crypto-and-simple-state-machines/)",
-    "content": "\n\n\n\n有时，我们想用新技术解决旧技术的包袱，问题是新技术会带来更多的包袱。新技术的一个问题是，人们还不知道它到底有多糟糕。\n\n",
+    "content": "\n\n===37===\n\n有时，我们想用新技术解决旧技术的包袱，问题是新技术会带来更多的包袱。新技术的一个问题是，人们还不知道它到底有多糟糕。\n\n",
     "category": "quotation",
     "originHref": "https://cryptologie.net/article/446/quic-crypto-and-simple-state-machines/",
     "weekly": 37
@@ -8044,7 +8135,7 @@
   },
   {
     "title": "创业者 [Alexander Muse](https://medium.com/startup-muse/chapter-one-most-entrepreneurs-should-not-raise-capital-cf58e883fe62)",
-    "content": "\n\n\n\n2006年，两名美国学生完成了一个名为“发送阳光”的项目。如果手机发现，你的朋友在天气不好的地方，而你在天气很好的地方，那么手机就会提示你，拍一张照片发送给朋友，让他们振作起来。\n\n后来，两人当中的 Mike Krieger 创建了 Instagram。\n\n",
+    "content": "\n\n===36===\n\n2006年，两名美国学生完成了一个名为“发送阳光”的项目。如果手机发现，你的朋友在天气不好的地方，而你在天气很好的地方，那么手机就会提示你，拍一张照片发送给朋友，让他们振作起来。\n\n后来，两人当中的 Mike Krieger 创建了 Instagram。\n\n",
     "category": "quotation",
     "originHref": "https://medium.com/startup-muse/chapter-one-most-entrepreneurs-should-not-raise-capital-cf58e883fe62",
     "weekly": 36
@@ -8072,7 +8163,7 @@
   },
   {
     "title": "[Robin Hanson](https://www.overcomingbias.com/2018/12/can-foundational-physics-be-saved.html)",
-    "content": "\n\n\n\n常规的自然运动（比如经常步行），就是长寿的最有效方法之一。\n\n",
+    "content": "\n\n===35===\n\n常规的自然运动（比如经常步行），就是长寿的最有效方法之一。\n\n",
     "category": "quotation",
     "originHref": "https://www.overcomingbias.com/2018/12/can-foundational-physics-be-saved.html",
     "weekly": 35
@@ -8086,7 +8177,7 @@
   },
   {
     "title": "[Paul Buchheit](http://paulbuchheit.blogspot.com/2014/07/the-technology.html)（Gmail 创始人）",
-    "content": "\n\n\n\n一家公司咨询我，如何吸引第三方开发者使用他们的平台。我问：“你们公司有人在下班后，用自己的时间鼓捣这个平台吗？”回答是没有。我告诉他们，如果你们自己都不愿意玩自己的平台，想要吸引外部工程师就是白费气力。\n\n-- 谷歌开发者关系总监 大卫·麦克劳克林，转引自Tim O'Reilly《未来地图》\n\nGraphQL 的本质是程序员想对 JSON 使用 SQL。\n\n",
+    "content": "\n\n===34===\n\n一家公司咨询我，如何吸引第三方开发者使用他们的平台。我问：“你们公司有人在下班后，用自己的时间鼓捣这个平台吗？”回答是没有。我告诉他们，如果你们自己都不愿意玩自己的平台，想要吸引外部工程师就是白费气力。\n\n-- 谷歌开发者关系总监 大卫·麦克劳克林，转引自Tim O'Reilly《未来地图》\n\nGraphQL 的本质是程序员想对 JSON 使用 SQL。\n\n",
     "category": "quotation",
     "originHref": "http://paulbuchheit.blogspot.com/2014/07/the-technology.html",
     "weekly": 34
@@ -8100,7 +8191,7 @@
   },
   {
     "title": "[《工资偷窃是最大的偷窃》](https://www.epi.org/publication/wage-theft-bigger-problem-forms-theft-workers/)",
-    "content": "\n\n\n\nJava 是一种广泛使用的工业语言，但并不是一种很好的教学语言。教学语言的关键指标是简单，但是 Java 在任何方面都不简单。它难于上手，没有像 C 那样简单透明的执行模型，也没有像 Scheme 和 ML 那样优雅的计算步骤，唯一真正的优势是就业。\n\n",
+    "content": "\n\n===33===\n\nJava 是一种广泛使用的工业语言，但并不是一种很好的教学语言。教学语言的关键指标是简单，但是 Java 在任何方面都不简单。它难于上手，没有像 C 那样简单透明的执行模型，也没有像 Scheme 和 ML 那样优雅的计算步骤，唯一真正的优势是就业。\n\n",
     "category": "quotation",
     "originHref": "https://www.epi.org/publication/wage-theft-bigger-problem-forms-theft-workers/",
     "weekly": 33
@@ -8114,7 +8205,7 @@
   },
   {
     "title": "有人提到，自己已经有不少钱了，但还是拼命想赚更多的钱。[一个网友](https://news.ycombinator.com/item?id=18373002)做了上面的回应，钱的意义在于它可以换来更多时间，让你去做自己想做的事情。",
-    "content": "\n\n如果印第安人是在冰河时期，经过白令海峡的路桥到达北美，那么这一定发生在他们掌握缝纫技术之后。否则，他们没有紧密合身的衣服，不可能在冰天雪地中存活。\n\n-- Tim O'Reilly 《未来地图》\n\n\n\n同一个应用程序，QT 写出来的界面比 HTML5 写出来的内存占用低4-8倍，CPU 占用也低。这意味着，运行 HTML5 应用程序会导致更多的运算，消耗更多的电力，要求消费者更频繁地升级机器，从而产生更多的电子垃圾。\n\n--[《生态友好的程序员》](http://john.mercouris.online/eco-programmer-guide.html)\n\n我写小说的秘诀就是不停的修改，每次修改都必须让小说变得更短，第二稿至少比第一稿短10%。\n\n",
+    "content": "\n\n如果印第安人是在冰河时期，经过白令海峡的路桥到达北美，那么这一定发生在他们掌握缝纫技术之后。否则，他们没有紧密合身的衣服，不可能在冰天雪地中存活。\n\n-- Tim O'Reilly 《未来地图》\n\n===32===\n\n同一个应用程序，QT 写出来的界面比 HTML5 写出来的内存占用低4-8倍，CPU 占用也低。这意味着，运行 HTML5 应用程序会导致更多的运算，消耗更多的电力，要求消费者更频繁地升级机器，从而产生更多的电子垃圾。\n\n--[《生态友好的程序员》](http://john.mercouris.online/eco-programmer-guide.html)\n\n我写小说的秘诀就是不停的修改，每次修改都必须让小说变得更短，第二稿至少比第一稿短10%。\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=18373002",
     "weekly": 32
@@ -8128,7 +8219,7 @@
   },
   {
     "title": "[一位谷歌员工](https://www.kapwing.com/blog/how-to-quit-your-big-co-job-to-start-a-company/)谈为什么辞职",
-    "content": "\n\n瑞士有世界最发达的化工和制药行业，主要原因是19世纪瑞士没有专利制度，一些法国化学家移居瑞士以规避法国专利。\n\n--，分析专利制度与工业发展的关系。他提到，当今世界最大制药公司之一的诺华，成立于1859年，早期是一家无许可证而使用法国专利的丝绸染色企业。它转向制药业的主要原因是，直到1907年，瑞士才实行专利法。\n\n\n\n微软购买 GitHub，意味着甲骨文、IBM 等无法购买它，这消除了很多风险。\n\n",
+    "content": "\n\n瑞士有世界最发达的化工和制药行业，主要原因是19世纪瑞士没有专利制度，一些法国化学家移居瑞士以规避法国专利。\n\n--，分析专利制度与工业发展的关系。他提到，当今世界最大制药公司之一的诺华，成立于1859年，早期是一家无许可证而使用法国专利的丝绸染色企业。它转向制药业的主要原因是，直到1907年，瑞士才实行专利法。\n\n===31===\n\n微软购买 GitHub，意味着甲骨文、IBM 等无法购买它，这消除了很多风险。\n\n",
     "category": "quotation",
     "originHref": "https://www.kapwing.com/blog/how-to-quit-your-big-co-job-to-start-a-company/",
     "weekly": 31
@@ -8156,7 +8247,7 @@
   },
   {
     "title": "推特[@ CompSciFact](https://twitter.com/compscifact/status/1058066235378802689)",
-    "content": "\n\n\n\n由于重力只有地球的六分之一，月球很合适人类养老。在本世纪末之前，我们将在月球上为老年人设立医院，使他们能够长寿。他们的心脏在六分之一的重力下，可以跳得更轻快；他们脆弱的骨头，也将承担轻得多的负荷。\n\n",
+    "content": "\n\n===30===\n\n由于重力只有地球的六分之一，月球很合适人类养老。在本世纪末之前，我们将在月球上为老年人设立医院，使他们能够长寿。他们的心脏在六分之一的重力下，可以跳得更轻快；他们脆弱的骨头，也将承担轻得多的负荷。\n\n",
     "category": "quotation",
     "originHref": "https://twitter.com/compscifact/status/1058066235378802689",
     "weekly": 30
@@ -8184,7 +8275,7 @@
   },
   {
     "title": "[《住房不是一项好的投资》](http://cityobservatory.org/housing-cant-be-affordable_and_be-a-good-investment/)",
-    "content": "\n\n\n\n我是一名成功的资本家，但是我厌倦听别人说，像我这样的人创造了就业机会。其实，唯一创造就业机会的是客户。我们一直压榨工人，导致他们没有财力成为我们的客户。\n\n-- 创业家 Nick Hanauer，他参与创立的 aQuantive 公司，2007年被微软以60亿美元收购。\n\n长假回来时，我意识到，一群我不知道是谁的人，正在告诉我做一些我不关心的事情。我觉得是时候离开了。\n\n",
+    "content": "\n\n===29===\n\n我是一名成功的资本家，但是我厌倦听别人说，像我这样的人创造了就业机会。其实，唯一创造就业机会的是客户。我们一直压榨工人，导致他们没有财力成为我们的客户。\n\n-- 创业家 Nick Hanauer，他参与创立的 aQuantive 公司，2007年被微软以60亿美元收购。\n\n长假回来时，我意识到，一群我不知道是谁的人，正在告诉我做一些我不关心的事情。我觉得是时候离开了。\n\n",
     "category": "quotation",
     "originHref": "http://cityobservatory.org/housing-cant-be-affordable_and_be-a-good-investment/",
     "weekly": 29
@@ -8198,7 +8289,7 @@
   },
   {
     "title": "[Jeremie Harris](https://towardsdatascience.com/the-economics-of-getting-hired-as-a-data-scientist-e3882933b43c)",
-    "content": "\n\n\n\n阻止气候变暖，需要人们驾驶更小的汽车，更多的步行和骑自行车，减少飞行，不购买很快过时的时尚商品，以及少吃肉。\n\n",
+    "content": "\n\n===28===\n\n阻止气候变暖，需要人们驾驶更小的汽车，更多的步行和骑自行车，减少飞行，不购买很快过时的时尚商品，以及少吃肉。\n\n",
     "category": "quotation",
     "originHref": "https://towardsdatascience.com/the-economics-of-getting-hired-as-a-data-scientist-e3882933b43c",
     "weekly": 28
@@ -8219,7 +8310,7 @@
   },
   {
     "title": "[创业家@cdixon](http://cdixon.org/2015/01/31/come-for-the-tool-stay-for-the-network/)提出，个人或小型创业公司的产品，起先应该是工具，有了足够的用户以后再向网络方向发展。",
-    "content": "\n\n\n\n如果一个人不想做某件事，通常不是由于客观条件不允许，而是他有下面四种心态之一：恐惧（Fear）、排斥（Rejection）、自卑（Low self-esteem）、怠惰（Laziness）。\n\n--《》\n\n神经疾病（比如帕金森病、癫痫、阿尔茨海默病）都涉及神经系统（大脑，脊髓和神经）的故障或损伤，精神疾病的标志则是行为不安和情绪状态。\n\n",
+    "content": "\n\n===27===\n\n如果一个人不想做某件事，通常不是由于客观条件不允许，而是他有下面四种心态之一：恐惧（Fear）、排斥（Rejection）、自卑（Low self-esteem）、怠惰（Laziness）。\n\n--《》\n\n神经疾病（比如帕金森病、癫痫、阿尔茨海默病）都涉及神经系统（大脑，脊髓和神经）的故障或损伤，精神疾病的标志则是行为不安和情绪状态。\n\n",
     "category": "quotation",
     "originHref": "http://cdixon.org/2015/01/31/come-for-the-tool-stay-for-the-network/",
     "weekly": 27
@@ -8233,7 +8324,7 @@
   },
   {
     "title": "[《Instagram 的故事》](https://www.hakunamatata.in/never-be-afraid-but-do-your-math-the-pivot-story-of-instagram/)",
-    "content": "\n\n\n\n七年前，风险投资家 Marc Andreessen 写了一篇文章[《软件正在吞噬世界》](https://a16z.com/2016/08/20/why-software-is-eating-the-world/)。他提出，软件公司将会赢得世界。\n\n现在我们知道，他是对的。但是，他没有提到，这个社会的大部分人不拥有软件公司，而是生活在被软件吃掉的世界里。\n\n",
+    "content": "\n\n===26===\n\n七年前，风险投资家 Marc Andreessen 写了一篇文章[《软件正在吞噬世界》](https://a16z.com/2016/08/20/why-software-is-eating-the-world/)。他提出，软件公司将会赢得世界。\n\n现在我们知道，他是对的。但是，他没有提到，这个社会的大部分人不拥有软件公司，而是生活在被软件吃掉的世界里。\n\n",
     "category": "quotation",
     "originHref": "https://www.hakunamatata.in/never-be-afraid-but-do-your-math-the-pivot-story-of-instagram/",
     "weekly": 26
@@ -8247,7 +8338,7 @@
   },
   {
     "title": "[Florent Crivello](https://florentcrivello.com/index.php/2018/09/25/go-west-young-man/)",
-    "content": "\n\n\n\n我在想这个火箭有两万个零件，每一个都是由最低价的投标者制造的。\n\n",
+    "content": "\n\n===25===\n\n我在想这个火箭有两万个零件，每一个都是由最低价的投标者制造的。\n\n",
     "category": "quotation",
     "originHref": "https://florentcrivello.com/index.php/2018/09/25/go-west-young-man/",
     "weekly": 25
@@ -8261,14 +8352,14 @@
   },
   {
     "title": "[一个游戏开发者](https://infinitroid.com/blog/posts/did_i_just_waste_3_years)。他用了三年，独自一人开发游戏，放到 Steam 平台销售后，只有四个人购买。现在，他不得不考虑放弃这个游戏，这意味这三年时间都白费了。",
-    "content": "\n\n\n\n作为一个决策者，你的职责不是做出很多决定，而是只需做出几个高质量的决定。\n\n如果我每天做出三个不错的决定，就很满意了。巴菲特说，他的一年就是做对三个投资决定。\n\n",
+    "content": "\n\n===24===\n\n作为一个决策者，你的职责不是做出很多决定，而是只需做出几个高质量的决定。\n\n如果我每天做出三个不错的决定，就很满意了。巴菲特说，他的一年就是做对三个投资决定。\n\n",
     "category": "quotation",
     "originHref": "https://infinitroid.com/blog/posts/did_i_just_waste_3_years",
     "weekly": 24
   },
   {
     "title": "[贝佐斯](https://www.axios.com/jeff-bezos-amazon-secrets-rubenstein-1c4d2c5f-80ee-4389-99de-6501449d5ee5.html)，亚马逊公司创始人",
-    "content": "\n\n各大网站对用户的监控无所不在，为了提供服务，它们必须这么做。事实上，如果不提供那些基于用户数据分析的功能，你还会觉得它们的功能不够好。\n\n这注定了隐私已经不复存在。唯一的应对方法就是双向透明，网站可以监控用户行为，那么用户也必须能够监督网站，知道网站怎么使用用户数据。\n\n-- Tim O'Reilly 《未来地图》\n\n\n\nGo 语言诞生时，我们称它为系统编程语言，我有点遗憾，因为很多人因此认为它是一种操作系统编写语言。我们应该称它为服务编写语言，这是我们真正想做的。现在我想明白了，Go 是云基础架构语言，因为系统编程的另一个定义是云中运行的东西。\n\n",
+    "content": "\n\n各大网站对用户的监控无所不在，为了提供服务，它们必须这么做。事实上，如果不提供那些基于用户数据分析的功能，你还会觉得它们的功能不够好。\n\n这注定了隐私已经不复存在。唯一的应对方法就是双向透明，网站可以监控用户行为，那么用户也必须能够监督网站，知道网站怎么使用用户数据。\n\n-- Tim O'Reilly 《未来地图》\n\n===23===\n\nGo 语言诞生时，我们称它为系统编程语言，我有点遗憾，因为很多人因此认为它是一种操作系统编写语言。我们应该称它为服务编写语言，这是我们真正想做的。现在我想明白了，Go 是云基础架构语言，因为系统编程的另一个定义是云中运行的东西。\n\n",
     "category": "quotation",
     "originHref": "https://www.axios.com/jeff-bezos-amazon-secrets-rubenstein-1c4d2c5f-80ee-4389-99de-6501449d5ee5.html",
     "weekly": 23
@@ -8289,7 +8380,7 @@
   },
   {
     "title": "[Philip Greenspun](http://blogs.harvard.edu/philg/2018/09/18/is-data-scientist-the-new-programmer/)，麻省理工学院的计算机教授",
-    "content": "\n\n\n\n我把许可证授予 IBM、它的顾客、合作者和下属公司，允许他们使用 JSLint 做坏事。\n\n",
+    "content": "\n\n===22===\n\n我把许可证授予 IBM、它的顾客、合作者和下属公司，允许他们使用 JSLint 做坏事。\n\n",
     "category": "quotation",
     "originHref": "http://blogs.harvard.edu/philg/2018/09/18/is-data-scientist-the-new-programmer/",
     "weekly": 22
@@ -8303,7 +8394,7 @@
   },
   {
     "title": "[一个读者](https://news.ycombinator.com/item?id=17900833)对各国政府没有有效控制温室气体的评论",
-    "content": "\n\n沟通不是一件好事。\n\n---- 亚马逊内部会议上，有人提议改善各个小组之间的沟通，贝佐斯做了上面的回答。他认为，随着人数的增加，点对点沟通的成本巨大，而且会导致混乱。他希望每个小组都尽量小，保证内部沟通有效。小组对外提供定义良好的接口，可以从接口上拿到所有信息，尽量消除直接沟通的必要。\n\n\n\n一个网页依赖于大约十万个其他发明。没有 HTML 代码的发明，没有计算机编程，没有LED或阴极射线管，没有计算机芯片，没有电话线，没有长距离信号中继器，没有发电机，没有高速涡轮机，就没有任何网页。（凯文·凯利[《重建工业社会的成本》](https://medium.com/@kevin2kelly/bootstrapping-the-industrial-age-dc8a100b351d)）\n\n我很遗憾花了这么多年时间专注于一个狭窄的领域，忽略了许多重要的技能。我严重低估了产业界可以学到的东西，以及博士的机会成本！\n\n",
+    "content": "\n\n沟通不是一件好事。\n\n---- 亚马逊内部会议上，有人提议改善各个小组之间的沟通，贝佐斯做了上面的回答。他认为，随着人数的增加，点对点沟通的成本巨大，而且会导致混乱。他希望每个小组都尽量小，保证内部沟通有效。小组对外提供定义良好的接口，可以从接口上拿到所有信息，尽量消除直接沟通的必要。\n\n===21===\n\n一个网页依赖于大约十万个其他发明。没有 HTML 代码的发明，没有计算机编程，没有LED或阴极射线管，没有计算机芯片，没有电话线，没有长距离信号中继器，没有发电机，没有高速涡轮机，就没有任何网页。（凯文·凯利[《重建工业社会的成本》](https://medium.com/@kevin2kelly/bootstrapping-the-industrial-age-dc8a100b351d)）\n\n我很遗憾花了这么多年时间专注于一个狭窄的领域，忽略了许多重要的技能。我严重低估了产业界可以学到的东西，以及博士的机会成本！\n\n",
     "category": "quotation",
     "originHref": "https://news.ycombinator.com/item?id=17900833",
     "weekly": 21

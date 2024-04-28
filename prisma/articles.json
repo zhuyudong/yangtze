@@ -1,7 +1,56 @@
 [
   {
+    "title": "[Linus Torvalds 最新访谈](https://new.qq.com/rain/a/20240422A04OR300)（中文）",
+    "content": "\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042402.webp)\n\nLinux 创始人 Linus Torvalds 最新访谈的中译，主要谈到了最近的 xz 后门事件，以及对 AI 的看法。\n\n",
+    "category": "article",
+    "originHref": "https://new.qq.com/rain/a/20240422A04OR300",
+    "weekly": 298
+  },
+  {
+    "title": "[CSS 网格实现经典出血布局](https://www.joshwcomeau.com/css/full-bleed/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030606.webp)\n\n一篇非常好的教程，讲解使用 CSS 网格（grid）实现页面的出血布局（即图片占用边距，占满整个行宽）。\n\n",
+    "category": "article",
+    "originHref": "https://www.joshwcomeau.com/css/full-bleed/",
+    "weekly": 298
+  },
+  {
+    "title": "[如何申请免费的 ZeroSSL 证书](https://linuxiac.com/zerossl-how-to-install-ssl-certificate/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122801.webp)\n\nZeroSSL 跟 Let's Encrypt 一样，提供免费的 SSL 证书。它的用户界面比较友好，并且有一些付费的额外功能。本文教你如何申请该证书。\n\n",
+    "category": "article",
+    "originHref": "https://linuxiac.com/zerossl-how-to-install-ssl-certificate/",
+    "weekly": 298
+  },
+  {
+    "title": "[联手 Copilot，我在10个小时内上线了一个前端网站](https://ameow.xyz/archives/develop-a-frontend-site-with-copilot)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042413.webp)\n\n作者只有前端基础，通过使用 GitHub Copilot，在短时间内完成一个 React 前端项目，并总结了一些使用 Copilot 的技巧。\n",
+    "category": "article",
+    "originHref": "https://ameow.xyz/archives/develop-a-frontend-site-with-copilot",
+    "weekly": 298
+  },
+  {
+    "title": "[我的推特增长策略](https://mp.weixin.qq.com/s/2y463r9G4hnsIc0c2ig7dA)（中文）",
+    "content": "\n\n作者从去年末开始做推特账号运营，且发帖频率很低，如今涨了8000关注，本文总结增长策略。\n",
+    "category": "article",
+    "originHref": "https://mp.weixin.qq.com/s/2y463r9G4hnsIc0c2ig7dA",
+    "weekly": 298
+  },
+  {
+    "title": "[JS、Go、Rust 处理报错的不同方式](https://betterprogramming.pub/typescript-with-go-rust-errors-no-try-catch-heresy-da0e43ce5f78)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023123006.webp)\n\n作者比较 JS、Go、Rust 这三种语言处理运行时报错的不同方式，认为 JS 应该向后两者学习。\n\n",
+    "category": "article",
+    "originHref": "https://betterprogramming.pub/typescript-with-go-rust-errors-no-try-catch-heresy-da0e43ce5f78",
+    "weekly": 298
+  },
+  {
+    "title": "[rep 和 ren：替换和重命名的新工具](https://blog.robenkleene.com/2023/12/26/introducing-rep-ren/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023123007.webp)\n\n作者介绍他写的两个命令行工具，可以跟 grep 和 find 结合使用，大批量地替换和重命名文件。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://blog.robenkleene.com/2023/12/26/introducing-rep-ren/",
+    "weekly": 297
+  },
+  {
     "title": "[我如何搭建一个相似图片搜索引擎](https://harper.blog/2024/04/12/i-accidentally-built-a-meme-search-engine/)（英文）",
-    "content": "\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041406.webp)\n\n作者使用向量嵌入技术，为自己的图片加了一个相似图片搜索功能，意外发现非常简单。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041406.webp)\n\n作者使用向量嵌入技术，为自己的图片加了一个相似图片搜索功能，意外发现非常简单。\n\n",
     "category": "article",
     "originHref": "https://harper.blog/2024/04/12/i-accidentally-built-a-meme-search-engine/",
     "weekly": 297
@@ -1940,9 +1989,16 @@
   },
   {
     "title": "[苹果 HDR 二维码](https://notes.dt.in.th/HDRQRCode)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023061902.webp)\n\n一个很有趣的演示，苹果设备打开这个网页，上面有两个二维码，如果有一个更明亮，就说明当前设备支持 HDR（高动态成像）。\n\n[Apache 奇怪的版本号](https://utcc.utoronto.ca/~cks/space/blog/web/Apache24LongLife)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052001.webp)\n\nApache 在2012年发了2.4版，现在还是这个版本，只是从2.4.0变成了2.4.57。已经超过10年了，二级版本号一直没变。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023061902.webp)\n\n一个很有趣的演示，苹果设备打开这个网页，上面有两个二维码，如果有一个更明亮，就说明当前设备支持 HDR（高动态成像）。\n\n",
     "category": "article",
     "originHref": "https://notes.dt.in.th/HDRQRCode",
+    "weekly": 260
+  },
+  {
+    "title": "[Apache 奇怪的版本号](https://utcc.utoronto.ca/~cks/space/blog/web/Apache24LongLife)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052001.webp)\n\nApache 在2012年发了2.4版，现在还是这个版本，只是从2.4.0变成了2.4.57。已经超过10年了，二级版本号一直没变。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://utcc.utoronto.ca/~cks/space/blog/web/Apache24LongLife",
     "weekly": 259
   },
   {
@@ -2157,9 +2213,16 @@
   },
   {
     "title": "[无边界鼠标](https://learn.microsoft.com/en-us/windows/powertoys/mouse-without-borders)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052401.webp)\n\n微软发布了一项新功能“无边界鼠标”（Mouse Without Borders），Windows 直接支持一个鼠标操作局域网的四台电脑。\n\n[别再说 C/C++](https://brycevandegrift.xyz/blog/stop-saying-c-and-c++/)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052304.webp)\n\n很多人认为，C 和 C++ 是两种很相似的语言，前者是后者的子集。本文提出这种看法不对，它们非常不一样。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052401.webp)\n\n微软发布了一项新功能“无边界鼠标”（Mouse Without Borders），Windows 直接支持一个鼠标操作局域网的四台电脑。\n\n",
     "category": "article",
     "originHref": "https://learn.microsoft.com/en-us/windows/powertoys/mouse-without-borders",
+    "weekly": 256
+  },
+  {
+    "title": "[别再说 C/C++](https://brycevandegrift.xyz/blog/stop-saying-c-and-c++/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052304.webp)\n\n很多人认为，C 和 C++ 是两种很相似的语言，前者是后者的子集。本文提出这种看法不对，它们非常不一样。\n\n\n",
+    "category": "article",
+    "originHref": "https://brycevandegrift.xyz/blog/stop-saying-c-and-c++/",
     "weekly": 255
   },
   {
@@ -3809,9 +3872,16 @@
   },
   {
     "title": "[React 的重新渲染](https://www.joshwcomeau.com/react/why-react-re-renders/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022081704.webp)\n\n本文详细解释怎么会触发 React 的重新渲染。比较长，但是不难。\n\n[轻度动态网站](https://www.devever.net/~hl/mildlydynamic)（英文）\n\n这篇回顾了网站开发的历史，从静态网站到动态网站，到静态网站生成器，再到诸如 Next.js 这样的全栈框架。\n\n然后，作者提出一个概念，未来的趋势可能是“轻度动态网站”，总体是静态网站，但是某些部分是服务器直接渲染的动态组件，有点像以前的 PHP。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022081704.webp)\n\n本文详细解释怎么会触发 React 的重新渲染。比较长，但是不难。\n\n",
     "category": "article",
     "originHref": "https://www.joshwcomeau.com/react/why-react-re-renders/",
+    "weekly": 226
+  },
+  {
+    "title": "[轻度动态网站](https://www.devever.net/~hl/mildlydynamic)（英文）",
+    "content": "\n\n这篇回顾了网站开发的历史，从静态网站到动态网站，到静态网站生成器，再到诸如 Next.js 这样的全栈框架。\n\n然后，作者提出一个概念，未来的趋势可能是“轻度动态网站”，总体是静态网站，但是某些部分是服务器直接渲染的动态组件，有点像以前的 PHP。\n\n",
+    "category": "article",
+    "originHref": "https://www.devever.net/~hl/mildlydynamic",
     "weekly": 226
   },
   {
@@ -4600,9 +4670,16 @@
   },
   {
     "title": "[如何用 GitLab 和 Gitpod 远程编程？](https://about.gitlab.com/blog/2022/02/10/how-to-code-build-and-deploy-from-an-ipad-using-gitlab-and-gitpod/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/220204/bg2022041802.webp)\n\n如果手边只有一部平板电脑，应该怎么编程？作者用 GitLab 作为仓库，用 Gitpod 提供的开发环境，在浏览器中使用 VSCode 远程界面编程。\n\n[OpenBSD vs NixOS 比较](https://dataswamp.org/~solene/2022-04-18-openbsd-vs-nixos.html)（英文）\n\n对于程序员来说，多熟悉一些操作系统是很有必要的。OpenBSD 是老牌的 Unix 系统，NixOS 是一个全新理念的 Linux 发行版，作者从使用者的角度比较了这两个系统。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/220204/bg2022041802.webp)\n\n如果手边只有一部平板电脑，应该怎么编程？作者用 GitLab 作为仓库，用 Gitpod 提供的开发环境，在浏览器中使用 VSCode 远程界面编程。\n\n",
     "category": "article",
     "originHref": "https://about.gitlab.com/blog/2022/02/10/how-to-code-build-and-deploy-from-an-ipad-using-gitlab-and-gitpod/",
+    "weekly": 212
+  },
+  {
+    "title": "[OpenBSD vs NixOS 比较](https://dataswamp.org/~solene/2022-04-18-openbsd-vs-nixos.html)（英文）",
+    "content": "\n\n对于程序员来说，多熟悉一些操作系统是很有必要的。OpenBSD 是老牌的 Unix 系统，NixOS 是一个全新理念的 Linux 发行版，作者从使用者的角度比较了这两个系统。\n\n\n\n",
+    "category": "article",
+    "originHref": "https://dataswamp.org/~solene/2022-04-18-openbsd-vs-nixos.html",
     "weekly": 211
   },
   {
@@ -5209,9 +5286,16 @@
   },
   {
     "title": "[应县木塔的严重倾斜问题](https://mp.weixin.qq.com/s/wd2gvWpfg85RZAzNEQTa2Q)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022031009.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022031010.webp)\n\n山西应县木塔建于辽代，是世界现存最古老、最高的木塔。但是，它的木柱现在严重倾斜，可能会突然倒塌。\n\n[为什么会有冰刺？](http://www.its.caltech.edu/~atomic/snowcrystals/icespikes/icespikes.htm)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022020801.webp)\n\n冰箱里面形成的冰块，有时会出现冰刺，这是为什么？\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022031009.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022031010.webp)\n\n山西应县木塔建于辽代，是世界现存最古老、最高的木塔。但是，它的木柱现在严重倾斜，可能会突然倒塌。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/wd2gvWpfg85RZAzNEQTa2Q",
+    "weekly": 201
+  },
+  {
+    "title": "[为什么会有冰刺？](http://www.its.caltech.edu/~atomic/snowcrystals/icespikes/icespikes.htm)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022020801.webp)\n\n冰箱里面形成的冰块，有时会出现冰刺，这是为什么？\n\n",
+    "category": "article",
+    "originHref": "http://www.its.caltech.edu/~atomic/snowcrystals/icespikes/icespikes.htm",
     "weekly": 201
   },
   {
@@ -6903,9 +6987,16 @@
   },
   {
     "title": "[如何提高 Docker 容器的安全性](https://blog.gitguardian.com/how-to-improve-your-docker-containers-security-cheat-sheet/)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021080302.jpg)\n\n本文逐点列出提高 Docker 容器安全性的一些措施。\n\n[C 语言 Union 结构的妙用](https://utcc.utoronto.ca/~cks/space/blog/programming/CUnionsForNamespaces)（英文）\n\n作者介绍了 Union 结构的一个小技巧，用来隐藏 Struct 结构，实现内部属性的直接访问。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021080302.jpg)\n\n本文逐点列出提高 Docker 容器安全性的一些措施。\n\n",
     "category": "article",
     "originHref": "https://blog.gitguardian.com/how-to-improve-your-docker-containers-security-cheat-sheet/",
+    "weekly": 172
+  },
+  {
+    "title": "[C 语言 Union 结构的妙用](https://utcc.utoronto.ca/~cks/space/blog/programming/CUnionsForNamespaces)（英文）",
+    "content": "\n\n作者介绍了 Union 结构的一个小技巧，用来隐藏 Struct 结构，实现内部属性的直接访问。\n\n",
+    "category": "article",
+    "originHref": "https://utcc.utoronto.ca/~cks/space/blog/programming/CUnionsForNamespaces",
     "weekly": 172
   },
   {
@@ -8149,9 +8240,16 @@
   },
   {
     "title": "[关于线程的简要介绍](https://www.internalpointers.com/post/gentle-introduction-multithreading)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202103/bg2021031105.jpg)\n\n线程（thread）是编程的重要概念，本文用简单的语言介绍了什么是线程、它与进程的区别、线程的优缺点等等，写得很好。\n\n[一道有趣的物理题](https://users.physics.unc.edu/~deardorf/phys25/rwp/exam1rwpsolution.html)（英文）\n\n这是美国一个大学的物理学考试题目：有没有可能在高压输电线路的下方，放置一大圈电线，利用线圈感应进行偷电？\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202103/bg2021031105.jpg)\n\n线程（thread）是编程的重要概念，本文用简单的语言介绍了什么是线程、它与进程的区别、线程的优缺点等等，写得很好。\n\n",
     "category": "article",
     "originHref": "https://www.internalpointers.com/post/gentle-introduction-multithreading",
+    "weekly": 151
+  },
+  {
+    "title": "[一道有趣的物理题](https://users.physics.unc.edu/~deardorf/phys25/rwp/exam1rwpsolution.html)（英文）",
+    "content": "\n\n这是美国一个大学的物理学考试题目：有没有可能在高压输电线路的下方，放置一大圈电线，利用线圈感应进行偷电？\n\n",
+    "category": "article",
+    "originHref": "https://users.physics.unc.edu/~deardorf/phys25/rwp/exam1rwpsolution.html",
     "weekly": 151
   },
   {
@@ -8163,9 +8261,16 @@
   },
   {
     "title": "[城市路线牌的设计](http://www.disansheng.com/index/details/2073)（中文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021030602.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021030603.jpg)\n\n本文讨论了路线牌的设计问题。\n\n[沙发过弯问题](https://www.math.ucdavis.edu/~romik/movingsofa/)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202103/bg2021030313.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202103/bg2021030314.jpg)\n\n1966年，一个数学家提出一个问题，在一个直角走廊里面，能够通过的沙发最大可以有多大？\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021030602.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021030603.jpg)\n\n本文讨论了路线牌的设计问题。\n\n",
     "category": "article",
     "originHref": "http://www.disansheng.com/index/details/2073",
+    "weekly": 150
+  },
+  {
+    "title": "[沙发过弯问题](https://www.math.ucdavis.edu/~romik/movingsofa/)（英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202103/bg2021030313.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202103/bg2021030314.jpg)\n\n1966年，一个数学家提出一个问题，在一个直角走廊里面，能够通过的沙发最大可以有多大？\n\n",
+    "category": "article",
+    "originHref": "https://www.math.ucdavis.edu/~romik/movingsofa/",
     "weekly": 150
   },
   {
@@ -8863,9 +8968,16 @@
   },
   {
     "title": "[浏览器的异步 Cookie Store API](https://medium.com/nmc-techblog/introducing-the-async-cookie-store-api-89cbecf401f)（英文）",
-    "content": "\n\n以前，我们只能用`document.cookie`来操作 Cookie，Chrome 87 引入了一个新的 Cookie Store API。\n\n\n\n[颗粒积木的妙用](https://www.coolapk.com/feed/23451115?shareKey=ZDY5ODdkNGVmOTg2NWZkNTU2MzI~)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020121303.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020121304.jpg)\n\n作者介绍自己使用颗粒积木搭出了手机支架、笔筒等等。\n\n",
+    "content": "\n\n以前，我们只能用`document.cookie`来操作 Cookie，Chrome 87 引入了一个新的 Cookie Store API。\n\n\n\n",
     "category": "article",
     "originHref": "https://medium.com/nmc-techblog/introducing-the-async-cookie-store-api-89cbecf401f",
+    "weekly": 139
+  },
+  {
+    "title": "[颗粒积木的妙用](https://www.coolapk.com/feed/23451115?shareKey=ZDY5ODdkNGVmOTg2NWZkNTU2MzI~)（中文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020121303.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020121304.jpg)\n\n作者介绍自己使用颗粒积木搭出了手机支架、笔筒等等。\n\n",
+    "category": "article",
+    "originHref": "https://www.coolapk.com/feed/23451115?shareKey=ZDY5ODdkNGVmOTg2NWZkNTU2MzI~",
     "weekly": 139
   },
   {
@@ -9346,9 +9458,16 @@
   },
   {
     "title": "[gRPC API 是什么？](https://www.programmableweb.com/news/what-grpc-api-and-how-does-it-work/analysis/2020/10/08)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101602.jpg)\n\ngRPC 是远程调用计算机服务的一种方式，所有数据以二进制传送，所以效率极高。\n\n[奇妙的 1/89](http://www2.math.ou.edu/~dmccullough/teaching/miscellanea/miner.html) （英文）\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020103103.jpg)\n\n这篇介绍 1/89 这个分数（.01123595505...）与斐波那契数列的奇妙关系。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101602.jpg)\n\ngRPC 是远程调用计算机服务的一种方式，所有数据以二进制传送，所以效率极高。\n\n",
     "category": "article",
     "originHref": "https://www.programmableweb.com/news/what-grpc-api-and-how-does-it-work/analysis/2020/10/08",
+    "weekly": 132
+  },
+  {
+    "title": "[奇妙的 1/89](http://www2.math.ou.edu/~dmccullough/teaching/miscellanea/miner.html) （英文）",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020103103.jpg)\n\n这篇介绍 1/89 这个分数（.01123595505...）与斐波那契数列的奇妙关系。\n\n",
+    "category": "article",
+    "originHref": "http://www2.math.ou.edu/~dmccullough/teaching/miscellanea/miner.html",
     "weekly": 132
   },
   {
@@ -12167,9 +12286,16 @@
   },
   {
     "title": "[JSON 解析器的最大嵌套层数](https://github.com/lovasoa/bad_json_parsers/blob/master/README.md)（英文）",
-    "content": "\n\nJSON 数据结构可以嵌套多少层，标准没有提及。作者就写了一个脚本，去测试每种语言的 JSON 解析器最多可以解析多少层嵌套的 JSON，然后将结果列成表格，比如 Node.js 可以解析5712层。\n\n[20行 Shell 脚本的马尔可夫链](https://0x0f0f0f.github.io/posts/2019/11/really-fast-markov-chains-in-~20-lines-of-sh-grep-cut-and-awk/)（英文）\n\n马尔可夫链的含义是根据概率推测下一项最可能的结果。本文使用20行 Shell 脚本实现一个简单的马尔可夫链。\n\n",
+    "content": "\n\nJSON 数据结构可以嵌套多少层，标准没有提及。作者就写了一个脚本，去测试每种语言的 JSON 解析器最多可以解析多少层嵌套的 JSON，然后将结果列成表格，比如 Node.js 可以解析5712层。\n\n",
     "category": "article",
     "originHref": "https://github.com/lovasoa/bad_json_parsers/blob/master/README.md",
+    "weekly": 87
+  },
+  {
+    "title": "[20行 Shell 脚本的马尔可夫链](https://0x0f0f0f.github.io/posts/2019/11/really-fast-markov-chains-in-~20-lines-of-sh-grep-cut-and-awk/)（英文）",
+    "content": "\n\n马尔可夫链的含义是根据概率推测下一项最可能的结果。本文使用20行 Shell 脚本实现一个简单的马尔可夫链。\n\n",
+    "category": "article",
+    "originHref": "https://0x0f0f0f.github.io/posts/2019/11/really-fast-markov-chains-in-~20-lines-of-sh-grep-cut-and-awk/",
     "weekly": 87
   },
   {
@@ -13455,9 +13581,16 @@
   },
   {
     "title": "[如何用 Puppeteer 破解滑块验证](https://medium.com/@filipvitas/how-to-bypass-slider-captcha-with-js-and-puppeteer-cd5e28105e3c)（英文）",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019073004.jpg)\n\n很多网站现在都有滑块验证，识别用户是否为真人。但是，其实它们都可以用 Puppeteer 的自动化脚本破解，本文展示怎么做到这一点。\n\n[ping 的故事](https://ftp.arl.army.mil/~mike/ping.html)（英文）\n\n`ping`是最常用的网络命令之一。这篇是`ping`的作者介绍他怎么写出这个工具。他以前的工作是研究声纳和雷达，声纳发出的声音脉冲就叫做`ping`。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019073004.jpg)\n\n很多网站现在都有滑块验证，识别用户是否为真人。但是，其实它们都可以用 Puppeteer 的自动化脚本破解，本文展示怎么做到这一点。\n\n",
     "category": "article",
     "originHref": "https://medium.com/@filipvitas/how-to-bypass-slider-captcha-with-js-and-puppeteer-cd5e28105e3c",
+    "weekly": 69
+  },
+  {
+    "title": "[ping 的故事](https://ftp.arl.army.mil/~mike/ping.html)（英文）",
+    "content": "\n\n`ping`是最常用的网络命令之一。这篇是`ping`的作者介绍他怎么写出这个工具。他以前的工作是研究声纳和雷达，声纳发出的声音脉冲就叫做`ping`。\n\n",
+    "category": "article",
+    "originHref": "https://ftp.arl.army.mil/~mike/ping.html",
     "weekly": 69
   },
   {

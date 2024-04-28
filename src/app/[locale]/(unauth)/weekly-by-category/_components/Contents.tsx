@@ -1,7 +1,7 @@
 'use client'
 
 import { useSession } from 'next-auth/react'
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useMemo } from 'react'
 import { toast } from 'sonner'
 
 // import { Loading } from '@/components/Loading'
@@ -36,21 +36,39 @@ export default function Contents({
   const { data: session } = useSession()
   const { data, run, mutate: mutateContents } = useContents({ category })
   const { data: currentUser } = useCurrentUser()
-  const { pageSize, pageNumber, setPageSize, setPageNumber } = usePagination()
-  const [favoritedEnabled, setFavoritedEnabled] = useState(false)
-  const [likedEnabled, setLikedEnabled] = useState(false)
-  const [hiddenNoInterestedEnabled, setHiddenNoInterestedEnabled] =
-    useState(false)
+  const {
+    onlyFavorited,
+    onlyLiked,
+    hiddenNoInterested,
+    setFilter,
+    pageSize,
+    pageNumber,
+    setPageSize,
+    setPageNumber
+  } = usePagination()
   const { mutate: mutateCurrentUser } = useCurrentUser()
 
   const res = useMemo(() => {
-    return {
+    const d = {
       data: data?.data.data || [],
       total: data?.data.total || 0,
       prev: data?.data.prev,
       next: data?.data.next
     }
-  }, [data?.data.data])
+    if (onlyFavorited)
+      d.data = d.data.filter(i => currentUser?.favoriteIds?.includes(i.id))
+    if (onlyLiked)
+      d.data = d.data.filter(i => currentUser?.likedIds?.includes(i.id))
+    if (hiddenNoInterested)
+      d.data = d.data.filter(i => !currentUser?.noInterestedIds?.includes(i.id))
+    return d
+  }, [
+    data?.data.data,
+    currentUser,
+    onlyFavorited,
+    onlyLiked,
+    hiddenNoInterested
+  ])
 
   // console.log(data)
 
@@ -76,16 +94,16 @@ export default function Contents({
   )
 
   const handleOnlyFavorited = useCallback(() => {
-    setFavoritedEnabled(!favoritedEnabled)
-  }, [favoritedEnabled])
+    setFilter('onlyFavorited', !onlyFavorited)
+  }, [onlyFavorited])
 
   const handleOnlyLiked = useCallback(() => {
-    setLikedEnabled(!likedEnabled)
-  }, [likedEnabled])
+    setFilter('onlyLiked', !onlyLiked)
+  }, [onlyLiked])
 
   const handleHiddenNoInterested = useCallback(() => {
-    setHiddenNoInterestedEnabled(!hiddenNoInterestedEnabled)
-  }, [hiddenNoInterestedEnabled])
+    setFilter('hiddenNoInterested', !hiddenNoInterested)
+  }, [hiddenNoInterested])
 
   const toggleFavorite = useCallback(
     async (id: string) => {
@@ -216,18 +234,18 @@ export default function Contents({
       </div>
       <div className="flex space-x-4">
         <SwitchOpen
-          text="Favorited"
-          enabled={favoritedEnabled}
+          text="Fvorited"
+          enabled={onlyFavorited}
           setEnabled={handleOnlyFavorited}
         />
         <SwitchOpen
           text="Liked"
-          enabled={likedEnabled}
+          enabled={onlyLiked}
           setEnabled={handleOnlyLiked}
         />
         <SwitchOpen
-          text="Nointerested"
-          enabled={hiddenNoInterestedEnabled}
+          text="Interested"
+          enabled={hiddenNoInterested}
           setEnabled={handleHiddenNoInterested}
         />
       </div>
@@ -252,12 +270,19 @@ export default function Contents({
           />
         )
       })}
-      <Pagination
-        pageNumber={pageNumber[category]}
-        pageSize={pageSize[category]}
-        total={res.total}
-        onClick={handlePagination}
-      />
+      {res.data.length === 0 && (
+        <div className="py-6 text-center text-gray-500">
+          No content, try turn on the filter switch
+        </div>
+      )}
+      {res.data.length ? (
+        <Pagination
+          pageNumber={pageNumber[category]}
+          pageSize={pageSize[category]}
+          total={res.total}
+          onClick={handlePagination}
+        />
+      ) : null}
     </Wrapper>
   )
 }
