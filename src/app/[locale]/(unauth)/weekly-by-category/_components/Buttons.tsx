@@ -1,5 +1,7 @@
 import clsx from 'clsx'
 
+import { InfinityIcon } from '@/components/icons/InfinityIcon'
+
 export function Buttons({
   items,
   current = items[0],
@@ -24,7 +26,13 @@ export function Buttons({
               i === current && '!bg-gray-300'
             )}
           >
-            {i}
+            {typeof i === 'number' && i !== 10000 ? (
+              i
+            ) : i === 'Infinity' || i === 10000 ? (
+              <InfinityIcon />
+            ) : (
+              i
+            )}
           </button>
         )
       })}

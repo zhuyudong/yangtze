@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/naming-convention */
+import type { Prisma } from '@prisma/client'
 import { NextResponse } from 'next/server'
 
+import { serverAuth } from '@/lib/server-auth'
 import { db } from '@/server/db'
-// import { serverAuth } from '@/lib/server-auth'
 
 async function handler(
   req: Request,
@@ -17,27 +18,60 @@ async function handler(
       )
     }
 
-    // await serverAuth()
-    // '/api/contents?category=article&skip=1&take=20'
+    const { currentUser } = await serverAuth()
+    // '/api/contents?category=article&skip=1&take=20&onlyFavorited=true&onlyLiked=true&hiddenNoInterested=true'
     const match =
-      /\?category=([a-zA-Z]+[\w]+)(&page_number=(\d+))?(&page_size=(\d+))?/.exec(
+      /\?category=([a-zA-Z]+[\w]+)(&page_number=(\d+))?(&page_size=(\d+))?(&onlyFavorited=(true|false))?(&onlyLiked=(true|false))?(&hiddenNoInterested=(true|false))?/.exec(
         req.url!
       )
     const category = match?.[1] ?? undefined
-    const total = await db.content.count({
-      where: {
-        category
-      }
-    })
     const page_number = match?.[3] ? parseInt(match[3], 10) : 1
     const page_size = match?.[5] ? parseInt(match[5], 10) : 20
     const skip = (page_number - 1) * page_size
     const take = page_size
-    // console.log({ category, total, page_number, page_size, skip, take })
+    const onlyFavorited = match?.[7] === 'true'
+    const onlyLiked = match?.[9] === 'true'
+    const hiddenNoInterested = match?.[11] === 'true'
+    let favoritedIds: string[] = []
+    let likedIds: string[] = []
+    let noInterestedIds: string[] = []
+    if (currentUser) {
+      if (onlyFavorited) {
+        favoritedIds = currentUser.favoriteIds
+      }
+      if (onlyLiked) {
+        likedIds = currentUser.likedIds
+      }
+      if (hiddenNoInterested) {
+        noInterestedIds = currentUser.noInterestedIds
+      }
+    }
+    const where: Prisma.ContentWhereInput = { category }
+    if (favoritedIds.length > 0 || likedIds.length > 0) {
+      where.id = {
+        in: [...new Set(favoritedIds.concat(likedIds))]
+      }
+    }
+    if (noInterestedIds.length > 0) {
+      where.id = {
+        not: {
+          in: noInterestedIds
+        }
+      }
+    }
+    // console.log({
+    //   onlyFavorited,
+    //   onlyLiked,
+    //   hiddenNoInterested,
+    //   skip,
+    //   take,
+    //   where
+    // })
+    const total = await db.content.count({
+      where
+    })
     const contents = await db.content.findMany({
-      where: {
-        category
-      },
+      where,
       orderBy: [
         {
           weekly: 'desc'

@@ -70,7 +70,7 @@ export function Pagination({
       </div>
       <div className="hidden md:-mt-px md:flex">
         {/* 1, 2, 3 */}
-        {[...Array(3)]
+        {[...Array(pages.length >= 3 ? 3 : pages.length)]
           .map((_, ix) => ix + 1)
           .map(i => (
             <a

@@ -1,3 +1,6 @@
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable @typescript-eslint/naming-convention */
+
 'use client'
 
 import { useSession } from 'next-auth/react'
@@ -7,7 +10,7 @@ import { toast } from 'sonner'
 // import { Loading } from '@/components/Loading'
 import { wrapper as Wrapper } from '@/components/mdx'
 import type { WeeklyCategory } from '@/hooks'
-import { useContents, useCurrentUser, usePagination } from '@/hooks'
+import { useContents, useContentsPagination, useCurrentUser } from '@/hooks'
 import axios from '@/lib/axios'
 
 import { Buttons } from './Buttons'
@@ -45,7 +48,7 @@ export default function Contents({
     pageNumber,
     setPageSize,
     setPageNumber
-  } = usePagination()
+  } = useContentsPagination()
   const { mutate: mutateCurrentUser } = useCurrentUser()
 
   const res = useMemo(() => {
@@ -55,55 +58,94 @@ export default function Contents({
       prev: data?.data.prev,
       next: data?.data.next
     }
-    if (onlyFavorited)
-      d.data = d.data.filter(i => currentUser?.favoriteIds?.includes(i.id))
-    if (onlyLiked)
-      d.data = d.data.filter(i => currentUser?.likedIds?.includes(i.id))
-    if (hiddenNoInterested)
-      d.data = d.data.filter(i => !currentUser?.noInterestedIds?.includes(i.id))
     return d
-  }, [
-    data?.data.data,
-    currentUser,
-    onlyFavorited,
-    onlyLiked,
-    hiddenNoInterested
-  ])
+  }, [data?.data.data])
 
-  // console.log(data)
-
-  const handlePagination = useCallback((page_number: number) => {
-    setPageNumber(category, page_number)
-    run({
-      category,
-      page_number,
-      page_size: pageSize[category]
-    })
-  }, [])
+  const handlePagination = useCallback(
+    (page_number: number) => {
+      setPageNumber(category, page_number)
+      run({
+        category,
+        page_number,
+        page_size: pageSize[category],
+        onlyFavorited,
+        onlyLiked,
+        hiddenNoInterested
+      })
+    },
+    [category, run, pageSize, onlyFavorited, onlyLiked, hiddenNoInterested]
+  )
 
   const handlePageSize = useCallback(
     (page_size: number | string) => {
       setPageSize(category, page_size as number)
       run({
         category,
-        page_number: 1,
-        page_size: page_size as number
+        page_number: pageNumber[category],
+        page_size: page_size as number,
+        onlyFavorited,
+        onlyLiked,
+        hiddenNoInterested
       })
     },
-    [category, run, setPageSize, pageNumber[category], pageSize[category]]
+    [
+      category,
+      run,
+      setPageSize,
+      pageNumber[category],
+      onlyFavorited,
+      onlyLiked,
+      hiddenNoInterested
+    ]
   )
 
   const handleOnlyFavorited = useCallback(() => {
-    setFilter('onlyFavorited', !onlyFavorited)
-  }, [onlyFavorited])
+    if (!session) {
+      toast.warning('Please sign in', {
+        position: 'top-center'
+      })
+    }
+    const _onlyFavorited = onlyFavorited === 'true' ? 'false' : 'true'
+    setFilter('onlyFavorited', _onlyFavorited)
+    run({
+      category,
+      page_number: pageNumber[category],
+      page_size: pageSize[category],
+      onlyFavorited: _onlyFavorited
+    })
+  }, [category, run, onlyFavorited, pageNumber, pageSize, category])
 
   const handleOnlyLiked = useCallback(() => {
-    setFilter('onlyLiked', !onlyLiked)
-  }, [onlyLiked])
+    if (!session) {
+      toast.warning('Please sign in', {
+        position: 'top-center'
+      })
+    }
+    const _onlyLiked = onlyLiked === 'true' ? 'false' : 'true'
+    setFilter('onlyLiked', _onlyLiked)
+    run({
+      category,
+      page_number: pageNumber[category],
+      page_size: pageSize[category],
+      onlyLiked: _onlyLiked
+    })
+  }, [category, run, pageNumber, pageSize, onlyLiked])
 
   const handleHiddenNoInterested = useCallback(() => {
-    setFilter('hiddenNoInterested', !hiddenNoInterested)
-  }, [hiddenNoInterested])
+    if (!session) {
+      toast.warning('Please sign in', {
+        position: 'top-center'
+      })
+    }
+    const _hiddenNoInterested = hiddenNoInterested === 'true' ? 'false' : 'true'
+    setFilter('hiddenNoInterested', _hiddenNoInterested)
+    run({
+      category,
+      page_number: pageNumber[category],
+      page_size: pageSize[category],
+      hiddenNoInterested: _hiddenNoInterested
+    })
+  }, [category, run, pageNumber, pageSize, hiddenNoInterested])
 
   const toggleFavorite = useCallback(
     async (id: string) => {
@@ -136,6 +178,21 @@ export default function Contents({
           }
           return i
         })
+        if (onlyFavorited === 'true') {
+          _data!.data.data = _data!.data.data.filter(i => {
+            return updatedFavoriteIds.includes(i.id)
+          })
+        }
+        if (onlyLiked === 'true') {
+          _data!.data.data = _data!.data.data.filter(i => {
+            return currentUser?.likedIds.includes(i.id)
+          })
+        }
+        if (hiddenNoInterested === 'true') {
+          _data!.data.data = _data!.data.data.filter(i => {
+            return !currentUser?.noInterestedIds.includes(i.id)
+          })
+        }
         return _data
       })
     },
@@ -172,6 +229,21 @@ export default function Contents({
           }
           return i
         })
+        if (onlyFavorited === 'true') {
+          _data!.data.data = _data!.data.data.filter(i => {
+            return currentUser?.favoriteIds.includes(i.id)
+          })
+        }
+        if (onlyLiked === 'true') {
+          _data!.data.data = _data!.data.data.filter(i => {
+            return updatedLikeIds.includes(i.id)
+          })
+        }
+        if (hiddenNoInterested === 'true') {
+          _data!.data.data = _data!.data.data.filter(i => {
+            return !currentUser?.noInterestedIds.includes(i.id)
+          })
+        }
         return _data
       })
     },
@@ -211,6 +283,21 @@ export default function Contents({
           }
           return i
         })
+        if (onlyFavorited === 'true') {
+          _data!.data.data = _data!.data.data.filter(i => {
+            return currentUser?.favoriteIds.includes(i.id)
+          })
+        }
+        if (onlyLiked === 'true') {
+          _data!.data.data = _data!.data.data.filter(i => {
+            return currentUser?.likedIds.includes(i.id)
+          })
+        }
+        if (hiddenNoInterested === 'true') {
+          _data!.data.data = _data!.data.data.filter(i => {
+            return !updatedNoInterestedIds.includes(i.id)
+          })
+        }
         return _data
       })
     },
@@ -227,7 +314,7 @@ export default function Contents({
           items/page:
         </span>
         <Buttons
-          items={[20, 50, 80, 100]}
+          items={[20, 50, 100, 10000]}
           current={pageSize[category]}
           onClick={handlePageSize}
         />
@@ -235,17 +322,17 @@ export default function Contents({
       <div className="flex space-x-4">
         <SwitchOpen
           text="Fvorited"
-          enabled={onlyFavorited}
+          enabled={onlyFavorited === 'true'}
           setEnabled={handleOnlyFavorited}
         />
         <SwitchOpen
           text="Liked"
-          enabled={onlyLiked}
+          enabled={onlyLiked === 'true'}
           setEnabled={handleOnlyLiked}
         />
         <SwitchOpen
           text="Interested"
-          enabled={hiddenNoInterested}
+          enabled={hiddenNoInterested === 'true'}
           setEnabled={handleHiddenNoInterested}
         />
       </div>
@@ -272,7 +359,7 @@ export default function Contents({
       })}
       {res.data.length === 0 && (
         <div className="py-6 text-center text-gray-500">
-          No content, try turn on the filter switch
+          No content, try turn off the filter switch
         </div>
       )}
       {res.data.length ? (
