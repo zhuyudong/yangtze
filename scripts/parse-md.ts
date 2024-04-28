@@ -39,13 +39,14 @@ const boldTitleReg =
 const quotationTitleReg =
   /^--\s+.*\((https?:\/\/[a-zA-Z.\-_\d/?@~+:&=%#]*)\)(.*)?/gi
 
-function replaceSubmit(str: string) {
+function removeComment(str: string) {
   return str
     .replace(
       /(（|\()?@?\s*\[[\u4e00-\u9fa5a-zA-Z\d@\s-_]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)[\\*\s_]*\s*(投稿)?(）|\))?\n?/g,
       ''
     )
     .replace(/@[\u4e00-\u9fa5a-zA-Z\d]+\s*投稿/g, '')
+    .replace(/===\d+===/g, '')
 }
 
 const readMdxFile = (filePath: string, category: string) => {
@@ -76,7 +77,7 @@ const readMdxFile = (filePath: string, category: string) => {
         if (title !== '') {
           result.push({
             title,
-            content: replaceSubmit(content),
+            content: removeComment(content),
             category,
             originHref,
             weekly
@@ -107,7 +108,7 @@ const readMdxFile = (filePath: string, category: string) => {
         if (title !== '') {
           result.push({
             title,
-            content: replaceSubmit(content).replace(/===\d+===/g, ''),
+            content: removeComment(content),
             category,
             originHref,
             weekly
@@ -134,7 +135,7 @@ const readMdxFile = (filePath: string, category: string) => {
   if (title !== '') {
     result.push({
       title,
-      content: replaceSubmit(content).replace(/===\d+===/g, ''),
+      content: removeComment(content),
       category,
       originHref,
       weekly
