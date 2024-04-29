@@ -250,6 +250,7 @@ function NavigationGroup({
 
 export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
   const t = useTranslations('Resources')
+  const t1 = useTranslations('User')
   const { data: session } = useSession()
 
   const ns: Array<NavGroup> = [
@@ -353,7 +354,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
             <UserMenu />
           ) : (
             <Button href="/sign-in" variant="filled" className="w-full">
-              Sign in
+              {t1('sign_in')}
             </Button>
           )}
         </li>

@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Link from 'next/link'
 import { useSession } from 'next-auth/react'
+import { useTranslations } from 'next-intl'
 import type { CSSProperties, ElementRef, ReactNode } from 'react'
 import { forwardRef } from 'react'
 
@@ -56,7 +57,7 @@ export function TopLevelNavItem({
 
 export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
   function Header({ className }, ref) {
-    // const t = getTranslations('RootLayout')
+    const t = useTranslations('User')
     const { data: session } = useSession()
     const { isOpen: mobileNavIsOpen } = useMobileNavigationStore()
     const isInsideMobileNavigation = useIsInsideMobileNavigation()
@@ -114,7 +115,11 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
             <LocaleSwitcher />
           </div>
           <div className="hidden min-[375px]:contents">
-            {session ? <UserMenu /> : <Button href="/auth">Sign in</Button>}
+            {session ? (
+              <UserMenu />
+            ) : (
+              <Button href="/auth">{t('sign_in')}</Button>
+            )}
           </div>
         </div>
       </motion.div>

@@ -40,6 +40,21 @@
       }
     }
   },
+  "User": {
+    "sign_in": "登录",
+    "sign_up": "注册",
+    "sign_out": "退出登录",
+    "username": "用户名",
+    "email": "邮箱",
+    "email_address": "邮箱",
+    "password": "密码",
+    "login": "登录",
+    "register": "注册",
+    "profile": "个人资料",
+    "already_have_an_account": "已经有账号?",
+    "first_time_using_yangtze": "第一次使用 Yangtze?",
+    "create_an_account": "创建一个账号"
+  },
   "Resources": {
     "technology_stack": "技术栈",
     "technology_column": "技术专栏",

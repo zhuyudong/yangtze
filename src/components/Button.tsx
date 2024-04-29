@@ -43,7 +43,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   className = clsx(
-    'inline-flex justify-center gap-0.5 overflow-hidden text-sm font-medium transition',
+    'inline-flex justify-center gap-0.5 overflow-hidden text-nowrap text-sm font-medium transition',
     variantStyles[variant],
     className
   )

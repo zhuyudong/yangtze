@@ -40,6 +40,20 @@
       }
     }
   },
+  "User": {
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up",
+    "sign_out": "Sign Out",
+    "username": "Username",
+    "email_address": "Email Address",
+    "password": "Password",
+    "login": "Login",
+    "register": "Register",
+    "profile": "Profile",
+    "already_have_an_account": "Already have an account?",
+    "first_time_using_yangtze": "First time using Yangtze?",
+    "create_an_account": "Create an account"
+  },
   "Resources": {
     "technology_stack": "Technology stack",
     "technology_column": "Technology column",

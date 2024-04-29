@@ -2,6 +2,7 @@
 
 import { redirect } from 'next/navigation'
 import { signIn, useSession } from 'next-auth/react'
+import { useTranslations } from 'next-intl'
 import { useCallback, useState } from 'react'
 import { FcGoogle } from 'react-icons/fc'
 
@@ -10,6 +11,7 @@ import { Input } from '@/components/Input'
 import axios from '@/lib/axios'
 
 const Auth = () => {
+  const t = useTranslations('User')
   // status: 'loading' | 'authenticated' | 'unauthenticated'
   const { data: session } = useSession()
   if (session) {
@@ -65,14 +67,14 @@ const Auth = () => {
         <div className="flex min-h-screen justify-center">
           <div className="mt-2 w-full self-center rounded-md bg-black/35 p-16 lg:w-2/5 lg:max-w-lg">
             <h2 className="mb-8 text-4xl font-semibold text-white">
-              {variant === 'login' ? 'Sign in' : 'Register'}
+              {variant === 'login' ? t('sign_in') : t('register')}
             </h2>
             <div className="flex flex-col gap-4">
               {variant === 'register' && (
                 <Input
                   id="name"
                   type="text"
-                  label="Username"
+                  label={t('username')}
                   value={name}
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                     setName(e.target.value)
@@ -82,7 +84,7 @@ const Auth = () => {
               <Input
                 id="email"
                 type="email"
-                label="Email address" // or phone number
+                label={t('email_address')} // or phone number
                 value={email}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                   setEmail(e.target.value)
@@ -91,7 +93,7 @@ const Auth = () => {
               <Input
                 type="password"
                 id="password"
-                label="Password"
+                label={t('password')}
                 value={password}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                   setPassword(e.target.value)
@@ -102,7 +104,7 @@ const Auth = () => {
               onClick={variant === 'login' ? login : register}
               className="mt-10 w-full rounded-md bg-red-600 py-3 text-white transition hover:bg-red-700"
             >
-              {variant === 'login' ? 'Login' : 'Sign up'}
+              {variant === 'login' ? t('login') : t('sign_up')}
             </button>
             <div className="mt-8 flex flex-row items-center justify-center gap-4">
               <div
@@ -121,13 +123,13 @@ const Auth = () => {
             </div>
             <p className="mt-12 text-neutral-300">
               {variant === 'login'
-                ? 'First time using Yangtze?'
-                : 'Already have an account?'}
+                ? t('first_time_using_yangtze')
+                : t('already_have_an_account')}
               <span
                 onClick={toggleVariant}
                 className="ml-1 cursor-pointer text-white hover:underline"
               >
-                {variant === 'login' ? 'Create an account' : 'Login'}
+                {variant === 'login' ? t('create_an_account') : t('login')}
               </span>
               .
             </p>
