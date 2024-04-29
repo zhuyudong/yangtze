@@ -5,7 +5,7 @@ const localePrefix: LocalePrefix = 'never' // 'as-needed'
 
 export const AppConfig = {
   name: 'yangtze',
-  locales: ['en', 'zh-CN'],
-  defaultLocale: 'zh-CN',
+  locales: ['en', 'zh'],
+  defaultLocale: 'zh',
   localePrefix
 }

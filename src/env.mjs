@@ -43,8 +43,8 @@ export const env = createEnv({
     YANGTZE_DEMO: z.string().optional()
   },
   client: {
-    NEXT_PUBLIC_DEPLOYMENT_URL: z.string(),
-    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1)
+    NEXT_PUBLIC_DEPLOYMENT_URL: z.string()
+    // NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1)
   },
   // You need to destructure all the keys manually
   runtimeEnv: {
@@ -60,9 +60,8 @@ export const env = createEnv({
     // DATABASE_URL: process.env.DATABASE_URL,
     // DATABASE_AUTH_TOKEN: process.env.DATABASE_AUTH_TOKEN,
     // MONGO_URL: process.env.MONGO_URL,
-    LOGTAIL_SOURCE_TOKEN: process.env.LOGTAIL_SOURCE_TOKEN,
-    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY:
-      process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+    LOGTAIL_SOURCE_TOKEN: process.env.LOGTAIL_SOURCE_TOKEN
+    // NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially

@@ -7,7 +7,7 @@ import type { ReactNode } from 'react'
 
 import { TailwindIndicator } from '@/components/patterns/tailwind-indicator'
 import { Toaster } from '@/components/ui/sonner'
-import { AppConfig } from '@/utils/AppConfig'
+import { AppConfig } from '@/config'
 
 // const inter = Inter({
 //   subsets: ['latin'],

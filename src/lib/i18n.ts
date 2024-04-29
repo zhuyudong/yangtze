@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getRequestConfig } from 'next-intl/server'
 
-import { AppConfig } from '@/utils/AppConfig'
+import { AppConfig } from '@/config'
 
 // NextJS Boilerplate uses Crowdin as the localization software.
 // As a developer, you only need to take care of the English (or another default language) version.

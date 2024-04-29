@@ -4,7 +4,6 @@
 // import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { type Atom, Provider } from 'jotai'
 import { useSearchParams } from 'next/navigation'
-// import { useSession } from '@clerk/nextjs'
 import { useSession } from 'next-auth/react'
 import { ThemeProvider, useTheme } from 'next-themes'
 import type { ReactNode } from 'react'

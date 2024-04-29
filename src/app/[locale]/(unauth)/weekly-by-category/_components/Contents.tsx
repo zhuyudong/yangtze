@@ -101,7 +101,7 @@ export default function Contents({
 
   const handleOnlyFavorited = useCallback(() => {
     if (!session) {
-      toast.warning('Please sign in', {
+      return toast.warning('Please sign in', {
         position: 'top-center'
       })
     }
@@ -117,7 +117,7 @@ export default function Contents({
 
   const handleOnlyLiked = useCallback(() => {
     if (!session) {
-      toast.warning('Please sign in', {
+      return toast.warning('Please sign in', {
         position: 'top-center'
       })
     }
@@ -133,7 +133,7 @@ export default function Contents({
 
   const handleHiddenNoInterested = useCallback(() => {
     if (!session) {
-      toast.warning('Please sign in', {
+      return toast.warning('Please sign in', {
         position: 'top-center'
       })
     }
@@ -150,7 +150,7 @@ export default function Contents({
   const toggleFavorite = useCallback(
     async (id: string) => {
       if (!session) {
-        toast.warning('Please sign in', {
+        return toast.warning('Please sign in', {
           position: 'top-center'
         })
       }
@@ -202,7 +202,7 @@ export default function Contents({
   const toggleLike = useCallback(
     async (id: string) => {
       if (!session) {
-        toast.warning('Please sign in', {
+        return toast.warning('Please sign in', {
           position: 'top-center'
         })
       }
@@ -253,7 +253,7 @@ export default function Contents({
   const toggleNoInterested = useCallback(
     async (id: string) => {
       if (!session) {
-        toast.warning('Please sign in', {
+        return toast.warning('Please sign in', {
           position: 'top-center'
         })
       }

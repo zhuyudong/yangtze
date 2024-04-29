@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { ComponentType, MouseEventHandler } from 'react'
 
+import { AppConfig } from '@/config'
 import { navigation } from '@/lib/navigation'
-import { AppConfig } from '@/utils/AppConfig'
 
-// /en|zh-CN/
+// /en|zh/
 const localeRegex = new RegExp(`^/(${AppConfig.locales.join('|')})`)
 
 interface INavigation {
