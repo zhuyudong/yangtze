@@ -51,9 +51,10 @@
     "login": "登录",
     "register": "注册",
     "profile": "个人资料",
-    "already_have_an_account": "已经有账号?",
-    "first_time_using_yangtze": "第一次使用 Yangtze?",
-    "create_an_account": "创建一个账号"
+    "already_have_an_account": "已经有账号？",
+    "first_time_using_yangtze": "第一次使用 Yangtze？",
+    "create_an_account": "创建一个账号。",
+    "please_sign_in": "请先登录！"
   },
   "Resources": {
     "technology_stack": "技术栈",

@@ -4,6 +4,7 @@
 'use client'
 
 import { useSession } from 'next-auth/react'
+import { useTranslations } from 'next-intl'
 import { useCallback, useMemo } from 'react'
 import { toast } from 'sonner'
 
@@ -36,6 +37,7 @@ export default function Contents({
   title: Title
   category: WeeklyCategory
 }) {
+  const t = useTranslations('User')
   const { data: session } = useSession()
   const { data, run, mutate: mutateContents } = useContents({ category })
   const { data: currentUser } = useCurrentUser()
@@ -101,7 +103,7 @@ export default function Contents({
 
   const handleOnlyFavorited = useCallback(() => {
     if (!session) {
-      return toast.warning('Please sign in', {
+      return toast.warning(t('please_sign_in'), {
         position: 'top-center'
       })
     }
@@ -117,7 +119,7 @@ export default function Contents({
 
   const handleOnlyLiked = useCallback(() => {
     if (!session) {
-      return toast.warning('Please sign in', {
+      return toast.warning(t('please_sign_in'), {
         position: 'top-center'
       })
     }
@@ -133,7 +135,7 @@ export default function Contents({
 
   const handleHiddenNoInterested = useCallback(() => {
     if (!session) {
-      return toast.warning('Please sign in', {
+      return toast.warning(t('please_sign_in'), {
         position: 'top-center'
       })
     }
@@ -150,7 +152,7 @@ export default function Contents({
   const toggleFavorite = useCallback(
     async (id: string) => {
       if (!session) {
-        return toast.warning('Please sign in', {
+        return toast.warning(t('please_sign_in'), {
           position: 'top-center'
         })
       }
@@ -202,7 +204,7 @@ export default function Contents({
   const toggleLike = useCallback(
     async (id: string) => {
       if (!session) {
-        return toast.warning('Please sign in', {
+        return toast.warning(t('please_sign_in'), {
           position: 'top-center'
         })
       }
@@ -253,7 +255,7 @@ export default function Contents({
   const toggleNoInterested = useCallback(
     async (id: string) => {
       if (!session) {
-        return toast.warning('Please sign in', {
+        return toast.warning(t('please_sign_in'), {
           position: 'top-center'
         })
       }

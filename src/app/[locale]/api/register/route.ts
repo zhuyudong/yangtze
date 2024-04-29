@@ -2,6 +2,7 @@ import bcrypt from 'bcrypt'
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
+import { logger } from '@/lib/logger'
 import { db } from '@/server/db'
 
 async function handler(req: NextRequest) {
@@ -36,7 +37,7 @@ async function handler(req: NextRequest) {
         // emailVerified: new Date()
       }
     })
-
+    logger.info('User %s registered', user.email)
     return NextResponse.json(user)
   } catch (error) {
     return NextResponse.json({ error }, { status: 400 })

@@ -131,7 +131,6 @@ const Auth = () => {
               >
                 {variant === 'login' ? t('create_an_account') : t('login')}
               </span>
-              .
             </p>
           </div>
         </div>

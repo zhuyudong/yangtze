@@ -1,17 +1,23 @@
 import { without } from 'lodash'
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
+import { getTranslations } from 'next-intl/server'
 
+import { logger } from '@/lib/logger'
 import { serverAuth } from '@/lib/server-auth'
 import { db } from '@/server/db'
 
 async function handler(req: NextRequest) {
   try {
+    const t = await getTranslations('User')
     const { currentUser } = await serverAuth()
 
     if (!currentUser) {
       // throw new Error('Please sign in')
-      return NextResponse.json({ message: 'Please sign in' }, { status: 401 })
+      return NextResponse.json(
+        { message: t('please_sign_in') },
+        { status: 401 }
+      )
     }
 
     const { contentId } = await req.json()
@@ -45,6 +51,7 @@ async function handler(req: NextRequest) {
           }
         }
       })
+      logger.info('User %s favorited content %s', currentUser.email, contentId)
       return NextResponse.json({
         favoriteIds: updatedUser.favoriteIds,
         likes: updatedUser.likedIds,
@@ -76,6 +83,11 @@ async function handler(req: NextRequest) {
           }
         }
       })
+      logger.info(
+        'User %s unfavorited content %s',
+        currentUser.email,
+        contentId
+      )
       return NextResponse.json({
         favoriteIds: updatedUser.favoriteIds,
         likes: updatedUser.likedIds,
@@ -89,7 +101,7 @@ async function handler(req: NextRequest) {
     return NextResponse.json({ message: 'Method not allowed' }, { status: 405 })
   } catch (error) {
     console.log(error)
-
+    logger.error(error)
     return NextResponse.json({ error }, { status: 500 })
   }
 }

@@ -2,6 +2,7 @@ import { without } from 'lodash'
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
+import { logger } from '@/lib/logger'
 import { serverAuth } from '@/lib/server-auth'
 import { db } from '@/server/db'
 
@@ -47,6 +48,7 @@ async function handler(req: NextRequest) {
           }
         }
       })
+      logger.info('User %s liked content %s', currentUser.email, contentId)
       return NextResponse.json({
         favoriteIds: updatedUser?.favoriteIds || [],
         likes: updatedUser?.likedIds || [],
@@ -79,6 +81,7 @@ async function handler(req: NextRequest) {
           }
         }
       })
+      logger.info('User %s unliked content %s', currentUser.email, contentId)
       return NextResponse.json({
         favoriteIds: updatedUser?.favoriteIds || [],
         likes: updatedUser?.likedIds || [],
@@ -92,7 +95,7 @@ async function handler(req: NextRequest) {
     return NextResponse.json({ message: 'Method not allowed' }, { status: 405 })
   } catch (error) {
     console.log(error)
-
+    logger.error(error)
     return NextResponse.json({ error }, { status: 500 })
   }
 }

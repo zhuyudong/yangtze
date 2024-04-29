@@ -52,7 +52,8 @@
     "profile": "Profile",
     "already_have_an_account": "Already have an account?",
     "first_time_using_yangtze": "First time using Yangtze?",
-    "create_an_account": "Create an account"
+    "create_an_account": "Create an account.",
+    "please_sign_in": "Please sign in"
   },
   "Resources": {
     "technology_stack": "Technology stack",

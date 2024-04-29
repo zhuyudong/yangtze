@@ -12,8 +12,18 @@ import GoogleProvider from 'next-auth/providers/google'
 import type { Provider } from 'next-auth/providers/index'
 import TwitterProvider from 'next-auth/providers/twitter'
 
+import { logger } from '@/lib/logger'
 import { db } from '@/server/db'
 
+// NOTE: 已登陆用户 /api/current 1) jwt -> 2) session
+/**
+ * NOTE: 登录接口调用流程
+ * 1 /api/auth/session
+ * 2 /api/auth/providers
+ * 3 /zh/api/auth/csrf Credentials.authorize -> callbacks.jwt -> events.signIn
+ * 4 /api/auth/callback/credentials callbacks.jwt -> callbacks.session
+ * 5 /zh/api/auth/session
+ */
 export const authOptions: AuthOptions = {
   providers: [
     // NOTE: signIn('github', { callbackUrl: '/' })
@@ -93,7 +103,6 @@ export const authOptions: AuthOptions = {
         if (!credentials?.email || !credentials?.password) {
           throw new Error('Email and password required')
         }
-
         const user = await db.user.findUnique({
           where: {
             email: credentials.email
@@ -111,7 +120,7 @@ export const authOptions: AuthOptions = {
         if (!isCorrectPassword) {
           throw new Error('Incorrect password')
         }
-
+        // logger.info('User %s signed in', user.email)
         return user
       }
     })
@@ -157,6 +166,7 @@ export const authOptions: AuthOptions = {
     //   return baseUrl
     // }
   },
+  // https://next-auth.js.org/configuration/events
   events: {
     /**
      * 使用 credentials 方式登录，仅有 user 和 account
@@ -164,13 +174,26 @@ export const authOptions: AuthOptions = {
      * account: {providerAccountId:: string, type: 'credentials', provider: 'credentials'}
      * 使用 google 方式登录，有 user, account, isNewUser
      */
-    async signIn({ user, account, isNewUser }) {
+    async signIn({ user, account, profile, isNewUser }) {
       // console.log(`--------events > signIn-------`)
+      logger.info('User %s signed in', user.email)
+      if (isNewUser) {
+        logger.info('New user signed in: %s', user.email)
+      }
+    },
+    createUser({ user }) {
+      console.log(`--------events > createUser-------`, user)
+    },
+    updateUser({ user }) {
+      // console.log(`--------events > updateUser-------`, user)
+    },
+    linkAccount({ user, account, profile }) {
+      // console.log(`--------events > linkAccount-------`)
     },
     /**
      * token: {name: string, email: string, sub: string, iat: number, exp: number, jti: string}
      */
-    signOut({ token }) {
+    signOut({ session, token }) {
       // console.log(`--------events > signOut-------`)
     }
   },
