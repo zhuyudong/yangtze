@@ -116,7 +116,11 @@ docker run -p 3000:3000 yangtze-app:0.1.0
 
        if (req.method === 'POST') {
          // async actions
-         logger.info('User %s favorited content %s', currentUser.id, contentId)
+         logger.info(
+           'User %s favorited content %s',
+           currentUser.email,
+           contentId
+         )
          return NextResponse.json({
            //...
          })
