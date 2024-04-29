@@ -3,36 +3,36 @@ import { useTranslations } from 'next-intl'
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 
-const guides: { href: string; name: string; description: string }[] = [
-  {
-    href: '/react-apis',
-    name: '前端',
-    description: 'React 实战'
-  },
-  {
-    href: '/python-environment',
-    name: 'Python',
-    description: '关于 Python 的一切'
-  },
-  {
-    href: '/awesome-linux',
-    name: '服务器',
-    description: 'Linux 常用命令与工具'
-  },
-  {
-    href: '/mongo',
-    name: '数据库',
-    description: '数据库常见问题'
-  },
-  {
-    href: '/aigc',
-    name: 'AIG',
-    description: 'AIG 就是未来'
-  }
-]
-
 export function Guides() {
   const t = useTranslations('Resources')
+
+  const guides: { href: string; name: string; description: string }[] = [
+    {
+      href: '/react-apis',
+      name: t('frontend'),
+      description: t('awesome_frontend')
+    },
+    {
+      href: '/python-environment',
+      name: 'Python',
+      description: t('awesome_python')
+    },
+    {
+      href: '/awesome-linux',
+      name: t('backend'),
+      description: t('awesome_database')
+    },
+    {
+      href: '/mongo',
+      name: t('database'),
+      description: t('awesome_database')
+    },
+    {
+      href: '/aigc',
+      name: 'AIG',
+      description: t('aigc_is_the_future')
+    }
+  ]
 
   return (
     // remove xl:max-w-none
@@ -43,7 +43,7 @@ export function Guides() {
       {/* NOTE: xl:grid-cols-5 一行 5 列  */}
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-5">
         {guides.map(guide => (
-          <div key={guide.href}>
+          <div key={guide.href} className="flex flex-col justify-between">
             <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">
               {guide.name}
             </h3>

@@ -100,3 +100,9 @@ img[src^="https://img.shields.io"] {
   margin-bottom: 1rem;
   display: inline-block;
 }
+
+.technology-stack {
+  li {
+    line-height: 1.5;
+  }
+}
