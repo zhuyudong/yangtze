@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 import { getTranslations } from 'next-intl/server'
 
-import { logger } from '@/lib/Logger'
+import { logger } from '@/lib/logger'
 import { serverAuth } from '@/lib/server-auth'
 import { db } from '@/server/db'
 

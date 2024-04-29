@@ -2,7 +2,7 @@ import bcrypt from 'bcrypt'
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
-import { logger } from '@/lib/Logger'
+import { logger } from '@/lib/logger'
 import { db } from '@/server/db'
 
 async function handler(req: NextRequest) {
