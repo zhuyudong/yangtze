@@ -64,5 +64,5 @@ ENV NEXT_TELEMETRY_DISABLED 1
 # NOTE: "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
 CMD ["node_modules/.bin/next", "start"]
 
-# 构建镜像 docker build --no-cache -t yangtze-app:0.1.0 -f Dockerfile . 或 docker build --no-cache -t yangtze-app:0.1.0 . 或 docker build --no-cache . -t yangtze-app:0.1.0
+# 构建镜像 docker build  --progress=plain --no-cache -t yangtze-app:0.1.0 -f Dockerfile . 或 docker build --no-cache -t yangtze-app:0.1.0 . 或 docker build --no-cache . -t yangtze-app:0.1.0
 # 运行镜像 docker run -p 3000:3000 yangtze-app:0.1.0

@@ -41,6 +41,8 @@ git config --global http.version HTTP/2
 git config core.ignorecase false
 # 默认 pull 代码时以 rebase 策略合并代码
 git config pull.rebase true
+# 查看配置是否生效
+git config --get core.ignorecase
 
 # fatal: unable to access 'xxx': gnutls_handshake() failed: Error in the pull function.
 git config --global --unset http.proxy
