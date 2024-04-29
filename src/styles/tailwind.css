@@ -106,3 +106,17 @@ img[src^="https://img.shields.io"] {
     line-height: 1.5;
   }
 }
+
+details > *:not(summary) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid #EEE;
+}
+
+.mdx-hr {
+  max-width: 66rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

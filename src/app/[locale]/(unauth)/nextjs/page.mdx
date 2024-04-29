@@ -1,8 +1,9 @@
 # Next.js 学习笔记
 
-## 内置组件
+<details>
+  <summary>内置组件</summary>
 
-### `<Image>`
+- `<Image>`
 
 概念或资源
 
@@ -10,36 +11,39 @@
 - [Web Almanac](https://almanac.httparchive.org/en/2022/media)
 - FCP 首次内容渲染
 
-### `Font`
+- `Font`
 
-### `<Link>`
+- `<Link>`
 
-### `<Script>`
+- `<Script>`
 
-## Metadata
+- `Metadata`
 
-### Examples
+  ```html
+  <!-- 默认字段 -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-```html
-<!-- 默认字段 -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Chris Mills" />
+  <meta name="description" content="the description content" />
+  <meta property="og:image" content="..." />
+  <meta property="og:description" content="..." />
+  <meta property="og:title" content="..." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  ```
 
-<meta name="author" content="Chris Mills" />
-<meta name="description" content="the description content" />
-<meta property="og:image" content="..." />
-<meta property="og:description" content="..." />
-<meta property="og:title" content="..." />
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-```
+  其中 **"og"** 开头的符合 [Open Graph 协议](https://ogp.me/)，网站的自定义图标、robots.txt、sitemap.xml 等也是元数据
 
-其中 **"og"** 开头的符合 [Open Graph 协议](https://ogp.me/)，网站的自定义图标、robots.txt、sitemap.xml 等也是元数据
+</details>
 
-### 如何生成元数据
+<hr className="mdx-hr" />
+
+### 元数据
 
 无论是静态元数据还是动态元数据都只在服务端组件中支持，元数据一共有[这些字段](https://github.com/vercel/next.js/blob/canary/packages/next/src/lib/metadata/default-metadata.tsx)
 
-#### 静态元数据
+<details>
+  <summary>静态元数据</summary>
 
 ```js
 // layout.js | page.js
@@ -51,82 +55,94 @@ export const metadata = {
 export default function Page() {}
 ```
 
-#### 动态元数据
+</details>
+<details>
+  <summary>动态元数据的使用</summary>
 
-`searchParams` 只有在 page.js 中才有
+- `searchParams` 只有在 page.js 中才有
 
-```js
-// app/products/[id]/page.js
-export async function generateMetadata({ params, searchParams }, parent) {
-  // 读取路由参数
-  const id = params.id
+  ```js
+  // app/products/[id]/page.js
+  export async function generateMetadata({ params, searchParams }, parent) {
+    // 读取路由参数
+    const id = params.id
 
-  // 获取数据
-  const product = await fetch(`https://.../${id}`).then(res => res.json())
+    // 获取数据
+    const product = await fetch(`https://.../${id}`).then(res => res.json())
 
-  // 获取和拓展父路由段 metadata
-  const previousImages = (await parent).openGraph?.images || []
+    // 获取和拓展父路由段 metadata
+    const previousImages = (await parent).openGraph?.images || []
 
-  return {
-    title: product.title,
-    openGraph: {
-      images: ['/some-specific-page-image.jpg', ...previousImages]
+    return {
+      title: product.title,
+      openGraph: {
+        images: ['/some-specific-page-image.jpg', ...previousImages]
+      }
     }
   }
-}
 
-export default function Page({ params, searchParams }) {}
-```
+  export default function Page({ params, searchParams }) {}
+  ```
 
-## next.config.js
+</details>
 
-也可以是 next.config.mjs
+<hr className="mdx-hr" />
 
-#### 对象形态
+<details>
+  <summary>next 配置指南 </summary>
 
-```js
-export default (phase, { defaultConfig }) => {
-  /**
-   * @type {import('next').NextConfig}
-   */
-  const nextConfig = {
-    /* config options here */
+支持 next.config.mjs 和 next.config.js 格式
+
+- 对象形态
+
+  ```js
+  export default (phase, { defaultConfig }) => {
+    /**
+     * @type {import('next').NextConfig}
+     */
+    const nextConfig = {
+      /* config options here */
+    }
+    return nextConfig
   }
-  return nextConfig
-}
-```
+  ```
 
-#### 函数形态
+- 函数形态
 
-其中 phase 有[如下取值](https://github.com/vercel/next.js/blob/5e6b008b561caf2710ab7be63320a3d549474a5b/packages/next/shared/lib/constants.ts#L19-L23)，可以通过 `const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')` 导入，更多配置[参见这里](https://github.com/vercel/next.js/blob/canary/packages/next/src/server/config-shared.ts)
+  其中 phase 有[如下取值](https://github.com/vercel/next.js/blob/5e6b008b561caf2710ab7be63320a3d549474a5b/packages/next/shared/lib/constants.ts#L19-L23)，可以通过 `const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')` 导入，更多配置[参见这里](https://github.com/vercel/next.js/blob/canary/packages/next/src/server/config-shared.ts)
 
-```js
-export default (phase, { defaultConfig }) => {
-  /**
-   * @type {import('next').NextConfig}
-   */
-  const nextConfig = {
-    /* config options here */
+  ```js
+  export default (phase, { defaultConfig }) => {
+    /**
+     * @type {import('next').NextConfig}
+     */
+    const nextConfig = {
+      /* config options here */
+    }
+    return nextConfig
   }
-  return nextConfig
-}
-```
+  ```
 
-#### 异步函数形态
+- 异步函数形态
 
-```js
-module.exports = async (phase, { defaultConfig }) => {
-  /**
-   * @type {import('next').NextConfig}
-   */
-  const nextConfig = {
-    /* config options here */
-  }
-  return nextConfig
-}
-```
+      ```js
+      module.exports = async (phase, { defaultConfig }) => {
+        /**
+         * @type {import('next').NextConfig}
+        */
+        const nextConfig = {
+          /* config options here */
+        }
+        return nextConfig
+      }
+      ```
 
-## APIs
+</details>
+
+<hr className="mdx-hr" />
+
+<details>
+  <summary>APIs</summary>
 
 ```js
 import {
@@ -179,40 +195,50 @@ export default async function Profile({ params }) {
   - `forEach()`
   - `toString()`
 
-### 如何忽略部分类型文件的编译
+</details>
 
-安装所需依赖
+<hr className="mdx-hr" />
 
-```bash
-pnpm i @types/webpack ignore-loader -D
-```
+<details>
+  <summary>如何忽略部分类型文件的编译</summary>
 
-忽略 .py 文件
+1. 安装所需依赖
 
-> next.config.mjs
+   ```bash
+   pnpm i @types/webpack ignore-loader -D
+   ```
 
-```js
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  //...
-  /**
-   *
-   * @param {import('webpack').Configuration} config
-   * @param {import('next/dist/server/config-shared').WebpackConfigContext} context
-   * @returns {import('webpack').Configuration}
-   */
-  webpack: (config, context) => {
-    // NOTE: ignore python files
-    config.module.rules.push({
-      test: /\.py$/,
-      loader: 'ignore-loader'
-    })
-    return config
-  }
-}
-```
+2. 忽略 .py 文件
 
-## 客户端组件与服务端组件
+   > next.config.mjs
+
+   ```js
+   /** @type {import('next').NextConfig} */
+   const nextConfig = {
+     //...
+     /**
+      *
+      * @param {import('webpack').Configuration} config
+      * @param {import('next/dist/server/config-shared').WebpackConfigContext} context
+      * @returns {import('webpack').Configuration}
+      */
+     webpack: (config, context) => {
+       // NOTE: ignore python files
+       config.module.rules.push({
+         test: /\.py$/,
+         loader: 'ignore-loader'
+       })
+       return config
+     }
+   }
+   ```
+
+</details>
+
+<hr className="mdx-hr" />
+
+<details>
+  <summary>客户端组件与服务端组件的区别</summary>
 
 1. 服务端组件中使用的子组件可以使用 `'use client'` 吗？
 
@@ -225,25 +251,33 @@ const nextConfig = {
    export default SessionProvider
    ```
 
-## api
+</details>
 
-**app/api/[...nextauth]/route.ts 等效于 app/api/[...nextauth].ts**
+<hr className="mdx-hr" />
 
-### 如何写 api 中接口
+<details>
+  <summary>如何写 api 接口</summary>
 
-导出什么函数就接收什么类型 method 的请求
+`app/api/[...nextauth]/route.ts` 等效于 `pages/api/[...nextauth].ts`
 
-> api/name/route.ts
+1. 导出什么函数就接收什么类型 method 的请求
 
-```ts {{title: "GET /api/name"}}
-import { NextResponse } from 'next/server'
+   > api/name/route.ts
 
-export async function GET() {
-  return NextResponse.json({ name: 'xxx' })
-}
-```
+   ```ts {{title: "GET /api/name"}}
+   import { NextResponse } from 'next/server'
 
-使用 [next-auth](https://next-auth.js.org/) 获取当前用户信息
+   export async function GET() {
+     return NextResponse.json({ name: 'xxx' })
+   }
+   ```
+
+</details>
+
+<hr className="mdx-hr" />
+
+<details>
+  <summary>使用 <a href="https://next-auth.js.org/" target="_blank">next-auth</a> 获取当前用户信息</summary>
 
 > api/current/route.ts
 
@@ -360,7 +394,24 @@ const authHandler: NextApiHandler = (req, res) =>
 export default authHandler
 ```
 
-### 常见问题
+</details>
+
+<hr className="mdx-hr" />
+
+<details>
+  <summary>如何从 pages router 迁移到 app router</summary>
+</details>
+
+<hr className="mdx-hr" />
+
+<details>
+  <summary>如何使用 next-intl 做国际化</summary>
+</details>
+
+<hr className="mdx-hr" />
+
+<details>
+  <summary>常见问题</summary>
 
 1. `useRouter` 仅可以在客户端组件中使用
 
@@ -371,8 +422,4 @@ export default authHandler
 
 2. 路由路径区分大小写吗？
 
-## next-auth
-
-### 如何在 pages router 中使用 next-auth
-
-### 如何在 app router 中使用 next-auth
+</details>

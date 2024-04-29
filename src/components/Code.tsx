@@ -320,7 +320,7 @@ export function CodeGroup({
 
   // NOTE: rounded-xl 代码块圆角
   const containerClassName =
-    'my-6 overflow-hidden rounded-xl bg-zinc-900 shadow-md dark:ring-1 dark:ring-white/10'
+    'my-6 overflow-hidden rounded-md bg-zinc-900 shadow-md dark:ring-1 dark:ring-white/10'
   const header = (
     <CodeGroupHeader title={title} selectedIndex={tabGroupProps.selectedIndex}>
       {children}
