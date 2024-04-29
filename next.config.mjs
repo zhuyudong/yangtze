@@ -15,7 +15,7 @@ import withSearch from './src/mdx/search.mjs'
 // import './src/env.mjs'
 // equivalent to
 await import('./src/env.mjs')
-const withNextIntl = createNextIntlPlugin('./src/lib/i18n.ts')
+const withNextIntl = createNextIntlPlugin('./src/i18n.ts')
 
 const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true'

@@ -8,7 +8,7 @@ import { LocaleSwitcherSelect } from './LocaleSwitcherSelect'
 // import type { ChangeEventHandler } from 'react'
 
 // import { AppConfig } from '@/config'
-// import { usePathname, useRouter } from '@/lib/i18n-navigation'
+// import { usePathname, useRouter } from '@/i18n'
 
 export function LocaleSwitcher() {
   // const router = useRouter()
