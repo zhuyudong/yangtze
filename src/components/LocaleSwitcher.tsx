@@ -1,32 +1,49 @@
 'use client'
 
-import { useLocale } from 'next-intl'
-import type { ChangeEventHandler } from 'react'
+import { useLocale, useTranslations } from 'next-intl'
 
-import { AppConfig } from '@/config'
-import { usePathname, useRouter } from '@/lib/i18n-navigation'
+import { locales } from '@/config'
+
+import { LocaleSwitcherSelect } from './LocaleSwitcherSelect'
+// import type { ChangeEventHandler } from 'react'
+
+// import { AppConfig } from '@/config'
+// import { usePathname, useRouter } from '@/lib/i18n-navigation'
 
 export function LocaleSwitcher() {
-  const router = useRouter()
-  const pathname = usePathname()
+  // const router = useRouter()
+  // const pathname = usePathname()
+  // const locale = useLocale()
+
+  // const handleChange: ChangeEventHandler<HTMLSelectElement> = event => {
+  //   router.push(pathname, { locale: event.target.value })
+  //   router.refresh()
+  // }
+
+  // return (
+  //   <select
+  //     defaultValue={locale}
+  //     onChange={handleChange}
+  //     className="border border-gray-300 font-medium focus:outline-none focus-visible:ring"
+  //   >
+  //     {AppConfig.locales.map(elt => (
+  //       <option key={elt} value={elt}>
+  //         {elt.toUpperCase()}
+  //       </option>
+  //     ))}
+  //   </select>
+  // )
+
+  const t = useTranslations('LocaleSwitcher')
   const locale = useLocale()
 
-  const handleChange: ChangeEventHandler<HTMLSelectElement> = event => {
-    router.push(pathname, { locale: event.target.value })
-    router.refresh()
-  }
-
   return (
-    <select
-      defaultValue={locale}
-      onChange={handleChange}
-      className="border border-gray-300 font-medium focus:outline-none focus-visible:ring"
-    >
-      {AppConfig.locales.map(elt => (
-        <option key={elt} value={elt}>
-          {elt.toUpperCase()}
+    <LocaleSwitcherSelect defaultValue={locale} label={t('label')}>
+      {locales.map(cur => (
+        <option key={cur} value={cur}>
+          {t('locale', { locale: cur })}
         </option>
       ))}
-    </select>
+    </LocaleSwitcherSelect>
   )
 }

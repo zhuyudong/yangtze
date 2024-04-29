@@ -8,6 +8,7 @@ import {
   useMotionValue
 } from 'framer-motion'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { type ComponentPropsWithoutRef, type ComponentType } from 'react'
 
 import { GridPattern } from '@/components/GridPattern'
@@ -41,191 +42,6 @@ interface IResource {
     'width' | 'height' | 'x'
   >
 }
-
-const resources: Array<IResource> = [
-  // {
-  //   href: '/blog',
-  //   name: '博客【原创】',
-  //   description: '',
-  //   icon: ArticleIcon,
-  //   bg: 'bg-zinc-50',
-  //   pattern: {
-  //     y: -6,
-  //     squares: [
-  //       [-1, 2],
-  //       [1, 3]
-  //     ]
-  //   }
-  // },
-  // {
-  //   href: '/linux-tools',
-  //   name: 'Linux 工具箱',
-  //   description: '',
-  //   icon: UserIcon,
-  //   bg: 'bg-red-50',
-  //   pattern: {
-  //     y: 16,
-  //     squares: [
-  //       [0, 1],
-  //       [1, 3]
-  //     ]
-  //   }
-  // },
-  {
-    href: '/weekly-by-category/articles',
-    name: '文章',
-    description: '',
-    icon: ArticleIcon,
-    bg: 'bg-violet-50',
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/weekly-by-category/excerpts',
-    name: '文摘',
-    description: '',
-    icon: ExcerptIcon,
-    bg: 'bg-green-50',
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/weekly-by-category/quotations',
-    name: '言论',
-    description: '',
-    icon: QuotationIcon,
-    bg: 'bg-cyan-50',
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/weekly-by-category/photos',
-    name: '社会图文',
-    description: '',
-    icon: PhotoIcon,
-    bg: 'bg-pink-50',
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/weekly-by-category/news',
-    name: '科技新闻',
-    description: '',
-    icon: NewIcon,
-    bg: 'bg-amber-50',
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/weekly-by-category/tools',
-    name: '开发工具',
-    description: '',
-    icon: ToolIcon,
-    bg: 'bg-indigo-50',
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/weekly-by-category/technology-news',
-    name: '科技动态',
-    description: '',
-    icon: TechnologyNewIcon,
-    bg: 'bg-lime-50',
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/weekly-by-category/resources',
-    name: '开发与学习资源',
-    description: '',
-    icon: ResourcesIcon,
-    bg: 'bg-emerald-50',
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  }
-]
-
-const leisureStation: Array<IResource> = [
-  {
-    href: '/wallpaper',
-    name: '壁纸',
-    description: '大千世界、精彩纷呈',
-    icon: MapPinIcon,
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  },
-  {
-    href: '/poetry',
-    name: '诗词',
-    description: '',
-    icon: BookIcon,
-    pattern: {
-      y: 32,
-      squares: [
-        [0, 2],
-        [1, 4]
-      ]
-    }
-  },
-  {
-    href: '/movies',
-    name: '电影',
-    description: '',
-    icon: MovieIcon,
-    pattern: {
-      y: -6,
-      squares: [
-        [-1, 2],
-        [1, 3]
-      ]
-    }
-  }
-]
 
 function ResourceIcon({ icon: Icon }: { icon: IResource['icon'] }) {
   return (
@@ -370,13 +186,199 @@ function Station({ resource }: { resource: IResource }) {
 }
 
 export function Resources() {
+  const t = useTranslations('Resources')
   const { randomMovieQuoteIndex, randomPoetryIndex } = useRandomIndex()
+
+  const resources: Array<IResource> = [
+    // {
+    //   href: '/blog',
+    //   name: '博客【原创】',
+    //   description: '',
+    //   icon: ArticleIcon,
+    //   bg: 'bg-zinc-50',
+    //   pattern: {
+    //     y: -6,
+    //     squares: [
+    //       [-1, 2],
+    //       [1, 3]
+    //     ]
+    //   }
+    // },
+    // {
+    //   href: '/linux-tools',
+    //   name: 'Linux 工具箱',
+    //   description: '',
+    //   icon: UserIcon,
+    //   bg: 'bg-red-50',
+    //   pattern: {
+    //     y: 16,
+    //     squares: [
+    //       [0, 1],
+    //       [1, 3]
+    //     ]
+    //   }
+    // },
+    {
+      href: '/weekly-by-category/articles',
+      name: t('articles'),
+      description: '',
+      icon: ArticleIcon,
+      bg: 'bg-violet-50',
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    },
+    {
+      href: '/weekly-by-category/excerpts',
+      name: t('excerpts'),
+      description: '',
+      icon: ExcerptIcon,
+      bg: 'bg-green-50',
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    },
+    {
+      href: '/weekly-by-category/quotations',
+      name: t('quotations'),
+      description: '',
+      icon: QuotationIcon,
+      bg: 'bg-cyan-50',
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    },
+    {
+      href: '/weekly-by-category/photos',
+      name: t('social_photos_text'),
+      description: '',
+      icon: PhotoIcon,
+      bg: 'bg-pink-50',
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    },
+    {
+      href: '/weekly-by-category/news',
+      name: t('technology_news'),
+      description: '',
+      icon: NewIcon,
+      bg: 'bg-amber-50',
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    },
+    {
+      href: '/weekly-by-category/tools',
+      name: t('development_tools'),
+      description: '',
+      icon: ToolIcon,
+      bg: 'bg-indigo-50',
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    },
+    {
+      href: '/weekly-by-category/technology-news',
+      name: t('technology_trends'),
+      description: '',
+      icon: TechnologyNewIcon,
+      bg: 'bg-lime-50',
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    },
+    {
+      href: '/weekly-by-category/resources',
+      name: t('resources'),
+      description: '',
+      icon: ResourcesIcon,
+      bg: 'bg-emerald-50',
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    }
+  ]
+
+  const leisureStation: Array<IResource> = [
+    {
+      href: '/wallpaper',
+      name: t('wallpaper'),
+      description: '大千世界、精彩纷呈',
+      icon: MapPinIcon,
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    },
+    {
+      href: '/poetry',
+      name: t('poetry'),
+      description: '',
+      icon: BookIcon,
+      pattern: {
+        y: 32,
+        squares: [
+          [0, 2],
+          [1, 4]
+        ]
+      }
+    },
+    {
+      href: '/movies',
+      name: t('movies'),
+      description: '',
+      icon: MovieIcon,
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    }
+  ]
 
   return (
     // remove xl:max-w-none
     <div className="my-16">
       <Heading level={2} id="resources">
-        阅读空间
+        {t('reading_space')}
       </Heading>
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-4">
         {resources.map(resource => (
@@ -384,7 +386,7 @@ export function Resources() {
         ))}
       </div>
       <Heading level={2} id="leisure-station">
-        休闲驿站
+        {t('leisure_station')}
       </Heading>
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-1 xl:grid-cols-1">
         {leisureStation.map(i => {
@@ -392,7 +394,7 @@ export function Resources() {
             // eslint-disable-next-line prefer-destructuring
             i.description = poetry[randomPoetryIndex]
           }
-          if (i.name === '电影') {
+          if (i.name === '电影' || i.name === 'Movies') {
             i.description = movieQuotes[randomMovieQuoteIndex].match(
               /^\d+、\s?(.*)/
             )?.[1] as string // Math.floor(Math.random() * movieQuotes.length)

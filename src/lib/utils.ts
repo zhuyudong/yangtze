@@ -28,7 +28,7 @@ export function formatDate(
   date: Date | string | number,
   options: Intl.DateTimeFormatOptions = {}
 ) {
-  return new Intl.DateTimeFormat('en-US', {
+  return new Intl.DateTimeFormat('en', {
     month: options.month ?? 'long',
     day: options.day ?? 'numeric',
     year: options.year ?? 'numeric',

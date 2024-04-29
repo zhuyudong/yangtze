@@ -7,15 +7,24 @@ import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useSession } from 'next-auth/react'
+import { useTranslations } from 'next-intl'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import { useRef } from 'react'
 
 import { Button } from '@/components/Button'
+import { ArticleIcon } from '@/components/icons/ArticleIcon'
+import { ExcerptIcon } from '@/components/icons/ExcerptIcon'
+import { FireIcon } from '@/components/icons/FireIcon'
+import { NewIcon } from '@/components/icons/NewIcon'
+import { PhotoIcon } from '@/components/icons/PhotoIcon'
+import { QuotationIcon } from '@/components/icons/QuotationIcon'
+import { ResourceIcon } from '@/components/icons/ResourceIcon'
+import { TechnologyNewIcon } from '@/components/icons/TechnologyNewIcon'
+import { ToolIcon } from '@/components/icons/ToolIcon'
 import { useIsInsideMobileNavigation } from '@/components/MobileNavigation'
 import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
 import type { NavGroup } from '@/lib/navigation'
-import { navigation } from '@/lib/navigation'
 import { remToPx } from '@/lib/remToPx'
 
 import { UserMenu } from './UserMenu'
@@ -240,7 +249,91 @@ function NavigationGroup({
 }
 
 export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
+  const t = useTranslations('Resources')
   const { data: session } = useSession()
+
+  const ns: Array<NavGroup> = [
+    {
+      title: t('technology_column'),
+      links: [
+        { title: 'Introduction', href: '/' },
+        { title: 'React APIs', href: '/react-apis' },
+        { title: 'Git practice', href: '/git-config' },
+        { title: 'Node.js tutorial', href: '/nodejs' },
+        // { title: 'Git 工具', href: '/git-tools' },
+        // { title: 'Git 案例', href: '/git-examples' },
+        { title: 'Remix practice', href: '/remix' },
+        { title: 'Next.js tutorial', href: '/nextjs' },
+        { title: 'VSCode practice', href: '/vscode' },
+        { title: 'TailwindCSS practice', href: '/tailwindcss' },
+        { title: 'package.json tutorial', href: '/package' },
+        { title: 'Frontend components', href: '/frontend-components' },
+        {
+          title: 'Frontend dependencies',
+          href: '/package-manager'
+        },
+        { title: '@tanstack/react-table', href: '/tanstack__react-table' },
+        { title: '@tanstack/react-query', href: '/tanstack__react-query' },
+        { title: 'Linux tutorial', href: '/awesome-linux' },
+        { title: 'FastAPI practice', href: '/python-fastapi' },
+        { title: 'Python snippets', href: '/python' },
+        { title: 'Python environment', href: '/python-environment' },
+        { title: 'Python Lint & Formatting', href: '/python-lint' },
+        { title: 'Redis tutorial', href: '/redis' },
+        { title: 'MongoDB tutorial', href: '/mongo' },
+        { title: 'PostgreSQL tutorial', href: '/postgres' },
+        { title: 'Artificial Intelligence Generated', href: '/aigc' }
+      ]
+    },
+    {
+      title: t('reading_space'),
+      links: [
+        { title: t('poetry'), href: '/poetry', icon: FireIcon },
+        // { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },
+        // { title: '电影', href: '/movies', icon: MovieIcon },
+        {
+          title: t('articles'),
+          href: '/weekly-by-category/articles',
+          icon: ArticleIcon
+        },
+        {
+          title: t('excerpts'),
+          href: '/weekly-by-category/excerpts',
+          icon: ExcerptIcon
+        },
+        {
+          title: t('quotations'),
+          href: '/weekly-by-category/quotations',
+          icon: QuotationIcon
+        },
+        {
+          title: t('social_photos_text'),
+          href: '/weekly-by-category/photos',
+          icon: PhotoIcon
+        },
+        {
+          title: t('technology_news'),
+          href: '/weekly-by-category/news',
+          icon: NewIcon
+        },
+        {
+          title: t('technology_trends'),
+          href: '/weekly-by-category/technology-news',
+          icon: TechnologyNewIcon
+        },
+        {
+          title: t('development_tools'),
+          href: '/weekly-by-category/tools',
+          icon: ToolIcon
+        },
+        {
+          title: t('resources'),
+          href: '/weekly-by-category/resources',
+          icon: ResourceIcon
+        }
+      ]
+    }
+  ]
   return (
     <nav {...props}>
       <ul role="list">
@@ -248,7 +341,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
         <TopLevelNavItem href="/poetry">Poetry</TopLevelNavItem>
         <TopLevelNavItem href="/movies">Movie</TopLevelNavItem>
         <TopLevelNavItem href="/wallpaper">Wallpaper</TopLevelNavItem>
-        {navigation.map((group, groupIndex) => (
+        {ns.map((group, groupIndex) => (
           <NavigationGroup
             key={group.title}
             group={group}

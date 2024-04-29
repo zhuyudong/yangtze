@@ -1,5 +1,1 @@
-import counterAtom from './counter'
-
-export default {
-  counterAtom
-}
+export * from './counter'

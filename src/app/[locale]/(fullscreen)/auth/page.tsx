@@ -58,12 +58,12 @@ const Auth = () => {
 
   return (
     <div className="relative size-full min-h-screen bg-[url('/images/OHR.BorromeanIslands_ZH-CN0480730115_1920x1080.jpg&rf=LaDigue_1920x1080.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
-      <div className="size-full bg-black bg-opacity-10 lg:bg-opacity-10">
+      <div className="size-full bg-black/10">
         {/* <nav className="px-12 py-5">
           <img src="/images/logo.png" className="h-12" alt="Logo" />
         </nav> */}
         <div className="flex min-h-screen justify-center">
-          <div className="mt-2 w-full self-center rounded-md bg-black bg-opacity-35 p-16 lg:w-2/5 lg:max-w-lg lg:bg-opacity-35">
+          <div className="mt-2 w-full self-center rounded-md bg-black/35 p-16 lg:w-2/5 lg:max-w-lg">
             <h2 className="mb-8 text-4xl font-semibold text-white">
               {variant === 'login' ? 'Sign in' : 'Register'}
             </h2>

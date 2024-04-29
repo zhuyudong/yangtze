@@ -22,7 +22,7 @@ export interface NavGroup {
 
 export const navigation: Array<NavGroup> = [
   {
-    title: '技术专栏',
+    title: 'technology_column',
     links: [
       { title: 'Introduction', href: '/' },
       { title: 'React APIs', href: '/react-apis' },
@@ -54,40 +54,40 @@ export const navigation: Array<NavGroup> = [
     ]
   },
   {
-    title: '阅读空间',
+    title: 'reading_space',
     links: [
-      { title: '诗词', href: '/poetry', icon: FireIcon },
+      { title: 'poetry', href: '/poetry', icon: FireIcon },
       // { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },
       // { title: '电影', href: '/movies', icon: MovieIcon },
       {
-        title: '文章',
+        title: 'articles',
         href: '/weekly-by-category/articles',
         icon: ArticleIcon
       },
       {
-        title: '文摘',
+        title: 'excerpts',
         href: '/weekly-by-category/excerpts',
         icon: ExcerptIcon
       },
       {
-        title: '言论',
+        title: 'quotations',
         href: '/weekly-by-category/quotations',
         icon: QuotationIcon
       },
       {
-        title: '社会图文',
+        title: 'photos',
         href: '/weekly-by-category/photos',
         icon: PhotoIcon
       },
-      { title: '科技新闻', href: '/weekly-by-category/news', icon: NewIcon },
-      { title: '开发工具', href: '/weekly-by-category/tools', icon: ToolIcon },
+      { title: 'news', href: '/weekly-by-category/news', icon: NewIcon },
+      { title: 'tools', href: '/weekly-by-category/tools', icon: ToolIcon },
       {
-        title: '科技动态',
+        title: 'technology_trends',
         href: '/weekly-by-category/technology-news',
         icon: TechnologyNewIcon
       },
       {
-        title: '开发与学习资源',
+        title: 'resources',
         href: '/weekly-by-category/resources',
         icon: ResourceIcon
       }

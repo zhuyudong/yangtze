@@ -17,6 +17,7 @@ import { MobileSearch, Search } from '@/components/Search'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { cn } from '@/lib/utils'
 
+import { LocaleSwitcher } from './LocaleSwitcher'
 import { UserMenu } from './UserMenu'
 
 // import { ArticleIcon } from './icons/ArticleIcon'
@@ -91,7 +92,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
           )}
         />
         <Search />
-        <div className="flex items-center gap-5 lg:hidden">
+        <div className="flex items-center gap-1 lg:hidden">
           <MobileNavigation />
           <Link href="/" aria-label="Home">
             <Logo />
@@ -107,9 +108,10 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
             </ul>
           </nav>
           <div className="hidden md:block md:h-5 md:w-px md:bg-zinc-900/10 md:dark:bg-white/15" />
-          <div className="flex gap-4">
+          <div className="flex items-center gap-4">
             <MobileSearch />
             <ThemeToggle />
+            <LocaleSwitcher />
           </div>
           <div className="hidden min-[375px]:contents">
             {session ? <UserMenu /> : <Button href="/auth">Sign in</Button>}

@@ -51,10 +51,6 @@ const nextConfig = {
         port: '',
         pathname: '/images/**'
       },
-      // {
-      //   protocol: 'https',
-      //   hostname: 'vercel.com'
-      // },
       {
         protocol: 'https',
         hostname: 'cn.bing.com',

@@ -10,7 +10,7 @@ import type { ReactNode } from 'react'
 import { useEffect } from 'react'
 
 import { TooltipProvider } from '@/components/ui/tooltip'
-import store from '@/store'
+import { counterAtom } from '@/store'
 import { TRPCReactProvider } from '@/trpc/react'
 
 function ThemeWatcher() {
@@ -67,7 +67,7 @@ export function Providers({ children }: { children: ReactNode }) {
       // @ts-expect-error initialValue is not in the types
       initialValues={
         initialState &&
-        ([[store.counterAtom, initialState]] as Iterable<
+        ([[counterAtom, initialState]] as Iterable<
           readonly [Atom<unknown>, unknown]
         >)
       }
