@@ -12,7 +12,7 @@ import GoogleProvider from 'next-auth/providers/google'
 import type { Provider } from 'next-auth/providers/index'
 import TwitterProvider from 'next-auth/providers/twitter'
 
-import { logger } from '@/lib/logger'
+import { logger } from '@/lib/Logger'
 import { db } from '@/server/db'
 
 // NOTE: 已登陆用户 /api/current 1) jwt -> 2) session
