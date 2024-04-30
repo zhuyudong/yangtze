@@ -22,14 +22,14 @@
   },
   {
     "title": "[联手 Copilot，我在10个小时内上线了一个前端网站（中文）](https://ameow.xyz/archives/develop-a-frontend-site-with-copilot)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042413.webp)\n\n作者只有前端基础，通过使用 GitHub Copilot，在短时间内完成一个 React 前端项目，并总结了一些使用 Copilot 的技巧。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024042413.webp)\n\n作者只有前端基础，通过使用 GitHub Copilot，在短时间内完成一个 React 前端项目，并总结了一些使用 Copilot 的技巧。\n\n",
     "category": "article",
     "originHref": "https://ameow.xyz/archives/develop-a-frontend-site-with-copilot",
     "weekly": 298
   },
   {
     "title": "[我的推特增长策略（中文）](https://mp.weixin.qq.com/s/2y463r9G4hnsIc0c2ig7dA)",
-    "content": "\n\n作者从去年末开始做推特账号运营，且发帖频率很低，如今涨了8000关注，本文总结增长策略。\n",
+    "content": "\n\n作者从去年末开始做推特账号运营，且发帖频率很低，如今涨了8000关注，本文总结增长策略。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/2y463r9G4hnsIc0c2ig7dA",
     "weekly": 298
@@ -64,14 +64,14 @@
   },
   {
     "title": "[UUID 的用户体验（英文）](https://unkey.dev/blog/uuid-ux)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041410.webp)\n\nUUID 指的是独一无二的 ID 标识符，本文讨论怎么让它对于用户更好用。\n\n另外，UUID 有多个版本，解释各版本的差异。结论是，一般情况使用 UUIDv4，如果需要单调递增，使用 UUIDv7。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041410.webp)\n\nUUID 指的是独一无二的 ID 标识符，本文讨论怎么让它对于用户更好用。\n\n另外，UUID 有多个版本，[这里](https://blog.daveallie.com/ulid-primary-keys/)解释各版本的差异。结论是，一般情况使用 UUIDv4，如果需要单调递增，使用 UUIDv7。\n\n",
     "category": "article",
     "originHref": "https://unkey.dev/blog/uuid-ux",
     "weekly": 297
   },
   {
     "title": "[如何找到 Chrome 的崩溃原因？（中文）](https://blog.5udou.cn/blog/detail/1711630845567)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041607.webp)\n\nChrome 浏览器打开页面时，经常崩溃，作者就从闪退时产生的 Crash dump 文件，着手寻找崩溃原因。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041607.webp)\n\nChrome 浏览器打开页面时，经常崩溃，作者就从闪退时产生的 Crash dump 文件，着手寻找崩溃原因。\n\n",
     "category": "article",
     "originHref": "https://blog.5udou.cn/blog/detail/1711630845567",
     "weekly": 297
@@ -106,14 +106,14 @@
   },
   {
     "title": "[如何生成键盘输入统计看板（英文）](https://greptime.com/blogs/2024-03-19-keyboard-monitoring)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024040306.webp)\n\n本文介绍使用一个 Python 脚本，统计用户在当前计算机按下了什么键。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024040306.webp)\n\n本文介绍使用一个 Python 脚本，统计用户在当前计算机按下了什么键。\n\n",
     "category": "article",
     "originHref": "https://greptime.com/blogs/2024-03-19-keyboard-monitoring",
     "weekly": 296
   },
   {
     "title": "[Claude AI 能做，而 ChatGPT 不能做的四件事（英文）](https://www.zdnet.com/article/4-things-claude-ai-can-do-that-chatgpt-cant/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023090711.webp)\n\nClaude 是 Anthropic 公司推出的大规模语言模型，有免费版和收费的。本文比较了 Claude 强于 ChatGPT 的四个地方。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023090711.webp)\n\nClaude 是 Anthropic 公司推出的大规模语言模型，有免费版和收费的 [Pro 版](https://www.zdnet.com/article/anthropic-unveils-claude-pro-a-paid-subscription-plan-for-its-chatgpt-rival/)。本文比较了 Claude 强于 ChatGPT 的四个地方。\n\n",
     "category": "article",
     "originHref": "https://www.zdnet.com/article/4-things-claude-ai-can-do-that-chatgpt-cant/",
     "weekly": 296
@@ -155,14 +155,14 @@
   },
   {
     "title": "[微信早期的消息收发架构（中文）](https://mp.weixin.qq.com/s/dD-aPhnynOqSC3MUYLjeAA)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024032813.webp)\n\n本文是一篇简化的介绍，讲解微信刚刚建立时，怎么做到消息的收发。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024032813.webp)\n\n本文是一篇简化的介绍，讲解微信刚刚建立时，怎么做到消息的收发。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/dD-aPhnynOqSC3MUYLjeAA",
     "weekly": 295
   },
   {
     "title": "[OPFS API 及工具介绍（中文）](https://hughfenghen.github.io/posts/2024/03/14/web-storage-and-opfs/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024032810.webp)\n\n网页脚本如果要跟本地文件系统交互，是很不方便的。目前，浏览器有一个 OPFS API，为网页提供一个虚拟的本地文件系统，本文介绍它的用法。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024032810.webp)\n\n网页脚本如果要跟本地文件系统交互，是很不方便的。目前，浏览器有一个 OPFS API，为网页提供一个虚拟的本地文件系统，本文介绍它的用法。\n\n",
     "category": "article",
     "originHref": "https://hughfenghen.github.io/posts/2024/03/14/web-storage-and-opfs/",
     "weekly": 295
@@ -295,7 +295,7 @@
   },
   {
     "title": "[OpenAI 回应马斯克的长文（中文）](https://finance.sina.com.cn/stock/usstock/c/2024-03-06/doc-inamkuik5589602.shtml)",
-    "content": "\n\n马斯克，称后者违背开源承诺，成为微软的盈利性子公司。\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030708.webp)\n\n这篇是 OpenAI 长篇回应的中文翻译，透露了很多内幕。主要内容是 AI 需要大量算力和资金，所以不得不成立盈利性部门，马斯克当年对此知情，并表示支持。\n\n",
+    "content": "\n\n马斯克[起诉 OpenAI](https://finance.sina.cn/2024-03-01/detail-inakvvhe8160978.d.html)，称后者违背开源承诺，成为微软的盈利性子公司。\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030708.webp)\n\n这篇是 OpenAI 长篇回应的中文翻译（[英语原文](https://openai.com/blog/openai-elon-musk)），透露了很多内幕。主要内容是 AI 需要大量算力和资金，所以不得不成立盈利性部门，马斯克当年对此知情，并表示支持。\n\n",
     "category": "article",
     "originHref": "https://finance.sina.com.cn/stock/usstock/c/2024-03-06/doc-inamkuik5589602.shtml",
     "weekly": 292
@@ -316,7 +316,7 @@
   },
   {
     "title": "[100万级安装量的开源作品，一年有多少打赏收入？（中文）](https://juejin.cn/post/7341593721100451880)",
-    "content": "\n\n作者在自己的开源作品里面，放了一个赞赏码，一年带来330元的收入。\n",
+    "content": "\n\n作者在自己的开源作品里面，放了一个赞赏码，一年带来330元的收入。\n\n",
     "category": "article",
     "originHref": "https://juejin.cn/post/7341593721100451880",
     "weekly": 292
@@ -414,7 +414,7 @@
   },
   {
     "title": "[Web 终极拦截技巧（中文）](https://hughfenghen.github.io/posts/2023/12/23/web-spy/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024021006.webp)\n\n本文介绍 Web 平台常见的拦截 HTTP 通信的方法，以及如何注入拦截代码。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024021006.webp)\n\n本文介绍 Web 平台常见的拦截 HTTP 通信的方法，以及如何注入拦截代码。\n\n",
     "category": "article",
     "originHref": "https://hughfenghen.github.io/posts/2023/12/23/web-spy/",
     "weekly": 290
@@ -477,7 +477,7 @@
   },
   {
     "title": "[为什么 Laravel 这么优秀（中文）](https://godruoyi.com/posts/why-laravel)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202401/bg2024012912.webp)\n\nLaravel 是 PHP 生态中最流行的框架，本文介绍 Laravel 的设计，以及作者为什么喜欢使用它。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202401/bg2024012912.webp)\n\nLaravel 是 PHP 生态中最流行的框架，本文介绍 Laravel 的设计，以及作者为什么喜欢使用它。\n\n",
     "category": "article",
     "originHref": "https://godruoyi.com/posts/why-laravel",
     "weekly": 289
@@ -526,7 +526,7 @@
   },
   {
     "title": "[2023年前端技术盘点与展望（中文）](https://mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ)",
-    "content": "\n\n腾讯云开发者公众号与腾讯 MoonWebTeam 前端团队联合推出的长篇技术报告。\n",
+    "content": "\n\n腾讯云开发者公众号与腾讯 MoonWebTeam 前端团队联合推出的长篇技术报告。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ",
     "weekly": 288
@@ -568,7 +568,7 @@
   },
   {
     "title": "[WebCodecs 介绍（中文）](https://hughfenghen.github.io/posts/2023/10/06/webcodecs-new-era-for-media-on-the-web/)",
-    "content": "\n\nWebCodecs 是一个新的浏览器 API，提供音视频的编解码能力的标准接口。本文介绍这个 API，并提供。\n",
+    "content": "\n\nWebCodecs 是一个新的浏览器 API，提供音视频的编解码能力的标准接口。本文介绍这个 API，并提供 [demo](https://hughfenghen.github.io/WebAV/demo)。\n\n",
     "category": "article",
     "originHref": "https://hughfenghen.github.io/posts/2023/10/06/webcodecs-new-era-for-media-on-the-web/",
     "weekly": 287
@@ -610,7 +610,7 @@
   },
   {
     "title": "[我的 Pascal 编程经历（中文）](https://justyy.com/archives/64211)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202401/bg2024010901.webp)\n\nPascal 语言之父尼克劳斯·沃斯（Niklaus Wirth）本周逝世。作者回忆了自己从小使用 Pascal 语言的经历。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202401/bg2024010901.webp)\n\nPascal 语言之父尼克劳斯·沃斯（Niklaus Wirth）本周逝世。作者回忆了自己从小使用 Pascal 语言的经历。\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/64211",
     "weekly": 286
@@ -673,7 +673,7 @@
   },
   {
     "title": "[Python 变快的9个技巧（英文）](https://medium.com/techtofreedom/9-subtle-tricks-to-make-your-python-code-much-faster-50be6dd69a30)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023123005.webp)\n\n本文介绍9个让 Python 代码变得更快的小技巧。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023123005.webp)\n\n本文介绍9个让 Python 代码变得更快的小技巧。\n\n",
     "category": "article",
     "originHref": "https://medium.com/techtofreedom/9-subtle-tricks-to-make-your-python-code-much-faster-50be6dd69a30",
     "weekly": 285
@@ -701,7 +701,7 @@
   },
   {
     "title": "[如何在 Windows 删除 Edge（中文）](https://github.com/ruanyf/weekly/issues/3804)",
-    "content": "\n\n微软为了遵守欧元区的监管规定，允许该区域的用户卸载 Edge 并移除 Bing。网友找到了变通方法，让非欧元区的用户也能卸载 Edge。\n",
+    "content": "\n\n微软为了遵守欧元区的监管规定，允许该区域的用户卸载 Edge 并移除 Bing。网友找到了变通方法，让非欧元区的用户也能卸载 Edge。\n\n",
     "category": "article",
     "originHref": "https://github.com/ruanyf/weekly/issues/3804",
     "weekly": 284
@@ -715,7 +715,7 @@
   },
   {
     "title": "[了解图形系统 X（中文）](https://silaoa.github.io/2020/2020-04-25-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%EF%BC%9A%E4%BA%86%E8%A7%A3X.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122401.webp)\n\nLinux 图形环境的底层是 X 图形系统，本文对它进行一个通俗的介绍。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023122401.webp)\n\nLinux 图形环境的底层是 X 图形系统，本文对它进行一个通俗的介绍。\n\n",
     "category": "article",
     "originHref": "https://silaoa.github.io/2020/2020-04-25-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%EF%BC%9A%E4%BA%86%E8%A7%A3X.html",
     "weekly": 284
@@ -862,14 +862,14 @@
   },
   {
     "title": "[Cygwin 是什么（中文）](https://silaoa.github.io/2019/2019-02-14-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9ACygwin%E6%98%AF%E4%BB%80%E4%B9%88.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023120518.webp)\n\nCygnus 公司为 Windows 做了一个中间层，提供大部分 Linux 的 API，使得 Linux 软件可以运行在 Windows。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023120518.webp)\n\nCygnus 公司为 Windows 做了一个中间层，提供大部分 Linux 的 API，使得 Linux 软件可以运行在 Windows。\n\n",
     "category": "article",
     "originHref": "https://silaoa.github.io/2019/2019-02-14-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9ACygwin%E6%98%AF%E4%BB%80%E4%B9%88.html",
     "weekly": 281
   },
   {
     "title": "[GitHub 2023年统计报告（英文）](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023120519.webp)\n\nGitHub 官方的报告，美国用户数量依然第一，中国去年被印度超过，从第二变到第三。\n另外，维基百科公布了今年，ChatGPT 第一，印度的板球世界杯和板球联赛第三和第四。印度在互联网世界的影响，真是越来越大了。\n\n[纪录片《Aardvark'd》](https://mtlynch.io/aardvarkd/)（英文）\n\n2005年，一个导演来到 FogCreek 公司，拍摄四个实习生的生活，一共拍摄了三个月，后来就剪成了下面这部纪录片。\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023090901.webp)\n\n很可惜，没有多少人看过。现在，它已经放上了，可以免费观看。\n\n但是，真正有意思的事情是，18年过去了，这四个实习生过得怎么样。这篇就是他们的人生故事。\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023090902.webp)\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023120519.webp)\n\nGitHub 官方的报告，美国用户数量依然第一，中国去年被印度超过，从第二变到第三。\n\n另外，维基百科公布了今年[访问量最大的页面](https://apnews.com/article/wikipedia-top-searches-2023-chatgpt-a0e742df4e00c30c063d0c2505c126e5)，ChatGPT 第一，印度的板球世界杯和板球联赛第三和第四。印度在互联网世界的影响，真是越来越大了。\n\n[纪录片《Aardvark'd》](https://mtlynch.io/aardvarkd/)（英文）\n\n2005年，一个导演来到 FogCreek 公司，拍摄四个实习生的生活，一共拍摄了三个月，后来就剪成了下面这部纪录片。\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023090901.webp)\n\n很可惜，没有多少人看过。现在，它已经放上了 [Youtube](https://www.youtube.com/watch?v=YbrkZ07LKbk)，可以免费观看。\n\n但是，真正有意思的事情是，18年过去了，这四个实习生过得怎么样。这篇就是他们的人生故事。\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023090902.webp)\n\n",
     "category": "article",
     "originHref": "https://github.blog/2023-11-08-the-state-of-open-source-and-ai/",
     "weekly": 281
@@ -904,7 +904,7 @@
   },
   {
     "title": "[我在谷歌的18年（中文）](https://finance.sina.com.cn/stock/usstock/c/2023-11-24/doc-imzvsncv7037099.shtml)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023112505.webp)\n\n作者在谷歌工作了18年，本月辞职。他写了这篇，痛批谷歌已经蜕变，不再有公司创立时的理想主义，成了一家充满官僚主义的平庸大公司。\n\n本文是对此事的中文报道，另有和。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023112505.webp)\n\n作者在谷歌工作了18年，本月辞职。他写了这篇，痛批谷歌已经蜕变，不再有公司创立时的理想主义，成了一家充满官僚主义的平庸大公司。\n\n本文是对此事的中文报道，另有[英文原文](https://ln.hixie.ch/?start=1700627373)和[中文译文](https://icloudnative.io/posts/reflecting-on-18-years-at-google/)。\n\n",
     "category": "article",
     "originHref": "https://finance.sina.com.cn/stock/usstock/c/2023-11-24/doc-imzvsncv7037099.shtml",
     "weekly": 280
@@ -960,14 +960,14 @@
   },
   {
     "title": "[《中国企业家》专访 Sam Altman（中文）](https://weibo.com/ttarticle/x/m/show/id/2309404969066262823141)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023112002.webp)\n\nSam Altman 被 OpenAI 董事会赶下台前几天，接受了《中国企业家》杂志的专访，不过内容比较普通。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023112002.webp)\n\nSam Altman 被 OpenAI 董事会赶下台前几天，接受了《中国企业家》杂志的专访，不过内容比较普通。\n\n",
     "category": "article",
     "originHref": "https://weibo.com/ttarticle/x/m/show/id/2309404969066262823141",
     "weekly": 279
   },
   {
     "title": "[ChatGPT 使用入门（中文）](https://blog.warmplace.cn/post/chatgpt)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023112302.webp)\n\n作者结合自己的使用感受，详细介绍了ChatGPT 注册、开通、使用技巧和原理。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023112302.webp)\n\n作者结合自己的使用感受，详细介绍了ChatGPT 注册、开通、使用技巧和原理。\n\n",
     "category": "article",
     "originHref": "https://blog.warmplace.cn/post/chatgpt",
     "weekly": 279
@@ -980,7 +980,7 @@
     "weekly": 279
   },
   {
-    "title": "[Target=\"\\_Blank\" 属性的安全漏洞（中文）](https://blog.bolajiayodeji.com/the-security-vulnerabilities-of-the-target-blank-attribute)",
+    "title": "[Target=\"Blank\" 属性的安全漏洞（中文）](https://blog.bolajiayodeji.com/the-security-vulnerabilities-of-the-target-blank-attribute)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023083003.webp)\n\n一篇老，介绍网页`<a>`标签的`target=\"_blank\"`属性打开新窗口时，会使得新窗口可以引用原始窗口，因此可能有安全风险。\n\n",
     "category": "article",
     "originHref": "https://blog.bolajiayodeji.com/the-security-vulnerabilities-of-the-target-blank-attribute",
@@ -1002,7 +1002,7 @@
   },
   {
     "title": "[curl 支持 IPFS 协议（英文）](https://daniel.haxx.se/blog/2022/08/10/ipfs-and-their-gateways/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092503.webp)\n\n老牌工具 curl 最近开始支持抓取 IPFS 协议的网页，本文介绍一些背后的考虑，具体用法参考。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092503.webp)\n\n老牌工具 curl 最近开始支持抓取 IPFS 协议的网页，本文介绍一些背后的考虑，具体用法参考[文档](https://github.com/curl/curl/blob/master/docs/IPFS.md)。\n\n\n\n",
     "category": "article",
     "originHref": "https://daniel.haxx.se/blog/2022/08/10/ipfs-and-their-gateways/",
     "weekly": 278
@@ -1205,7 +1205,7 @@
   },
   {
     "title": "[Linux 中如何安全地抹去磁盘数据？（中文）](https://mp.weixin.qq.com/s/w-pMU3_TD3dEPoW-XEde-A)",
-    "content": "\n\n文件管理器或者 rm 命令，并不能安全地删除数据。本文介绍 Linux 中常见的三个命令，安全地抹去磁盘数据。\n",
+    "content": "\n\n文件管理器或者 rm 命令，并不能安全地删除数据。本文介绍 Linux 中常见的三个命令，安全地抹去磁盘数据。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/w-pMU3_TD3dEPoW-XEde-A",
     "weekly": 274
@@ -1303,7 +1303,7 @@
   },
   {
     "title": "[AWS SES 如何申请进入生产模式（中文）](https://tiezhu.wang/posts/aws-ses-production-access/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023091512.webp)\n\nSES 是亚马逊的邮件发送服务，但是开通这个服务，需要写申请邮件，说清楚用途。作者分享了自己的申请经验。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023091512.webp)\n\nSES 是亚马逊的邮件发送服务，但是开通这个服务，需要写申请邮件，说清楚用途。作者分享了自己的申请经验。\n\n",
     "category": "article",
     "originHref": "https://tiezhu.wang/posts/aws-ses-production-access/",
     "weekly": 272
@@ -1394,7 +1394,7 @@
   },
   {
     "title": "[我是怎样程序员入门的（中文）](https://www.zhihu.com/question/614706706/answer/3146012068)",
-    "content": "\n\n知乎的一个回答，作者记录大学四年，如何从完全不懂编程变成一个职业程序员。\n",
+    "content": "\n\n知乎的一个回答，作者记录大学四年，如何从完全不懂编程变成一个职业程序员。\n\n",
     "category": "article",
     "originHref": "https://www.zhihu.com/question/614706706/answer/3146012068",
     "weekly": 270
@@ -1450,7 +1450,7 @@
   },
   {
     "title": "[我在2023年买了一台 iPhone 5（中文）](https://sspai.com/post/81711)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023082804.webp)\n\n作者花了220元人民币，买了一台 iPhone 5 作为备用机，这台10年前的手机能满足基本需要吗？上图左是 iPhone 13 mini，右是 iPhone 5。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023082804.webp)\n\n作者花了220元人民币，买了一台 iPhone 5 作为备用机，这台10年前的手机能满足基本需要吗？上图左是 iPhone 13 mini，右是 iPhone 5。\n\n",
     "category": "article",
     "originHref": "https://sspai.com/post/81711",
     "weekly": 269
@@ -1604,7 +1604,7 @@
   },
   {
     "title": "[使用 CSS 生成页面截图（英文）](https://www.stefanjudis.com/a-firefox-only-minimap/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071802.webp)\n\n本文介绍一个只有 Firefox 支持的 CSS 属性，可以直接获取当前页面的截图。\n\n\n\n[手机 App 备案](https://news.cnstock.com/news,bwkx-202308-5103126.htm)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023080907.webp)\n\n工信部，从9月开始推行手机 App 备案（包括小程序），类似现有的网站备案。明年4月起，未备案的 App 不得提供接入。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071802.webp)\n\n本文介绍一个只有 Firefox 支持的 CSS 属性，可以直接获取当前页面的截图。\n\n\n\n[手机 App 备案](https://news.cnstock.com/news,bwkx-202308-5103126.htm)（中文）\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023080907.webp)\n\n工信部[宣布](https://www.gov.cn/zhengce/202308/content_6897437.htm)，从9月开始推行手机 App 备案（包括小程序），类似现有的网站备案。明年4月起，未备案的 App 不得提供接入。\n\n",
     "category": "article",
     "originHref": "https://www.stefanjudis.com/a-firefox-only-minimap/",
     "weekly": 266
@@ -1702,7 +1702,7 @@
   },
   {
     "title": "[容器编排器的自我介绍（中文）](https://mp.weixin.qq.com/s/F9g-r4yBYDZ1Q9z6uq5feQ)",
-    "content": "\n\n本文以第一人称介绍管理容器的三个容器编排器——Docker Compose、Swarm、Kubernetes。\n",
+    "content": "\n\n本文以第一人称介绍管理容器的三个容器编排器——Docker Compose、Swarm、Kubernetes。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/F9g-r4yBYDZ1Q9z6uq5feQ",
     "weekly": 265
@@ -1723,7 +1723,7 @@
   },
   {
     "title": "[Dan Abramov 宣布离开 Meta 团队（英文）](https://www.reddit.com/r/reactjs/comments/154trk7/comment/jsrbysw/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072706.webp)\n\n著名前端程序员 Dan Abramov 写了15条系列推文，解释他为什么从 Meta 辞职，离开 React 团队。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072706.webp)\n\n著名前端程序员 Dan Abramov 写了15条系列推文，解释他为什么从 Meta 辞职，离开 React 团队。\n\n",
     "category": "article",
     "originHref": "https://www.reddit.com/r/reactjs/comments/154trk7/comment/jsrbysw/",
     "weekly": 264
@@ -1821,7 +1821,7 @@
   },
   {
     "title": "[socket 到底是个啥（中文）](https://mp.weixin.qq.com/s/Ebvjy132eRDOmcIL5cmxJw)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071902.webp)\n\nsocket 的概念往往是常见面试问题，作者介绍了 socket 的使用场景和底层实现。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071902.webp)\n\nsocket 的概念往往是常见面试问题，作者介绍了 socket 的使用场景和底层实现。\n\n\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/Ebvjy132eRDOmcIL5cmxJw",
     "weekly": 262
@@ -1849,21 +1849,21 @@
   },
   {
     "title": "[全方位对比 Postgres 和 MySQL (2023 版)（中文）](https://mp.weixin.qq.com/s/xf7qb4oAVHyi4_U32FSKPA)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071318.webp)\n\nPostgres 和 MySQL 是两大最主流的关系型数据库，本文对它们进行全方位的比较。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071318.webp)\n\nPostgres 和 MySQL 是两大最主流的关系型数据库，本文对它们进行全方位的比较。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/xf7qb4oAVHyi4_U32FSKPA",
     "weekly": 262
   },
   {
     "title": "[如何破解滑动验证码？（中文）](https://mp.weixin.qq.com/s/iK_JkVRrh5vIRBjnQbDOyw)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071316.webp)\n\n本文介绍了图片滑动验证码的实现原理和流程分析，以及如何破解。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071316.webp)\n\n本文介绍了图片滑动验证码的实现原理和流程分析，以及如何破解。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/iK_JkVRrh5vIRBjnQbDOyw",
     "weekly": 262
   },
   {
     "title": "[优化人工智能生成的二维码（英文）](https://antfu.me/posts/ai-qrcode-refine)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071313.webp)\n\n作者尝试让二维码，尽可能像人类可以看懂的图片，同时机器还能扫描。上图其实是一个二维码，本文记录了优化过程。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071313.webp)\n\n作者尝试让二维码，尽可能像人类可以看懂的图片，同时机器还能扫描。上图其实是一个二维码，本文记录了优化过程。\n\n",
     "category": "article",
     "originHref": "https://antfu.me/posts/ai-qrcode-refine",
     "weekly": 262
@@ -1912,7 +1912,7 @@
   },
   {
     "title": "[个人网站集成 GitHub issue 评论功能（中文）](https://richard-docs.netlify.app/blogs/b-027)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070405.webp)\n\n作者采用 VitePress 搭建博客，本文介绍他怎么引入 GitHub issue 作为网站的评论功能。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070405.webp)\n\n作者采用 VitePress 搭建博客，本文介绍他怎么引入 GitHub issue 作为网站的评论功能。\n\n",
     "category": "article",
     "originHref": "https://richard-docs.netlify.app/blogs/b-027",
     "weekly": 261
@@ -1954,7 +1954,7 @@
   },
   {
     "title": "[基于机器学习实现的 Web 端实时防挡脸弹幕（中文）](https://hughfenghen.github.io/fe/body-mask-danmaku/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023062802.webp)\n\n本文介绍网页播放视频时，如何让弹幕不遮挡人脸。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023062802.webp)\n\n本文介绍网页播放视频时，如何让弹幕不遮挡人脸。\n\n",
     "category": "article",
     "originHref": "https://hughfenghen.github.io/fe/body-mask-danmaku/",
     "weekly": 260
@@ -2017,7 +2017,7 @@
   },
   {
     "title": "[高效计算三角函数的 CORDIC 算法（中文）](http://www.longluo.me/blog/2023/06/07/CORDIC-algorithm/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023061508.webp)\n\n本文介绍一种简化的三角函数计算方法，不必使用泰勒公式逼近。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023061508.webp)\n\n本文介绍一种简化的三角函数计算方法，不必使用泰勒公式逼近。\n\n",
     "category": "article",
     "originHref": "http://www.longluo.me/blog/2023/06/07/CORDIC-algorithm/",
     "weekly": 259
@@ -2045,7 +2045,7 @@
   },
   {
     "title": "[如何让二维码变成图像（英文）](https://stable-diffusion-art.com/qr-code/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023061301.webp)\n\n本文是一篇教程，教你如何使用 Stable Diffusion，将二维码变成一幅图像。另有一篇。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202306/bg2023061301.webp)\n\n本文是一篇教程，教你如何使用 Stable Diffusion，将二维码变成一幅图像。另有一篇[类似的教程](https://old.reddit.com/r/StableDiffusion/comments/1436nqv/my_attempt_on_qr_code/)。\n\n",
     "category": "article",
     "originHref": "https://stable-diffusion-art.com/qr-code/",
     "weekly": 259
@@ -2185,14 +2185,14 @@
   },
   {
     "title": "[我发现的一个支付宝漏洞（中文）](https://zhuanlan.zhihu.com/p/625230704)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052517.webp)\n\n作者先在“闲鱼”购物，再在支付宝付款，结果被骗。他发现骗子钻了漏洞，通过代码让交易自动确认“收货”。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052517.webp)\n\n作者先在“闲鱼”购物，再在支付宝付款，结果被骗。他发现骗子钻了漏洞，通过代码让交易自动确认“收货”。\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/625230704",
     "weekly": 256
   },
   {
     "title": "[我的线上立案遭遇（中文）](https://mp.weixin.qq.com/s/yxiKVuSSZD16id698gIvKA)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052518.webp)\n\n作者跟银行发生纠纷，准备线上向法院申请立案，但是法院的立案系统很难用，一连操作了四次还没成功。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052518.webp)\n\n作者跟银行发生纠纷，准备线上向法院申请立案，但是法院的立案系统很难用，一连操作了四次还没成功。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/yxiKVuSSZD16id698gIvKA",
     "weekly": 256
@@ -2220,7 +2220,7 @@
   },
   {
     "title": "[别再说 C/C++（英文）](https://brycevandegrift.xyz/blog/stop-saying-c-and-c++/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052304.webp)\n\n很多人认为，C 和 C++ 是两种很相似的语言，前者是后者的子集。本文提出这种看法不对，它们非常不一样。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023052304.webp)\n\n很多人认为，C 和 C++ 是两种很相似的语言，前者是后者的子集。本文提出这种看法不对，它们非常不一样。\n\n\n\n",
     "category": "article",
     "originHref": "https://brycevandegrift.xyz/blog/stop-saying-c-and-c++/",
     "weekly": 255
@@ -2290,7 +2290,7 @@
   },
   {
     "title": "[Redis 与作者 antirez 的故事（繁体中文）](https://blog.brachiosoft.com/redis)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023051101.webp)\n\nRedis 是最常用的键值对数据库，它是意大利程序员 antirez 的作品。本文介绍他的故事，antirez 本人也看到了这篇，并给出了。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023051101.webp)\n\nRedis 是最常用的键值对数据库，它是意大利程序员 antirez 的作品。本文介绍他的故事，antirez 本人也看到了这篇，并给出了[一些订正](https://news.ycombinator.com/item?id=35893871)。\n\n",
     "category": "article",
     "originHref": "https://blog.brachiosoft.com/redis",
     "weekly": 254
@@ -2339,7 +2339,7 @@
   },
   {
     "title": "[我的开源经历（中文）](https://www.v2ex.com/t/934564)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023050401.webp)\n\n作者分享自己的经历，开发一个图片编辑的网页应用。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202305/bg2023050401.webp)\n\n作者分享自己的经历，开发一个图片编辑的网页应用。\n\n",
     "category": "article",
     "originHref": "https://www.v2ex.com/t/934564",
     "weekly": 253
@@ -2381,7 +2381,7 @@
   },
   {
     "title": "[编程语言的错误处理机制（英文）](https://www.amazingcto.com/best-way-to-handle-errors-for-a-programming-language/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023041305.webp)\n\n本文讨论不同的语言如何处理报错，比如 Java 会抛出异常，而 Go 将错误赋值给一个变量。\n\n这里还有一篇，也值得参考。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023041305.webp)\n\n本文讨论不同的语言如何处理报错，比如 Java 会抛出异常，而 Go 将错误赋值给一个变量。\n\n这里还有一篇[相同主题的](https://andreabergia.com/blog/2023/05/error-handling-patterns/)，也值得参考。\n\n",
     "category": "article",
     "originHref": "https://www.amazingcto.com/best-way-to-handle-errors-for-a-programming-language/",
     "weekly": 253
@@ -2409,7 +2409,7 @@
   },
   {
     "title": "[2023 Web Components 现状（中文）](https://blog.5bang.top/2023/04/21/2023_state_of_web_component)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023042705.webp)\n\n本文讨论了 Web Components 当前的标准现状，以及对未来的展望。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023042705.webp)\n\n本文讨论了 Web Components 当前的标准现状，以及对未来的展望。\n\n",
     "category": "article",
     "originHref": "https://blog.5bang.top/2023/04/21/2023_state_of_web_component",
     "weekly": 252
@@ -2437,7 +2437,7 @@
   },
   {
     "title": "[我们在2022年的云支出（英文）](https://dev.37signals.com/our-cloud-spend-in-2022/)",
-    "content": "\n\n37signals 详细披露了，2022年在亚马逊云服务 AWS 的支出。\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023040118.webp)\n\n他们一共花了320万美元，平均每个月26万+美元，仅仅 S3 存储就占了30%。这让该公司不堪负荷，最终决定。\n\n",
+    "content": "\n\n37signals 详细披露了，2022年在亚马逊云服务 AWS 的支出。\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023040118.webp)\n\n他们一共花了320万美元，平均每个月26万+美元，仅仅 S3 存储就占了30%。这让该公司不堪负荷，最终决定[告别云服务](https://world.hey.com/dhh/why-we-re-leaving-the-cloud-654b47e0)。\n\n",
     "category": "article",
     "originHref": "https://dev.37signals.com/our-cloud-spend-in-2022/",
     "weekly": 252
@@ -2458,7 +2458,7 @@
   },
   {
     "title": "[如何在 AWS 租用 GPU（中文）](https://mp.weixin.qq.com/s/47DW9OBNOS0_fUxDAicARQ)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023041801.webp)\n\n自己玩 AI 模型，算力和资金是一个大问题，一般都要租用云服务商的 GPU。作者尝试了各家服务商，这是在 AWS 租 GPU 的详细流程。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023041801.webp)\n\n自己玩 AI 模型，算力和资金是一个大问题，一般都要租用云服务商的 GPU。作者尝试了各家服务商，这是在 AWS 租 GPU 的详细流程。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/47DW9OBNOS0_fUxDAicARQ",
     "weekly": 251
@@ -2507,7 +2507,7 @@
   },
   {
     "title": "[prompt 写作指南（英文）](https://boostpixels.com/guide)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023040903.webp)\n\n生成式 AI 的 prompt（提示）怎么写？本文是一篇教程，一步步用示例教你。\n\n它针对的是 BoostPixels 引擎，但是很有参考价值。本文是详细版，还有一篇，可以先看后者。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202304/bg2023040903.webp)\n\n生成式 AI 的 prompt（提示）怎么写？本文是一篇教程，一步步用示例教你。\n\n它针对的是 BoostPixels 引擎，但是很有参考价值。本文是详细版，还有一篇[简明版](https://boostpixels.com/short-guide)，可以先看后者。\n\n",
     "category": "article",
     "originHref": "https://boostpixels.com/guide",
     "weekly": 250
@@ -2570,7 +2570,7 @@
   },
   {
     "title": "[月球的阴影（中文）](https://1link.fun/blog/fiction-novel-by-chat-gpt/)",
-    "content": "\n\n作者给了一个开头，让 ChatGPT 接着写完。\n> “在2023年的一个晚上，一个程序员刚刚完成他的工作，准备像往常一样回家，一切都和往常一样，街道，公司，社交网络，公共汽车……他突然注意到，月亮看起来并不像往常一样，它比以前更大了。”\n\n",
+    "content": "\n\n作者给了一个开头，让 ChatGPT 接着写完。\n\n> “在2023年的一个晚上，一个程序员刚刚完成他的工作，准备像往常一样回家，一切都和往常一样，街道，公司，社交网络，公共汽车……他突然注意到，月亮看起来并不像往常一样，它比以前更大了。”\n\n",
     "category": "article",
     "originHref": "https://1link.fun/blog/fiction-novel-by-chat-gpt/",
     "weekly": 249
@@ -2675,7 +2675,7 @@
   },
   {
     "title": "[基于 GPT3.5 搭建定制化知识库（中文）](https://mp.weixin.qq.com/s?__biz=MzIyNDAzMzYxNQ==&mid=2652028778&idx=1&sn=985a386f915dea0d4dc97186af7c50b6&srcid=0316LqkslRQXM1UyluqQFTxe)",
-    "content": "\n\n作者的一个小实验，通过 chatpdf.com 这个网站，将某个领域的文档（比如这份周刊）提供给 AI 训练，就会得到一个基于这些材料的问答引擎。\n",
+    "content": "\n\n作者的一个小实验，通过 chatpdf.com 这个网站，将某个领域的文档（比如这份周刊）提供给 AI 训练，就会得到一个基于这些材料的问答引擎。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s?__biz=MzIyNDAzMzYxNQ==&mid=2652028778&idx=1&sn=985a386f915dea0d4dc97186af7c50b6&srcid=0316LqkslRQXM1UyluqQFTxe",
     "weekly": 247
@@ -2773,7 +2773,7 @@
   },
   {
     "title": "[ChatGPT 发明的游戏（英文）](https://puzzledpenguin.substack.com/p/chatgpt-invented-its-own-puzzle-game)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023030710.webp)\n\n作者让 ChatGPT 发明一个小游戏，它不仅做到了，还给出了，直接可以玩。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023030710.webp)\n\n作者让 ChatGPT 发明一个小游戏，它不仅做到了，还给出了[网页实现](https://sumplete.com/)，直接可以玩。\n\n",
     "category": "article",
     "originHref": "https://puzzledpenguin.substack.com/p/chatgpt-invented-its-own-puzzle-game",
     "weekly": 245
@@ -2864,7 +2864,7 @@
   },
   {
     "title": "[使用 ClickHouse 查询 GitHub（英文）](https://til.simonwillison.net/clickhouse/github-explorer)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202301/bg2023010201.webp)\n\nClickHouse 是著名的数据仓库软件，它的官网有一个，可以在线查询2011年以来所有的 GitHub 事件，总共31亿条记录。本文演示怎么使用这个数据库。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202301/bg2023010201.webp)\n\nClickHouse 是著名的数据仓库软件，它的官网有一个[练习场](https://play.clickhouse.com/play?user=play)，可以在线查询2011年以来所有的 GitHub 事件，总共31亿条记录。本文演示怎么使用这个数据库。\n\n",
     "category": "article",
     "originHref": "https://til.simonwillison.net/clickhouse/github-explorer",
     "weekly": 244
@@ -2892,7 +2892,7 @@
   },
   {
     "title": "[我用 ChatGPT 发现代码 Bug（中文）](https://www.wdbyte.com/java/chatgpt-files-list.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023022003.webp)\n\n作者的一段 Java 代码存在一个 Bug，他让 ChatGPT 帮他检查，后者不仅发现了这个 Bug，还提出了修改建议。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023022003.webp)\n\n作者的一段 Java 代码存在一个 Bug，他让 ChatGPT 帮他检查，后者不仅发现了这个 Bug，还提出了修改建议。\n\n",
     "category": "article",
     "originHref": "https://www.wdbyte.com/java/chatgpt-files-list.html",
     "weekly": 243
@@ -3004,7 +3004,7 @@
   },
   {
     "title": "[Node.js 脚本登录服务器（中文）](https://github.com/CatsAndMice/blog/issues/42)",
-    "content": "\n\n作者介绍如何使用 ssh2.js 编写脚本，自动登录服务器，检查服务器状况。\n",
+    "content": "\n\n作者介绍如何使用 ssh2.js 编写脚本，自动登录服务器，检查服务器状况。\n\n",
     "category": "article",
     "originHref": "https://github.com/CatsAndMice/blog/issues/42",
     "weekly": 241
@@ -3284,7 +3284,7 @@
   },
   {
     "title": "[三分钟读懂核聚变（中文）](https://mp.weixin.qq.com/s/44H689gZQ-26ZbzC9D-RTg)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202212/bg2022122110.webp)\n\n美国能源部最近宣布，实现了可控核聚变的“净能量增益”。本文通俗解释了这是什么意思。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202212/bg2022122110.webp)\n\n美国能源部最近宣布，实现了可控核聚变的“净能量增益”。本文通俗解释了这是什么意思。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/44H689gZQ-26ZbzC9D-RTg",
     "weekly": 236
@@ -3375,7 +3375,7 @@
   },
   {
     "title": "[traceroute 命令查看简历（英文）](https://web.archive.org/web/20220903153142/https://cv6.poinsignon.org/)",
-    "content": "\n\ntraceroute 命令用来查看网络请求经过的每一个路由节点。一个程序员灵机一动，买下一个 IPv6 的区段，使用 traceroute 命令就能查看他的简历。原理查看。\n\n",
+    "content": "\n\ntraceroute 命令用来查看网络请求经过的每一个路由节点。一个程序员灵机一动，买下一个 IPv6 的区段，使用 traceroute 命令就能查看他的简历。原理查看[这篇](https://blog.benjojo.co.uk/post/traceroute-haikus)。\n\n",
     "category": "article",
     "originHref": "https://web.archive.org/web/20220903153142/https://cv6.poinsignon.org/",
     "weekly": 235
@@ -3410,7 +3410,7 @@
   },
   {
     "title": "[树莓派搭建一个自己的音乐服务器（中文）](https://www.wdbyte.com/music-server.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202212/bg2022120807.webp)\n\n很多音乐服务现在都是收费的，作者使用树莓派，搭建一个自己的音乐服务器，实现随时随地的听歌自由。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202212/bg2022120807.webp)\n\n很多音乐服务现在都是收费的，作者使用树莓派，搭建一个自己的音乐服务器，实现随时随地的听歌自由。\n\n",
     "category": "article",
     "originHref": "https://www.wdbyte.com/music-server.html",
     "weekly": 234
@@ -3445,7 +3445,7 @@
   },
   {
     "title": "[开源云原生平台 KubeSphere 与 Rainbond 对比（中文）](https://mp.weixin.qq.com/s/VIxJNlJHQu91T7ASXg7sAQ)",
-    "content": "\n\n作者需要找一个功能完善的云原生应用平台，经过自己筛选和朋友推荐，剩下 KubeSphere 和 Rainbond 这两个产品。\n\n\n",
+    "content": "\n\n作者需要找一个功能完善的云原生应用平台，经过自己筛选和朋友推荐，剩下 KubeSphere 和 Rainbond 这两个产品。\n\n\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/VIxJNlJHQu91T7ASXg7sAQ",
     "weekly": 233
@@ -3578,7 +3578,7 @@
   },
   {
     "title": "[马斯克与员工争论 RPC（中文）](https://www.toutiao.com/article/7166200511144821261/)",
-    "content": "\n\n马斯克公开说，推特速度慢是因为有1000多个 RPC 请求。一个推特员工回复说，你错了。两人就争论起来了。\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022111605.webp)\n\n本文（还有分析马斯克说得到底对不对。不幸的是，马斯克已经把那位与他争论的工程师解雇了。\n\n",
+    "content": "\n\n马斯克公开说，推特速度慢是因为有1000多个 RPC 请求。一个推特员工回复说，你错了。两人就争论起来了。\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022111605.webp)\n\n本文（还有[另一篇](https://www.oschina.net/news/217749/musk-confuses-how-graphql-works)）分析马斯克说得到底对不对。不幸的是，马斯克已经把那位与他争论的工程师解雇了。\n\n",
     "category": "article",
     "originHref": "https://www.toutiao.com/article/7166200511144821261/",
     "weekly": 231
@@ -3641,7 +3641,7 @@
   },
   {
     "title": "[26层的养猪大楼（中文）](https://www.jiemian.com/article/8327167.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022110804.webp)\n\n湖北省鄂州市正在建造一栋26层的“国内最高、单体面积最大的养猪大楼”，本文介绍这栋楼的情况，高层建筑如何养猪。另外也可以参考。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022110804.webp)\n\n湖北省鄂州市正在建造一栋26层的“国内最高、单体面积最大的养猪大楼”，本文介绍这栋楼的情况，高层建筑如何养猪。另外[一篇报道](http://hb.sina.com.cn/news/j/2022-10-21/detail-imqmmthc1616038.shtml)也可以参考。\n\n",
     "category": "article",
     "originHref": "https://www.jiemian.com/article/8327167.html",
     "weekly": 230
@@ -3669,7 +3669,7 @@
   },
   {
     "title": "[测试 Windows Dev Kit 2023（英文）](https://www.jeffgeerling.com/blog/2022/testing-microsofts-windows-dev-kit-2023)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022110511.webp)\n\n微软最近发布了一款 ARM 主机，叫做 Windows Dev Kit 2023，配置很有吸引力，售价599美元，专门供开发者测试 Windows 的 ARM 版本。另有一篇。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202211/bg2022110511.webp)\n\n微软最近发布了一款 ARM 主机，叫做 Windows Dev Kit 2023，配置很有吸引力，售价599美元，专门供开发者测试 Windows 的 ARM 版本。另有一篇[中文评测](https://zhuanlan.zhihu.com/p/580147966)。\n\n",
     "category": "article",
     "originHref": "https://www.jeffgeerling.com/blog/2022/testing-microsofts-windows-dev-kit-2023",
     "weekly": 230
@@ -3753,14 +3753,14 @@
   },
   {
     "title": "[Pico 4 真实体验（视频）](https://www.bilibili.com/video/BV1ZN4y1w7Br/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102007.webp)\n\n字节新出的 VR 头盔 Pico 4，规格很诱人，作者亲身体验后，却发现存在诸多问题。这个是 B 站视频，另有。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102007.webp)\n\n字节新出的 VR 头盔 Pico 4，规格很诱人，作者亲身体验后，却发现存在诸多问题。这个是 B 站视频，另有 [Youtube 网址](https://www.youtube.com/watch?v=9JcNZHrVO8w)。\n\n",
     "category": "article",
     "originHref": "https://www.bilibili.com/video/BV1ZN4y1w7Br/",
     "weekly": 228
   },
   {
     "title": "[JavaScript 的月份为什么从 0 开始（英文）](https://www.jefftk.com/p/history-of-zero-based-months)",
-    "content": "\n\nJavaScript 的月份是从0开始计数。本文追溯这种做法的源头，谁第一个用0代表1月份。另可参考这篇。\n\n",
+    "content": "\n\nJavaScript 的月份是从0开始计数。本文追溯这种做法的源头，谁第一个用0代表1月份。另可参考这篇[长推文](https://twitter.com/hillelogram/status/1329228419628998665)。\n\n",
     "category": "article",
     "originHref": "https://www.jefftk.com/p/history-of-zero-based-months",
     "weekly": 228
@@ -3816,7 +3816,7 @@
   },
   {
     "title": "[美国的对华半导体禁令（英文）](https://noahpinion.substack.com/p/biden-declares-economic-war-on-the)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022101709.webp)\n\n10月10日，拜登政府发布了空前严厉的对华半导体禁令，其中有一条甚至禁止美国公民在中国半导体公司任职。这实质上已经不是贸易禁令了，而是开始扼杀中国的半导体工业。\n\n作者是一个美国分析师，站在美国政府的立场，分析为什么他认为这个政策可以打击中国。从这篇，可以了解美国高层的想法。这里还有另一篇相关的。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022101709.webp)\n\n10月10日，拜登政府发布了空前严厉的对华半导体禁令，其中有一条甚至禁止美国公民在中国半导体公司任职。这实质上已经不是贸易禁令了，而是开始扼杀中国的半导体工业。\n\n作者是一个美国分析师，站在美国政府的立场，分析为什么他认为这个政策可以打击中国。从这篇，可以了解美国高层的想法。这里还有另一篇相关的[分析](https://www.csis.org/analysis/choking-chinas-access-future-ai)。\n\n",
     "category": "article",
     "originHref": "https://noahpinion.substack.com/p/biden-declares-economic-war-on-the",
     "weekly": 227
@@ -4026,14 +4026,14 @@
   },
   {
     "title": "[提问的智慧中国版（中文）](https://mp.weixin.qq.com/s/q461so9lWk4FKJGZ-p7Vcg)",
-    "content": "\n\n作者对英文原版的[《提问的智慧》](http://www.catb.org/~esr/faqs/smart-questions.html)做了大量的删减和本土化改造，介绍如何在网上求助，更贴近中国程序员的实际情况。\n",
+    "content": "\n\n作者对英文原版的[《提问的智慧》](http://www.catb.org/~esr/faqs/smart-questions.html)做了大量的删减和本土化改造，介绍如何在网上求助，更贴近中国程序员的实际情况。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/q461so9lWk4FKJGZ-p7Vcg",
     "weekly": 223
   },
   {
     "title": "[我如何实现一个 CDN（中文）](https://www.v2ex.com/t/877718)",
-    "content": "\n\n为了降低流量费，作者找了一些流量便宜的机房，然后自己写了一个调度服务器，架设了 CDN。\n",
+    "content": "\n\n为了降低流量费，作者找了一些流量便宜的机房，然后自己写了一个调度服务器，架设了 CDN。\n\n",
     "category": "article",
     "originHref": "https://www.v2ex.com/t/877718",
     "weekly": 223
@@ -4229,14 +4229,14 @@
   },
   {
     "title": "[103状态码：加载提示（英文）](https://developer.chrome.com/blog/early-hints/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022082002.webp)\n\nChrome 浏览器新增了 HTTP 协议的103状态码，表示“加载提示”（early hints），即提示浏览器可以预加载某个资源，用来取代已经下线的 HTTP/2 的功能。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022082002.webp)\n\nChrome 浏览器新增了 HTTP 协议的103状态码，表示“加载提示”（early hints），即提示浏览器可以预加载某个资源，用来取代已经下线的 HTTP/2 的[服务器推送](https://developer.chrome.com/blog/removing-push/)功能。\n\n\n\n",
     "category": "article",
     "originHref": "https://developer.chrome.com/blog/early-hints/",
     "weekly": 219
   },
   {
     "title": "[无人驾驶安全员的一天（中文）](https://oversea.huanqiu.com/article/4909nNA0m09)",
-    "content": "\n\n去年，百度获得许可，在首钢园开始运营无人驾驶出租车。每辆车配备一个安全员，坐在驾驶位或副驾驶位，监督车辆行驶。\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022081605.webp)\n\n本文是对一位安全员的采访，他整天坐在车上，看着车自动开是什么感受。有一段很有趣，他说坐惯了无人驾驶以后，回到自己车上，就很难适应了。这篇是节选的中文翻译，内容很少，可以参考。\n\n",
+    "content": "\n\n去年，百度获得许可，在首钢园开始运营无人驾驶出租车。每辆车配备一个安全员，坐在驾驶位或副驾驶位，监督车辆行驶。\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022081605.webp)\n\n本文是对一位安全员的采访，他整天坐在车上，看着车自动开是什么感受。有一段很有趣，他说坐惯了无人驾驶以后，回到自己车上，就很难适应了。这篇是节选的中文翻译，内容很少，可以参考[英文原版](https://www.technologyreview.com/2022/07/27/1056472/life-of-chinese-robotaxi-driver/)。\n\n",
     "category": "article",
     "originHref": "https://oversea.huanqiu.com/article/4909nNA0m09",
     "weekly": 219
@@ -4306,7 +4306,7 @@
   },
   {
     "title": "[10个实用写作技巧（中文）](https://threadreaderapp.com/thread/1554667451203276801.html)",
-    "content": "\n\n作者学到的10个写好的实用技巧。原文是，属于对英文资料的一些总结。\n",
+    "content": "\n\n作者学到的10个写好的实用技巧。原文是[推特长推](https://twitter.com/coolXiao/status/1554667451203276801)，属于对英文资料的一些总结。\n\n",
     "category": "article",
     "originHref": "https://threadreaderapp.com/thread/1554667451203276801.html",
     "weekly": 218
@@ -4369,14 +4369,14 @@
   },
   {
     "title": "[SQL 背后的故事（中文）](https://liyafu.com/2022-07-31-sqlite-untold-story/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022080401.webp)\n\nSQLite 作者的的中文整理，谈了 SQLite 是怎么来的，以及为什么变成了地球上最严格测试的软件：每个新版本有10亿个测试，要跑好几天。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022080401.webp)\n\nSQLite 作者的[播客访谈](https://corecursive.com/066-sqlite-with-richard-hipp/)的中文整理，谈了 SQLite 是怎么来的，以及为什么变成了地球上最严格测试的软件：每个新版本有10亿个测试，要跑好几天。\n\n",
     "category": "article",
     "originHref": "https://liyafu.com/2022-07-31-sqlite-untold-story/",
     "weekly": 217
   },
   {
     "title": "[如何维护一个开源项目（中文）](https://xuanwo.io/reports/2022-30/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022080402.webp)\n\n如果你要开源一个项目，要注意哪些事项，作者谈谈想法。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202208/bg2022080402.webp)\n\n如果你要开源一个项目，要注意哪些事项，作者谈谈想法。\n\n",
     "category": "article",
     "originHref": "https://xuanwo.io/reports/2022-30/",
     "weekly": 217
@@ -4390,7 +4390,7 @@
   },
   {
     "title": "[使用 Cloudflare Tunnel 公开 Web 服务（英文）](https://erisa.dev/exposing-a-web-service-with-cloudflare-tunnel/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021004.webp)\n\n本文是一篇教程，介绍如何使用 Cloudflare Tunnel 这个服务，将内网的 Web 服务放到公网上。这里还有一篇外网 SSH 连接内网机器的。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021004.webp)\n\n本文是一篇教程，介绍如何使用 Cloudflare Tunnel 这个服务，将内网的 Web 服务放到公网上。这里还有一篇外网 SSH 连接内网机器的[教程](https://orth.uk/ssh-over-cloudflare/)。\n\n",
     "category": "article",
     "originHref": "https://erisa.dev/exposing-a-web-service-with-cloudflare-tunnel/",
     "weekly": 217
@@ -4418,7 +4418,7 @@
   },
   {
     "title": "[谷歌等科技公司要求取消闰秒（中文）](https://www.cnbeta.com/articles/tech/1296709.htm)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072609.webp)\n\n某些年份会增加或减少一秒钟，这就叫闰秒。这对计算机系统造成很大困扰，意味着一分钟可能有61秒或59秒。因此，谷歌、微软、Meta和亚马逊联合发声明，建议取消闰秒，参见。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072609.webp)\n\n某些年份会增加或减少一秒钟，这就叫闰秒。这对计算机系统造成很大困扰，意味着一分钟可能有61秒或59秒。因此，谷歌、微软、Meta和亚马逊联合发声明，建议取消闰秒，参见 [Meta 的原文](https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/)。\n\n",
     "category": "article",
     "originHref": "https://www.cnbeta.com/articles/tech/1296709.htm",
     "weekly": 216
@@ -4460,14 +4460,14 @@
   },
   {
     "title": "[B 站2021年7月13日事故剖析（中文）](https://www.bilibili.com/read/cv17521097)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072004.webp)\n\nB 站官方回顾和剖析了去年7月13日停服的原因和处理过程。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072004.webp)\n\nB 站官方回顾和剖析了去年7月13日停服的原因和处理过程。\n\n",
     "category": "article",
     "originHref": "https://www.bilibili.com/read/cv17521097",
     "weekly": 215
   },
   {
     "title": "[国家植物园巨魔芋开花（中文）](http://www.bjnews.com.cn/detail/165821990514497.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072106.webp)\n\n巨魔芋是世界珍稀濒危植物，也是世界最臭的植物，很难得开花，人工环境下全世界总共只发生100多次。\n\n7月19日，北京国家植物园的温室内一株巨魔芋开花了，而且它旁边那朵可能马上也要开了，这种群体开花，属于世界首次。这里还有。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072106.webp)\n\n巨魔芋是世界珍稀濒危植物，也是世界最臭的植物，很难得开花，人工环境下全世界总共只发生100多次。\n\n7月19日，北京国家植物园的温室内一株巨魔芋开花了，而且它旁边那朵可能马上也要开了，这种群体开花，属于世界首次。这里还有[图集](https://www.bjnews.com.cn/detail/165823103314665.html)。\n\n",
     "category": "article",
     "originHref": "http://www.bjnews.com.cn/detail/165821990514497.html",
     "weekly": 215
@@ -4481,7 +4481,7 @@
   },
   {
     "title": "[5 种限流算法，7 种限流方式（中文）](https://www.wdbyte.com/java/rate-limiter.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072006.webp)\n\n本文总结了 Java 服务器端挡住突发流量的一些限流措施。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022072006.webp)\n\n本文总结了 Java 服务器端挡住突发流量的一些限流措施。\n\n",
     "category": "article",
     "originHref": "https://www.wdbyte.com/java/rate-limiter.html",
     "weekly": 215
@@ -4530,7 +4530,7 @@
   },
   {
     "title": "[韦伯望远镜与哈勃望远镜的图像比较](https://johnedchristensen.github.io/WebbCompare/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071304.jpg)\n\n本周，美国宇航局发布了韦伯望远镜拍摄的第一批照片。作者将这些照片与30年前发射的哈勃望远镜做了比较，看看影像改进了多少。这里还有一篇详细的。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071304.jpg)\n\n本周，美国宇航局发布了韦伯望远镜拍摄的第一批照片。作者将这些照片与30年前发射的哈勃望远镜做了比较，看看影像改进了多少。这里还有一篇详细的[韦伯望远镜介绍](https://weibo.com/ttarticle/p/show?id=2309404790688712622283)。\n\n",
     "category": "article",
     "originHref": "https://johnedchristensen.github.io/WebbCompare/",
     "weekly": 214
@@ -4551,7 +4551,7 @@
   },
   {
     "title": "[如何为静态网页添加 OAuth 登录（英文）](https://abyteofcoding.com/blog/oauth-with-cloudflare-workers-on-a-statically-generated-site/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021120809.webp)\n\n本文使用 Cloudflare 的云函数，演示如何没有后端服务器，也能实现 OAuth 登录，并附有。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021120809.webp)\n\n本文使用 Cloudflare 的云函数，演示如何没有后端服务器，也能实现 OAuth 登录，并附有[示例库](https://github.com/vonadz/newsletter-oauth-registration-cfw)。\n\n",
     "category": "article",
     "originHref": "https://abyteofcoding.com/blog/oauth-with-cloudflare-workers-on-a-statically-generated-site/",
     "weekly": 214
@@ -4586,7 +4586,7 @@
   },
   {
     "title": "[零基础开发一个 Web/Hybird 项目（中文）](https://imf.ms/web/2022/07/05/my-first-web-hybird-project-experience/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070608.webp)\n\n作者零基础开发了一个完整的 Web/Hybird 的项目，支持浏览器端、Android 端、iOS 端，这篇长文记录了所有的学习和开发过程。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070608.webp)\n\n作者零基础开发了一个完整的 Web/Hybird 的项目，支持浏览器端、Android 端、iOS 端，这篇长文记录了所有的学习和开发过程。\n\n",
     "category": "article",
     "originHref": "https://imf.ms/web/2022/07/05/my-first-web-hybird-project-experience/",
     "weekly": 213
@@ -4754,7 +4754,7 @@
   },
   {
     "title": "[我如何搭建家用 NAS（中文）](https://icloudnative.io/posts/budget-nas/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022060906.webp)\n\n本文详细记录了作者选购硬件、安装软件，搭建一台 22TB 的家用 NAS （网络存储）服务器的过程，可以当作自己架设 NAS 的参考。这里是中文翻译，另有。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202206/bg2022060906.webp)\n\n本文详细记录了作者选购硬件、安装软件，搭建一台 22TB 的家用 NAS （网络存储）服务器的过程，可以当作自己架设 NAS 的参考。这里是中文翻译，另有[英文原文](https://mtlynch.io/budget-nas/)。\n\n",
     "category": "article",
     "originHref": "https://icloudnative.io/posts/budget-nas/",
     "weekly": 210
@@ -4817,7 +4817,7 @@
   },
   {
     "title": "[三分钟读懂 NFT 和数字藏品（中文）](https://mp.weixin.qq.com/s/IwbB4ZwPn-8xSHlAY9EIRA)",
-    "content": "\n\n国内很多公司都在尝试发行数字藏品（NFT），本文使用通俗的语言介绍，到底什么是数字藏品，写得不错。\n",
+    "content": "\n\n国内很多公司都在尝试发行数字藏品（NFT），本文使用通俗的语言介绍，到底什么是数字藏品，写得不错。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/IwbB4ZwPn-8xSHlAY9EIRA",
     "weekly": 209
@@ -5020,7 +5020,7 @@
   },
   {
     "title": "[用 gdb 学 C 语言（中文）](https://zhuanlan.zhihu.com/p/483372519)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022051202.webp)\n\n本文展示 gdb 这一学习 C 语言的强大工具，介绍常用的 gdb 命令，演示如何用 gdb 来理解指针和数组的区别。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022051202.webp)\n\n本文展示 gdb 这一学习 C 语言的强大工具，介绍常用的 gdb 命令，演示如何用 gdb 来理解指针和数组的区别。\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/483372519",
     "weekly": 206
@@ -5104,7 +5104,7 @@
   },
   {
     "title": "[HTTPie 是如何丢失5.4万 Star（中文）](https://icloudnative.io/posts/how-we-lost-54k-github-stars/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/220204/bg2022042017.webp)\n\nHTTPie 是一个非常知名的开源项目，在 GitHub 有5.4万颗星。项目管理员不小心将其设为私密项目，导致所有 star 和 watch 清零，并且无法恢复。HTTPie 官方写了，回顾整件事，总结教训，本文是中文翻译。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/220204/bg2022042017.webp)\n\nHTTPie 是一个非常知名的开源项目，在 GitHub 有5.4万颗星。项目管理员不小心将其设为私密项目，导致所有 star 和 watch 清零，并且无法恢复。HTTPie 官方写了[一篇长文](https://httpie.io/blog/stardust)，回顾整件事，总结教训，本文是中文翻译。\n\n",
     "category": "article",
     "originHref": "https://icloudnative.io/posts/how-we-lost-54k-github-stars/",
     "weekly": 204
@@ -5209,7 +5209,7 @@
   },
   {
     "title": "[Linux 信号知识（英文）](https://devopedia.org/linux-signals)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/220204/bg2022041303.webp)\n\n本文是一篇科普，介绍什么是 Linux 信号，以及它的基本用法。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/220204/bg2022041303.webp)\n\n本文是一篇科普，介绍什么是 Linux 信号，以及它的基本用法。\n\n\n\n",
     "category": "article",
     "originHref": "https://devopedia.org/linux-signals",
     "weekly": 202
@@ -5251,7 +5251,7 @@
   },
   {
     "title": "[如何在 GitHub 伪造他人的代码（英文）](https://www.solidot.org/story?sid=70565)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022020502.webp)\n\nGitHub 有一个 bug，你可以在他人的仓库里面，显示他没有写过的代码。比如，Linux 内核仓库Linus Torvalds 写过`I am Satoshi`（上图），其实他没有写过这一行。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022020502.webp)\n\nGitHub 有一个 bug，你可以在他人的仓库里面，显示他没有写过的代码。比如，Linux 内核仓库[显示](https://github.com/torvalds/linux/blob/ac632c504d0b881d7cfb44e3fdde3ec30eb548d9/Makefile#L6) Linus Torvalds 写过`I am Satoshi`（上图），其实他没有写过这一行。\n\n",
     "category": "article",
     "originHref": "https://www.solidot.org/story?sid=70565",
     "weekly": 202
@@ -5265,7 +5265,7 @@
   },
   {
     "title": "[浏览器的文件访问 API 入门（英文）](https://css-tricks.com/getting-started-with-the-file-system-access-api/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021502.webp)\n\n浏览器现在提供了文件访问 API（File System Access API），允许网页 JS 脚本读写本地文件，本文是一个详细的介绍。另外，也可以参考 Webkit 官网对这个 API 的。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021502.webp)\n\n浏览器现在提供了文件访问 API（File System Access API），允许网页 JS 脚本读写本地文件，本文是一个详细的介绍。另外，也可以参考 Webkit 官网对这个 API 的[介绍](https://webkit.org/blog/12257/the-file-system-access-api-with-origin-private-file-system/)。\n\n\n\n",
     "category": "article",
     "originHref": "https://css-tricks.com/getting-started-with-the-file-system-access-api/",
     "weekly": 201
@@ -5426,7 +5426,7 @@
   },
   {
     "title": "[iOS 15 如何设置中间人拦截（英文）](https://www.trickster.dev/post/setting-up-mitmproxy-with-ios15/)",
-    "content": "\n\nmitmproxy 是一个中间人拦截的工具，通常用来监控网络通信。本文是一个简短的教程，在 iOS 15 设置 mitmproxy，此外还有。\n\n",
+    "content": "\n\nmitmproxy 是一个中间人拦截的工具，通常用来监控网络通信。本文是一个简短的教程，在 iOS 15 设置 mitmproxy，此外还有[安卓的教程](https://www.trickster.dev/post/setting-up-mitmproxy-with-android/)。\n\n",
     "category": "article",
     "originHref": "https://www.trickster.dev/post/setting-up-mitmproxy-with-ios15/",
     "weekly": 199
@@ -5440,7 +5440,7 @@
   },
   {
     "title": "[Hello World 程序有一个错误（英文）](https://blog.sunfishcode.online/bugs-in-hello-world/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022031005.webp)\n\n计算机语言都使用 Hello World 作为入门实例，但是作者认为很多语言的实现是不对的，语言底层对 Linux 系统的输出处理是错误的，包括经典的 C 语言。此文有。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022031005.webp)\n\n计算机语言都使用 Hello World 作为入门实例，但是作者认为很多语言的实现是不对的，语言底层对 Linux 系统的输出处理是错误的，包括经典的 C 语言。此文有[中译](https://www.yuque.com/jwenjian/reading-list/vgur3k)。\n\n\n\n",
     "category": "article",
     "originHref": "https://blog.sunfishcode.online/bugs-in-hello-world/",
     "weekly": 198
@@ -5489,7 +5489,7 @@
   },
   {
     "title": "[我们为什么不选择 Slack 和 Telegram（英文）](https://scribe.rip/@jimbk/why-we-chose-telegram-for-team-app-over-slack-and-microsoft-team-and-then-moved-away-from-it-2b87012d2095)",
-    "content": "\n\n作者公司的产品要加入团队通信的功能，开始考虑的是集成 Slack 或 Telegram。但是最后都放弃了，改用开源软件。本文解释为什么这是更好的选择。\n\n",
+    "content": "\n\n作者公司的产品要加入团队通信的功能，开始考虑的是集成 Slack 或 Telegram。但是最后都放弃了，改用开源软件 [mesibo](https://mesibo.com/)。本文解释为什么这是更好的选择。\n\n",
     "category": "article",
     "originHref": "https://scribe.rip/@jimbk/why-we-chose-telegram-for-team-app-over-slack-and-microsoft-team-and-then-moved-away-from-it-2b87012d2095",
     "weekly": 198
@@ -5510,7 +5510,7 @@
   },
   {
     "title": "[走进迪拜未来博物馆（中文）](https://www.ifanr.com/1473634)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022030301.webp)\n\n刚刚开幕的迪拜未来博物馆，是一家未来色彩浓厚的博物馆，本文进行介绍。此外，也有一些照片。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202203/bg2022030301.webp)\n\n刚刚开幕的迪拜未来博物馆，是一家未来色彩浓厚的博物馆，本文进行介绍。此外，[这里](https://www.khaleejtimes.com/uae-attractions/dubai-museum-of-the-future-opens-tomorrow-7-experiences-you-will-find-inside)也有一些照片。\n\n",
     "category": "article",
     "originHref": "https://www.ifanr.com/1473634",
     "weekly": 197
@@ -5580,14 +5580,14 @@
   },
   {
     "title": "[在微软工作是怎样一种体验（中文）](https://mp.weixin.qq.com/s/VGL9t2TJpTNLVyfrNclhdw)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022022504.webp)\n\n作者最近从国内某大厂跳槽到了微软中国，聊聊在微软工作这段时间的体验。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022022504.webp)\n\n作者最近从国内某大厂跳槽到了微软中国，聊聊在微软工作这段时间的体验。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/VGL9t2TJpTNLVyfrNclhdw",
     "weekly": 196
   },
   {
     "title": "[如何家庭自制草酸铁钾晶体（英文）](https://crystalverse.com/potassium-ferrioxalate-crystals/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022010504.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022010505.webp)\n\n以前的周刊有食盐晶体的制作教程，这篇是草酸铁钾晶体的制作教程。家庭自制比较容易，只需要铁锈、草酸和碳酸钾。而且它是绿色的，做出来比较漂亮。另外，还有的制作教程。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022010504.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022010505.webp)\n\n以前的周刊有食盐晶体的制作教程，这篇是草酸铁钾晶体的制作教程。家庭自制比较容易，只需要铁锈、草酸和碳酸钾。而且它是绿色的，做出来比较漂亮。另外，还有[明矾晶体](https://crystalverse.com/grow-alum-crystals-at-home/)的制作教程。\n\n",
     "category": "article",
     "originHref": "https://crystalverse.com/potassium-ferrioxalate-crystals/",
     "weekly": 196
@@ -5636,7 +5636,7 @@
   },
   {
     "title": "[Product Hunt 2021 金猫奖（中文）](https://mayandev.top/2022/02/10/tool/product-2021/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021702.webp)\n\nProduct Hunt 每年会评选当年的最佳新产品，颁发金猫奖。本文作者体验了获奖产品，介绍每一项的获奖者。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021702.webp)\n\nProduct Hunt 每年会评选当年的最佳新产品，颁发金猫奖。本文作者体验了获奖产品，介绍每一项的获奖者。\n\n",
     "category": "article",
     "originHref": "https://mayandev.top/2022/02/10/tool/product-2021/",
     "weekly": 195
@@ -5650,21 +5650,21 @@
   },
   {
     "title": "[花10年写一本编程语言实现的书（中文）](https://catcoding.me/2022/01/12/a-book-on-programming-language.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021703.webp)\n\nRobert Nystrom 是一位拥有20年工作经验的谷歌软件工程师。他花了近10年时间，写了一本关于编程语言实现的书，2020年终于写完了。本文介绍这本书。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021703.webp)\n\nRobert Nystrom 是一位拥有20年工作经验的谷歌软件工程师。他花了近10年时间，写了一本关于编程语言实现的书，2020年终于写完了。本文介绍这本书。\n\n",
     "category": "article",
     "originHref": "https://catcoding.me/2022/01/12/a-book-on-programming-language.html",
     "weekly": 195
   },
   {
     "title": "[聊聊微软面试（中文）](https://mp.weixin.qq.com/s/-NESGyGBbF3WakPFieAT0w)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021705.webp)\n\n作者最近入职微软，根据自己的面试经验写了这篇，作为微软面试准备的指导。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021705.webp)\n\n作者最近入职微软，根据自己的面试经验写了这篇，作为微软面试准备的指导。\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/-NESGyGBbF3WakPFieAT0w",
     "weekly": 195
   },
   {
     "title": "[我用字符画个冰墩墩（中文）](https://www.wdbyte.com/java/char-image.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021706.webp)\n\n作者使用 Java 语言，把冰墩墩作为例子，解释如何将图片转变为字符画。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022021706.webp)\n\n作者使用 Java 语言，把冰墩墩作为例子，解释如何将图片转变为字符画。\n\n",
     "category": "article",
     "originHref": "https://www.wdbyte.com/java/char-image.html",
     "weekly": 195
@@ -5699,7 +5699,7 @@
   },
   {
     "title": "[程序员如何通过在 Medium.com 上写技术博客赚钱？（中文）](https://medium.com/%E5%86%99%E4%BD%9C%E4%B9%8B%E8%B7%AF/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%A6%82%E4%BD%95%E5%9C%A8medium-com%E4%B8%8A%E9%80%9A%E8%BF%87%E5%86%99%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%B5%9A%E9%92%B1-6d47d82b03dd)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022020603.webp)\n\n作者说，他把一篇中文的技术翻译成英文，发到 Medium.com 上面，为他带来几百美元的收益。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202202/bg2022020603.webp)\n\n作者说，他把一篇中文的技术翻译成英文，发到 Medium.com 上面，为他带来几百美元的收益。\n\n",
     "category": "article",
     "originHref": "https://medium.com/%E5%86%99%E4%BD%9C%E4%B9%8B%E8%B7%AF/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%A6%82%E4%BD%95%E5%9C%A8medium-com%E4%B8%8A%E9%80%9A%E8%BF%87%E5%86%99%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%B5%9A%E9%92%B1-6d47d82b03dd",
     "weekly": 194
@@ -5846,7 +5846,7 @@
   },
   {
     "title": "[令人困惑的 HDMI 2.1（中文）](https://www.cnbeta.com/articles/tech/1215181.htm)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021121404.webp)\n\n本文介绍了高清视频 HDMI 2.1 标准，并且讨论了一个外行人容易误解的细节：由于标准化组织的奇怪规定，HDMI 2.0 设备都可以自称符合 HDMI 2.1 标准。\n\n这里是中文译文，另有。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021121404.webp)\n\n本文介绍了高清视频 HDMI 2.1 标准，并且讨论了一个外行人容易误解的细节：由于标准化组织的奇怪规定，HDMI 2.0 设备都可以自称符合 HDMI 2.1 标准。\n\n这里是中文译文，另有[英文原文](https://tftcentral.co.uk/articles/when-hdmi-2-1-isnt-hdmi-2-1)。\n\n",
     "category": "article",
     "originHref": "https://www.cnbeta.com/articles/tech/1215181.htm",
     "weekly": 191
@@ -5902,7 +5902,7 @@
   },
   {
     "title": "[苹果的中国供应商（中文）](https://weibo.com/ttarticle/p/show?id=2309404718623225937978)",
-    "content": "\n\n2020年，苹果公司的前200大全球供应商里面，有48家中国大陆和香港企业，本文逐一盘点这些企业。另外还有一篇200大供应商的。\n\n",
+    "content": "\n\n2020年，苹果公司的前200大全球供应商里面，有48家中国大陆和香港企业，本文逐一盘点这些企业。另外还有一篇200大供应商的[地域分布分析](https://weibo.com/ttarticle/p/show?id=2309404720079463121314)。\n\n",
     "category": "article",
     "originHref": "https://weibo.com/ttarticle/p/show?id=2309404718623225937978",
     "weekly": 190
@@ -5916,7 +5916,7 @@
   },
   {
     "title": "[我做系统架构的一些原则（中文）](https://coolshell.cn/articles/21672.html)",
-    "content": "\n\n架构师左耳朵耗子（陈皓）的。“工作 20 多年了，看到了很多公司系统架构，也看到了很多问题，今天把我的这些个人的经验和想法总结下来，希望能够让更多的人可以参考和借鉴，并能够做出更好的架构来。”\n",
+    "content": "\n\n架构师左耳朵耗子（陈皓）的。“工作 20 多年了，看到了很多公司系统架构，也看到了很多问题，今天把我的这些个人的经验和想法总结下来，希望能够让更多的人可以参考和借鉴，并能够做出更好的架构来。”\n\n",
     "category": "article",
     "originHref": "https://coolshell.cn/articles/21672.html",
     "weekly": 190
@@ -5944,7 +5944,7 @@
   },
   {
     "title": "[如何使用 Docker 取代本机应用（英文）](https://nystudio107.com/blog/dock-life-using-docker-for-all-the-things)",
-    "content": "\n\n作者提出 Docker 可以取代本机应用，举例来说，不必本机安装 Node.js，只要运行 Node.js 的 Docker 容器就可以了。为了运行方便，还可以为 Dokcer 命令指定别名。\n",
+    "content": "\n\n作者提出 Docker 可以取代本机应用，举例来说，不必本机安装 Node.js，只要运行 Node.js 的 Docker 容器就可以了。为了运行方便，还可以为 Dokcer 命令指定别名。\n\n",
     "category": "article",
     "originHref": "https://nystudio107.com/blog/dock-life-using-docker-for-all-the-things",
     "weekly": 190
@@ -6119,7 +6119,7 @@
   },
   {
     "title": "[我给 Vue.js 生态贡献代码的这一年（中文）](https://zhuanlan.zhihu.com/p/441465938)",
-    "content": "\n\n作者记录了自己向 Vue.js 提交 PR 的经历和感受。\n\n\n",
+    "content": "\n\n作者记录了自己向 Vue.js 提交 PR 的经历和感受。\n\n\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/441465938",
     "weekly": 186
@@ -6245,7 +6245,7 @@
   },
   {
     "title": "[MySQL 数据库索引概览（中文）](https://blog.csdn.net/wallace_www/article/details/117264149)",
-    "content": "\n\n本文详细介绍了数据库索引的概念和种类，并讨论使用索引时应该考虑的因素。\n",
+    "content": "\n\n本文详细介绍了数据库索引的概念和种类，并讨论使用索引时应该考虑的因素。\n\n",
     "category": "article",
     "originHref": "https://blog.csdn.net/wallace_www/article/details/117264149",
     "weekly": 184
@@ -6266,7 +6266,7 @@
   },
   {
     "title": "[如何使用 Calibre 将本地网页转成电子书（中文）](https://bbs.pediy.com/thread-269615.htm)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202110/bg2021100503.jpg)\n\n本文介绍如何将本地目录里面保存的网页，通过 Calibre 脚本转成一本电子书。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202110/bg2021100503.jpg)\n\n本文介绍如何将本地目录里面保存的网页，通过 Calibre 脚本转成一本电子书。\n\n",
     "category": "article",
     "originHref": "https://bbs.pediy.com/thread-269615.htm",
     "weekly": 184
@@ -6448,7 +6448,7 @@
   },
   {
     "title": "[vscode.dev 发布（英文）](https://code.visualstudio.com/blogs/2021/10/20/vscode-dev)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202110/bg2021102909.jpg)\n\nVS Code 正式发布官方的浏览器版，从此可以在浏览器里面使用这个编辑器。它跟另一个网站`github.dev`很接近，唯一的区别是还支持其他的代码托管服务。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202110/bg2021102909.jpg)\n\nVS Code 正式发布官方的浏览器版，从此可以在浏览器里面使用这个编辑器。它跟另一个网站`github.dev`很接近，唯一的区别是还支持其他的代码托管服务。\n\n",
     "category": "article",
     "originHref": "https://code.visualstudio.com/blogs/2021/10/20/vscode-dev",
     "weekly": 181
@@ -6567,14 +6567,14 @@
   },
   {
     "title": "[我在通用电气工作的一件往事（中文）](https://justyy.com/archives/45872)",
-    "content": "\n\n作者2018年底加入了美国通用电气在英国剑桥的软件部门，发现公司内部使用的是一种自己发明的语言，但是这种语言没有 while 语句。\n",
+    "content": "\n\n作者2018年底加入了美国通用电气在英国剑桥的软件部门，发现公司内部使用的是一种自己发明的语言，但是这种语言没有 while 语句。\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/45872",
     "weekly": 179
   },
   {
     "title": "[如何用复选框实现图片、动画和游戏（英文）](https://www.bryanbraun.com/2021/09/21/i-keep-making-things-out-of-checkboxes/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202110/bg2021101501.jpg)\n\n在视觉上，复选框的选中状态不同于未选中状态。作者突发奇想，利用这一点将图片、动画、游戏转成复选框。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202110/bg2021101501.jpg)\n\n在视觉上，复选框的选中状态不同于未选中状态。作者突发奇想，利用这一点将图片、动画、游戏转成复选框。\n\n",
     "category": "article",
     "originHref": "https://www.bryanbraun.com/2021/09/21/i-keep-making-things-out-of-checkboxes/",
     "weekly": 179
@@ -6588,7 +6588,7 @@
   },
   {
     "title": "[Envoy 开源五年的回顾（英文）](https://mattklein123.dev/2021/09/14/5-years-envoy-oss/)",
-    "content": "\n\n这是一篇长文，作者是开源项目 Envoy 的创始人，讲述了这个项目是如何诞生和发展的，抒发了很多个人感想，值得一读。网上有。\n\n",
+    "content": "\n\n这是一篇长文，作者是开源项目 Envoy 的创始人，讲述了这个项目是如何诞生和发展的，抒发了很多个人感想，值得一读。网上有[中文翻译](https://cloudnative.to/blog/envoy-oss-5-year/)。\n\n",
     "category": "article",
     "originHref": "https://mattklein123.dev/2021/09/14/5-years-envoy-oss/",
     "weekly": 179
@@ -6602,7 +6602,7 @@
   },
   {
     "title": "[GitHub Markdown 现在支持脚注（英文）](https://github.blog/changelog/2021-09-30-footnotes-now-supported-in-markdown-fields/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021093005.jpg)\n\n这篇是 GitHub 的官方博客，宣布该网站的 Markdown 语法现在支持脚注了，可以看看脚注怎么写。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021093005.jpg)\n\n这篇是 GitHub 的官方博客，宣布该网站的 Markdown 语法现在支持脚注了，可以看看脚注怎么写。\n\n\n\n",
     "category": "article",
     "originHref": "https://github.blog/changelog/2021-09-30-footnotes-now-supported-in-markdown-fields/",
     "weekly": 178
@@ -6672,7 +6672,7 @@
   },
   {
     "title": "[前端资源的完整性校验（中文）](https://github.com/dreamapplehappy/blog/tree/master/2021/09/20)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021092317.jpg)\n\n网页的`<link>`和`<script>`标签有一个 integrity 属性，指定所加载内容的哈希值，防止被篡改。本文介绍这个属性的用法。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021092317.jpg)\n\n网页的`<link>`和`<script>`标签有一个 integrity 属性，指定所加载内容的哈希值，防止被篡改。本文介绍这个属性的用法。\n\n",
     "category": "article",
     "originHref": "https://github.com/dreamapplehappy/blog/tree/master/2021/09/20",
     "weekly": 177
@@ -6742,7 +6742,7 @@
   },
   {
     "title": "[如何免费搭建一个 VS Code 网页版（中文）](https://justyy.com/archives/45744)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091514.jpg)\n\nVS Code 编辑器有网页版，本文教你怎么把它部署在免费服务器上，可以用来写笔记，或者偶尔远程编辑代码。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091514.jpg)\n\nVS Code 编辑器有网页版，本文教你怎么把它部署在免费服务器上，可以用来写笔记，或者偶尔远程编辑代码。\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/45744",
     "weekly": 176
@@ -6840,14 +6840,14 @@
   },
   {
     "title": "[我怎么加入微软剑桥研究院（中文）](https://justyy.com/archives/45631)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021090111.jpg)\n\n作者详细记录从亚马逊跳槽到微软剑桥研究院的过程。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021090111.jpg)\n\n作者详细记录从亚马逊跳槽到微软剑桥研究院的过程。\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/45631",
     "weekly": 174
   },
   {
     "title": "[如何在 Linux 中实时监控日志文件（中文）](https://linux.cn/article-13733-1.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021090114.jpg)\n\nLinux 系统的日志文件一般位于 /var/log，以 .log 扩展名结尾。本文教你如何在一个窗口里面，同时监控所有日志文件。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021090114.jpg)\n\nLinux 系统的日志文件一般位于 /var/log，以 .log 扩展名结尾。本文教你如何在一个窗口里面，同时监控所有日志文件。\n\n",
     "category": "article",
     "originHref": "https://linux.cn/article-13733-1.html",
     "weekly": 174
@@ -6875,7 +6875,7 @@
   },
   {
     "title": "[操作系统是什么？（中文）](https://zhuanlan.zhihu.com/p/403919173)",
-    "content": "\n\n本文是《操作系统开发入门基础》系列译文的第一篇，讨论了操作系统的概念，哪些工作属于操作系统的范畴。\n",
+    "content": "\n\n本文是《操作系统开发入门基础》系列译文的第一篇，讨论了操作系统的概念，哪些工作属于操作系统的范畴。\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/403919173",
     "weekly": 174
@@ -6959,7 +6959,7 @@
   },
   {
     "title": "[微软入职大礼包（中文）](https://justyy.com/archives/45543)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021081802.jpg)\n\n作者入职微软英国，上班第一天拿到入职大礼包，看看里面有什么。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021081802.jpg)\n\n作者入职微软英国，上班第一天拿到入职大礼包，看看里面有什么。\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/45543",
     "weekly": 172
@@ -7022,7 +7022,7 @@
   },
   {
     "title": "[音频可视化入门（中文）](https://cjting.me/2021/08/07/fourier-transform-and-audio-visualization/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021081002.jpg)\n\n作者介绍了音频处理的基本知识，如何进行采样，并通过傅立叶变换分离频率，最后实现音乐播放器的可视化音柱跳跃效果。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021081002.jpg)\n\n作者介绍了音频处理的基本知识，如何进行采样，并通过傅立叶变换分离频率，最后实现音乐播放器的可视化音柱跳跃效果。\n\n",
     "category": "article",
     "originHref": "https://cjting.me/2021/08/07/fourier-transform-and-audio-visualization/",
     "weekly": 171
@@ -7099,14 +7099,14 @@
   },
   {
     "title": "[如何生成一个数独游戏（中文）](https://me.guanghechen.com/post/game/sudoku/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021080505.jpg)\n\n作者介绍了自动生成数独游戏的编程思路。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202108/bg2021080505.jpg)\n\n作者介绍了自动生成数独游戏的编程思路。\n\n",
     "category": "article",
     "originHref": "https://me.guanghechen.com/post/game/sudoku/",
     "weekly": 170
   },
   {
     "title": "[如何优化 node 项目的 docker 镜像（中文）](https://juejin.cn/post/6991689670027542564)",
-    "content": "\n\n作者介绍如何一步步将一个 Node.js 应用的 Docker 镜像文件，从 1.06G 压缩到 73.4M，构建速度从 29.6 秒提高到 1.3 秒。\n",
+    "content": "\n\n作者介绍如何一步步将一个 Node.js 应用的 Docker 镜像文件，从 1.06G 压缩到 73.4M，构建速度从 29.6 秒提高到 1.3 秒。\n\n",
     "category": "article",
     "originHref": "https://juejin.cn/post/6991689670027542564",
     "weekly": 170
@@ -7218,7 +7218,7 @@
   },
   {
     "title": "[PostgreSQL 数据库的变化捕获和实时通知（中文）](https://kaifeiji.cc/post/change-data-capture-and-instant-notification-on-postgresql-via-listen-notify-and-server-sent-events/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021072108.jpg)\n\n数据库发生变化时，如何通知前端网页？本文以 PostgreSQL 数据库为例，介绍了作者的解决方案，使用了服务器端事件。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021072108.jpg)\n\n数据库发生变化时，如何通知前端网页？本文以 PostgreSQL 数据库为例，介绍了作者的解决方案，使用了服务器端事件。\n\n",
     "category": "article",
     "originHref": "https://kaifeiji.cc/post/change-data-capture-and-instant-notification-on-postgresql-via-listen-notify-and-server-sent-events/",
     "weekly": 168
@@ -7267,7 +7267,7 @@
   },
   {
     "title": "[详解像素和像素密度（中文）](https://blog.infolink.com.tw/2021/rediscover-pixel-dpi-ppi-and-pixel-density/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021071421.jpg)\n\n一篇长篇，详细解释像素、像素密度、DPI、PPI、DPR 等概念。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021071421.jpg)\n\n一篇长篇，详细解释像素、像素密度、DPI、PPI、DPR 等概念。\n\n",
     "category": "article",
     "originHref": "https://blog.infolink.com.tw/2021/rediscover-pixel-dpi-ppi-and-pixel-density/",
     "weekly": 167
@@ -7323,7 +7323,7 @@
   },
   {
     "title": "[Tensorflow 开发者认证记录（中文）](https://nekonull.me/posts/tf-cert-blog/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021070812.jpg)\n\n作者作为一名大四学生在暑假学习并通过 Tensorflow 开发者认证的经历。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021070812.jpg)\n\n作者作为一名大四学生在暑假学习并通过 Tensorflow 开发者认证的经历。\n\n",
     "category": "article",
     "originHref": "https://nekonull.me/posts/tf-cert-blog/",
     "weekly": 166
@@ -7386,7 +7386,7 @@
   },
   {
     "title": "[静态网站如何启用数据库查询（英文）](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021063012.jpg)\n\n作者演示静态网站（比如 GitHub Pages）如何通过 SQLite 数据库，实现查询功能，完全不需要后台脚本。\n\n这种操作的实现原理有两个：一是 SQLite 数据库以页为单位存储数据，每页默认是 4KB，可以按页读取数据；二是前端可以用 sql.js 模拟一个内存文件系统，从而实现按页读取文件。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021063012.jpg)\n\n作者演示静态网站（比如 GitHub Pages）如何通过 SQLite 数据库，实现查询功能，完全不需要后台脚本。\n\n这种操作的实现原理有两个：一是 SQLite 数据库以页为单位存储数据，每页默认是 4KB，可以按页读取数据；二是前端可以用 sql.js 模拟一个内存文件系统，从而实现按页读取文件。\n\n",
     "category": "article",
     "originHref": "https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/",
     "weekly": 165
@@ -7526,7 +7526,7 @@
   },
   {
     "title": "[热重载 C （中文）](https://cjting.me/hot-reload-c/)",
-    "content": "\n\n热重载指的是，在不重启的情况下更新应用。脚本语言都能支持这个功能，本文通俗地讲解，如何让 C 语言这样的编译语言，也支持热重载。\n",
+    "content": "\n\n热重载指的是，在不重启的情况下更新应用。脚本语言都能支持这个功能，本文通俗地讲解，如何让 C 语言这样的编译语言，也支持热重载。\n\n",
     "category": "article",
     "originHref": "https://cjting.me/hot-reload-c/",
     "weekly": 163
@@ -7939,7 +7939,7 @@
   },
   {
     "title": "[消失的除法指令（中文）](https://cjting.me/the-missing-div-instruction-part1/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202104/bg2021042612.jpg)\n\n学习汇编的时候，观察到一个现象，C 语言的除法操作，编译得到的汇编代码是一条乘法指令。这是为什么？\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202104/bg2021042612.jpg)\n\n学习汇编的时候，观察到一个现象，C 语言的除法操作，编译得到的汇编代码是一条乘法指令。这是为什么？\n\n",
     "category": "article",
     "originHref": "https://cjting.me/the-missing-div-instruction-part1/",
     "weekly": 156
@@ -8184,7 +8184,7 @@
   },
   {
     "title": "[浏览器的 HTTP Referrer 标头政策变化（英文）](https://blog.mozilla.org/security/2021/03/22/firefox-87-trims-http-referrers-by-default-to-protect-user-privacy/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202103/bg2021032310.jpg)\n\nFirefox 浏览器宣布跟随，修改 HTTP Referrer 标头政策。修改后的做法是，从 HTTPS 跳转到 HTTP，不发送`referer`标头；从 HTTPS 跳到 HTTPS，只要有跨域，`referer`标头就只包含域名，不包含路径。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202103/bg2021032310.jpg)\n\nFirefox 浏览器宣布跟随 [Chrome 的做法](https://developers.google.com/web/updates/2020/07/referrer-policy-new-chrome-default)，修改 HTTP Referrer 标头政策。修改后的做法是，从 HTTPS 跳转到 HTTP，不发送`referer`标头；从 HTTPS 跳到 HTTPS，只要有跨域，`referer`标头就只包含域名，不包含路径。\n\n",
     "category": "article",
     "originHref": "https://blog.mozilla.org/security/2021/03/22/firefox-87-trims-http-referrers-by-default-to-protect-user-privacy/",
     "weekly": 152
@@ -8282,7 +8282,7 @@
   },
   {
     "title": "[浏览器是如何校验证书的？（中文）](https://cjting.me/2021/03/02/how-to-validate-tls-certificate/)",
-    "content": "\n\n本文介绍了浏览器怎么处理 HTTPS 的证书，它的校验机制是什么，内容较为通俗全面。\n",
+    "content": "\n\n本文介绍了浏览器怎么处理 HTTPS 的证书，它的校验机制是什么，内容较为通俗全面。\n\n",
     "category": "article",
     "originHref": "https://cjting.me/2021/03/02/how-to-validate-tls-certificate/",
     "weekly": 150
@@ -8429,7 +8429,7 @@
   },
   {
     "title": "[什么是霍夫曼编码？（英文）](https://www.baseclass.io/huffman-coding/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021022202.jpg)\n\n霍夫曼编码是经典的压缩算法，就使用它。本文是我见过最简单的解释，可以在五分钟内理解这个算法的实现原理。\n\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202102/bg2021022202.jpg)\n\n霍夫曼编码是经典的压缩算法，[GZIP](https://jvns.ca/blog/2015/02/22/how-gzip-uses-huffman-coding/) 就使用它。本文是我见过最简单的解释，可以在五分钟内理解这个算法的实现原理。\n\n\n\n",
     "category": "article",
     "originHref": "https://www.baseclass.io/huffman-coding/",
     "weekly": 147
@@ -8583,14 +8583,14 @@
   },
   {
     "title": "[iOS 证书幕后原理（中文）](http://chuquan.me/2020/03/22/ios-certificate-principle/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021013002.jpg)\n\nApple 为了严格管理 App 的发布，制定了一套复杂的基于证书的校验机制，这对于开发者非常不友好。本文从技术面，图文并茂地介绍了 iOS 开发各种证书之间的关系及其背后的原理。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021013002.jpg)\n\nApple 为了严格管理 App 的发布，制定了一套复杂的基于证书的校验机制，这对于开发者非常不友好。本文从技术面，图文并茂地介绍了 iOS 开发各种证书之间的关系及其背后的原理。\n\n",
     "category": "article",
     "originHref": "http://chuquan.me/2020/03/22/ios-certificate-principle/",
     "weekly": 145
   },
   {
     "title": "[20年前参加高中信息学奥赛（NOIP）的经历（中文）](https://justyy.com/archives/45269)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021013003.jpg)\n\n“高中生活已经过去20年了，对于我来说，其中最为宝贵的一段经历就是在高三的时候参加了信息学奥林匹克（也就是计算机算法编程）竞赛，并拿到了NOIP (National Olympiad Informatics in Province) 全国三等奖。”\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021013003.jpg)\n\n“高中生活已经过去20年了，对于我来说，其中最为宝贵的一段经历就是在高三的时候参加了信息学奥林匹克（也就是计算机算法编程）竞赛，并拿到了NOIP (National Olympiad Informatics in Province) 全国三等奖。”\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/45269",
     "weekly": 145
@@ -8625,7 +8625,7 @@
   },
   {
     "title": "[10个需要改掉的 Typescript 编码习惯（英文）](https://startup-cto.net/10-bad-typescript-habits-to-break-this-year/)",
-    "content": "\n\n作者分享了10个编写Typescript的坏习惯，并简述了原因，以及改正的建议。\n",
+    "content": "\n\n作者分享了10个编写Typescript的坏习惯，并简述了原因，以及改正的建议。\n\n",
     "category": "article",
     "originHref": "https://startup-cto.net/10-bad-typescript-habits-to-break-this-year/",
     "weekly": 145
@@ -8646,14 +8646,14 @@
   },
   {
     "title": "[我开发付费 Chrome 插件的经历（中文）](https://blog.t9t.io/star-history-2021-01-21/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021012216.jpg)\n\n作者介绍了在 Chrome 商店发布付费插件的过程，总收入有几百美元。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021012216.jpg)\n\n作者介绍了在 Chrome 商店发布付费插件的过程，总收入有几百美元。\n\n",
     "category": "article",
     "originHref": "https://blog.t9t.io/star-history-2021-01-21/",
     "weekly": 144
   },
   {
     "title": "[如何用 GitHub Actions 更新 WordPress 网站（中文）](https://github.com/zhaoolee/WordPressXMLRPCTools)",
-    "content": "\n\n本文介绍使用 GitHub Actions 将仓库里面的 Markdown ，远程发布到 WordPress 网站。\n",
+    "content": "\n\n本文介绍使用 GitHub Actions 将仓库里面的 Markdown ，远程发布到 WordPress 网站。\n\n",
     "category": "article",
     "originHref": "https://github.com/zhaoolee/WordPressXMLRPCTools",
     "weekly": 144
@@ -8898,7 +8898,7 @@
   },
   {
     "title": "[如何通过 CloudFlare Worker 搭建负载均衡服务器（中文）](https://justyy.com/archives/44793)",
-    "content": "\n\nCloudflare Worker 是一种 Serverless 服务，本文给出示例，用它实现负载均衡器，每月可以免费10万次请求。\n\n\n",
+    "content": "\n\nCloudflare Worker 是一种 Serverless 服务，本文给出示例，用它实现负载均衡器，每月可以免费10万次请求。\n\n\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/44793",
     "weekly": 140
@@ -9073,7 +9073,7 @@
   },
   {
     "title": "[剖析最简单的 C 语言 Hello World（中文）](https://cjting.me/2020/12/10/tiny-x64-helloworld/)",
-    "content": "\n\n作者讲解一个最简单 C 语言 Hello World 程序，底层到底发生了什么。这个程序 gcc 编译后是 16KB，作者设法把它简化到170字节。\n",
+    "content": "\n\n作者讲解一个最简单 C 语言 Hello World 程序，底层到底发生了什么。这个程序 gcc 编译后是 16KB，作者设法把它简化到170字节。\n\n",
     "category": "article",
     "originHref": "https://cjting.me/2020/12/10/tiny-x64-helloworld/",
     "weekly": 138
@@ -9087,7 +9087,7 @@
   },
   {
     "title": "[如何优雅地从总统竞选中套利？（中文）](http://morefreeze.github.io/2020/12/president-arbitrage.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020121702.jpg)\n\n周刊136期英语《赔率是怎么回事？ 》的中文解读，利用两个不同网站对美国总统大选的赔率差异，进行套利。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020121702.jpg)\n\n周刊136期英语《赔率是怎么回事？ 》的中文解读，利用两个不同网站对美国总统大选的赔率差异，进行套利。\n\n",
     "category": "article",
     "originHref": "http://morefreeze.github.io/2020/12/president-arbitrage.html",
     "weekly": 138
@@ -9157,14 +9157,14 @@
   },
   {
     "title": "[我面试谷歌伦敦 SRE 的经验和教训（中文）](https://justyy.com/archives/45126)",
-    "content": "\n\n作者5年前接到过谷歌的面试邀请，当时问了一道队列+哈希表的题，可惜当时水平太差连第一面45分钟的 coding 都没过。再后来这几年一直投, 甚至去年找朋友内推都没法过简历关。\n",
+    "content": "\n\n作者5年前接到过谷歌的面试邀请，当时问了一道队列+哈希表的题，可惜当时水平太差连第一面45分钟的 coding 都没过。再后来这几年一直投, 甚至去年找朋友内推都没法过简历关。\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/45126",
     "weekly": 137
   },
   {
     "title": "[CSS 的竖行横书组合（中文）](http://www.deathghost.cn/article/css/86)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020120901.jpg)\n\nCSS 可以做到中文竖排，并且内部数字是横排的效果（上图）。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202012/bg2020120901.jpg)\n\nCSS 可以做到中文竖排，并且内部数字是横排的效果（上图）。\n\n",
     "category": "article",
     "originHref": "http://www.deathghost.cn/article/css/86",
     "weekly": 137
@@ -9304,7 +9304,7 @@
   },
   {
     "title": "[用 JS 写一个 JS 解释器（中文）](https://juejin.cn/post/6898093501376905230)",
-    "content": "\n\n本文解释了 JS 解释器如何将源代码转换成 AST（抽象语法树），并给出了一个简单的、便于理解的解释器实现。\n\n\n",
+    "content": "\n\n本文解释了 JS 解释器如何将源代码转换成 AST（抽象语法树），并给出了一个简单的、便于理解的解释器实现。\n\n\n\n",
     "category": "article",
     "originHref": "https://juejin.cn/post/6898093501376905230",
     "weekly": 134
@@ -9325,7 +9325,7 @@
   },
   {
     "title": "[Rust 与 Go 的比较（英文）](https://bitfieldconsulting.com/golang/rust-vs-go)",
-    "content": "\n\n一篇比较 Rust 和 Go 各自特点的长文，站在学习者的角度，介绍它们如何用不同的方式处理计算机问题，不涉及具体的语法。\n",
+    "content": "\n\n一篇比较 Rust 和 Go 各自特点的长文，站在学习者的角度，介绍它们如何用不同的方式处理计算机问题，不涉及具体的语法。\n\n",
     "category": "article",
     "originHref": "https://bitfieldconsulting.com/golang/rust-vs-go",
     "weekly": 134
@@ -9402,7 +9402,7 @@
   },
   {
     "title": "[从头写一个 Deno 的 BitTorrent 下载器（中文）](https://cjting.me/2020/10/31/tinytorrent-a-deno-bt-downloader/)",
-    "content": "\n\n介绍 BT 下载的实现细节，有 JavaScript 代码的下载客户端示例。\n",
+    "content": "\n\n介绍 BT 下载的实现细节，有 JavaScript 代码的下载客户端示例。\n\n",
     "category": "article",
     "originHref": "https://cjting.me/2020/10/31/tinytorrent-a-deno-bt-downloader/",
     "weekly": 133
@@ -9430,7 +9430,7 @@
   },
   {
     "title": "[使用 Scriptable App 开发 iPhone 小组件（中文）](https://github.com/dreamapplehappy/blog/tree/master/2020/10/24)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020103104.jpg)\n\niOS 14 升级了小组件功能，有一个 Scriptable App 可以使用 JavaScript语言为 iPhone 创建各种小组件。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020103104.jpg)\n\niOS 14 升级了小组件功能，有一个 Scriptable App 可以使用 JavaScript语言为 iPhone 创建各种小组件。\n\n",
     "category": "article",
     "originHref": "https://github.com/dreamapplehappy/blog/tree/master/2020/10/24",
     "weekly": 132
@@ -9549,7 +9549,7 @@
   },
   {
     "title": "[信息安全职业生涯规划（中文）](https://zhuanlan.zhihu.com/p/250905301)",
-    "content": "\n\n作者从事信息安全将近 20 年，经常被问到“我要怎么做才能入门信息安全领域？”。这篇万字长文就是他对这个问题的回答，涉及方方面面。\n\n\n",
+    "content": "\n\n作者从事信息安全将近 20 年，经常被问到“我要怎么做才能入门信息安全领域？”。这篇万字长文就是他对这个问题的回答，涉及方方面面。\n\n\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/250905301",
     "weekly": 130
@@ -9577,14 +9577,14 @@
   },
   {
     "title": "[TiDB 的架构演进哲学（中文）](https://www.infoq.cn/article/Qw_8ubZFgtQlcZmZHBlA)",
-    "content": "\n\nPingCAP CEO 的分享，介绍他们怎么设计 TiDB 这个数据库产品。\n",
+    "content": "\n\nPingCAP CEO 的分享，介绍他们怎么设计 TiDB 这个数据库产品。\n\n",
     "category": "article",
     "originHref": "https://www.infoq.cn/article/Qw_8ubZFgtQlcZmZHBlA",
     "weekly": 130
   },
   {
     "title": "[分屏器能用于线上考试作弊吗？（中文）](https://zhuanlan.zhihu.com/p/155819108)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101604.jpg)\n\n线上考试时，学校使用摄像头进行云监考，有人就想到使用分屏器作弊。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101604.jpg)\n\n线上考试时，学校使用摄像头进行云监考，有人就想到使用分屏器作弊。\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/155819108",
     "weekly": 130
@@ -9619,14 +9619,14 @@
   },
   {
     "title": "[熔岩灯如何帮助加密？（中文）](https://www.cloudflare.com/zh-cn/learning/ssl/lava-lamp-encryption/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101903.jpg)\n\nCloudflare 介绍如何通过公司墙上 100 盏熔岩灯的形状，创建随机密钥。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020101903.jpg)\n\nCloudflare 介绍如何通过公司墙上 100 盏熔岩灯的形状，创建随机密钥。\n\n\n\n",
     "category": "article",
     "originHref": "https://www.cloudflare.com/zh-cn/learning/ssl/lava-lamp-encryption/",
     "weekly": 129
   },
   {
     "title": "[如何使用 CSS Grid 设置排版（英文）](https://joshwcomeau.com/css/full-bleed/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020100601.jpg)\n\n本文介绍如何使用几行简单的 CSS 代码，就能实现的排版布局（上图）。另外，传统的 CSS 写法可以参考。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020100601.jpg)\n\n本文介绍如何使用几行简单的 CSS 代码，就能实现的排版布局（上图）。另外，传统的 CSS 写法可以参考[这篇](https://uglyduck.ca/poor-mans-full-bleed/)。\n\n",
     "category": "article",
     "originHref": "https://joshwcomeau.com/css/full-bleed/",
     "weekly": 129
@@ -9724,7 +9724,7 @@
   },
   {
     "title": "[改变世界的一次代码提交（中文）](https://hutusi.com/the-greatest-git-commit)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020100203.jpg)\n\nLinus 在假期十天时间完成了 Git 的首个版本，第一次提交仅有 848 行代码实现了 Git 的核心功能，本文通过分析这第一个 Git 提交来分析 Git 的设计及产品实现。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020100203.jpg)\n\nLinus 在假期十天时间完成了 Git 的首个版本，第一次提交仅有 848 行代码实现了 Git 的核心功能，本文通过分析这第一个 Git 提交来分析 Git 的设计及产品实现。\n\n",
     "category": "article",
     "originHref": "https://hutusi.com/the-greatest-git-commit",
     "weekly": 128
@@ -9794,7 +9794,7 @@
   },
   {
     "title": "[`Intl.RelativeTimeFormat()`：相对时间格式化（中文）](http://www.deathghost.cn/article/javascript/53)",
-    "content": "\n\n有时需要显示相对时间，比如“5分钟前”、“2天前”等等。一般使用外部库来实现，其实浏览器原生的 Intl.RelativeTimeFormat API 就可以做到。\n",
+    "content": "\n\n有时需要显示相对时间，比如“5分钟前”、“2天前”等等。一般使用外部库来实现，其实浏览器原生的 Intl.RelativeTimeFormat API 就可以做到。\n\n",
     "category": "article",
     "originHref": "http://www.deathghost.cn/article/javascript/53",
     "weekly": 127
@@ -9822,7 +9822,7 @@
   },
   {
     "title": "[CS107e: 树莓派，ARM 和操作系统（中文）](https://cjting.me/2020/09/11/cs107e-review/)",
-    "content": "\n\nCS107e 是斯坦福大学的一门计算机课程，内容关于硬件、底层和 C 语言 。这篇是作者的学习感受。\n",
+    "content": "\n\nCS107e 是斯坦福大学的一门计算机课程，内容关于硬件、底层和 C 语言 。这篇是作者的学习感受。\n\n",
     "category": "article",
     "originHref": "https://cjting.me/2020/09/11/cs107e-review/",
     "weekly": 126
@@ -9843,7 +9843,7 @@
   },
   {
     "title": "[中国大周期（中文）](https://finance.sina.com.cn/china/gncj/2020-09-21/doc-iivhvpwy8038347.shtml)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092213.jpg)\n\n桥水基金创始人瑞·达利欧（Ray Dalio）的长文，以一个美国人的角度，谈了他对中国历史和经济政策的理解。这里是中文摘译版，也有。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020092213.jpg)\n\n桥水基金创始人瑞·达利欧（Ray Dalio）的长文，以一个美国人的角度，谈了他对中国历史和经济政策的理解。这里是中文摘译版，也有[英文原版](https://www.principles.com/the-changing-world-order/#chapter5)。\n\n",
     "category": "article",
     "originHref": "https://finance.sina.com.cn/china/gncj/2020-09-21/doc-iivhvpwy8038347.shtml",
     "weekly": 126
@@ -9878,7 +9878,7 @@
   },
   {
     "title": "[使用蒙特卡洛算法玩2048（英文）](https://xtrp.io/blog/2020/09/12/using-the-monte-carlo-tree-search-algorithm-in-an-ai-to-beat-2048-and-other-games/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020091303.jpg)\n\n2048 是一个4x4的方块游戏，只要两个相同数字相邻，就可以合并为一个数字。本文讲解了如何用蒙特卡洛算法进行简单模拟，让计算机自己解决2048游戏。\n\n[微前端“容器”—— microcosmos 实现](https://juejin.im/post/6864381092061773831)（中文）\n\n本文讨论了微前端的概念和实现，可以用来了解“微前端”这种新的做法。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020091303.jpg)\n\n2048 是一个4x4的方块游戏，只要两个相同数字相邻，就可以合并为一个数字。本文讲解了如何用蒙特卡洛算法进行简单模拟，让计算机自己解决2048游戏。\n\n[微前端“容器”—— microcosmos 实现](https://juejin.im/post/6864381092061773831)（中文）\n\n本文讨论了微前端的概念和实现，可以用来了解“微前端”这种新的做法。\n\n",
     "category": "article",
     "originHref": "https://xtrp.io/blog/2020/09/12/using-the-monte-carlo-tree-search-algorithm-in-an-ai-to-beat-2048-and-other-games/",
     "weekly": 125
@@ -9983,7 +9983,7 @@
   },
   {
     "title": "[Leetcode 刷题的一些技巧的经验之谈（中文）](https://justyy.com/archives/44858)",
-    "content": "\n\n作者介绍 LeetCode 刷题体会：“坚持在 leetcode 刷题已经有近两年了，刷着刷着就成习惯了，就像每天刷牙吃饭一样，不刷会很不自然。”\n\n\n",
+    "content": "\n\n作者介绍 LeetCode 刷题体会：“坚持在 leetcode 刷题已经有近两年了，刷着刷着就成习惯了，就像每天刷牙吃饭一样，不刷会很不自然。”\n\n\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/44858",
     "weekly": 123
@@ -10144,7 +10144,7 @@
   },
   {
     "title": "[CRDT 算法是否适合多人实时编辑？（英文）](https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/)",
-    "content": "\n\nCRDT 算法用于分布式服务实现数据同步，比如同一篇文档的多人实时编辑。是 CRDT 的一个实现，本文是它的作者对这个算法的解释，内容有一定深度。\n\n",
+    "content": "\n\nCRDT 算法用于分布式服务实现数据同步，比如同一篇文档的多人实时编辑。[Yjs](https://github.com/yjs/yjs) 是 CRDT 的一个实现，本文是它的作者对这个算法的解释，内容有一定深度。\n\n",
     "category": "article",
     "originHref": "https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/",
     "weekly": 121
@@ -10165,14 +10165,14 @@
   },
   {
     "title": "[广告短信的退订内幕（中文）](https://daily.zhihu.com/story/9726870)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020081909.jpg)\n\n很多促销广告短信都说回复 T 退订，但是回复了 T 之后会发生什么？\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020081909.jpg)\n\n很多促销广告短信都说回复 T 退订，但是回复了 T 之后会发生什么？\n\n",
     "category": "article",
     "originHref": "https://daily.zhihu.com/story/9726870",
     "weekly": 121
   },
   {
     "title": "[微信小商店初体验（中文）](https://juemuren4449.com/archives/wechat-minishop)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020081910.jpg)\n\n7 月 14 日，微信开放了微信小商店的内测，这是官方的开店功能，跟微店等第三方平台是不一样的。这篇介绍了申请流程以及使用体验。目前，微信小商店已经允许个人申请了，可用于个人开店。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020081910.jpg)\n\n7 月 14 日，微信开放了微信小商店的内测，这是官方的开店功能，跟微店等第三方平台是不一样的。这篇介绍了申请流程以及使用体验。目前，微信小商店已经允许个人申请了，可用于个人开店。\n\n\n\n",
     "category": "article",
     "originHref": "https://juemuren4449.com/archives/wechat-minishop",
     "weekly": 120
@@ -10214,7 +10214,7 @@
   },
   {
     "title": "[如何在谷歌查找到任何信息（英文）](https://www.alec.fyi/dorking-how-to-find-anything-on-the-internet.html)",
-    "content": "\n\n本文通过一些小例子，介绍谷歌的搜索语法。这里还有完整的。\n\n",
+    "content": "\n\n本文通过一些小例子，介绍谷歌的搜索语法。这里还有完整的[搜索命令列表](https://ahrefs.com/blog/google-advanced-search-operators/)。\n\n",
     "category": "article",
     "originHref": "https://www.alec.fyi/dorking-how-to-find-anything-on-the-internet.html",
     "weekly": 120
@@ -10305,7 +10305,7 @@
   },
   {
     "title": "[NAND Flash 基础知识简介（中文）](http://blog.coderhuo.tech/2020/07/18/flash_basics/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202007/bg2020072704.jpg)\n\nNAND Flash 是一种存储介质（掉电后数据不会丢失），常见的 U 盘、TF 卡/SD 卡，以及大部分 SSD（固态硬盘）都是由它组成的。 本文主要介绍它的种类及工作原理。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202007/bg2020072704.jpg)\n\nNAND Flash 是一种存储介质（掉电后数据不会丢失），常见的 U 盘、TF 卡/SD 卡，以及大部分 SSD（固态硬盘）都是由它组成的。 本文主要介绍它的种类及工作原理。\n\n",
     "category": "article",
     "originHref": "http://blog.coderhuo.tech/2020/07/18/flash_basics/",
     "weekly": 118
@@ -10459,7 +10459,7 @@
   },
   {
     "title": "[75行代码入门 WebGL（英文）](https://avikdas.com/2020/07/08/barebones-webgl-in-75-lines-of-code.html)",
-    "content": "\n\nWebGL 是浏览器对 OpenGL API 的调用接口，可以在浏览器里面实现 3D 动画。本文用一个简短的例子，介绍了这个 API。这只是一篇简介，另有。\n\n",
+    "content": "\n\nWebGL 是浏览器对 OpenGL API 的调用接口，可以在浏览器里面实现 3D 动画。本文用一个简短的例子，介绍了这个 API。这只是一篇简介，另有[完整的 WebGL 教程](https://www.toptal.com/javascript/3d-graphics-a-webgl-tutorial)。\n\n",
     "category": "article",
     "originHref": "https://avikdas.com/2020/07/08/barebones-webgl-in-75-lines-of-code.html",
     "weekly": 116
@@ -10543,7 +10543,7 @@
   },
   {
     "title": "[Web Extension API 介绍（英文）](https://hacks.mozilla.org/2020/06/welcoming-safari-to-the-webextensions-community/)",
-    "content": "\n\n6月22日的 WWDC 大会中，苹果宣布 Safari 浏览器会使用 Web Extensions API 支持浏览器插件。这意味着只要使用这个 API，你的插件就可以同时在 Firefox，Chrome，Opera 、Edge 和 Safari 中运行。这里还有 MDN 上面的。\n\n",
+    "content": "\n\n6月22日的 WWDC 大会中，苹果宣布 Safari 浏览器会使用 Web Extensions API 支持浏览器插件。这意味着只要使用这个 API，你的插件就可以同时在 Firefox，Chrome，Opera 、Edge 和 Safari 中运行。这里还有 MDN 上面的[ API 教程](https://developer.mozilla.org/zh-CN/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions)。\n\n",
     "category": "article",
     "originHref": "https://hacks.mozilla.org/2020/06/welcoming-safari-to-the-webextensions-community/",
     "weekly": 114
@@ -10585,7 +10585,7 @@
   },
   {
     "title": "[如何不靠运气变得富有（中文）](https://github.com/fat-garage/how-to-get-rich-without-getting-lucky)",
-    "content": "\n\nNaval 是美国风险投资家，这是他的3小时长播客《如何不靠运气变得富有》的中文翻译，介绍了他的财富观，非常值得一读。\n",
+    "content": "\n\nNaval 是美国风险投资家，这是他的3小时长播客《如何不靠运气变得富有》的中文翻译，介绍了他的财富观，非常值得一读。\n\n",
     "category": "article",
     "originHref": "https://github.com/fat-garage/how-to-get-rich-without-getting-lucky",
     "weekly": 114
@@ -10599,7 +10599,7 @@
   },
   {
     "title": "[Rust 学习路线图（中文）](https://zhuanlan.zhihu.com/p/146472398)",
-    "content": "\n\n近几个月，作者开始学习 Rust，并用 Rust 开始写一些代码，根据自己的学习经验，制作了这一份 Rust 的学习路径。\n\n\n",
+    "content": "\n\n近几个月，作者开始学习 Rust，并用 Rust 开始写一些代码，根据自己的学习经验，制作了这一份 Rust 的学习路径。\n\n\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/146472398",
     "weekly": 113
@@ -10648,7 +10648,7 @@
   },
   {
     "title": "[KeePass：最安全的密码管理器（中文）](https://www.rmnof.com/article/keepass-password-manager/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020062115.jpg)\n\nKeePass 是一个轻量级、易用且安全性极高的密码管理器，其源码完全开源。与其他密码管理器不同，KeePass 可以让你完全掌握你的密码数据库。本文教你如何使用KeePass，并包含一整套最佳实践方案。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020062115.jpg)\n\nKeePass 是一个轻量级、易用且安全性极高的密码管理器，其源码完全开源。与其他密码管理器不同，KeePass 可以让你完全掌握你的密码数据库。本文教你如何使用KeePass，并包含一整套最佳实践方案。\n\n",
     "category": "article",
     "originHref": "https://www.rmnof.com/article/keepass-password-manager/",
     "weekly": 113
@@ -10767,7 +10767,7 @@
   },
   {
     "title": "[如何用 C 语言写一个简单的 CHIP-8 模拟器（中文）](https://cjting.me/2020/06/07/chip8-emulator/)",
-    "content": "\n\nCHIP-8 是一个很简单的虚拟机，有16个8位寄存器和35个指令，可以使用 4K 内存。作者在它上面实现俄罗斯方块，为将来写 GBA 模拟器做准备。\n\n\n",
+    "content": "\n\nCHIP-8 是一个很简单的虚拟机，有16个8位寄存器和35个指令，可以使用 4K 内存。作者在它上面实现俄罗斯方块，为将来写 GBA 模拟器做准备。\n\n\n\n",
     "category": "article",
     "originHref": "https://cjting.me/2020/06/07/chip8-emulator/",
     "weekly": 110
@@ -10900,14 +10900,14 @@
   },
   {
     "title": "[如何在微信建立一个定时提醒机器人？（中文）](https://blog.betacat.io/post/how-wecron-schedules/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051506.jpg)\n\n作者解释了如何通过一个公众号，定时在微信里面向自己发提醒，代码开源。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051506.jpg)\n\n作者解释了如何通过一个公众号，定时在微信里面向自己发提醒，代码开源。\n\n",
     "category": "article",
     "originHref": "https://blog.betacat.io/post/how-wecron-schedules/",
     "weekly": 108
   },
   {
     "title": "[Gzip 格式和 DEFLATE 压缩算法（中文）](https://luyuhuang.github.io/2020/04/28/gzip-and-deflate.html)",
-    "content": "\n\ngz 压缩文件指的就是 gzip 压缩格式，背后的算法是 DEFLATE。它的压缩原理是什么？这篇就来讨论这个问题。\n",
+    "content": "\n\ngz 压缩文件指的就是 gzip 压缩格式，背后的算法是 DEFLATE。它的压缩原理是什么？这篇就来讨论这个问题。\n\n",
     "category": "article",
     "originHref": "https://luyuhuang.github.io/2020/04/28/gzip-and-deflate.html",
     "weekly": 108
@@ -11208,14 +11208,14 @@
   },
   {
     "title": "[分布式哈希表 (DHT) 和 P2P 技术（中文）](https://luyuhuang.github.io/2020/03/06/dht-and-p2p.html)",
-    "content": "\n\n分布式的 P2P 网络通常使用分布式哈希表（DHT）进行路由，查找周围的节点。本文介绍 DHT 的基本知识，以及算法的实现原理。\n",
+    "content": "\n\n分布式的 P2P 网络通常使用分布式哈希表（DHT）进行路由，查找周围的节点。本文介绍 DHT 的基本知识，以及算法的实现原理。\n\n",
     "category": "article",
     "originHref": "https://luyuhuang.github.io/2020/03/06/dht-and-p2p.html",
     "weekly": 103
   },
   {
     "title": "[Docker 镜像构建教程：减小镜像体积（中文）](https://fuckcloudnative.io/posts/docker-images-part1-reducing-image-size/)",
-    "content": "\n\n自己制作的 Docker 镜像文件，往往体积很大。本文介绍如何一步步压缩镜像文件的体积，将 C 语言的 hello world 从最初的 1 GB 压缩到 94 KB。\n",
+    "content": "\n\n自己制作的 Docker 镜像文件，往往体积很大。本文介绍如何一步步压缩镜像文件的体积，将 C 语言的 hello world 从最初的 1 GB 压缩到 94 KB。\n\n",
     "category": "article",
     "originHref": "https://fuckcloudnative.io/posts/docker-images-part1-reducing-image-size/",
     "weekly": 103
@@ -11264,7 +11264,7 @@
   },
   {
     "title": "[AWS 如何添加用户（英文）](https://ncona.com/2020/03/introduction-to-aws-cli/)",
-    "content": "\n\n这篇教你入门亚马逊网络服务 AWS，最基本的一步，新增一个管理员用户。这里还有一篇，介绍如何使用 IAM 服务新增 AWS 用户。\n\n",
+    "content": "\n\n这篇教你入门亚马逊网络服务 AWS，最基本的一步，新增一个管理员用户。这里还有一篇[类似的](https://devops.novalagung.com/en/aws-create-individual-iam-user.html)，介绍如何使用 IAM 服务新增 AWS 用户。\n\n",
     "category": "article",
     "originHref": "https://ncona.com/2020/03/introduction-to-aws-cli/",
     "weekly": 102
@@ -11299,7 +11299,7 @@
   },
   {
     "title": "[RSA 的原理与实现（中文）](https://cjting.me/2020/03/13/rsa/)",
-    "content": "\n\n本文用简单的语言和数学推导，介绍了公钥加密 RSA 的原理。\n",
+    "content": "\n\n本文用简单的语言和数学推导，介绍了公钥加密 RSA 的原理。\n\n",
     "category": "article",
     "originHref": "https://cjting.me/2020/03/13/rsa/",
     "weekly": 101
@@ -11425,7 +11425,7 @@
   },
   {
     "title": "[SQL 中的 NULL 你真的懂了吗？（中文）](https://blog.csdn.net/lnotime/article/details/104847946)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202003/bg2020031602.jpg)\n\nSQL 中的 NULL 到底是怎样一个概念呢？有什么要注意的吗？这篇就是要把它讲清楚。第 98 期英文版的中译。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202003/bg2020031602.jpg)\n\nSQL 中的 NULL 到底是怎样一个概念呢？有什么要注意的吗？这篇就是要把它讲清楚。第 98 期英文版的中译。\n\n",
     "category": "article",
     "originHref": "https://blog.csdn.net/lnotime/article/details/104847946",
     "weekly": 99
@@ -11649,35 +11649,35 @@
   },
   {
     "title": "[我如何管理知识？（英文）](https://tkainrad.dev/posts/managing-my-personal-knowledge-base/)",
-    "content": "\n\n一个程序员介绍他管理网址、笔记、代码的方法，以及所使用的工具。这里还有一篇其他人写的。\n\n",
+    "content": "\n\n一个程序员介绍他管理网址、笔记、代码的方法，以及所使用的工具。这里还有一篇其他人写的[类似](https://dev.to/brpaz/how-do-i-organize-my-knowledge-as-a-software-engineer-4387)。\n\n",
     "category": "article",
     "originHref": "https://tkainrad.dev/posts/managing-my-personal-knowledge-base/",
     "weekly": 96
   },
   {
     "title": "[如何打造一个 serverless 的微信小程序（中文）](https://www.smilingleo.net/2020/how-to-build-a-serverless-wechat-mini-program/)",
-    "content": "\n\n作者使用 AWS Lambda 作为后端，开发了一个背单词的微信小程序《世凝听记》。\n",
+    "content": "\n\n作者使用 AWS Lambda 作为后端，开发了一个背单词的微信小程序《世凝听记》。\n\n",
     "category": "article",
     "originHref": "https://www.smilingleo.net/2020/how-to-build-a-serverless-wechat-mini-program/",
     "weekly": 96
   },
   {
     "title": "[HTTP 接口设计方案（中文）](https://www.jitao.tech/blog/2020/01/java-http-api/)",
-    "content": "\n\n作者作为架构师参与多个移动应用的前后端开发，经过多年积累，渐渐稳定下一套后端 HTTP 接口设计方案。随方案提供了一个基于 Spring Boot 的简单实现。\n",
+    "content": "\n\n作者作为架构师参与多个移动应用的前后端开发，经过多年积累，渐渐稳定下一套后端 HTTP 接口设计方案。随方案提供了一个基于 Spring Boot 的简单实现。\n\n",
     "category": "article",
     "originHref": "https://www.jitao.tech/blog/2020/01/java-http-api/",
     "weekly": 96
   },
   {
     "title": "[如何阅读科研论文（中文）](https://blog.csdn.net/qianlong4526888/article/details/11269129)",
-    "content": "\n\n有效地阅读论文，是每个研究生都必须掌握的技能。本文作者介绍一个简单的“三步法”，快速阅读科研论文。\n",
+    "content": "\n\n有效地阅读论文，是每个研究生都必须掌握的技能。本文作者介绍一个简单的“三步法”，快速阅读科研论文。\n\n",
     "category": "article",
     "originHref": "https://blog.csdn.net/qianlong4526888/article/details/11269129",
     "weekly": 96
   },
   {
     "title": "[GOTO 语句被认为有害（中文）](https://www.emon100.me/goto-translation/)",
-    "content": "\n\nDijkstra 的《GOTO 有害论》在网上只有两个不太好的翻译版本。于是我花了15天翻译了此文。希望能对想用中文了解原文，历史，评价的人能有所帮助吧。\n",
+    "content": "\n\nDijkstra 的《GOTO 有害论》在网上只有两个不太好的翻译版本。于是我花了15天翻译了此文。希望能对想用中文了解原文，历史，评价的人能有所帮助吧。\n\n",
     "category": "article",
     "originHref": "https://www.emon100.me/goto-translation/",
     "weekly": 96
@@ -11726,7 +11726,7 @@
   },
   {
     "title": "[日期版本的方案](https://chronver.org/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202001/bg2020010211.jpg)\n\n有人正式提出了“日期版本”（ChronVer）的方案，软件版本按照年月日编排。理由是用户更在乎最新版本的发布时间，而不是版本号。这里还有一篇，介绍日期版本的。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202001/bg2020010211.jpg)\n\n有人正式提出了“日期版本”（ChronVer）的方案，软件版本按照年月日编排。理由是用户更在乎最新版本的发布时间，而不是版本号。这里还有一篇，介绍日期版本的[一些现有实例](https://calver.org/)。\n\n",
     "category": "article",
     "originHref": "https://chronver.org/",
     "weekly": 95
@@ -11754,7 +11754,7 @@
   },
   {
     "title": "[GitHub Actions v2 的新语法（英文）](https://jasonet.co/posts/new-features-of-github-actions/)",
-    "content": "\n\n本文介绍 GitHub Actions 新引入的一些语法，主要介绍的是如何提供命令的输入（input）、如何使用命令的输出（output）。这里还有一篇，可以作为参考。\n\n",
+    "content": "\n\n本文介绍 GitHub Actions 新引入的一些语法，主要介绍的是如何提供命令的输入（input）、如何使用命令的输出（output）。这里还有一篇 [JavaScript 项目的实例](https://jeffrafter.com/working-with-github-actions/)，可以作为参考。\n\n",
     "category": "article",
     "originHref": "https://jasonet.co/posts/new-features-of-github-actions/",
     "weekly": 95
@@ -11796,7 +11796,7 @@
   },
   {
     "title": "[如何扫描二维码连入 WiFi（英文）](https://feeding.cloud.geek.nz/posts/encoding-wifi-access-point-passwords-qr-code/)",
-    "content": "\n\n安卓和 iOS 现在都允许扫描二维码，然后连入 Wifi。因此，可以将 WiFi 密码设得非常长，提高安全性。本文介绍如何通过 qrencode 这个工具，生成二维码。这里还有一个，可以在线生成 WiFi 的登录二维码。\n\n",
+    "content": "\n\n安卓和 iOS 现在都允许扫描二维码，然后连入 Wifi。因此，可以将 WiFi 密码设得非常长，提高安全性。本文介绍如何通过 qrencode 这个工具，生成二维码。这里还有一个 [Web 工具](https://modemly.com/qrcode)，可以在线生成 WiFi 的登录二维码。\n\n",
     "category": "article",
     "originHref": "https://feeding.cloud.geek.nz/posts/encoding-wifi-access-point-passwords-qr-code/",
     "weekly": 94
@@ -11810,7 +11810,7 @@
   },
   {
     "title": "[我亲身经历的东莞 3D 打印（中文）](https://www.zhihu.com/question/50594957/answer/949100875)",
-    "content": "\n\n一篇知乎的帖子。公司自己采购一台工业级光固化 3D 打印机，综合成本为1元/克，比深圳/东莞的外包采购价格还要贵50%，难道珠三角都在做亏本买卖吗？可怕的是，这样计算出的成本，还没考虑固定资产折旧。更可怕的是：他们不仅成本低，而且质量高、服务好。这到底是为什么？\n[GitHub 用户 Dash O'Pepper](https://filipeherculano.dev/blog/dash-o-pepper/)\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019123109.jpg)\n\n作者使用 GitHub API 时，意外发现有一个用户 Dash O'Pepper 的用户名是连词线（`-`），这个用户名无法在 Web 界面显示，但是他居然有13个 followers。\n\n",
+    "content": "\n\n一篇知乎的帖子。公司自己采购一台工业级光固化 3D 打印机，综合成本为1元/克，比深圳/东莞的外包采购价格还要贵50%，难道珠三角都在做亏本买卖吗？可怕的是，这样计算出的成本，还没考虑固定资产折旧。更可怕的是：他们不仅成本低，而且质量高、服务好。这到底是为什么？\n\n[GitHub 用户 Dash O'Pepper](https://filipeherculano.dev/blog/dash-o-pepper/)\n\n![](https://cdn.beekka.com/blogimg/asset/201912/bg2019123109.jpg)\n\n作者使用 GitHub API 时，意外发现有一个用户 Dash O'Pepper 的用户名是连词线（`-`），这个用户名无法在 Web 界面显示，但是他居然有13个 followers。\n\n",
     "category": "article",
     "originHref": "https://www.zhihu.com/question/50594957/answer/949100875",
     "weekly": 94
@@ -12083,7 +12083,7 @@
   },
   {
     "title": "[Cloud Run 托管网站（英文）](https://blog.mrtrustor.net/post/making-this-blog-with-cloud-run/)",
-    "content": "\n\nCloud Run 是谷歌云的一个 Serverless 服务，特点是直接抓取 Docker 镜像文件运行，不用自己部署文件。\n\n本文介绍作者如何使用这个服务，部署自己的静态博客网站。此外，网上还有一份，也可以参考。\n\n",
+    "content": "\n\nCloud Run 是谷歌云的一个 Serverless 服务，特点是直接抓取 Docker 镜像文件运行，不用自己部署文件。\n\n本文介绍作者如何使用这个服务，部署自己的静态博客网站。此外，网上还有一份 [Cloud Run 介绍](https://github.com/ahmetb/cloud-run-faq/blob/master/README.md)，也可以参考。\n\n",
     "category": "article",
     "originHref": "https://blog.mrtrustor.net/post/making-this-blog-with-cloud-run/",
     "weekly": 90
@@ -12160,7 +12160,7 @@
   },
   {
     "title": "[我在5天内重拍 Mac 系统默认壁纸（中文）](https://zhuanlan.zhihu.com/p/92695433)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019112810.jpg)\n\n从 OSX 10.9 版本开始，macOS 每个版本的命名都是美国加州的一个地名，同时会发布一张或者一套该地拍摄的系统壁纸。我想尝试重新拍摄 Mac 每个版本的默认壁纸。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019112810.jpg)\n\n从 OSX 10.9 版本开始，macOS 每个版本的命名都是美国加州的一个地名，同时会发布一张或者一套该地拍摄的系统壁纸。我想尝试重新拍摄 Mac 每个版本的默认壁纸。\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/92695433",
     "weekly": 89
@@ -12307,7 +12307,7 @@
   },
   {
     "title": "[实时协同编辑的实现（中文）](https://yafeilee.com/blogs/100)",
-    "content": "\n\n本文以作者自己开发的 ShowMeBug 应用为例，介绍如何实现多人同时编辑一篇文档。\n",
+    "content": "\n\n本文以作者自己开发的 ShowMeBug 应用为例，介绍如何实现多人同时编辑一篇文档。\n\n",
     "category": "article",
     "originHref": "https://yafeilee.com/blogs/100",
     "weekly": 87
@@ -12391,7 +12391,7 @@
   },
   {
     "title": "[Firefox 和 Chrome 为何要革 EV 证书的命（中文）](https://dallaslu.com/why-firefox-chrome-kill-ev/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019110801.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019110802.jpg)\n\n最贵的域名加密证书是 EV 证书，即企业认证证书。但是，新的 Firefox 浏览器不再显示 EV 证书标志，使得有没有这个证书在页面视觉上没有差异。本文讨论背后的原因，认为 EV 证书有可能死掉。这里还有也可以参考。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019110801.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201911/bg2019110802.jpg)\n\n最贵的域名加密证书是 EV 证书，即企业认证证书。但是，新的 Firefox 浏览器不再显示 EV 证书标志，使得有没有这个证书在页面视觉上没有差异。本文讨论背后的原因，认为 EV 证书有可能死掉。这里还有[另一篇](https://www.bleepingcomputer.com/news/software/chrome-and-firefox-changes-spark-the-end-of-ev-certificates/)也可以参考。\n\n",
     "category": "article",
     "originHref": "https://dallaslu.com/why-firefox-chrome-kill-ev/",
     "weekly": 86
@@ -12412,7 +12412,7 @@
   },
   {
     "title": "[HTTP 协议基础（英文）](http://www.steves-internet-guide.com/http-basics/)",
-    "content": "\n\nHTTP 是一个比较简单的协议，本文在不长的篇幅中，对它的基本内容做了一个完整介绍。\n",
+    "content": "\n\nHTTP 是一个比较简单的协议，本文在不长的篇幅中，对它的基本内容做了一个完整介绍。\n\n",
     "category": "article",
     "originHref": "http://www.steves-internet-guide.com/http-basics/",
     "weekly": 85
@@ -12461,7 +12461,7 @@
   },
   {
     "title": "[手机网页避免使用 100vh（英文）](https://chanind.github.io/javascript/2019/09/28/avoid-100vh-on-mobile-web.html)",
-    "content": "\n\n手机浏览器由于会自动显示/隐藏地址栏，所以网页如果设成高度为 100vh，会有一部分看不见，可以参考和的解决方法。\n\n",
+    "content": "\n\n手机浏览器由于会自动显示/隐藏地址栏，所以网页如果设成高度为 100vh，会有一部分看不见，可以参考 [CSS Tricks](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/) 和 [Stack Overflow](https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser) 的解决方法。\n\n",
     "category": "article",
     "originHref": "https://chanind.github.io/javascript/2019/09/28/avoid-100vh-on-mobile-web.html",
     "weekly": 85
@@ -12594,7 +12594,7 @@
   },
   {
     "title": "[Python 爬虫保存美国农业部网站的水果数据库（中文）](https://github.com/jwenjian/ghiblog/issues/114)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201910/bg2019101020.jpg)\n\n美国农业部为全世界已知水果制作了 7500 幅水彩“证件照”，并提供高清下载。作者讲述自己如何编写 Python 爬虫，抓取这些图片。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201910/bg2019101020.jpg)\n\n美国农业部为全世界已知水果制作了 7500 幅水彩“证件照”，并提供高清下载。作者讲述自己如何编写 Python 爬虫，抓取这些图片。\n\n",
     "category": "article",
     "originHref": "https://github.com/jwenjian/ghiblog/issues/114",
     "weekly": 83
@@ -12608,7 +12608,7 @@
   },
   {
     "title": "[React Hooks 的原理（英文）](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)",
-    "content": "\n\n本文通过简单的代码，自己做了一个 Hooks 的简单实现，讲解 React Hooks 的原理。\n",
+    "content": "\n\n本文通过简单的代码，自己做了一个 Hooks 的简单实现，讲解 React Hooks 的原理。\n\n",
     "category": "article",
     "originHref": "https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/",
     "weekly": 83
@@ -12797,7 +12797,7 @@
   },
   {
     "title": "[隐藏字符加密（中文）](https://zhuanlan.zhihu.com/p/75992161)",
-    "content": "\n\n解释使用零宽度字符加密文本的原理。\n",
+    "content": "\n\n解释使用零宽度字符加密文本的原理。\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/75992161",
     "weekly": 80
@@ -12846,7 +12846,7 @@
   },
   {
     "title": "[Strml.net](https://www.strml.net/)",
-    "content": "\n\n一个很有意思的网站，会一行行显示自己的源码，页面跟着代码实时变化。实现方法可以参考。\n\n",
+    "content": "\n\n一个很有意思的网站，会一行行显示自己的源码，页面跟着代码实时变化。实现方法可以参考[这里](https://codepen.io/jakealbaugh/pen/PwLXXP)。\n\n",
     "category": "article",
     "originHref": "https://www.strml.net/",
     "weekly": 79
@@ -12888,7 +12888,7 @@
   },
   {
     "title": "[计算机科学经典书籍的书单（英文）](https://www.coderscat.com/best-cs-books)",
-    "content": "\n\n作者列出心目中最佳 CS 书籍，分成编程、算法、语言、系统和网络五个部分。\n",
+    "content": "\n\n作者列出心目中最佳 CS 书籍，分成编程、算法、语言、系统和网络五个部分。\n\n",
     "category": "article",
     "originHref": "https://www.coderscat.com/best-cs-books",
     "weekly": 79
@@ -12902,7 +12902,7 @@
   },
   {
     "title": "[怎么看待微软亚洲研究院？（英文）](https://macropolo.org/china-ai-research-resnet/)",
-    "content": "\n\n过去5年中，人工智能领域引用最多的论文出自北京的微软亚洲研究院 MSRA，作者是四个中国人。事实上，MSRA 培养了。本文站在美国的立场，分析美国应该怎么看待这件事情。\n\n\n\n",
+    "content": "\n\n过去5年中，人工智能领域引用最多的论文出自北京的微软亚洲研究院 MSRA，作者是四个中国人。事实上，MSRA 培养了[大量的人才](https://zhuanlan.zhihu.com/p/49268550)。本文站在美国的立场，分析美国应该怎么看待这件事情。\n\n\n\n",
     "category": "article",
     "originHref": "https://macropolo.org/china-ai-research-resnet/",
     "weekly": 78
@@ -12930,7 +12930,7 @@
   },
   {
     "title": "[短网址（short URL）系统的原理及其实现（中文）](https://hufangyun.com/2017/short-url/)",
-    "content": "\n\n本文介绍短网址服务的原理，以及如何写一个实现。\n",
+    "content": "\n\n本文介绍短网址服务的原理，以及如何写一个实现。\n\n",
     "category": "article",
     "originHref": "https://hufangyun.com/2017/short-url/",
     "weekly": 78
@@ -13098,21 +13098,21 @@
   },
   {
     "title": "[如何使用 IPFS 集群架设静态网站？（英文）](https://withblue.ink/2018/11/14/distributed-web-host-your-website-with-ipfs-clusters-cloudflare-and-devops.html)",
-    "content": "\n\nIPFS 是一种新的 Web 架构，本文作者尝试让自己的静态网站可以通过 IPFS 访问。本文还有，介绍如何持续集成，只要推送源码，就自动构建，然后推送到 IPFS。\n\n",
+    "content": "\n\nIPFS 是一种新的 Web 架构，本文作者尝试让自己的静态网站可以通过 IPFS 访问。本文还有[续集](https://withblue.ink/2019/03/20/hugo-and-ipfs-how-this-blog-works-and-scales.html)，介绍如何持续集成，只要推送源码，就自动构建，然后推送到 IPFS。\n\n",
     "category": "article",
     "originHref": "https://withblue.ink/2018/11/14/distributed-web-host-your-website-with-ipfs-clusters-cloudflare-and-devops.html",
     "weekly": 76
   },
   {
     "title": "[JavaScript 的函数、对象、原型、原型链的关系（中文）](https://zhuanlan.zhihu.com/p/84876191)",
-    "content": "\n\n一篇对于 JavaScript 原型链相关知识的总结。\n",
+    "content": "\n\n一篇对于 JavaScript 原型链相关知识的总结。\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/84876191",
     "weekly": 76
   },
   {
     "title": "[日本企业的产业升级之路（中文）](https://zhuanlan.zhihu.com/p/73949600)",
-    "content": "\n\n跟大家的印象不一样，日本企业这几年不是走下坡路，而是在走上坡路。东京股市从安倍上台的2012年的8000点，已经上升到2万2000点。本文介绍一些日本企业的最新发展。\n",
+    "content": "\n\n跟大家的印象不一样，日本企业这几年不是走下坡路，而是在走上坡路。东京股市从安倍上台的2012年的8000点，已经上升到2万2000点。本文介绍一些日本企业的最新发展。\n\n",
     "category": "article",
     "originHref": "https://zhuanlan.zhihu.com/p/73949600",
     "weekly": 76
@@ -13175,7 +13175,7 @@
   },
   {
     "title": "[Linux 桌面环境的发展历史回顾（英文）](https://opensource.com/article/19/8/how-linux-desktop-grown)",
-    "content": "\n\nLinux 是作为命令行下的服务器系统开发的，桌面环境一直不如商业的操作系统。本文回顾了 Linux 桌面环境的发展历史，带有多张图片。\n",
+    "content": "\n\nLinux 是作为命令行下的服务器系统开发的，桌面环境一直不如商业的操作系统。本文回顾了 Linux 桌面环境的发展历史，带有多张图片。\n\n",
     "category": "article",
     "originHref": "https://opensource.com/article/19/8/how-linux-desktop-grown",
     "weekly": 75
@@ -13301,7 +13301,7 @@
   },
   {
     "title": "[如何使用 Firefox 的免费代理？（中文）](https://shimo.im/docs/8tQ9VChgqTGjHpG8/read)",
-    "content": "\n\nFirefox 推出了浏览器全局的默认代理，本文介绍如何安装试用。\n",
+    "content": "\n\nFirefox 推出了浏览器全局的默认代理，本文介绍如何安装试用。\n\n",
     "category": "article",
     "originHref": "https://shimo.im/docs/8tQ9VChgqTGjHpG8/read",
     "weekly": 73
@@ -13315,21 +13315,21 @@
   },
   {
     "title": "[黄金分割的数据可视化（中文）](https://card.weibo.com/article/m/show/id/2309404407466321379574)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201908/bg2019082303.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201908/bg2019082304.jpg)\n\n本文通过可视化图形解释，为什么植物花盘都符合黄金分割。黄金分割这个无理数的比率，在图形上到底是什么含义。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201908/bg2019082303.jpg)\n\n![](https://cdn.beekka.com/blogimg/asset/201908/bg2019082304.jpg)\n\n本文通过可视化图形解释，为什么植物花盘都符合黄金分割。黄金分割这个无理数的比率，在图形上到底是什么含义。\n\n",
     "category": "article",
     "originHref": "https://card.weibo.com/article/m/show/id/2309404407466321379574",
     "weekly": 73
   },
   {
     "title": "[各种编程语言的 0.3](https://0.30000000000000004.com/)",
-    "content": "\n\n我们知道，浮点数计算是不精确的，0.1 + 0.2 不精确等于 0.3。这个网站列出了各种编程语言的 0.1 + 0.2 的结果。\n",
+    "content": "\n\n我们知道，浮点数计算是不精确的，0.1 + 0.2 不精确等于 0.3。这个网站列出了各种编程语言的 0.1 + 0.2 的结果。\n\n",
     "category": "article",
     "originHref": "https://0.30000000000000004.com/",
     "weekly": 73
   },
   {
     "title": "[Chrome 浏览器的工作原理（英文）](https://developers.google.com/web/updates/2018/09/inside-browser-part1)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201908/bg2019082305.jpg)\n\n谷歌官方的系列，一共有四篇。采用多幅图片，一层层从计算机底层一直到浏览器渲染引擎，介绍 Chrome 浏览器渲染网页的工作原理。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201908/bg2019082305.jpg)\n\n谷歌官方的系列，一共有四篇。采用多幅图片，一层层从计算机底层一直到浏览器渲染引擎，介绍 Chrome 浏览器渲染网页的工作原理。\n\n\n\n",
     "category": "article",
     "originHref": "https://developers.google.com/web/updates/2018/09/inside-browser-part1",
     "weekly": 72
@@ -13392,14 +13392,14 @@
   },
   {
     "title": "[如何自己写一个静态站点生成器（中文）](http://muxueqz.top/a-small-static-site-generator.html)",
-    "content": "\n\n一直很想自己写一个静态博客，但总是觉得比较麻烦。直到看到 Writing a small static site generator ，才发现原来写一个静态博客竟如此简单。\n",
+    "content": "\n\n一直很想自己写一个静态博客，但总是觉得比较麻烦。直到看到 Writing a small static site generator ，才发现原来写一个静态博客竟如此简单。\n\n",
     "category": "article",
     "originHref": "http://muxueqz.top/a-small-static-site-generator.html",
     "weekly": 72
   },
   {
     "title": "[美国数据科学家挣多少钱（英文）](https://towardsdatascience.com/how-much-do-data-scientists-make-cbd7ec2b458)",
-    "content": "\n\n薪资中位数为120,000美元。这个中位数只是基本工资，不包括现金奖励，股权和福利。\n\n\n",
+    "content": "\n\n薪资中位数为120,000美元。这个中位数只是基本工资，不包括现金奖励，股权和福利。\n\n\n\n",
     "category": "article",
     "originHref": "https://towardsdatascience.com/how-much-do-data-scientists-make-cbd7ec2b458",
     "weekly": 71
@@ -13420,14 +13420,14 @@
   },
   {
     "title": "[我的日本码农就职总结（中文）](http://vinci7.github.io/article/jobhunting-0)",
-    "content": "\n\n本文较为详尽的记录了计算机专业应届生在日本校招求职整个过程，包括抉择、事前准备、面试经历及感想。如果你想去日本工作，可以参考。\n",
+    "content": "\n\n本文较为详尽的记录了计算机专业应届生在日本校招求职整个过程，包括抉择、事前准备、面试经历及感想。如果你想去日本工作，可以参考。\n\n",
     "category": "article",
     "originHref": "http://vinci7.github.io/article/jobhunting-0",
     "weekly": 71
   },
   {
     "title": "[FACEBOOK 伦敦终面经历（中文）](https://justyy.com/archives/19030)",
-    "content": "\n\n五月份的时候，在 LINKEDIN 上看到 FACEBOOK 伦敦的招聘广告，于是就投了，当时不抱希望的。投了简历很快就接到 FB 猎头的联系。\n",
+    "content": "\n\n五月份的时候，在 LINKEDIN 上看到 FACEBOOK 伦敦的招聘广告，于是就投了，当时不抱希望的。投了简历很快就接到 FB 猎头的联系。\n\n",
     "category": "article",
     "originHref": "https://justyy.com/archives/19030",
     "weekly": 71
@@ -13518,7 +13518,7 @@
   },
   {
     "title": "[为什么你应该使用 pathlib（英文）](https://treyhunner.com/2018/12/why-you-should-be-using-pathlib/)",
-    "content": "\n\n本文介绍 Python 新的路径库`pathlib`比原来的`os.path`好在哪里。\n",
+    "content": "\n\n本文介绍 Python 新的路径库`pathlib`比原来的`os.path`好在哪里。\n\n",
     "category": "article",
     "originHref": "https://treyhunner.com/2018/12/why-you-should-be-using-pathlib/",
     "weekly": 70
@@ -13595,7 +13595,7 @@
   },
   {
     "title": "[从图片优化说起（中文）](https://cjting.me/2019/07/29/image-optimization/)",
-    "content": "\n\n谈谈如何使用 Node.js 进行各种图片操作，优化 Web 图片体验。\n",
+    "content": "\n\n谈谈如何使用 Node.js 进行各种图片操作，优化 Web 图片体验。\n\n",
     "category": "article",
     "originHref": "https://cjting.me/2019/07/29/image-optimization/",
     "weekly": 69
@@ -13686,7 +13686,7 @@
   },
   {
     "title": "[JetBrains IDE 基本快捷键（中文）](https://nextfe.com/jetbrains-ide-shortcuts/)",
-    "content": "\n\nIntelliJ 的快捷键绝大部分同样适用于其他 JetBrains IDE，包括前端开发常用的 WebStorm 和 Android 开发常用的 Android Studio。掌握这些快捷键能使你成为一个更娴熟的软件开发者。\n\n\n",
+    "content": "\n\nIntelliJ 的快捷键绝大部分同样适用于其他 JetBrains IDE，包括前端开发常用的 WebStorm 和 Android 开发常用的 Android Studio。掌握这些快捷键能使你成为一个更娴熟的软件开发者。\n\n\n\n",
     "category": "article",
     "originHref": "https://nextfe.com/jetbrains-ide-shortcuts/",
     "weekly": 67
@@ -13819,14 +13819,14 @@
   },
   {
     "title": "[阿波罗登月计划如何促进计算机的进步（英文）](https://www.fastcompany.com/90362753/how-nasa-gave-birth-to-modern-computing-and-gets-no-credit-for-it)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019071609.jpg)\n\n今年7月20日是阿波罗登月计划50周年的纪念日，本文回顾了登月对计算机的推动作用。上图就是导航系统的主机壳，右边是它的输入模块。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019071609.jpg)\n\n今年7月20日是阿波罗登月计划50周年的纪念日，本文回顾了登月对计算机的推动作用。上图就是导航系统的主机壳，右边是它的输入模块。\n\n",
     "category": "article",
     "originHref": "https://www.fastcompany.com/90362753/how-nasa-gave-birth-to-modern-computing-and-gets-no-credit-for-it",
     "weekly": 66
   },
   {
     "title": "[视频弹幕标准的建议稿](https://w3c-proposal-incubation.github.io/danmaku-proposal/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019072401.png)\n\n本文总结了视频弹幕的特点，建议引入新的 HTML 标签`<bulletchatlist>`和`<bulletchat>`。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201907/bg2019072401.png)\n\n本文总结了视频弹幕的特点，建议引入新的 HTML 标签`<bulletchatlist>`和`<bulletchat>`。\n\n",
     "category": "article",
     "originHref": "https://w3c-proposal-incubation.github.io/danmaku-proposal/",
     "weekly": 66
@@ -14022,7 +14022,7 @@
   },
   {
     "title": "[84个认知偏见（英文）](https://www.mobilespoon.net/2019/04/collection-cognitive-biases-how-to-use.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019061307.jpg)\n\n如何利用心理学上人类的84个认知偏见改进产品，提高转化率。比如，人们会对稀缺的东西有更高的评价，因此要突出产品的稀缺性（上图）。（@d\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019061307.jpg)\n\n如何利用心理学上人类的84个认知偏见改进产品，提高转化率。比如，人们会对稀缺的东西有更高的评价，因此要突出产品的稀缺性（上图）。\n\n",
     "category": "article",
     "originHref": "https://www.mobilespoon.net/2019/04/collection-cognitive-biases-how-to-use.html",
     "weekly": 63
@@ -14113,7 +14113,7 @@
   },
   {
     "title": "[高质量软件是否能弥补成本？（英文）](https://martinfowler.com/articles/is-quality-worth-cost.html)",
-    "content": "\n\n马丁·福勒的新。高质量软件必然有较高的成本，而用户对软件的内部质量不一定会有感知，未必愿意买单。为了降低软件的成本，有时不得不牺牲一点质量，马丁·福勒谈了对这个问题的看法。\n",
+    "content": "\n\n马丁·福勒的新。高质量软件必然有较高的成本，而用户对软件的内部质量不一定会有感知，未必愿意买单。为了降低软件的成本，有时不得不牺牲一点质量，马丁·福勒谈了对这个问题的看法。\n\n",
     "category": "article",
     "originHref": "https://martinfowler.com/articles/is-quality-worth-cost.html",
     "weekly": 62
@@ -14260,7 +14260,7 @@
   },
   {
     "title": "[我的透明创业实验（中文）](https://blog.t9t.io/transparent-startup-experiment-2019-05-20/)",
-    "content": "\n\n一个正在进行的创业实验，一年时间做10个小产品，看看能否达到每月被动收入1000美元的目标。\n",
+    "content": "\n\n一个正在进行的创业实验，一年时间做10个小产品，看看能否达到每月被动收入1000美元的目标。\n\n",
     "category": "article",
     "originHref": "https://blog.t9t.io/transparent-startup-experiment-2019-05-20/",
     "weekly": 60
@@ -14274,28 +14274,28 @@
   },
   {
     "title": "[如何评价 Erlang 语言之父 Joe Armstrong（中文）](https://www.zhihu.com/question/321011169/answer/658027406)",
-    "content": "\n\nJoe Armstrong 是 Erlang 语言的发明人， 单单他的论文《面对软件错误构建可靠的分布式系统》就足以载入史册，他提出面向对象编程本质上不是并发的正确处理方法。 \n",
+    "content": "\n\nJoe Armstrong 是 Erlang 语言的发明人， 单单他的论文《面对软件错误构建可靠的分布式系统》就足以载入史册，他提出面向对象编程本质上不是并发的正确处理方法。 \n\n",
     "category": "article",
     "originHref": "https://www.zhihu.com/question/321011169/answer/658027406",
     "weekly": 59
   },
   {
     "title": "[SHA-256 哈希算法（英文）](https://medium.com/biffures/part-5-hashing-with-sha-256-4c2afc191c40)",
-    "content": "\n\n一篇通俗教程，一步步解释了 SHA256 的计算方法，并有图例和 JavaScript 实现。\n",
+    "content": "\n\n一篇通俗教程，一步步解释了 SHA256 的计算方法，并有图例和 JavaScript 实现。\n\n",
     "category": "article",
     "originHref": "https://medium.com/biffures/part-5-hashing-with-sha-256-4c2afc191c40",
     "weekly": 59
   },
   {
     "title": "[你用不惯 RxJava，只因缺了这把钥匙（中文）](https://juejin.im/post/5cb82a42e51d456e62545ac6)",
-    "content": "\n\n帮助读者理解 RxJava 操作符，并给出了一个。\n",
+    "content": "\n\n帮助读者理解 RxJava 操作符，并给出了一个[示例项目](https://github.com/KunMinX/RxJava2-Operators-Sample)。\n\n",
     "category": "article",
     "originHref": "https://juejin.im/post/5cb82a42e51d456e62545ac6",
     "weekly": 59
   },
   {
     "title": "[前端框架的性能比较（中文）](https://nextfe.com/frontend-frameworks-benchmark-2019/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019060715.jpg)\n\n本文将一个 App 用18个前端框架实现，然后比较它们的性能，翻译自。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019060715.jpg)\n\n本文将一个 App 用18个前端框架实现，然后比较它们的性能，翻译自[英语原文](https://medium.freecodecamp.org/a-realworld-comparison-of-front-end-frameworks-with-benchmarks-2019-update-4be0d3c78075)。\n\n",
     "category": "article",
     "originHref": "https://nextfe.com/frontend-frameworks-benchmark-2019/",
     "weekly": 59
@@ -14316,7 +14316,7 @@
   },
   {
     "title": "[十四亿人的口腹之欲，是如何被满足的？（中文）](https://www.weibo.com/ttarticle/p/show?id=2309404370494647344427&sudaref=dig.chouti.com&display=0&retcode=6102)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019060716.jpg)\n\n本文翻译自剑桥大学博士在 Quora 的回答，中国如何使用农业科技，生产出足够便宜的农产品，满足14亿人的消费。\n[树莓派 GPIO 介绍](https://www.tomshardware.com/reviews/raspberry-pi-gpio-pinout,6122.html)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019060717.jpg)\n\n树莓派的功能扩展，往往都要通过板载的通用输入/输出模块 GPIO。本文介绍 GPIO 的基本知识。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019060716.jpg)\n\n本文翻译自剑桥大学博士在 Quora 的回答，中国如何使用农业科技，生产出足够便宜的农产品，满足14亿人的消费。\n\n[树莓派 GPIO 介绍](https://www.tomshardware.com/reviews/raspberry-pi-gpio-pinout,6122.html)（英文）\n\n![](https://cdn.beekka.com/blogimg/asset/201906/bg2019060717.jpg)\n\n树莓派的功能扩展，往往都要通过板载的通用输入/输出模块 GPIO。本文介绍 GPIO 的基本知识。\n\n",
     "category": "article",
     "originHref": "https://www.weibo.com/ttarticle/p/show?id=2309404370494647344427&sudaref=dig.chouti.com&display=0&retcode=6102",
     "weekly": 59
@@ -14442,7 +14442,7 @@
   },
   {
     "title": "[虚拟内存探究（中文）](http://blog.coderhuo.tech/2017/10/19/Virtual_Memory_summary/)",
-    "content": "\n\n这组系列通过实验的方式，介绍虚拟内存的相关概念和实现，这里是中文翻译，还可以参考。\n",
+    "content": "\n\n这组系列通过实验的方式，介绍虚拟内存的相关概念和实现，这里是中文翻译，还可以参考[英语原版](https://blog.holbertonschool.com/hack-the-virtual-memory-c-strings-proc/)。\n\n",
     "category": "article",
     "originHref": "http://blog.coderhuo.tech/2017/10/19/Virtual_Memory_summary/",
     "weekly": 57
@@ -14484,7 +14484,7 @@
   },
   {
     "title": "[如何画一幅栩栩如生的画（英文）](https://www.scotthyoung.com/blog/2019/04/17/7-realistic-drawing-skills/)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019051720.jpg)\n\n作者讲了七个让作品变得更真实的绘画技巧/技术。它们与软件开发有相似之处，可以借鉴，比如顶层设计、一开始不要过分关注细节等。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019051720.jpg)\n\n作者讲了七个让作品变得更真实的绘画技巧/技术。它们与软件开发有相似之处，可以借鉴，比如顶层设计、一开始不要过分关注细节等。\n\n",
     "category": "article",
     "originHref": "https://www.scotthyoung.com/blog/2019/04/17/7-realistic-drawing-skills/",
     "weekly": 56
@@ -14533,7 +14533,7 @@
   },
   {
     "title": "[Go 语言为什么快的5个原因（英文）](https://dave.cheney.net/2014/06/07/five-things-that-make-go-fast)",
-    "content": "\n\n本文从计算机底层分析 Go 语言运行速度快的五个原因。\n",
+    "content": "\n\n本文从计算机底层分析 Go 语言运行速度快的五个原因。\n\n",
     "category": "article",
     "originHref": "https://dave.cheney.net/2014/06/07/five-things-that-make-go-fast",
     "weekly": 56
@@ -14624,7 +14624,7 @@
   },
   {
     "title": "[全平台框架 Flutter（英文）](https://developers.googleblog.com/2019/05/Flutter-io19.html)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019051013.jpg)\n\n谷歌发布，正式宣布 Flutter 成为全平台框架，支持手机、Web、桌面电脑和嵌入式设备。现在学跨平台应用开发，第一个要看的可能不是 React Native，而是 Flutter。\n\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019051013.jpg)\n\n谷歌发布 [Flutter for web](https://github.com/flutter/flutter_web)，正式宣布 Flutter 成为全平台框架，支持手机、Web、桌面电脑和嵌入式设备。现在学跨平台应用开发，第一个要看的可能不是 React Native，而是 Flutter。\n\n\n\n",
     "category": "article",
     "originHref": "https://developers.googleblog.com/2019/05/Flutter-io19.html",
     "weekly": 54
@@ -14680,7 +14680,7 @@
   },
   {
     "title": "[25年后重新采访 Linus Torvalds（中文）](https://mp.weixin.qq.com/s/KWC43nTsL134n6VkSD2x4w)",
-    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019050318.jpg)\n\nLinux Journal 杂志1994年创刊号了 Linus Torvalds，为了庆祝杂志诞生25周年又重新采访了他。上一次采访时，他还没结婚，现在有三个小孩，老大马上就要大学毕业。上一次，杂志问他有何梦想，他说希望 Linux 统治世界。现在，他说早就不开这种玩笑了，因为这话已经不像玩笑了。\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201905/bg2019050318.jpg)\n\nLinux Journal 杂志1994年创刊号[采访](https://www.linuxjournal.com/article/2736)了 Linus Torvalds，为了庆祝杂志诞生25周年又重新采访了他\n\n",
     "category": "article",
     "originHref": "https://mp.weixin.qq.com/s/KWC43nTsL134n6VkSD2x4w",
     "weekly": 54
@@ -14813,7 +14813,7 @@
   },
   {
     "title": "[我作为工程师的报酬（英文）](https://georgestocker.com/2019/03/14/my-salary-progression-in-tech/)",
-    "content": "\n\n一个美国工程师回顾自己的薪水增长，2007年他作为 IT 管理员，年薪是4.2万美元，2018年他变成了架构师，年薪是18.9万美元。许多网友看了他的，也纷纷留言，写下自己的。\n\n",
+    "content": "\n\n一个美国工程师回顾自己的薪水增长，2007年他作为 IT 管理员，年薪是4.2万美元，2018年他变成了架构师，年薪是18.9万美元。许多网友看了他的，也纷纷留言，写下自己的[年薪变化](https://news.ycombinator.com/item?id=19393688)。\n\n",
     "category": "article",
     "originHref": "https://georgestocker.com/2019/03/14/my-salary-progression-in-tech/",
     "weekly": 52
@@ -14848,7 +14848,7 @@
   },
   {
     "title": "[996.icu 事件的可视化（视频）](https://www.weibo.com/tv/v/Hp9hqmUGK)",
-    "content": "\n\n这段90秒的视频，帮你回顾 996.icu 事件的全过程。\n",
+    "content": "\n\n这段90秒的视频，帮你回顾 996.icu 事件的全过程。\n\n",
     "category": "article",
     "originHref": "https://www.weibo.com/tv/v/Hp9hqmUGK",
     "weekly": 52
@@ -14995,7 +14995,7 @@
   },
   {
     "title": "[State of CSS 2019（英文）](https://stateofjs.typeform.com/to/TxDuh6)",
-    "content": "\n\n针对全世界开发者的 CSS 调查。\n",
+    "content": "\n\n针对全世界开发者的 CSS 调查。\n\n",
     "category": "article",
     "originHref": "https://stateofjs.typeform.com/to/TxDuh6",
     "weekly": 50
@@ -15149,7 +15149,7 @@
   },
   {
     "title": "[Flexbox 详解（中文）](https://github.com/veedrin/horseshoe/blob/master/flex/flex.md)",
-    "content": "\n\n详细介绍 CSS 的 Flexbox 布局，配有大量图片说明。\n",
+    "content": "\n\n详细介绍 CSS 的 Flexbox 布局，配有大量图片说明。\n\n",
     "category": "article",
     "originHref": "https://github.com/veedrin/horseshoe/blob/master/flex/flex.md",
     "weekly": 48
@@ -15212,7 +15212,7 @@
   },
   {
     "title": "[自学计算机科学（英文）](https://teachyourselfcs.com/#programming)",
-    "content": "\n\n本文给出自学计算机科学所需阅读的书单，有。\n",
+    "content": "\n\n本文给出自学计算机科学所需阅读的书单，有[中译](http://blog.jobbole.com/114573/)。\n\n",
     "category": "article",
     "originHref": "https://teachyourselfcs.com/#programming",
     "weekly": 47
