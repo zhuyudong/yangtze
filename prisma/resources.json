@@ -12957,7 +12957,7 @@
     "weekly": 9
   },
   {
-    "title": "[PPT] [Docker and Go（英文）](https://www.slideshare.net/jpetazzo/docker-and-go-why-did-we-decide-to-write-docker-in-go)",
+    "title": "[【PPT】Docker and Go（英文）](https://www.slideshare.net/jpetazzo/docker-and-go-why-did-we-decide-to-write-docker-in-go)",
     "content": "\n\n2013年的时候，Docker 团队介绍他们为什么使用 Go 语言写 Docker。\n\n",
     "category": "resource",
     "originHref": "https://www.slideshare.net/jpetazzo/docker-and-go-why-did-we-decide-to-write-docker-in-go",
@@ -13195,7 +13195,7 @@
     "weekly": 5
   },
   {
-    "title": "[【笔记】《技术面试需要掌握的基础知识整理》（中文）](https://github.com/CyC2018/Interview-Notebook)",
+    "title": "[【笔】《技术面试需要掌握的基础知识整理》（中文）](https://github.com/CyC2018/Interview-Notebook)",
     "content": "\n\n技术面试需要掌握的基础知识整理。\n\n",
     "category": "resource",
     "originHref": "https://github.com/CyC2018/Interview-Notebook",
@@ -13230,7 +13230,7 @@
     "weekly": 4
   },
   {
-    "title": "[【文章】ust 的内存安全革命（[中译、[原文](https://anixe.pl/content/news/rust_memory_safety_revolution)）",
+    "title": "[文章] Rust 的内存安全革命（[中译、[原文](https://anixe.pl/content/news/rust_memory_safety_revolution)）](http://szpzs.oschina.io/2018/04/28/rust-memory-safety-revolution/#more)",
     "content": "\n\nRust 语言不需要手动管理内容，却也没有垃圾回收机制，这是怎么实现的？\n\n> 本文集中介绍 Rust 最重要的核心特性：内存管理。这是 Rust 的主要创新之一，它的许多独特的特点是基于此的。本文写给不知道 Rust 或刚刚开始学习它的程序员的。对于熟悉 C、C++ 或其他使用手动管理内存以及使用垃圾回收器语言的读者来说会更容易理解 Rust 的特点。\n\n",
     "category": "resource",
     "originHref": "http://szpzs.oschina.io/2018/04/28/rust-memory-safety-revolution/#more",
@@ -13279,7 +13279,7 @@
     "weekly": 3
   },
   {
-    "title": "[电子书][《计算与推断：数据科学基础》](https://ds8.gitbooks.io/textbook/content/)",
+    "title": "[【电子】《计算与推断：数据科学基础》](https://ds8.gitbooks.io/textbook/content/)",
     "content": "\n\n本书是加州大学伯克利分校《数据科学导论》课程的教材，现在开源了。\n\n",
     "category": "resource",
     "originHref": "https://ds8.gitbooks.io/textbook/content/",

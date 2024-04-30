@@ -10,7 +10,7 @@ import { XMarkIcon } from '@/components/icons/XMarkIcon'
 import { NoInterestedLine } from './NoInterestedLine'
 
 const r =
-  /\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?@~+:&=%#]*)\)/
+  /\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?@~+:&=%#]*)\)/
 
 export const Content = ({
   id,

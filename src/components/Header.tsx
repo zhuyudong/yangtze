@@ -57,7 +57,8 @@ export function TopLevelNavItem({
 
 export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
   function Header({ className }, ref) {
-    const t = useTranslations('User')
+    const tu = useTranslations('User')
+    const tr = useTranslations('Resources')
     const { data: session } = useSession()
     const { isOpen: mobileNavIsOpen } = useMobileNavigationStore()
     const isInsideMobileNavigation = useIsInsideMobileNavigation()
@@ -103,9 +104,11 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
           <nav className="hidden md:block">
             <ul role="list" className="flex items-center gap-8">
               {/* <TopLevelNavItem href="/blog">Blog</TopLevelNavItem> */}
-              <TopLevelNavItem href="/poetry">Poetry</TopLevelNavItem>
-              <TopLevelNavItem href="/movies">Movies</TopLevelNavItem>
-              <TopLevelNavItem href="/wallpaper">Wallpaper</TopLevelNavItem>
+              <TopLevelNavItem href="/poetry">{tr('poetry')}</TopLevelNavItem>
+              <TopLevelNavItem href="/movies">{tr('movies')}</TopLevelNavItem>
+              <TopLevelNavItem href="/wallpaper">
+                {tr('wallpaper')}
+              </TopLevelNavItem>
             </ul>
           </nav>
           <div className="hidden md:block md:h-5 md:w-px md:bg-zinc-900/10 md:dark:bg-white/15" />
@@ -118,7 +121,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
             {session ? (
               <UserMenu />
             ) : (
-              <Button href="/auth">{t('sign_in')}</Button>
+              <Button href="/auth">{tu('sign_in')}</Button>
             )}
           </div>
         </div>

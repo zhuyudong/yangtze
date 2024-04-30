@@ -94,7 +94,7 @@ def get_issues():
 
 
 # '[三星公司](https://www.kedglobal.com/newsView/ked202105090002)推出笔记本电脑的 Exynos 芯片，是世界首块可以运行 Windows 的 ARM 架构的笔记本芯片。此前，苹果公司已经将 ARM 芯片 M1 用于笔记本电脑。'
-lint_title_reg = r"^(\[[\u4e00-\u9fa5\u3000-\u303F《》()（）\"“”`%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?@~+:&=%#]*)\))(.*)$"
+lint_title_reg = r"^(\[[\u4e00-\u9fa5\u3000-\u303F《》()（）\"“”`%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?@~+:&=%#]*)\))(.*)$"
 # result = re.match(pattern, text)
 # content = result.group(3)
 

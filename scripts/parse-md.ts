@@ -43,45 +43,20 @@ const linkTitleReg =
   /^(\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\s?\((https?:\/\/[a-zA-Z.\-_\d/?@~+:&=%#]*)\))(.*)$/
 
 function formatTitle(title: string) {
-  if (
-    title.startsWith('[文章] ') ||
-    title.startsWith('[游戏] ') ||
-    title.startsWith('[图片] ') ||
-    title.startsWith('[视频] ') ||
-    title.startsWith('[仓库] ') ||
-    title.startsWith('[课程] ') ||
-    title.startsWith('[网站] ') ||
-    title.startsWith('[资料] ') ||
-    title.startsWith('[代码] ') ||
-    title.startsWith('[笔记] ')
-  ) {
-    title = `[【${title.slice(1, 3)}】${title.slice(5).split('](')[0].slice(1)}](${title.split('](')[1]}`
-  }
-  if (title.startsWith('[笔记][')) {
-    title = `[【${title.slice(1, 3)}】${title.slice(4).split('](')[0].slice(1)}](${title.split('](')[1]}`
-  }
-  if (title.startsWith('[电子书] ') || title.startsWith('[PDF] ')) {
-    title = `[【${title.slice(1, 4)}】${title.slice(6).split('](')[0].slice(1)}](${title.split('](')[1]}`
-  }
-  if (
-    title.startsWith('[代码仓库] ') ||
-    title.startsWith('[邮件列表] ') ||
-    title.startsWith('[免费视频] ') ||
-    title.startsWith('[视频课程] ')
-  ) {
-    title = `[【${title.slice(1, 5)}】${title.slice(7).split('](')[0].slice(1)}](${title.split('](')[1]}`
-  }
-  if (title.startsWith('[免费电子书] ')) {
-    title = `[【${title.slice(1, 6)}】${title.slice(8).split('](')[0].slice(1)}](${title.split('](')[1]}`
-  }
-  if (title.startsWith('[机器人数据库] ')) {
-    title = `[【${title.slice(1, 7)}】${title.slice(9).split('](')[0].slice(1)}](${title.split('](')[1]}`
-  }
-  if (title.startsWith('[GitHub 替代品] ')) {
-    title = `[【${title.slice(1, 11)}】${title.slice(13).split('](')[0].slice(1)}](${title.split('](')[1]}`
-  }
   if (title.startsWith('[] ')) {
     title = title.replace('[] ', '')
+  }
+  const mc = title.match(/(\[[\u4e00-\u9fa5\sa-zA-Z-_]*\]\s?)\[/)
+  /**
+   * e.g.
+   * [文章]\s
+   * [PDF]\s
+   * [代码仓库]\s
+   * [GitHub 替代品]\s
+   */
+  if (mc?.[1]) {
+    const l = mc?.[1].length
+    title = `[【${title.slice(1, l - 2)}】${title.slice(l).split('](')[0].slice(1)}](${title.split('](')[1]}`
   }
   title = title.replace(/\\_\s?/g, '')
   title = title.replace(' 投稿）', '')
@@ -94,43 +69,43 @@ function removeComment(str: string) {
     .replace(/\\_\s?/g, '')
     .replace(/\\\*\s?/g, '')
     .replace(
-      /（\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
+      /（\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
       ''
     )
     .replace(
-      /（@\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
+      /（@\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
       ''
     )
     .replace(
-      /\(@\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿\)/g,
+      /\(@\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿\)/g,
       ''
     )
     .replace(
-      /\(\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿\)/g,
+      /\(\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿\)/g,
       ''
     )
     .replace(
-      /（ \[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
+      /（ \[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
       ''
     )
     .replace(
-      /\(\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
+      /\(\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
       ''
     )
     .replace(
-      /（@ \[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
+      /（@ \[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
       ''
     )
     .replace(
-      /（作者@\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
+      /（作者@\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
       ''
     )
     .replace(
-      /（[\u4e00-\u9fa5]+\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
+      /（[\u4e00-\u9fa5]+\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
       ''
     )
     .replace(
-      /（[@a-zA-Z]+\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
+      /（[@a-zA-Z]+\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`@%?？·a-zA-Z,，。:：,.\d\s+-~～]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\)\s*投稿）/g,
       ''
     )
     .replace(/@[\u4e00-\u9fa5a-zA-Z\d]+\s*投稿/g, '')

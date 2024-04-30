@@ -249,13 +249,13 @@ function NavigationGroup({
 }
 
 export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
-  const t = useTranslations('Resources')
-  const t1 = useTranslations('User')
+  const tr = useTranslations('Resources')
+  const tu = useTranslations('User')
   const { data: session } = useSession()
 
   const ns: Array<NavGroup> = [
     {
-      title: t('technology_column'),
+      title: tr('technology_column'),
       links: [
         { title: 'Introduction', href: '/' },
         { title: 'React APIs', href: '/react-apis' },
@@ -287,48 +287,48 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
       ]
     },
     {
-      title: t('reading_space'),
+      title: tr('reading_space'),
       links: [
-        { title: t('poetry'), href: '/poetry', icon: FireIcon },
+        { title: tr('poetry'), href: '/poetry', icon: FireIcon },
         // { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },
         // { title: '电影', href: '/movies', icon: MovieIcon },
         {
-          title: t('articles'),
+          title: tr('articles'),
           href: '/weekly-by-category/articles',
           icon: ArticleIcon
         },
         {
-          title: t('excerpts'),
+          title: tr('excerpts'),
           href: '/weekly-by-category/excerpts',
           icon: ExcerptIcon
         },
         {
-          title: t('quotations'),
+          title: tr('quotations'),
           href: '/weekly-by-category/quotations',
           icon: QuotationIcon
         },
         {
-          title: t('social_photos_text'),
+          title: tr('social_photos_text'),
           href: '/weekly-by-category/photos',
           icon: PhotoIcon
         },
         {
-          title: t('technology_news'),
+          title: tr('technology_news'),
           href: '/weekly-by-category/news',
           icon: NewIcon
         },
         {
-          title: t('technology_trends'),
+          title: tr('technology_trends'),
           href: '/weekly-by-category/technology-news',
           icon: TechnologyNewIcon
         },
         {
-          title: t('development_tools'),
+          title: tr('development_tools'),
           href: '/weekly-by-category/tools',
           icon: ToolIcon
         },
         {
-          title: t('resources'),
+          title: tr('resources'),
           href: '/weekly-by-category/resources',
           icon: ResourceIcon
         }
@@ -339,9 +339,9 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
     <nav {...props}>
       <ul role="list">
         {/* <TopLevelNavItem href="/blog">Blog</TopLevelNavItem> */}
-        <TopLevelNavItem href="/poetry">Poetry</TopLevelNavItem>
-        <TopLevelNavItem href="/movies">Movie</TopLevelNavItem>
-        <TopLevelNavItem href="/wallpaper">Wallpaper</TopLevelNavItem>
+        <TopLevelNavItem href="/poetry">{tr('poetry')}</TopLevelNavItem>
+        <TopLevelNavItem href="/movies">{tr('movies')}</TopLevelNavItem>
+        <TopLevelNavItem href="/wallpaper">{tr('wallpaper')}</TopLevelNavItem>
         {ns.map((group, groupIndex) => (
           <NavigationGroup
             key={group.title}
@@ -354,7 +354,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
             <UserMenu />
           ) : (
             <Button href="/sign-in" variant="filled" className="w-full">
-              {t1('sign_in')}
+              {tu('sign_in')}
             </Button>
           )}
         </li>
