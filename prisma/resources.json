@@ -12537,8 +12537,8 @@
     "weekly": 14
   },
   {
-    "title": "**C 语言教程：构建 Lisp 编译器**（[中文](https://ksco.gitbooks.io/build-your-own-lisp/)，[英文](http://www.buildyourownlisp.com/contents)）",
-    "content": "\n\n一本免费电子书，从零开始讲解 C 语言，目标是写出一个 Lisp 语言的编译器。\n\n",
+    "title": "[C 语言教程：构建 Lisp 编译器](https://ksco.gitbooks.io/build-your-own-lisp/)",
+    "content": "[中文](https://ksco.gitbooks.io/build-your-own-lisp/)，[英文](http://www.buildyourownlisp.com/contents)\n\n一本免费电子书，从零开始讲解 C 语言，目标是写出一个 Lisp 语言的编译器。\n\n",
     "category": "resource",
     "originHref": "http://www.buildyourownlisp.com/contents",
     "weekly": 14
