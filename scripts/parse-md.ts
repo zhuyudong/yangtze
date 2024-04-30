@@ -38,6 +38,53 @@ const boldTitleReg =
 //   /^--\s+\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”?？·a-zA-Z,，。：,.\d\s+-~～]+\]\s?(\[[\u4e00-\u9fa5\u3000-\u303F《》()"“”%?？·a-zA-Z,，。：,.\d\s+-~～]+\])?\((https?:\/\/[a-zA-Z.-_\d/?@~+:&=%#]*)\)([，（）\u4e00-\u9fa5\u3000-\u303Fa-zA-Z\d-,\s“”。]*)?/gi
 const quotationTitleReg =
   /^--\s+.*\((https?:\/\/[a-zA-Z.\-_\d/?@~+:&=%#]*)\)(.*)?/gi
+// [加州大学伯克利分校](http://newsroom.haas.berkeley.edu/how-information-is-like-snacks-money-and-drugs-to-your-brain/)发现，信息跟金钱或食物一样，会刺激多巴胺的分泌。这就解释了，为什么人们会像迷恋美食一样，迷恋玩手机。
+const linkTitleReg =
+  /^(\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\s?\((https?:\/\/[a-zA-Z.\-_\d/?@~+:&=%#]*)\))(.*)$/
+
+function formatTitle(title: string) {
+  if (
+    title.startsWith('[文章] ') ||
+    title.startsWith('[游戏] ') ||
+    title.startsWith('[图片] ') ||
+    title.startsWith('[视频] ') ||
+    title.startsWith('[仓库] ') ||
+    title.startsWith('[课程] ') ||
+    title.startsWith('[网站] ') ||
+    title.startsWith('[资料] ') ||
+    title.startsWith('[代码] ') ||
+    title.startsWith('[笔记] ')
+  ) {
+    title = `[【${title.slice(1, 3)}】${title.slice(5).split('](')[0].slice(1)}](${title.split('](')[1]}`
+  }
+  if (title.startsWith('[笔记][')) {
+    title = `[【${title.slice(1, 3)}】${title.slice(4).split('](')[0].slice(1)}](${title.split('](')[1]}`
+  }
+  if (title.startsWith('[电子书] ') || title.startsWith('[PDF] ')) {
+    title = `[【${title.slice(1, 4)}】${title.slice(6).split('](')[0].slice(1)}](${title.split('](')[1]}`
+  }
+  if (
+    title.startsWith('[代码仓库] ') ||
+    title.startsWith('[邮件列表] ') ||
+    title.startsWith('[免费视频] ') ||
+    title.startsWith('[视频课程] ')
+  ) {
+    title = `[【${title.slice(1, 5)}】${title.slice(7).split('](')[0].slice(1)}](${title.split('](')[1]}`
+  }
+  if (title.startsWith('[免费电子书] ')) {
+    title = `[【${title.slice(1, 6)}】${title.slice(8).split('](')[0].slice(1)}](${title.split('](')[1]}`
+  }
+  if (title.startsWith('[机器人数据库] ')) {
+    title = `[【${title.slice(1, 7)}】${title.slice(9).split('](')[0].slice(1)}](${title.split('](')[1]}`
+  }
+  if (title.startsWith('[GitHub 替代品] ')) {
+    title = `[【${title.slice(1, 11)}】${title.slice(13).split('](')[0].slice(1)}](${title.split('](')[1]}`
+  }
+  if (title.startsWith('[] ')) {
+    title = title.replace('[] ', '')
+  }
+  return title
+}
 
 function removeComment(str: string) {
   return str
@@ -49,6 +96,7 @@ function removeComment(str: string) {
     .replace(/===\d+===/g, '')
 }
 
+// /^(\[[\u4e00-\u9fa5a-zA-Z\d@\s-_]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\))(.*)$/
 const readMdxFile = (filePath: string, category: string) => {
   const data = fs.readFileSync(filePath, 'utf8')
   const lines = data.split('\n')
@@ -76,7 +124,7 @@ const readMdxFile = (filePath: string, category: string) => {
       if (match) {
         if (title !== '') {
           result.push({
-            title,
+            title: formatTitle(title),
             content: removeComment(content),
             category,
             originHref,
@@ -104,10 +152,33 @@ const readMdxFile = (filePath: string, category: string) => {
         titleReg.exec(line) ||
         specialTitleReg.exec(line) ||
         boldTitleReg.exec(line)
-      if (match) {
+      const matchLinkTitle = linkTitleReg.exec(line)
+      if (
+        matchLinkTitle &&
+        matchLinkTitle?.[2].startsWith('http') &&
+        matchLinkTitle?.[3]
+      ) {
         if (title !== '') {
           result.push({
-            title,
+            title: formatTitle(title),
+            content: removeComment(content),
+            category,
+            originHref,
+            weekly
+          })
+          content = ''
+        }
+        // [加州大学伯克利分校](http://newsroom.haas.berkeley.edu/how-information-is-like-snacks-money-and-drugs-to-your-brain/)发现，信息跟金钱或食物一样，会刺激多巴胺的分泌。这就解释了，为什么人们会像迷恋美食一样，迷恋玩手机。
+        // [加州大学伯克利分校发现，信息跟金钱或食物一样，会刺激多巴胺的分泌。这就解释了，为什么人们会像迷恋美食一样，迷恋玩手机。](http://newsroom.haas.berkeley.edu/how-information-is-like-snacks-money-and-drugs-to-your-brain/)
+        // eslint-disable-next-line prefer-destructuring
+        title = `[${matchLinkTitle[0].split('](')[0].slice(1)}${matchLinkTitle?.[3]}](${matchLinkTitle[2]})`
+        // eslint-disable-next-line prefer-destructuring
+        originHref = matchLinkTitle[2]
+        content += `\n` // `${matchLinkTitle?.[3]}\n`
+      } else if (match) {
+        if (title !== '') {
+          result.push({
+            title: formatTitle(title),
             content: removeComment(content),
             category,
             originHref,
@@ -134,7 +205,7 @@ const readMdxFile = (filePath: string, category: string) => {
 
   if (title !== '') {
     result.push({
-      title,
+      title: formatTitle(title),
       content: removeComment(content),
       category,
       originHref,

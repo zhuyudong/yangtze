@@ -35,6 +35,7 @@ categories_cn = [
     "图片",
     "本周图片",
     "资源",
+    "教程",
     "言论",
     "本周金句",
 ]
@@ -47,6 +48,7 @@ categories_locale = {
     "新闻": "news",
     "图片": "photos",
     "本周图片": "photos",
+    "教程": "resources",
     "资源": "resources",
     "言论": "quotations",
     "本周金句": "quotations",
@@ -91,6 +93,14 @@ def get_issues():
     return issues
 
 
+# '[三星公司](https://www.kedglobal.com/newsView/ked202105090002)推出笔记本电脑的 Exynos 芯片，是世界首块可以运行 Windows 的 ARM 架构的笔记本芯片。此前，苹果公司已经将 ARM 芯片 M1 用于笔记本电脑。'
+lint_title_reg = (
+    r"^(\[[\u4e00-\u9fa5a-zA-Z\d@\s\-_]+\]\((https?:\/\/[a-zA-Z.\-_\d/?&=%#]*)\))(.*)$"
+)
+# result = re.match(pattern, text)
+# content = result.group(3)
+
+
 def files_by_category(text: str, files: dict, weekly: int) -> None:
     categories = text.split("## ")
     for category in categories:
@@ -103,12 +113,35 @@ def files_by_category(text: str, files: dict, weekly: int) -> None:
                 p1 = r"\d+、\s*(\[.*)"
                 # 2、**
                 p2 = r"\d+、\s*(\*\*.*)"
+                # - [
+                p3 = r"(\n)*-\s*(\[.*)"
+                p4 = r"(\n)?\*\*一句话消息\*\*(\n)?"
+                p5 = r"(\n)?\*\*一句话新闻\*\*(\n)?"
+                p6 = r"(\n)?\d+、\s*\*\*一句话消息\*\*(\n)?"
+                p7 = r"(\n)?\d+、\s*\*\*一句话新闻\*\*(\n)?"
+                # **一句话新闻** 或者 **一句话消息** 的下面
                 content = category.strip().replace(key, "")
                 if re.search(p1, content):
                     content = re.sub(p1, r"\1", content)
                 if re.search(p2, content):
                     content = re.sub(p2, r"\1", content)
-
+                if not category.strip().startswith(
+                    "本周金句"
+                ) and not category.strip().startswith("言论"):
+                    if re.search(p3, content):
+                        content = re.sub(p3, r"\n\2", content)
+                if re.search(p4, content):
+                    content = re.sub(p4, "", content)
+                if re.search(p5, content):
+                    content = re.sub(p5, "", content)
+                if re.search(p6, content):
+                    content = re.sub(p6, "", content)
+                if re.search(p7, content):
+                    content = re.sub(p7, "", content)
+                if re.search(r"\*\*一句话\*\*", content):
+                    content = re.sub(r"\*\*一句话\*\*", "", content)
+                if re.search(r"\d+、\s*\*\*一句话\*\*", content):
+                    content = re.sub(r"\d+、\s*\*\*一句话\*\*", "", content)
                 if re.search(r"\*\*\d+、", content):
                     content = re.sub(r"(\*\*)\d+、", r"\1", content)
                 # NOTE: 在内容中暂存 issue 编号，parse md 时擦除

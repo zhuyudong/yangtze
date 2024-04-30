@@ -147,7 +147,7 @@
     "weekly": 297
   },
   {
-    "title": "[音虫](https://www.soundbug.com/)（SoundBug）",
+    "title": "[音虫（SoundBug）](https://www.soundbug.com/)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202404/bg2024041804.webp)\n\n一款国产的音频工作站，用来音乐编曲和录音的制作，追求简洁直观的用户界面和易于上手的操作。\n",
     "category": "tool",
     "originHref": "https://www.soundbug.com/",
@@ -301,7 +301,7 @@
     "weekly": 295
   },
   {
-    "title": "[simple-mind-map](https://github.com/wanglin2/mind-map)（思绪思维导图）",
+    "title": "[simple-mind-map（思绪思维导图）](https://github.com/wanglin2/mind-map)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024032812.webp)\n\n一个开源的 Web 思维导图，试用。\n",
     "category": "tool",
     "originHref": "https://github.com/wanglin2/mind-map",
@@ -637,7 +637,7 @@
     "weekly": 291
   },
   {
-    "title": "[捕风记录仪](https://github.com/yuka-friends/Windrecorder)（Windrecorder）",
+    "title": "[捕风记录仪（Windrecorder）](https://github.com/yuka-friends/Windrecorder)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024022706.webp)\n\n一款开源的 Windows 应用，自动在后台以小尺寸记录出现过的所有屏幕内容，并对文本或图像描述进行 OCR，以便查询。\n",
     "category": "tool",
     "originHref": "https://github.com/yuka-friends/Windrecorder",
@@ -1134,7 +1134,7 @@
     "weekly": 286
   },
   {
-    "title": "[SuperCopy](https://github.com/ruanyf/weekly/issues/3862)（超级复制）",
+    "title": "[SuperCopy（超级复制）](https://github.com/ruanyf/weekly/issues/3862)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202401/bg2024010904.webp)\n\n一个浏览器插件，用来解除网页限制（比如禁用右键），然后复制网页内容。\n",
     "category": "tool",
     "originHref": "https://github.com/ruanyf/weekly/issues/3862",
@@ -1239,7 +1239,7 @@
     "weekly": 285
   },
   {
-    "title": "[Bluestone Markdown](https://www.bluemd.me/)（青石）",
+    "title": "[Bluestone Markdown（青石）](https://www.bluemd.me/)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202312/bg2023123004.webp)\n\n一个所见即所得的 Markdown 桌面编辑器，集成了 Mermaid 图形与 Katex 公式，支持明亮和暗黑风格。\n",
     "category": "tool",
     "originHref": "https://www.bluemd.me/",
@@ -2562,7 +2562,7 @@
     "weekly": 266
   },
   {
-    "title": "[麦默笔记](https://github.com/usememos/memos)（memos）",
+    "title": "[麦默笔记（memos）](https://github.com/usememos/memos)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023081003.webp)\n\n基于 Web 的个人笔记软件，需要自己搭建服务，可以实现与其他站点的聚合。\n",
     "category": "tool",
     "originHref": "https://github.com/usememos/memos",
@@ -2730,7 +2730,7 @@
     "weekly": 264
   },
   {
-    "title": "[Rickrack](https://eigenmiao.com/yanhuo)（焰火十二卷）",
+    "title": "[Rickrack（焰火十二卷）](https://eigenmiao.com/yanhuo)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072711.webp)\n\n开源的调色板软件，提供多种色彩搭配功能，适用于各种设计场景。\n",
     "category": "tool",
     "originHref": "https://eigenmiao.com/yanhuo",
@@ -3325,7 +3325,7 @@
     "weekly": 256
   },
   {
-    "title": "[Product Hunt 的投票中](https://www.producthunt.com/posts/dora-ai-alpha)，暂时排在第一，作者到周刊讨论区求票了。",
+    "title": "[Product Hunt 的投票中](https://github.com/ruanyf/weekly/issues/3144)",
     "content": "\n\n\n\n",
     "category": "tool",
     "originHref": "https://github.com/ruanyf/weekly/issues/3144",
@@ -4326,7 +4326,7 @@
     "weekly": 241
   },
   {
-    "title": "[文章总结器](https://labs.kagi.com/ai/sum)（Universal Summarizer）",
+    "title": "[文章总结器（Universal Summarizer）](https://labs.kagi.com/ai/sum)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023020812.webp)\n\n搜索引擎 Kagi 推出的一个神奇，输入网址，就能快速总结出该网址文章的大意，支持中文网址。\n\n",
     "category": "tool",
     "originHref": "https://labs.kagi.com/ai/sum",
@@ -4396,8 +4396,8 @@
     "weekly": 241
   },
   {
-    "title": "[开源](https://github.com/huajian-pro/resume-design)的简历制作网站。",
-    "content": ")\n\n",
+    "title": "[开源](https://github.com/ruanyf/weekly/issues/2879)",
+    "content": "\n\n",
     "category": "tool",
     "originHref": "https://github.com/ruanyf/weekly/issues/2879",
     "weekly": 241
@@ -7504,7 +7504,7 @@
     "weekly": 194
   },
   {
-    "title": "[微软数学求解器](https://mathsolver.microsoft.com/)（Microsoft Math Solver）",
+    "title": "[微软数学求解器（Microsoft Math Solver）](https://mathsolver.microsoft.com/)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021121116.webp)\n\n微软推出的数学题求解网站。\n\n",
     "category": "tool",
     "originHref": "https://mathsolver.microsoft.com/",
@@ -7854,7 +7854,7 @@
     "weekly": 188
   },
   {
-    "title": "[Swift 游乐场](https://www.apple.com/swift/playgrounds/)（Swift Playgrounds）",
+    "title": "[Swift 游乐场（Swift Playgrounds）](https://www.apple.com/swift/playgrounds/)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202112/bg2021121616.webp)\n\n苹果公司最新发布的编程学习软件，内置教程，采用 Swift 作为教学语言，制作得非常精美。\n\n它同时也是一个 IDE，有 Mac 和 iPad 两个版本。有史以来第一次，你可以在 iPad 上面开发 iOS 应用，并发布到苹果商店。\n\n",
     "category": "tool",
     "originHref": "https://www.apple.com/swift/playgrounds/",
@@ -9338,7 +9338,7 @@
     "weekly": 166
   },
   {
-    "title": "[成都市城市轨道交通线网规划](https://github.com/cmoseses/cmoseses.github.io)（2021版）",
+    "title": "[成都市城市轨道交通线网规划（2021版）](https://github.com/cmoseses/cmoseses.github.io)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202107/bg2021070811.jpg)\n\n成都市2021年7月6日公布了《城市轨道交通线网规划图》，但是不方便缩放操作。作者写了一个静态页面将其和百度地图结合，方便查看未来地铁是否经过了你的家门。\n\n\n",
     "category": "tool",
     "originHref": "https://github.com/cmoseses/cmoseses.github.io",
@@ -11627,7 +11627,7 @@
     "weekly": 131
   },
   {
-    "title": "[HIPA](https://hipacloud.com/)（黑帕云）",
+    "title": "[HIPA（黑帕云）](https://hipacloud.com/)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202010/bg2020102707.jpg)\n\n国产的在线表格数据库，类似国外的 Airtable，提供了强大电子表格功能，比如多表关联、一对多的自动聚合运算、看板视图、多人实时协作、行级数据权限等等。\n",
     "category": "tool",
     "originHref": "https://hipacloud.com/",
@@ -13748,7 +13748,7 @@
     "weekly": 100
   },
   {
-    "title": "[图灵派](https://turingpi.com/)（Turing Pi）",
+    "title": "[图灵派（Turing Pi）](https://turingpi.com/)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202003/bg2020032501.jpg)\n\n图灵派是树莓派的一个集群板，好比机房里面的一个机架，可以用来自己架设 Kubernetes 集群。\n\n",
     "category": "tool",
     "originHref": "https://turingpi.com/",
@@ -15050,7 +15050,7 @@
     "weekly": 82
   },
   {
-    "title": "[诺基亚短信图片生成器](https://github.com/dcalsky/zzkia)（英文）",
+    "title": "[诺基亚短信图片生成器（英文）](https://github.com/dcalsky/zzkia)",
     "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/201910/bg2019101405.jpg)\n\n这个可以生成老式诺基亚手机的短信图片。\n",
     "category": "tool",
     "originHref": "https://github.com/dcalsky/zzkia",
@@ -16800,7 +16800,7 @@
     "weekly": 48
   },
   {
-    "title": "[COI - Chat Over IMAP](https://www.coi-dev.org/)（英文）",
+    "title": "[COI - Chat Over IMAP（英文）](https://www.coi-dev.org/)",
     "content": "\n\nIMAP 电子邮件协议可以实时推送邮件，COI 就是基于这一点实现的一个聊天协议。通过它的客户端，可以达到聊天效果，但实际是互相发送 Email。\n\n",
     "category": "tool",
     "originHref": "https://www.coi-dev.org/",
@@ -16877,8 +16877,8 @@
     "weekly": 47
   },
   {
-    "title": "[Volt](https://volt.ws/)",
-    "content": "<br /> <br />跨平台的桌面应用，将一些常用服务（比如 Gmail、Slack、Twitter、Facebook 等）聚合在一起。\n\n",
+    "title": "[Volt<br /> <br />跨平台的桌面应用，将一些常用服务（比如 Gmail、Slack、Twitter、Facebook 等）聚合在一起。](https://volt.ws/)",
+    "content": "\n\n",
     "category": "tool",
     "originHref": "https://volt.ws/",
     "weekly": 47
@@ -18746,7 +18746,7 @@
     "weekly": 20
   },
   {
-    "title": "[dev.to](https://dev.to) 是一个互联网开发者社区，最近开源了自身的代码，使用 Ruby 语言。你可以用它搭建自己的社区。",
+    "title": "[dev.to 是一个互联网开发者社区，最近开源了自身的代码，使用 Ruby 语言。你可以用它搭建自己的社区。](https://dev.to)",
     "content": "\n\n",
     "category": "tool",
     "originHref": "https://dev.to",
@@ -19684,7 +19684,7 @@
     "weekly": 4
   },
   {
-    "title": "[github-contributions-chart](https://github.com/sallar/github-contributions-chart)（[Demo](https://github-contributions.now.sh/)）",
+    "title": "[github-contributions-chart）](https://github-contributions.now.sh/)",
     "content": "\n\nGitHub 的用户主页有一张图，每一天就是一个小格子。你只要在这一天提交了代码，这个格子就是绿色。但是，这张图只显示过去的一年，即365个格子。\n\n这个可以生成从你加入 GitHub 那天起的所有格子。\n\n",
     "category": "tool",
     "originHref": "https://github-contributions.now.sh/",
