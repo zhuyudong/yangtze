@@ -13230,8 +13230,8 @@
     "weekly": 4
   },
   {
-    "title": "[文章] Rust 的内存安全革命（[中译、[原文](https://anixe.pl/content/news/rust_memory_safety_revolution)）](http://szpzs.oschina.io/2018/04/28/rust-memory-safety-revolution/#more)",
-    "content": "\n\nRust 语言不需要手动管理内容，却也没有垃圾回收机制，这是怎么实现的？\n\n> 本文集中介绍 Rust 最重要的核心特性：内存管理。这是 Rust 的主要创新之一，它的许多独特的特点是基于此的。本文写给不知道 Rust 或刚刚开始学习它的程序员的。对于熟悉 C、C++ 或其他使用手动管理内存以及使用垃圾回收器语言的读者来说会更容易理解 Rust 的特点。\n\n",
+    "title": "[【文章】Rust 的内存安全革命](https://anixe.pl/content/news/rust_memory_safety_revolution)",
+    "content": "\n\nRust 语言不需要手动管理内容，却也没有垃圾回收机制，这是怎么实现的？\n\n> 本文集中介绍 Rust 最重要的核心特性：内存管理。这是 Rust 的主要创新之一，它的许多独特的特点是基于此的。本文写给不知道 Rust 或刚刚开始学习它的程序员的。对于熟悉 C、C++ 或其他使用手动管理内存以及使用垃圾回收器语言的读者来说会更容易理解 Rust 的特点。\n\n[中译](https://anixe.pl/content/news/rust_memory_safety_revolution)、[原文](http://szpzs.oschina.io/2018/04/28/rust-memory-safety-revolution/#more)\n\n",
     "category": "resource",
     "originHref": "http://szpzs.oschina.io/2018/04/28/rust-memory-safety-revolution/#more",
     "weekly": 4

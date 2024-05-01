@@ -42,6 +42,10 @@ const quotationTitleReg =
 const linkTitleReg =
   /^(\[[\u4e00-\u9fa5\u3000-\u303F《》()（）"“”`%?？·a-zA-Z,，。：,.\d\s+-~～]+\]\s?\((https?:\/\/[a-zA-Z.\-_\d/?@~+:&=%#]*)\))(.*)$/
 
+/**
+ * 需要特殊处理的内容
+ * [文章] Rust 的内存安全革命（[中译](http://szpzs.oschina.io/2018/04/28/rust-memory-safety-revolution/#more)、[原文](https://anixe.pl/content/news/rust_memory_safety_revolution)）
+ */
 function formatTitle(title: string) {
   if (title.startsWith('[] ')) {
     title = title.replace('[] ', '')
