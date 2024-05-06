@@ -118,6 +118,7 @@
     "fast-glob": "^3.3.2",
     "flexsearch": "^0.7.43",
     "framer-motion": "^11.1.8",
+    "geist": "^1.3.0",
     "input-otp": "^1.2.4",
     "jotai": "^2.8.0",
     "js-yaml": "^4.1.0",

@@ -1,5 +1,4 @@
 import { type Metadata } from 'next'
-// import { Inter } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import type { ReactNode } from 'react'
@@ -7,12 +6,8 @@ import type { ReactNode } from 'react'
 import { TailwindIndicator } from '@/components/patterns/tailwind-indicator'
 import { Toaster } from '@/components/ui/sonner'
 import { AppConfig } from '@/config'
+import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
-
-// const inter = Inter({
-//   subsets: ['latin'],
-//   variable: '--font-sans'
-// })
 
 export const metadata: Metadata = {
   title: {
@@ -59,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang={params.locale} className="h-full" suppressHydrationWarning>
       {/* ${inter.variable} */}
-      <body className={cn(`font-sans antialiased`)}>
+      <body className={cn(`font-sans antialiased`, fontSans.variable)}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
