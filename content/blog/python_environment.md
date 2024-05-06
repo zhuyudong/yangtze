@@ -67,3 +67,7 @@ pip install -r requirements/base.txt
    ```
 
 Anaconda 的优缺点：
+
+优点：
+
+    1.  能够独立的管理每个项目的依赖

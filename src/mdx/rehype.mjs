@@ -101,15 +101,15 @@ function rehypeShiki() {
         let codeNode = node.children[0]
         /**
          * ```tsx
-           @import("components/tailwindui/Buttons/Button1.tsx")
+           @import("src/components/tailwindui/Buttons/Button1.tsx")
            ```
-           { type: 'text', value: '@import("components/tailwindui/Buttons/Button1.tsx")' }
+           { type: 'text', value: '@import("src/components/tailwindui/Buttons/Button1.tsx")' }
          */
         let textNode = codeNode.children[0]
         // NOTE: 所有自定义导入都要相对于 src 目录
         /**
-         * @import("components/tailwindui/Buttons/Button1.tsx")
-         * fileMatch[2] components/tailwindui/Buttons/Button1.tsx
+         * @import("src/components/tailwindui/Buttons/Button1.tsx")
+         * fileMatch[2] src/components/tailwindui/Buttons/Button1.tsx
          * fileMatch[3] Button1
          * fileMatch[4] tsx
          */
@@ -118,7 +118,7 @@ function rehypeShiki() {
             textNode.value
           )
         if (fileMatch?.[2]) {
-          const codePath = path.resolve(process.cwd(), `src/${fileMatch[2]}`)
+          const codePath = path.resolve(process.cwd(), `${fileMatch[2]}`)
           const actualCode = fs.readFileSync(codePath).toString()
           node.properties.code = actualCode
           textNode.value = actualCode

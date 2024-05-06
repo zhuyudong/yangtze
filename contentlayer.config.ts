@@ -1,12 +1,24 @@
 /* eslint-disable no-underscore-dangle */
-import { defineDocumentType, makeSource } from 'contentlayer/source-files'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import rehypePrettyCode from 'rehype-pretty-code'
-import rehypeSlug from 'rehype-slug'
+import {
+  defineDocumentType,
+  // defineNestedType,
+  makeSource
+} from 'contentlayer/source-files'
+// import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+// import rehypePrettyCode from 'rehype-pretty-code'
+// import rehypeSlug from 'rehype-slug'
 
-// TODO
-// import { rehypePlugins } from './src/mdx/rehype.mjs'
-// import { remarkPlugins } from './src/mdx/remark.mjs'
+// const LinksProperties = defineNestedType(() => ({
+//   name: 'LinksProperties',
+//   fields: {
+//     doc: {
+//       type: 'string'
+//     },
+//     api: {
+//       type: 'string'
+//     }
+//   }
+// }))
 
 export const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -25,8 +37,17 @@ export const Post = defineDocumentType(() => ({
       type: 'boolean',
       required: false,
       default: false
+    },
+    tags: {
+      type: 'string',
+      required: false
     }
+    // links: {
+    //   type: 'nested',
+    //   of: LinksProperties
+    // }
   },
+  /** @type {import('contentlayer/source-files').ComputedFields} */
   computedFields: {
     slug: {
       type: 'string',
@@ -34,7 +55,19 @@ export const Post = defineDocumentType(() => ({
     },
     slugAsParams: {
       type: 'string',
-      resolve: doc => doc._raw.flattenedPath.split('/').slice(1).join('/')
+      resolve: doc => {
+        /**
+         * e.g
+         *  {
+              sourceFilePath: 'blog/next-auth_tutorial.md',
+              sourceFileName: 'next-auth_tutorial.md',
+              sourceFileDir: 'blog',
+              contentType: 'markdown',
+              flattenedPath: 'blog/next-auth_tutorial'
+            }
+         */
+        return doc._raw.flattenedPath.split('/').slice(1).join('/')
+      }
     }
   }
 }))
@@ -43,44 +76,7 @@ export default makeSource({
   contentDirPath: './content',
   documentTypes: [Post],
   mdx: {
-    // remarkPlugins: [...remarkPlugins],
-    rehypePlugins: [
-      // ...rehypePlugins,
-      rehypeSlug,
-      [
-        // eslint-disable-next-line spaced-comment
-        // @ts-expect-error would still work even though types are incorrect, need to fix this after contentlayer gets enough maintenenace
-        rehypePrettyCode,
-        {
-          theme: 'dracula',
-          onVisitLine(node: { children: string | unknown[] }) {
-            // Prevent lines from collapsing in `display: grid` mode, and allow empty
-            // lines to be copy/pasted
-            if (node.children.length === 0) {
-              node.children = [{ type: 'text', value: ' ' }]
-            }
-          },
-          onVisitHighlightedLine(node: {
-            properties: { className: string[] }
-          }) {
-            node.properties.className.push('line--highlighted')
-          },
-          onVisitHighlightedWord(node: {
-            properties: { className: string[] }
-          }) {
-            node.properties.className = ['word--highlighted']
-          }
-        }
-      ],
-      [
-        rehypeAutolinkHeadings,
-        {
-          properties: {
-            className: ['subheading-anchor'],
-            ariaLabel: 'Link to section'
-          }
-        }
-      ]
-    ]
+    remarkPlugins: [],
+    rehypePlugins: []
   }
 })

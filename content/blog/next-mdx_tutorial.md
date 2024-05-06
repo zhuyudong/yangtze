@@ -108,5 +108,5 @@ export default makeSource({
 开发或构建前处理特殊语法文件，即将引入的文件内容内联
 
 ```py
-@import('./example.py')
+@import('snippets/print.py')
 ```
