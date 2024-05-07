@@ -27,6 +27,9 @@ import type { NavGroup } from '@/lib/navigation'
 import { remToPx } from '@/lib/remToPx'
 import { cn } from '@/lib/utils'
 
+import { CPUChipIcon } from './icons/CPUChipIcon'
+import { MapPinIcon } from './icons/MapPinIcon'
+import { MovieIcon } from './icons/MovieIcon'
 import { UserMenu } from './UserMenu'
 
 function useInitialValue<T>(value: T, condition = true) {
@@ -289,9 +292,11 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
     {
       title: tr('reading_space'),
       links: [
+        { title: tr('blog'), href: '/blog', icon: ArticleIcon },
+        { title: tr('essay'), href: '/essay', icon: CPUChipIcon },
         { title: tr('poetry'), href: '/poetry', icon: FireIcon },
-        // { title: '壁纸', href: '/wallpaper', icon: MapPinIcon },
-        // { title: '电影', href: '/movies', icon: MovieIcon },
+        { title: tr('wallpaper'), href: '/wallpaper', icon: MapPinIcon },
+        { title: tr('movies'), href: '/movies', icon: MovieIcon },
         {
           title: tr('articles'),
           href: '/weekly-by-category/articles',
@@ -340,6 +345,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
       <ul role="list">
         {/* <TopLevelNavItem href="/blog">Blog</TopLevelNavItem> */}
         <TopLevelNavItem href="/blog">{tr('blog')}</TopLevelNavItem>
+        <TopLevelNavItem href="/essay">{tr('essay')}</TopLevelNavItem>
         <TopLevelNavItem href="/poetry">{tr('poetry')}</TopLevelNavItem>
         <TopLevelNavItem href="/movies">{tr('movies')}</TopLevelNavItem>
         <TopLevelNavItem href="/wallpaper">{tr('wallpaper')}</TopLevelNavItem>

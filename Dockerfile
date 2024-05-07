@@ -36,9 +36,11 @@ ENV PORT=3000
 # RUN sudo adduser -S nextjs -u 1001
 
 COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/content ./content
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/scripts ./scripts
+COPY --from=builder /app/snippets ./snippets
 COPY --from=builder /app/src ./src
 # NOTE: 在 zeabur 中手动创建环境变量，不要在代码仓库中暴露敏感信息
 # COPY --from=builder /app/.env ./.env

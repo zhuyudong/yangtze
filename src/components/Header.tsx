@@ -104,6 +104,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
             <ul role="list" className="flex items-center gap-8">
               {/* <TopLevelNavItem href="/blog">Blog</TopLevelNavItem> */}
               <TopLevelNavItem href="/blog">{tr('blog')}</TopLevelNavItem>
+              <TopLevelNavItem href="/essay">{tr('essay')}</TopLevelNavItem>
               <TopLevelNavItem href="/poetry">{tr('poetry')}</TopLevelNavItem>
               <TopLevelNavItem href="/movies">{tr('movies')}</TopLevelNavItem>
               <TopLevelNavItem href="/wallpaper">

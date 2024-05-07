@@ -22,6 +22,7 @@ import poetry from '@/resources/poetry.json'
 
 import { ArticleIcon } from './icons/ArticleIcon'
 import { BookIcon } from './icons/BookIcon'
+import { CPUChipIcon } from './icons/CPUChipIcon'
 import { ExcerptIcon } from './icons/ExcerptIcon'
 import { MovieIcon } from './icons/MovieIcon'
 import { NewIcon } from './icons/NewIcon'
@@ -189,7 +190,7 @@ export function Resources() {
   const t = useTranslations('Resources')
   const { randomMovieQuoteIndex, randomPoetryIndex } = useRandomIndex()
 
-  const resources: Array<IResource> = [
+  const personal: Array<IResource> = [
     {
       href: '/blog',
       name: t('blog'),
@@ -204,20 +205,23 @@ export function Resources() {
         ]
       }
     },
-    // {
-    //   href: '/linux-tools',
-    //   name: 'Linux 工具箱',
-    //   description: '',
-    //   icon: UserIcon,
-    //   bg: 'bg-red-50',
-    //   pattern: {
-    //     y: 16,
-    //     squares: [
-    //       [0, 1],
-    //       [1, 3]
-    //     ]
-    //   }
-    // },
+    {
+      href: '/essay',
+      name: t('essay'),
+      description: '',
+      icon: CPUChipIcon,
+      bg: 'bg-red-50',
+      pattern: {
+        y: 16,
+        squares: [
+          [0, 1],
+          [1, 3]
+        ]
+      }
+    }
+  ]
+
+  const resources: Array<IResource> = [
     {
       href: '/weekly-by-category/articles',
       name: t('articles'),
@@ -383,6 +387,14 @@ export function Resources() {
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-4">
         {resources.map(resource => (
           <Resource key={resource.href} resource={resource} />
+        ))}
+      </div>
+      <Heading level={2} id="resources">
+        {t('personal_world')}
+      </Heading>
+      <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-4">
+        {personal.map(i => (
+          <Resource key={i.href} resource={i} />
         ))}
       </div>
       <Heading level={2} id="leisure-station">
