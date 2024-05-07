@@ -114,7 +114,7 @@ function rehypeShiki() {
          * fileMatch[4] tsx
          */
         const fileMatch =
-          /@import\(('|")[a-zA-Z\d-_]*\/([a-zA-Z\d-_]*\/)*([a-zA-Z\d-_]*)\.(tsx|ts|js|jsx|py|sh|sql|html|css|scss|sass|less)('|")\)/.exec(
+          /@import\(('|")([a-zA-Z\d-_\[\]\(\).]*\/([a-zA-Z\d-_\[\]\(\).]*\/)*([a-zA-Z\d-_\[\]\(\).]*)\.(tsx|ts|js|jsx|py|sh|sql|html|css|scss|sass|less|json|go))('|")\)/.exec(
             textNode.value
           )
         if (fileMatch?.[2]) {
