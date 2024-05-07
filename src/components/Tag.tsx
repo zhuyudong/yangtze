@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { cn } from '@/lib/utils'
 
 const variantStyles = {
   small: '',
@@ -51,7 +51,7 @@ export function Tag({
 }) {
   return (
     <span
-      className={clsx(
+      className={cn(
         'font-mono text-[0.625rem] font-semibold leading-6',
         variantStyles[variant],
         colorStyles[color][variant]

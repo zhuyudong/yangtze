@@ -1,6 +1,7 @@
-import clsx from 'clsx'
 import Link from 'next/link'
 import type { ComponentPropsWithoutRef } from 'react'
+
+import { cn } from '@/lib/utils'
 
 function ArrowIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -42,7 +43,7 @@ export function Button({
   arrow,
   ...props
 }: ButtonProps) {
-  className = clsx(
+  className = cn(
     'inline-flex justify-center gap-0.5 overflow-hidden text-nowrap text-sm font-medium transition',
     variantStyles[variant],
     className
@@ -50,7 +51,7 @@ export function Button({
 
   const arrowIcon = (
     <ArrowIcon
-      className={clsx(
+      className={cn(
         'mt-0.5 size-5',
         variant === 'text' && 'relative top-px',
         arrow === 'left' && '-ml-1 rotate-180',

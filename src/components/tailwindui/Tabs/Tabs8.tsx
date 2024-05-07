@@ -1,6 +1,6 @@
 // title: Tabs with underline and badges
 
-import clsx from 'clsx'
+import { cn } from '@/lib/utils'
 
 const tabs = [
   { name: 'Applied', href: '#', count: '52', current: false },
@@ -36,7 +36,7 @@ export default function Example() {
               <a
                 key={tab.name}
                 href="#"
-                className={clsx(
+                className={cn(
                   tab.current
                     ? 'border-indigo-500 text-indigo-600'
                     : 'border-transparent text-gray-500 hover:border-gray-200 hover:text-gray-700',
@@ -47,7 +47,7 @@ export default function Example() {
                 {tab.name}
                 {tab.count ? (
                   <span
-                    className={clsx(
+                    className={cn(
                       tab.current
                         ? 'bg-indigo-100 text-indigo-600'
                         : 'bg-gray-100 text-gray-900',

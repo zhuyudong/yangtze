@@ -1,11 +1,11 @@
 import { HeartIcon, StarIcon } from '@heroicons/react/24/solid'
-import clsx from 'clsx'
 import { useMemo } from 'react'
 import Markdown from 'react-markdown'
 
 import { HeartIcon as HeartIconOutline } from '@/components/icons/HeartIcon'
 import { StarIcon as StarIconOutline } from '@/components/icons/StarIcon'
 import { XMarkIcon } from '@/components/icons/XMarkIcon'
+import { cn } from '@/lib/utils'
 
 import { NoInterestedLine } from './NoInterestedLine'
 
@@ -82,7 +82,7 @@ export const Content = ({
             onClick={() => onLike(id)}
           >
             <LikeIcon
-              className={clsx(
+              className={cn(
                 'mt-[2px] w-6 cursor-pointer',
                 isLike && 'text-red-500'
               )}

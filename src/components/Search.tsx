@@ -7,7 +7,6 @@ import {
   createAutocomplete
 } from '@algolia/autocomplete-core'
 import { Dialog, Transition } from '@headlessui/react'
-import clsx from 'clsx'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import type { ComponentPropsWithoutRef, ElementRef } from 'react'
 import {
@@ -23,6 +22,7 @@ import {
 import Highlighter from 'react-highlight-words'
 
 import { navigation } from '@/lib/navigation'
+import { cn } from '@/lib/utils'
 import { type Result } from '@/mdx/search.mjs'
 
 type EmptyObject = Record<string, never>
@@ -185,7 +185,7 @@ function SearchResult({
 
   return (
     <li
-      className={clsx(
+      className={cn(
         'group block cursor-default px-4 py-3 aria-selected:bg-zinc-50 dark:aria-selected:bg-zinc-800/50',
         resultIndex > 0 && 'border-t border-zinc-100 dark:border-zinc-800'
       )}
@@ -283,7 +283,7 @@ const SearchInput = forwardRef<
       <SearchIcon className="pointer-events-none absolute left-3 top-0 h-full w-5 stroke-zinc-500" />
       <input
         ref={inputRef}
-        className={clsx(
+        className={cn(
           'flex-auto appearance-none bg-transparent pl-10 text-zinc-900 outline-none placeholder:text-zinc-500 focus:w-full focus:flex-none dark:text-white sm:text-sm [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-decoration]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden',
           autocompleteState.status === 'stalled' ? 'pr-11' : 'pr-4'
         )}
@@ -364,10 +364,7 @@ function SearchDialog({
       as={Fragment}
       afterLeave={() => autocomplete.setQuery('')}
     >
-      <Dialog
-        onClose={setOpen}
-        className={clsx('fixed inset-0 z-50', className)}
-      >
+      <Dialog onClose={setOpen} className={cn('fixed inset-0 z-50', className)}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"

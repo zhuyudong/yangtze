@@ -1,10 +1,10 @@
 'use client'
 
-import clsx from 'clsx'
 import { useParams } from 'next/navigation'
 import type { ChangeEvent, ReactNode } from 'react'
 import { useTransition } from 'react'
 
+import { cn } from '@/lib/utils'
 import { usePathname, useRouter } from '@/navigation'
 
 type Props = {
@@ -34,14 +34,14 @@ export function LocaleSwitcherSelect({ children, defaultValue, label }: Props) {
 
   return (
     <label
-      className={clsx(
+      className={cn(
         'relative text-gray-400',
         isPending && 'transition-opacity [&:disabled]:opacity-30'
       )}
     >
       <p className="sr-only">{label}</p>
       <select
-        className={clsx(
+        className={cn(
           'inline-flex !appearance-none border-none bg-transparent py-2 pl-2 text-xs focus:border-none focus:bg-white',
           params.locale === 'en' ? 'pr-6' : 'pr-3'
         )}

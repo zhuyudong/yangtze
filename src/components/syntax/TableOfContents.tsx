@@ -1,10 +1,10 @@
 'use client'
 
-import clsx from 'clsx'
 import Link from 'next/link'
 import { useCallback, useEffect, useState } from 'react'
 
 import { type Section, type Subsection } from '@/lib/sections'
+import { cn } from '@/lib/utils'
 
 export function TableOfContents({
   tableOfContents
@@ -78,7 +78,7 @@ export function TableOfContents({
                   <h3>
                     <Link
                       href={`#${section.id}`}
-                      className={clsx(
+                      className={cn(
                         isActive(section)
                           ? 'text-sky-500'
                           : 'font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'

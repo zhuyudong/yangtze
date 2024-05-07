@@ -1,11 +1,11 @@
 'use client'
 
-import clsx from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { ComponentPropsWithoutRef } from 'react'
 
 import { navigation } from '@/lib/navigation'
+import { cn } from '@/lib/utils'
 
 function ArrowIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -33,14 +33,14 @@ function PageLink({
       <dd className="mt-1">
         <Link
           href={href}
-          className={clsx(
+          className={cn(
             'flex items-center gap-x-1 text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300',
             dir === 'previous' && 'flex-row-reverse'
           )}
         >
           {title}
           <ArrowIcon
-            className={clsx(
+            className={cn(
               'size-4 flex-none fill-current',
               dir === 'previous' && '-scale-x-100'
             )}

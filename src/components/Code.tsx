@@ -1,7 +1,6 @@
 'use client'
 
 import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import {
   Children,
@@ -15,6 +14,7 @@ import {
 import { create } from 'zustand'
 
 import { Tag } from '@/components/Tag'
+import { cn } from '@/lib/utils'
 
 const languageNames: Record<string, string> = {
   js: 'JavaScript',
@@ -75,7 +75,7 @@ function CopyButton({ code }: { code: string }) {
   return (
     <button
       type="button"
-      className={clsx(
+      className={cn(
         'group/button absolute right-4 top-3.5 overflow-hidden rounded-full py-1 pl-2 pr-3 text-2xs font-medium opacity-0 backdrop-blur transition focus:opacity-100 group-hover:opacity-100',
         copied
           ? 'bg-emerald-400/10 ring-1 ring-inset ring-emerald-400/20'
@@ -89,7 +89,7 @@ function CopyButton({ code }: { code: string }) {
     >
       <span
         aria-hidden={copied}
-        className={clsx(
+        className={cn(
           'pointer-events-none flex items-center gap-0.5 text-zinc-400 transition duration-300',
           copied && '-translate-y-1.5 opacity-0'
         )}
@@ -99,7 +99,7 @@ function CopyButton({ code }: { code: string }) {
       </span>
       <span
         aria-hidden={!copied}
-        className={clsx(
+        className={cn(
           'pointer-events-none absolute inset-0 flex items-center justify-center text-emerald-400 transition duration-300',
           !copied && 'translate-y-1.5 opacity-0'
         )}
@@ -192,7 +192,7 @@ function CodeGroupHeader({
         <Tab.List className="-mb-px flex gap-4 text-xs font-medium">
           {Children.map(children, (child, childIndex) => (
             <Tab
-              className={clsx(
+              className={cn(
                 'border-b py-3 transition ui-not-focus-visible:outline-none',
                 childIndex === selectedIndex
                   ? 'border-emerald-500 text-emerald-400'

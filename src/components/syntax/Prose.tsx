@@ -1,5 +1,6 @@
-import clsx from 'clsx'
 import type { ComponentPropsWithoutRef, ElementType } from 'react'
+
+import { cn } from '@/lib/utils'
 
 export function Prose<T extends ElementType = 'div'>({
   as,
@@ -12,7 +13,7 @@ export function Prose<T extends ElementType = 'div'>({
 
   return (
     <Component
-      className={clsx(
+      className={cn(
         className,
         'prose-slate prose max-w-none dark:prose-invert dark:text-slate-400',
         // headings

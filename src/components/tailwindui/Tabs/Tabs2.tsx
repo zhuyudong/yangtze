@@ -6,7 +6,8 @@ import {
   UserIcon,
   UsersIcon
 } from '@heroicons/react/20/solid'
-import clsx from 'clsx'
+
+import { cn } from '@/lib/utils'
 
 const tabs = [
   { name: 'My Account', href: '#', icon: UserIcon, current: false },
@@ -41,7 +42,7 @@ export default function Example() {
               <a
                 key={tab.name}
                 href={tab.href}
-                className={clsx(
+                className={cn(
                   tab.current
                     ? 'border-indigo-500 text-indigo-600'
                     : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
@@ -50,7 +51,7 @@ export default function Example() {
                 aria-current={tab.current ? 'page' : undefined}
               >
                 <tab.icon
-                  className={clsx(
+                  className={cn(
                     tab.current
                       ? 'text-indigo-500'
                       : 'text-gray-400 group-hover:text-gray-500',

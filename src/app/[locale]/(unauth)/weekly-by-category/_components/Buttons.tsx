@@ -1,6 +1,5 @@
-import clsx from 'clsx'
-
 import { InfinityIcon } from '@/components/icons/InfinityIcon'
+import { cn } from '@/lib/utils'
 
 export function Buttons({
   items,
@@ -19,7 +18,7 @@ export function Buttons({
             key={i}
             type="button"
             onClick={() => onClick(i)}
-            className={clsx(
+            className={cn(
               'relative -ml-px inline-flex items-center bg-white px-6 py-1 text-sm font-light text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10',
               ix === 0 && 'rounded-l-sm',
               ix === items.length - 1 && 'rounded-r-sm',

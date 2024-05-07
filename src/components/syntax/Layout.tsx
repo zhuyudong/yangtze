@@ -1,6 +1,5 @@
 'use client'
 
-import clsx from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
@@ -12,6 +11,7 @@ import { MobileNavigation } from '@/components/syntax/MobileNavigation'
 import { Navigation } from '@/components/syntax/Navigation'
 import { Search } from '@/components/syntax/Search'
 import { ThemeSelector } from '@/components/syntax/ThemeSelector'
+import { cn } from '@/lib/utils'
 
 function GitHubIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -37,7 +37,7 @@ function Header() {
 
   return (
     <header
-      className={clsx(
+      className={cn(
         'sticky top-0 z-50 flex flex-none flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 dark:shadow-none sm:px-6 lg:px-8',
         isScrolled
           ? 'dark:bg-slate-900/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-slate-900/75'

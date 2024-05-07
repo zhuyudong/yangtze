@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import { type Metadata } from 'next'
 // import { Inter } from 'next/font/google'
 import { notFound } from 'next/navigation'
@@ -8,6 +7,7 @@ import type { ReactNode } from 'react'
 import { TailwindIndicator } from '@/components/patterns/tailwind-indicator'
 import { Toaster } from '@/components/ui/sonner'
 import { AppConfig } from '@/config'
+import { cn } from '@/lib/utils'
 
 // const inter = Inter({
 //   subsets: ['latin'],
@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang={params.locale} className="h-full" suppressHydrationWarning>
       {/* ${inter.variable} */}
-      <body className={clsx(`font-sans antialiased`)}>
+      <body className={cn(`font-sans antialiased`)}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           {children}
         </NextIntlClientProvider>

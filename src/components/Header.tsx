@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Link from 'next/link'
 import { useSession } from 'next-auth/react'
@@ -70,7 +69,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
     return (
       <motion.div
         ref={ref}
-        className={clsx(
+        className={cn(
           className,
           'fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-between gap-12 px-4 transition sm:px-6 lg:left-72 lg:z-30 lg:px-8 xl:left-80',
           !isInsideMobileNavigation &&
@@ -87,7 +86,7 @@ export const Header = forwardRef<ElementRef<'div'>, { className?: string }>(
         }
       >
         <div
-          className={clsx(
+          className={cn(
             'absolute inset-x-0 top-full h-px transition',
             (isInsideMobileNavigation || !mobileNavIsOpen) &&
               'bg-zinc-900/7.5 dark:bg-white/7.5'

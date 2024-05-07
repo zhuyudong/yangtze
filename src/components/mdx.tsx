@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import Link from 'next/link'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 
@@ -6,6 +5,7 @@ import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import { Heading } from '@/components/Heading'
 import { InfoIcon } from '@/components/icons/InfoIcon'
 import { Prose } from '@/components/Prose'
+import { cn } from '@/lib/utils'
 
 export const a = Link
 export { Button } from '@/components/Button'
@@ -56,7 +56,7 @@ export function Col({
 }) {
   return (
     <div
-      className={clsx(
+      className={cn(
         '[&>:first-child]:mt-0 [&>:last-child]:mb-0',
         sticky && 'xl:sticky xl:top-24'
       )}

@@ -1,9 +1,10 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import { Listbox } from '@headlessui/react'
-import clsx from 'clsx'
 import { useTheme } from 'next-themes'
 import type { ComponentPropsWithoutRef } from 'react'
 import { useEffect, useState } from 'react'
+
+import { cn } from '@/lib/utils'
 
 const themes = [
   { name: 'Light', value: 'light', icon: LightIcon },
@@ -69,13 +70,13 @@ export function ThemeSelector(
         aria-label="Theme"
       >
         <LightIcon
-          className={clsx(
+          className={cn(
             'size-4 dark:hidden',
             theme === 'system' ? 'fill-slate-400' : 'fill-sky-400'
           )}
         />
         <DarkIcon
-          className={clsx(
+          className={cn(
             'hidden size-4 dark:block',
             theme === 'system' ? 'fill-slate-400' : 'fill-sky-400'
           )}
@@ -87,7 +88,7 @@ export function ThemeSelector(
             key={theme.value}
             value={theme.value}
             className={({ active, selected }) =>
-              clsx(
+              cn(
                 'flex cursor-pointer select-none items-center rounded-[0.625rem] p-1',
                 {
                   'text-sky-500': selected,
@@ -102,7 +103,7 @@ export function ThemeSelector(
               <>
                 <div className="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5">
                   <theme.icon
-                    className={clsx(
+                    className={cn(
                       'size-4',
                       selected
                         ? 'fill-sky-400 dark:fill-sky-400'

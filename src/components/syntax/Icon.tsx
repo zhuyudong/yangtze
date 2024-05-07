@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import type { ComponentPropsWithoutRef } from 'react'
 import { useId } from 'react'
 
@@ -8,6 +7,7 @@ import { PluginsIcon } from '@/components/syntax/icons/PluginsIcon'
 import { PresetsIcon } from '@/components/syntax/icons/PresetsIcon'
 import { ThemingIcon } from '@/components/syntax/icons/ThemingIcon'
 import { WarningIcon } from '@/components/syntax/icons/WarningIcon'
+import { cn } from '@/lib/utils'
 
 const icons = {
   installation: InstallationIcon,
@@ -41,7 +41,7 @@ export function Icon({
       aria-hidden="true"
       viewBox="0 0 32 32"
       fill="none"
-      className={clsx(className, iconStyles[color])}
+      className={cn(className, iconStyles[color])}
       {...props}
     >
       <IconComponent id={id} color={color} />
@@ -86,12 +86,12 @@ export function LightMode({
   className,
   ...props
 }: ComponentPropsWithoutRef<'g'>) {
-  return <g className={clsx('dark:hidden', className)} {...props} />
+  return <g className={cn('dark:hidden', className)} {...props} />
 }
 
 export function DarkMode({
   className,
   ...props
 }: ComponentPropsWithoutRef<'g'>) {
-  return <g className={clsx('hidden dark:inline', className)} {...props} />
+  return <g className={cn('hidden dark:inline', className)} {...props} />
 }

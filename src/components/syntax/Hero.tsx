@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import Image from 'next/image'
 import { Highlight } from 'prism-react-renderer'
 import type { ComponentPropsWithoutRef } from 'react'
@@ -8,6 +7,7 @@ import blurCyanImage from '@/assets/images/blur-cyan.png'
 import blurIndigoImage from '@/assets/images/blur-indigo.png'
 import { Button } from '@/components/syntax/Button'
 import { HeroBackground } from '@/components/syntax/HeroBackground'
+import { cn } from '@/lib/utils'
 
 const codeLanguage = 'javascript'
 const code = `export default {
@@ -98,7 +98,7 @@ export function Hero() {
                     {tabs.map(tab => (
                       <div
                         key={tab.name}
-                        className={clsx(
+                        className={cn(
                           'flex h-6 rounded-full',
                           tab.isActive
                             ? 'bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300'
@@ -106,7 +106,7 @@ export function Hero() {
                         )}
                       >
                         <div
-                          className={clsx(
+                          className={cn(
                             'flex items-center rounded-full px-2.5',
                             tab.isActive && 'bg-slate-800'
                           )}
@@ -143,10 +143,7 @@ export function Hero() {
                         getTokenProps
                       }) => (
                         <pre
-                          className={clsx(
-                            className,
-                            'flex overflow-x-auto pb-6'
-                          )}
+                          className={cn(className, 'flex overflow-x-auto pb-6')}
                           style={style}
                         >
                           <code className="px-4">

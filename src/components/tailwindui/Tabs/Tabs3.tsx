@@ -1,6 +1,6 @@
 // title: Tabs in pills
 
-import clsx from 'clsx'
+import { cn } from '@/lib/utils'
 
 const tabs = [
   { name: 'My Account', href: '#', current: false },
@@ -34,7 +34,7 @@ export default function Example() {
             <a
               key={tab.name}
               href={tab.href}
-              className={clsx(
+              className={cn(
                 tab.current
                   ? 'bg-gray-100 text-gray-700'
                   : 'text-gray-500 hover:text-gray-700',

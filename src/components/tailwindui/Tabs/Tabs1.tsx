@@ -1,6 +1,6 @@
 // title: Tabs with underline
 
-import clsx from 'clsx'
+import { cn } from '@/lib/utils'
 
 const tabs = [
   { name: 'My Account', href: '#', current: false },
@@ -35,7 +35,7 @@ export default function Example() {
               <a
                 key={tab.name}
                 href={tab.href}
-                className={clsx(
+                className={cn(
                   tab.current
                     ? 'border-indigo-500 text-indigo-600'
                     : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',

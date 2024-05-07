@@ -2,7 +2,6 @@
 
 'use client'
 
-import clsx from 'clsx'
 import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -26,6 +25,7 @@ import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
 import type { NavGroup } from '@/lib/navigation'
 import { remToPx } from '@/lib/remToPx'
+import { cn } from '@/lib/utils'
 
 import { UserMenu } from './UserMenu'
 
@@ -72,7 +72,7 @@ function NavLink({
     <Link
       href={href}
       aria-current={active ? 'page' : undefined}
-      className={clsx(
+      className={cn(
         'flex justify-between gap-2 py-1 pr-3 text-sm transition',
         isAnchorLink ? 'pl-7' : 'pl-4',
         active
@@ -174,7 +174,7 @@ function NavigationGroup({
     group.links.findIndex(link => link.href === pathname) !== -1
 
   return (
-    <li className={clsx('relative mt-6', className)}>
+    <li className={cn('relative mt-6', className)}>
       <motion.h2
         layout="position"
         className="text-xs font-semibold text-zinc-900 dark:text-white"

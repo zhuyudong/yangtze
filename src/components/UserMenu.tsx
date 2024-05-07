@@ -1,10 +1,11 @@
 import { Menu, Transition } from '@headlessui/react'
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import clsx from 'clsx'
 import Image from 'next/image'
 import { signOut, useSession } from 'next-auth/react'
 import { Fragment } from 'react'
+
+import { cn } from '@/lib/utils'
 
 import { ArrowLeftStartOnRectangleIcon } from './icons/ArrowLeftStartOnRectangleIcon'
 // import { UserCircleIcon } from './icons/UserCircleIcon'
@@ -52,7 +53,7 @@ export function UserMenu() {
               {({ active }) => (
                 <a
                   href="#"
-                  className={clsx(
+                  className={cn(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'group flex items-center px-4 py-2 text-sm'
                   )}
@@ -72,7 +73,7 @@ export function UserMenu() {
                 <a
                   // href="#"
                   onClick={() => signOut()}
-                  className={clsx(
+                  className={cn(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'group flex items-center px-4 py-2 text-sm'
                   )}

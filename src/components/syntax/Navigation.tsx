@@ -1,10 +1,10 @@
-import clsx from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { ComponentType, MouseEventHandler } from 'react'
 
 import { AppConfig } from '@/config'
 import { navigation } from '@/lib/navigation'
+import { cn } from '@/lib/utils'
 
 // /en|zh/
 const localeRegex = new RegExp(`^/(${AppConfig.locales.join('|')})`)
@@ -31,7 +31,7 @@ export function Navigation({
   const pathname = usePathname()
 
   return (
-    <nav className={clsx('text-base lg:text-sm', className)}>
+    <nav className={cn('text-base lg:text-sm', className)}>
       {/* space-y-9 */}
       <ul role="list" className="space-y-6">
         {navigation.map(section => (
@@ -49,7 +49,7 @@ export function Navigation({
                   <Link
                     href={link.href}
                     onClick={onLinkClick}
-                    className={clsx(
+                    className={cn(
                       'block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:size-1.5 before:-translate-y-1/2 before:rounded-full',
                       link.href === pathname ||
                         pathname!.replace(localeRegex, '') === link.href

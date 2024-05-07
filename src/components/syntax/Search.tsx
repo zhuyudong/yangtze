@@ -9,7 +9,6 @@ import {
   createAutocomplete
 } from '@algolia/autocomplete-core'
 import { Dialog } from '@headlessui/react'
-import clsx from 'clsx'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import type {
   ComponentPropsWithoutRef,
@@ -29,6 +28,7 @@ import {
 import Highlighter from 'react-highlight-words'
 
 import { navigation } from '@/lib/navigation'
+import { cn } from '@/lib/utils'
 import { type Result } from '@/markdoc/search.mjs'
 
 type EmptyObject = Record<string, never>
@@ -268,7 +268,7 @@ const SearchInput = forwardRef<
       <SearchIcon className="pointer-events-none absolute left-4 top-0 h-full w-5 fill-slate-400 dark:fill-slate-500" />
       <input
         ref={inputRef}
-        className={clsx(
+        className={cn(
           'flex-auto appearance-none bg-transparent pl-12 text-slate-900 outline-none placeholder:text-slate-400 focus:w-full focus:flex-none dark:text-white sm:text-sm [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-decoration]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden',
           autocompleteState.status === 'stalled' ? 'pr-11' : 'pr-4'
         )}
@@ -371,7 +371,7 @@ function SearchDialog({
       <Dialog
         open={open}
         onClose={() => close(autocomplete)}
-        className={clsx('fixed inset-0 z-50', className)}
+        className={cn('fixed inset-0 z-50', className)}
       >
         <div className="fixed inset-0 bg-slate-900/50 backdrop-blur" />
 

@@ -1,7 +1,7 @@
-import clsx from 'clsx'
 import type { ReactNode } from 'react'
 
 import { Icon } from '@/components/syntax/Icon'
+import { cn } from '@/lib/utils'
 
 const styles = {
   note: {
@@ -37,15 +37,13 @@ export function Callout({
   const IconComponent = icons[type]
 
   return (
-    <div className={clsx('my-8 flex rounded-3xl p-6', styles[type].container)}>
+    <div className={cn('my-8 flex rounded-3xl p-6', styles[type].container)}>
       <IconComponent className="size-8 flex-none" />
       <div className="ml-4 flex-auto">
-        <p className={clsx('font-display m-0 text-xl', styles[type].title)}>
+        <p className={cn('font-display m-0 text-xl', styles[type].title)}>
           {title}
         </p>
-        <div className={clsx('prose mt-2.5', styles[type].body)}>
-          {children}
-        </div>
+        <div className={cn('prose mt-2.5', styles[type].body)}>{children}</div>
       </div>
     </div>
   )

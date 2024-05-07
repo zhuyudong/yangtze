@@ -1,6 +1,6 @@
 // title: Bar with underline
 
-import clsx from 'clsx'
+import { cn } from '@/lib/utils'
 
 const tabs = [
   { name: 'My Account', href: '#', current: true },
@@ -37,7 +37,7 @@ export default function Example() {
             <a
               key={tab.name}
               href={tab.href}
-              className={clsx(
+              className={cn(
                 tab.current
                   ? 'text-gray-900'
                   : 'text-gray-500 hover:text-gray-700',
@@ -50,7 +50,7 @@ export default function Example() {
               <span>{tab.name}</span>
               <span
                 aria-hidden="true"
-                className={clsx(
+                className={cn(
                   tab.current ? 'bg-indigo-500' : 'bg-transparent',
                   'absolute inset-x-0 bottom-0 h-0.5'
                 )}
