@@ -1,6 +1,6 @@
 ---
 title: Python 环境与依赖管理
-description: 介绍 Python 几种环境和依赖管理方法的常见使用
+description: 介绍 Python 几种环境和依赖管理方法的常见方式。
 author: Yudong
 date: 2024-04-18
 published: true

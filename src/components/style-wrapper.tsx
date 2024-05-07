@@ -2,7 +2,7 @@
 
 import type { HTMLAttributes } from 'react'
 
-import { useConfig } from '@/hooks/use-config'
+import { useConfig } from '@/hooks'
 
 interface StyleWrapperProps extends HTMLAttributes<HTMLDivElement> {
   styleName?: string // Style["name"]

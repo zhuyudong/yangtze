@@ -1,3 +1,4 @@
+// @ts-ignore
 import type { Node } from 'unist-builder'
 
 export interface UnistNode extends Node {

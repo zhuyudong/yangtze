@@ -190,20 +190,20 @@ export function Resources() {
   const { randomMovieQuoteIndex, randomPoetryIndex } = useRandomIndex()
 
   const resources: Array<IResource> = [
-    // {
-    //   href: '/blog',
-    //   name: '博客【原创】',
-    //   description: '',
-    //   icon: ArticleIcon,
-    //   bg: 'bg-zinc-50',
-    //   pattern: {
-    //     y: -6,
-    //     squares: [
-    //       [-1, 2],
-    //       [1, 3]
-    //     ]
-    //   }
-    // },
+    {
+      href: '/blog',
+      name: t('blog'),
+      description: '',
+      icon: ArticleIcon,
+      bg: 'bg-zinc-50',
+      pattern: {
+        y: -6,
+        squares: [
+          [-1, 2],
+          [1, 3]
+        ]
+      }
+    },
     // {
     //   href: '/linux-tools',
     //   name: 'Linux 工具箱',

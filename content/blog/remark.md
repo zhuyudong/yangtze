@@ -1,6 +1,6 @@
 ---
 title: mdx 解析技术详解
-description: 介绍 Python 几种环境和依赖管理方法的常见使用
+description: mdx 解析相关技术栈详解，包括 remark、rehype 等。
 author: Yudong
 date: 2024-04-18
 published: true

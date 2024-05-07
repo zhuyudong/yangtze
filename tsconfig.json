@@ -52,7 +52,8 @@
     ".eslintrc.js",
     // "next.config.mjs",
     "prettier.config.js",
-    ".contentlayer/generated"
+    ".contentlayer/generated",
+    "contentlayer.config.ts"
   ],
   "exclude": ["node_modules"]
 }

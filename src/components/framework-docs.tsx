@@ -3,7 +3,7 @@
 import { allPosts } from 'contentlayer/generated'
 import type { HTMLAttributes } from 'react'
 
-import { Mdx } from './mdx-component'
+import { Mdx } from './contentlayer-mdx'
 
 interface FrameworkDocsProps extends HTMLAttributes<HTMLDivElement> {
   data: string

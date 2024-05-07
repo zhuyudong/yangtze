@@ -1,7 +1,7 @@
 import { allPosts } from 'contentlayer/generated'
 import { ChevronLeft } from 'lucide-react'
 import { type Metadata } from 'next'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -10,7 +10,6 @@ import { env } from '@/env.mjs'
 import { absoluteUrl, cn, formatDate } from '@/lib/utils'
 
 import MdxContent from './mdx-content'
-// import Newsletter from './newsletter'
 
 interface PostPageProps {
   params: {
@@ -69,8 +68,8 @@ export async function generateStaticParams(): Promise<
 }
 
 export default async function PostPage({ params }: PostPageProps) {
+  // const t = useTranslations('Blog')
   const post = await getPostFromParams(params)
-
   if (!post) {
     notFound()
   }
@@ -81,10 +80,12 @@ export default async function PostPage({ params }: PostPageProps) {
         href="/blog"
         className={cn(
           buttonVariants({ variant: 'ghost' }),
-          'absolute left-[-200px] top-14 hidden xl:inline-flex'
+          '-ml-6 mb-3'
+          // 'absolute left-[-200px] top-14 hidden xl:inline-flex'
         )}
       >
         <ChevronLeft className="mr-2 size-4" />
+        {/* {t('see_all_posts')} */}
         See all posts
       </Link>
       <div>
@@ -96,10 +97,10 @@ export default async function PostPage({ params }: PostPageProps) {
             Published on {formatDate(post.date)}
           </time>
         )}
-        <h1 className="font-heading mt-2 inline-block text-4xl leading-tight lg:text-5xl">
+        <h1 className="font-heading mt-2 inline-block text-3xl leading-tight lg:text-3xl">
           {post.title}
         </h1>
-        <Link
+        {/* <Link
           href="/blog"
           target="_blank"
           className="mt-4 flex items-center space-x-2 text-sm"
@@ -107,19 +108,20 @@ export default async function PostPage({ params }: PostPageProps) {
           <Image
             src="/images/avatar.jpeg"
             alt=""
-            width={36}
-            height={36}
+            width={24}
+            height={24}
             className="rounded-full bg-white"
           />
           {post?.author && (
             <div className="flex-1 text-left leading-tight">
-              {/* <p className="font-medium"></p> */}
-              <p className="text-[12px] text-muted-foreground">{post.author}</p>
+              <p className="text-[12px] font-medium text-muted-foreground">
+                {post.author}
+              </p>
             </div>
           )}
-        </Link>
+        </Link> */}
       </div>
-      {post.image && (
+      {/* {post.image && (
         <Image
           src={post.image}
           alt={post.title}
@@ -128,17 +130,17 @@ export default async function PostPage({ params }: PostPageProps) {
           className="my-8 rounded-sm border bg-muted transition-colors"
           priority
         />
-      )}
+      )} */}
       <MdxContent code={post.body.code} />
-      <hr className="mt-12" />
+      {/* <hr className="mt-12" /> */}
       {/* <Newsletter /> */}
 
-      <div className="flex justify-center py-6 lg:py-10">
+      {/* <div className="flex justify-center py-6 lg:py-10">
         <Link href="/blog" className={cn(buttonVariants({ variant: 'ghost' }))}>
           <ChevronLeft className="mr-2 size-4" />
           See all posts
         </Link>
-      </div>
+      </div> */}
     </article>
   )
 }

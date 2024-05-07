@@ -1,13 +1,13 @@
 ---
-title: Next.js mdx tutorial
-description: Next.js mdx tutorial.
+title: 如何在 Next.js 中使用 mdx
+description: 介绍了 @mdx-js/react 和 contentlayer 两种方式。
 author: Yudong
 date: 2024-04-17
 published: true
 image: '/images/OHR.AgueroSpain_ZH-CN9622864502_1920x1080.jpg&rf=LaDigue_1920x1080.jpg'
 ---
 
-## 使用 mdx-components.tsx
+### 方式 1： 使用 mdx-components.tsx
 
 > mdx-components.tsx
 
@@ -51,7 +51,7 @@ const nextConfig = {
 export default withSearch(withMDX(nextConfig))
 ```
 
-## 使用 contentlayer【推荐】
+### 方式 2： 使用 contentlayer【推荐】
 
 > contentlayer.config.ts
 

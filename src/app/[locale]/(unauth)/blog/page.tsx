@@ -1,11 +1,11 @@
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc } from 'date-fns'
-import { ChevronLeft } from 'lucide-react'
+// import { ChevronLeft } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { buttonVariants } from '@/components/ui/button'
-import { cn, formatDate } from '@/lib/utils'
+// import { buttonVariants } from '@/components/ui/button'
+import { formatDate } from '@/lib/utils'
 
 export const metadata = {
   title: 'Blog'
@@ -20,9 +20,8 @@ export default async function BlogPage() {
         : 1
     })
   return (
-    <div className="container relative max-w-7xl py-6 lg:py-10">
-      {/* FIXME: Link Home */}
-      <Link
+    <div className="container relative max-w-5xl py-6 lg:py-10">
+      {/* <Link
         href="/blog"
         className={cn(
           buttonVariants({ variant: 'ghost' }),
@@ -31,15 +30,15 @@ export default async function BlogPage() {
       >
         <ChevronLeft className="mr-2 size-4" />
         Home
-      </Link>
+      </Link> */}
       {posts?.length ? (
         <div className="m-4 grid gap-4">
           {posts.map(post => (
             <article
               key={post.title}
-              className="group flex overflow-hidden rounded-sm bg-white shadow-lg" // transition duration-300 hover:scale-105
+              className="group flex overflow-hidden rounded-sm border bg-white" // shadow-lg transition duration-300 hover:scale-105
             >
-              <Image
+              {/* <Image
                 className="rounded-sm border bg-muted transition-colors md:block md:w-1/5"
                 width={96}
                 height={54}
@@ -50,13 +49,13 @@ export default async function BlogPage() {
                   '/images/OHR.AyutthayaTemple_ZH-CN5996587937_1920x1080.webp'
                 }
                 alt={post.title}
-              />
+              /> */}
               <div className="flex flex-1 flex-col justify-between p-4 py-1">
                 <h2 className="mb-1 text-lg font-semibold text-gray-900">
                   {post.title}
                 </h2>
                 {post.description && (
-                  <p className="text-ellipsis text-sm text-gray-700">
+                  <p className="mb-3 text-ellipsis text-sm text-gray-700">
                     {post.description}
                   </p>
                 )}
@@ -64,9 +63,9 @@ export default async function BlogPage() {
                   <div className="flex items-center">
                     <Image
                       src="/images/avatar.jpeg"
-                      className="mr-4 size-8 rounded-full"
-                      width={24}
-                      height={24}
+                      className="mr-4 size-6 rounded-full"
+                      width={18}
+                      height={18}
                       alt={post.title}
                     />
                     {post?.author && (
@@ -89,13 +88,12 @@ export default async function BlogPage() {
       ) : (
         <p>No posts published.</p>
       )}
-      {/* FIXME: Link Home */}
-      <div className="flex justify-center py-6 lg:py-10">
+      {/* <div className="flex justify-center py-6 lg:py-10">
         <Link href="/" className={cn(buttonVariants({ variant: 'ghost' }))}>
           <ChevronLeft className="mr-2 size-4" />
           Home
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }

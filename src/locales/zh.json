@@ -70,6 +70,7 @@
     "read_more": "阅读更多",
     "reading_space": "阅读空间",
     "leisure_station": "休闲驿站",
+    "blog": "博客【原创】",
     "poetry": "诗词",
     "movies": "电影",
     "wallpaper": "壁纸",
@@ -81,5 +82,8 @@
     "technology_trends": "科技动态",
     "development_tools": "开发工具",
     "social_photos_text": "社会图文"
+  },
+  "Blog": {
+    "see_all_posts": "查看所有博客"
   }
 }

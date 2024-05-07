@@ -2,7 +2,7 @@
 
 import type { ComponentProps, CSSProperties } from 'react'
 
-import { useConfig } from '@/hooks/use-config'
+import { useConfig } from '@/hooks'
 import { cn } from '@/lib/utils'
 
 interface ThemeWrapperProps extends ComponentProps<'div'> {

@@ -2,7 +2,7 @@
 
 import { type SelectTriggerProps } from '@radix-ui/react-select'
 
-import { useConfig } from '@/hooks/use-config'
+import { useConfig } from '@/hooks'
 import { type Style, styles } from '@/lib/registry'
 import { cn } from '@/lib/utils'
 

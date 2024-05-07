@@ -1,6 +1,6 @@
 'use client'
 
-import { Mdx } from '@/components/mdx-component'
+import { Mdx } from '@/components/contentlayer-mdx'
 
 const MdxContent = ({ code }: { code: string }) => {
   return (

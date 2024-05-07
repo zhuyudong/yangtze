@@ -339,6 +339,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
     <nav {...props}>
       <ul role="list">
         {/* <TopLevelNavItem href="/blog">Blog</TopLevelNavItem> */}
+        <TopLevelNavItem href="/blog">{tr('blog')}</TopLevelNavItem>
         <TopLevelNavItem href="/poetry">{tr('poetry')}</TopLevelNavItem>
         <TopLevelNavItem href="/movies">{tr('movies')}</TopLevelNavItem>
         <TopLevelNavItem href="/wallpaper">{tr('wallpaper')}</TopLevelNavItem>

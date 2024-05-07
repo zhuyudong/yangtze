@@ -10,7 +10,7 @@ import { Icons } from '@/components/icons'
 import { StyleSwitcher } from '@/components/style-switcher'
 import { ThemeWrapper } from '@/components/theme-wrapper'
 // import { V0Button } from '@/components/v0-button'
-import { useConfig } from '@/hooks/use-config'
+import { useConfig } from '@/hooks'
 import { Index, styles } from '@/lib/registry'
 import { cn } from '@/lib/utils'
 

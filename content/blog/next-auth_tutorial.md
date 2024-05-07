@@ -1,6 +1,6 @@
 ---
-title: next-auth tutorial
-description: next-auth tutorial.
+title: next-auth 实践
+description: 介绍 next-auth 支持的几种登录方式的使用。
 author: Yudong
 date: 2024-04-17
 published: true

@@ -69,6 +69,7 @@
     "read_more": "Read more",
     "reading_space": "Reading space",
     "leisure_station": "Leisure station",
+    "blog": "Blog",
     "poetry": "Poetry",
     "movies": "Movies",
     "wallpaper": "Wallpaper",
@@ -80,5 +81,8 @@
     "technology_trends": "Technology trends",
     "development_tools": "Development tools",
     "social_photos_text": "Social photos & text"
+  },
+  "Blog": {
+    "see_all_posts": "See all posts"
   }
 }

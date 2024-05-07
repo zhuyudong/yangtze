@@ -1,30 +1,24 @@
 /* eslint-disable no-underscore-dangle */
-// import { getHighlighter, loadTheme } from '@shikijs/compat'
+import { getHighlighter } from '@shikijs/compat' // loadTheme
 import {
   defineDocumentType,
   defineNestedType,
   makeSource
 } from 'contentlayer/source-files'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import type { LineElement } from 'rehype-pretty-code'
 import rehypePrettyCode from 'rehype-pretty-code'
 import rehypeSlug from 'rehype-slug'
 import { codeImport } from 'remark-code-import'
 // import remarkGfm from 'remark-gfm'
+import { bundledLanguages, bundledThemes } from 'shiki'
 import { visit } from 'unist-util-visit'
-
-import type { UnistNode } from '@/types/unist'
-
-import { rehypeComponent } from './lib/rehype-component'
-import { rehypeNpmCommand } from './lib/rehype-npm-command'
 
 // eslint-disable-next-line unused-imports/no-unused-vars
 const LinksProperties = defineNestedType(() => ({
   name: 'LinksProperties',
   fields: {
     doc: {
-      type: 'string'
-    },
-    api: {
       type: 'string'
     }
   }
@@ -49,9 +43,14 @@ export const Post = defineDocumentType(() => ({
       default: false
     },
     tags: {
-      type: 'string',
-      required: false
+      type: 'list',
+      required: false,
+      of: { type: 'string' }
     },
+    /**
+     * links:
+         doc: https://xxx
+     */
     // links: {
     //   type: 'nested',
     //   of: LinksProperties
@@ -84,11 +83,11 @@ export const Post = defineDocumentType(() => ({
         /**
          * e.g
          *  {
-              sourceFilePath: 'blog/next-auth_tutorial.md',
-              sourceFileName: 'next-auth_tutorial.md',
+              sourceFilePath: 'blog/xxx.md',
+              sourceFileName: 'xxx.md',
               sourceFileDir: 'blog',
               contentType: 'markdown',
-              flattenedPath: 'blog/next-auth_tutorial'
+              flattenedPath: 'blog/xxx'
             }
          */
         return doc._raw.flattenedPath.split('/').slice(1).join('/')
@@ -105,7 +104,7 @@ export default makeSource({
     remarkPlugins: [codeImport], // remarkGfm
     rehypePlugins: [
       rehypeSlug,
-      rehypeComponent,
+      // TODO: rehypeComponent,
       () => tree => {
         visit(tree, node => {
           if (node?.type === 'element' && node?.tagName === 'pre') {
@@ -129,30 +128,27 @@ export default makeSource({
         })
       },
       [
-        // @ts-expect-error
+        // @ts-ignore
         rehypePrettyCode,
         {
-          // TODO
           getHighlighter: async () => {
-            // const theme = await loadTheme(
-            //   path.join(process.cwd(), 'src/lib/themes/dark.json')
-            // )
-            // return getHighlighter({ theme })
+            return getHighlighter({
+              langs: Object.keys(bundledLanguages),
+              themes: Object.keys(bundledThemes)
+            })
           },
-          onVisitLine(node: UnistNode) {
+          onVisitLine(node: LineElement) {
             // Prevent lines from collapsing in `display: grid` mode, and allow empty
             // lines to be copy/pasted
             if (node?.children?.length === 0) {
               node.children = [{ type: 'text', value: ' ' }]
             }
           },
-          onVisitHighlightedLine(node: UnistNode) {
-            // @ts-expect-error
-            node.properties.className.push('line--highlighted')
+          onVisitHighlightedLine(node: LineElement) {
+            node!.properties!.className!.push('line--highlighted')
           },
-          onVisitHighlightedWord(node: UnistNode) {
-            // @ts-expect-error
-            node.properties.className = ['word--highlighted']
+          onVisitHighlightedWord(node: LineElement) {
+            node!.properties!.className = ['word--highlighted']
           }
         }
       ],
@@ -181,7 +177,7 @@ export default makeSource({
           }
         })
       },
-      rehypeNpmCommand,
+      // TODO: rehypeNpmCommand,
       [
         rehypeAutolinkHeadings,
         {

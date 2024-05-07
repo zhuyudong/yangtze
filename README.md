@@ -155,3 +155,4 @@ docker run -p 3000:3000 yangtze-app:0.1.0
 - [pino](https://getpino.io/#/)
 - [Better Stack](https://betterstack.com/)
 - [Mermaid](https://mermaid.js.org/syntax/sequenceDiagram.html)
+- [rehype-pretty-code](https://rehype-pretty.pages.dev/#usage)
