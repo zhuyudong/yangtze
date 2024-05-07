@@ -9,7 +9,7 @@ import { useCallback, useMemo } from 'react'
 import { toast } from 'sonner'
 
 // import { Loading } from '@/components/Loading'
-import { wrapper as Wrapper } from '@/components/mdx'
+import { wrapper as Wrapper } from '@/components/mdx-components'
 import type { WeeklyCategory } from '@/hooks'
 import { useContents, useContentsPagination, useCurrentUser } from '@/hooks'
 import axios from '@/lib/axios'

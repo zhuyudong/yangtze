@@ -35,6 +35,7 @@ const nextConfig = {
   eslint: {
     dirs: ['.']
   },
+  // swcMinify: true,
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: {

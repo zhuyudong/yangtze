@@ -10,3 +10,5 @@ test-results
 
 src/app/[locale]/(unauth)/python/issues/106.mdx
 src/app/[locale]/(unauth)/python/issues_by_category/news.mdx
+
+src/app/[locale]/(unauth)/vscode/mac.settings.json

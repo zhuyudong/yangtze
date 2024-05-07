@@ -2,6 +2,7 @@ import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import type { ReactNode } from 'react'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -18,7 +19,7 @@ import { ColorModeSwitch } from './color-mode-switch'
 import LoginLogoutButton from './login-logout-button'
 import UserButton from './user-button'
 
-export async function Layout({ children }: { children: React.ReactNode }) {
+export async function Layout({ children }: { children: ReactNode }) {
   const pathname = usePathname()
 
   const isInApplicationRoute = pathname.includes('/app')

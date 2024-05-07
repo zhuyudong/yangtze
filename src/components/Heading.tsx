@@ -1,3 +1,5 @@
+/* eslint-disable unused-imports/no-unused-vars */
+
 'use client'
 
 import { useInView } from 'framer-motion'
@@ -44,6 +46,7 @@ function Eyebrow({ tag, label }: { tag?: string; label?: string }) {
   )
 }
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 function Anchor({
   id,
   inView,
@@ -109,13 +112,14 @@ export function Heading<Level extends 2 | 3>({
         className={tag || label ? 'mt-2 scroll-mt-32' : 'scroll-mt-24'}
         {...props}
       >
-        {anchor ? (
+        {/* {anchor ? (
           <Anchor id={props.id} inView={inView}>
             {children}
           </Anchor>
         ) : (
           children
-        )}
+        )} */}
+        {children}
       </Component>
       {props.id === 'leisure-station' && (
         <ArrowPathIcon

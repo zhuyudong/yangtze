@@ -14,7 +14,7 @@ image: '/images/OHR.AgueroSpain_ZH-CN9622864502_1920x1080.jpg&rf=LaDigue_1920x10
 ```tsx
 import { type MDXComponents } from 'mdx/types'
 
-import * as mdxComponents from '@/components/mdx'
+import * as mdxComponents from '@/components/mdx-components'
 
 export function useMDXComponents(components: MDXComponents) {
   return {

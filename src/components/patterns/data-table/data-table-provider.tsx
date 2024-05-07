@@ -1,17 +1,18 @@
 'use client'
 
-import * as React from 'react'
+import type { Dispatch, PropsWithChildren, SetStateAction } from 'react'
+import { createContext, useContext, useState } from 'react'
 
 import { DateRangePicker } from '../date-range-picker'
 
 interface UserTableContextProps {
   enableAdvancedFilter: boolean
-  setEnableAdvancedFilter: React.Dispatch<React.SetStateAction<boolean>>
+  setEnableAdvancedFilter: Dispatch<SetStateAction<boolean>>
   showFloatingBar: boolean
-  setShowFloatingBar: React.Dispatch<React.SetStateAction<boolean>>
+  setShowFloatingBar: Dispatch<SetStateAction<boolean>>
 }
 
-const UserTableContext = React.createContext<UserTableContextProps>({
+const UserTableContext = createContext<UserTableContextProps>({
   enableAdvancedFilter: false,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   setEnableAdvancedFilter: () => {},
@@ -21,16 +22,16 @@ const UserTableContext = React.createContext<UserTableContextProps>({
 })
 
 export function useUserTable() {
-  const context = React.useContext(UserTableContext)
+  const context = useContext(UserTableContext)
   if (!context) {
     throw new Error('useUserTable must be used within a UserTableProvider')
   }
   return context
 }
 
-export function UserTableProvider({ children }: React.PropsWithChildren) {
-  const [enableAdvancedFilter, setEnableAdvancedFilter] = React.useState(false)
-  const [showFloatingBar, setShowFloatingBar] = React.useState(false)
+export function UserTableProvider({ children }: PropsWithChildren) {
+  const [enableAdvancedFilter, setEnableAdvancedFilter] = useState(false)
+  const [showFloatingBar, setShowFloatingBar] = useState(false)
 
   return (
     <UserTableContext.Provider

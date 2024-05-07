@@ -2,7 +2,7 @@
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useSession } from 'next-auth/react'
-import * as React from 'react'
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { z } from 'zod'
@@ -37,7 +37,7 @@ type Schema = z.infer<typeof schema>
 
 export function UploadWithDialog() {
   const { update } = useSession()
-  const [loading, setLoading] = React.useState(false)
+  const [loading, setLoading] = useState(false)
   const updateUserMutation = api.user.updateUser.useMutation({
     onSuccess: async () => {
       await update()

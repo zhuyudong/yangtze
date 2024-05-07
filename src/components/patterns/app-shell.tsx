@@ -1,6 +1,7 @@
 import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import type { ReactNode } from 'react'
 
 // import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
@@ -18,7 +19,7 @@ import { ColorModeSwitch } from './color-mode-switch'
 import LoginLogoutButton from './login-logout-button'
 import UserButton from './user-button'
 
-export async function AppShell({ children }: { children: React.ReactNode }) {
+export async function AppShell({ children }: { children: ReactNode }) {
   // const pathname = usePathname()
 
   const isInApplicationRoute = true // pathname.includes('/app')

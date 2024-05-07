@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
 import { motion } from 'framer-motion'
 import { Edit2 } from 'lucide-react'
 import { useSession } from 'next-auth/react'
-import * as React from 'react'
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { z } from 'zod'
@@ -40,7 +40,7 @@ type Schema = z.infer<typeof schema>
 export function AvatarSelection() {
   const session = useSession()
   const utils = api.useUtils()
-  const [loading, setLoading] = React.useState(false)
+  const [loading, setLoading] = useState(false)
   const getUserQuery = api.user.getUser.useQuery()
   const updateUserMutation = api.user.updateUser.useMutation({
     onSuccess: async () => {

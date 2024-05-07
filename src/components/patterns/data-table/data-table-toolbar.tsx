@@ -2,7 +2,7 @@
 
 import type { Table } from '@tanstack/react-table'
 import { Trash2 } from 'lucide-react'
-import * as React from 'react'
+import type { ReactNode } from 'react'
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -18,7 +18,7 @@ interface DataTableToolbarProps<TData> {
   table: Table<TData>
   filterableColumns?: DataTableFilterableColumn<TData>[]
   searchableColumns?: DataTableSearchableColumn<TData>[]
-  children?: React.ReactNode
+  children?: ReactNode
 }
 
 export function DataTableToolbar<TData>({

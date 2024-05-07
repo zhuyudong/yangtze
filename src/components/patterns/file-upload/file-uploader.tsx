@@ -5,7 +5,8 @@
 import { useControllableState } from '@radix-ui/react-use-controllable-state'
 import { Upload, X } from 'lucide-react'
 import Image from 'next/image'
-import * as React from 'react'
+import type { Dispatch, HTMLAttributes, SetStateAction } from 'react'
+import { useCallback, useEffect } from 'react'
 import Dropzone, {
   type DropzoneProps,
   type FileRejection
@@ -17,7 +18,7 @@ import { Progress } from '@/components/ui/progress'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { cn, formatBytes } from '@/lib/utils'
 
-interface FileUploaderProps extends React.HTMLAttributes<HTMLDivElement> {
+interface FileUploaderProps extends HTMLAttributes<HTMLDivElement> {
   /**
    * Value of the uploader.
    * @type File[]
@@ -28,11 +29,11 @@ interface FileUploaderProps extends React.HTMLAttributes<HTMLDivElement> {
 
   /**
    * Function to be called when the value changes.
-   * @type React.Dispatch<React.SetStateAction<File[]>>
+   * @type Dispatch<SetStateAction<File[]>>
    * @default undefined
    * @example onValueChange={(files) => setFiles(files)}
    */
-  onValueChange?: React.Dispatch<React.SetStateAction<File[]>>
+  onValueChange?: Dispatch<SetStateAction<File[]>>
 
   /**
    * Function to be called when files are uploaded.
@@ -114,7 +115,7 @@ export function FileUploader(props: FileUploaderProps) {
     onChange: onValueChange
   })
 
-  const onDrop = React.useCallback(
+  const onDrop = useCallback(
     (acceptedFiles: File[], rejectedFiles: FileRejection[]) => {
       if (!multiple && maxFiles === 1 && acceptedFiles.length > 1) {
         toast.error('Cannot upload more than 1 file at a time')
@@ -172,7 +173,7 @@ export function FileUploader(props: FileUploaderProps) {
   }
 
   // Revoke preview url when component unmounts
-  React.useEffect(() => {
+  useEffect(() => {
     return () => {
       if (!files) return
       files.forEach(file => {

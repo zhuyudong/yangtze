@@ -3,7 +3,7 @@ import {
   flexRender,
   type Table as TanstackTable
 } from '@tanstack/react-table'
-import * as React from 'react'
+import type { ReactNode } from 'react'
 
 import {
   Table,
@@ -37,7 +37,7 @@ interface DataTableProps<TData, TValue> {
    * @type React.ReactNode | null
    * @example floatingBar={<TasksTableFloatingBar table={table} />}
    */
-  floatingBar?: React.ReactNode | null
+  floatingBar?: ReactNode | null
 }
 
 export function DataTable<TData, TValue>({

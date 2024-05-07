@@ -1,7 +1,7 @@
 'use client'
 
 import { useSearchParams } from 'next/navigation'
-import * as React from 'react'
+import { useMemo } from 'react'
 
 import { useDataTable } from '@/hooks'
 import { api } from '@/trpc/react'
@@ -43,7 +43,7 @@ export function UserTable() {
   )
 
   // Memoize the columns so they don't re-render on every render
-  const columns = React.useMemo(() => getColumns(), [])
+  const columns = useMemo(() => getColumns(), [])
 
   const { table } = useDataTable({
     data: data?.data ?? [],

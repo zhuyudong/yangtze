@@ -5,7 +5,12 @@
 import { addDays, format } from 'date-fns'
 import { CalendarIcon } from 'lucide-react'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import * as React from 'react'
+import {
+  type ComponentPropsWithoutRef,
+  useEffect,
+  useMemo,
+  useState
+} from 'react'
 import type { DateRange } from 'react-day-picker'
 
 import { Button, type ButtonProps } from '@/components/ui/button'
@@ -18,7 +23,7 @@ import {
 import { cn } from '@/lib/utils'
 
 interface DateRangePickerProps
-  extends React.ComponentPropsWithoutRef<typeof PopoverContent> {
+  extends ComponentPropsWithoutRef<typeof PopoverContent> {
   /**
    * The selected date range.
    * @default undefined
@@ -70,7 +75,7 @@ export function DateRangePicker({
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
-  const [from, to] = React.useMemo(() => {
+  const [from, to] = useMemo(() => {
     let fromDay: Date | undefined
     let toDay: Date | undefined
 
@@ -85,13 +90,13 @@ export function DateRangePicker({
     return [fromDay, toDay]
   }, [dateRange, dayCount])
 
-  const [date, setDate] = React.useState<DateRange | undefined>({
+  const [date, setDate] = useState<DateRange | undefined>({
     from,
     to
   })
 
   // Update query string
-  React.useEffect(() => {
+  useEffect(() => {
     const newSearchParams = new URLSearchParams(searchParams)
     if (date?.from) {
       newSearchParams.set('from', format(date.from, 'yyyy-MM-dd'))

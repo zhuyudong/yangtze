@@ -5,6 +5,7 @@ import {
   ArrowUpIcon,
   EyeOffIcon
 } from 'lucide-react'
+import type { HTMLAttributes } from 'react'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -17,7 +18,7 @@ import {
 import { cn } from '@/lib/utils'
 
 interface DataTableColumnHeaderProps<TData, TValue>
-  extends React.HTMLAttributes<HTMLDivElement> {
+  extends HTMLAttributes<HTMLDivElement> {
   column: Column<TData, TValue>
   title: string
 }

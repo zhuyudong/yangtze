@@ -368,6 +368,7 @@ export function Pre({
   children,
   ...props
 }: ComponentPropsWithoutRef<typeof CodeGroup>) {
+  // HTMLAttributes<HTMLPreElement> &
   const isGrouped = useContext(CodeGroupContext)
 
   if (isGrouped) {

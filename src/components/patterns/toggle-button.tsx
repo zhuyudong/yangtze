@@ -1,6 +1,6 @@
 'use client'
 
-import * as React from 'react'
+import { useState } from 'react'
 
 import { Button, type ButtonProps } from '@/components/ui/button'
 import {
@@ -21,7 +21,7 @@ export function ToggleButton({
   className,
   ...props
 }: ToggleButtonProps) {
-  const [pressed, setPressed] = React.useState(false)
+  const [pressed, setPressed] = useState(false)
 
   return (
     <Tooltip>

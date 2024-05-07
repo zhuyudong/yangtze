@@ -8,6 +8,7 @@ import { mdxAnnotations } from 'mdx-annotations'
 import { bundledLanguages, bundledThemes, getHighlighter } from 'shiki'
 import { visit } from 'unist-util-visit'
 // import rehypePrettyCode from 'rehype-pretty-code'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
 // NOTE: deprecated hast@1.0.0: Renamed to rehype
 
@@ -106,18 +107,18 @@ function rehypeShiki() {
            { type: 'text', value: '@import("src/components/tailwindui/Buttons/Button1.tsx")' }
          */
         let textNode = codeNode.children[0]
-        // NOTE: 所有自定义导入都要相对于 src 目录
+        // NOTE: 所有自定义导入都要相对于项目根目录
         /**
          * @import("src/components/tailwindui/Buttons/Button1.tsx")
          * fileMatch[2] src/components/tailwindui/Buttons/Button1.tsx
-         * fileMatch[3] Button1
-         * fileMatch[4] tsx
+         * fileMatch[4] Button1
+         * fileMatch[5] tsx
          */
         const fileMatch =
           /@import\(('|")([a-zA-Z\d-_\[\]\(\).]*\/([a-zA-Z\d-_\[\]\(\).]*\/)*([a-zA-Z\d-_\[\]\(\).]*)\.(tsx|ts|js|jsx|py|sh|sql|html|css|scss|sass|less|json|go))('|")\)/.exec(
             textNode.value
           )
-        if (fileMatch?.[2]) {
+        if (fileMatch?.[2] && fileMatch[2].startsWith('src/')) {
           const codePath = path.resolve(process.cwd(), `${fileMatch[2]}`)
           const actualCode = fs.readFileSync(codePath).toString()
           node.properties.code = actualCode
@@ -236,5 +237,14 @@ export const rehypePlugins = [
     tree => ({
       sections: `[${getSections(tree).join()}]`
     })
+  ],
+  [
+    rehypeAutolinkHeadings,
+    {
+      properties: {
+        className: ['subheading-anchor'],
+        ariaLabel: 'Link to section'
+      }
+    }
   ]
 ]

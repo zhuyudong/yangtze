@@ -53,8 +53,7 @@ const Identification = ({ children }: { children: ReactNode }) => {
     // TODO
   }, [user])
 
-  // eslint-disable-next-line react/jsx-no-useless-fragment
-  return <>{children}</>
+  return children
 }
 
 // const queryClient = new QueryClient()

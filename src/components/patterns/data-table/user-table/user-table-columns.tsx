@@ -2,7 +2,6 @@
 
 import { type Plan, type User } from '@prisma/client'
 import { type ColumnDef } from '@tanstack/react-table'
-import * as React from 'react'
 
 import { formatDate } from '@/lib/utils'
 import {
