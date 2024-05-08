@@ -260,7 +260,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
     {
       title: tr('technology_column'),
       links: [
-        { title: 'Introduction', href: '/' },
+        { title: 'Overview', href: '/' },
         { title: 'React APIs', href: '/react-apis' },
         { title: 'Git practice', href: '/git-config' },
         { title: 'Node.js tutorial', href: '/nodejs' },

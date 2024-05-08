@@ -72,3 +72,27 @@ find . -name "node_modules" -type d -prune -exec rm -rf {} \;
 ```bash
 find . -name "tsconfig.tsbuildinfo" -type f -prune -exec rm -rf {} \;
 ```
+
+递归列出所有大于 10M 的文件
+
+```bash
+find . -type f -size +10M
+```
+
+递归列出所有大于 10M 的文件并显示其大小
+
+```bash
+find . -type f -size +10M -exec ls -lh {} \;
+```
+
+递归列出所有文件并按大小排序
+
+```bash
+find . -type f -exec du -h {} + | sort -h
+```
+
+计算当前目录下有多少文件
+
+```bash
+find . -type f | wc -l
+```

@@ -1,6 +1,20 @@
-# yangtze
+# Yangtze
 
-## Build && Start
+[website](https://yangtze.zeabur.app)
+
+## Installing
+
+```bash
+pnpm i
+```
+
+## Develop【本地开发】
+
+```bash
+pnpm dev
+```
+
+## Start 【生产环境】
 
 `copy .env.example .env`
 
@@ -18,6 +32,8 @@ pnpm start
 ```bash
 docker build --no-cache -t yangtze-app:0.1.0 -f Dockerfile .
 # or
+docker build --progress=plain --no-cache -t yangtze-app:0.1.0 -f Dockerfile .
+# or
 docker build --no-cache -t yangtze-app:0.1.0 .
 # or
 docker build --no-cache . -t yangtze-app:0.1.0
@@ -29,118 +45,38 @@ docker build --no-cache . -t yangtze-app:0.1.0
 docker run -p 3000:3000 yangtze-app:0.1.0
 ```
 
+open [http://localhost:3000](http://localhost:3000)
+
 ## TODO
 
-- [x] FIXME: https://github.com/vercel/next.js/issues/51477
-
-## 使用 next-auth 登录流程
-
-> src/server/auth.ts
-
-1. `/api/auth/session`
-2. `/api/auth/providers`
-3. `/zh/api/auth/csrf`: `Credentials.authorize` -> `callbacks.jwt` -> `events.signIn`
-4. `/api/auth/callback/credentials`: `callbacks.jwt` -> `callbacks.session`
-5. `/zh/api/auth/session`
-
-## 使用 [pino](https://getpino.io/#/) 结合 [Better Stack](https://betterstack.com/) 记录日志
-
-1. 安装依赖
-   ```bash
-   pnpm i @logtail/pino pino pino-pretty
-   ```
-2. 设置环境变量
-
-   > .env
-
-   ```bash
-   LOGTAIL_SOURCE_TOKEN=xxx
-   ```
-
-3. 封装 logger 实例
-
-   > src/lib/logger.ts
-
-   ```ts
-   import pino from 'pino'
-
-   import { env } from '../env.mjs'
-
-   let options = {}
-
-   if (env.LOGTAIL_SOURCE_TOKEN) {
-     options = {
-       transport: {
-         target: '@logtail/pino',
-         options: { sourceToken: env.LOGTAIL_SOURCE_TOKEN }
-       }
-     }
-   } else {
-     options = {
-       transport: {
-         target: 'pino-pretty',
-         options: {
-           colorize: true
-         }
-       }
-     }
-   }
-
-   export const logger = pino(options)
-   ```
-
-4. 在 api 接口里记录日志
-
-   > src/app/[locale]/api/contents/favorite/route.ts
-
-   ```ts
-   import type { NextRequest } from 'next/server'
-   import { NextResponse } from 'next/server'
-
-   import { logger } from '@/lib/logger'
-   import { serverAuth } from '@/lib/server-auth'
-   import { db } from '@/server/db'
-
-   async function handler(req: NextRequest) {
-     try {
-       const { currentUser } = await serverAuth()
-
-       if (!currentUser) {
-         return NextResponse.json(
-           { message: 'Please sign in' },
-           { status: 401 }
-         )
-       }
-
-       const { contentId } = await req.json()
-
-       if (req.method === 'POST') {
-         // async actions
-         logger.info(
-           'User %s favorited content %s',
-           currentUser.email,
-           contentId
-         )
-         return NextResponse.json({
-           //...
-         })
-       }
-
-       return NextResponse.json(
-         { message: 'Method not allowed' },
-         { status: 405 }
-       )
-     } catch (error) {
-       console.log(error)
-
-       return NextResponse.json({ error }, { status: 500 })
-     }
-   }
-
-   export { handler as POST }
-   ```
-
-5. 在 [https://logs.betterstack.com/team/257329/tail](https://logs.betterstack.com/team/257329/tail) 查看 实时日志
+- [x] FIXME: [#issue51477](https://github.com/vercel/next.js/issues/51477)
+- [x] FIXME: 生产环境下 /blog 页面报错
+  ```bash
+    Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `unstable_setRequestLocale` API to enable static rendering, see https://next-intl-docs.vercel.app/docs/getting-started/app-router-server-components#static-rendering
+      at /home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41199
+      at /home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:185493
+      ... 5 lines matching cause stack trace ...
+      at eh (/home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:134786)
+      at e (/home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:137671)
+      at ek (/home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:138145) {
+    digest: '569812901',
+    [cause]: n [Error]: Dynamic server usage: Route /zh/blog/next-mdx_tutorial couldn't be rendered statically because it used headers. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+        at l (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3570.js:1:56076)
+        at d (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/6725.js:30:24360)
+        at /home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41101
+        at /home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:185493
+        at u (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41941)
+        at /home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3689.js:7:3142
+        at i (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3689.js:7:3145)
+        at s (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3689.js:7:3933)
+        at O (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/4992.js:1:3527)
+        at eh (/home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:134786) {
+      description: "Route /zh/blog/next-mdx_tutorial couldn't be rendered statically because it used headers. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+      digest: 'DYNAMIC_SERVER_USAGE'
+    }
+  }
+  ```
+  暂时解决方案参见 [1](https://github.com/amannn/next-intl/issues/521) 和 [2](https://github.com/amannn/next-intl/issues/663)
 
 ## Reference
 

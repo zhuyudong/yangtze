@@ -1,15 +1,16 @@
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc } from 'date-fns'
 // import { ChevronLeft } from 'lucide-react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 
 // import { buttonVariants } from '@/components/ui/button'
-import { formatDate } from '@/lib/utils'
 
 export const metadata = {
   title: 'Blog'
 }
+
+export const dynamic = 'force-dynamic'
 
 export default async function BlogPage() {
   const posts = allPosts
@@ -59,7 +60,7 @@ export default async function BlogPage() {
                     {post.description}
                   </p>
                 )}
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <Image
                       src="/images/avatar.jpeg"
@@ -77,7 +78,7 @@ export default async function BlogPage() {
                       {formatDate(post.date)}
                     </div>
                   )}
-                </div>
+                </div> */}
               </div>
               <Link href={post.slug} className="absolute inset-0">
                 <span className="sr-only">View Article</span>

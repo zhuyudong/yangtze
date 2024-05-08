@@ -28,6 +28,9 @@ async function getPostFromParams(params: PostPageProps['params']) {
   return post
 }
 
+// NOTE: https://github.com/amannn/next-intl/issues/521, https://github.com/amannn/next-intl/issues/663
+export const dynamic = 'force-dynamic'
+
 export async function generateMetadata({
   params
 }: PostPageProps): Promise<Metadata> {
