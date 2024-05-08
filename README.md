@@ -53,24 +53,24 @@ open [http://localhost:3000](http://localhost:3000)
 - [x] FIXME: 生产环境下 /blog 页面报错
   ```bash
     Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `unstable_setRequestLocale` API to enable static rendering, see https://next-intl-docs.vercel.app/docs/getting-started/app-router-server-components#static-rendering
-      at /home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41199
-      at /home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:185493
+      at ~/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41199
+      at ~/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:185493
       ... 5 lines matching cause stack trace ...
-      at eh (/home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:134786)
-      at e (/home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:137671)
-      at ek (/home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:138145) {
+      at eh (~/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:134786)
+      at e (~/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:137671)
+      at ek (~/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:138145) {
     digest: '569812901',
     [cause]: n [Error]: Dynamic server usage: Route /zh/blog/next-mdx_tutorial couldn't be rendered statically because it used headers. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
-        at l (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3570.js:1:56076)
-        at d (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/6725.js:30:24360)
-        at /home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41101
-        at /home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:185493
-        at u (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41941)
-        at /home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3689.js:7:3142
-        at i (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3689.js:7:3145)
-        at s (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/3689.js:7:3933)
-        at O (/home/qj00304/Code/my-opensource/yangtze/.next/server/chunks/4992.js:1:3527)
-        at eh (/home/qj00304/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:134786) {
+        at l (~/Code/my-opensource/yangtze/.next/server/chunks/3570.js:1:56076)
+        at d (~/Code/my-opensource/yangtze/.next/server/chunks/6725.js:30:24360)
+        at ~/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41101
+        at ~/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:185493
+        at u (~/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41941)
+        at ~/Code/my-opensource/yangtze/.next/server/chunks/3689.js:7:3142
+        at i (~/Code/my-opensource/yangtze/.next/server/chunks/3689.js:7:3145)
+        at s (~/Code/my-opensource/yangtze/.next/server/chunks/3689.js:7:3933)
+        at O (~/Code/my-opensource/yangtze/.next/server/chunks/4992.js:1:3527)
+        at eh (~/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:134786) {
       description: "Route /zh/blog/next-mdx_tutorial couldn't be rendered statically because it used headers. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
       digest: 'DYNAMIC_SERVER_USAGE'
     }

@@ -248,7 +248,7 @@
     // "reportMissingModuleSource": "none"
   },
   // "python.analysis.typeCheckingMode": "basic",
-  // /home/qj00304/anaconda3/envs/Python3.9/bin/python
+  // ~/anaconda3/envs/Python3.9/bin/python
   // This setting will soon be deprecated. Learn more here: https://github.com/microsoft/vscode-python/wiki/Migration-to-Python-Tools-Extensions.
   // "python.linting.enabled": true,
   // "python.linting.lintOnSave": true,

@@ -259,12 +259,10 @@
     // "reportMissingModuleSource": "none"
   },
   // "python.analysis.typeCheckingMode": "basic", // strict
-  "python.autoComplete.extraPaths": [
-    "/home/qj00304/Code/pegasus/portal_backend_cloud"
-  ],
+  "python.autoComplete.extraPaths": ["~/Code/pegasus/portal_backend_cloud"],
   "python.analysis.autoSearchPaths": true,
   "python.analysis.autoImportCompletions": true,
-  // /home/qj00304/anaconda3/envs/Python3.9/bin/python
+  // ~/anaconda3/envs/Python3.9/bin/python
   // This setting will soon be deprecated. Learn more here: https://github.com/microsoft/vscode-python/wiki/Migration-to-Python-Tools-Extensions.
   // "python.linting.enabled": true,
   // "python.linting.lintOnSave": true,
@@ -539,11 +537,11 @@
   "markdown.preview.fontSize": 12,
   "cmake.showOptionsMovedNotification": false,
 
-  // "ruff.interpreter": ["/home/qj00304/anaconda3/envs/portal_backend_cloud/bin/python"],
+  // "ruff.interpreter": ["~/anaconda3/envs/portal_backend_cloud/bin/python"],
   "http.proxySupport": "off",
   "vscode_custom_css.imports": [
-    "file:///home/qj00304/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+    "file://~/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
   ],
   "animations.Enabled": true,
-  "python.defaultInterpreterPath": "/home/qj00304/anaconda3/envs/yangtze/bin/python"
+  "python.defaultInterpreterPath": "~/anaconda3/envs/yangtze/bin/python"
 }
