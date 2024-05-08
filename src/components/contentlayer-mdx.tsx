@@ -1,3 +1,5 @@
+import '@/styles/mdx.css'
+
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
 import { useConfig } from '@/hooks'

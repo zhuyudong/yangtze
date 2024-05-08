@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import { allPosts } from 'contentlayer/generated'
 import { ChevronLeft } from 'lucide-react'
 import { type Metadata } from 'next'
@@ -41,7 +42,24 @@ export async function generateMetadata({
   }
 
   const ogUrl = new URL(`${env.NEXT_PUBLIC_DEPLOYMENT_URL}/${post.image}`)
-
+  // console.log(
+  //   post._id,
+  //   post._raw,
+  //   post?.author,
+  //   post.body,
+  //   post.component,
+  //   post?.date,
+  //   post?.description,
+  //   post.featured,
+  //   post?.image,
+  //   post.slug,
+  //   post.slugAsParams,
+  //   post?.tags,
+  //   post.toc,
+  //   post.title,
+  //   post.type, // 'Post'
+  //   post.published
+  // )
   return {
     title: post.title,
     description: post.description,
@@ -57,7 +75,8 @@ export async function generateMetadata({
           height: 630,
           alt: post.title
         }
-      ]
+      ],
+      tags: post.tags
     }
   }
 }

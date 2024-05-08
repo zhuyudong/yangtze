@@ -136,3 +136,4 @@ weekly-issues/*.mdx
 analyze
 
 .contentlayer
+sitemap-*.xml

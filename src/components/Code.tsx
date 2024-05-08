@@ -1,6 +1,6 @@
 'use client'
 
-import { Tab } from '@headlessui/react'
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import {
   Children,
@@ -13,6 +13,7 @@ import {
 } from 'react'
 import { create } from 'zustand'
 
+import { pre as StylePre } from '@/components/contentlayer-components'
 import { Tag } from '@/components/Tag'
 import { cn } from '@/lib/utils'
 
@@ -159,9 +160,10 @@ function CodePanel({
     <div className="group dark:bg-white/2.5">
       <CodePanelHeader tag={tag} label={label} />
       <div className="relative">
-        <pre className="overflow-x-auto bg-[#222] p-4 text-xs text-white">
+        {/* <pre className="max-h-[650px] overflow-x-auto bg-[#222] p-4 text-xs text-white">
           {children}
-        </pre>
+        </pre> */}
+        <StylePre>{children}</StylePre>
         <CopyButton code={code} />
       </div>
     </div>
@@ -191,7 +193,7 @@ function CodeGroupHeader({
         </h3>
       )}
       {hasTabs && (
-        <Tab.List className="-mb-px flex gap-4 text-xs font-medium">
+        <TabList className="-mb-px flex gap-4 text-xs font-medium">
           {Children.map(children, (child, childIndex) => (
             <Tab
               className={cn(
@@ -204,7 +206,7 @@ function CodeGroupHeader({
               {getPanelTitle(isValidElement(child) ? child.props : {})}
             </Tab>
           ))}
-        </Tab.List>
+        </TabList>
       )}
     </div>
   )
@@ -218,13 +220,13 @@ function CodeGroupPanels({
 
   if (hasTabs) {
     return (
-      <Tab.Panels>
+      <TabPanels>
         {Children.map(children, child => (
-          <Tab.Panel>
+          <TabPanel>
             <CodePanel {...props}>{child}</CodePanel>
-          </Tab.Panel>
+          </TabPanel>
         ))}
-      </Tab.Panels>
+      </TabPanels>
     )
   }
 
@@ -333,12 +335,12 @@ export function CodeGroup({
   return (
     <CodeGroupContext.Provider value>
       {hasTabs ? (
-        <Tab.Group {...tabGroupProps} className={containerClassName}>
+        <TabGroup {...tabGroupProps} className={containerClassName}>
           <div className="not-prose">
             {header}
             {panels}
           </div>
-        </Tab.Group>
+        </TabGroup>
       ) : (
         <div className={containerClassName}>
           <div className="not-prose">
