@@ -32,6 +32,9 @@ export default async function BlogPage() {
         <ChevronLeft className="mr-2 size-4" />
         Home
       </Link> */}
+      <b className="ml-4 text-lg text-red-400">
+        TODO：本博客动态路由还存在若干问题，待修复，如遇阅读问题请谅解！
+      </b>
       {posts?.length ? (
         <div className="m-4 grid gap-4">
           {posts.map(post => (

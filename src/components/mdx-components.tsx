@@ -403,7 +403,7 @@ export function Details({ children }: { children: ReactNode }) {
 
 export function Summary({ children }: { children: ReactNode }) {
   return (
-    <summary className="cursor-pointer rounded-sm bg-zinc-100 p-1 text-[16px] outline-none">
+    <summary className="cursor-pointer rounded-sm bg-zinc-100 p-1 text-[14px] font-medium outline-none">
       {children}
     </summary>
   )
