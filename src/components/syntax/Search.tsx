@@ -10,6 +10,7 @@ import {
 } from '@algolia/autocomplete-core'
 import { Dialog } from '@headlessui/react'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { useLocale } from 'next-intl'
 import type {
   ComponentPropsWithoutRef,
   ElementRef,
@@ -27,7 +28,7 @@ import {
 } from 'react'
 import Highlighter from 'react-highlight-words'
 
-import { navigation } from '@/lib/navigation'
+import { navigationOfEn, navigationOfZh } from '@/lib/navigation'
 import { cn } from '@/lib/utils'
 import { type Result } from '@/markdoc/search.mjs'
 
@@ -167,6 +168,8 @@ function SearchResult({
   query: string
 }) {
   const id = useId()
+  const locale = useLocale()
+  const navigation = locale === 'en' ? navigationOfEn : navigationOfZh
 
   const sectionTitle = navigation.find(section =>
     section.links.find(link => link.href === result.url.split('#')[0])

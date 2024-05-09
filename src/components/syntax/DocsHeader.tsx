@@ -1,11 +1,14 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
+import { useLocale } from 'next-intl'
 
-import { navigation } from '@/lib/navigation'
+import { navigationOfEn, navigationOfZh } from '@/lib/navigation'
 
 export function DocsHeader({ title }: { title?: string }) {
   const pathname = usePathname()
+  const locale = useLocale()
+  const navigation = locale === 'en' ? navigationOfEn : navigationOfZh
   const section = navigation.find(section =>
     section.links.find(link => link.href === pathname)
   )

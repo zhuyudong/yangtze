@@ -6,30 +6,18 @@ import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useSession } from 'next-auth/react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 import { useRef } from 'react'
 
 import { Button } from '@/components/Button'
-import { ArticleIcon } from '@/components/icons/ArticleIcon'
-import { ExcerptIcon } from '@/components/icons/ExcerptIcon'
-import { FireIcon } from '@/components/icons/FireIcon'
-import { NewIcon } from '@/components/icons/NewIcon'
-import { PhotoIcon } from '@/components/icons/PhotoIcon'
-import { QuotationIcon } from '@/components/icons/QuotationIcon'
-import { ResourceIcon } from '@/components/icons/ResourceIcon'
-import { TechnologyNewIcon } from '@/components/icons/TechnologyNewIcon'
-import { ToolIcon } from '@/components/icons/ToolIcon'
 import { useIsInsideMobileNavigation } from '@/components/MobileNavigation'
 import { useSectionStore } from '@/components/SectionProvider'
 import { Tag } from '@/components/Tag'
-import type { NavGroup } from '@/lib/navigation'
+import { type NavGroup, navigationOfEn, navigationOfZh } from '@/lib/navigation'
 import { remToPx } from '@/lib/remToPx'
 import { cn } from '@/lib/utils'
 
-import { CPUChipIcon } from './icons/CPUChipIcon'
-import { MapPinIcon } from './icons/MapPinIcon'
-import { MovieIcon } from './icons/MovieIcon'
 import { UserMenu } from './UserMenu'
 
 function useInitialValue<T>(value: T, condition = true) {
@@ -252,94 +240,12 @@ function NavigationGroup({
 }
 
 export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
+  const locale = useLocale()
+  const navigation = locale === 'en' ? navigationOfEn : navigationOfZh
   const tr = useTranslations('Resources')
   const tu = useTranslations('User')
   const { data: session } = useSession()
 
-  const ns: Array<NavGroup> = [
-    {
-      title: tr('technology_column'),
-      links: [
-        { title: 'Overview', href: '/' },
-        { title: 'React APIs', href: '/react-apis' },
-        { title: 'Git practice', href: '/git-config' },
-        { title: 'Node.js tutorial', href: '/nodejs' },
-        // { title: 'Git 工具', href: '/git-tools' },
-        // { title: 'Git 案例', href: '/git-examples' },
-        { title: 'Remix practice', href: '/remix' },
-        { title: 'Next.js tutorial', href: '/nextjs' },
-        { title: 'VSCode practice', href: '/vscode' },
-        { title: 'TailwindCSS practice', href: '/tailwindcss' },
-        { title: 'package.json tutorial', href: '/package' },
-        { title: 'Frontend components', href: '/frontend-components' },
-        {
-          title: 'Frontend dependencies',
-          href: '/package-manager'
-        },
-        { title: '@tanstack/react-table', href: '/tanstack__react-table' },
-        { title: '@tanstack/react-query', href: '/tanstack__react-query' },
-        { title: 'Linux tutorial', href: '/awesome-linux' },
-        { title: 'FastAPI practice', href: '/python-fastapi' },
-        { title: 'Python snippets', href: '/python' },
-        { title: 'Python environment', href: '/python-environment' },
-        { title: 'Python Lint & Formatting', href: '/python-lint' },
-        { title: 'Redis tutorial', href: '/redis' },
-        { title: 'MongoDB tutorial', href: '/mongo' },
-        { title: 'PostgreSQL tutorial', href: '/postgres' },
-        { title: 'Artificial Intelligence Generated', href: '/aigc' }
-      ]
-    },
-    {
-      title: tr('reading_space'),
-      links: [
-        { title: tr('blog'), href: '/blog', icon: ArticleIcon },
-        { title: tr('essay'), href: '/essay', icon: CPUChipIcon },
-        { title: tr('poetry'), href: '/poetry', icon: FireIcon },
-        { title: tr('wallpaper'), href: '/wallpaper', icon: MapPinIcon },
-        { title: tr('movies'), href: '/movies', icon: MovieIcon },
-        {
-          title: tr('articles'),
-          href: '/weekly-by-category/articles',
-          icon: ArticleIcon
-        },
-        {
-          title: tr('excerpts'),
-          href: '/weekly-by-category/excerpts',
-          icon: ExcerptIcon
-        },
-        {
-          title: tr('quotations'),
-          href: '/weekly-by-category/quotations',
-          icon: QuotationIcon
-        },
-        {
-          title: tr('social_photos_text'),
-          href: '/weekly-by-category/photos',
-          icon: PhotoIcon
-        },
-        {
-          title: tr('technology_news'),
-          href: '/weekly-by-category/news',
-          icon: NewIcon
-        },
-        {
-          title: tr('technology_trends'),
-          href: '/weekly-by-category/technology-news',
-          icon: TechnologyNewIcon
-        },
-        {
-          title: tr('development_tools'),
-          href: '/weekly-by-category/tools',
-          icon: ToolIcon
-        },
-        {
-          title: tr('resources'),
-          href: '/weekly-by-category/resources',
-          icon: ResourceIcon
-        }
-      ]
-    }
-  ]
   return (
     <nav {...props}>
       <ul role="list">
@@ -349,7 +255,7 @@ export function Navigation(props: ComponentPropsWithoutRef<'nav'>) {
         <TopLevelNavItem href="/poetry">{tr('poetry')}</TopLevelNavItem>
         <TopLevelNavItem href="/movies">{tr('movies')}</TopLevelNavItem>
         <TopLevelNavItem href="/wallpaper">{tr('wallpaper')}</TopLevelNavItem>
-        {ns.map((group, groupIndex) => (
+        {navigation.map((group, groupIndex) => (
           <NavigationGroup
             key={group.title}
             group={group}

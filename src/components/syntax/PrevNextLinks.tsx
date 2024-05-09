@@ -2,9 +2,10 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useLocale } from 'next-intl'
 import type { ComponentPropsWithoutRef } from 'react'
 
-import { navigation } from '@/lib/navigation'
+import { navigationOfEn, navigationOfZh } from '@/lib/navigation'
 import { cn } from '@/lib/utils'
 
 function ArrowIcon(props: ComponentPropsWithoutRef<'svg'>) {
@@ -53,6 +54,8 @@ function PageLink({
 
 export function PrevNextLinks() {
   const pathname = usePathname()
+  const locale = useLocale()
+  const navigation = locale === 'en' ? navigationOfEn : navigationOfZh
   const allLinks = navigation.flatMap(section => section.links)
   const linkIndex = allLinks.findIndex(link => link.href === pathname)
   const previousPage = linkIndex > -1 ? allLinks[linkIndex - 1] : null

@@ -322,7 +322,7 @@ export function Resources() {
     },
     {
       href: '/weekly-by-category/resources',
-      name: t('resources'),
+      name: t('technology_resources'),
       description: '',
       icon: ResourcesIcon,
       bg: 'bg-emerald-50',

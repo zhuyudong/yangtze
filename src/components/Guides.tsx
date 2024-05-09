@@ -18,9 +18,9 @@ export function Guides() {
       description: t('awesome_python')
     },
     {
-      href: '/awesome-linux',
+      href: '/awesome-backend',
       name: t('backend'),
-      description: t('awesome_database')
+      description: t('awesome_backend')
     },
     {
       href: '/mongo',

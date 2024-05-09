@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useLocale } from 'next-intl'
 import type { ComponentType, MouseEventHandler } from 'react'
 
 import { AppConfig } from '@/config'
-import { navigation } from '@/lib/navigation'
+import { navigationOfEn, navigationOfZh } from '@/lib/navigation'
 import { cn } from '@/lib/utils'
 
 // /en|zh/
@@ -29,6 +30,8 @@ export function Navigation({
   onLinkClick?: MouseEventHandler<HTMLAnchorElement>
 }) {
   const pathname = usePathname()
+  const locale = useLocale()
+  const navigation = locale === 'en' ? navigationOfEn : navigationOfZh
 
   return (
     <nav className={cn('text-base lg:text-sm', className)}>

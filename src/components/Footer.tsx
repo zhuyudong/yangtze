@@ -2,10 +2,11 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useLocale } from 'next-intl'
 import type { ComponentType, ReactNode } from 'react'
 
 import { Button } from '@/components/Button'
-import { navigation } from '@/lib/navigation'
+import { navigationOfEn, navigationOfZh } from '@/lib/navigation'
 
 import { GitHubIcon } from './icons/GithubIcon'
 
@@ -42,6 +43,8 @@ function PageLink({
 
 function PageNavigation() {
   const pathname = usePathname()
+  const locale = useLocale()
+  const navigation = locale === 'en' ? navigationOfEn : navigationOfZh
   const allPages = navigation.flatMap(group => group.links)
   const currentPageIndex = allPages.findIndex(page => page.href === pathname)
 

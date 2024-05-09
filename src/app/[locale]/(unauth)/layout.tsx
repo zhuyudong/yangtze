@@ -8,13 +8,14 @@ import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 import { type Section } from '@/components/SectionProvider'
 import SessionProvider from '@/components/SessionProvider'
-import { navigation } from '@/lib/navigation'
+import { navigationOfZh } from '@/lib/navigation'
 
 export default async function RootLayout({
   children
 }: {
   children: ReactNode
 }) {
+  // const locale = useLocale()
   // const pages = await glob('**/*.mdx', { cwd: 'src/app/[locale]' })
   // NOTE: sections inject by mdx/rehype.mjs rehypePlugins
   // const allSectionsEntries = (await Promise.all(
@@ -31,7 +32,7 @@ export default async function RootLayout({
   //   })
   // )) as Array<[string, Array<Section>]>
   // const allSections = Object.fromEntries(allSectionsEntries)
-  const allSections = navigation
+  const allSections = navigationOfZh
     .map(group => group.links)
     .flat()
     .reduce(
