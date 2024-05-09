@@ -29,7 +29,7 @@ export function Guides() {
     },
     {
       href: '/aigc',
-      name: 'AIG',
+      name: 'AIGC',
       description: t('aigc_is_the_future')
     }
   ]

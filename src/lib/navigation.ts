@@ -147,17 +147,17 @@ export const navigationOfEn: Array<NavGroup> = [
     title: 'Reading space',
     links: [
       {
-        title: 'articles',
+        title: 'Articles',
         href: '/weekly-by-category/articles',
         icon: ArticleIcon
       },
       {
-        title: 'excerpts',
+        title: 'Excerpts',
         href: '/weekly-by-category/excerpts',
         icon: ExcerptIcon
       },
       {
-        title: 'quotations',
+        title: 'Quotations',
         href: '/weekly-by-category/quotations',
         icon: QuotationIcon
       },
@@ -182,7 +182,7 @@ export const navigationOfEn: Array<NavGroup> = [
         icon: TechnologyNewIcon
       },
       {
-        title: 'resources',
+        title: 'Development resources',
         href: '/weekly-by-category/resources',
         icon: ResourceIcon
       }
