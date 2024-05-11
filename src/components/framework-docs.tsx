@@ -1,6 +1,6 @@
 'use client'
 
-import { allPosts } from 'contentlayer/generated'
+// import { allPosts } from 'contentlayer/generated'
 import type { HTMLAttributes } from 'react'
 
 import { Mdx } from './contentlayer-mdx'
@@ -9,10 +9,12 @@ interface FrameworkDocsProps extends HTMLAttributes<HTMLDivElement> {
   data: string
 }
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 export function FrameworkDocs({ ...props }: FrameworkDocsProps) {
-  const frameworkDoc = allPosts.find(
-    doc => doc.slug === `/docs/installation/${props.data}`
-  )
+  // const frameworkDoc = allPosts.find(
+  //   doc => doc.slug === `/docs/installation/${props.data}`
+  // )
+  const frameworkDoc: any = null
 
   if (!frameworkDoc) {
     return null
