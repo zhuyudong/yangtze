@@ -1,15 +1,15 @@
-import { allPosts } from 'contentlayer/generated'
+// import { allPosts } from 'contentlayer/generated'
 import { ChevronLeft } from 'lucide-react'
-import { type Metadata } from 'next'
+// import { type Metadata } from 'next'
 // import Image from 'next/image'
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
 
+// import { notFound } from 'next/navigation'
 import { buttonVariants } from '@/components/ui/button'
-import { env } from '@/env.mjs'
-import { absoluteUrl, cn, formatDate } from '@/lib/utils'
+// import { env } from '@/env.mjs'
+import { cn } from '@/lib/utils' // absoluteUrl, formatDate
 
-import MdxContent from './mdx-content'
+// import MdxContent from './mdx-content'
 
 interface PostPageProps {
   params: {
@@ -17,65 +17,66 @@ interface PostPageProps {
   }
 }
 
-async function getPostFromParams(params: PostPageProps['params']) {
-  const slug = params?.slug?.join('/')
-  const post = allPosts.find(post => post.slugAsParams === slug)
+// async function getPostFromParams(params: PostPageProps['params']) {
+//   const slug = params?.slug?.join('/')
+//   const post = allPosts.find(post => post.slugAsParams === slug)
 
-  if (!post) {
-    null
-  }
+//   if (!post) {
+//     null
+//   }
 
-  return post
-}
+//   return post
+// }
 
 // NOTE: https://github.com/amannn/next-intl/issues/521, https://github.com/amannn/next-intl/issues/663
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
 
-export async function generateMetadata({
-  params
-}: PostPageProps): Promise<Metadata> {
-  const post = await getPostFromParams(params)
+// export async function generateMetadata({
+//   params
+// }: PostPageProps): Promise<Metadata> {
+//   const post = await getPostFromParams(params)
 
-  if (!post) {
-    return {}
-  }
+//   if (!post) {
+//     return {}
+//   }
 
-  const ogUrl = new URL(`${env.NEXT_PUBLIC_DEPLOYMENT_URL}/${post.image}`)
+//   const ogUrl = new URL(`${env.NEXT_PUBLIC_DEPLOYMENT_URL}/${post.image}`)
 
-  return {
-    title: post.title,
-    description: post.description,
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      type: 'article',
-      url: absoluteUrl(post.slug),
-      images: [
-        {
-          url: ogUrl.toString(),
-          width: 1200,
-          height: 630,
-          alt: post.title
-        }
-      ]
-    }
-  }
-}
+//   return {
+//     title: post.title,
+//     description: post.description,
+//     openGraph: {
+//       title: post.title,
+//       description: post.description,
+//       type: 'article',
+//       url: absoluteUrl(post.slug),
+//       images: [
+//         {
+//           url: ogUrl.toString(),
+//           width: 1200,
+//           height: 630,
+//           alt: post.title
+//         }
+//       ]
+//     }
+//   }
+// }
 
-export async function generateStaticParams(): Promise<
-  PostPageProps['params'][]
-> {
-  return allPosts.map(post => ({
-    slug: post.slugAsParams.split('/')
-  }))
-}
+// export async function generateStaticParams(): Promise<
+//   PostPageProps['params'][]
+// > {
+//   return allPosts.map(post => ({
+//     slug: post.slugAsParams.split('/')
+//   }))
+// }
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 export default async function PostPage({ params }: PostPageProps) {
   // const t = useTranslations('Blog')
-  const post = await getPostFromParams(params)
-  if (!post) {
-    notFound()
-  }
+  // const post = await getPostFromParams(params)
+  // if (!post) {
+  //   notFound()
+  // }
 
   return (
     <article className="container relative max-w-7xl py-6 lg:py-10">
@@ -91,7 +92,7 @@ export default async function PostPage({ params }: PostPageProps) {
         {/* {t('see_all_posts')} */}
         See all posts
       </Link>
-      <div>
+      {/* <div>
         {post.date && (
           <time
             dateTime={post.date}
@@ -103,7 +104,7 @@ export default async function PostPage({ params }: PostPageProps) {
         <h1 className="font-heading mt-2 inline-block text-3xl leading-tight lg:text-3xl">
           {post.title}
         </h1>
-        {/* <Link
+        <Link
           href="/blog"
           target="_blank"
           className="mt-4 flex items-center space-x-2 text-sm"
@@ -122,8 +123,8 @@ export default async function PostPage({ params }: PostPageProps) {
               </p>
             </div>
           )}
-        </Link> */}
-      </div>
+        </Link>
+      </div> */}
       {/* {post.image && (
         <Image
           src={post.image}
@@ -134,7 +135,7 @@ export default async function PostPage({ params }: PostPageProps) {
           priority
         />
       )} */}
-      <MdxContent code={post.body.code} />
+      {/* <MdxContent code={post.body.code} /> */}
       {/* <hr className="mt-12" /> */}
       {/* <Newsletter /> */}
 

@@ -104,7 +104,7 @@ const nextConfig = {
   }
 }
 
-// export default bundleAnalyzer(withNextIntl(withSearch(withMDX(nextConfig))))
-export default bundleAnalyzer(
-  withNextIntl(withSearch(withContentlayer(withMDX(nextConfig))))
-)
+export default bundleAnalyzer(withNextIntl(withSearch(withMDX(nextConfig))))
+// export default bundleAnalyzer(
+//   withNextIntl(withSearch(withContentlayer(withMDX(nextConfig))))
+// )

@@ -15,7 +15,7 @@ import type {
 
 import { Button } from '@/components/Button'
 import { Callout } from '@/components/callout'
-import { Code, CodeGroup, Pre } from '@/components/Code'
+import { Code, CodeGroup, Pre } from '@/components/code'
 import { CodeBlockWrapper } from '@/components/code-block-wrapper'
 import { ComponentExample } from '@/components/component-example'
 import { ComponentPreview } from '@/components/component-preview'
@@ -56,6 +56,7 @@ export { Button, Code as code, CodeGroup, Pre as pre }
 
 export const a = NLink
 
+// NOTE: 供给阅读空间即 weekly-by-category 组件使用
 export function wrapper({ children }: { children: ReactNode }) {
   return (
     <article className="flex h-full flex-col pb-10 pt-16">
@@ -153,7 +154,10 @@ export const p = ({
   ...props
 }: HTMLAttributes<HTMLParagraphElement>) => (
   <p
-    className={cn('leading-7 [&:not(:first-child)]:mt-6', className)}
+    className={cn(
+      'leading-7 text-[13px] [&:not(:first-child)]:mt-6',
+      className
+    )}
     {...props}
   />
 )
