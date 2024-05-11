@@ -1,5 +1,5 @@
 import withBundleAnalyzer from '@next/bundle-analyzer'
-import { withContentlayer } from 'next-contentlayer'
+// import { withContentlayer } from 'next-contentlayer'
 import nextMDX from '@next/mdx'
 import createNextIntlPlugin from 'next-intl/plugin'
 import { createSecureHeaders } from 'next-secure-headers'
