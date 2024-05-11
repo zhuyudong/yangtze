@@ -17,7 +17,7 @@ import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
 import Zoom from 'yet-another-react-lightbox/plugins/zoom'
 
-import NextJsImage from '@/components/NextJsImage'
+import NextJsImage from '@/components/next-js-image'
 // import styles
 // import 'lightgallery/css/lightgallery.css'
 // import 'lightgallery/css/lg-autoplay.css'

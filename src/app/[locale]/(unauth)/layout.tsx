@@ -5,9 +5,9 @@ import { getServerSession } from 'next-auth'
 import type { ReactNode } from 'react'
 
 import { Providers } from '@/app/providers'
-import { Layout } from '@/components/Layout'
-import { type Section } from '@/components/SectionProvider'
-import SessionProvider from '@/components/SessionProvider'
+import { Layout } from '@/components/layout'
+import { type Section } from '@/components/section-provider'
+import SessionProvider from '@/components/session-provider'
 import { navigationOfZh } from '@/lib/navigation'
 
 export default async function RootLayout({

@@ -4,7 +4,7 @@ import { getServerSession } from 'next-auth'
 import type { ReactNode } from 'react'
 
 import { AppShell } from '@/components/patterns/app-shell'
-import SessionProvider from '@/components/SessionProvider'
+import SessionProvider from '@/components/session-provider'
 
 export default async function RootLayout({
   // Layouts must accept a children prop.

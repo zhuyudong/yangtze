@@ -6,8 +6,8 @@ import { useTranslations } from 'next-intl'
 import { useCallback, useState } from 'react'
 import { FcGoogle } from 'react-icons/fc'
 
-import { GitHubIcon } from '@/components/icons/GithubIcon'
-import { Input } from '@/components/Input'
+import { GitHubIcon } from '@/components/icons/github-icon'
+import { Input } from '@/components/input'
 import axios from '@/lib/axios'
 
 const Auth = () => {

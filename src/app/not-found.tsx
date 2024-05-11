@@ -16,8 +16,8 @@ export default function NotFound() {
     </html>
   )
 }
-// import { Button } from '@/components/Button'
-// import { HeroPattern } from '@/components/HeroPattern'
+// import { Button } from '@/components/button'
+// import { HeroPattern } from '@/components/hero-pattern'
 
 // export default function NotFound() {
 //   return (

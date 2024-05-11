@@ -13,7 +13,7 @@ import {
 } from 'react'
 import { create } from 'zustand'
 
-import { Tag } from '@/components/Tag'
+import { Tag } from '@/components/tag'
 // import { highlightCode } from '@/lib/code'
 import { cn } from '@/lib/utils'
 

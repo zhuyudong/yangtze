@@ -55,3 +55,20 @@
 5. 如果一切顺利，您的两次提交将被合并为一次提交。
 
 **请注意，在执行 rebase 操作时，建议在进行任何更改之前备份您的代码，以防止意外情况发生。**
+
+## 如何忽略文件名大小写并提交变更
+
+git 配置文件名不忽略大小写
+
+```bash
+git config core.ignorecase false
+# or 全局
+git config --global core.ignorecase false
+```
+
+修改文件名大小写并提交
+
+```bash
+git mv -f src/components/Code.tsx src/components/code.tsx
+git commit -m "fix: git config core.ignorecase false"
+```

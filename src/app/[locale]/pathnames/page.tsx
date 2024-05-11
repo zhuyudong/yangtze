@@ -2,7 +2,7 @@
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 
-import { LocaleLayout } from '@/components/LocaleLayout'
+import { LocaleLayout } from '@/components/locale-layout'
 
 type Props = {
   params: { locale: string }

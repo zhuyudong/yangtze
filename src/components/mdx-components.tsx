@@ -13,7 +13,7 @@ import type {
   ReactNode
 } from 'react'
 
-import { Button } from '@/components/Button'
+import { Button } from '@/components/button'
 import { Callout } from '@/components/callout'
 import { Code, CodeGroup, Pre } from '@/components/code'
 import { CodeBlockWrapper } from '@/components/code-block-wrapper'
@@ -21,9 +21,9 @@ import { ComponentExample } from '@/components/component-example'
 import { ComponentPreview } from '@/components/component-preview'
 import { ComponentSource } from '@/components/component-source'
 import { FrameworkDocs } from '@/components/framework-docs'
-import { Heading } from '@/components/Heading'
-import { InfoIcon } from '@/components/icons/InfoIcon'
-import { Prose } from '@/components/Prose'
+import { Heading } from '@/components/heading'
+import { InfoIcon } from '@/components/icons/info-icon'
+import { Prose } from '@/components/prose'
 import { cn } from '@/lib/utils'
 
 import {

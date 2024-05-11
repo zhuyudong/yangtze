@@ -16,7 +16,7 @@ import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
 import Zoom from 'yet-another-react-lightbox/plugins/zoom'
 
-import NextJsImage from '@/components/NextJsImage'
+import NextJsImage from '@/components/next-js-image'
 import images from '@/resources/bing_wallpaper.json'
 
 export default function Wallpaper() {
