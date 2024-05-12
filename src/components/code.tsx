@@ -184,7 +184,7 @@ function CodeGroupHeader({
   }
 
   return (
-    <div className="flex min-h-[calc(theme(spacing.12)+1px)] flex-wrap items-start gap-x-4 border-b border-zinc-700 bg-lime-200 px-4 dark:border-zinc-800 dark:bg-transparent">
+    <div className="flex min-h-[calc(theme(spacing.12)+1px)] flex-wrap items-start gap-x-4 border-b bg-lime-200 px-4 dark:border-zinc-800 dark:bg-transparent">
       {title && <h3 className="mr-auto pt-3 text-xs font-semibold">{title}</h3>}
       {hasTabs && (
         <TabList className="-mb-px flex gap-4 text-xs font-medium">

@@ -3,17 +3,16 @@ import path from 'path'
 
 import { bundledLanguages, bundledThemes, getHighlighter } from 'shiki'
 import { visit } from 'unist-util-visit'
-import {
-  transformerMetaHighlight,
-  transformerMetaWordHighlight,
-  transformerNotationDiff,
-  transformerNotationErrorLevel,
-  transformerNotationFocus,
-  transformerNotationHighlight,
-  transformerNotationWordHighlight,
-  transformerRenderWhitespace
-  // ...
-} from '@shikijs/transformers'
+// import {
+//   transformerMetaHighlight,
+//   transformerMetaWordHighlight,
+//   transformerNotationDiff,
+//   transformerNotationErrorLevel,
+//   transformerNotationFocus,
+//   transformerNotationHighlight,
+//   transformerNotationWordHighlight,
+//   transformerRenderWhitespace
+// } from '@shikijs/transformers'
 // NOTE: https://shiki.style/packages/twoslash
 // import { transformerTwoslash } from '@shikijs/twoslash'
 
@@ -113,14 +112,14 @@ export function rehypeShiki() {
             // NOTE: shiki 内置主题 https://shiki.style/themes
             theme: 'solarized-light',
             transformers: [
-              transformerNotationDiff(),
-              transformerNotationHighlight(),
-              transformerNotationWordHighlight(),
-              transformerNotationFocus(),
-              transformerNotationErrorLevel(),
-              transformerRenderWhitespace(),
-              transformerMetaHighlight(),
-              transformerMetaWordHighlight()
+              // transformerNotationDiff(),
+              // transformerNotationHighlight(),
+              // transformerNotationWordHighlight(),
+              // transformerNotationFocus(),
+              // transformerNotationErrorLevel(),
+              // transformerRenderWhitespace(),
+              // transformerMetaHighlight(),
+              // transformerMetaWordHighlight()
               // transformerTwoslash()
             ]
           })

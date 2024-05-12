@@ -43,6 +43,7 @@ const nextConfig = {
   eslint: {
     dirs: ['.']
   },
+  // compress: false,
   // swcMinify: true,
   cleanDistDir: true,
   poweredByHeader: false,
@@ -104,6 +105,7 @@ const nextConfig = {
       'bufferutil': 'bufferutil',
       'utf-8-validate': 'utf-8-validate'
     })
+    // config.optimization.minimize = false
     // NOTE: ignore python files
     config.module.rules.push({
       test: /\.py$/,
