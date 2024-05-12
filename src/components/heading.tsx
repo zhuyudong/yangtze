@@ -130,3 +130,15 @@ export function Heading<Level extends 2 | 3>({
     </div>
   )
 }
+
+// type Props = React.DetailedHTMLProps<
+//   React.HTMLAttributes<HTMLHeadingElement>,
+//   HTMLHeadingElement
+// > & {
+//   level: 1 | 2 | 3 | 4 | 5 | 6
+// }
+
+// function Heading({ level, children, ...props }: Props) {
+//   const tag = `h${level}`
+//   return createElement(tag, props, <a href={`#${props.id}`}>{children}</a>)
+// }

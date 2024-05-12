@@ -1,5 +1,5 @@
 /**
- * ./node_modules/.bin/ts-node scripts/parse-md.ts
+ * ./node_modules/.bin/ts-node snippets/parse-md.ts
  */
 import fg from 'fast-glob'
 import fs from 'fs'

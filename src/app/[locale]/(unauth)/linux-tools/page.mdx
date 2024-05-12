@@ -72,3 +72,11 @@ find . -name "node_modules" -type d -prune -exec rm -rf {} \;
 ```bash
 find . -name "tsconfig.tsbuildinfo" -type f -prune -exec rm -rf {} \;
 ```
+
+批量执行修改了文件名大小写引起的 **git ignorecase** 问题
+
+[reference](https://adamj.eu/tech/2022/12/09/git-change-case-of-filenames/)
+
+```bash
+@import('snippets/linux/git-mv-batch.sh')
+```

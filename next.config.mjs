@@ -29,13 +29,22 @@ const withMDX = nextMDX({
   }
 })
 
-/** @type {import('next').NextConfig} */
+/**
+ * @typedef {import('next').NextConfig} NextConfig
+ * @typedef {Array<((config: NextConfig) => NextConfig)>} NextConfigPlugins
+ */
+
+/** @type {NextConfigPlugins} */
+// const plugins = []
+
+/** @type {NextConfig} */
 const nextConfig = {
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mjs', 'mdx'],
   eslint: {
     dirs: ['.']
   },
   // swcMinify: true,
+  cleanDistDir: true,
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: {
@@ -103,6 +112,17 @@ const nextConfig = {
     return config
   }
 }
+
+// plugins.push(
+//   nextMDX({
+//     options: {
+//       remarkPlugins,
+//       rehypePlugins,
+//       recmaPlugins
+//     }
+//   })
+// )
+// export default () => plugins.reduce((_, plugin) => plugin(_), nextConfig)
 
 export default bundleAnalyzer(withNextIntl(withSearch(withMDX(nextConfig))))
 // export default bundleAnalyzer(

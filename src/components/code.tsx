@@ -25,7 +25,8 @@ const languageNames: Record<string, string> = {
   php: 'PHP',
   python: 'Python',
   ruby: 'Ruby',
-  go: 'Go'
+  go: 'Go',
+  bash: 'shellscript'
 }
 
 function getPanelTitle({
@@ -160,9 +161,7 @@ function CodePanel({
     <div className="group dark:bg-white/2.5">
       <CodePanelHeader tag={tag} label={label} />
       <div className="relative">
-        <pre className="overflow-x-auto bg-[#222] p-4 text-xs text-white">
-          {children}
-        </pre>
+        <pre className="overflow-x-auto text-sm">{children}</pre>
         <CopyButton code={code} />
       </div>
     </div>
@@ -185,12 +184,8 @@ function CodeGroupHeader({
   }
 
   return (
-    <div className="flex min-h-[calc(theme(spacing.12)+1px)] flex-wrap items-start gap-x-4 border-b border-zinc-700 bg-zinc-800 px-4 dark:border-zinc-800 dark:bg-transparent">
-      {title && (
-        <h3 className="mr-auto pt-3 text-xs font-semibold text-white">
-          {title}
-        </h3>
-      )}
+    <div className="flex min-h-[calc(theme(spacing.12)+1px)] flex-wrap items-start gap-x-4 border-b border-zinc-700 bg-lime-200 px-4 dark:border-zinc-800 dark:bg-transparent">
+      {title && <h3 className="mr-auto pt-3 text-xs font-semibold">{title}</h3>}
       {hasTabs && (
         <TabList className="-mb-px flex gap-4 text-xs font-medium">
           {Children.map(children, (child, childIndex) => (
@@ -322,8 +317,9 @@ export function CodeGroup({
   const hasTabs = Children.count(children) > 1
 
   // NOTE: rounded-xl 代码块圆角
-  const containerClassName =
-    'my-6 overflow-hidden rounded-md bg-zinc-900 shadow-md dark:ring-1 dark:ring-white/10'
+  const containerClassName = cn(
+    'my-6 overflow-hidden rounded-md shadow-md dark:ring-1 dark:ring-white/10'
+  )
   const header = (
     <CodeGroupHeader title={title} selectedIndex={tabGroupProps.selectedIndex}>
       {children}
@@ -352,10 +348,7 @@ export function CodeGroup({
   )
 }
 
-export async function Code({
-  children,
-  ...props
-}: ComponentPropsWithoutRef<'code'>) {
+export function Code({ children, ...props }: ComponentPropsWithoutRef<'code'>) {
   const isGrouped = useContext(CodeGroupContext)
 
   if (isGrouped) {

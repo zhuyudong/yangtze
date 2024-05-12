@@ -1,71 +1,90 @@
-'use client'
-
-import MDX from 'content/blog/mdx.mdx'
-import NextAuth from 'content/blog/next-auth-tutorial.mdx'
-import NextMDX from 'content/blog/next-mdx-tutorial.mdx'
-import PythonEnvironment from 'content/blog/python-environment.mdx'
+// import { allPosts } from 'contentlayer/generated'
 import { ChevronLeft } from 'lucide-react'
 // import { type Metadata } from 'next'
 // import Image from 'next/image'
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
 
-import { MDXProvider } from '@/components/mdx-provider'
+// import { notFound } from 'next/navigation'
 import { buttonVariants } from '@/components/ui/button'
 // import { env } from '@/env.mjs'
 import { cn } from '@/lib/utils' // absoluteUrl, formatDate
 
+// import MdxContent from './mdx-content'
+
 interface PostPageProps {
   params: {
-    slug: string
+    slug: string[]
   }
 }
 
-// eslint-disable-next-line unused-imports/no-unused-vars
-const posts = [
-  {
-    title: 'next-auth 实践',
-    description: '介绍 next-auth 支持的几种登录方式的使用。',
-    slug: 'next-auth-tutorial',
-    MDX: NextAuth
-  },
-  {
-    title: '如何在 Next.js 中使用 mdx',
-    description: '介绍了 @mdx-js/react 和 contentlayer 两种方式。',
-    slug: 'next-mdx-tutorial',
-    MDX: NextMDX
-  },
-  {
-    title: 'Python 环境与依赖管理',
-    description: '介绍 Python 几种环境和依赖管理方法的常见方式。',
-    slug: 'python-environment',
-    MDX: PythonEnvironment
-  },
-  {
-    title: 'mdx 解析技术详解',
-    description: 'mdx 解析相关技术栈详解，包括 remark、rehype、shiki 等。',
-    slug: 'mdx',
-    MDX
-  }
-]
+// async function getPostFromParams(params: PostPageProps['params']) {
+//   const slug = params?.slug?.join('/')
+//   const post = allPosts.find(post => post.slugAsParams === slug)
+
+//   if (!post) {
+//     null
+//   }
+
+//   return post
+// }
+
+// NOTE: https://github.com/amannn/next-intl/issues/521, https://github.com/amannn/next-intl/issues/663
+// export const dynamic = 'force-dynamic'
+
+// export async function generateMetadata({
+//   params
+// }: PostPageProps): Promise<Metadata> {
+//   const post = await getPostFromParams(params)
+
+//   if (!post) {
+//     return {}
+//   }
+
+//   const ogUrl = new URL(`${env.NEXT_PUBLIC_DEPLOYMENT_URL}/${post.image}`)
+
+//   return {
+//     title: post.title,
+//     description: post.description,
+//     openGraph: {
+//       title: post.title,
+//       description: post.description,
+//       type: 'article',
+//       url: absoluteUrl(post.slug),
+//       images: [
+//         {
+//           url: ogUrl.toString(),
+//           width: 1200,
+//           height: 630,
+//           alt: post.title
+//         }
+//       ]
+//     }
+//   }
+// }
+
+// export async function generateStaticParams(): Promise<
+//   PostPageProps['params'][]
+// > {
+//   return allPosts.map(post => ({
+//     slug: post.slugAsParams.split('/')
+//   }))
+// }
 
 // eslint-disable-next-line unused-imports/no-unused-vars
-export default function PostPage({ params }: PostPageProps) {
-  const slug = params.slug[0]
-  const post = posts.find(post => post.slug === slug)
+export default async function PostPage({ params }: PostPageProps) {
   // const t = useTranslations('Blog')
-
-  if (!post) {
-    notFound()
-  }
+  // const post = await getPostFromParams(params)
+  // if (!post) {
+  //   notFound()
+  // }
 
   return (
-    <article className="container relative max-w-5xl py-6 lg:py-10">
+    <article className="container relative max-w-7xl py-6 lg:py-10">
       <Link
         href="/blog"
         className={cn(
           buttonVariants({ variant: 'ghost' }),
-          '-ml-5 mb-3'
+          '-ml-6 mb-3'
           // 'absolute left-[-200px] top-14 hidden xl:inline-flex'
         )}
       >
@@ -73,15 +92,15 @@ export default function PostPage({ params }: PostPageProps) {
         {/* {t('see_all_posts')} */}
         See all posts
       </Link>
-      <div>
-        {/* {post.date && (
+      {/* <div>
+        {post.date && (
           <time
             dateTime={post.date}
             className="block text-sm text-muted-foreground"
           >
             Published on {formatDate(post.date)}
           </time>
-        )} */}
+        )}
         <h1 className="font-heading mt-2 inline-block text-3xl leading-tight lg:text-3xl">
           {post.title}
         </h1>
@@ -90,7 +109,7 @@ export default function PostPage({ params }: PostPageProps) {
           target="_blank"
           className="mt-4 flex items-center space-x-2 text-sm"
         >
-          {/* <Image
+          <Image
             src="/images/avatar.jpeg"
             alt=""
             width={24}
@@ -103,9 +122,9 @@ export default function PostPage({ params }: PostPageProps) {
                 {post.author}
               </p>
             </div>
-          )} */}
+          )}
         </Link>
-      </div>
+      </div> */}
       {/* {post.image && (
         <Image
           src={post.image}
@@ -117,10 +136,8 @@ export default function PostPage({ params }: PostPageProps) {
         />
       )} */}
       {/* <MdxContent code={post.body.code} /> */}
-      <MDXProvider>
-        <post.MDX />
-      </MDXProvider>
       {/* <hr className="mt-12" /> */}
+      {/* <Newsletter /> */}
 
       {/* <div className="flex justify-center py-6 lg:py-10">
         <Link href="/blog" className={cn(buttonVariants({ variant: 'ghost' }))}>

@@ -1,19 +1,23 @@
 ---
-title: Python 环境与依赖管理
-description: 介绍 Python 几种环境和依赖管理方法的常见方式。
+title: 'Python 环境与依赖管理'
+description: '介绍 Python 几种环境和依赖管理方法的常见方式。'
 author: Yudong
 date: 2024-04-18
 published: true
 image: '/images/OHR.AlbaceteSpain_ZH-CN1597281896_1920x1080.webp'
 ---
 
-## Installation
+## Anaconda
+
+<Steps>
+
+#### Installation
 
 ```bash
 pip install -r requirements/base.txt
 ```
 
-## Anaconda
+#### Create environment & dependencies
 
 1. create virtual environment
 
@@ -35,15 +39,13 @@ pip install -r requirements/base.txt
 
    or `vim ~/.config/pip/pip.conf`
 
-   ````bash
+   ```bash
    [global]
    index-url = https://mirrors.aliyun.com/pypi/simple/
 
    [install]
    trusted-host = mirrors.aliyun.com
    ```
-
-   ````
 
 3. installation dependencies
 
@@ -66,8 +68,10 @@ pip install -r requirements/base.txt
    conda update -n base -c defaults conda
    ```
 
-Anaconda 的优缺点：
+#### Anaconda 的优缺点
 
 优点：
 
     1.  能够独立的管理每个项目的依赖
+
+</Steps>
