@@ -136,3 +136,4 @@ weekly-issues/*.mdx
 analyze
 
 .contentlayer
+public/sitemap-0.xml

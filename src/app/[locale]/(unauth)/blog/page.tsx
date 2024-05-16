@@ -58,7 +58,7 @@ export default function BlogPage() {
         TODO：本博客动态路由还存在若干问题，待修复，如遇阅读问题请谅解！
       </b> */}
       {posts?.length ? (
-        <div className="m-4 grid gap-4">
+        <div className="m-4 grid cursor-pointer gap-4">
           {posts.map(post => {
             return (
               // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
