@@ -98,7 +98,8 @@ export const superAdminRouter = createTRPCRouter({
         orderBy,
         include: {
           plan: true
-        }
+        },
+        cacheStrategy: { ttl: 604800 }
       })
 
       const total = await ctx.db.user.count({ where })

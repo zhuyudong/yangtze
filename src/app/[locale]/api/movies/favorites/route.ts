@@ -20,7 +20,8 @@ async function handler(req: NextRequest) {
         id: {
           in: currentUser?.favoriteIds
         }
-      }
+      },
+      cacheStrategy: { ttl: 604800 }
     })
 
     return NextResponse.json(favoritedMovies)

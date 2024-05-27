@@ -32,7 +32,8 @@ async function handler(req: NextRequest) {
           {
             createdAt: 'desc'
           }
-        ]
+        ],
+        cacheStrategy: { ttl: 604800 }
       })
     ).map(i => i.id)
 

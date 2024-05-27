@@ -54,7 +54,7 @@ npx prisma db push
 /* eslint-disable vars-on-top */
 /* eslint-disable no-var */
 /* eslint-disable import/no-mutable-exports */
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client/edge'
 import { withAccelerate } from '@prisma/extension-accelerate'
 
 import { env } from '@/env.mjs'
@@ -86,7 +86,7 @@ declare global {
 
 // const globalForPrisma = global as unknown as { db: PrismaClient }
 
-// export const db = globalForPrisma.db || new PrismaClient()
+// export const db = globalForPrisma.db || new PrismaClient().$extends(withAccelerate())
 
 // if (process.env.NODE_ENV !== 'production') globalForPrisma.db = db
 
@@ -95,7 +95,7 @@ declare global {
 const createPrismaClient = () =>
   new PrismaClient({
     log: env.NODE_ENV === 'development' ? ['query', 'error', 'warn'] : ['error']
-  }) // .$extends(withAccelerate())
+  }).$extends(withAccelerate())
 
 const globalForPrisma = globalThis as unknown as {
   db: ReturnType<typeof createPrismaClient> | undefined
@@ -127,7 +127,7 @@ declare global {
   }
 }
 
-const db = global.db || new PrismaClient() // .$extends(withAccelerate())
+const db = global.db || new PrismaClient().$extends(withAccelerate())
 if (process.env.NODE_ENV !== 'production') global.db = db
 
 async function main() {

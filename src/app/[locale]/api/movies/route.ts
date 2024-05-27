@@ -25,7 +25,9 @@ async function handler(req: NextRequest) {
 
     // await serverAuth()
 
-    const movies = await db.movie.findMany()
+    const movies = await db.movie.findMany({
+      cacheStrategy: { ttl: 604800 }
+    })
     return NextResponse.json(movies)
   } catch (error) {
     console.log({ error })

@@ -1,9 +1,9 @@
 /* eslint-disable no-var */
 /* eslint-disable vars-on-top */
 // import { db } from '@/server/db'
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client/edge'
+import { withAccelerate } from '@prisma/extension-accelerate'
 
-// import { withAccelerate } from '@prisma/extension-accelerate'
 import articles from './articles.json'
 import excerpts from './excerpts.json'
 // NOTE: 影片已上传至 https://uploadthing.com/dashboard/qixt4k2w2s/files
@@ -19,13 +19,13 @@ import tools from './tools.json'
 declare global {
   namespace globalThis {
     // NOTE: 注意这里使用 var 而不是 let 或 const
-    // var prisma: import('@prisma/client').PrismaClient
+    // var prisma: import('@prisma/client/edge').PrismaClient
     // or
     var db: PrismaClient
   }
 }
 
-const db = global.db || new PrismaClient() // .$extends(withAccelerate())
+const db = global.db || new PrismaClient().$extends(withAccelerate())
 if (process.env.NODE_ENV !== 'production') global.db = db
 
 const weeklys = [
@@ -50,6 +50,7 @@ async function main() {
     // where: {
     //   title: u.title
     // }
+    // cacheStrategy: { ttl: 604800 }
   })
   if (exists.length) {
     console.log(`Seeding skipped. Movies already exist.`)
@@ -65,6 +66,7 @@ async function main() {
     await db.content.findMany({
       distinct: ['weekly'],
       select: { weekly: true }
+      // cacheStrategy: { ttl: 604800 }
     })
   )
     .map(c => c.weekly)

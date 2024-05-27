@@ -2,8 +2,8 @@
 /* eslint-disable no-var */
 /* eslint-disable @typescript-eslint/consistent-type-imports */
 // Use type safe message keys with `next-intl`
-import { PrismaClient } from '@prisma/client'
 import { type Role } from '@prisma/client'
+import { PrismaClient } from '@prisma/client/edge'
 import { type SearchOptions } from 'flexsearch'
 import type { DefaultSession } from 'next-auth'
 
@@ -16,7 +16,7 @@ type Messages = typeof import('../locales/en.json')
 declare global {
   namespace globalThis {
     // NOTE: 注意这里使用 var 而不是 let 或 const
-    // var prisma: import('@prisma/client').PrismaClient
+    // var prisma: import('@prisma/client/edge').PrismaClient
     // or
     var prisma: PrismaClient
   }

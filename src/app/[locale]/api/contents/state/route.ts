@@ -54,9 +54,10 @@ async function handler(req: NextRequest) {
           {
             createdAt: 'desc'
           }
-        ]
+        ],
         // skip,
         // take
+        cacheStrategy: { ttl: 604800 }
       })
     ).reduce(
       (acc, cur) => {

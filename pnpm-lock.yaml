@@ -18,7 +18,7 @@ importers:
         version: 2.4.3
       '@clerk/nextjs':
         specifier: ^5.1.2
-        version: 5.1.2(next@14.2.3(@opentelemetry/api@1.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 5.1.3(next@14.2.3(@opentelemetry/api@1.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@docsearch/react':
         specifier: ^3.6.0
         version: 3.6.0(@algolia/client-search@4.23.3)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.14.0)
@@ -267,7 +267,7 @@ importers:
         version: 4.1.0
       konva:
         specifier: ^9.3.9
-        version: 9.3.9
+        version: 9.3.11
       lightgallery:
         specifier: ^2.7.2
         version: 2.7.2
@@ -357,7 +357,7 @@ importers:
         version: 5.2.1(react@18.3.1)
       react-konva:
         specifier: ^18.2.10
-        version: 18.2.10(konva@9.3.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 18.2.10(konva@9.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-markdown:
         specifier: ^9.0.1
         version: 9.0.1(@types/react@18.3.3)(react@18.3.1)
@@ -988,10 +988,10 @@ packages:
       }
     engines: { node: '>=18.17.0' }
 
-  '@clerk/clerk-react@5.2.1':
+  '@clerk/clerk-react@5.2.2':
     resolution:
       {
-        integrity: sha512-cWy5ZC1+6rSqD8YRoewEULFl0Gs0Sbg3f8coLJQamg60qbAMlc6SkBwOYXfs4B0npUZAJc2j68gXSjNtvAyeKQ==
+        integrity: sha512-QXjqNvjKxDUAV5nYiKcCHFB/PyY4AQODlpGuU37LeB06sfpeYTs09aTDdUeiJ59wA1bq2Y9nApznCkeQ+r6BgQ==
       }
     engines: { node: '>=18.17.0' }
     peerDependencies:
@@ -1005,10 +1005,10 @@ packages:
       }
     engines: { node: '>=18.17.0' }
 
-  '@clerk/nextjs@5.1.2':
+  '@clerk/nextjs@5.1.3':
     resolution:
       {
-        integrity: sha512-idZATPtjGNyjRf6Kj3me62cEM4WdfR+IgknPr5Xc7jlTB5j3mfzihfUv6ojgwk1Hix5JKcRgi91KdE1vjcK8lA==
+        integrity: sha512-/ceFYvHtZV5aeIPsUK4ze4srYHMEo/a3Ct+MvKYhUHtUYYRegTPbjgRe7pSCZP9veNl0ZHR6giNANksCm+5cxg==
       }
     engines: { node: '>=18.17.0' }
     peerDependencies:
@@ -1031,10 +1031,10 @@ packages:
       react-dom:
         optional: true
 
-  '@clerk/types@4.5.0':
+  '@clerk/types@4.5.1':
     resolution:
       {
-        integrity: sha512-g+CulWZq/HG9uhYFkXr8n9e376zZKY7elhW8/vXKJHDQEYeBmcUAkDgtgYXOU9OtXNS8xTbnhAwScn1bk1pRNg==
+        integrity: sha512-eLaH+IKnxgjGQhRZ5rhZA9pQszSKbtSZE5V6c3a/F2crlkYIFABrVdf1q6p5bSAEmcYdcV4u4kaEFZ5UpYNcOw==
       }
     engines: { node: '>=18.17.0' }
 
@@ -7573,6 +7573,7 @@ packages:
       {
         integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==
       }
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-directory@4.0.1:
     resolution:
@@ -8754,10 +8755,10 @@ packages:
       }
     engines: { node: '>=6' }
 
-  konva@9.3.9:
+  konva@9.3.11:
     resolution:
       {
-        integrity: sha512-0ACsA2kCGilptQqosTVdu5g1jAeONZI/W/L5U7afeRhoWqSV+HjcuBB+vsFzs64oL/02y+4/jd3K5RL0sLCxbQ==
+        integrity: sha512-ZkFF4CXKZCDd2+6sBPA0y3hQ+X4uTqIS6JxTl3BEOFJzKr1tId+rxxJgtsk1FQIH3auuvnMj/rkbatUcf9C2Wg==
       }
 
   language-subtag-registry@0.3.23:
@@ -13970,20 +13971,20 @@ snapshots:
       - react
       - react-dom
 
-  '@clerk/clerk-react@5.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/clerk-react@5.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@clerk/shared': 2.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@clerk/types': 4.5.0
+      '@clerk/types': 4.5.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.4.1
 
   '@clerk/localizations@2.4.3': {}
 
-  '@clerk/nextjs@5.1.2(next@14.2.3(@opentelemetry/api@1.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/nextjs@5.1.3(next@14.2.3(@opentelemetry/api@1.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@clerk/backend': 1.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@clerk/clerk-react': 5.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@clerk/clerk-react': 5.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@clerk/shared': 2.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       crypto-js: 4.2.0
       next: 14.2.3(@opentelemetry/api@1.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -14002,7 +14003,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@clerk/types@4.5.0':
+  '@clerk/types@4.5.1':
     dependencies:
       csstype: 3.1.1
 
@@ -19382,7 +19383,7 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  konva@9.3.9: {}
+  konva@9.3.11: {}
 
   language-subtag-registry@0.3.23: {}
 
@@ -21334,11 +21335,11 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-konva@18.2.10(konva@9.3.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-konva@18.2.10(konva@9.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@types/react-reconciler': 0.28.8
       its-fine: 1.2.5(react@18.3.1)
-      konva: 9.3.9
+      konva: 9.3.11
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-reconciler: 0.29.2(react@18.3.1)

@@ -78,7 +78,8 @@ async function handler(
         }
       ],
       skip,
-      take
+      take,
+      cacheStrategy: { ttl: 604800 }
     })
     return NextResponse.json({
       data: contents,

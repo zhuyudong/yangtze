@@ -201,7 +201,7 @@ export const authOptions: AuthOptions = {
     signIn: '/auth'
   },
   debug: process.env.NODE_ENV === 'development',
-  adapter: PrismaAdapter(db),
+  adapter: PrismaAdapter(db as any),
   session: { strategy: 'jwt' },
   jwt: {
     secret: process.env.NEXTAUTH_JWT_SECRET

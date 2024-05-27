@@ -20,7 +20,8 @@ async function handler(req: NextRequest) {
 
     const randomMovies = await db.movie.findMany({
       take: 1,
-      skip: randomIndex
+      skip: randomIndex,
+      cacheStrategy: { ttl: 604800 }
     })
 
     return NextResponse.json(randomMovies[0])
