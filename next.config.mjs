@@ -79,6 +79,12 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
         port: '',
         pathname: '/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.beekka.com',
+        port: '',
+        pathname: '/blogimg/**'
       }
     ]
   },

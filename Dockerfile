@@ -22,6 +22,7 @@ COPY . .
 #  --registry=https://registry.npmmirror.com
 RUN npm cache clean --force && rm -rf node_modules && pnpm i --frozen-lockfile
 
+# --no-engine
 RUN npx prisma generate
 
 RUN npm run build

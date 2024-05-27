@@ -3,6 +3,7 @@
 // import { db } from '@/server/db'
 import { PrismaClient } from '@prisma/client'
 
+// import { withAccelerate } from '@prisma/extension-accelerate'
 import articles from './articles.json'
 import excerpts from './excerpts.json'
 // NOTE: 影片已上传至 https://uploadthing.com/dashboard/qixt4k2w2s/files
@@ -24,7 +25,7 @@ declare global {
   }
 }
 
-const db = global.db || new PrismaClient()
+const db = global.db || new PrismaClient() // .$extends(withAccelerate())
 if (process.env.NODE_ENV !== 'production') global.db = db
 
 const weeklys = [
