@@ -1,0 +1,127 @@
+# Docker
+
+## 安装 Docker
+
+### Ubuntu
+
+方式1：使用 `apt`
+
+```bash
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+# 添加 Docker 官方 GPG 密钥
+curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+# 设置稳定版仓库
+sudo add-apt-repository \
+   "deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ \
+  $(lsb_release -cs) \
+  stable"
+
+# 更新 apt 包索引
+sudo apt-get update
+
+# 安装最新版 Docker Engine-Community 和 containerd
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+# 验证是否安装成功
+sudo docker run hello-world
+```
+
+方式2：使用 official scripts
+
+```bash
+curl -fsSL https://test.docker.com -o test-docker.sh
+sudo sh test-docker.sh # 卡住不动
+
+sudo docker ps
+```
+
+## 安装 docker-compose
+
+[参考资料](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04)
+
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/2.27.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# 或者下载到本地 copy 到 /usr/local/bin 目录下
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+```
+
+## 卸载 Docker
+
+```bash
+sudo apt-get purge docker-ce
+rm -rf /var/lib/docker
+```
+
+其中 2.27.0 来自于 [release notes](https://github.com/docker/compose/releases)
+
+## Docker 常用命令
+
+docker-compose 只启动部分命令，如 docker-compose 配置文件如下
+
+```yaml
+services:
+  # other server
+
+  mongo-server:
+    image: mongo:5.0.23
+    container_name: mongo-container
+    restart: always
+    # env_file:
+    #   - .env
+    ports:
+      - '27017:27017'
+      # - ${MONGODB_PORT}:27017
+    expose:
+      - '27017'
+    volumes:
+      - mongodb-data:/data/db
+
+volumes:
+  mongodb-data:
+```
+
+只启动 mongo-server 服务
+
+```bash
+docker-compose -f docker-compose.local.yml up mongo-server
+```
+
+---
+
+## 常见问题
+
+1. 权限问题
+
+现象
+
+```bash
+$ docker ps
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.
+sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
+```
+
+解决
+
+```bash
+$ sudo usermod -aG docker $USER
+
+$ sudo groupadd docker     #添加docker用户组
+groupadd: group 'docker' already exists
+
+$ sudo gpasswd -a $USER docker     #将登陆用户加入到docker用户组中
+Adding user $USER to group docker
+
+# relogin or 进入 docker group
+$ newgrp docker     #更新用户组
+
+$ sudo systemctl restart docker
+
+$ docker ps    #测试docker命令是否可以使用sudo正常使用
+```

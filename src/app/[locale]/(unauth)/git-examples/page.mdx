@@ -72,3 +72,9 @@ git config --global core.ignorecase false
 git mv -f src/components/Code.tsx src/components/code.tsx
 git commit -m "fix: git config core.ignorecase false"
 ```
+
+## 如何删除已被跟踪的文件，如 .pyc
+
+```bash
+git rm -r --cached '**/*.pyc'
+```
