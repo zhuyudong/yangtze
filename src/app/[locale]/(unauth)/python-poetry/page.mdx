@@ -4,7 +4,7 @@
 
 - 使用 pipx 安装 [poetry](https://python-poetry.org/docs/)
 
-```bash
+```sh
 pipx install poetry
 pipx upgrade poetry
 
@@ -13,7 +13,7 @@ pipx uninstall poetry
 
 将 poetry 命令提示加入到 oh-my-zsh 配置中
 
-```bash
+```sh
 mkdir $ZSH_CUSTOM/plugins/poetry
 poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 vim ~/.zshrc
@@ -26,7 +26,7 @@ source ~/.zshrc
 
 - 使用官方脚本安装 poetry，安装位置在 `~/.local/bin/poetry`
 
-```bash
+```sh
 curl -sSL https://install.python-poetry.org | python3 -
 poetry --version
 which poetry
@@ -38,14 +38,14 @@ pip install
 
 常用开发依赖
 
-```bash
+```sh
 poetry add fastapi pydantic bcrypt sqlmodel psycopg httpx python-jose gunicorn emails tenacity uvicorn python-multipart email-validator celery
 poetry add autoflake isort ruff black pytest pytest-asyncio pyupgrade mypy mypy-extensions flake8 pip-upgrader pre-commit add-trailing-comma --dev
 ```
 
 ## 升级依赖
 
-```bash
+```sh
 poetry update autoflake
 ```
 
@@ -53,7 +53,7 @@ poetry update autoflake
 
 修改 pyproject.toml 中的 Python 版本为 3.11
 
-```bash
+```sh
 poetry env use /usr/local/bin/python3.11
 # or
 poetry env use 3.11
@@ -63,7 +63,7 @@ poetry env use $(which python3.11)
 
 输出
 
-```bash
+```sh
 Creating virtualenv yangtze_backend-UgZ9keo--py3.11 in ~/.cache/pypoetry/virtualenvs
 Using virtualenv: ~/.cache/pypoetry/virtualenvs/yangtze_backend-UgZ9keo--py3.11
 ```
@@ -72,7 +72,7 @@ Using virtualenv: ~/.cache/pypoetry/virtualenvs/yangtze_backend-UgZ9keo--py3.11
 
 ## 查看 poetry 环境信息
 
-```bash
+```sh
 poetry env info
 poetry env list
 poetry env remove yangtze_backend-UgZ9keo--py3.11
@@ -81,7 +81,7 @@ poetry env remove --all
 
 ## 升级依赖的版本
 
-```bash
+```sh
 pip install pip-upgrader
 # 默认 requirements.txt
 pip-upgrade requirements/base.txt --skip-virtualenv-check
@@ -89,6 +89,6 @@ pip-upgrade requirements/base.txt --skip-virtualenv-check
 
 ## poetry 如何从 requirements.txt 中安装依赖
 
-```bash
+```sh
 cat requirements/base.txt | xargs poetry add
 ```

@@ -44,8 +44,6 @@ module.exports = {
       ],
       extends: [
         'plugin:tailwindcss/recommended',
-        'airbnb',
-        'airbnb-typescript',
         'next/core-web-vitals',
         'plugin:prettier/recommended'
       ],

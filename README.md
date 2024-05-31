@@ -4,13 +4,13 @@
 
 ## Installing
 
-```bash
+```sh
 pnpm i
 ```
 
 ## Develop【本地开发】
 
-```bash
+```sh
 pnpm dev
 ```
 
@@ -20,7 +20,7 @@ pnpm dev
 
 ### 使用 pnpm [本地]
 
-```bash
+```sh
 pnpm build
 pnpm start
 ```
@@ -29,7 +29,7 @@ pnpm start
 
 构建镜像
 
-```bash
+```sh
 docker build --no-cache -t yangtze-app:0.1.0 -f Dockerfile .
 # or
 docker build --progress=plain --no-cache -t yangtze-app:0.1.0 -f Dockerfile .
@@ -41,7 +41,7 @@ docker build --no-cache . -t yangtze-app:0.1.0
 
 运行镜像
 
-```bash
+```sh
 docker run -p 3000:3000 yangtze-app:0.1.0
 ```
 
@@ -51,7 +51,7 @@ open [http://localhost:3000](http://localhost:3000)
 
 - [x] FIXME: [#issue51477](https://github.com/vercel/next.js/issues/51477)
 - [x] FIXME: 生产环境下 /blog 页面报错
-  ```bash
+  ```sh
     Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `unstable_setRequestLocale` API to enable static rendering, see https://next-intl-docs.vercel.app/docs/getting-started/app-router-server-components#static-rendering
       at ~/Code/my-opensource/yangtze/.next/server/chunks/3552.js:1:41199
       at ~/Code/my-opensource/yangtze/node_modules/.pnpm/next@14.2.3_@opentelemetry+api@1.8.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:185493

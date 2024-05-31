@@ -6,7 +6,7 @@
 
 [Homebrew](https://brew.sh/) 如何加速？
 
-```bash
+```sh
 brew update
 brew cleanup
 ```
@@ -15,7 +15,7 @@ brew cleanup
 
 安装和更新 [pipx](https://pipx.pypa.io/stable/installation/)
 
-```bash
+```sh
 brew install pipx
 brew upgrade pipx
 pipx --version
@@ -23,7 +23,7 @@ pipx --version
 
 ## apt
 
-```bash
+```sh
 sudo apt update
 apt list --upgradable
 sudo apt upgrade
@@ -33,7 +33,7 @@ sudo apt upgrade
 
 ### pipx
 
-```bash
+```sh
 sudo apt install pipx
 pipx ensurepath
 
@@ -53,30 +53,4 @@ pipx uninstall <package_name>
 pipx uninstall numpy
 ```
 
-## Linux 常用命令
-
-查看端口占用情况
-
-```bash
-sudo lsof -i -P -n | grep LISTEN
-```
-
-递归删除所有子目录中 node_modules 文件夹
-
-```bash
-find . -name "node_modules" -type d -prune -exec rm -rf {} \;
-```
-
-递归删除所有子目录中 tsconfig.tsbuildinfo 文件
-
-```bash
-find . -name "tsconfig.tsbuildinfo" -type f -prune -exec rm -rf {} \;
-```
-
-批量执行修改了文件名大小写引起的 **git ignorecase** 问题
-
-[reference](https://adamj.eu/tech/2022/12/09/git-change-case-of-filenames/)
-
-```bash
-@import('snippets/linux/git-mv-batch.sh')
-```
+[Linux 常用命令](../awesome-linux/page.mdx)

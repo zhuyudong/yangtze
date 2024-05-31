@@ -2,20 +2,20 @@
 
 1. 安装依赖
 
-```bash
+```sh
 pnpm i @prisma/client @next-auth/prisma-adapter @prisma/extension-accelerate
 pnpm i prisma -D
 ```
 
 2. 初始化
 
-```bash
+```sh
 npx prisma init
 ```
 
 output
 
-```bash
+```sh
 ✔ Your Prisma schema was created at prisma/schema.prisma
   You can now open it in your favorite editor.
 
@@ -36,13 +36,13 @@ https://pris.ly/d/getting-started
 
 4. 生成 schema 对应的类型信息至 node_modules 中
 
-```bash
+```sh
 npx prisma generate
 ```
 
 5. 同步表结构到数据库
 
-```bash
+```sh
 npx prisma db push
 ```
 
@@ -108,7 +108,7 @@ if (env.NODE_ENV !== 'production') globalForPrisma.db = db
 
 7. 数据初始化【可选】
 
-```bash
+```sh
 npx prisma db seed
 ```
 
@@ -154,7 +154,7 @@ main()
 
 8. 打开数据浏览与编辑可视化窗口【可选】
 
-```bash
+```sh
 npx prisma studio
 ```
 
@@ -176,7 +176,7 @@ npx prisma studio
 
    **生成迁移文件 prisma/migrations/xxx 并自动执行 `npx prisma db seed`，注意执行前先执行 `npx prisma generate`**
 
-   ```bash
+   ```sh
    npx primsa migrate dev
    ```
 

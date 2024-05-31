@@ -4,19 +4,19 @@
 
 1. 创建本项目名为 yangtze 的 Python 依赖环境
 
-```bash
+```sh
 conda create --name yangtze python=3.11
 ```
 
 2. 激活本依赖环境
 
-```bash
+```sh
 conda activate yangtze
 ```
 
 3. 安装依赖
 
-```bash
+```sh
 conda install numpy=1.18.1
 # 安装不在 conda 默认通道的包
 conda install -c conda-forge some-package
@@ -24,25 +24,25 @@ conda install -c conda-forge some-package
 
 4. 使用已存在的包含依赖项的环境文件[可选]
 
-```bash
+```sh
 conda env create -f environment.yml
 ```
 
 5. 更新环境
 
-```bash
+```sh
 conda env update -f environment.yml
 ```
 
 6. 列出环境的包
 
-```bash
+```sh
 conda list
 ```
 
 7. 删除本项目 Python 依赖环境
 
-```bash
+```sh
 conda env list
 conda remove --name yangtze --all
 ```
@@ -51,13 +51,13 @@ conda remove --name yangtze --all
 
 1. 初始化，生成 pyproject.toml
 
-```bash
+```sh
 poetry init
 ```
 
 2. 自动根据 pyproject.toml 安装所需依赖
 
-```bash
+```sh
 poetry install
 ```
 
@@ -65,7 +65,7 @@ poetry install
 
 例如修改 pyproject.toml 中的 Python 版本为 3.9
 
-```bash
+```sh
 poetry env use /usr/local/bin/python3.9
 # or
 poetry env use 3.9
@@ -75,7 +75,7 @@ poetry env use $(which python3.9)
 
 输出
 
-```bash
+```sh
 Creating virtualenv yangtze-UgZ9keo--py3.11 in ~/.cache/pypoetry/virtualenvs
 Using virtualenv: ~/.cache/pypoetry/virtualenvs/yangtze-UgZ9keo--py3.11
 ```
@@ -86,7 +86,7 @@ Using virtualenv: ~/.cache/pypoetry/virtualenvs/yangtze-UgZ9keo--py3.11
 
 查看 poetry 环境信息
 
-```bash
+```sh
 poetry env info
 poetry env list
 poetry env remove yangtze-UgZ9keo--py3.11
@@ -95,7 +95,7 @@ poetry env remove --all
 
 #### 如何升级依赖的版本
 
-```bash
+```sh
 pip install pip-upgrader
 # 默认 requirements.txt
 pip-upgrade requirements/base.txt --skip-virtualenv-check
@@ -103,6 +103,6 @@ pip-upgrade requirements/base.txt --skip-virtualenv-check
 
 #### Poetry 如何从 requirements.txt 中安装依赖
 
-```bash
+```sh
 cat requirements/base.txt | xargs poetry add
 ```

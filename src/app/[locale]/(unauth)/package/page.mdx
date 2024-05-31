@@ -8,7 +8,7 @@
 
 ```json
 {
-  "packageManager": "pnpm@9.1.3"
+  "packageManager": "pnpm@9.1.4"
   //...
 }
 ```
@@ -26,7 +26,7 @@
 
 如当前 Node.js 版本(18.19.1)和上述 engines 不匹配时，警告如下
 
-```bash
+```sh
 WARN  Unsupported engine: wanted: {"node":"20.13.1"} (current: {"node":"v18.19.1","pnpm":"8.15.6"})
 ```
 
@@ -34,7 +34,7 @@ WARN  Unsupported engine: wanted: {"node":"20.13.1"} (current: {"node":"v18.19
 
 使用 [sort-package-json](https://github.com/keithamus/sort-package-json)
 
-```bash
+```sh
 pnpm i sort-package-json -D
 ./node_modules/.bin/sort-package-json
 ```

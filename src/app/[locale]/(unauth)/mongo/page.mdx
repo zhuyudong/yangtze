@@ -2,7 +2,7 @@
 
 ### 使用 docker 启动过本地 mongo
 
-```bash
+```sh
 docker run -d \
 --name mongodb \
 --restart=always \
@@ -23,7 +23,7 @@ mongo --auth
 
 进入容器
 
-```bash
+```sh
 docker exec -it mongodb /bin/bash
 # or
 docker exec -it mongodb /bin/sh
@@ -100,7 +100,7 @@ db.users.find();
 
 ## 连接数据库
 
-```bash
+```sh
 DATABASE_URL=mongodb://root:123456@localhost:27017/nextauth-example?authSource=admin
 ```
 

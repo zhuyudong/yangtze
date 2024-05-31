@@ -13,7 +13,7 @@ image: '/images/OHR.AlbaceteSpain_ZH-CN1597281896_1920x1080.webp'
 
 #### Installation
 
-```bash
+```sh
 pip install -r requirements/base.txt
 ```
 
@@ -21,14 +21,14 @@ pip install -r requirements/base.txt
 
 1. create virtual environment
 
-   ```bash
+   ```sh
    conda create -n yangtze python=3.11
    conda activate yangtze
    ```
 
 2. set registry
 
-   ```bash
+   ```sh
    # 阿里云源
    pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
    pip config set install.trusted-host mirrors.aliyun.com
@@ -39,7 +39,7 @@ pip install -r requirements/base.txt
 
    or `vim ~/.config/pip/pip.conf`
 
-   ```bash
+   ```sh
    [global]
    index-url = https://mirrors.aliyun.com/pypi/simple/
 
@@ -49,13 +49,13 @@ pip install -r requirements/base.txt
 
 3. installation dependencies
 
-   ```bash
+   ```sh
    pip install rich request
    ```
 
 4. write to txt file
 
-   ```bash
+   ```sh
    # 将宣布依赖写入 requirements/base.txt
    pip freeze requirements/base.txt
    # 只将指定的直接依赖写入 requirements/base.txt
@@ -64,7 +64,7 @@ pip install -r requirements/base.txt
 
 5. upgrade conda[optional]
 
-   ```bash
+   ```sh
    conda update -n base -c defaults conda
    ```
 

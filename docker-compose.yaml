@@ -24,27 +24,33 @@ services:
     #   mysql:
     #     condition: service_healthy
 
-  # mysql:
-  #   image: mysql:8.0
-  #   container_name: yangtze-app-mysql
-  #   command: --default-authentication-plugin=caching_sha2_password
-  #   restart: unless-stopped
-  #   # volumes:
-  #   #   - ./docker/data/mysql/:/var/lib/mysql/
-  #   environment:
-  #     - MYSQL_ROOT_PASSWORD=admin
-  #     - MYSQL_DATABASE=notes
-  #     - MYSQL_USER=notes
-  #     - MYSQL_PASSWORD=cpZfriEBbmJjWeiR
-  #   ports:
-  #     - '3306:3306'
-  #   healthcheck:
-  #     test: ['CMD', 'mysqladmin', 'ping', '-h127.0.0.1', '-P3306']
-  #     interval: 5s
-  #     timeout: 2s
-  #     retries: 20
-  #   networks:
-  #     - yangtze-network
+  mysql-server:
+    image: mysql:8.0
+    container_name: mysql-container
+    command: --default-authentication-plugin=caching_sha2_password
+    restart: unless-stopped
+    # env_file:
+    #   - .env
+    environment:
+      # NOTE：默认用户名 root，无需密码登录
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      # - MYSQL_RANDOM_ROOT_PASSWORD
+      # - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_PASSWORD=admin
+      - MYSQL_DATABASE=bigdata
+      - TZ=Asia/Shanghai
+    ports:
+      - '3306:3306'
+    healthcheck:
+      test: ['CMD', 'mysqladmin', 'ping', '-h127.0.0.1', '-P3306']
+      interval: 5s
+      timeout: 2s
+      retries: 20
+    volumes:
+      # - ./docker/data/mysql/:/var/lib/mysql/
+      - ./conf/my.cnf:/etc/my.cnf
+    # networks:
+    #   - yangtze-network
 
   # nginx:
   #   image: nginx

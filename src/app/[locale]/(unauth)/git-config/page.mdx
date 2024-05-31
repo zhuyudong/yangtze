@@ -7,7 +7,7 @@ export const metadata = {
 
 ## init
 
-```bash
+```sh
 git init
 ```
 
@@ -17,7 +17,7 @@ git init
 
 ### 全局配置
 
-```bash
+```sh
 # 设置默认主分支名
 git config --global initi.defaultbranch main
 # 修改当前分支名为 main
@@ -60,7 +60,7 @@ git config --system --list
 
 ### 核心配置
 
-```bash
+```sh
 # 设置对大小写敏感
 git config --global core.ignorecase false
 # 使用 vim 作为编辑器
@@ -75,7 +75,7 @@ git config pull.ff only # fast-forward only
 
 ### 列出配置
 
-```bash
+```sh
 # 列出所有配置
 git config --list
 # 列出本仓库配置
@@ -88,7 +88,7 @@ git config --system --list
 
 ### 魔法配置
 
-```bash
+```sh
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 git lg
@@ -98,7 +98,7 @@ git lg
 
 ## remote - 远程仓库
 
-```bash
+```sh
 git remote -v
 # 添加远程地址并命名 (remote name)，如 origin
 git remote add <remote name> <git url>
@@ -114,7 +114,7 @@ git remote set-url origin git@gitlab.pegasus.tech:pbdata/skyline.git
 
 ## fetch - 拉取
 
-```bash
+```sh
 # 将远程分支拉取到本地分支
 git fetch origin <remote-branch-name>:<local-branch-name>
 
@@ -130,7 +130,7 @@ git fetch origin master:<local-branch-name>
 
 ## pull - 拉取并合并
 
-```bash
+```sh
 # 默认 pull 代码时以 rebase 策略合并代码
 git config pull.rebase true
 git clone https://github.com/zhuyudong/dify.git --depth 1
@@ -142,7 +142,7 @@ git clone https://github.com/zhuyudong/dify.git --depth 1
 
 ### 查看分支
 
-```bash
+```sh
 # 查看本地分支
 git branch
 # 查看远程分支
@@ -153,7 +153,7 @@ git branch -a
 
 ### 切换分支
 
-```bash
+```sh
 git checkout <branch-name>
 # 查看并新建分支
 git checkout -b <branch-name>
@@ -168,7 +168,7 @@ git fetch origin <remote-branch-name>:<local-branch-name>
 
 ### 跟踪远程分支
 
-```bash
+```sh
 # 如果远程存在这个分支则本地跟踪这个远程分支
 git branch --set-upstream-to=origin/main main
 # 如果远程不存在这个分支，则远程新建这个分支并推送上去
@@ -177,13 +177,13 @@ git push --set-upstream origin main
 
 ### 同步分支列表
 
-```bash
+```sh
 git fetch -p
 ```
 
 ### 删除分支
 
-```bash
+```sh
 # 删除本地分支
 git branch -d <branch-name>
 # 强制删除本地分支
@@ -200,7 +200,7 @@ git push origin :<branch-name>
 
 ### 重命名分支
 
-```bash
+```sh
 # 重命名本地分支
 git branch -m <oldbranch-name> <newbranch-name>
 # 删除远程分支
@@ -227,7 +227,7 @@ git branch -M main
 
 ### 分支合并信息
 
-```bash
+```sh
 # 查看哪些分支已经合并到当前分支
 git branch --merged
 # 查看哪些分支还没有合并到当前分支
@@ -236,7 +236,7 @@ git branch --no-merged
 
 ### 分支信息
 
-```bash
+```sh
 # 查看各个分支最后一个提交对象的信息
 git branch -v
 ```
@@ -247,7 +247,7 @@ git branch -v
 
 提交到暂存区
 
-```bash
+```sh
 # 将当前目录内的所有改动添加到暂存区
 git add .
 # 将当前仓库所有的文件改动都添加到暂存区
@@ -258,7 +258,7 @@ git add src/index.tsx
 
 修改最近一次 commit message
 
-```bash
+```sh
 git commit --amend
 ```
 
@@ -268,7 +268,7 @@ git commit --amend
 
 提交到本地仓库
 
-```bash
+```sh
 # 在 GitHub/GitLab 新建一个仓库后 #
 git clone <giturl>
 # NOTE: --depth 1 提高下载速度
@@ -298,7 +298,7 @@ git remote add origin <giturl>
 
 推送到远程仓库
 
-```bash
+```sh
 # 推送到远程仓库
 git push
 # 如果是第一次推送则如下，其中 <remote name> <branch name> 来自于这里
@@ -319,7 +319,7 @@ git push origin HEAD:master
 
 ## rm - 删除文件
 
-```bash
+```sh
 # 将文件从 Git 仓库删除，配合 .gitignore
 git rm <filename>
 # 同上，文件夹
@@ -333,7 +333,7 @@ git push
 
 ## diff - 比较
 
-```bash
+```sh
 # 比较工作区与缓存区
 git diff
 # 比较缓存区与本地仓库最近一次 commit 内容
@@ -346,7 +346,7 @@ git diff HEAD
 
 ## status/log/show - 状态与日志
 
-```bash
+```sh
 # 查看状态
 git status
 # 查看历史操作记录
@@ -369,7 +369,7 @@ git lg
 
 - [ ] TODO: 待补充
 
-```bash
+```sh
 # 暂存本地修改，即还未 git add 的内容
 git stash
 git stash pop
@@ -379,7 +379,7 @@ git stash pop
 
 ## merge - 合并
 
-```bash
+```sh
 # 当前分支与指定分支合并
 git merge <branch-name>
 # 当合并时发生冲突时可以终止合并
@@ -395,7 +395,7 @@ git merge --abort
 - `git rebase <branch_name>`
 - `git cherry-pick <commit hash>` 将其它分支上已 commit 的在当前分支上再提交一次，产生新的 commit
 
-```bash
+```sh
 # 从HEAD版本开始往过去数3个版本
 git rebase -i HEAD~3
 
@@ -416,7 +416,7 @@ git rebase --abort
 # 如果没有冲突则保存退出
 ```
 
-```bash
+```sh
 pick 1bdae02 fix: 🐛 route definition
 pick a064cf6 fix: 🐛 upgrade msw version
 pick bd2d092 chore: 🔧 update project config
@@ -458,7 +458,7 @@ pick 22bb055 fix: 🐛 mock
 比如将 192c380 合并到 e37786ea 则将 192c380 前的 pick 改为 s或squash 即可
 合并结束后再
 
-```bash
+```sh
 git pull && git push
 ```
 
@@ -479,7 +479,7 @@ git pull && git push
 | --mixed | 回退部分，包括 HEAD、index               |
 | --soft  | 回退部分，包括 HEAD、index               |
 
-```bash
+```sh
 # 撤销暂存区（不覆盖工作区）
 git reset HEAD
 
@@ -518,7 +518,7 @@ git rm -r --cached .history .eslintcache
 
 ## checkout - 切换/放弃
 
-```bash
+```sh
 git checkout --
 # alias
 git checkout .
@@ -530,7 +530,7 @@ git checkout .
 
 create a new repository on the command line
 
-```bash
+```sh
 echo "# hyper-annotated" >> README.md
 git init
 git add README.md
@@ -542,7 +542,7 @@ git push -u origin main
 
 push an existing repository from the command line
 
-```bash
+```sh
 git remote add origin https://github.com/zhuyudong/hyper-annotated.git
 git branch -M main
 git push -u origin main

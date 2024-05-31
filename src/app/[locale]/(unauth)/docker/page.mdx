@@ -6,7 +6,7 @@
 
 方式1：使用 `apt`
 
-```bash
+```sh
 sudo apt-get update
 sudo apt-get install \
     apt-transport-https \
@@ -34,7 +34,7 @@ sudo docker run hello-world
 
 方式2：使用 official scripts
 
-```bash
+```sh
 curl -fsSL https://test.docker.com -o test-docker.sh
 sudo sh test-docker.sh # 卡住不动
 
@@ -45,7 +45,7 @@ sudo docker ps
 
 [参考资料](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04)
 
-```bash
+```sh
 sudo curl -L "https://github.com/docker/compose/releases/download/2.27.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 # 或者下载到本地 copy 到 /usr/local/bin 目录下
 sudo chmod +x /usr/local/bin/docker-compose
@@ -54,7 +54,7 @@ docker-compose --version
 
 ## 卸载 Docker
 
-```bash
+```sh
 sudo apt-get purge docker-ce
 rm -rf /var/lib/docker
 ```
@@ -89,7 +89,7 @@ volumes:
 
 只启动 mongo-server 服务
 
-```bash
+```sh
 docker-compose -f docker-compose.local.yml up mongo-server
 ```
 
@@ -101,7 +101,7 @@ docker-compose -f docker-compose.local.yml up mongo-server
 
 现象
 
-```bash
+```sh
 $ docker ps
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.
 sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
@@ -109,7 +109,7 @@ sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /
 
 解决
 
-```bash
+```sh
 $ sudo usermod -aG docker $USER
 
 $ sudo groupadd docker     #添加docker用户组
