@@ -6,7 +6,7 @@ import type { ReactNode } from 'react'
 import { TailwindIndicator } from '@/components/patterns/tailwind-indicator'
 import { Toaster } from '@/components/ui/sonner'
 import { AppConfig } from '@/config'
-import { fontSans } from '@/lib/fonts'
+// import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 
 export const metadata: Metadata = {
@@ -54,7 +54,8 @@ export default function RootLayout({
   return (
     <html lang={params.locale} className="h-full" suppressHydrationWarning>
       {/* ${inter.variable} */}
-      <body className={cn(`font-sans antialiased`, fontSans.variable)}>
+      {/* , fontSans.variable */}
+      <body className={cn(`font-sans antialiased`)}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           {children}
         </NextIntlClientProvider>

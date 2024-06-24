@@ -1,5 +1,4 @@
-FROM node:lts-alpine3.19
-# FROM node20.13.1-alpine3.18-pnpm:9.1.4
+FROM atomhub.openatom.cn/amd64/node:20-alpine3.17
 
 WORKDIR /app
 

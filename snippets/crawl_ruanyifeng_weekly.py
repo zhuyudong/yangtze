@@ -1,7 +1,7 @@
 """
-cd src/app/[locale]/(unauth)/python && python crawl_ruanyifeng_weekly.py
+cd snippets && python crawl_ruanyifeng_weekly.py
 # or
-python src/app/[locale]/(unauth)/python/crawl_ruanyifeng_weekly.py
+python snippets/crawl_ruanyifeng_weekly.py
 """
 
 # import json
@@ -159,7 +159,8 @@ def crawler():
                 files_by_category(text, files, weekly=int(issue))
         else:
             res = requests.get(
-                f"https://raw.githubusercontent.com/ruanyf/weekly/master/docs/issue-{issue}.md"
+                f"https://raw.githubusercontent.com/ruanyf/weekly/master/docs/issue-{issue}.md",
+                # proxies={"http": "http://localhost:8001"},
             )
             if res.ok:
                 text = res.text.replace("<br>", "")
