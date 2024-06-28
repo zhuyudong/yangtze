@@ -9,15 +9,15 @@ Pydantic 提供了四种 validator
     AfterValidator
         运行在 Pydantic 内部的校验转换之后，入参和返回值为正确的字段类型。
     PlainValidator
-        运行时间和 BeforeValidator相同，但执行完之后整个校验过程结束，不再执行其他 validator和 Pydantic内部的校验流程。
+        运行时间和 BeforeValidator相同，但执行完之后整个校验过程结束，不再执行其他 validator 和 Pydantic 内部的校验流程。
     WrapValidator
         可以运行在 pydantic 和其他 validator 之前或者之后，或者返回值、抛出异常立即结束校验流程。
         可以使用多个 BeforeValidator、AfterValidator 和 WrapperValidator，但是只能有一个 PlainValidator。
 
-关于执行顺序，从右到左执行所有Before和Wrap校验器，再从左到右执行所有After校验器。
+NOTE: 关于执行顺序，从右到左执行所有Before和Wrap校验器，再从左到右执行所有After校验器。
 """
 
-from typing import Any, List, Literal
+from typing import Any, Literal
 
 from pydantic import (
     BaseModel,
@@ -61,7 +61,7 @@ def maybe_strip_whitespace(
         v = int(v)
     if v >= 22:
         try:
-            # 执行后续校验器链
+            # NOTE: 执行后续校验器链
             return handler(v)
         except ValidationError as e:
             print(e)
@@ -79,7 +79,7 @@ MyNumber = Annotated[
 
 
 class DemoModel(BaseModel):
-    number: List[MyNumber]
+    number: list[MyNumber]
 
 
 print(DemoModel(number=[8, "2"]))
@@ -130,8 +130,8 @@ fields = ("name", "classname")
 class UserModel(BaseModel):
     type: Literal["manual", "scheduled", "trigger"] = "manual"
     id: int
-    classname: str
     name: str
+    classname: str
 
     @field_validator("name")
     @classmethod
@@ -140,7 +140,7 @@ class UserModel(BaseModel):
             raise ValueError("must contain a space")
         return v.title()
 
-    # you can select multiple fields, or use '*' to select all fields
+    # NOTE: you can select multiple fields, or use '*' to select all fields
     @field_validator("id", *fields)
     @classmethod
     def check_alphanumeric(cls, v: str, info: ValidationInfo) -> str:
@@ -166,16 +166,16 @@ name
     For further information visit https://errors.pydantic.dev/2.6/v/assertion_error
 
 Demo结果解析：
-被field_validator装饰器修饰的方法会升级成classmethod，name_must_contain_space方法是为了验证UserModel模型中的name属性字段，check_alphanumeric方法是一个
-验证模型中多个属性字段的例子，从打印的ValidationInfo中的信息来看，在对多个字段进行验证时，验证顺序和模型中定义的顺序有关。在验证中，如果被验证的值和预期不一致，则会抛出
-AssertionError或者ValueError异常，程序终止。
+被field_validator装饰器修饰的方法会升级成 classmethod，name_must_contain_space 方法是为了验证UserModel模型中的name属性字段，check_alphanumeric方法是一个
+验证模型中多个属性字段的例子，从打印的 ValidationInfo 中的信息来看，在对多个字段进行验证时，验证顺序和模型中定义的顺序有关。在验证中，如果被验证的值和预期不一致，则会抛出
+AssertionError 或者 ValueError异常，程序终止。
 """
 
 """
 3、@model_validator 模型验证器
-model_validator可以是mode=‘before’, mode=‘after’ or mode=‘wrap’。
-mode=‘before’，装饰的方法是一个类方法，第一个参数是cls类，第二个参数是Dict[str, Any]，即原始输入（如果没有被model='wrap’修改的话），第三个参数（如果有）是ValidationInfo，
-返回值是Dict[str, Any]。
+model_validator 可以是 mode=‘before’, mode=‘after’ or mode=‘wrap’。
+mode=‘before’，装饰的方法是一个类方法，第一个参数是cls类，第二个参数是 Dict[str, Any]，即原始输入（如果没有被model='wrap’修改的话），第三个参数（如果有）是ValidationInfo，
+返回值是 Dict[str, Any]。
 mode=‘after’，在validator和pydantic校验完成之后调用，是实例方法，只有一个参数self，此时属性已在实例对象上。
 mode=‘wrap’，类方法，在before之前被调用，第一个参数是cls，第二个参数是原始输入Dict[str, Any]，第三个参数是ValidatorCallable校验器链，接受一个参数执行后续校验流程，
 第四个参数是ValidationInfo。
@@ -230,7 +230,7 @@ except ValidationError as e:
      [type=assertion_error, input_value={'username': 'scolvin', '..., 'card_number': '1234'}, input_type=dict]
     """
 """
-Demo结果解析：
+Demo 结果解析：
 在模型验证器传递原始输入之前，原始输入通常是 adict[str, Any]但也可以是模型本身的实例,可以将任意对象传递到model_validate。因此，mode='before'验证器
 非常灵活且功能强大，但实施起来可能很麻烦且容易出错。在模型验证器之前应该是类方法。第一个参数应该是cls（我们还建议您@classmethod在下面使用@model_validator
 以进行正确的类型检查），第二个参数将是输入（您通常应该将其键入为Any并用于isinstance缩小类型），第三个参数（如果存在）将是A pydantic.ValidationInfo。
@@ -258,7 +258,7 @@ class Apple(Fruit): ...
 
 
 class Basket(BaseModel):
-    fruits: List[InstanceOf[Fruit]]
+    fruits: list[InstanceOf[Fruit]]
 
 
 print(Basket(fruits=[Banana(), Apple()]))
@@ -281,7 +281,7 @@ Demo结果解析：
 
 
 class Model(BaseModel):
-    names: List[SkipValidation[str]]
+    names: list[SkipValidation[str]]
 
 
 m = Model(names=["foo", "bar"])
@@ -292,8 +292,8 @@ m = Model(names=["foo", 123])
 print(m)
 # > names=['foo', 123]
 """
-Demo结果解析：
-虽然123不是str类型的，但是使用了SkipValidation这个特殊验证类型，因此也可以正常赋值。
+Demo 结果解析：
+虽然 123 不是 str 类型的，但是使用了 SkipValidation 这个特殊验证类型，因此也可以正常赋值。
 """
 
 """
