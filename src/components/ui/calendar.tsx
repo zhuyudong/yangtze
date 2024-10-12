@@ -61,9 +61,9 @@ function Calendar({
       }}
       components={{
         // eslint-disable-next-line react/no-unstable-nested-components, unused-imports/no-unused-vars
-        IconLeft: ({ ...props }) => <ChevronLeftIcon className="size-4" />,
+        // IconLeft: ({ ...props }) => <ChevronLeftIcon className="size-4" />,
         // eslint-disable-next-line react/no-unstable-nested-components, unused-imports/no-unused-vars
-        IconRight: ({ ...props }) => <ChevronRightIcon className="size-4" />
+        // IconRight: ({ ...props }) => <ChevronRightIcon className="size-4" />
       }}
       {...props}
     />

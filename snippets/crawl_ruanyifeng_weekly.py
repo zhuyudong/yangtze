@@ -1,6 +1,7 @@
 """
-cd snippets && python crawl_ruanyifeng_weekly.py
-# or
+conda create --name yangtze python=3.11
+conda activate yangtze
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn requests rich
 python snippets/crawl_ruanyifeng_weekly.py
 """
 

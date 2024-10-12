@@ -99,8 +99,8 @@ export default function WallpaperLightbox() {
             alt=""
             key={i.title}
             data-index={ix}
-            // src={i.image_url}
-            src={i.url}
+            src={i.image_url}
+            // src={i.url}
             className="block w-full cursor-pointer"
             onClick={handleChangeIndex}
           />
@@ -121,8 +121,8 @@ export default function WallpaperLightbox() {
         close={() => setIndex(null)}
         // slides={slides}
         slides={images.map(i => ({
-          // src: i.image_url,
-          src: i.url,
+          src: i.image_url,
+          // src: i.url,
           title: `${i.headline}[${i.title}]`,
           description: `${i.main_text}。${i.description}`
         }))}

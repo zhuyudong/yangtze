@@ -131,7 +131,7 @@ dist
 
 analyze
 
-weekly-issues/*.mdx
+# weekly-issues/*.mdx
 
 analyze
 

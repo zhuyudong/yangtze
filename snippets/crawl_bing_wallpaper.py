@@ -1,10 +1,10 @@
 """
-cd src/app/[locale]/(unauth)/python
-python crawl_bing_wallpaper.py
+python snippets/crawl_bing_wallpaper.py
 """
 
 import json
-import os
+
+# import os
 import time
 from datetime import datetime, timedelta
 from threading import Thread
@@ -59,42 +59,53 @@ def get_bing_data(day: str):
 
 def run():
     days = get_days()  # ['2022-10-26', '2022-10-27', ...]
-    tasks = list()
+    # tasks = list()
     results = []
-    for day in days:
-        t = MultiThreadRequest(get_bing_data, args=(day,))
-        tasks.append(t)
-        t.start()
+    # for day in days:
+    #     t = MultiThreadRequest(get_bing_data, args=(day,))
+    #     tasks.append(t)
+    #     t.start()
 
-    for t in tasks:
-        t.join()
-        result = t.get_result()
+    # for t in tasks:
+    #     t.join()
+    #     result = t.get_result()
+    #     if result[1] != 200:
+    #         pass
+    #     else:
+    #         result[2]["date"] = result[2].get("date", result[0]).replace("-", "/")
+    #         results.append(result[2])
+
+    for index, day in enumerate(days):
+        result = get_bing_data(day)
+        print(f"{index+1}/{len(days)}", result[0], result[1])
         if result[1] != 200:
             pass
         else:
             result[2]["date"] = result[2].get("date", result[0]).replace("-", "/")
             results.append(result[2])
+
     # console(results)
     # src/resources/bing_wallpaper.json
-    src = os.path.dirname(
-        os.path.dirname(os.path.dirname(os.path.dirname(os.getcwd())))
-    )
+    # src = os.path.dirname(
+    #     os.path.dirname(os.path.dirname(os.path.dirname(os.getcwd())))
+    # )
+    src = "/home/com0144/Code/my-opensource/yangtze/src"
     with open(
         src + "/resources/bing_wallpaper.json",
         "w",
         encoding="utf-8",
     ) as f:
-        for i in results:
-            if i.get("image_url"):
-                image_url = i["image_url"]
-                res = requests.get(image_url)
-                if res.ok:
-                    image_name = image_url.split("id=")[1]
-                    with open(
-                        os.path.dirname(src) + f"/public/images/{image_name}", "wb"
-                    ) as image_file:
-                        image_file.write(res.content)
-                    i["url"] = f"/images/{image_name}"
+        # for i in results:
+        #     if i.get("image_url"):
+        #         image_url = i["image_url"]
+        #         res = requests.get(image_url)
+        #         if res.ok:
+        #             image_name = image_url.split("id=")[1]
+        #             with open(
+        #                 os.path.dirname(src) + f"/public/images/{image_name}", "wb"
+        #             ) as image_file:
+        #                 image_file.write(res.content)
+        #             i["url"] = f"/images/{image_name}"
         json.dump(results, f, indent=2, ensure_ascii=False)
 
 

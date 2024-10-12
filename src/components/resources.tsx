@@ -157,7 +157,8 @@ function Station({ resource }: { resource: IResource }) {
       style={
         resource.href === '/wallpaper'
           ? {
-              backgroundImage: `url('${wallpapers[randomWallpaperIndex].url}')`,
+              // backgroundImage: `url('${wallpapers[randomWallpaperIndex].url}')`,
+              backgroundImage: `url('${wallpapers[randomWallpaperIndex].image_url}')`,
               // objectFit: 'contain',
               backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',

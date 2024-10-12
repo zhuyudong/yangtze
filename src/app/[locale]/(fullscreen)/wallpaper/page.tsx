@@ -49,7 +49,8 @@ export default function Wallpaper() {
           >
             <div className="aspect-h-7 aspect-w-10 group block w-full overflow-hidden rounded-none bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
               <img
-                src={file.url}
+                // src={file.url}
+                src={file.image_url}
                 alt=""
                 className="pointer-events-none object-cover group-hover:opacity-75"
               />
@@ -80,8 +81,8 @@ export default function Wallpaper() {
         close={() => setIndex(null)}
         // slides={slides}
         slides={images.map(i => ({
-          // src: i.image_url,
-          src: i.url,
+          src: i.image_url,
+          // src: i.url,
           title: `${i.headline}[${i.title}]`,
           description: `${i.main_text}。${i.description}`
         }))}
