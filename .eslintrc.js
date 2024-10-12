@@ -43,8 +43,8 @@ module.exports = {
         'markdown'
       ],
       extends: [
-        'plugin:tailwindcss/recommended',
         'next/core-web-vitals',
+        'plugin:tailwindcss/recommended',
         'plugin:prettier/recommended'
       ],
       parserOptions: {

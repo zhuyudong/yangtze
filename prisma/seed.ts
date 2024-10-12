@@ -1,8 +1,7 @@
 /* eslint-disable no-var */
 /* eslint-disable vars-on-top */
 // import { db } from '@/server/db'
-import { PrismaClient } from '@prisma/client/edge'
-import { withAccelerate } from '@prisma/extension-accelerate'
+import { PrismaClient } from '@prisma/client'
 
 import articles from './articles.json'
 import excerpts from './excerpts.json'
@@ -25,7 +24,7 @@ declare global {
   }
 }
 
-const db = global.db || new PrismaClient().$extends(withAccelerate())
+const db = global.db || new PrismaClient() //.$extends(withAccelerate())
 if (process.env.NODE_ENV !== 'production') global.db = db
 
 const weeklys = [
