@@ -37,7 +37,8 @@ export function useUploadFile(
           setProgresses(prev => {
             return {
               ...prev,
-              [file]: progress
+              // TODO: optimize this
+              [file as any as string]: progress
             }
           })
         }

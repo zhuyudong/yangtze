@@ -71,7 +71,7 @@ root_path = find_root_path()
 eslint_path = os.path.join(root_path, "node_modules/.bin/eslint")
 
 
-def formatting(file_path: str) -> None:
+def formatting(file_path: str) -> tuple:
     process = subprocess.Popen(
         [eslint_path, "--fix", "--color", file_path],
         stdout=subprocess.PIPE,

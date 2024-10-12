@@ -1,0 +1,8 @@
+[project]
+# Support Python 3.10+.
+requires-python = ">=3.10"
+
+[tool.ruff]
+# Decrease the maximum line length to 79 characters.
+line-length = 100
+src = ["snippets", "src"]
