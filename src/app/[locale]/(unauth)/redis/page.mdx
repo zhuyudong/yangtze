@@ -1,5 +1,40 @@
 ## Redis
 
+### Redis 基本命令
+
+进入 redis REPL 环境
+
+```sh
+redis-cli -h localhost -p 6379 -a LEiMPnJBReHCZpxr
+```
+
+redis 基本命令
+
+```sh
+localhost:6379> keys *
+(empty array)
+localhost:6379> PING
+PONG
+localhost:6379> ping
+PONG
+localhost:6379>
+```
+
+### 宝塔机中的 Redis
+
+通过软件商店安装的 Redis
+
+```sh
+# 启动redis
+/etc/init.d/redis start
+# 停止redis
+/etc/init.d/redis stop
+# 重启redis
+/etc/init.d/redis restart
+# 重载redis
+/etc/init.d/redis reload
+```
+
 ### 如何进入 redis docker 容器
 
 ```sh

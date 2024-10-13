@@ -68,6 +68,7 @@ export const superAdminRouter = createTRPCRouter({
           .map(r => {
             try {
               return RoleSchema.parse(r)
+              // eslint-disable-next-line unused-imports/no-unused-vars
             } catch (error) {
               console.error(`Invalid role: ${r}`) // Optionally log the error or handle it as needed
               return null

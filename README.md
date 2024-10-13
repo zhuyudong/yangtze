@@ -5,7 +5,7 @@
 ## Installing
 
 ```sh
-pnpm i
+pnpm i --registry http://registry.npmmirror.com
 ```
 
 ## Develop【本地开发】

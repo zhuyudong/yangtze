@@ -16,7 +16,6 @@ export const ourFileRouter = {
       // This code runs on your server before upload
 
       // If you throw, the user will not be able to upload
-      // eslint-disable-next-line @typescript-eslint/no-throw-literal
       if (!session) throw new UploadThingError('Unauthorized')
 
       // Whatever is returned here is accessible in onUploadComplete as `metadata`

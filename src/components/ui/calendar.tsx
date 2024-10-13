@@ -1,6 +1,6 @@
 'use client'
 
-import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
+// import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
 import * as React from 'react'
 import { DayPicker } from 'react-day-picker'
 
@@ -59,12 +59,14 @@ function Calendar({
         day_hidden: 'invisible',
         ...classNames
       }}
-      components={{
-        // eslint-disable-next-line react/no-unstable-nested-components, unused-imports/no-unused-vars
-        // IconLeft: ({ ...props }) => <ChevronLeftIcon className="size-4" />,
-        // eslint-disable-next-line react/no-unstable-nested-components, unused-imports/no-unused-vars
-        // IconRight: ({ ...props }) => <ChevronRightIcon className="size-4" />
-      }}
+      components={
+        {
+          // eslint-disable-next-line react/no-unstable-nested-components, unused-imports/no-unused-vars
+          // IconLeft: ({ ...props }) => <ChevronLeftIcon className="size-4" />,
+          // eslint-disable-next-line react/no-unstable-nested-components, unused-imports/no-unused-vars
+          // IconRight: ({ ...props }) => <ChevronRightIcon className="size-4" />
+        }
+      }
       {...props}
     />
   )
