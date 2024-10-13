@@ -17,6 +17,10 @@ const config = {
     //     '2xl': '1400px'
     //   }
     // },
+    fontFamily: {
+      sans: ['JetBrainsMonoNL', 'sans-serif'],
+      mono: ['JetBrainsMonoNL', 'monospace']
+    },
     fontSize: {
       '2xs': ['0.75rem', { lineHeight: '1.25rem' }],
       'xs': ['0.8125rem', { lineHeight: '1.5rem' }],
