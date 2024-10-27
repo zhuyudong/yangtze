@@ -1,6 +1,6 @@
-/* eslint-disable vars-on-top */
+/* eslint-disable @typescript-eslint/no-namespace */
+ 
 /* eslint-disable no-var */
-/* eslint-disable import/no-mutable-exports */
 import { PrismaClient } from '@prisma/client'
 import { withAccelerate } from '@prisma/extension-accelerate'
 

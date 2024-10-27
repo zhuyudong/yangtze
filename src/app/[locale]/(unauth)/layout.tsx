@@ -30,7 +30,7 @@ export default async function RootLayout({
   //       (await import(`./${filename.replace('(unauth)/', '')}`)).sections
   //     ]
   //   })
-  // )) as Array<[string, Array<Section>]>
+  // )) as [string, Section[]][]
   // const allSections = Object.fromEntries(allSectionsEntries)
   const allSections = navigationOfZh
     .map(group => group.links)
@@ -40,7 +40,7 @@ export default async function RootLayout({
         acc[link.href] = []
         return acc
       },
-      {} as Record<string, Array<Section>>
+      {} as Record<string, Section[]>
     )
 
   const session = await getServerSession()

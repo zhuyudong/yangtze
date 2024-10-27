@@ -1,3 +1,4 @@
+ 
 'use client'
 
 import Link from 'next/link'
@@ -9,11 +10,11 @@ import { cn } from '@/lib/utils'
 export function TableOfContents({
   tableOfContents
 }: {
-  tableOfContents: Array<Section>
+  tableOfContents: Section[]
 }) {
   const [currentSection, setCurrentSection] = useState(tableOfContents[0]?.id)
 
-  const getHeadings = useCallback((tableOfContents: Array<Section>) => {
+  const getHeadings = useCallback((tableOfContents: Section[]) => {
     return tableOfContents
       .flatMap(node => [node.id, ...node.children.map(child => child.id)])
       .map(id => {

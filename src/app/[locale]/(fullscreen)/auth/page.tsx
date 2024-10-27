@@ -52,7 +52,7 @@ const Auth = () => {
         password
       })
 
-      login()
+      await login()
     } catch (error) {
       console.log(error)
     }

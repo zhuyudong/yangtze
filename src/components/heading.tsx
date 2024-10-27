@@ -1,4 +1,4 @@
-/* eslint-disable unused-imports/no-unused-vars */
+ 
 
 'use client'
 
@@ -46,7 +46,7 @@ function Eyebrow({ tag, label }: { tag?: string; label?: string }) {
   )
 }
 
-// eslint-disable-next-line unused-imports/no-unused-vars
+ 
 function Anchor({
   id,
   inView,

@@ -1,6 +1,6 @@
 'use client'
 
-/* eslint-disable unused-imports/no-unused-imports */
+ 
 
 import type {
   ButtonHTMLAttributes,
@@ -59,6 +59,7 @@ import {
   // useTransition
 } from 'react'
 // import type \{[A-Z,\n\s]+\} from 'react'
+ 
 export const useIsomorphicLayoutEffect =
   typeof window === 'undefined' ? useEffect : useLayoutEffect
 
@@ -77,7 +78,7 @@ export function GridPattern({
   height: number
   x: string | number
   y: string | number
-  squares: Array<[x: number, y: number]>
+  squares: [x: number, y: number][]
 }) {
   const patternId = useId()
 
@@ -109,7 +110,7 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement>
 
 export function Button({ children, type = 'button', ...rest }: Props) {
   return (
-    // eslint-disable-next-line react/button-has-type
+     
     <button {...rest} type={type}>
       {children}
     </button>
@@ -122,7 +123,7 @@ const Card = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
 Card.displayName = 'Card'
 
 export function LocaleSwitcher() {
-  // eslint-disable-next-line unused-imports/no-unused-vars
+   
   const handleChange: ChangeEventHandler<HTMLSelectElement> = event => {
     // event.target.value
   }
@@ -143,7 +144,7 @@ const RootLayoutContext = createContext<{
 } | null>(null)
 
 export function Header() {
-  // eslint-disable-next-line unused-imports/no-unused-vars
+   
   const { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
 
   return null
@@ -235,7 +236,7 @@ export function Feedback() {
 }
 
 export function App2() {
-  // eslint-disable-next-line unused-imports/no-unused-vars
+   
   const handleChange: ChangeEventHandler<HTMLSelectElement> = event => {
     // event.target.value
   }

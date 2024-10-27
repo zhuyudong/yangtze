@@ -19,7 +19,7 @@ import { ColorModeSwitch } from './color-mode-switch'
 import LoginLogoutButton from './login-logout-button'
 import UserButton from './user-button'
 
-export async function Layout({ children }: { children: ReactNode }) {
+export function Layout({ children }: { children: ReactNode }) {
   const pathname = usePathname()
 
   const isInApplicationRoute = pathname.includes('/app')

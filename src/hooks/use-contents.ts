@@ -5,13 +5,12 @@ import { useRequest } from 'ahooks'
 
 import axios from '@/lib/axios'
 
-import type { WeeklyCategory } from './use-contents-pagination'
 import { useContentsPagination } from './use-contents-pagination'
 // import useSwr from 'swr'
 
 // import fetcher from '@/lib/fetcher'
 
-type Parameters = {
+interface Parameters {
   category?: string
   page_size?: number
   page_number?: number
@@ -48,24 +47,24 @@ export const useContents = (params?: Parameters) => {
     (_params: Parameters) => {
       return findContents({
         category:
-          _params?.category ||
-          params?.category ||
-          (currentCategory as WeeklyCategory),
+          _params?.category ??
+          params?.category ??
+          (currentCategory!),
         page_number:
-          _params?.page_number ||
-          params?.page_number ||
-          (currentCategory && pageNumber[currentCategory as WeeklyCategory]) ||
+          _params?.page_number ??
+          params?.page_number ??
+          (currentCategory && pageNumber[currentCategory]) ??
           1,
         page_size:
-          _params?.page_size ||
-          params?.page_size ||
-          (currentCategory && pageSize[currentCategory as WeeklyCategory]) ||
+          _params?.page_size ??
+          params?.page_size ??
+          (currentCategory && pageSize[currentCategory]) ??
           20,
         onlyFavorited:
-          _params?.onlyFavorited || params?.onlyFavorited || 'false',
-        onlyLiked: _params?.onlyLiked || params?.onlyLiked || 'false',
+          _params?.onlyFavorited ?? params?.onlyFavorited ?? 'false',
+        onlyLiked: _params?.onlyLiked ?? params?.onlyLiked ?? 'false',
         hiddenNoInterested:
-          _params?.hiddenNoInterested || params?.hiddenNoInterested || 'false'
+          _params?.hiddenNoInterested ?? params?.hiddenNoInterested ?? 'false'
       })
     },
     {

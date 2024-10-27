@@ -1,3 +1,4 @@
+ 
 'use client'
 
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons'
@@ -14,7 +15,7 @@ type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]
 type CarouselPlugin = UseCarouselParameters[1]
 
-type CarouselProps = {
+interface CarouselProps {
   opts?: CarouselOptions
   plugins?: CarouselPlugin
   orientation?: 'horizontal' | 'vertical'

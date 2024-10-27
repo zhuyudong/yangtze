@@ -19,6 +19,7 @@ request.interceptors.response.use(
         message: data?.message || '未登录'
       })
     }
+    // eslint-disable-next-line @typescript-eslint/prefer-promise-reject-errors
     return Promise.reject(error)
   }
 )

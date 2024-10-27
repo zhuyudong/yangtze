@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { slugifyWithCounter } from '@sindresorhus/slugify'
 import { visit } from 'unist-util-visit'
 

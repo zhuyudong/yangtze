@@ -1,6 +1,4 @@
-/* eslint-disable no-underscore-dangle */
-
-'use client'
+ 'use client'
 
 import type { DropdownMenuTriggerProps } from '@radix-ui/react-dropdown-menu'
 import { CheckIcon, ClipboardIcon } from 'lucide-react'
@@ -27,7 +25,7 @@ interface CopyButtonProps extends ButtonProps {
 }
 
 export async function copyToClipboardWithMeta(value: string, event?: Event) {
-  navigator.clipboard.writeText(value)
+  await navigator.clipboard.writeText(value)
   if (event) {
     trackEvent(event)
   }
@@ -57,8 +55,8 @@ export function CopyButton({
         'relative z-10 h-6 w-6 text-zinc-50 hover:bg-zinc-700 hover:text-zinc-50 [&_svg]:size-3',
         className
       )}
-      onClick={() => {
-        copyToClipboardWithMeta(
+      onClick={async () => {
+        await copyToClipboardWithMeta(
           value,
           event
             ? {
@@ -99,8 +97,8 @@ export function CopyWithClassNames({
     }, 2000)
   }, [hasCopied])
 
-  const copyToClipboard = useCallback((value: string) => {
-    copyToClipboardWithMeta(value)
+  const copyToClipboard = useCallback(async (value: string) => {
+    await copyToClipboardWithMeta(value)
     setHasCopied(true)
   }, [])
 
@@ -153,8 +151,8 @@ export function CopyNpmCommandButton({
   }, [hasCopied])
 
   const copyCommand = useCallback(
-    (value: string, pm: 'npm' | 'pnpm' | 'yarn' | 'bun') => {
-      copyToClipboardWithMeta(value, {
+    async (value: string, pm: 'npm' | 'pnpm' | 'yarn' | 'bun') => {
+      await copyToClipboardWithMeta(value, {
         name: 'copy_npm_command',
         properties: {
           command: value,

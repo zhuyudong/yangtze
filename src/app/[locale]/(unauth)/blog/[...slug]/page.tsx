@@ -21,7 +21,7 @@ interface PostPageProps {
   }
 }
 
-// eslint-disable-next-line unused-imports/no-unused-vars
+ 
 const posts = [
   {
     title: 'next-auth 实践',
@@ -49,7 +49,7 @@ const posts = [
   }
 ]
 
-// eslint-disable-next-line unused-imports/no-unused-vars
+ 
 export default function PostPage({ params }: PostPageProps) {
   const slug = params.slug[0]
   const post = posts.find(post => post.slug === slug)

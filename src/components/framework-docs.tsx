@@ -9,7 +9,7 @@ interface FrameworkDocsProps extends HTMLAttributes<HTMLDivElement> {
   data: string
 }
 
-// eslint-disable-next-line unused-imports/no-unused-vars
+ 
 export function FrameworkDocs({ ...props }: FrameworkDocsProps) {
   // const frameworkDoc = allPosts.find(
   //   doc => doc.slug === `/docs/installation/${props.data}`

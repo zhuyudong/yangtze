@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import { PlayIcon } from '@heroicons/react/24/solid'
 import { useRouter } from 'next/navigation'

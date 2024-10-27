@@ -59,14 +59,14 @@ export type Subsection = H3Node['attributes'] & {
 export type Section = H2Node['attributes'] & {
   id: string
   title: string
-  children: Array<Subsection>
+  children: Subsection[]
 }
 
 export function collectSections(
-  nodes: Array<Node>,
+  nodes: Node[],
   slugify = slugifyWithCounter()
 ) {
-  const sections: Array<Section> = []
+  const sections: Section[] = []
 
   for (const node of nodes) {
     if (isH2Node(node) || isH3Node(node)) {

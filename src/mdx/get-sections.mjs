@@ -1,3 +1,4 @@
+// @ts-nocheck
 export function getSections(node) {
   let sections = []
 

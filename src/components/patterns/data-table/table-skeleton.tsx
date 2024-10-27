@@ -8,7 +8,7 @@ import {
   TableRow
 } from '@/components/ui/table'
 
-type DataTableSkeletonProps = {
+interface DataTableSkeletonProps {
   /**
    * The number of columns in the table.
    * @type number

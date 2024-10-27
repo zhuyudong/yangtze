@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-type UseNoInterestedProps = {
+interface UseNoInterestedProps {
   isFavorite: Record<string, boolean>
   isLike: Record<string, boolean>
   isNoInterested: Record<string, boolean>

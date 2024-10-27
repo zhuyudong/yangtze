@@ -8,40 +8,46 @@
  * - Please do NOT serve this file on production.
  */
 
-const PACKAGE_VERSION = '2.4.10'
-const INTEGRITY_CHECKSUM = '26357c79639bfa20d64c0efca2a87423'
+const PACKAGE_VERSION = '2.5.1'
+const INTEGRITY_CHECKSUM = '07a8241b182f8a246a7cd39894799a9e'
 const IS_MOCKED_RESPONSE = Symbol('isMockedResponse')
 const activeClientIds = new Set()
 
 self.addEventListener('install', function () {
+  // @ts-ignore
   self.skipWaiting()
 })
 
 self.addEventListener('activate', function (event) {
+  // @ts-ignore
   event.waitUntil(self.clients.claim())
 })
 
 self.addEventListener('message', async function (event) {
+  // @ts-ignore
   const clientId = event.source.id
 
+  // @ts-ignore
   if (!clientId || !self.clients) {
     return
   }
 
+  // @ts-ignore
   const client = await self.clients.get(clientId)
 
   if (!client) {
     return
   }
 
+  // @ts-ignore
   const allClients = await self.clients.matchAll({
-    type: 'window',
+    type: 'window'
   })
 
   switch (event.data) {
     case 'KEEPALIVE_REQUEST': {
       sendToClient(client, {
-        type: 'KEEPALIVE_RESPONSE',
+        type: 'KEEPALIVE_RESPONSE'
       })
       break
     }
@@ -51,8 +57,8 @@ self.addEventListener('message', async function (event) {
         type: 'INTEGRITY_CHECK_RESPONSE',
         payload: {
           packageVersion: PACKAGE_VERSION,
-          checksum: INTEGRITY_CHECKSUM,
-        },
+          checksum: INTEGRITY_CHECKSUM
+        }
       })
       break
     }
@@ -62,7 +68,12 @@ self.addEventListener('message', async function (event) {
 
       sendToClient(client, {
         type: 'MOCKING_ENABLED',
-        payload: true,
+        payload: {
+          client: {
+            id: client.id,
+            frameType: client.frameType
+          }
+        }
       })
       break
     }
@@ -75,12 +86,13 @@ self.addEventListener('message', async function (event) {
     case 'CLIENT_CLOSED': {
       activeClientIds.delete(clientId)
 
-      const remainingClients = allClients.filter((client) => {
+      const remainingClients = allClients.filter(client => {
         return client.id !== clientId
       })
 
       // Unregister itself when there are no more clients
       if (remainingClients.length === 0) {
+        // @ts-ignore
         self.registration.unregister()
       }
 
@@ -90,6 +102,7 @@ self.addEventListener('message', async function (event) {
 })
 
 self.addEventListener('fetch', function (event) {
+  // @ts-ignore
   const { request } = event
 
   // Bypass navigation requests.
@@ -112,6 +125,7 @@ self.addEventListener('fetch', function (event) {
 
   // Generate unique request ID.
   const requestId = crypto.randomUUID()
+  // @ts-ignore
   event.respondWith(handleRequest(event, requestId))
 })
 
@@ -137,10 +151,10 @@ async function handleRequest(event, requestId) {
             status: responseClone.status,
             statusText: responseClone.statusText,
             body: responseClone.body,
-            headers: Object.fromEntries(responseClone.headers.entries()),
-          },
+            headers: Object.fromEntries(responseClone.headers.entries())
+          }
         },
-        [responseClone.body],
+        [responseClone.body]
       )
     })()
   }
@@ -153,22 +167,28 @@ async function handleRequest(event, requestId) {
 // that registered the worker. It's with the latter the worker should
 // communicate with during the response resolving phase.
 async function resolveMainClient(event) {
+  // @ts-ignore
   const client = await self.clients.get(event.clientId)
+
+  if (activeClientIds.has(event.clientId)) {
+    return client
+  }
 
   if (client?.frameType === 'top-level') {
     return client
   }
 
+  // @ts-ignore
   const allClients = await self.clients.matchAll({
-    type: 'window',
+    type: 'window'
   })
 
   return allClients
-    .filter((client) => {
+    .filter(client => {
       // Get only those clients that are currently visible.
       return client.visibilityState === 'visible'
     })
-    .find((client) => {
+    .find(client => {
       // Find the client ID that's recorded in the
       // set of clients that have registered the worker.
       return activeClientIds.has(client.id)
@@ -226,10 +246,10 @@ async function getResponse(event, client, requestId) {
         referrer: request.referrer,
         referrerPolicy: request.referrerPolicy,
         body: requestBuffer,
-        keepalive: request.keepalive,
-      },
+        keepalive: request.keepalive
+      }
     },
-    [requestBuffer],
+    [requestBuffer]
   )
 
   switch (clientMessage.type) {
@@ -249,7 +269,7 @@ function sendToClient(client, message, transferrables = []) {
   return new Promise((resolve, reject) => {
     const channel = new MessageChannel()
 
-    channel.port1.onmessage = (event) => {
+    channel.port1.onmessage = event => {
       if (event.data && event.data.error) {
         return reject(event.data.error)
       }
@@ -259,7 +279,7 @@ function sendToClient(client, message, transferrables = []) {
 
     client.postMessage(
       message,
-      [channel.port2].concat(transferrables.filter(Boolean)),
+      [channel.port2].concat(transferrables.filter(Boolean))
     )
   })
 }
@@ -277,7 +297,7 @@ async function respondWithMock(response) {
 
   Reflect.defineProperty(mockedResponse, IS_MOCKED_RESPONSE, {
     value: true,
-    enumerable: true,
+    enumerable: true
   })
 
   return mockedResponse

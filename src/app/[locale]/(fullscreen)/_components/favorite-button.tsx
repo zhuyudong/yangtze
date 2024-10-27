@@ -9,14 +9,14 @@ interface FavoriteButtonProps {
   movieId: string
 }
 
-// eslint-disable-next-line unused-imports/no-unused-vars
+ 
 export const FavoriteButton: FC<FavoriteButtonProps> = ({ movieId }) => {
   const { mutate: mutateFavorites } = useFavorites()
 
   const { data: currentUser, mutate } = useCurrentUser()
 
   const isFavorite = useMemo(() => {
-    const list = currentUser?.favoriteIds || []
+    const list = currentUser?.favoriteIds ?? []
 
     return list.includes(movieId)
   }, [currentUser, movieId])
@@ -34,11 +34,11 @@ export const FavoriteButton: FC<FavoriteButtonProps> = ({ movieId }) => {
 
     const updatedFavoriteIds = response?.data?.favoriteIds
 
-    mutate({
+    await mutate({
       ...currentUser!,
       favoriteIds: updatedFavoriteIds
     })
-    mutateFavorites()
+    await mutateFavorites()
   }, [movieId, isFavorite, currentUser, mutate, mutateFavorites])
 
   const Icon = isFavorite ? CheckIcon : PlusIcon

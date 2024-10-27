@@ -29,6 +29,7 @@ import { type Result } from '@/mdx/search.mjs'
 type EmptyObject = Record<string, never>
 
 type Autocomplete = AutocompleteApi<
+  // @ts-ignore
   Result,
   React.SyntheticEvent,
   React.MouseEvent,
@@ -39,6 +40,7 @@ function useAutocomplete({ close }: { close: () => void }) {
   const id = useId()
   const router = useRouter()
   const [autocompleteState, setAutocompleteState] = useState<
+    // @ts-ignore
     AutocompleteState<Result> | EmptyObject
   >({})
 
@@ -59,6 +61,7 @@ function useAutocomplete({ close }: { close: () => void }) {
 
   const [autocomplete] = useState<Autocomplete>(() =>
     createAutocomplete<
+      // @ts-ignore
       Result,
       React.SyntheticEvent,
       React.MouseEvent,
@@ -171,7 +174,8 @@ function SearchResult({
 }: {
   result: Result
   resultIndex: number
-  autocomplete: Autocomplete
+    autocomplete: Autocomplete
+  // @ts-ignore
   collection: AutocompleteCollection<Result>
   query: string
 }) {
@@ -237,7 +241,8 @@ function SearchResults({
   collection
 }: {
   autocomplete: Autocomplete
-  query: string
+    query: string
+  // @ts-ignore
   collection: AutocompleteCollection<Result>
 }) {
   if (collection.items.length === 0) {
@@ -275,6 +280,7 @@ const SearchInput = forwardRef<
   ElementRef<'input'>,
   {
     autocomplete: Autocomplete
+    // @ts-ignore
     autocompleteState: AutocompleteState<Result> | EmptyObject
     onClose: () => void
   }

@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 /* eslint-disable no-var */
-/* eslint-disable vars-on-top */
+ 
 // import { db } from '@/server/db'
 import { PrismaClient } from '@prisma/client'
 

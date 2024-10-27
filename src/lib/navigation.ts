@@ -16,14 +16,14 @@ import { ToolIcon } from '@/components/icons/tool-icon'
 
 export interface NavGroup {
   title: string
-  links: Array<{
+  links: {
     title: string
     href: string
     icon?: ComponentType<{ className?: string }>
-  }>
+  }[]
 }
 
-export const navigationOfZh: Array<NavGroup> = [
+export const navigationOfZh: NavGroup[] = [
   {
     title: '技术专栏',
     links: [
@@ -110,7 +110,7 @@ export const navigationOfZh: Array<NavGroup> = [
   }
 ]
 
-export const navigationOfEn: Array<NavGroup> = [
+export const navigationOfEn: NavGroup[] = [
   {
     title: 'Technology column',
     links: [

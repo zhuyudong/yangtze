@@ -54,7 +54,6 @@ export function TRPCReactProvider(props: { children: ReactNode }) {
         }),
         unstable_httpBatchStreamLink({
           transformer: SuperJSON,
-          // eslint-disable-next-line @typescript-eslint/no-use-before-define
           url: `${getBaseUrl()}/api/trpc`,
           headers: () => {
             const headers = new Headers()

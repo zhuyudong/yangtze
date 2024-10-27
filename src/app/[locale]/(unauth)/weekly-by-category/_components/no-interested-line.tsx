@@ -9,7 +9,7 @@ export function NoInterestedLine({ id }: { id: string }) {
   const { data: currentUser, mutate: mutateCurrentUser } = useCurrentUser()
 
   const isNoInterested = useMemo(() => {
-    return currentUser?.noInterestedIds?.includes(id) as boolean
+    return currentUser?.noInterestedIds?.includes(id)
   }, [currentUser?.noInterestedIds, id])
 
   const toggleNoInterested = useCallback(async () => {
@@ -23,8 +23,8 @@ export function NoInterestedLine({ id }: { id: string }) {
         contentId: id
       })
     }
-    const updatedNoInterestedIds = response?.data?.noInterestedIds as string[]
-    mutateCurrentUser({
+    const updatedNoInterestedIds = response?.data?.noInterestedIds
+    await mutateCurrentUser({
       ...currentUser!,
       noInterestedIds: updatedNoInterestedIds
     })

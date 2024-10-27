@@ -62,7 +62,7 @@ const addToRemoveQueue = (toastId: string) => {
 
   const timeout = setTimeout(() => {
     toastTimeouts.delete(toastId)
-    // eslint-disable-next-line @typescript-eslint/no-use-before-define
+     
     dispatch({
       type: 'REMOVE_TOAST',
       toastId
@@ -127,7 +127,7 @@ export const reducer = (state: State, action: Action): State => {
   }
 }
 
-const listeners: Array<(state: State) => void> = []
+const listeners: ((state: State) => void)[] = []
 
 let memoryState: State = { toasts: [] }
 

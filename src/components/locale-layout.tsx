@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 
 import { ExternalLink } from './external-link'
 
-type Props = {
+interface Props {
   children?: ReactNode
   title: ReactNode
 }

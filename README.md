@@ -42,7 +42,7 @@ docker build --no-cache . -t yangtze-app:0.1.0
 运行镜像
 
 ```sh
-docker run -p 3000:3000 yangtze-app:0.1.0
+docker run -p 3000:3000 yangtze-app:0.1.0 
 ```
 
 open [http://localhost:3000](http://localhost:3000)
@@ -94,7 +94,7 @@ open [http://localhost:3000](http://localhost:3000)
 - [simpleicons](https://simpleicons.org/)
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [pino](https://getpino.io/#/)
-- [Better Stack](https://betterstack.com/)
+- [Better Stack](https://betterstack.com/) 
 - [Mermaid](https://mermaid.js.org/syntax/sequenceDiagram.html)
 - [rehype-pretty-code](https://rehype-pretty.pages.dev/#usage)
 - [remark-code-import](https://github.com/kevin940726/remark-code-import)

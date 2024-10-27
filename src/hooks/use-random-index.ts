@@ -4,7 +4,7 @@ import wallpaper from '@/resources/bing_wallpaper.json'
 import movieQuotes from '@/resources/movie_quotes.json'
 import poetry from '@/resources/poetry.json'
 
-type UseRandomIndexProps = {
+interface UseRandomIndexProps {
   randomPoetryIndex: number
   randomWallpaperIndex: number
   randomMovieQuoteIndex: number

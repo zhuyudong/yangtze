@@ -24,7 +24,7 @@ async function handler(req: NextRequest) {
       const user = currentUser
         ? await db.user.update({
             where: {
-              email: currentUser.email || ''
+              email: currentUser.email ?? ''
             },
             data: {
               favoriteIds: {
@@ -53,14 +53,14 @@ async function handler(req: NextRequest) {
       }
 
       const updatedFavoriteIds = without(
-        currentUser?.favoriteIds || [],
+        currentUser?.favoriteIds ?? [],
         movieId
       )
 
       const updatedUser = currentUser
         ? await db.user.update({
             where: {
-              email: currentUser.email || ''
+              email: currentUser.email ?? ''
             },
             data: {
               favoriteIds: updatedFavoriteIds

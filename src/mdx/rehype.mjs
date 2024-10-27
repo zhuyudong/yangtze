@@ -1,6 +1,4 @@
-import { toString } from 'mdast-util-to-string'
 import { mdxAnnotations } from 'mdx-annotations'
-
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 // import rehypePrettyCode from 'rehype-pretty-code'
 import rehypeSlug from 'rehype-slug'

@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/naming-convention */
+ 
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 

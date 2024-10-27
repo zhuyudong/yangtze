@@ -9,7 +9,7 @@ import {
 export const exampleRouter = createTRPCRouter({
   hello: publicProcedure
     .input(z.object({ text: z.string() }))
-    // eslint-disable-next-line unused-imports/no-unused-vars
+     
     .query(({ input }) => {
       // Throw an unhandled error unconditionally
       throw new Error('Simulated unhandled error in hello route')

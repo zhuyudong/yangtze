@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
+ 
 
 'use client'
 
@@ -35,6 +35,7 @@ import { type Result } from '@/markdoc/search.mjs'
 type EmptyObject = Record<string, never>
 
 type Autocomplete = AutocompleteApi<
+  // @ts-ignore
   Result,
   SyntheticEvent,
   React.MouseEvent,
@@ -57,6 +58,7 @@ function useAutocomplete({
   const id = useId()
   const router = useRouter()
   const [autocompleteState, setAutocompleteState] = useState<
+    // @ts-ignore
     AutocompleteState<Result> | EmptyObject
   >({})
 
@@ -75,8 +77,9 @@ function useAutocomplete({
     }
   }
 
-  let [autocomplete] = useState<Autocomplete>(() =>
+  const [autocomplete] = useState<Autocomplete>(() =>
     createAutocomplete<
+      // @ts-ignore
       Result,
       SyntheticEvent,
       React.MouseEvent,
@@ -163,7 +166,8 @@ function SearchResult({
   query
 }: {
   result: Result
-  autocomplete: Autocomplete
+    autocomplete: Autocomplete
+  // @ts-ignore
   collection: AutocompleteCollection<Result>
   query: string
 }) {
@@ -226,7 +230,8 @@ function SearchResults({
   collection
 }: {
   autocomplete: Autocomplete
-  query: string
+    query: string
+  // @ts-ignore
   collection: AutocompleteCollection<Result>
 }) {
   if (collection.items.length === 0) {
@@ -260,6 +265,7 @@ const SearchInput = forwardRef<
   ElementRef<'input'>,
   {
     autocomplete: Autocomplete
+    // @ts-ignore
     autocompleteState: AutocompleteState<Result> | EmptyObject
     onClose: () => void
   }

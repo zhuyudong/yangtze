@@ -59,7 +59,7 @@ const Identification = ({ children }: { children: ReactNode }) => {
 // const queryClient = new QueryClient()
 
 export function Providers({ children }: { children: ReactNode }) {
-  const [initialState] = useSearchParams().get('initialState') || [0]
+  const [initialState] = useSearchParams().get('initialState') ?? [0]
 
   return (
     <Provider

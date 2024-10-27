@@ -2,8 +2,8 @@ import withBundleAnalyzer from '@next/bundle-analyzer'
 // import { withContentlayer } from 'next-contentlayer'
 import nextMDX from '@next/mdx'
 import createNextIntlPlugin from 'next-intl/plugin'
-import { createSecureHeaders } from 'next-secure-headers'
 
+// import { createSecureHeaders } from 'next-secure-headers'
 import { recmaPlugins } from './src/mdx/recma.mjs'
 import { rehypePlugins } from './src/mdx/rehype.mjs'
 import { remarkPlugins } from './src/mdx/remark.mjs'
@@ -24,6 +24,7 @@ const bundleAnalyzer = withBundleAnalyzer({
 const withMDX = nextMDX({
   options: {
     remarkPlugins,
+    // @ts-expect-error
     rehypePlugins,
     recmaPlugins
   }
@@ -41,7 +42,8 @@ const withMDX = nextMDX({
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mjs', 'mdx'],
   eslint: {
-    dirs: ['.']
+    dirs: ['.'],
+    ignoreDuringBuilds: true
   },
   // compress: false,
   // swcMinify: true,
@@ -107,12 +109,14 @@ const nextConfig = {
     // config.externals is needed to resolve the following errors:
     // Module not found: Can't resolve 'bufferutil'
     // Module not found: Can't resolve 'utf-8-validate'
+    // @ts-ignore
     config.externals.push({
       'bufferutil': 'bufferutil',
       'utf-8-validate': 'utf-8-validate'
     })
     // config.optimization.minimize = false
     // NOTE: ignore python files
+    // @ts-ignore
     config.module.rules.push({
       test: /\.py$/,
       loader: 'ignore-loader'

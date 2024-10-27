@@ -1,4 +1,6 @@
-/* eslint-disable unused-imports/no-unused-vars */
+ 
+ 
+
 import { PrismaAdapter } from '@next-auth/prisma-adapter'
 import { compare } from 'bcrypt'
 import type { AuthOptions } from 'next-auth'
@@ -108,7 +110,7 @@ export const authOptions: AuthOptions = {
             email: credentials.email
           }
         })
-        if (!user || !user.hashedPassword) {
+        if (!user?.hashedPassword) {
           throw new Error('Email does not exist')
         }
 
@@ -133,7 +135,7 @@ export const authOptions: AuthOptions = {
      *    第 2 次 token: {name: string, email: string, sub: string, picture: string, iat: number, exp: number, jti: string}
        session: undefined
      */
-    async jwt({ token, session }) {
+    jwt({ token, session }) {
       // console.log(`--------callbacks > jwt-------`)
       return token
     },
@@ -174,7 +176,7 @@ export const authOptions: AuthOptions = {
      * account: {providerAccountId:: string, type: 'credentials', provider: 'credentials'}
      * 使用 google 方式登录，有 user, account, isNewUser
      */
-    async signIn({ user, account, profile, isNewUser }) {
+    signIn({ user, account, profile, isNewUser }) {
       // console.log(`--------events > signIn-------`)
       logger.info('User %s signed in', user.email)
       if (isNewUser) {

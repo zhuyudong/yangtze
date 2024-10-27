@@ -30,6 +30,7 @@ export default function Wallpaper() {
           : null
       )
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [index]
   )
 
@@ -40,7 +41,6 @@ export default function Wallpaper() {
         className="grid grid-cols-2 gap-x-4 gap-y-8 px-4 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-5 xl:gap-x-8"
       >
         {images.map((file, ix) => (
-          // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
           <li
             key={`${file.headline}-${ix}`}
             className="relative"

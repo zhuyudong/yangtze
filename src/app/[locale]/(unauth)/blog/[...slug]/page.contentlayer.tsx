@@ -70,8 +70,8 @@ interface PostPageProps {
 //   }))
 // }
 
-// eslint-disable-next-line unused-imports/no-unused-vars
-export default async function PostPage({ params }: PostPageProps) {
+ 
+export default function PostPage({ params }: PostPageProps) {
   // const t = useTranslations('Blog')
   // const post = await getPostFromParams(params)
   // if (!post) {

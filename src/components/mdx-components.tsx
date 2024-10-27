@@ -1,7 +1,4 @@
-/* eslint-disable @typescript-eslint/naming-convention */
-/* eslint-disable no-underscore-dangle */
-
-'use client'
+ 'use client'
 
 import Image from 'next/image'
 import NLink from 'next/link'
@@ -186,7 +183,6 @@ export const img = ({
   alt,
   ...props
 }: ImgHTMLAttributes<HTMLImageElement>) => (
-  // eslint-disable-next-line @next/next/no-img-element
   <img className={cn('rounded-md', className)} alt={alt} {...props} />
 )
 

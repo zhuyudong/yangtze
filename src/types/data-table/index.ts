@@ -2,7 +2,7 @@ import type { ComponentType } from 'react'
 
 export type SearchParams = Record<string, string | string[] | undefined>
 
-export type Option = {
+export interface Option {
   label: string
   value: string
   icon?: ComponentType<{ className?: string }>

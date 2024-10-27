@@ -84,6 +84,7 @@ function CopyButton({ code }: { code: string }) {
           : 'bg-white/5 hover:bg-white/7.5 dark:bg-white/2.5 dark:hover:bg-white/5'
       )}
       onClick={() => {
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
         window.navigator.clipboard.writeText(code).then(() => {
           setCopyCount(count => count + 1)
         })
@@ -118,6 +119,7 @@ function CodePanelHeader({ tag, label }: { tag?: string; label?: string }) {
   }
 
   return (
+    // eslint-disable-next-line tailwindcss/no-contradicting-classname
     <div className="flex h-9 items-center gap-2 border-y border-b-white/7.5 border-t-transparent bg-white/2.5 bg-zinc-900 px-4 dark:border-b-white/5 dark:bg-white/1">
       {tag && (
         <div className="dark flex">
@@ -260,7 +262,7 @@ function usePreventLayoutShift() {
 }
 
 const usePreferredLanguageStore = create<{
-  preferredLanguages: Array<string>
+  preferredLanguages: string[]
   addPreferredLanguage: (language: string) => void
 }>()(set => ({
   preferredLanguages: [],
@@ -275,7 +277,7 @@ const usePreferredLanguageStore = create<{
     }))
 }))
 
-function useTabGroupProps(availableLanguages: Array<string>) {
+function useTabGroupProps(availableLanguages: string[]) {
   const { preferredLanguages, addPreferredLanguage } =
     usePreferredLanguageStore()
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -288,6 +290,7 @@ function useTabGroupProps(availableLanguages: Array<string>) {
     setSelectedIndex(newSelectedIndex)
   }
 
+  // eslint-disable-next-line @typescript-eslint/unbound-method
   const { positionRef, preventLayoutShift } = usePreventLayoutShift()
 
   return {

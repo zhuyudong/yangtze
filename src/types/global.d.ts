@@ -1,15 +1,16 @@
-/* eslint-disable vars-on-top */
+ 
 /* eslint-disable no-var */
-/* eslint-disable @typescript-eslint/consistent-type-imports */
+ 
 // Use type safe message keys with `next-intl`
 import { type Role } from '@prisma/client'
-import { PrismaClient } from '@prisma/client/edge'
+import type { PrismaClient } from '@prisma/client/edge'
 import { type SearchOptions } from 'flexsearch'
 import type { DefaultSession } from 'next-auth'
 
 // import en from '../locales/en.json'
 // type Messages = typeof en
 // equivalent to
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
 type Messages = typeof import('../locales/en.json')
 
 // NOTE: 这里使用 declare global {} 来声明全局变量
@@ -27,23 +28,23 @@ declare global {
 declare interface IntlMessages extends Messages {}
 
 declare module '@/mdx/search.mjs' {
-  export type Result = {
+  export interface Result {
     url: string
     title: string
     pageTitle?: string
   }
 
-  export function search(query: string, options?: SearchOptions): Array<Result>
+  export function search(query: string, options?: SearchOptions): Result[]
 }
 
 declare module '@/markdoc/search.mjs' {
-  export type Result = {
+  export interface Result {
     url: string
     title: string
     pageTitle?: string
   }
 
-  export function search(query: string, options?: SearchOptions): Array<Result>
+  export function search(query: string, options?: SearchOptions): Result[]
 }
 
 /**

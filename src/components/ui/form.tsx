@@ -1,3 +1,4 @@
+ 
 import type * as LabelPrimitive from '@radix-ui/react-label'
 import { Slot } from '@radix-ui/react-slot'
 import * as React from 'react'
@@ -9,10 +10,10 @@ import { cn } from '@/lib/utils'
 
 const Form = FormProvider
 
-type FormFieldContextValue<
+interface FormFieldContextValue<
   TFieldValues extends FieldValues = FieldValues,
   TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
-> = {
+> {
   name: TName
 }
 
@@ -33,7 +34,7 @@ const FormField = <
   )
 }
 
-type FormItemContextValue = {
+interface FormItemContextValue {
   id: string
 }
 

@@ -12,7 +12,7 @@ export type WeeklyCategory =
 
 type BooleanValue = 'true' | 'false'
 
-type UseContentsPaginationProps = {
+interface UseContentsPaginationProps {
   currentCategory: WeeklyCategory | null
   pageSize: Record<WeeklyCategory, number>
   pageNumber: Record<WeeklyCategory, number>

@@ -13,12 +13,12 @@ export const AppConfig = {
   localePrefix
 }
 
-export const port = process.env.PORT || 3000
+export const port = process.env.PORT ?? 3000
 export const host = process.env.NEXT_PUBLIC_DEPLOYMENT_URL
   ? process.env.NEXT_PUBLIC_DEPLOYMENT_URL
   : `http://localhost:${port}`
 
-export const defaultLocale = 'zh' as const
+export const defaultLocale = 'zh'
 export const locales = ['en', 'zh'] as const
 
 export const pathnames = {

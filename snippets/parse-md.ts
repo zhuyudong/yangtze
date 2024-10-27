@@ -50,7 +50,7 @@ function formatTitle(title: string) {
   if (title.startsWith('[] ')) {
     title = title.replace('[] ', '')
   }
-  const mc = title.match(/(\[[\u4e00-\u9fa5\sa-zA-Z-_]*\]\s?)\[/)
+  const mc = /(\[[\u4e00-\u9fa5\sa-zA-Z-_]*\]\s?)\[/.exec(title)
   /**
    * e.g.
    * [文章]\s
@@ -139,7 +139,7 @@ const readMdxFile = (filePath: string, category: string) => {
     if (/===(\d+)===/.exec(line)) {
       weekly = Number(/===(\d+)===/.exec(line)?.[1])
     }
-    if (filePath.indexOf('/quotations/') !== -1) {
+    if (filePath.includes('/quotations/')) {
       const match = quotationTitleReg.exec(line)
       if (match) {
         if (title !== '') {
@@ -152,14 +152,14 @@ const readMdxFile = (filePath: string, category: string) => {
           })
           content = ''
         }
-        // eslint-disable-next-line prefer-destructuring
+         
         title = match[0].slice(3) // remove "--\s"
-        if (match?.[1] && match[1].startsWith('http')) {
-          // eslint-disable-next-line prefer-destructuring
+        if (match?.[1]?.startsWith('http')) {
+           
           originHref = match[1]
         }
-        if (match?.[2] && match[2].startsWith('http')) {
-          // eslint-disable-next-line prefer-destructuring
+        if (match?.[2]?.startsWith('http')) {
+           
           originHref = match[2]
         }
         content += `${line.replace(match[0], '')}\n`
@@ -169,8 +169,8 @@ const readMdxFile = (filePath: string, category: string) => {
       }
     } else {
       const match =
-        titleReg.exec(line) ||
-        specialTitleReg.exec(line) ||
+        titleReg.exec(line) ??
+        specialTitleReg.exec(line) ??
         boldTitleReg.exec(line)
       const matchLinkTitle = linkTitleReg.exec(line)
       if (
@@ -190,9 +190,9 @@ const readMdxFile = (filePath: string, category: string) => {
         }
         // [加州大学伯克利分校](http://newsroom.haas.berkeley.edu/how-information-is-like-snacks-money-and-drugs-to-your-brain/)发现，信息跟金钱或食物一样，会刺激多巴胺的分泌。这就解释了，为什么人们会像迷恋美食一样，迷恋玩手机。
         // [加州大学伯克利分校发现，信息跟金钱或食物一样，会刺激多巴胺的分泌。这就解释了，为什么人们会像迷恋美食一样，迷恋玩手机。](http://newsroom.haas.berkeley.edu/how-information-is-like-snacks-money-and-drugs-to-your-brain/)
-        // eslint-disable-next-line prefer-destructuring
+         
         title = `[${matchLinkTitle[0].split('](')[0].slice(1)}${matchLinkTitle?.[3]}](${matchLinkTitle[2]})`
-        // eslint-disable-next-line prefer-destructuring
+         
         originHref = matchLinkTitle[2]
         content += `\n` // `${matchLinkTitle?.[3]}\n`
       } else if (match) {
@@ -206,14 +206,14 @@ const readMdxFile = (filePath: string, category: string) => {
           })
           content = ''
         }
-        // eslint-disable-next-line prefer-destructuring
+         
         title = match[0]
-        if (match?.[1] && match[1].startsWith('http')) {
-          // eslint-disable-next-line prefer-destructuring
+        if (match?.[1]?.startsWith('http')) {
+           
           originHref = match[1]
         }
-        if (match?.[2] && match[2].startsWith('http')) {
-          // eslint-disable-next-line prefer-destructuring
+        if (match?.[2]?.startsWith('http')) {
+           
           originHref = match[2]
         }
         content += `${line.replace(match[0], '')}\n`
@@ -256,7 +256,7 @@ const categories = {
   'tools': 'tool'
 }
 console.log('Start structuring mdx files ...')
-findMdxFiles().then(files => {
+await findMdxFiles().then(files => {
   files.forEach(file => {
     // /src/app/[locale]/(unauth)/weekly-by-category/articles/_page.mdx' -> articles
     const rest = file.split('/')

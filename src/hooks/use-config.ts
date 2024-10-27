@@ -4,7 +4,7 @@ import { atomWithStorage } from 'jotai/utils'
 // import type { Style } from '@/registry/styles'
 // import type { Theme } from '@/registry/themes'
 
-type Config = {
+interface Config {
   style: string // Style['name']
   theme: string // Theme['name']
   radius: number

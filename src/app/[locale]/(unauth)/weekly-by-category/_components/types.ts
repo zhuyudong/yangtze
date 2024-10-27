@@ -1,15 +1,13 @@
 import type { AxiosResponse } from 'axios'
 
-export type UpdatedContents = {
+export interface UpdatedContents {
   favoriteIds: string[]
   likedIds: string[]
   noInterestedIds: string[]
-  contents: {
-    [contentId: string]: {
+  contents: Record<string, {
       favorites: number
       likes: number
       noInteresteds: number
-    }
-  }
+    }>
 }
 export type UpdatedContentsResponse = AxiosResponse<UpdatedContents>

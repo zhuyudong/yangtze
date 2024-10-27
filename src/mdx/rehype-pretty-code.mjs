@@ -1,3 +1,4 @@
+// @ts-nocheck
 import moonlightTheme from '../assets/moonlight-ii.json' with { type: 'json' }
 
 // https://rehype-pretty.pages.dev/

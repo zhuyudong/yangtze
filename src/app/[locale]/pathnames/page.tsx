@@ -1,15 +1,15 @@
-/* eslint-disable react/no-unstable-nested-components */
+ 
 import { useTranslations } from 'next-intl'
-import { unstable_setRequestLocale } from 'next-intl/server'
 
+// import { unstable_setRequestLocale } from 'next-intl/server'
 import { LocaleLayout } from '@/components/locale-layout'
 
-type Props = {
+interface Props {
   params: { locale: string }
 }
 
 export default function PathnamesPage({ params: { locale } }: Props) {
-  unstable_setRequestLocale(locale)
+  // unstable_setRequestLocale(locale)
 
   const t = useTranslations('PathnamesPage')
 

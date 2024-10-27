@@ -20,7 +20,7 @@ export const userRouter = createTRPCRouter({
       })
       return updatedUser
     }),
-  getUser: protectedProcedure.query(async ({ ctx }) => {
+  getUser: protectedProcedure.query(({ ctx }) => {
     const user = ctx.session?.user
     return user
   })

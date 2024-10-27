@@ -8,7 +8,7 @@ import { useMovie } from '@/hooks'
 const Watch = () => {
   const router = useRouter()
   const params = useParams()
-  const { data } = useMovie(params!.movieId as string)
+  const { data } = useMovie(params.movieId as string)
 
   return (
     <div className="h-screen w-screen bg-black">

@@ -8,7 +8,7 @@ import { defaultLocale, host, locales, pathnames } from '@/config'
 import { getPathname } from '@/navigation'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const keys = Object.keys(pathnames) as Array<keyof typeof pathnames>
+  const keys = Object.keys(pathnames) as (keyof typeof pathnames)[]
 
   function getUrl(
     key: keyof typeof pathnames,

@@ -1,5 +1,3 @@
-/* eslint-disable unused-imports/no-unused-vars */
-
 'use client'
 
 import { AnimatePresence, motion, useIsPresent } from 'framer-motion'
@@ -177,7 +175,7 @@ function NavigationGroup({
           {isActiveGroup && (
             <VisibleSectionHighlight
               group={group}
-              pathname={pathname as string}
+              pathname={pathname}
             />
           )}
         </AnimatePresence>
@@ -187,7 +185,7 @@ function NavigationGroup({
         />
         <AnimatePresence initial={false}>
           {isActiveGroup && (
-            <ActivePageMarker group={group} pathname={pathname as string} />
+            <ActivePageMarker group={group} pathname={pathname} />
           )}
         </AnimatePresence>
         <ul role="list" className="border-l border-transparent">

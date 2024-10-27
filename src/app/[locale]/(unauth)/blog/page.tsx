@@ -61,7 +61,6 @@ export default function BlogPage() {
         <div className="m-4 grid cursor-pointer gap-4">
           {posts.map(post => {
             return (
-              // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
               <article
                 key={post.title}
                 className="group flex overflow-hidden rounded-sm border bg-white" // shadow-lg transition duration-300 hover:scale-105

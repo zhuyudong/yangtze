@@ -19,7 +19,7 @@ async function handler(req: NextRequest) {
       await db.content.findMany({
         where: {
           id: {
-            in: currentUser?.favoriteIds || []
+            in: currentUser?.favoriteIds ?? []
           }
         },
         select: {

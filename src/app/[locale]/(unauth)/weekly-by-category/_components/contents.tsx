@@ -1,5 +1,6 @@
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable react-hooks/exhaustive-deps */
+ 
+ 
 
 'use client'
 
@@ -55,8 +56,8 @@ export default function Contents({
 
   const res = useMemo(() => {
     const d = {
-      data: data?.data.data || [],
-      total: data?.data.total || 0,
+      data: data?.data.data ?? [],
+      total: data?.data.total ?? 0,
       prev: data?.data.prev,
       next: data?.data.next
     }
@@ -167,9 +168,9 @@ export default function Contents({
           contentId: id
         })
       }
-      const updatedFavoriteIds = response?.data?.favoriteIds as string[]
+      const updatedFavoriteIds = response?.data?.favoriteIds
 
-      mutateCurrentUser({ ...currentUser!, favoriteIds: updatedFavoriteIds })
+      await mutateCurrentUser({ ...currentUser!, favoriteIds: updatedFavoriteIds })
       mutateContents(_data => {
         _data!.data.data = _data!.data.data.map(i => {
           if (i.id === id) {
@@ -219,8 +220,8 @@ export default function Contents({
           contentId: id
         })
       }
-      const updatedLikeIds = response?.data?.likedIds as string[]
-      mutateCurrentUser({ ...currentUser!, likedIds: updatedLikeIds })
+      const updatedLikeIds = response?.data?.likedIds
+      await mutateCurrentUser({ ...currentUser!, likedIds: updatedLikeIds })
       mutateContents(_data => {
         _data!.data.data = _data!.data.data.map(i => {
           if (i.id === id) {
@@ -270,8 +271,8 @@ export default function Contents({
           contentId: id
         })
       }
-      const updatedNoInterestedIds = response?.data?.noInterestedIds as string[]
-      mutateCurrentUser({
+      const updatedNoInterestedIds = response?.data?.noInterestedIds
+      await mutateCurrentUser({
         ...currentUser!,
         noInterestedIds: updatedNoInterestedIds
       })

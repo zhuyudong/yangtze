@@ -1,6 +1,6 @@
+// @ts-nocheck
 import fs from 'fs'
 import path from 'path'
-
 import { bundledLanguages, bundledThemes, getHighlighter } from 'shiki'
 import { visit } from 'unist-util-visit'
 // import {
@@ -89,10 +89,11 @@ export function rehypeShiki() {
          * fileMatch[5] tsx
          */
         const fileMatch =
+          // eslint-disable-next-line no-useless-escape
           /@import\(('|")([a-zA-Z\d-_\[\]\(\).]*\/([a-zA-Z\d-_\[\]\(\).]*\/)*([a-zA-Z\d-_\[\]\(\).]*)\.(tsx|ts|js|jsx|py|sh|sql|html|css|scss|sass|less|json|go))('|")\)/.exec(
             textNode.value
           )
-        if (fileMatch?.[2] && fileMatch[2].startsWith('src/')) {
+        if (fileMatch?.[2]?.startsWith('src/')) {
           const codePath = path.resolve(process.cwd(), `${fileMatch[2]}`)
           const actualCode = fs.readFileSync(codePath).toString()
           node.properties.code = actualCode

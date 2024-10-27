@@ -79,6 +79,7 @@ export default function WallpaperLightbox() {
           : null
       )
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [index]
   )
 
@@ -94,7 +95,6 @@ export default function WallpaperLightbox() {
         // columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
       >
         {images.map((i, ix) => (
-          // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
           <img
             alt=""
             key={i.title}

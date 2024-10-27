@@ -21,9 +21,9 @@ export interface Section {
 }
 
 interface SectionState {
-  sections: Array<Section>
-  visibleSections: Array<string>
-  setVisibleSections: (visibleSections: Array<string>) => void
+  sections: Section[]
+  visibleSections: string[]
+  setVisibleSections: (visibleSections: string[]) => void
   registerHeading: ({
     id,
     ref,
@@ -35,7 +35,7 @@ interface SectionState {
   }) => void
 }
 
-function createSectionStore(sections: Array<Section>) {
+function createSectionStore(sections: Section[]) {
   return createStore<SectionState>()(set => ({
     sections,
     visibleSections: [],
@@ -130,7 +130,7 @@ export function SectionProvider({
   sections,
   children
 }: {
-  sections: Array<Section>
+  sections: Section[]
   children: ReactNode
 }) {
   const [sectionStore] = useState(() => createSectionStore(sections))

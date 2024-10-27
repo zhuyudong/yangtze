@@ -1,5 +1,6 @@
 import { type PluginUtils } from 'tailwindcss/types/config'
 
+// eslint-disable-next-line @typescript-eslint/unbound-method
 export default function typographyStyles({ theme }: PluginUtils) {
   return {
     DEFAULT: {

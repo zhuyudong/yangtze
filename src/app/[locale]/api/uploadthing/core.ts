@@ -16,12 +16,13 @@ export const ourFileRouter = {
       // This code runs on your server before upload
 
       // If you throw, the user will not be able to upload
+      // eslint-disable-next-line @typescript-eslint/only-throw-error
       if (!session) throw new UploadThingError('Unauthorized')
 
       // Whatever is returned here is accessible in onUploadComplete as `metadata`
       return { userId: session?.user.id }
     })
-    .onUploadComplete(async ({ metadata, file }) => {
+    .onUploadComplete(({ metadata, file }) => {
       // This code RUNS ON YOUR SERVER after upload
       console.log('Upload complete for userId:', metadata.userId)
 

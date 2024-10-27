@@ -12,7 +12,7 @@ export const metadata = {
 
 export const dynamic = 'force-dynamic'
 
-export default async function BlogPage() {
+export default function BlogPage() {
   // const posts = allPosts
   //   .filter(post => post.published)
   //   .sort((a, b) => {

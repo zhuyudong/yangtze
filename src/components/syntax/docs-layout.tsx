@@ -14,7 +14,7 @@ export function DocsLayout({
 }: {
   children: ReactNode
   frontmatter: { title?: string }
-  nodes: Array<Node>
+  nodes: Node[]
 }) {
   const tableOfContents = collectSections(nodes)
 

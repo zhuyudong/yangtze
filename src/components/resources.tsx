@@ -191,7 +191,7 @@ export function Resources() {
   const t = useTranslations('Resources')
   const { randomMovieQuoteIndex, randomPoetryIndex } = useRandomIndex()
 
-  const personal: Array<IResource> = [
+  const personal: IResource[] = [
     {
       href: '/blog',
       name: t('blog'),
@@ -222,7 +222,7 @@ export function Resources() {
     }
   ]
 
-  const resources: Array<IResource> = [
+  const resources: IResource[] = [
     {
       href: '/weekly-by-category/articles',
       name: t('articles'),
@@ -337,7 +337,7 @@ export function Resources() {
     }
   ]
 
-  const leisureStation: Array<IResource> = [
+  const leisureStation: IResource[] = [
     {
       href: '/wallpaper',
       name: t('wallpaper'),
@@ -404,13 +404,12 @@ export function Resources() {
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-1 xl:grid-cols-1">
         {leisureStation.map(i => {
           if (i.href === '/poetry') {
-            // eslint-disable-next-line prefer-destructuring
+             
             i.description = poetry[randomPoetryIndex]
           }
           if (i.name === '电影' || i.name === 'Movies') {
-            i.description = movieQuotes[randomMovieQuoteIndex].match(
-              /^\d+、\s?(.*)/
-            )?.[1] as string // Math.floor(Math.random() * movieQuotes.length)
+            // eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
+            i.description = (/^\d+、\s?(.*)/.exec(movieQuotes[randomMovieQuoteIndex]))?.[1]! // Math.floor(Math.random() * movieQuotes.length)
           }
           return <Station key={i.href} resource={i} />
         })}

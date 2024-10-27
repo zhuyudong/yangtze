@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/naming-convention */
+ 
 import type { Prisma } from '@prisma/client'
 import { NextResponse } from 'next/server'
 
@@ -7,7 +7,7 @@ import { db } from '@/server/db'
 
 async function handler(
   req: Request,
-  // eslint-disable-next-line unused-imports/no-unused-vars
+   
   context: { params: { locale: string } }
 ) {
   try {
@@ -22,7 +22,7 @@ async function handler(
     // '/api/contents?category=article&skip=1&take=20&onlyFavorited=true&onlyLiked=true&hiddenNoInterested=true'
     const match =
       /\?category=([a-zA-Z]+[\w]+)(&page_number=(\d+))?(&page_size=(\d+))?(&onlyFavorited=(true|false))?(&onlyLiked=(true|false))?(&hiddenNoInterested=(true|false))?/.exec(
-        req.url!
+        req.url
       )
     const category = match?.[1] ?? undefined
     const page_number = match?.[3] ? parseInt(match[3], 10) : 1

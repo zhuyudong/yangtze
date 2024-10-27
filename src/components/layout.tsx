@@ -17,7 +17,7 @@ export function Layout({
   allSections
 }: {
   children: ReactNode
-  allSections: Record<string, Array<Section>>
+  allSections: Record<string, Section[]>
 }) {
   const pathname = usePathname()
 
@@ -42,7 +42,7 @@ export function Layout({
           <main
             className={cn(
               'flex-auto',
-              pathname.match(/\/blog/) && 'flex justify-center'
+              (/\/blog/.exec(pathname)) && 'flex justify-center'
             )}
           >
             {children}
