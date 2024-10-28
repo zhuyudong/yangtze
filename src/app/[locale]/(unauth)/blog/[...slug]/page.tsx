@@ -21,7 +21,6 @@ interface PostPageProps {
   }
 }
 
- 
 const posts = [
   {
     title: 'next-auth 实践',
@@ -49,7 +48,6 @@ const posts = [
   }
 ]
 
- 
 export default function PostPage({ params }: PostPageProps) {
   const slug = params.slug[0]
   const post = posts.find(post => post.slug === slug)

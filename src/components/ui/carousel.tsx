@@ -1,4 +1,3 @@
- 
 'use client'
 
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons'

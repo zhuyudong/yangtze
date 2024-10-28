@@ -173,10 +173,7 @@ function NavigationGroup({
       <div className="relative mt-3 pl-2">
         <AnimatePresence initial={!isInsideMobileNavigation}>
           {isActiveGroup && (
-            <VisibleSectionHighlight
-              group={group}
-              pathname={pathname}
-            />
+            <VisibleSectionHighlight group={group} pathname={pathname} />
           )}
         </AnimatePresence>
         <motion.div

@@ -42,7 +42,7 @@ export function Layout({
           <main
             className={cn(
               'flex-auto',
-              (/\/blog/.exec(pathname)) && 'flex justify-center'
+              /\/blog/.exec(pathname) && 'flex justify-center'
             )}
           >
             {children}

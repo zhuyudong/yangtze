@@ -7,7 +7,7 @@ import { fixupPluginRules } from '@eslint/compat'
 import { FlatCompat } from '@eslint/eslintrc'
 import js from '@eslint/js'
 import markdownPlugin from '@eslint/markdown'
-import prettierConfigRecommended from 'eslint-config-prettier'
+// import prettierConfig from 'eslint-config-prettier'
 import htmlPlugin from 'eslint-plugin-html'
 import jsdocPLugin from 'eslint-plugin-jsdoc'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
@@ -17,12 +17,12 @@ import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 // import reactRecommended from 'eslint-plugin-react/configs/recommended.js'
 import mochaPlugin from 'eslint-plugin-mocha'
 import playwrightPlugin from 'eslint-plugin-playwright'
-// import prettierPlugin from 'eslint-plugin-prettier/recommended'
+import prettierPlugin from 'eslint-plugin-prettier/recommended'
 import reactPlugin from 'eslint-plugin-react'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 import reactRefreshPlugin from 'eslint-plugin-react-refresh'
 import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort'
-import storybook from 'eslint-plugin-storybook'
+import storybookPlugin from 'eslint-plugin-storybook'
 import tailwindPlugin from 'eslint-plugin-tailwindcss'
 import unusedImportsPlugin from 'eslint-plugin-unused-imports'
 import globals from 'globals'
@@ -40,6 +40,7 @@ const compat = new FlatCompat({
 export default tseslint.config(
   {
     ignores: [
+      'venv',
       '**/dist/',
       '.next/*',
       'node_modules',
@@ -50,18 +51,19 @@ export default tseslint.config(
   },
   // ...compat.extends('next/core-web-vitals'),
   js.configs.recommended,
-  // ...tseslint.configs.recommended,
+  // ...compat.plugins('lodash'),
   // https://typescript-eslint.io/getting-started/typed-linting/
+  // ...tseslint.configs.recommended,
   // ...tseslint.configs.strictTypeChecked,
-  ...tseslint.configs.recommendedTypeChecked,
   // ...tseslint.configs.stylisticTypeChecked,
+  ...tseslint.configs.recommendedTypeChecked,
   // reactRecommended,
   // reactJsxRuntime,
   // prettierPlugin,
-  ...storybook.configs['flat/recommended'],
+  ...storybookPlugin.configs['flat/recommended'],
   ...tailwindPlugin.configs['flat/recommended'],
-  prettierConfigRecommended,
-  // ...compat.plugins('lodash'),
+  // NOTE: 建议使用 eslint-plugin-prettier 而不是 eslint-config-prettier
+  prettierPlugin,
   {
     files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
     languageOptions: {
@@ -113,6 +115,7 @@ export default tseslint.config(
       //   }
       // ],
       '@typescript-eslint/ban-ts-comment': 'off',
+      '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-empty-object-type': 'off',
       '@typescript-eslint/no-misused-promises': 'off',
@@ -121,7 +124,7 @@ export default tseslint.config(
       '@typescript-eslint/no-unsafe-argument': 'off',
       '@typescript-eslint/no-unsafe-member-access': 'off',
       '@typescript-eslint/no-unsafe-return': 'off',
-      '@typescript-eslint/consistent-type-imports': 'warn',
+      '@typescript-eslint/no-redundant-type-constituents': 'off',
       // '@typescript-eslint/await-thenable': 'off',
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': 'off',

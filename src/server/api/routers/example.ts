@@ -9,7 +9,6 @@ import {
 export const exampleRouter = createTRPCRouter({
   hello: publicProcedure
     .input(z.object({ text: z.string() }))
-     
     .query(({ input }) => {
       // Throw an unhandled error unconditionally
       throw new Error('Simulated unhandled error in hello route')

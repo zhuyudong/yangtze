@@ -9,7 +9,6 @@ interface FrameworkDocsProps extends HTMLAttributes<HTMLDivElement> {
   data: string
 }
 
- 
 export function FrameworkDocs({ ...props }: FrameworkDocsProps) {
   // const frameworkDoc = allPosts.find(
   //   doc => doc.slug === `/docs/installation/${props.data}`

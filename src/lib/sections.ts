@@ -62,10 +62,7 @@ export type Section = H2Node['attributes'] & {
   children: Subsection[]
 }
 
-export function collectSections(
-  nodes: Node[],
-  slugify = slugifyWithCounter()
-) {
+export function collectSections(nodes: Node[], slugify = slugifyWithCounter()) {
   const sections: Section[] = []
 
   for (const node of nodes) {

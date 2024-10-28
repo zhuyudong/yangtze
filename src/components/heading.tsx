@@ -1,5 +1,3 @@
- 
-
 'use client'
 
 import { useInView } from 'framer-motion'
@@ -46,7 +44,6 @@ function Eyebrow({ tag, label }: { tag?: string; label?: string }) {
   )
 }
 
- 
 function Anchor({
   id,
   inView,

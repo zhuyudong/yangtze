@@ -1,4 +1,4 @@
- 'use client'
+'use client'
 
 import type { DropdownMenuTriggerProps } from '@radix-ui/react-dropdown-menu'
 import { CheckIcon, ClipboardIcon } from 'lucide-react'

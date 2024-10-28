@@ -1,4 +1,3 @@
- 
 import { getHighlighter } from '@shikijs/compat' // loadTheme
 import {
   defineDocumentType,
@@ -14,7 +13,6 @@ import { codeImport } from 'remark-code-import'
 import { bundledLanguages, bundledThemes } from 'shiki'
 import { visit } from 'unist-util-visit'
 
- 
 const LinksProperties = defineNestedType(() => ({
   name: 'LinksProperties',
   fields: {

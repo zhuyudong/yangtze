@@ -1,6 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
- 
- 
 
 'use client'
 
@@ -170,7 +168,10 @@ export default function Contents({
       }
       const updatedFavoriteIds = response?.data?.favoriteIds
 
-      await mutateCurrentUser({ ...currentUser!, favoriteIds: updatedFavoriteIds })
+      await mutateCurrentUser({
+        ...currentUser!,
+        favoriteIds: updatedFavoriteIds
+      })
       mutateContents(_data => {
         _data!.data.data = _data!.data.data.map(i => {
           if (i.id === id) {

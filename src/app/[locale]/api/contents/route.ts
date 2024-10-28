@@ -1,4 +1,3 @@
- 
 import type { Prisma } from '@prisma/client'
 import { NextResponse } from 'next/server'
 
@@ -7,7 +6,7 @@ import { db } from '@/server/db'
 
 async function handler(
   req: Request,
-   
+
   context: { params: { locale: string } }
 ) {
   try {

@@ -404,12 +404,13 @@ export function Resources() {
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-1 xl:grid-cols-1">
         {leisureStation.map(i => {
           if (i.href === '/poetry') {
-             
             i.description = poetry[randomPoetryIndex]
           }
           if (i.name === '电影' || i.name === 'Movies') {
             // eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
-            i.description = (/^\d+、\s?(.*)/.exec(movieQuotes[randomMovieQuoteIndex]))?.[1]! // Math.floor(Math.random() * movieQuotes.length)
+            i.description = /^\d+、\s?(.*)/.exec(
+              movieQuotes[randomMovieQuoteIndex]
+            )?.[1]! // Math.floor(Math.random() * movieQuotes.length)
           }
           return <Station key={i.href} resource={i} />
         })}

@@ -14,10 +14,8 @@ interface UserTableContextProps {
 
 const UserTableContext = createContext<UserTableContextProps>({
   enableAdvancedFilter: false,
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
   setEnableAdvancedFilter: () => {},
   showFloatingBar: false,
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
   setShowFloatingBar: () => {}
 })
 

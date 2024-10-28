@@ -1,5 +1,3 @@
- 
- 
 'use client'
 
 import { Cross2Icon } from '@radix-ui/react-icons'

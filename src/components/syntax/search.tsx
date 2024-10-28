@@ -1,5 +1,3 @@
- 
-
 'use client'
 
 import {
@@ -166,7 +164,7 @@ function SearchResult({
   query
 }: {
   result: Result
-    autocomplete: Autocomplete
+  autocomplete: Autocomplete
   // @ts-ignore
   collection: AutocompleteCollection<Result>
   query: string
@@ -230,7 +228,7 @@ function SearchResults({
   collection
 }: {
   autocomplete: Autocomplete
-    query: string
+  query: string
   // @ts-ignore
   collection: AutocompleteCollection<Result>
 }) {

@@ -70,7 +70,6 @@ interface PostPageProps {
 //   }))
 // }
 
- 
 export default function PostPage({ params }: PostPageProps) {
   // const t = useTranslations('Blog')
   // const post = await getPostFromParams(params)

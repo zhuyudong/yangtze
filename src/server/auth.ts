@@ -1,6 +1,3 @@
- 
- 
-
 import { PrismaAdapter } from '@next-auth/prisma-adapter'
 import { compare } from 'bcrypt'
 import type { AuthOptions } from 'next-auth'

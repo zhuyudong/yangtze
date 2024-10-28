@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
- 
+
 import headlessuiPlugin from '@headlessui/tailwindcss'
 import typographyPlugin from '@tailwindcss/typography'
 import type { Config } from 'tailwindcss'

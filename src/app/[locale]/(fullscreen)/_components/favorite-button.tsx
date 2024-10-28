@@ -9,7 +9,6 @@ interface FavoriteButtonProps {
   movieId: string
 }
 
- 
 export const FavoriteButton: FC<FavoriteButtonProps> = ({ movieId }) => {
   const { mutate: mutateFavorites } = useFavorites()
 

@@ -152,14 +152,12 @@ const readMdxFile = (filePath: string, category: string) => {
           })
           content = ''
         }
-         
+
         title = match[0].slice(3) // remove "--\s"
         if (match?.[1]?.startsWith('http')) {
-           
           originHref = match[1]
         }
         if (match?.[2]?.startsWith('http')) {
-           
           originHref = match[2]
         }
         content += `${line.replace(match[0], '')}\n`
@@ -190,9 +188,9 @@ const readMdxFile = (filePath: string, category: string) => {
         }
         // [加州大学伯克利分校](http://newsroom.haas.berkeley.edu/how-information-is-like-snacks-money-and-drugs-to-your-brain/)发现，信息跟金钱或食物一样，会刺激多巴胺的分泌。这就解释了，为什么人们会像迷恋美食一样，迷恋玩手机。
         // [加州大学伯克利分校发现，信息跟金钱或食物一样，会刺激多巴胺的分泌。这就解释了，为什么人们会像迷恋美食一样，迷恋玩手机。](http://newsroom.haas.berkeley.edu/how-information-is-like-snacks-money-and-drugs-to-your-brain/)
-         
+
         title = `[${matchLinkTitle[0].split('](')[0].slice(1)}${matchLinkTitle?.[3]}](${matchLinkTitle[2]})`
-         
+
         originHref = matchLinkTitle[2]
         content += `\n` // `${matchLinkTitle?.[3]}\n`
       } else if (match) {
@@ -206,14 +204,12 @@ const readMdxFile = (filePath: string, category: string) => {
           })
           content = ''
         }
-         
+
         title = match[0]
         if (match?.[1]?.startsWith('http')) {
-           
           originHref = match[1]
         }
         if (match?.[2]?.startsWith('http')) {
-           
           originHref = match[2]
         }
         content += `${line.replace(match[0], '')}\n`

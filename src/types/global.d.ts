@@ -1,6 +1,5 @@
- 
 /* eslint-disable no-var */
- 
+
 // Use type safe message keys with `next-intl`
 import { type Role } from '@prisma/client'
 import type { PrismaClient } from '@prisma/client/edge'

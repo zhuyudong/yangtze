@@ -1,7 +1,5 @@
 'use client'
 
- 
-
 import type {
   ButtonHTMLAttributes,
   ChangeEventHandler,
@@ -59,7 +57,7 @@ import {
   // useTransition
 } from 'react'
 // import type \{[A-Z,\n\s]+\} from 'react'
- 
+
 export const useIsomorphicLayoutEffect =
   typeof window === 'undefined' ? useEffect : useLayoutEffect
 
@@ -110,7 +108,6 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement>
 
 export function Button({ children, type = 'button', ...rest }: Props) {
   return (
-     
     <button {...rest} type={type}>
       {children}
     </button>
@@ -123,7 +120,6 @@ const Card = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
 Card.displayName = 'Card'
 
 export function LocaleSwitcher() {
-   
   const handleChange: ChangeEventHandler<HTMLSelectElement> = event => {
     // event.target.value
   }
@@ -144,7 +140,6 @@ const RootLayoutContext = createContext<{
 } | null>(null)
 
 export function Header() {
-   
   const { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
 
   return null
@@ -236,7 +231,6 @@ export function Feedback() {
 }
 
 export function App2() {
-   
   const handleChange: ChangeEventHandler<HTMLSelectElement> = event => {
     // event.target.value
   }

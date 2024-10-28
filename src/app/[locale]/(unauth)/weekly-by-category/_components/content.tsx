@@ -46,7 +46,7 @@ export const Content = ({
   const t = useMemo(() => {
     return title.startsWith('**') && title.endsWith('**')
       ? title.slice(2, -2)
-      : (r.exec(title))
+      : r.exec(title)
         ? `${title?.split('](')?.[0]?.slice(1)}${title.replace(r, '')}`
         : title // title?.split('](')?.[0]?.slice(1)
   }, [title])

@@ -1,4 +1,3 @@
- 
 'use client'
 
 // import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
@@ -62,9 +61,7 @@ function Calendar({
       }}
       components={
         {
-           
           // IconLeft: ({ ...props }) => <ChevronLeftIcon className="size-4" />,
-           
           // IconRight: ({ ...props }) => <ChevronRightIcon className="size-4" />
         }
       }

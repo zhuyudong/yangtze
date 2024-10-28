@@ -46,10 +46,7 @@ export const useContents = (params?: Parameters) => {
   const { data, error, loading, run, mutate } = useRequest(
     (_params: Parameters) => {
       return findContents({
-        category:
-          _params?.category ??
-          params?.category ??
-          (currentCategory!),
+        category: _params?.category ?? params?.category ?? currentCategory!,
         page_number:
           _params?.page_number ??
           params?.page_number ??

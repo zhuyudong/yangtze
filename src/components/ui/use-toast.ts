@@ -62,7 +62,7 @@ const addToRemoveQueue = (toastId: string) => {
 
   const timeout = setTimeout(() => {
     toastTimeouts.delete(toastId)
-     
+
     dispatch({
       type: 'REMOVE_TOAST',
       toastId
