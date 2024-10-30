@@ -172,8 +172,6 @@ export function useDataTable<TData, TValue>({
         scroll: false
       }
     )
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageIndex, pageSize])
 
   // Handle server-side sorting
@@ -193,8 +191,6 @@ export function useDataTable<TData, TValue>({
           : null
       })}`
     )
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sorting])
 
   // Handle server-side filtering
@@ -262,12 +258,9 @@ export function useDataTable<TData, TValue>({
 
     // After cumulating all the changes, push new params
     router.push(`${pathname}?${createQueryString(newParamsObject)}`)
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     JSON.stringify(debouncedSearchableColumnFilters),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     JSON.stringify(filterableColumnFilters)
   ])
 

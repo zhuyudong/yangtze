@@ -84,7 +84,6 @@ function CopyButton({ code }: { code: string }) {
           : 'bg-white/5 hover:bg-white/7.5 dark:bg-white/2.5 dark:hover:bg-white/5'
       )}
       onClick={() => {
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
         window.navigator.clipboard.writeText(code).then(() => {
           setCopyCount(count => count + 1)
         })
@@ -290,7 +289,6 @@ function useTabGroupProps(availableLanguages: string[]) {
     setSelectedIndex(newSelectedIndex)
   }
 
-  // eslint-disable-next-line @typescript-eslint/unbound-method
   const { positionRef, preventLayoutShift } = usePreventLayoutShift()
 
   return {

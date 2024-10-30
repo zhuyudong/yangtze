@@ -180,7 +180,6 @@ export function FileUploader(props: FileUploaderProps) {
         }
       })
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const isDisabled = disabled || (files?.length ?? 0) >= maxFiles

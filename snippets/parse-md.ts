@@ -252,7 +252,8 @@ const categories = {
   'tools': 'tool'
 }
 console.log('Start structuring mdx files ...')
-await findMdxFiles().then(files => {
+
+findMdxFiles().then(files => {
   files.forEach(file => {
     // /src/app/[locale]/(unauth)/weekly-by-category/articles/_page.mdx' -> articles
     const rest = file.split('/')

@@ -79,7 +79,7 @@ export default function WallpaperLightbox() {
           : null
       )
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     [index]
   )
 

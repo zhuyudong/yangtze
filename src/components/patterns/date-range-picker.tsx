@@ -111,8 +111,6 @@ export function DateRangePicker({
     router.push(`${pathname}?${newSearchParams.toString()}`, {
       scroll: false
     })
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [date?.from, date?.to])
 
   return (

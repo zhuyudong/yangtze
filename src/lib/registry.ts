@@ -3,7 +3,6 @@ import { lazy } from 'react'
 export const styles: { name: string; label: string }[] = []
 export type Style = (typeof styles)[number]
 
-// e.g
 export const Index: Record<string, any> = {
   default: {
     alert: {

@@ -1,8 +1,9 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-
 import headlessuiPlugin from '@headlessui/tailwindcss'
+import forms from '@tailwindcss/forms'
 import typographyPlugin from '@tailwindcss/typography'
 import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
+import animate from 'tailwindcss-animate'
 
 import typographyStyles from './typography'
 
@@ -11,16 +12,12 @@ const config = {
   content: ['./content/**/*.{md,mdx}', './src/**/*.{ts,tsx,md,mdx}'],
   prefix: '',
   theme: {
-    // container: {
-    //   center: true,
-    //   padding: '2rem',
-    //   screens: {
-    //     '2xl': '1400px'
-    //   }
-    // },
-    fontFamily: {
-      sans: ['JetBrainsMonoNL', 'sans-serif'],
-      mono: ['JetBrainsMonoNL', 'monospace']
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px'
+      }
     },
     fontSize: {
       '2xs': ['0.75rem', { lineHeight: '1.25rem' }],
@@ -40,6 +37,11 @@ const config = {
     },
     typography: typographyStyles,
     extend: {
+      fontFamily: {
+        //'JetBrainsMonoNL'
+        sans: ['var(--font-geist-sans)', ...fontFamily.sans]
+        // mono: ["var(--font-mono)", ...fontFamily.mono],
+      },
       margin: {
         '-32': '-32px'
       },
@@ -106,17 +108,22 @@ const config = {
         'accordion-up': {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' }
+        },
+        'caret-blink': {
+          '0%,70%,100%': { opacity: '1' },
+          '20%,50%': { opacity: '0' }
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out'
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        'caret-blink': 'caret-blink 1.25s ease-out infinite'
       }
     }
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('tailwindcss-animate'),
+    forms, // require('@tailwindcss/forms'),
+    animate, // require('tailwindcss-animate'),
     typographyPlugin,
     headlessuiPlugin
   ],

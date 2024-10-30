@@ -228,6 +228,7 @@
     "eslint": "^9.13.0",
     "eslint-config-next": "^15.0.1",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-check-file": "^2.8.0",
     "eslint-plugin-cypress": "^4.0.0",
     "eslint-plugin-html": "^8.1.2",
     "eslint-plugin-jest": "^28.8.3",
@@ -288,15 +289,15 @@
     "unist-builder": "^4.0.0",
     "unist-util-visit": "^5.0.0"
   },
-  "overrides": {
-    "eslint": "$eslint"
-  },
   "packageManager": "pnpm@9.12.2",
   "engines": {
     "node": "20.x"
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "overrides": {
+    "eslint": "$eslint"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"

@@ -30,7 +30,7 @@ export default function Wallpaper() {
           : null
       )
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     [index]
   )
 

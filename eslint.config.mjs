@@ -7,7 +7,6 @@ import { fixupPluginRules } from '@eslint/compat'
 import { FlatCompat } from '@eslint/eslintrc'
 import js from '@eslint/js'
 import markdownPlugin from '@eslint/markdown'
-// import prettierConfig from 'eslint-config-prettier'
 import htmlPlugin from 'eslint-plugin-html'
 import jsdocPLugin from 'eslint-plugin-jsdoc'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
@@ -15,6 +14,7 @@ import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 // import reactJsxRuntime from 'eslint-plugin-react/configs/jsx-runtime.js'
 // NOTE: ...reactPlugin.configs.recommended.rules
 // import reactRecommended from 'eslint-plugin-react/configs/recommended.js'
+// import checkFilePlugin from 'eslint-plugin-check-file'
 import mochaPlugin from 'eslint-plugin-mocha'
 import playwrightPlugin from 'eslint-plugin-playwright'
 import prettierPlugin from 'eslint-plugin-prettier/recommended'
@@ -41,12 +41,19 @@ export default tseslint.config(
   {
     ignores: [
       'venv',
+      'out',
       '**/dist/',
       '.next/*',
-      'node_modules',
+      '.history',
+      '.swc',
       '.pytest_cache',
+      'coverage',
+      'node_modules',
+      'storybook-static',
+      'test-results',
       '**/*.py',
-      'README.md'
+      'README.md',
+      'src/types/schema.d.ts'
     ]
   },
   // ...compat.extends('next/core-web-vitals'),
@@ -59,13 +66,12 @@ export default tseslint.config(
   ...tseslint.configs.recommendedTypeChecked,
   // reactRecommended,
   // reactJsxRuntime,
-  // prettierPlugin,
   ...storybookPlugin.configs['flat/recommended'],
   ...tailwindPlugin.configs['flat/recommended'],
   // NOTE: 建议使用 eslint-plugin-prettier 而不是 eslint-config-prettier
   prettierPlugin,
   {
-    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mts,mtsx}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -92,6 +98,7 @@ export default tseslint.config(
       'jsdoc': jsdocPLugin,
       'react': reactPlugin,
       'jsx-a11y': jsxA11yPlugin,
+      // 'check-file': checkFilePlugin,
       'react-hooks': fixupPluginRules(reactHooksPlugin),
       'react-refresh': reactRefreshPlugin,
       'unused-imports': unusedImportsPlugin,
@@ -114,20 +121,27 @@ export default tseslint.config(
       //     argsIgnorePattern: '^_'
       //   }
       // ],
+      'no-constant-binary-expression': 'off',
+      '@typescript-eslint/await-thenable': 'off',
       '@typescript-eslint/ban-ts-comment': 'off',
       '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-empty-object-type': 'off',
+      '@typescript-eslint/no-floating-promises': 'off',
       '@typescript-eslint/no-misused-promises': 'off',
       '@typescript-eslint/no-unsafe-call': 'off',
       '@typescript-eslint/no-unsafe-assignment': 'off',
       '@typescript-eslint/no-unsafe-argument': 'off',
       '@typescript-eslint/no-unsafe-member-access': 'off',
       '@typescript-eslint/no-unsafe-return': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off',
       '@typescript-eslint/no-redundant-type-constituents': 'off',
-      // '@typescript-eslint/await-thenable': 'off',
+      '@typescript-eslint/require-await': 'off',
+      '@typescript-eslint/restrict-template-expressions': 'off',
+      '@typescript-eslint/unbound-method': 'off',
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': 'off',
+      'react-hooks/exhaustive-deps': 'off',
       // 'react-refresh/only-export-components': [
       //   'warn',
       //   {
@@ -139,6 +153,35 @@ export default tseslint.config(
       'tailwindcss/no-custom-classname': 'off',
       'simple-import-sort/imports': 'warn',
       'simple-import-sort/exports': 'warn'
+      // 'check-file/no-index': 'off',
+      // 'check-file/filename-blocklist': [
+      //   'error',
+      //   {
+      //     '**/*.model.ts': '*.models.ts',
+      //     '**/*.util.ts': '*.utils.ts'
+      //   }
+      // ],
+      // 'check-file/folder-match-with-fex': [
+      //   'error',
+      //   {
+      //     '*.test.{js,jsx,ts,tsx}': '**/__tests__/',
+      //     '*.styled.{jsx,tsx}': '**/pages/'
+      //   }
+      // ],
+      // 'check-file/filename-naming-convention': [
+      //   'error',
+      //   {
+      //     '**/*.{jsx,tsx}': 'CAMEL_CASE',
+      //     '**/*.{js,ts}': 'KEBAB_CASE'
+      //   }
+      // ],
+      // 'check-file/folder-naming-convention': [
+      //   'error',
+      //   {
+      //     'src/**/': 'CAMEL_CASE',
+      //     'mocks/*/': 'KEBAB_CASE'
+      //   }
+      // ]
     }
   },
   ...[
