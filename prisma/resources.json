@@ -1,7 +1,28 @@
 [
   {
+    "title": "[地震地图](https://seismic-explorer.concord.org/)",
+    "content": "\n\n\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024102504.webp)\n\n这个网站是地震地图，标识出了1980年后大于5.2级的地震（共10万多次），可以清晰地看到地震带，也可以查看某个地区发生过的地震。\n\n",
+    "category": "resource",
+    "originHref": "https://seismic-explorer.concord.org/",
+    "weekly": 323
+  },
+  {
+    "title": "[自己动手写 Git（中译版）](https://wyag-zh.hanyujie.xyz/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024103005.webp)\n\n本教程使用 Python 从头实现简化版 Git，帮助读者理解 Git 的核心原理。\n\n[Kill the Newsletter!](https://kill-the-newsletter.com/)\n\n![](https://cdn.beekka.com/blogimg/asset/202408/bg2024082603.webp)\n\n这个免费服务可以将邮件列表，转为 RSS Feed。\n\n",
+    "category": "resource",
+    "originHref": "https://wyag-zh.hanyujie.xyz/",
+    "weekly": 323
+  },
+  {
+    "title": "[了解电池](https://batteryuniversity.com/articles)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202309/bg2023092408.webp)\n\n一本免费的英文书籍，向普通读者介绍电池的基本知识。\n\n\n\n\n",
+    "category": "resource",
+    "originHref": "https://batteryuniversity.com/articles",
+    "weekly": 322
+  },
+  {
     "title": "[crt.sh 证书查询](https://crt.sh/)",
-    "content": "\n\n\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024091305.webp)\n\n这个网站可以查询颁发给某个域名（含二级域名）的所有加密证书。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024091305.webp)\n\n这个网站可以查询颁发给某个域名（含二级域名）的所有加密证书。\n\n",
     "category": "resource",
     "originHref": "https://crt.sh/",
     "weekly": 322

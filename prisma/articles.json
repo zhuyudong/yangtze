@@ -1,7 +1,56 @@
 [
   {
+    "title": "[OpenAI 如何发送数据（英文）](https://til.simonwillison.net/llms/streaming-llm-apis)",
+    "content": "\n\n\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024092301.webp)\n\nOpenAI 的 AI 使用“服务器发送事件”（sse），向浏览器主动发送数据，本文演示它的数据格式。\n\n",
+    "category": "article",
+    "originHref": "https://til.simonwillison.net/llms/streaming-llm-apis",
+    "weekly": 323
+  },
+  {
+    "title": "[谷歌的三次面试记录（中文）](https://justyy.com/archives/66293)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024103001.webp)\n\n作者记录了在2016年、2020年、2024年三次面试谷歌软件工程师的经过。\n\n",
+    "category": "article",
+    "originHref": "https://justyy.com/archives/66293",
+    "weekly": 323
+  },
+  {
+    "title": "[画布与文档（英文）](https://kaiwenwang.com/writing/canvases-versus-documents)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024102904.webp)\n\n本文认为，网页设计已经从文档演变成画布，更有设计感。他给出了很多例子，可以当作首页设计的参考。\n\n",
+    "category": "article",
+    "originHref": "https://kaiwenwang.com/writing/canvases-versus-documents",
+    "weekly": 323
+  },
+  {
+    "title": "[纯 Web 视频剪辑（中文）](https://hughfenghen.github.io/posts/2024/10/28/webav-video-editor/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024103007.webp)\n\n本文介绍使用 WebCodecs API，构建一个基于网页的视频剪辑产品的原理。\n\n",
+    "category": "article",
+    "originHref": "https://hughfenghen.github.io/posts/2024/10/28/webav-video-editor/",
+    "weekly": 323
+  },
+  {
+    "title": "[BGP 协议简介（英文）](https://quantum5.ca/2023/07/14/introduction-to-bgp-from-operator-of-small-as/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024102503.webp)\n\nBGP（边界网关协议）是互联网各个子网之间的路由协议，本文是一篇简单介绍。虽然写得不太清楚，但可以看看。\n\n",
+    "category": "article",
+    "originHref": "https://quantum5.ca/2023/07/14/introduction-to-bgp-from-operator-of-small-as/",
+    "weekly": 323
+  },
+  {
+    "title": "[机器学习的嵌入（embedding）是什么（英文）](https://technicalwriting.dev/data/embeddings.html)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024102505.webp)\n\n嵌入（embedding）是机器学习的重要技术，本文解释它是什么，写得不错。\n\n",
+    "category": "article",
+    "originHref": "https://technicalwriting.dev/data/embeddings.html",
+    "weekly": 323
+  },
+  {
+    "title": "[提升 Shell 脚本用户体验（英文）](https://nochlin.com/blog/6-techniques-i-use-to-create-a-great-user-experience-for-shell-scripts)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024091401.webp)\n\nShell 脚本难读难写，本文给出6个小技巧，可以提升用户体验。\n\n\n\n\n",
+    "category": "article",
+    "originHref": "https://nochlin.com/blog/6-techniques-i-use-to-create-a-great-user-experience-for-shell-scripts",
+    "weekly": 322
+  },
+  {
     "title": "[require() 支持 ES6 模块了（英文）](https://evertpot.com/using-top-level-await-is-bc-break/)",
-    "content": "\n\n\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024101901.webp)\n\n最新的 Node.js 23 支持 require() 加载 ES6 模块。本文介绍这个功能，但也质疑这是否明智。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024101901.webp)\n\n最新的 Node.js 23 支持 require() 加载 ES6 模块。本文介绍这个功能，但也质疑这是否明智。\n\n",
     "category": "article",
     "originHref": "https://evertpot.com/using-top-level-await-is-bc-break/",
     "weekly": 322

@@ -38,7 +38,7 @@ const config = {
     typography: typographyStyles,
     extend: {
       fontFamily: {
-        //'JetBrainsMonoNL'
+        // 'JetBrainsMonoNL',
         sans: ['var(--font-geist-sans)', ...fontFamily.sans]
         // mono: ["var(--font-mono)", ...fontFamily.mono],
       },

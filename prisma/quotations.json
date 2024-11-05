@@ -1,7 +1,35 @@
 [
   {
+    "title": "[乔布斯](https://berthub.eu/articles/posts/open-source-by-itself-is-no-alternative-for-big-tech/)",
+    "content": "\n\n\n\n\n\n我热爱消费者市场，讨厌企业市场。我们推出了一种产品，告诉每个人，大家自己决定要不要买，这很简单。但是，企业市场不是这样，使用产品的人自己做不了主，而做主的人不使用产品。\n\n\n\n\n\n我非常支持某些名校的录取条件，他们面试的前两项就是“你是否照顾过孤儿，是否照顾过孤寡老人”，如果没有，你就没有履行社会责任。\n\n这些名牌大学，培养的都是企业领袖、国家领袖、社会领袖……如果你不爱社会，只是为了多赚钱，你就是社会价值观的破坏者，而并不是社会的建设者。\n\n",
+    "category": "quotation",
+    "originHref": "https://berthub.eu/articles/posts/open-source-by-itself-is-no-alternative-for-big-tech/",
+    "weekly": 323
+  },
+  {
+    "title": "[任正非](https://finance.eastmoney.com/a/202410313224805736.html)，《与 ICPC（国际大学生程序设计竞赛）成员的座谈》（2024年10月14日）",
+    "content": "\n\n\n\n两百多年来，美国从一个非常落后的国家变成一个非常发达的国家，在于其开放性、包容性，全球人才都到美国去创新，带来文化多元化、社会多元化、以及科学技术的多元化，创造了伟大的美国。\n\n美国给全世界的所有国家、所有公司树立了榜样，那就是必须开放，如果封闭起来就要落后。华为要向美国学习开放性、包容性。\n\n-- 任正非，同上\n\n\n\n人们不断为 JavaScript 语言发布新的捆绑器、压缩器、转译器、包管理器。这是一个警告，表明这门语言有些地方出了问题。\n\n显然经过一次次重写，问题还没有得到解决。对我来说，这表明存在根本问题：我们没有在正确的层次上解决问题，或者可能根本无法解决。\n\n",
+    "category": "quotation",
+    "originHref": "https://finance.eastmoney.com/a/202410313224805736.html",
+    "weekly": 323
+  },
+  {
+    "title": "[Hacker News 读者](https://news.ycombinator.com/item?id=40854325)",
+    "content": "\n\n\n\n我的生活态度是，早上起床想一想，我有可能活不到今天晚上，晚上上床想一想，我有可能活不到明天早上。\n\n",
+    "category": "quotation",
+    "originHref": "https://news.ycombinator.com/item?id=40854325",
+    "weekly": 323
+  },
+  {
+    "title": "[德图里子爵](https://www.theguardian.com/world/2024/oct/19/bodies-quarry-shafts-millions-buried-paris-catacombs)（1776-1854），法国贵族",
+    "content": "\n\n\n\n\n\n\n2022年10月，有一只鸟创造了世界记录，不停顿地飞行了13500公里，不着陆、不进食、不喝水，以每小时48公里的平均速度，飞行了11天。\n\n完成这一壮举有很多原因，其中很重要的一点就是羽毛。羽毛能够保持一整夜的温暖，还能挡雨，并且构成了翅膀的表面。羽毛是生物进化的神奇发明。\n\n",
+    "category": "quotation",
+    "originHref": "https://www.theguardian.com/world/2024/oct/19/bodies-quarry-shafts-millions-buried-paris-catacombs",
+    "weekly": 322
+  },
+  {
     "title": "[《羽毛是生物进化的神奇发明》](https://www.scientificamerican.com/article/why-feathers-are-one-of-evolutions-cleverest-inventions/)",
-    "content": "\n\n\n\n\n\n2022年10月，有一只鸟创造了世界记录，不停顿地飞行了13500公里，不着陆、不进食、不喝水，以每小时48公里的平均速度，飞行了11天。\n\n完成这一壮举有很多原因，其中很重要的一点就是羽毛。羽毛能够保持一整夜的温暖，还能挡雨，并且构成了翅膀的表面。羽毛是生物进化的神奇发明。\n\n\n\n\n\n互联网每个 IPv4 地址，背后平均有7个设备。\n\n",
+    "content": "\n\n\n\n互联网每个 IPv4 地址，背后平均有7个设备。\n\n",
     "category": "quotation",
     "originHref": "https://www.scientificamerican.com/article/why-feathers-are-one-of-evolutions-cleverest-inventions/",
     "weekly": 322

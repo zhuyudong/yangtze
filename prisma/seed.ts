@@ -80,7 +80,9 @@ async function main() {
     await db.content.create({
       data: contents[i]
     })
-    console.log(`Created content ${i + 1}`)
+    console.log(
+      `[${new Date().toLocaleString()}] created content [${i + 1}] ${contents[i].title}`
+    )
   }
   // 批量创建，created_at 重复，查询时根据 created_at 排序不能确保顺序
   // if (contents.length) {

@@ -1,7 +1,77 @@
 [
   {
+    "title": "[Garage](https://garagehq.deuxfleurs.fr/)",
+    "content": "\n\n\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202407/bg2024072001.webp)\n\n一个开源分布式对象存储，AWS S3 的替代品，兼容 S3 的客户端，可以建立自己的网络存储系统。类似还有 [SeaweedFS](https://github.com/seaweedfs/seaweedfs)。\n\n",
+    "category": "tool",
+    "originHref": "https://garagehq.deuxfleurs.fr/",
+    "weekly": 323
+  },
+  {
+    "title": "[Transcribro](https://github.com/soupslurpr/Transcribro)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202407/bg2024072116.webp)\n\n安卓的语音输入法，底层使用 whisper 模型。\n\n",
+    "category": "tool",
+    "originHref": "https://github.com/soupslurpr/Transcribro",
+    "weekly": 323
+  },
+  {
+    "title": "[StarLocator](https://github.com/BengbuGuards/StarLocator)",
+    "content": "\n\n一个开源的天文学网页应用，上传星空的照片，就可以识别拍摄位置。\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024103002.webp)\n\n但是，限制条件比较多，需要照片清晰，并且包含至少5个天体，以及给出拍摄时间和多条铅垂线。\n\n",
+    "category": "tool",
+    "originHref": "https://github.com/BengbuGuards/StarLocator",
+    "weekly": 323
+  },
+  {
+    "title": "[iCraft Editor](https://icraft.gantcloud.com)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024102912.webp)\n\n绘制 3D 架构图的网页应用，免费使用。\n\n",
+    "category": "tool",
+    "originHref": "https://icraft.gantcloud.com",
+    "weekly": 323
+  },
+  {
+    "title": "[HotHub](https://github.com/w4n9hu1/hot-hub-web)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024103003.webp)\n\n开源的热点话题查看和搜索网站，展示话题的热度趋势，基于 Next.js。\n\n",
+    "category": "tool",
+    "originHref": "https://github.com/w4n9hu1/hot-hub-web",
+    "weekly": 323
+  },
+  {
+    "title": "[Web Archive](https://github.com/Ray-D-Song/web-archive)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024103004.webp)\n\n网页收藏备份的 Web 应用，基于 Cloudflare Worker，数据保存在 Cloudflare。\n\n",
+    "category": "tool",
+    "originHref": "https://github.com/Ray-D-Song/web-archive",
+    "weekly": 323
+  },
+  {
+    "title": "[RSS Impact](https://github.com/CaoMeiYouRen/rss-impact-server)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024102913.webp)\n\n一个开源的 RSS 在线订阅，支持各种机制的 Hook（网络钩子），可以用来触发各种操作。\n\n",
+    "category": "tool",
+    "originHref": "https://github.com/CaoMeiYouRen/rss-impact-server",
+    "weekly": 323
+  },
+  {
+    "title": "[codess ](https://codess.dumogu.top/)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024103006.webp)\n\n快速生成和在线管理 [VS Code 代码片段](https://code.visualstudio.com/docs/editor/userdefinedsnippets)。\n\n",
+    "category": "tool",
+    "originHref": "https://codess.dumogu.top/",
+    "weekly": 323
+  },
+  {
+    "title": "[Bookmarks Artist](https://github.com/liujuntao123/bookmarks-artist)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024103016.webp)\n\n开源的 Chrome 浏览器插件，提供一个查看浏览器书签的全新界面。\n\n",
+    "category": "tool",
+    "originHref": "https://github.com/liujuntao123/bookmarks-artist",
+    "weekly": 323
+  },
+  {
+    "title": "[PgManage](https://github.com/commandprompt/pgmanage)",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202407/bg2024072202.webp)\n\n一个跨平台的 Postgres 数据库的桌面客户端，提供图形界面。\n\n\n\n\n",
+    "category": "tool",
+    "originHref": "https://github.com/commandprompt/pgmanage",
+    "weekly": 322
+  },
+  {
     "title": "[whodb](https://github.com/clidey/whodb)",
-    "content": "\n\n\n\n\n\n![](https://cdn.beekka.com/blogimg/asset/202407/bg2024071109.webp)\n\n一个基于浏览器的数据库管理，支持 Postgres、MySQL、SQLite、MongoDB、 Redis。\n\n",
+    "content": "\n\n![](https://cdn.beekka.com/blogimg/asset/202407/bg2024071109.webp)\n\n一个基于浏览器的数据库管理，支持 Postgres、MySQL、SQLite、MongoDB、 Redis。\n\n",
     "category": "tool",
     "originHref": "https://github.com/clidey/whodb",
     "weekly": 322
